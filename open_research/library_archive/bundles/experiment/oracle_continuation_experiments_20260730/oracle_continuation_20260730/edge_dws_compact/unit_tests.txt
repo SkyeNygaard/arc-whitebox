@@ -1,0 +1,8 @@
+.......                                                                  [100%]
+=============================== warnings summary ===============================
+tests/test_equivariance.py::test_hidden_permutation_invariance
+  /mnt/data/oracle_experiments_inputs/edge_dws/edge_dws_handoff/experiment/src/edge_dws.py:101: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+    self.layer_encoder = nn.TransformerEncoder(enc_layer, num_layers=2)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+7 passed, 1 warning in 2.12s

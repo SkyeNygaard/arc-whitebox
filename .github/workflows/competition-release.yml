@@ -1,0 +1,42 @@
+name: Competition Release Check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  release-check:
+    name: Release integrity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check the public release surface
+        run: python scripts/check_competition_release.py
+
+  proof-replay:
+    name: Replay the certificate archive
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install mpmath
+        run: python -m pip install -r theory/proof_archive/requirements.txt
+      - name: Verify archive hashes
+        working-directory: theory/proof_archive
+        run: python scripts/check_package.py
+      - name: Run the five verification checks
+        working-directory: theory/proof_archive
+        run: python scripts/run_verification_portable.py
+      - name: Confirm the replay left the archive unchanged
+        working-directory: theory/proof_archive
+        run: python scripts/check_package.py

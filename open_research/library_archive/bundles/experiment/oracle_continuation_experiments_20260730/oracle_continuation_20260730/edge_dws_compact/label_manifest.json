@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "status": "frozen",
+  "label_kind": "v80_scale",
+  "label_dim": 1,
+  "examples": 68,
+  "data_sha256": "e6d1f5421a0da3993c208790ee8592c583b2d1e718434e60647523a02086054c",
+  "source_sha256": [
+    "reopened_paths_repro_20260730:nonlinear_k4_m64_b0_0.001"
+  ],
+  "surrogate": {
+    "kind": "exact_linear_final_replay",
+    "equation": "error(coeff)=baseline_error+replay_jacobian@coeff",
+    "verified": true,
+    "verification_sha256": "565a31378dc49b61125409e7a4358e0cbb2369a8d9c051aa751b5525df9cce87",
+    "verification": {
+      "verified": true,
+      "proof_kind": "additive_final_output",
+      "equation": "candidate(coeff)=base+coeff*(frozen_source-base); error=baseline_error+J@coeff",
+      "candidate": "nonlinear_k4_m64_b0_0.001",
+      "source_frozen_alpha": -2.0,
+      "max_abs_error": 0.0,
+      "tolerance": 0.0
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "title": "Computer-assisted near-optimality certificate for Kerdock/MUB cubature",
+  "dimension": 256,
+  "depth": 32,
+  "node_budget": 66048,
+  "precision": 80,
+  "theorem": "For K_32 in dimension 256, every network-independent linear cubature rule supported on at most 66,048 points, with nonnegative weights summing to one, has ensemble MSE at least the certified scalar lower bound. The uniform 66,048-point antipodal real-MUB (Kerdock) rule has MSE at most the stated multiplicative factor above the infimum over that class.",
+  "kernel_definition": "K_0(t)=t and K_{l+1}(t)=kappa(K_l(t)), where kappa(t)=(sqrt(1-t^2)+(pi-acos(t))t)/pi.",
+  "randomized_rule_corollary": "The same bound holds after averaging over a randomized rule when the rule randomness, nodes, and weights are independent of the realized random field.",
+  "scope": {
+    "included": [
+      "deterministic nodes and weights fixed independently of the random field",
+      "randomized rules whose randomness is independent of the random field",
+      "nonnegative weights summing to one",
+      "support size at most 66,048",
+      "the infinite-width depth-32 normalized ReLU kernel in dimension 256"
+    ],
+    "excluded": [
+      "nodes or weights selected from the realized network or observed activations",
+      "pilot sampling followed by adaptation",
+      "nonlinear estimators",
+      "network-dependent analytic-plus-residual estimators",
+      "signed cubature weights",
+      "finite-width network objectives"
+    ]
+  },
+  "pointwise_certificate": {
+    "global_upper_bound_for_h_minus_K": "-1.004586240658455604403124565024659239239177837259174401E-13",
+    "certified_subintervals": 1421,
+    "coverage_exact": true,
+    "no_gaps_or_overlaps": true
+  },
+  "kernel_mean_A0_interval": {
+    "lower": "0.974729989541714712312258085264191196422089014048652080604140725421300908486529660854678526902154912616533635138269820861",
+    "upper": "0.974729989541714712312486955297461289338001476427951954852887889789982249288958791439364611154133167265972721306531007161",
+    "width": "2.288700332700929159124623793E-22"
+  },
+  "kerdock_energy_interval": {
+    "lower": "0.9747302329077504666127808462108414633985481621607157811601376765058907",
+    "upper": "0.9747302329077504666127808462108414633985481621607157811601376765059437"
+  },
+  "universal_energy_lower_bound_certificate_interval": {
+    "lower": "0.9747302328509000564066126514960711073288701902848240637848543566326762",
+    "upper": "0.9747302328509000564066126514960711073288701902848240637848543566326763"
+  },
+  "kerdock_mse_interval": {
+    "lower": "2.4336603575430029389091338017406054668573276382630724978671590845071104120856063E-7",
+    "upper": "2.4336603575430052276094665026697645914811206370055599695108464279151347033914533E-7"
+  },
+  "certificate_expression_B_minus_A0_interval": {
+    "lower": "2.4330918534409412569619860981799086871385687210893196646684269395071104120856063E-7",
+    "upper": "2.4330918534409435456623187991090678117623617198318071363121137539151347033914533E-7",
+    "interpretation": "The actual optimum MSE is at least the lower endpoint only."
+  },
+  "certified_optimum_mse_lower_bound": "2.4330918534409412569619860981799086871385687210893196646684269395071104120856063E-7",
+  "actual_additive_suboptimality": {
+    "lower": "0",
+    "upper": "5.68504102061681947147703560696779718758917173752833198732675E-11",
+    "interpretation": "One-sided enclosure: Kerdock is feasible, and the Delsarte certificate gives the upper endpoint."
+  },
+  "actual_multiplicative_ratio_kerdock_over_infimum": {
+    "lower": "1",
+    "upper": "1.0002336550102948137706602001859817190503387631703979550800344120665100552627519"
+  },
+  "actual_relative_excess": {
+    "lower": "0",
+    "upper": "0.0002336550102948137706602001859817190503387631703979550800344120665100552627519"
+  },
+  "actual_relative_excess_percent": {
+    "lower": "0",
+    "upper": "0.0233655010294813770660200185981719050338763170397955080034412066510055262751900"
+  },
+  "human_readable_conclusion": "Kerdock is certified to be at most 0.0233655010294813770660200185981719050338763170397955080034412066510055262751900% above the infimum within the stated class.",
+  "source_artifacts": [
+    "FORMAL_CERTIFICATE_D256_L32.json",
+    "FORMAL_DELSARTE_BOUND_D256_L32.json",
+    "FORMAL_KERNEL_MEAN_D256_L32.json"
+  ],
+  "passed": true
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "normalized_relu_kernel_series": "t**4/(24*pi) + t**2/(2*pi) + t/2 + 1/pi",
+  "width1_deep_kernel": "kappa(t) at every later layer, because ReLU(w*a(x))=ReLU(w)*a(x) for scalar nonnegative a(x).",
+  "infinite_width_depth2_kernel": "kappa(kappa(t))",
+  "width1_cubic_coefficient": "0",
+  "infinite_width_depth2_cubic_coefficient_exact": "(-12 + 13*pi**2)/(48*pi*(-1 + pi**2)**(3/2))",
+  "infinite_width_depth2_cubic_coefficient_numeric": 0.029197815998023544,
+  "conclusion": "Coefficientwise finite-width >= infinite-width monotonicity is false even in the standard Gaussian ReLU family. Width-specific lower bounds require quantitative architecture-specific work.",
+  "scope": "This is a width-1 counterexample to a universal shortcut. It does not show that any particular width-256 coefficient is below its infinite-width value."
+}

@@ -1,0 +1,17 @@
+{
+  "status": "frozen_before_holdout_labels_complete",
+  "training_rows": 32,
+  "training_groups": 24,
+  "test_rows": 36,
+  "test_groups": 12,
+  "target": "exact raw-MSE optimal K32 scale",
+  "sample_weight": "K32 correction norm squared",
+  "models": {
+    "compact_k16_r1_bounded": {"feature_set": "compact", "k": 16, "ridge": 1.0, "clip": [0.25, 0.75]},
+    "weights_k16_r1_bounded": {"feature_set": "weights", "k": 16, "ridge": 1.0, "clip": [0.25, 0.75]},
+    "late_k4_r1_bounded": {"feature_set": "late", "k": 4, "ridge": 1.0, "clip": [0.25, 0.75]},
+    "bounded_ensemble": {"members": ["compact_k16_r1_bounded", "weights_k16_r1_bounded", "late_k4_r1_bounded"]},
+    "compact_k16_r1_unbounded_negative_control": {"feature_set": "compact", "k": 16, "ridge": 1.0, "clip": [0.0, 1.5]}
+  },
+  "no_model_or_threshold_retuning_on_holdout": true
+}

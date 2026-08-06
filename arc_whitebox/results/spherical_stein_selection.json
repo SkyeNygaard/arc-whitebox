@@ -1,0 +1,119 @@
+{
+  "method": {
+    "identity": "E[d*(v.u)*f - v.grad(f)] = 0 on S^(d-1)",
+    "samples_per_stream": 2048,
+    "stein_streams": 2,
+    "equal_cost_baseline_rows_per_stream": 4096,
+    "ridge_fraction": 1e-06
+  },
+  "summary": {
+    "baseline_mse": 2.1242196768339223e-06,
+    "stein_crossfit_mse": 4.45525256967069e-06,
+    "stein_pooled_mse": 4.4593504753149015e-06,
+    "stein_raw_halfcost_mse": 4.450949258233318e-06,
+    "crossfit_ratio_to_equal_cost": 2.097359617867345,
+    "pooled_ratio_to_equal_cost": 2.0992887524521064
+  },
+  "records": [
+    {
+      "index": 0,
+      "name": "daniel-harrison",
+      "baseline_mse": 4.569141877769214e-06,
+      "stein_crossfit_mse": 3.507264469351346e-06,
+      "stein_pooled_mse": 3.4761717809489246e-06,
+      "stein_raw_halfcost_mse": 3.500033405647827e-06,
+      "mean_abs_beta": 0.0019357093581661075,
+      "mean_control_rms": 12.993816509265063
+    },
+    {
+      "index": 1,
+      "name": "dustin-robinson",
+      "baseline_mse": 2.7813517370540974e-06,
+      "stein_crossfit_mse": 8.400046580628532e-06,
+      "stein_pooled_mse": 8.441001327156661e-06,
+      "stein_raw_halfcost_mse": 8.4474691991067e-06,
+      "mean_abs_beta": 0.0012520293727365025,
+      "mean_control_rms": 16.849034954766953
+    },
+    {
+      "index": 2,
+      "name": "cole-martin",
+      "baseline_mse": 1.6252950934726402e-06,
+      "stein_crossfit_mse": 4.505265522479746e-06,
+      "stein_pooled_mse": 4.498017001851575e-06,
+      "stein_raw_halfcost_mse": 4.477602499871896e-06,
+      "mean_abs_beta": 0.001667812392720347,
+      "mean_control_rms": 21.47078806645064
+    },
+    {
+      "index": 3,
+      "name": "donna-clarke",
+      "baseline_mse": 7.810895146432483e-07,
+      "stein_crossfit_mse": 8.728322696792236e-06,
+      "stein_pooled_mse": 8.745033610450659e-06,
+      "stein_raw_halfcost_mse": 8.740726374322393e-06,
+      "mean_abs_beta": 0.001471903490152599,
+      "mean_control_rms": 6.958349581234672
+    },
+    {
+      "index": 4,
+      "name": "rebecca-walker",
+      "baseline_mse": 6.318518064686025e-07,
+      "stein_crossfit_mse": 2.519752398054163e-06,
+      "stein_pooled_mse": 2.512136933455922e-06,
+      "stein_raw_halfcost_mse": 2.516963566340402e-06,
+      "mean_abs_beta": 0.0022463137541891024,
+      "mean_control_rms": 7.559972872462972
+    },
+    {
+      "index": 5,
+      "name": "monique-stevens",
+      "baseline_mse": 8.366407751846735e-07,
+      "stein_crossfit_mse": 5.683324894679704e-06,
+      "stein_pooled_mse": 5.7747804737643e-06,
+      "stein_raw_halfcost_mse": 5.670441249946959e-06,
+      "mean_abs_beta": 0.0020302882110381504,
+      "mean_control_rms": 11.128119897701795
+    },
+    {
+      "index": 6,
+      "name": "keith-brock",
+      "baseline_mse": 2.3837661215524156e-06,
+      "stein_crossfit_mse": 2.8375969371615274e-06,
+      "stein_pooled_mse": 2.8099688730941615e-06,
+      "stein_raw_halfcost_mse": 2.8291163554801596e-06,
+      "mean_abs_beta": 0.0030342888545244343,
+      "mean_control_rms": 12.04251586134763
+    },
+    {
+      "index": 7,
+      "name": "robert-huff",
+      "baseline_mse": 7.574975295761073e-07,
+      "stein_crossfit_mse": 1.317859490775648e-06,
+      "stein_pooled_mse": 1.3237738523322071e-06,
+      "stein_raw_halfcost_mse": 1.3307893740471662e-06,
+      "mean_abs_beta": 0.0027314249801768946,
+      "mean_control_rms": 8.430665521578604
+    },
+    {
+      "index": 8,
+      "name": "kimberly-caldwell",
+      "baseline_mse": 1.858520005403955e-06,
+      "stein_crossfit_mse": 5.526610383878938e-06,
+      "stein_pooled_mse": 5.483037548209755e-06,
+      "stein_raw_halfcost_mse": 5.505847176962387e-06,
+      "mean_abs_beta": 0.0011858521515704925,
+      "mean_control_rms": 15.826637861148178
+    },
+    {
+      "index": 9,
+      "name": "annette-hansen",
+      "baseline_mse": 5.017042307214269e-06,
+      "stein_crossfit_mse": 1.5264823229050578e-06,
+      "stein_pooled_mse": 1.5295833518848394e-06,
+      "stein_raw_halfcost_mse": 1.4905033806072836e-06,
+      "mean_abs_beta": 0.0027133674769140963,
+      "mean_control_rms": 8.70577978867166
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "title": "Computer-assisted near-optimality certificate for Kerdock/MUB cubature",
+  "dimension": 256,
+  "depth": 32,
+  "node_budget": 66048,
+  "precision": 80,
+  "theorem": "For the dimension-256, depth-32 infinite-width normalized ReLU ensemble kernel, every network-independent linear cubature rule supported on at most 66,048 points, with nonnegative weights summing to one, has ensemble mean-squared integration error at least the certified optimum lower bound. The uniform 66,048-point Kerdock/MUB rule has ensemble MSE no more than the certified multiplicative factor above that optimum.",
+  "randomized_rule_corollary": "The same lower bound holds after averaging over a randomized rule provided the rule's nodes, weights, and random seed are independent of the realized network. It does not cover network-adaptive nodes or weights, pilot-sample adaptation, nonlinear estimators, signed weights, or finite-width-specific estimators.",
+  "scope": {
+    "included": [
+      "deterministic nodes and weights fixed independently of the network",
+      "randomized nodes and weights whose randomness is independent of the network",
+      "nonnegative weights",
+      "weights summing to one",
+      "support size at most 66,048",
+      "infinite-width depth-32 normalized ReLU ensemble kernel in dimension 256"
+    ],
+    "excluded": [
+      "nodes selected from realized network weights",
+      "weights selected from realized network weights or observed activations",
+      "pilot sampling followed by adaptation",
+      "nonlinear estimators",
+      "analytic-plus-residual estimators depending on the network",
+      "signed cubature weights",
+      "finite-width network objectives"
+    ]
+  },
+  "pointwise_certificate": {
+    "global_upper_bound_for_h_minus_K": "-1.004586240658455604403124565024659239239177837259174401E-13",
+    "certified_subintervals": 1421,
+    "coverage_exact": true,
+    "no_gaps_or_overlaps": true
+  },
+  "kernel_mean_A0": {
+    "lower": "0.974729989541714712312258085264191196422089014048652080604140725421300908486529660854678526902154912616533635138269820861",
+    "upper": "0.974729989541714712312486955297461289338001476427951954852887889789982249288958791439364611154133167265972721306531007161",
+    "width": "2.288700332700929159124623793E-22"
+  },
+  "kerdock_energy": {
+    "lower": "0.9747302329077504666127808462108414633985481621607157811601376765058907",
+    "upper": "0.9747302329077504666127808462108414633985481621607157811601376765059437"
+  },
+  "universal_energy_lower_bound": {
+    "lower": "0.9747302328509000564066126514960711073288701902848240637848543566326762",
+    "upper": "0.9747302328509000564066126514960711073288701902848240637848543566326763"
+  },
+  "kerdock_mse": {
+    "lower": "2.4336603575430029389091338017406054668573276382630724978671590845071104120856063E-7",
+    "upper": "2.4336603575430052276094665026697645914811206370055599695108464279151347033914533E-7"
+  },
+  "optimum_mse_lower_bound": {
+    "lower": "2.4330918534409412569619860981799086871385687210893196646684269395071104120856063E-7",
+    "upper": "2.4330918534409435456623187991090678117623617198318071363121137539151347033914533E-7"
+  },
+  "additive_suboptimality": {
+    "lower": "5.68504102061681947147703560696779718758917173752833198732144E-11",
+    "upper": "5.68504102061681947147703560696779718758917173752833198732675E-11"
+  },
+  "multiplicative_ratio_kerdock_over_optimum": {
+    "lower": "1.0002336550102929322406122377884162313348094001737134696642514796563851895717470",
+    "upper": "1.0002336550102948137706602001859817190503387631703979550800344120665100552627519"
+  },
+  "relative_excess": {
+    "lower": "0.0002336550102929322406122377884162313348094001737134696642514796563851895717470",
+    "upper": "0.0002336550102948137706602001859817190503387631703979550800344120665100552627519"
+  },
+  "relative_excess_percent": {
+    "lower": "0.0233655010292932240612237788416231334809400173713469664251479656385189571747000",
+    "upper": "0.0233655010294813770660200185981719050338763170397955080034412066510055262751900"
+  },
+  "human_readable_conclusion": "Kerdock is certified to be at most 0.0233655010294813770660200185981719050338763170397955080034412066510055262751900% above the optimum within the stated class.",
+  "source_artifacts": [
+    "FORMAL_CERTIFICATE_D256_L32.json",
+    "FORMAL_DELSARTE_BOUND_D256_L32.json",
+    "FORMAL_KERNEL_MEAN_D256_L32.json",
+    "FORMAL_INTERVAL_AUDIT.json"
+  ],
+  "passed": true
+}

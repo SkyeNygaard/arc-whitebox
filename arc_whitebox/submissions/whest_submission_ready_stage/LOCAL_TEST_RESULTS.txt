@@ -1,0 +1,46 @@
+{'minvar': 0.4404572244973513, 'pairs': 120, 'max_abs_x1': 0.016386008846408458, 'max_abs_x1a': 0.015153640289940344, 'max_abs_normalized_residual': 0.0027219514346178723, 'alpha': 0.5, 'beta': 0.3, 'gamma': 0.7, 'safety_scale': 1.0, 'minimum_variance': 0.4404572244973513, 'nonfinite_mean': 0, 'nonfinite_covariance': 0}
+{'worst_zero_mean_second_moment_abs_error': np.float64(1.6653345369377348e-16)}
+{'random_cases': 2000, 'worst_abs_20_vs_128_nodes': 1.570177189623434e-07, 'rms_case_max_error': 3.585594432613838e-09}
+{
+  "output": "/tmp/tmp6ri04y1s/sel.json",
+  "selected": 2,
+  "best": {
+    "source": "/tmp/tmp6ri04y1s/b.json",
+    "calibration": "cal.json",
+    "key": "c2",
+    "config": {
+      "alpha": 0.5,
+      "beta": 0.0,
+      "gamma": 0.0,
+      "corr_cap": 0.999,
+      "x_clip": 20.0,
+      "residual_clip": 0.5
+    },
+    "config_text": "0.5,0,0,0.999,20,0.5",
+    "summary": {
+      "final_mean_mse": 1.0999999999999999,
+      "fraction_mlps_improved": 0.9,
+      "fraction_guard_activated": 0.0
+    }
+  }
+}
+{
+  "selected_key": "c2",
+  "config": {
+    "alpha": 0.5,
+    "beta": 0.0,
+    "gamma": 0.0,
+    "corr_cap": 0.999,
+    "x_clip": 20.0,
+    "residual_clip": 0.5
+  },
+  "config_text": "0.5,0,0,0.999,20,0.5",
+  "calibration": "cal.json",
+  "validation_summary": {
+    "final_mean_mse": 1.0999999999999999,
+    "fraction_mlps_improved": 0.9,
+    "fraction_guard_activated": 0.0
+  },
+  "source": "/tmp/tmp6ri04y1s/b.json"
+}
+selection tests passed

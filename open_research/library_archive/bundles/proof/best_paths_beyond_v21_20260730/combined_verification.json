@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "scripts": [
+    {
+      "script": "verify_joint_sharpness_strictness.py",
+      "status": "PASS",
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"all_profile_conditions\": true,\n  \"gcd\": \"1\",\n  \"bezout\": \"1\",\n  \"grid_min\": 2.0955397431947478e-09\n}"
+    },
+    {
+      "script": "verify_gaussian_crossing_formula.py",
+      "status": "PASS",
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"max_quad_R\": 3.3306690738754696e-16,\n  \"max_quad_R2\": 1.1102230246251565e-16\n}"
+    },
+    {
+      "script": "verify_finite_width_monotonicity_counterexample.py",
+      "status": "PASS",
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"normalized_relu_kernel_series\": \"t**4/(24*pi) + t**2/(2*pi) + t/2 + 1/pi\",\n  \"width1_deep_kernel\": \"kappa(t) at every later layer, because ReLU(w*a(x))=ReLU(w)*a(x) for scalar nonnegative a(x).\",\n  \"infinite_width_depth2_kernel\": \"kappa(kappa(t))\",\n  \"width1_cubic_coefficient\": \"0\",\n  \"infinite_width_depth2_cubic_coefficient_exact\": \"(-12 + 13*pi**2)/(48*pi*(-1 + pi**2)**(3/2))\",\n  \"infinite_width_depth2_cubic_coefficient_numeric\": 0.029197815998023544,\n  \"conclusion\": \"Coefficientwise finite-width >= infinite-width monotonicity is false even in the standard Gaussian ReLU family. Width-specific lower bounds require quantitative architecture-specific work.\",\n  \"scope\": \"This is a width-1 counterexample to a universal shortcut. It does not show that any particular width-256 coefficient is below its infinite-width value.\"\n}"
+    },
+    {
+      "script": "verify_a51_interface_frontier.py",
+      "status": "PASS",
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"rank_demo\": {\n    \"rank_U\": 16,\n    \"dimension\": 16,\n    \"reconstruction_error\": 1.0801742954534686e-15\n  },\n  \"local2_anchor_error\": 0.002619825991297459,\n  \"univ128_anchor_error\": 0.4067396198637611\n}"
+    }
+  ]
+}

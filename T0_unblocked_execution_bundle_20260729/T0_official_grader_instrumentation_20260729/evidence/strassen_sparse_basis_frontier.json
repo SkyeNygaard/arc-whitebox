@@ -1,0 +1,119 @@
+{
+  "method": "projected adjusted-score frontier for equal-weight signed Kerdock basis subsets",
+  "protocol": {
+    "rows_per_basis": 512,
+    "later_layers": 31,
+    "width": 256,
+    "budget": 272000000000,
+    "score_multiplier": "max(0.1, effective_compute / budget)",
+    "tracked_cost_model": "exact flopscope 0.9.1 formulas, checked against authoritative m=129 profiles",
+    "first_layer_model": "35.72M fixed plus a linear interpolation to the exact 464,732,416-FLOP m=129 first-layer/final-reduction overhead",
+    "residual_model": "conservative reuse of the measured full-network m=129 residual for each schedule; smaller row counts should generally be no slower",
+    "holdout_loaded": false
+  },
+  "calibration": {
+    "packed_d3_residual_wall_time_s": 0.011982625117525458,
+    "hybrid_p3_d4_residual_wall_time_s": 0.023432881338521838,
+    "packed_d4_residual_wall_time_s": 0.02495925221592188,
+    "hybrid_p3_d5_residual_wall_time_s": 0.04790856852196157,
+    "m129_d5_authoritative_tracked_flops": 175822834176,
+    "m129_d5_authoritative_wall_time_s": 23.20712670800276
+  },
+  "frontier": [
+    {
+      "bases": 24,
+      "rows": 12288,
+      "raw_mse": 1.4742e-6,
+      "schedule": "hybrid_p3_d4",
+      "kernel_flops_per_later_layer": 1079793664,
+      "projected_tracked_flops": 33686657415,
+      "projected_effective_compute": 36029945548.85218,
+      "projected_multiplier": 0.13246303510607418,
+      "projected_adjusted_score": 1.9527700635337455e-7
+    },
+    {
+      "bases": 32,
+      "rows": 16384,
+      "raw_mse": 1.04775e-6,
+      "schedule": "hybrid_p3_d4",
+      "kernel_flops_per_later_layer": 1439258624,
+      "projected_tracked_flops": 44889182453,
+      "projected_effective_compute": 47232470586.85218,
+      "projected_multiplier": 0.17364878892225066,
+      "projected_adjusted_score": 1.8194051859328813e-7
+    },
+    {
+      "bases": 48,
+      "rows": 24576,
+      "raw_mse": 6.64522e-7,
+      "schedule": "hybrid_p3_d4",
+      "kernel_flops_per_later_layer": 2158188544,
+      "projected_tracked_flops": 67294232527,
+      "projected_effective_compute": 69637520660.85219,
+      "projected_multiplier": 0.25602029654725067,
+      "projected_adjusted_score": 1.7013111950217212e-7
+    },
+    {
+      "bases": 64,
+      "rows": 32768,
+      "raw_mse": 4.86473e-7,
+      "schedule": "hybrid_p3_d4",
+      "kernel_flops_per_later_layer": 2877118464,
+      "projected_tracked_flops": 89699282601,
+      "projected_effective_compute": 92042570734.85219,
+      "projected_multiplier": 0.3383918041722507,
+      "projected_adjusted_score": 1.646184761510873e-7
+    },
+    {
+      "bases": 80,
+      "rows": 40960,
+      "raw_mse": 3.83857e-7,
+      "schedule": "hybrid_p3_d5",
+      "kernel_flops_per_later_layer": 3498318080,
+      "projected_tracked_flops": 109074693251,
+      "projected_effective_compute": 113865550103.19615,
+      "projected_multiplier": 0.4186233459676329,
+      "projected_adjusted_score": 1.6069150171309767e-7
+    },
+    {
+      "bases": 96,
+      "rows": 49152,
+      "raw_mse": 3.21805e-7,
+      "schedule": "hybrid_p3_d5",
+      "kernel_flops_per_later_layer": 4197579008,
+      "projected_tracked_flops": 130870004574,
+      "projected_effective_compute": 135660861426.19615,
+      "projected_multiplier": 0.4987531670080741,
+      "projected_adjusted_score": 1.6050126290903328e-7
+    },
+    {
+      "bases": 112,
+      "rows": 57344,
+      "raw_mse": 2.39532e-7,
+      "schedule": "hybrid_p3_d5",
+      "kernel_flops_per_later_layer": 4896839936,
+      "projected_tracked_flops": 152665315896,
+      "projected_effective_compute": 157456172748.19617,
+      "projected_multiplier": 0.5788829880448388,
+      "projected_adjusted_score": 1.3866099989235633e-7
+    },
+    {
+      "bases": 129,
+      "rows": 66048,
+      "raw_mse": 1.75875e-7,
+      "schedule": "hybrid_p3_d5",
+      "kernel_flops_per_later_layer": 5639804672,
+      "projected_tracked_flops": 175822834176,
+      "projected_effective_compute": 180613691028.19617,
+      "projected_multiplier": 0.66402092289778,
+      "projected_adjusted_score": 1.1678467981464706e-7
+    }
+  ],
+  "conclusion": {
+    "best_projected_adjusted_score": 1.1678467981464706e-7,
+    "best_bases": 129,
+    "best_schedule": "hybrid_p3_d5",
+    "floor_reached": false,
+    "note": "The complete 129-basis design remains best after compute adjustment; sparse rules lose more raw accuracy than their lower multiplier recovers."
+  }
+}

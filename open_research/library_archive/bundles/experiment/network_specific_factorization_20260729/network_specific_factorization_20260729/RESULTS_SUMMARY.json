@@ -1,0 +1,46 @@
+{
+  "decision": "retain representation and beta-SVD subspace only; close coefficient learner; no promotion",
+  "same_pool_oracle_state": {
+    "full_exact_lower_ratio": 0.08465701546560583,
+    "rank1_ratio": 0.5811322201417295,
+    "rank2_ratio": 0.4301474646453775,
+    "rank4_ratio": 0.30000824596253306,
+    "rank8_ratio": 0.20562772164926515,
+    "rank12_ratio": 0.15612240836499736,
+    "rank2_worst": 0.8945912104174214,
+    "rank8_worst": 0.5100564943474524,
+    "rank90_benefit_median": 10.5,
+    "rank90_benefit_p90": 16.0
+  },
+  "legal_identifiability": {
+    "beta_subspace_oracle_coeff_ratio_same_pool": 0.6582395624316245,
+    "beta_subspace_predicted_coeff_ratio_same_pool": 0.9993105823810793,
+    "direct_vector_learner_ratio_same_pool": 1.0541219688435808,
+    "beta_subspace_predicted_coeff_ratio_independent_pooled": 1.0111653698170657,
+    "direct_vector_learner_ratio_independent_pooled": 1.1290380046561634
+  },
+  "rotation": {
+    "exact_mean_angle_deg_same_pool": 23.89069933244959,
+    "legal_mean_angle_deg": 1.9963147745721577
+  },
+  "reference_quality": {
+    "median_target_noise_over_baseline_pmse": 0.6635109328137774,
+    "median_anchor_half_correction_relerr": 1.7794534367877874,
+    "median_anchor_half_correction_cosine": 0.12694798857024608
+  },
+  "cost": {
+    "measured_total_seconds": 537.2786264419556,
+    "samples": 120,
+    "base_network_groups": 40,
+    "rotations_per_group": 3,
+    "truth_nodes_per_half": 4096,
+    "incremental_deployable_model": {
+      "ridge_feature_count": 191,
+      "coefficient_count": 384,
+      "estimated_dense_inference_flops": 764,
+      "basis_projection_flops": 1024,
+      "asset_bytes": 445586
+    },
+    "qualification": "Feature extraction here reuses Kerdock activations, fold statistics, fitted beta, and suffix gates. Full subprocess wall/FLOP integration was not available in the shared launch pack."
+  }
+}

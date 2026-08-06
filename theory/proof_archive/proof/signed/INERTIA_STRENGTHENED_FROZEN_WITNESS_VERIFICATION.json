@@ -1,0 +1,55 @@
+{
+  "verified": true,
+  "status": "exact-rational downstream replay from inherited kernel intervals",
+  "scope": {
+    "dimension": 256,
+    "depth": 32,
+    "kernel": "infinite-width normalized ReLU",
+    "maximum_nodes": 66048,
+    "nodes": "arbitrary spherical",
+    "weights": "arbitrary real, mass one",
+    "estimator": "static linear"
+  },
+  "source_witness": "SIGNED_NEAR_OPTIMALITY_CERTIFICATE_BLOCKTRACE_ORDER320.json",
+  "source_witness_original_floor": "2.2804515985314021349432264656533100000000000000000000000000000000000000E-7",
+  "universal_case_split": {
+    "nonnegative_rules": "covered by the stronger nonnegative mass-one theorem",
+    "genuinely_signed_consolidated_rules": "have at least one negative-weight support entry and are covered by q=1"
+  },
+  "audited_inertia_strengthened_floor": "2.2804861843861462175316598568483680623306562890425426892434491261873588E-7",
+  "audited_floor_fraction_of_kerdock_upper": "9.3706016836650839349134189809716675415792465839729526899869183814356522E-1",
+  "audited_maximum_kerdock_over_rule_factor": "1.0671673322143324904230523698558055999955163142768944795339035327098644E+0",
+  "audited_maximum_risk_reduction_fraction": "6.2939831633491606508658101902833245842075341602704731001308161856434775E-2",
+  "frontier": [
+    {
+      "minimum_negative_weight_support_entries": 1,
+      "mse_lower_bound": "2.2804861843861462175316598568483680623306562890425426892434491261873588E-7",
+      "fraction_of_kerdock_upper": "9.3706016836650839349134189809716675415792465839729526899869183814356522E-1",
+      "maximum_kerdock_over_rule_factor": "1.0671673322143324904230523698558055999955163142768944795339035327098644E+0"
+    },
+    {
+      "minimum_negative_weight_support_entries": 1072,
+      "mse_lower_bound": "2.3181387594609570037251601306176019144155003201966852408174482390703532E-7",
+      "fraction_of_kerdock_upper": "9.5253175007597272056127201299376215451407359540705876488493208725314571E-1",
+      "maximum_kerdock_over_rule_factor": "1.0498337718614012312078705733560130273329397748169856822696584191661593E+0"
+    },
+    {
+      "minimum_negative_weight_support_entries": 4160,
+      "mse_lower_bound": "2.4339975929867873228304159557256882615673577616681538469860273260307425E-7",
+      "fraction_of_kerdock_upper": "1.0001385712853217495176787045009549863621796253566422117380196390336844E+0",
+      "maximum_kerdock_over_rule_factor": "9.9986144791401888889443975855324091072998075625098108316175499866196060E-1"
+    },
+    {
+      "minimum_negative_weight_support_entries": 8192,
+      "mse_lower_bound": "2.6038911664297982720420141838833762304928739671245304725075309446354864E-7",
+      "fraction_of_kerdock_upper": "1.0699484660458763577946168789660538886417143989615259626736109001540266E+0",
+      "maximum_kerdock_over_rule_factor": "9.3462445317167531149364540996238962642361804092524919543763440729326364E-1"
+    }
+  ],
+  "not_claimed": [
+    "the unrecovered reoptimized T70 witness and its 0.9370605225569535 constant",
+    "an arbitrary-total-mass corollary",
+    "independent reconstruction of the inherited K_32 interval endpoints",
+    "finite-width, adaptive, nonlinear, or network-dependent estimators"
+  ]
+}

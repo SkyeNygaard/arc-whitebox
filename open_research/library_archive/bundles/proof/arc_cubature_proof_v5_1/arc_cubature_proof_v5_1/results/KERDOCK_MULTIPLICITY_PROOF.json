@@ -1,0 +1,23 @@
+{
+  "dimension": 256,
+  "number_of_bases": 129,
+  "antipodal_nodes_per_basis": 512,
+  "total_nodes": 66048,
+  "abstract_input": "An antipodal union of 129 pairwise mutually unbiased orthonormal bases in R^256. The proof of near-optimality uses only this incidence property; existence is supplied by the classical real Kerdock construction.",
+  "per_fixed_node": {
+    "inner_product_1": 1,
+    "inner_product_minus_1": 1,
+    "inner_product_0": 510,
+    "inner_product_plus_1_over_16": 32768,
+    "inner_product_minus_1_over_16": 32768
+  },
+  "derivation": [
+    "A maximal real MUB family in dimension d=256 has d/2+1=129 bases.",
+    "Including both signs gives 2d=512 nodes per basis and N=2d(d/2+1)=d(d+2)=66048.",
+    "Within the fixed node's own basis: one self, one antipode, and 2(d-1)=510 signed orthogonal nodes.",
+    "There are d/2=128 other bases. In each, the d antipodal pairs contribute exactly d positive and d negative inner products of magnitude 1/sqrt(d)=1/16.",
+    "Thus each sign occurs 128d=32768 times."
+  ],
+  "count_sum_check": 66048,
+  "passed": true
+}

@@ -1,0 +1,69 @@
+{
+  "experiment": "implied_sigma_closure",
+  "script": "arc_whitebox/scripts/implied_sigma_closure.py",
+  "date": "2026-07-27",
+  "split_protocol": {
+    "fit_dataset": "official_phase1_full",
+    "train_rule": "mlp_id % 5 != 1",
+    "train_mlps": 800,
+    "validation_rule": "mlp_id % 5 == 1",
+    "validation_mlps": 200,
+    "external_test_dataset": "official_phase1_mini",
+    "external_test_mlps": 100,
+    "mini_full_seed_overlap": 0
+  },
+  "model": {
+    "gaussian_propagation_nodes": 8,
+    "random_features": 128,
+    "ridge": 1e-05,
+    "trajectory_calibration_ridge": 1e-06
+  },
+  "deterministic": {
+    "pilot_samples": 0,
+    "validation": {
+      "gaussian_propagation_mse": 7.7091617380705e-05,
+      "teacher_forced_mse": 1.4504505715153248e-06,
+      "free_rollout_mse": 2.3964877182721346e-05,
+      "calibrated_defect_rollout_mse": 2.223017721993228e-05,
+      "linearized_defect_rollout_mse": 2.223134970747078e-05,
+      "oracle_implied_sigma_mse": 4.4235950522327573e-16
+    },
+    "external_test": {
+      "gaussian_propagation_mse": 7.822842628589234e-05,
+      "teacher_forced_mse": 1.3391820877600687e-06,
+      "free_rollout_mse": 2.2660169909181475e-05,
+      "calibrated_defect_rollout_mse": 2.178196276884563e-05,
+      "linearized_defect_rollout_mse": 2.1780663356881376e-05,
+      "oracle_implied_sigma_mse": 4.425963282281787e-16,
+      "gain_over_gaussian_propagation": 3.5914314571219963,
+      "rollout_to_teacher_error_ratio": 16.265124039463814
+    }
+  },
+  "pilot": {
+    "pilot_samples": 512,
+    "validation": {
+      "gaussian_propagation_mse": 7.7091617380705e-05,
+      "teacher_forced_mse": 8.178008124680888e-07,
+      "free_rollout_mse": 1.87937520998321e-05,
+      "calibrated_defect_rollout_mse": 1.7186614422498585e-05,
+      "linearized_defect_rollout_mse": 1.7207483498902417e-05,
+      "oracle_implied_sigma_mse": 4.4235950522327573e-16
+    },
+    "external_test": {
+      "gaussian_propagation_mse": 7.822842628589234e-05,
+      "teacher_forced_mse": 7.495210298236182e-07,
+      "free_rollout_mse": 1.743349067263206e-05,
+      "calibrated_defect_rollout_mse": 1.573219574201804e-05,
+      "linearized_defect_rollout_mse": 1.575756985692546e-05,
+      "oracle_implied_sigma_mse": 4.425963282281787e-16,
+      "gain_over_gaussian_propagation": 4.972505273180489,
+      "gain_over_deterministic_closure": 1.3845468951717708,
+      "rollout_to_teacher_error_ratio": 20.989665554441128
+    }
+  },
+  "conclusion": {
+    "scale_closed_rollout_gap": false,
+    "oracle_representation_is_sufficient": true,
+    "diagnosis": "The implied-sigma representation can replay the exact trajectory to numerical precision, but a shared local predictor leaves a 16-21x recursive exposure gap. Increasing fitting MLPs from 60 to 800 did not materially lower teacher-forced error. The next model should optimize trajectory-level signed defects or propagate richer state, rather than add more labels to this local random-feature closure."
+  }
+}

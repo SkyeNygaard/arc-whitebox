@@ -1,0 +1,147 @@
+{
+  "status": "PASS",
+  "signed_floor": {
+    "residual_positive_definite": true,
+    "degrees": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "dimension": 2861952,
+    "squared_kernel_coefficients": {
+      "0": "2861952",
+      "1": "16842752",
+      "2": "3657761472384/1703",
+      "3": "556905594880/131",
+      "4": "38766033821696/143",
+      "5": "23823820062720/131",
+      "6": "11140944743219200/1441"
+    },
+    "all_active_degree_ratios": {
+      "1": "0.0000000001660437023436263548910392960737326736650092313814478348447985235066918",
+      "2": "0.000000000001137802462085046875115777551219996191464508353727997492496379756996737",
+      "3": "0.0000000000004319837629619823978104704732140492502720734156891318941656676402499744",
+      "4": "0.000000000000005648422583071966528307496386502497664842103939474360009100077582678629",
+      "5": "0.000000000000006913641872675369567464463533365131271953195768842180016461054081732075",
+      "6": "0.0000000000000001404663429784485659196711881219664761688008563855103211807660086129223"
+    },
+    "binding_degree": 6,
+    "gamma_lower": "0.0000000000000001404663429784485659196711881219664761688008563855103211807660086129223",
+    "rank_defect": "121150421.5813953488372093023255813953488372093023255813953488372093023",
+    "signed_rule_mse_lower_bound": "0.00000001701755666983591616385660611072736126246138626324235579549404298825098",
+    "fraction_of_kerdock_mse": "0.0699257668272849507967513681757905378893224687619358388071063",
+    "maximum_improvement_factor": "14.3008799956384774742113835696581272546304402374107279677561"
+  },
+  "information": {
+    "minimum_phi_minus_m2_over_2_on_grid": 0.0,
+    "random_channel_value": 0.3324757365265045,
+    "random_channel_twice_information": 0.38504894335140455,
+    "inequality_pass": true
+  },
+  "symmetry_defect": {
+    "identity_absolute_error": 1.8041124150158794e-16,
+    "exact_anti_invariant_alignment": 0.0,
+    "normalized_alignment": 0.004151047961123751,
+    "defect_bound": 1.379124014551059,
+    "bound_pass": true,
+    "maximum_fractional_gain_bound": 1.0
+  },
+  "gauge": {
+    "sign_group_size": 32,
+    "invariant_projection_norm": 1.4304896245381992e-17,
+    "two_point_minimax_numeric": 2.8900000000000015,
+    "two_point_minimax_exact": 2.8899999999999997,
+    "checks_pass": true
+  },
+  "coherence": {
+    "development": {
+      "depths": [
+        7,
+        15,
+        23,
+        27,
+        29,
+        30
+      ],
+      "eigenvalues": [
+        0.020101809247086315,
+        0.05161776346915788,
+        0.11801945647062836,
+        0.1669319977578327,
+        0.2521108482346918,
+        0.39121812482060314
+      ],
+      "effective_rank_of_pooled_increment_gram": 3.824459435153549,
+      "cumulative_energy_over_sum_increment_energy": 0.9372366772265706,
+      "cross_term_fraction": -0.06276332277342944,
+      "last_two_checkpoint_energy_fraction": 0.07250420508000006,
+      "max_abs_off_diagonal_cosine": 0.3017383219807858
+    },
+    "validation": {
+      "depths": [
+        7,
+        15,
+        23,
+        27,
+        29,
+        30
+      ],
+      "eigenvalues": [
+        0.028343991788006725,
+        0.053218356150169496,
+        0.11076837116881516,
+        0.1706140848803401,
+        0.23178644034086476,
+        0.40526875567180387
+      ],
+      "effective_rank_of_pooled_increment_gram": 3.802540294887972,
+      "cumulative_energy_over_sum_increment_energy": 0.9707128107052126,
+      "cross_term_fraction": -0.029287189294787352,
+      "last_two_checkpoint_energy_fraction": 0.08233478897714847,
+      "max_abs_off_diagonal_cosine": 0.1460528700210998
+    },
+    "confirmation": {
+      "depths": [
+        7,
+        15,
+        23,
+        27,
+        29,
+        30
+      ],
+      "eigenvalues": [
+        0.03156104668353441,
+        0.06472513187972288,
+        0.11214811792611812,
+        0.2079888563082162,
+        0.2604319409479666,
+        0.32314490625444126
+      ],
+      "effective_rank_of_pooled_increment_gram": 4.2868882799892685,
+      "cumulative_energy_over_sum_increment_energy": 1.078023089828132,
+      "cross_term_fraction": 0.078023089828132,
+      "last_two_checkpoint_energy_fraction": 0.09839063169495336,
+      "max_abs_off_diagonal_cosine": 0.18714374670546718
+    },
+    "counterexample": {
+      "pooled_increment_1": [
+        1.0,
+        1.0
+      ],
+      "pooled_increment_2": [
+        1.0,
+        -1.0
+      ],
+      "pooled_cosine": 0.0,
+      "within_each_case_output_dimension": 1,
+      "implication": "Low pooled cosine can be caused entirely by cross-case sign heterogeneity."
+    }
+  },
+  "scope": [
+    "Static/network-independent mass-one signed rules only for the rank floor.",
+    "Abstract phase models only for information bounds.",
+    "No actual WHestBench measure-preserving phase symmetry is asserted.",
+    "Pooled coherence does not establish within-network component rank."
+  ]
+}

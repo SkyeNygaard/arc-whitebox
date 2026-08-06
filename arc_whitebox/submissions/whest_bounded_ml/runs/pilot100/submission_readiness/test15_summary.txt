@@ -1,0 +1,17 @@
+split: test
+upstream MSE: 9.030652829951899e-05
+a0.35_b0_g0.5: gain=1.485x win=66.7% median=1.249 worst=0.728 guard=0.0% MSE=6.08095e-05
+best: a0.35_b0_g0.5 {
+  "mlps": 15,
+  "final_mean_mse": 6.080951406041954e-05,
+  "median_final_mean_mse": 5.5364167435131725e-05,
+  "runtime_seconds": 61.5109557104297,
+  "baseline_mean_mse": 9.030652829951899e-05,
+  "gain_vs_upstream": 1.4850723557795842,
+  "fraction_mlps_improved": 0.6666666666666666,
+  "median_mlp_gain": 1.2488431785214933,
+  "worst_mlp_gain": 0.7276497425425388,
+  "fraction_guard_activated": 0.0,
+  "minimum_safety_scale": 1.0
+}
+VERDICT: BORDERLINE — optimize/calibrate

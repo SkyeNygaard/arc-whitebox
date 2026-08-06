@@ -1,0 +1,252 @@
+{
+  "terminal_state": "EXTERNALLY_BLOCKED_WITH_TESTED_SUBFAMILIES_FAILED",
+  "scientific_decision": {
+    "reject_now": [
+      "ordinary short-suffix connected-source regeneration",
+      "one-basis lower-moment pilot",
+      "same-design fold-crossfit lower anchor",
+      "tested Gaussian connected source",
+      "tested joint lower-plus-Gaussian-connected pilot",
+      "4096-row independent full-depth source stream under the 14B ceiling"
+    ],
+    "still_open_only": [
+      "a full-depth analytic/shared-arithmetic joint-scalar recurrence",
+      "an inherited checkpoint that estimates the same joint scalar state, not only factorized connected c21"
+    ],
+    "reason_not_global_fail": "The packaged artifacts omit official/fresh weights, high-precision reference moments, frozen sparse arrays, and three helper modules needed for the exact composed-control runner."
+  },
+  "hard_gate": {
+    "exact_anchor_ratio": 0.22399526692739602,
+    "minimum_retention": 0.7,
+    "candidate_ratio_threshold_70pct": 0.4567966868491773,
+    "preferred_ratio_threshold_90pct": 0.3015957402346564,
+    "hard_added_compute_B": 14.0,
+    "preferred_added_compute_B": 10.0
+  },
+  "component_ablation": {
+    "exact": {
+      "ratio": 0.22399526692739602,
+      "retained_exact_improvement": 1.0
+    },
+    "lower_only": {
+      "ratio": 0.6332034185614777,
+      "retained_exact_improvement": 0.4726731240235933
+    },
+    "connected_only": {
+      "ratio": 1.5804402083791558,
+      "retained_exact_improvement": -0.7479853970489238
+    },
+    "tested_fixed_joint": {
+      "name": "l0.02_c0.1",
+      "ratio": 1.0084634424916554,
+      "retained_exact_improvement": -0.010906431534437015
+    },
+    "frozen_one_basis_lower_holdout": {
+      "ratio": 1.0493608152547214,
+      "retained_exact_improvement": -0.0636089100375411,
+      "wins": 6,
+      "networks": 16,
+      "worst": 1.254304873226265
+    },
+    "same_design_crossfit_lower": {
+      "ratio": 1.006825001646831,
+      "retained_exact_improvement": -0.008795051571151203
+    }
+  },
+  "source_localization": {
+    "median_last8_signed_fraction": 0.23554381405900196,
+    "median_last16_signed_fraction": 0.33789559794025315,
+    "median_last24_signed_fraction": 0.8249074105059562,
+    "median_effective_source_layers": 19.22194375539427,
+    "median_rank4_frobenius_capture": 0.9664554621935295,
+    "max_terminal_identity_error": 1.9984014443252818e-15
+  },
+  "source_cost_frontier": {
+    "rows": [
+      {
+        "support": 8,
+        "depth": 8,
+        "added_compute_B": 4.940890112,
+        "median_signed_connected_fraction": 0.23554381405900196,
+        "under_14B": true,
+        "at_least_70pct_signed_fraction": false
+      },
+      {
+        "support": 8,
+        "depth": 12,
+        "added_compute_B": 7.25614592,
+        "median_signed_connected_fraction": 0.27353694391718475,
+        "under_14B": true,
+        "at_least_70pct_signed_fraction": false
+      },
+      {
+        "support": 8,
+        "depth": 16,
+        "added_compute_B": 9.571401728,
+        "median_signed_connected_fraction": 0.33789559794025315,
+        "under_14B": true,
+        "at_least_70pct_signed_fraction": false
+      },
+      {
+        "support": 8,
+        "depth": 24,
+        "added_compute_B": 14.201913344000001,
+        "median_signed_connected_fraction": 0.8249074105059562,
+        "under_14B": false,
+        "at_least_70pct_signed_fraction": true
+      },
+      {
+        "support": 8,
+        "depth": 30,
+        "added_compute_B": 17.674797056,
+        "median_signed_connected_fraction": 1.0,
+        "under_14B": false,
+        "at_least_70pct_signed_fraction": true
+      },
+      {
+        "support": 16,
+        "depth": 8,
+        "added_compute_B": 5.530189824,
+        "median_signed_connected_fraction": 0.23554381405900196,
+        "under_14B": true,
+        "at_least_70pct_signed_fraction": false
+      },
+      {
+        "support": 16,
+        "depth": 12,
+        "added_compute_B": 7.988051968,
+        "median_signed_connected_fraction": 0.27353694391718475,
+        "under_14B": true,
+        "at_least_70pct_signed_fraction": false
+      },
+      {
+        "support": 16,
+        "depth": 16,
+        "added_compute_B": 10.445914112,
+        "median_signed_connected_fraction": 0.33789559794025315,
+        "under_14B": true,
+        "at_least_70pct_signed_fraction": false
+      },
+      {
+        "support": 16,
+        "depth": 24,
+        "added_compute_B": 15.361638399999999,
+        "median_signed_connected_fraction": 0.8249074105059562,
+        "under_14B": false,
+        "at_least_70pct_signed_fraction": true
+      },
+      {
+        "support": 16,
+        "depth": 30,
+        "added_compute_B": 19.048431616,
+        "median_signed_connected_fraction": 1.0,
+        "under_14B": false,
+        "at_least_70pct_signed_fraction": true
+      },
+      {
+        "support": 32,
+        "depth": 8,
+        "added_compute_B": 6.708789248,
+        "median_signed_connected_fraction": 0.23554381405900196,
+        "under_14B": true,
+        "at_least_70pct_signed_fraction": false
+      },
+      {
+        "support": 32,
+        "depth": 12,
+        "added_compute_B": 9.451864064,
+        "median_signed_connected_fraction": 0.27353694391718475,
+        "under_14B": true,
+        "at_least_70pct_signed_fraction": false
+      },
+      {
+        "support": 32,
+        "depth": 16,
+        "added_compute_B": 12.19493888,
+        "median_signed_connected_fraction": 0.33789559794025315,
+        "under_14B": true,
+        "at_least_70pct_signed_fraction": false
+      },
+      {
+        "support": 32,
+        "depth": 24,
+        "added_compute_B": 17.681088512,
+        "median_signed_connected_fraction": 0.8249074105059562,
+        "under_14B": false,
+        "at_least_70pct_signed_fraction": true
+      },
+      {
+        "support": 32,
+        "depth": 30,
+        "added_compute_B": 21.795700736,
+        "median_signed_connected_fraction": 1.0,
+        "under_14B": false,
+        "at_least_70pct_signed_fraction": true
+      }
+    ],
+    "under_14B_and_at_least_70pct_signed_fraction": [],
+    "intersection_exists": false,
+    "caveat": "Signed connected-source fraction is not identical to retained final MSE improvement; it is used here only as a necessary localization diagnostic."
+  },
+  "implemented_checkpoint_audit": {
+    "profiles": {
+      "q32_h24": {
+        "flopscope_B": 10.338420542,
+        "profiled_controls": 2,
+        "scope": "adjoint contraction and one-off handoff eigendecomposition",
+        "relative_error_vs_factorized": 0.0230961659625805,
+        "relative_error_vs_oracle": 0.31145539731005667,
+        "cosine_vs_factorized": 0.999983578453664
+      },
+      "q32_h27": {
+        "flopscope_B": 7.314835262,
+        "profiled_controls": 2,
+        "scope": "adjoint contraction and one-off handoff eigendecomposition",
+        "relative_error_vs_factorized": 0.07742002513249106,
+        "relative_error_vs_oracle": 0.34999021208409187,
+        "cosine_vs_factorized": 0.9998594654097703
+      },
+      "q64_h27": {
+        "flopscope_B": 10.90945235,
+        "profiled_controls": 2,
+        "scope": "adjoint contraction and one-off handoff eigendecomposition",
+        "relative_error_vs_factorized": 0.01584121527576817,
+        "relative_error_vs_oracle": 0.3065420698813077,
+        "cosine_vs_factorized": 0.9999926013511378
+      }
+    },
+    "caveat": "These profiles cover two connected controls and a factorized target. They do not include the full 32-128-scalar joint state, lower-order recurrence, or the unchanged composed-control replay."
+  },
+  "scalar_contract": {
+    "probe_count": 32,
+    "scalar_slots_before_deduplication": 128,
+    "families": [
+      "target mean projection z_p = E[v_p^T h]",
+      "marginal second moment s_p = E[h_i^2]",
+      "row-direction second moment u_p = E[h_i(v_p^T h)]",
+      "cubic contraction r_p = E[h_i^2(v_p^T h)]"
+    ],
+    "composition": "a_p = (r_p - (m^T v_p)s_p - 2m_i u_p + 2m_i^2 z_p)/(D+1)"
+  },
+  "missing_assets": [
+    "official/fresh weight files used by the local ARC harness",
+    "high-precision target moments/corpora",
+    "frozen sparse probe arrays and coefficients for a fresh composed-control block",
+    "sparse_adjoint_control.py",
+    "sparse_crossfit_lower_fast.py",
+    "sparse_lower_moment_pilot.py"
+  ],
+  "provenance_sha256": {
+    "lowerpilot_screen8_merged.json": "64511195fcd18825825704795cfe09b3fbb16bae302c9748361fa43776a1319b",
+    "joint_adjoint_pilot_screen8.json": "4886f89dec3765369c2ee280c1c1f279a7a60db16e87130b97721625d4031feb",
+    "lowerpilot_frozen_holdout16.json": "6f27e965aa0d8b4a8bfbe4d2fcfd7067a02845234ce965af49d0a1a84dc70606",
+    "crossfit_lower_fast_screen8.json": "fafb909210e68a6630b454ef3acb5f8cf620bd8cead4fda766b5f06c95db7a3c",
+    "adjoint_source_full8_merged.json": "ff35287dbfede8665ed01b5a80c3cccc6bba9d8287aa3dc5971a70907b42a258",
+    "sparse_radial_highref8_merged.json": "04f3bb109a6120c713b59ab6e4bdbe6391c1cf47314db7262004b7e4af037237",
+    "agent2_sparse_adjoint_results.json": "6ff1e74e7d7abdfbf555cdaea24737ff35a7d342c9f010e5d2cea6db71ee6a0b",
+    "adjoint_k3_flopscope_q32_h24.json": "b24b8819c1186ec9c140ba198865732001ea3d88a86076581e758d61debfa7e4",
+    "adjoint_k3_flopscope_q32_h27.json": "c732d0778b2991ee312218760b472e856665b3182c85d9084d3cf5ed3c5f789d",
+    "adjoint_k3_flopscope_q64_h27.json": "a371adaa45e8a37e952477171c8de916006d84795aa14fabdf969bb56ac944e9",
+    "adjoint_k3_full_holdout8.json": "374a8b346076bad5cb1d6948a0b42a16b5f3fe12d078a86c9a5b55cde3b16e7e"
+  }
+}

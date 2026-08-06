@@ -1,0 +1,195 @@
+{
+  "baseline": {
+    "checksum": 113.60143452043215,
+    "max_seconds": 0.013558548999753839,
+    "median_seconds": 0.013413739000043279,
+    "min_seconds": 0.013268929000332719,
+    "peak_rss_delta_mib": 0.0
+  },
+  "protocol": {
+    "chunk_rows": 2048,
+    "dtype_accumulation": "float64",
+    "dtype_preactivation": "float32",
+    "final_peak_rss_mib": 499.93359375,
+    "initial_rss_mib": 301.45703125,
+    "protected_data_opened": false,
+    "ranks": [
+      20,
+      24,
+      32
+    ],
+    "repeats": 2,
+    "seed": 20260730,
+    "shape": [
+      66048,
+      256
+    ],
+    "source_batches": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "thread_env": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    }
+  },
+  "ranks": {
+    "20": {
+      "batched_1": {
+        "checksum": 2311.5589076585875,
+        "max_abs_vs_batch1": 0.0,
+        "max_seconds": 0.3920557960000224,
+        "median_seconds": 0.3863172230003329,
+        "min_seconds": 0.3805786500006434,
+        "peak_rss_delta_mib": 0.0,
+        "throughput_shifted_entries_per_second_median": 875357710.8823559
+      },
+      "batched_2": {
+        "checksum": 2311.5589076585875,
+        "max_abs_vs_batch1": 0.0,
+        "max_seconds": 0.4221497590006038,
+        "median_seconds": 0.41893866900045396,
+        "min_seconds": 0.4157275790003041,
+        "peak_rss_delta_mib": 0.0,
+        "throughput_shifted_entries_per_second_median": 807196339.2799951
+      },
+      "batched_4": {
+        "checksum": 2311.5589076585875,
+        "max_abs_vs_batch1": 0.0,
+        "max_seconds": 0.4369173340000998,
+        "median_seconds": 0.4162263910002366,
+        "min_seconds": 0.39553544800037344,
+        "peak_rss_delta_mib": 0.0,
+        "throughput_shifted_entries_per_second_median": 812456315.3896884
+      },
+      "batched_8": {
+        "checksum": 2311.5589076585875,
+        "max_abs_vs_batch1": 0.0,
+        "max_seconds": 0.4707179340002767,
+        "median_seconds": 0.45700673300052586,
+        "min_seconds": 0.443295532000775,
+        "peak_rss_delta_mib": 0.0,
+        "throughput_shifted_entries_per_second_median": 739957938.4306597
+      }
+    },
+    "24": {
+      "batched_1": {
+        "checksum": 2772.3922185948077,
+        "max_abs_vs_batch1": 0.0,
+        "max_seconds": 0.49715943400042306,
+        "median_seconds": 0.4607661830004872,
+        "min_seconds": 0.4243729320005514,
+        "peak_rss_delta_mib": 0.0,
+        "throughput_shifted_entries_per_second_median": 880704632.7867575
+      },
+      "batched_2": {
+        "checksum": 2772.3922185948077,
+        "max_abs_vs_batch1": 0.0,
+        "max_seconds": 0.49115773499943316,
+        "median_seconds": 0.48911477149977145,
+        "min_seconds": 0.48707180800010974,
+        "peak_rss_delta_mib": 0.0,
+        "throughput_shifted_entries_per_second_median": 829659899.1596589
+      },
+      "batched_4": {
+        "checksum": 2772.3922185948077,
+        "max_abs_vs_batch1": 0.0,
+        "max_seconds": 0.5150315589999082,
+        "median_seconds": 0.5002169029999095,
+        "min_seconds": 0.48540224699991086,
+        "peak_rss_delta_mib": 0.0,
+        "throughput_shifted_entries_per_second_median": 811245900.6609647
+      },
+      "batched_8": {
+        "checksum": 2772.3922185948077,
+        "max_abs_vs_batch1": 0.0,
+        "max_seconds": 0.6278587189999598,
+        "median_seconds": 0.609817680499873,
+        "min_seconds": 0.5917766419997861,
+        "peak_rss_delta_mib": 0.0,
+        "throughput_shifted_entries_per_second_median": 665443008.5847348
+      }
+    },
+    "32": {
+      "batched_1": {
+        "checksum": 3697.1895876639237,
+        "max_abs_vs_batch1": 0.0,
+        "max_seconds": 0.6130654959997628,
+        "median_seconds": 0.5913652519998323,
+        "min_seconds": 0.5696650079999017,
+        "peak_rss_delta_mib": 0.0,
+        "throughput_shifted_entries_per_second_median": 914942523.5423766
+      },
+      "batched_2": {
+        "checksum": 3697.1895876639237,
+        "max_abs_vs_batch1": 0.0,
+        "max_seconds": 0.6751903780004795,
+        "median_seconds": 0.6671453170001769,
+        "min_seconds": 0.6591002559998742,
+        "peak_rss_delta_mib": 0.0,
+        "throughput_shifted_entries_per_second_median": 811015534.7157395
+      },
+      "batched_4": {
+        "checksum": 3697.1895876639237,
+        "max_abs_vs_batch1": 0.0,
+        "max_seconds": 0.725896386000386,
+        "median_seconds": 0.6907420285001535,
+        "min_seconds": 0.6555876709999211,
+        "peak_rss_delta_mib": 0.0,
+        "throughput_shifted_entries_per_second_median": 783310112.4233673
+      },
+      "batched_8": {
+        "checksum": 3697.1895876639237,
+        "max_abs_vs_batch1": 0.0,
+        "max_seconds": 0.8330758470001456,
+        "median_seconds": 0.787660756999685,
+        "min_seconds": 0.7422456669992243,
+        "peak_rss_delta_mib": 0.0,
+        "throughput_shifted_entries_per_second_median": 686926714.5680795
+      }
+    }
+  },
+  "sorted_stoploss": {
+    "preprocess": {
+      "max_seconds": 1.392095125999731,
+      "median_seconds": 1.392095125999731,
+      "min_seconds": 1.392095125999731,
+      "peak_rss_delta_mib": 198.4765625,
+      "prefix_bytes": 135268352,
+      "sorted_bytes": 67633152
+    },
+    "queries": {
+      "20": {
+        "checksum": 2311.5589076480132,
+        "max_abs_vs_scan": 1.069836569334015e-08,
+        "max_seconds": 0.005719730000237178,
+        "median_seconds": 0.005678899500253465,
+        "min_seconds": 0.005638069000269752,
+        "peak_rss_delta_mib": 0.0,
+        "rms_vs_scan": 3.5483551964438104e-09
+      },
+      "24": {
+        "checksum": 2772.3922185163274,
+        "max_abs_vs_scan": 1.0723114785005095e-08,
+        "max_seconds": 0.006171260999508377,
+        "median_seconds": 0.00601966049953262,
+        "min_seconds": 0.005868059999556863,
+        "peak_rss_delta_mib": 0.0,
+        "rms_vs_scan": 3.5253361417062163e-09
+      },
+      "32": {
+        "checksum": 3697.189587425191,
+        "max_abs_vs_scan": 1.0723114785005095e-08,
+        "max_seconds": 0.006901075000314449,
+        "median_seconds": 0.0068362339998202515,
+        "min_seconds": 0.0067713929993260535,
+        "peak_rss_delta_mib": 0.0,
+        "rms_vs_scan": 3.509303100920962e-09
+      }
+    }
+  }
+}

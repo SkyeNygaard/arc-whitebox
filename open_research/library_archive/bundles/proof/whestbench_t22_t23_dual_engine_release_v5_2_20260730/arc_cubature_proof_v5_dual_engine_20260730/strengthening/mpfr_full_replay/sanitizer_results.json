@@ -1,0 +1,35 @@
+{
+  "sanitizers": [
+    "AddressSanitizer",
+    "UndefinedBehaviorSanitizer",
+    "LeakSanitizer"
+  ],
+  "artifacts": {
+    "verify_certified.json": {
+      "reference_sha256": "e015e7ef4bca26a22ec6ce5db7a3fd58526ab7d9fc8789b5f30adf87e0a9ed9d",
+      "sanitizer_sha256": "e015e7ef4bca26a22ec6ce5db7a3fd58526ab7d9fc8789b5f30adf87e0a9ed9d",
+      "byte_identical": true
+    },
+    "regenerate_mesh.json": {
+      "reference_sha256": "090dc360561538cf4752dd16d3d34dfe87eb1a7ea335131c1508d384dd1efad5",
+      "sanitizer_sha256": "090dc360561538cf4752dd16d3d34dfe87eb1a7ea335131c1508d384dd1efad5",
+      "byte_identical": true
+    },
+    "global_minorant.json": {
+      "reference_sha256": "d01fd6409c35e64bc091f6bf975a4ea3272f7f8b67e3983cc7f4b802a876de4b",
+      "sanitizer_sha256": "d01fd6409c35e64bc091f6bf975a4ea3272f7f8b67e3983cc7f4b802a876de4b",
+      "byte_identical": true
+    },
+    "kernel_mean_512.json": {
+      "reference_sha256": "020bf943fd9c80cf164efe293888481080b84d43e16ed3d2594a3193c2c58748",
+      "sanitizer_sha256": "020bf943fd9c80cf164efe293888481080b84d43e16ed3d2594a3193c2c58748",
+      "byte_identical": true
+    },
+    "final_theorem.json": {
+      "reference_sha256": "78589ce6d1d815982d61da87c6f585cd0455254908cab68d0a068ea3ca9c4f20",
+      "sanitizer_sha256": "78589ce6d1d815982d61da87c6f585cd0455254908cab68d0a068ea3ca9c4f20",
+      "byte_identical": true
+    }
+  },
+  "passed": true
+}

@@ -1,0 +1,41 @@
+{
+  "design": {
+    "label": "base-average oracle scalar minus pairwise phase flux",
+    "features": "exact weight spectra, symmetry/nonnormality, forward/backward signed/absolute/squared path contractions",
+    "ridge_alpha": 57.5,
+    "calibration": "eight-fold base-group scalar clipped [0,1]",
+    "n_features": 3680
+  },
+  "model_sha256": "b7026dc497c967165278291bbfe275c1100b531bfd78f62eefbf1d2cc0c807dd",
+  "calibration": 0.8817084878458401,
+  "validation": {
+    "n": 48,
+    "aggregate": 1.3024793342445555,
+    "wins": 19,
+    "median": 1.044268808274971,
+    "worst": 10.5655454222446,
+    "scale_corr": 0.0964014368233082,
+    "sign": 0.5208333333333334,
+    "pred_positive": 0.7708333333333334
+  },
+  "exposed_primary_terminal": {
+    "n": 48,
+    "aggregate": 4.116126263505885,
+    "wins": 15,
+    "median": 1.1287160818775825,
+    "worst": 165.96098343770564,
+    "scale_corr": -0.015586525013884148,
+    "sign": 0.4583333333333333,
+    "pred_positive": 0.7291666666666666
+  },
+  "exposed_rescue_terminal": {
+    "n": 48,
+    "aggregate": 1.4052132860458078,
+    "wins": 12,
+    "median": 1.3105552757171688,
+    "worst": 13.754266894295414,
+    "scale_corr": -0.2849518950596367,
+    "sign": 0.375,
+    "pred_positive": 0.75
+  }
+}

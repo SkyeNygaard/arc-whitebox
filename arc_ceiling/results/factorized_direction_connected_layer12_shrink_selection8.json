@@ -1,0 +1,745 @@
+{
+  "protocol": {
+    "indices": [
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167
+    ],
+    "layer": 12,
+    "rotation_seed": 3,
+    "rank": 4,
+    "folds": 6,
+    "ridge": 0.1,
+    "scales": [
+      1.153
+    ],
+    "correction_multipliers": [
+      0.05,
+      0.1,
+      0.2,
+      0.3,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "factorized_dir": "arc_ceiling/results/factorized_k3_depth_audit/layer12",
+    "out": "arc_ceiling/results/factorized_direction_connected_layer12_shrink_selection8.json",
+    "target_leakage": false,
+    "oracle_anchor_is_ceiling_only": true
+  },
+  "summary": {
+    "factorized_dirs_oracle_exact_correction0.05": {
+      "ratio": 0.9674617983899847,
+      "wins": 7,
+      "worst": 1.009833648712554
+    },
+    "factorized_dirs_oracle_exact_correction0.1": {
+      "ratio": 0.9366266116684835,
+      "wins": 7,
+      "worst": 1.0199559486724041
+    },
+    "factorized_dirs_oracle_exact_correction0.2": {
+      "ratio": 0.8800652828909589,
+      "wins": 7,
+      "worst": 1.0410665023335917
+    },
+    "factorized_dirs_oracle_exact_correction0.3": {
+      "ratio": 0.8303160136674215,
+      "wins": 7,
+      "worst": 1.0633316609837127
+    },
+    "factorized_dirs_oracle_exact_correction0.5": {
+      "ratio": 0.7512536538823518,
+      "wins": 7,
+      "worst": 1.1113257932508278
+    },
+    "factorized_dirs_oracle_exact_correction0.75": {
+      "ratio": 0.6907435391422025,
+      "wins": 7,
+      "worst": 1.177813111647044
+    },
+    "factorized_dirs_oracle_exact_correction1": {
+      "ratio": 0.6728087966144942,
+      "wins": 7,
+      "worst": 1.2515167112238346
+    },
+    "factorized_dirs_oracle_optimal_scale_correction0.05": {
+      "ratio": 0.9836656986464384,
+      "wins": 6,
+      "worst": 1.0403176456402543
+    },
+    "factorized_dirs_oracle_optimal_scale_correction0.1": {
+      "ratio": 0.9739930657685419,
+      "wins": 6,
+      "worst": 1.0959708477991827
+    },
+    "factorized_dirs_oracle_optimal_scale_correction0.2": {
+      "ratio": 0.9746328054396437,
+      "wins": 6,
+      "worst": 1.2532839216723282
+    },
+    "factorized_dirs_oracle_optimal_scale_correction0.3": {
+      "ratio": 1.0019192190133646,
+      "wins": 4,
+      "worst": 1.4719392216194882
+    },
+    "factorized_dirs_oracle_optimal_scale_correction0.5": {
+      "ratio": 1.136432067868499,
+      "wins": 3,
+      "worst": 2.0932764997358677
+    },
+    "factorized_dirs_oracle_optimal_scale_correction0.75": {
+      "ratio": 1.454460669639435,
+      "wins": 1,
+      "worst": 3.214998119047652
+    },
+    "factorized_dirs_oracle_optimal_scale_correction1": {
+      "ratio": 1.9390309833015236,
+      "wins": 1,
+      "worst": 4.720108651322142
+    },
+    "factorized_dirs_factorized_scale1.153_correction0.05": {
+      "ratio": 0.9815192820456023,
+      "wins": 6,
+      "worst": 1.0259746129183538
+    },
+    "factorized_dirs_factorized_scale1.153_correction0.1": {
+      "ratio": 0.9681794513229387,
+      "wins": 6,
+      "worst": 1.0534237807645201
+    },
+    "factorized_dirs_factorized_scale1.153_correction0.2": {
+      "ratio": 0.9569224515729837,
+      "wins": 6,
+      "worst": 1.112745781240407
+    },
+    "factorized_dirs_factorized_scale1.153_correction0.3": {
+      "ratio": 0.9662290007500554,
+      "wins": 6,
+      "worst": 1.1779660014275035
+    },
+    "factorized_dirs_factorized_scale1.153_correction0.5": {
+      "ratio": 1.0465327458852858,
+      "wins": 5,
+      "worst": 1.6203546164367153
+    },
+    "factorized_dirs_factorized_scale1.153_correction0.75": {
+      "ratio": 1.2625823900189836,
+      "wins": 2,
+      "worst": 3.2272286825183447
+    },
+    "factorized_dirs_factorized_scale1.153_correction1": {
+      "ratio": 1.6071542149467077,
+      "wins": 2,
+      "worst": 5.698567253842086
+    },
+    "oracle_dirs_oracle_exact_correction0.05": {
+      "ratio": 0.9687141489974921,
+      "wins": 7,
+      "worst": 1.01284407305742
+    },
+    "oracle_dirs_oracle_exact_correction0.1": {
+      "ratio": 0.9391878303264705,
+      "wins": 7,
+      "worst": 1.026000573007928
+    },
+    "oracle_dirs_oracle_exact_correction0.2": {
+      "ratio": 0.8854137899790366,
+      "wins": 7,
+      "worst": 1.0532508535885754
+    },
+    "oracle_dirs_oracle_exact_correction0.3": {
+      "ratio": 0.838677878957649,
+      "wins": 7,
+      "worst": 1.0817508417417914
+    },
+    "oracle_dirs_oracle_exact_correction0.5": {
+      "ratio": 0.7663204448930535,
+      "wins": 7,
+      "worst": 1.142499940766114
+    },
+    "oracle_dirs_oracle_exact_correction0.75": {
+      "ratio": 0.7154631297714371,
+      "wins": 7,
+      "worst": 1.2254659196424715
+    },
+    "oracle_dirs_oracle_exact_correction1": {
+      "ratio": 0.7085941229377187,
+      "wins": 6,
+      "worst": 1.3162425708477243
+    },
+    "oracle_dirs_oracle_optimal_scale_correction0.05": {
+      "ratio": 0.9954524193795575,
+      "wins": 3,
+      "worst": 1.0460147432035924
+    },
+    "oracle_dirs_oracle_optimal_scale_correction0.1": {
+      "ratio": 0.9973505597908857,
+      "wins": 3,
+      "worst": 1.099449103006542
+    },
+    "oracle_dirs_oracle_optimal_scale_correction0.2": {
+      "ratio": 1.0204840037087126,
+      "wins": 3,
+      "worst": 1.2285766724102645
+    },
+    "oracle_dirs_oracle_optimal_scale_correction0.3": {
+      "ratio": 1.069400331753445,
+      "wins": 3,
+      "worst": 1.3873827082110883
+    },
+    "oracle_dirs_oracle_optimal_scale_correction0.5": {
+      "ratio": 1.2445816402237952,
+      "wins": 3,
+      "worst": 1.7940301790044255
+    },
+    "oracle_dirs_oracle_optimal_scale_correction0.75": {
+      "ratio": 1.6085869990257318,
+      "wins": 1,
+      "worst": 2.4692808909800794
+    },
+    "oracle_dirs_oracle_optimal_scale_correction1": {
+      "ratio": 2.133735383621023,
+      "wins": 1,
+      "worst": 3.330022017938079
+    },
+    "oracle_dirs_factorized_scale1.153_correction0.05": {
+      "ratio": 1.020712366516904,
+      "wins": 3,
+      "worst": 1.1766833486365549
+    },
+    "oracle_dirs_factorized_scale1.153_correction0.1": {
+      "ratio": 1.0527315500678742,
+      "wins": 3,
+      "worst": 1.4238510981339771
+    },
+    "oracle_dirs_factorized_scale1.153_correction0.2": {
+      "ratio": 1.1506903682718022,
+      "wins": 3,
+      "worst": 2.1296397997114807
+    },
+    "oracle_dirs_factorized_scale1.153_correction0.3": {
+      "ratio": 1.2938764546118273,
+      "wins": 3,
+      "worst": 3.117366104732605
+    },
+    "oracle_dirs_factorized_scale1.153_correction0.5": {
+      "ratio": 1.7159304317001602,
+      "wins": 1,
+      "worst": 5.938631525105693
+    },
+    "oracle_dirs_factorized_scale1.153_correction0.75": {
+      "ratio": 2.4979012863260515,
+      "wins": 1,
+      "worst": 11.05111231994203
+    },
+    "oracle_dirs_factorized_scale1.153_correction1": {
+      "ratio": 3.5625425668024415,
+      "wins": 1,
+      "worst": 17.92570313630072
+    }
+  },
+  "records": [
+    {
+      "index": 160,
+      "name": "amy-scott",
+      "baseline_mse": 2.1440298520066416e-07,
+      "method_mses": {
+        "factorized_dirs_oracle_exact_correction0.05": 2.1028299689621167e-07,
+        "factorized_dirs_oracle_exact_correction0.1": 2.063840563671778e-07,
+        "factorized_dirs_oracle_exact_correction0.2": 1.992493186353722e-07,
+        "factorized_dirs_oracle_exact_correction0.3": 1.9299877200527457e-07,
+        "factorized_dirs_oracle_exact_correction0.5": 1.8315025205014627e-07,
+        "factorized_dirs_oracle_exact_correction0.75": 1.758131770532399e-07,
+        "factorized_dirs_oracle_exact_correction1": 1.740022964419091e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.05": 2.0382637051422172e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.1": 1.959012990748143e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.2": 1.880057859370709e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.3": 1.9071644578744722e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.5": 2.2795628445251518e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.75": 3.3416580584198755e-07,
+        "factorized_dirs_oracle_optimal_scale_correction1": 5.06663908407118e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.05": 2.1114270420290665e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.1": 2.080397687577255e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.2": 2.0230593452512092e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.3": 1.9720148250284605e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.5": 1.888807250892764e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.75": 1.8202005325541619e-07,
+        "factorized_dirs_factorized_scale1.153_correction1": 1.7909302023611458e-07,
+        "oracle_dirs_oracle_exact_correction0.05": 2.1221337796303582e-07,
+        "oracle_dirs_oracle_exact_correction0.1": 2.1008606395223715e-07,
+        "oracle_dirs_oracle_exact_correction0.2": 2.060183156111083e-07,
+        "oracle_dirs_oracle_exact_correction0.3": 2.021997401772555e-07,
+        "oracle_dirs_oracle_exact_correction0.5": 1.9531010803140252e-07,
+        "oracle_dirs_oracle_exact_correction0.75": 1.8809966545258537e-07,
+        "oracle_dirs_oracle_exact_correction1": 1.8244655354430172e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.05": 2.1800259934438774e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.1": 2.217481863995278e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.2": 2.2967727924409515e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.3": 2.3819026373435657e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.5": 2.5696790765197575e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.75": 2.837243530560441e-07,
+        "oracle_dirs_oracle_optimal_scale_correction1": 3.141301212457131e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.05": 2.5228442258359123e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.1": 3.0527792592116853e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.2": 4.56601130460286e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.3": 6.683725988180367e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.5": 1.2732603269894336e-06,
+        "oracle_dirs_factorized_scale1.153_correction0.75": 2.3693914711834083e-06,
+        "oracle_dirs_factorized_scale1.153_correction1": 3.843324264243782e-06
+      },
+      "anchor_diagnostics": {
+        "factorized_dirs": {
+          "oracle_optimal_scale": 1.2622352776081853,
+          "unscaled_relative_error": 0.2093796735985549,
+          "optimal_scaled_relative_error": 0.026616166482248373
+        },
+        "oracle_dirs": {
+          "oracle_optimal_scale": 1.2732823940720848,
+          "unscaled_relative_error": 0.21523467674083346,
+          "optimal_scaled_relative_error": 0.01653060097165234
+        }
+      },
+      "seconds": 0.844493041979149
+    },
+    {
+      "index": 161,
+      "name": "dylan-brown",
+      "baseline_mse": 2.24091425569048e-07,
+      "method_mses": {
+        "factorized_dirs_oracle_exact_correction0.05": 2.1659812223796693e-07,
+        "factorized_dirs_oracle_exact_correction0.1": 2.0975336667401433e-07,
+        "factorized_dirs_oracle_exact_correction0.2": 1.980094988474964e-07,
+        "factorized_dirs_oracle_exact_correction0.3": 1.8885982208948784e-07,
+        "factorized_dirs_oracle_exact_correction0.5": 1.78343041779017e-07,
+        "factorized_dirs_oracle_exact_correction0.75": 1.7978939115126263e-07,
+        "factorized_dirs_oracle_exact_correction1": 1.974494347017089e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.05": 2.1590696250415006e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.1": 2.0845349624340785e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.2": 1.9573955413442482e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.3": 1.859495992421021e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.5": 1.7514165110743213e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.75": 1.7807914403278974e-07,
+        "factorized_dirs_oracle_optimal_scale_correction1": 1.992915570622626e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.05": 2.14388626955662e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.1": 2.0626757387643512e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.2": 1.947707043204629e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.3": 1.8960081690110356e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.5": 1.982419884722883e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.75": 2.446327274548011e-07,
+        "factorized_dirs_factorized_scale1.153_correction1": 3.305671047912436e-07,
+        "oracle_dirs_oracle_exact_correction0.05": 2.1686413299275602e-07,
+        "oracle_dirs_oracle_exact_correction0.1": 2.1031478657730913e-07,
+        "oracle_dirs_oracle_exact_correction0.2": 1.9924993222887927e-07,
+        "oracle_dirs_oracle_exact_correction0.3": 1.9089686252372793e-07,
+        "oracle_dirs_oracle_exact_correction0.5": 1.8232607704333386e-07,
+        "oracle_dirs_oracle_exact_correction0.75": 1.868663838114169e-07,
+        "oracle_dirs_oracle_exact_correction1": 2.0835534460009922e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.05": 2.1871789124589405e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.1": 2.1376462599621186e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.2": 2.0511890271720952e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.3": 1.98154255732019e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.5": 1.8926819064314944e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.75": 1.876166634348478e-07,
+        "oracle_dirs_oracle_optimal_scale_correction1": 1.964718630629643e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.05": 2.2979373158371653e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.1": 2.3605303865463813e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.2": 2.5024265596514184e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.3": 2.66660277500623e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.5": 3.061795332464103e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.75": 3.6811112669400537e-07,
+        "oracle_dirs_factorized_scale1.153_correction1": 4.4396774654749446e-07
+      },
+      "anchor_diagnostics": {
+        "factorized_dirs": {
+          "oracle_optimal_scale": 1.19689476616107,
+          "unscaled_relative_error": 0.1648918178387876,
+          "optimal_scaled_relative_error": 0.011448828787708663
+        },
+        "oracle_dirs": {
+          "oracle_optimal_scale": 1.2263072283328442,
+          "unscaled_relative_error": 0.1846356352198618,
+          "optimal_scaled_relative_error": 0.005928846954484178
+        }
+      },
+      "seconds": 0.6418549588415772
+    },
+    {
+      "index": 162,
+      "name": "yolanda-hawkins",
+      "baseline_mse": 2.3177693298152411e-07,
+      "method_mses": {
+        "factorized_dirs_oracle_exact_correction0.05": 2.340561459201376e-07,
+        "factorized_dirs_oracle_exact_correction0.1": 2.3640226155955068e-07,
+        "factorized_dirs_oracle_exact_correction0.2": 2.412952009406826e-07,
+        "factorized_dirs_oracle_exact_correction0.3": 2.464557511249547e-07,
+        "factorized_dirs_oracle_exact_correction0.5": 2.5757968390293624e-07,
+        "factorized_dirs_oracle_exact_correction0.75": 2.729899106429773e-07,
+        "factorized_dirs_oracle_exact_correction1": 2.900727049025842e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.05": 2.3104635955727282e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.1": 2.3062078558330937e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.2": 2.306846359863138e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.3": 2.3196848419053534e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.5": 2.381961740026257e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.75": 2.5284327389956206e-07,
+        "factorized_dirs_oracle_optimal_scale_correction1": 2.751153600540963e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.05": 2.2610763956766037e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.1": 2.2070289674929507e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.2": 2.1068706289907608e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.3": 2.017294314308652e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.5": 1.8698877564047355e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.75": 1.74515344301265e-07,
+        "factorized_dirs_factorized_scale1.153_correction1": 1.6865567784960556e-07,
+        "oracle_dirs_oracle_exact_correction0.05": 2.3475389284176352e-07,
+        "oracle_dirs_oracle_exact_correction0.1": 2.3780326604906387e-07,
+        "oracle_dirs_oracle_exact_correction0.2": 2.441192525049323e-07,
+        "oracle_dirs_oracle_exact_correction0.3": 2.507248923490945e-07,
+        "oracle_dirs_oracle_exact_correction0.5": 2.648051322023429e-07,
+        "oracle_dirs_oracle_exact_correction0.75": 2.8403473232811494e-07,
+        "oracle_dirs_oracle_exact_correction1": 3.05074666130802e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.05": 2.323097274779006e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.1": 2.3345055101396106e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.2": 2.3755628520509713e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.3": 2.4409413555495394e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.5": 2.644661847308333e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.75": 3.0361189959343987e-07,
+        "oracle_dirs_oracle_optimal_scale_correction1": 3.5795834044802344e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.05": 2.304315379261354e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.1": 2.294665467684823e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.2": 2.2867777614630068e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.3": 2.2941062111498532e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.5": 2.3544115782492238e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.75": 2.5153841641095054e-07,
+        "oracle_dirs_factorized_scale1.153_correction1": 2.7714577243985085e-07
+      },
+      "anchor_diagnostics": {
+        "factorized_dirs": {
+          "oracle_optimal_scale": 1.1170279790287827,
+          "unscaled_relative_error": 0.10549127051039359,
+          "optimal_scaled_relative_error": 0.012406262609804496
+        },
+        "oracle_dirs": {
+          "oracle_optimal_scale": 1.1278461026637128,
+          "unscaled_relative_error": 0.11495703994706032,
+          "optimal_scaled_relative_error": 0.019253770000974654
+        }
+      },
+      "seconds": 0.6671723339240998
+    },
+    {
+      "index": 163,
+      "name": "scott-matthews",
+      "baseline_mse": 2.5893801088228656e-07,
+      "method_mses": {
+        "factorized_dirs_oracle_exact_correction0.05": 2.5763964051692286e-07,
+        "factorized_dirs_oracle_exact_correction0.1": 2.563630541989086e-07,
+        "factorized_dirs_oracle_exact_correction0.2": 2.5387523370476483e-07,
+        "factorized_dirs_oracle_exact_correction0.3": 2.5147454939983094e-07,
+        "factorized_dirs_oracle_exact_correction0.5": 2.469345893576839e-07,
+        "factorized_dirs_oracle_exact_correction0.75": 2.417497803694399e-07,
+        "factorized_dirs_oracle_exact_correction1": 2.371095725638628e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.05": 2.693777818478309e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.1": 2.837885113140936e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.2": 3.245228457485841e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.3": 3.8114101418577143e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.5": 5.420288530682408e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.75": 8.324852179364918e-07,
+        "factorized_dirs_oracle_optimal_scale_correction1": 1.2222155453216276e-06,
+        "factorized_dirs_factorized_scale1.153_correction0.05": 2.45727527840786e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.1": 2.353673244150436e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.2": 2.2319775641078769e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.3": 2.2242930686948995e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.5": 2.550957631757675e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.75": 3.600601249128293e-07,
+        "factorized_dirs_factorized_scale1.153_correction1": 5.362814770434379e-07,
+        "oracle_dirs_oracle_exact_correction0.05": 2.575442379882597e-07,
+        "oracle_dirs_oracle_exact_correction0.1": 2.5619487343483295e-07,
+        "oracle_dirs_oracle_exact_correction0.2": 2.5362936934985596e-07,
+        "oracle_dirs_oracle_exact_correction0.3": 2.512414986273143e-07,
+        "oracle_dirs_oracle_exact_correction0.5": 2.4699865726960537e-07,
+        "oracle_dirs_oracle_exact_correction0.75": 2.4269429323624847e-07,
+        "oracle_dirs_oracle_exact_correction1": 2.395001377182353e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.05": 2.6048751502959005e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.1": 2.6318105396320607e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.2": 2.720002361893255e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.3": 2.8539555756064674e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.5": 3.2591461773895255e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.75": 4.0230422565364735e-07,
+        "oracle_dirs_oracle_optimal_scale_correction1": 5.072947032258867e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.05": 2.5050724107523064e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.1": 2.4432891755625655e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.2": 2.3872960938239586e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.3": 2.4214008636074664e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.5": 2.7599039577400555e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.75": 3.6898332402166525e-07,
+        "oracle_dirs_factorized_scale1.153_correction1": 5.182874094705005e-07
+      },
+      "anchor_diagnostics": {
+        "factorized_dirs": {
+          "oracle_optimal_scale": 1.2639796560129728,
+          "unscaled_relative_error": 0.21447373942745698,
+          "optimal_scaled_relative_error": 0.049900890144129885
+        },
+        "oracle_dirs": {
+          "oracle_optimal_scale": 1.290950939807812,
+          "unscaled_relative_error": 0.22616192427871643,
+          "optimal_scaled_relative_error": 0.019320547580588834
+        }
+      },
+      "seconds": 0.7146213750820607
+    },
+    {
+      "index": 164,
+      "name": "benjamin-walsh",
+      "baseline_mse": 3.457466003272283e-07,
+      "method_mses": {
+        "factorized_dirs_oracle_exact_correction0.05": 3.3540870469449303e-07,
+        "factorized_dirs_oracle_exact_correction0.1": 3.253065671766937e-07,
+        "factorized_dirs_oracle_exact_correction0.2": 3.0580956648592927e-07,
+        "factorized_dirs_oracle_exact_correction0.3": 2.872555982549506e-07,
+        "factorized_dirs_oracle_exact_correction0.5": 2.5297675917230014e-07,
+        "factorized_dirs_oracle_exact_correction0.75": 2.154327679052239e-07,
+        "factorized_dirs_oracle_exact_correction1": 1.837827295117327e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.05": 3.1969597911033304e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.1": 2.974766898220488e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.2": 2.645321070313188e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.3": 2.469128519550586e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.5": 2.5765032494586877e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.75": 3.5727713457819476e-07,
+        "factorized_dirs_oracle_optimal_scale_correction1": 5.526872424258438e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.05": 3.4976262249898426e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.1": 3.541017867680768e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.2": 3.6374954159828863e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.3": 3.746898648178821e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.5": 4.004482164251516e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.75": 4.3991685312442274e-07,
+        "factorized_dirs_factorized_scale1.153_correction1": 4.874640422572486e-07,
+        "oracle_dirs_oracle_exact_correction0.05": 3.354322236540203e-07,
+        "oracle_dirs_oracle_exact_correction0.1": 3.253607252612359e-07,
+        "oracle_dirs_oracle_exact_correction0.2": 3.0594636331697074e-07,
+        "oracle_dirs_oracle_exact_correction0.3": 2.875035144944332e-07,
+        "oracle_dirs_oracle_exact_correction0.5": 2.5353235621455407e-07,
+        "oracle_dirs_oracle_exact_correction0.75": 2.1653316967443225e-07,
+        "oracle_dirs_oracle_exact_correction1": 1.856059401451072e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.05": 3.034113974721785e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.1": 2.67174348302073e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.2": 2.1299471101667098e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.3": 1.832076884710326e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.5": 1.968114875990114e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.75": 3.510246944201188e-07,
+        "oracle_dirs_oracle_optimal_scale_correction1": 6.576917433647129e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.05": 3.2575065098051675e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.1": 3.0677863501590645e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.2": 2.7190640323292223e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.3": 2.411299049783024e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.5": 1.9186410905412787e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.75": 1.5332036524586857e-07,
+        "oracle_dirs_factorized_scale1.153_correction1": 1.403749559898246e-07
+      },
+      "anchor_diagnostics": {
+        "factorized_dirs": {
+          "oracle_optimal_scale": 1.3206655945874353,
+          "unscaled_relative_error": 0.24902324170143267,
+          "optimal_scaled_relative_error": 0.057003185301232454
+        },
+        "oracle_dirs": {
+          "oracle_optimal_scale": 1.341388279580316,
+          "unscaled_relative_error": 0.2578952730345896,
+          "optimal_scaled_relative_error": 0.04310682399598166
+        }
+      },
+      "seconds": 0.6972445000428706
+    },
+    {
+      "index": 165,
+      "name": "justin-crawford",
+      "baseline_mse": 3.0668500009183507e-07,
+      "method_mses": {
+        "factorized_dirs_oracle_exact_correction0.05": 2.934658674756167e-07,
+        "factorized_dirs_oracle_exact_correction0.1": 2.8080704937740154e-07,
+        "factorized_dirs_oracle_exact_correction0.2": 2.571703567348477e-07,
+        "factorized_dirs_oracle_exact_correction0.3": 2.3577492216424097e-07,
+        "factorized_dirs_oracle_exact_correction0.5": 1.9970782723880218e-07,
+        "factorized_dirs_oracle_exact_correction0.75": 1.672310352365561e-07,
+        "factorized_dirs_oracle_exact_correction1": 1.4876210618383662e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.05": 3.058898142111095e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.1": 3.0523649203798697e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.2": 3.04355438814447e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.3": 3.040418404212222e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.5": 3.0511700812576017e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.75": 3.0965290117696044e-07,
+        "factorized_dirs_oracle_optimal_scale_correction1": 3.177353869176668e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.05": 3.1465102425708576e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.1": 3.230692723005081e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.2": 3.4126244002190325e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.3": 3.6126450325597253e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.5": 4.066953162622326e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.75": 4.736588697789743e-07,
+        "factorized_dirs_factorized_scale1.153_correction1": 5.519280202501044e-07,
+        "oracle_dirs_oracle_exact_correction0.05": 2.944771540995286e-07,
+        "oracle_dirs_oracle_exact_correction0.1": 2.8274594871094597e-07,
+        "oracle_dirs_oracle_exact_correction0.2": 2.6071345974503627e-07,
+        "oracle_dirs_oracle_exact_correction0.3": 2.4058753319410576e-07,
+        "oracle_dirs_oracle_exact_correction0.5": 2.0605536733713593e-07,
+        "oracle_dirs_oracle_exact_correction0.75": 1.7361457360015746e-07,
+        "oracle_dirs_oracle_exact_correction1": 1.5308979495676858e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.05": 3.114366059755593e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.1": 3.17476634939523e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.2": 3.334219621081316e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.3": 3.545209815976163e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.5": 4.121800975392875e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.75": 5.132435117714424e-07,
+        "oracle_dirs_oracle_optimal_scale_correction1": 6.465175030091962e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.05": 3.1411428692281924e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.1": 3.223757463064804e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.2": 3.413951827318397e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.3": 3.6374330936791446e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.5": 4.18425633272236e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.75": 5.055024205879202e-07,
+        "oracle_dirs_factorized_scale1.153_correction1": 6.133835217205824e-07
+      },
+      "anchor_diagnostics": {
+        "factorized_dirs": {
+          "oracle_optimal_scale": 1.1089658119738943,
+          "unscaled_relative_error": 0.10001012133924635,
+          "optimal_scaled_relative_error": 0.01872401527458463
+        },
+        "oracle_dirs": {
+          "oracle_optimal_scale": 1.123146125303785,
+          "unscaled_relative_error": 0.11258693276551225,
+          "optimal_scaled_relative_error": 0.025729169700216662
+        }
+      },
+      "seconds": 0.6588997088838369
+    },
+    {
+      "index": 166,
+      "name": "tara-harris",
+      "baseline_mse": 6.550635664715546e-07,
+      "method_mses": {
+        "factorized_dirs_oracle_exact_correction0.05": 6.161332600073922e-07,
+        "factorized_dirs_oracle_exact_correction0.1": 5.792409591473856e-07,
+        "factorized_dirs_oracle_exact_correction0.2": 5.115703742400009e-07,
+        "factorized_dirs_oracle_exact_correction0.3": 4.520518117492636e-07,
+        "factorized_dirs_oracle_exact_correction0.5": 3.574707540179361e-07,
+        "factorized_dirs_oracle_exact_correction0.75": 2.8509955794780505e-07,
+        "factorized_dirs_oracle_exact_correction1": 2.636785019820901e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.05": 6.504391458326816e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.1": 6.480151206138724e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.2": 6.49768256436421e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.3": 6.603229739392771e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.5": 7.078371539856381e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.75": 8.167387759949849e-07,
+        "factorized_dirs_oracle_optimal_scale_correction1": 9.806502835059541e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.05": 6.43682015767536e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.1": 6.342126941602584e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.2": 6.210107382362307e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.3": 6.154576986993832e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.5": 6.272983687871925e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.75": 6.851243610749731e-07,
+        "factorized_dirs_factorized_scale1.153_correction1": 7.907560807826638e-07,
+        "oracle_dirs_oracle_exact_correction0.05": 6.168352190258097e-07,
+        "oracle_dirs_oracle_exact_correction0.1": 5.805273676350641e-07,
+        "oracle_dirs_oracle_exact_correction0.2": 5.136731530187351e-07,
+        "oracle_dirs_oracle_exact_correction0.3": 4.5450092262257187e-07,
+        "oracle_dirs_oracle_exact_correction0.5": 3.5920241449068974e-07,
+        "oracle_dirs_oracle_exact_correction0.75": 2.8329044056421643e-07,
+        "oracle_dirs_oracle_exact_correction1": 2.5539086801373415e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.05": 6.852061482647726e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.1": 7.202090505694172e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.2": 8.047958167128227e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.3": 9.088238649017198e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.5": 1.1752038074162406e-06,
+        "oracle_dirs_oracle_optimal_scale_correction0.75": 1.617535947065469e-06,
+        "oracle_dirs_oracle_optimal_scale_correction1": 2.1813760994993215e-06,
+        "oracle_dirs_factorized_scale1.153_correction0.05": 6.696357039581978e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.1": 6.871305992611988e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.2": 7.3088866331622e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.3": 7.863377586365637e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.5": 9.323090430734022e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.75": 1.1805351994871577e-06,
+        "oracle_dirs_factorized_scale1.153_correction1": 1.5018303013094295e-06
+      },
+      "anchor_diagnostics": {
+        "factorized_dirs": {
+          "oracle_optimal_scale": 1.131558126700892,
+          "unscaled_relative_error": 0.11899980963761814,
+          "optimal_scaled_relative_error": 0.025548716961966277
+        },
+        "oracle_dirs": {
+          "oracle_optimal_scale": 1.1305273690226179,
+          "unscaled_relative_error": 0.12134386442597074,
+          "optimal_scaled_relative_error": 0.03758768034086334
+        }
+      },
+      "seconds": 0.8039946670178324
+    },
+    {
+      "index": 167,
+      "name": "kathy-wright",
+      "baseline_mse": 1.3442389485466154e-07,
+      "method_mses": {
+        "factorized_dirs_oracle_exact_correction0.05": 1.3039142417469144e-07,
+        "factorized_dirs_oracle_exact_correction0.1": 1.2660465996260212e-07,
+        "factorized_dirs_oracle_exact_correction0.2": 1.1976825094210787e-07,
+        "factorized_dirs_oracle_exact_correction0.3": 1.1391466779318974e-07,
+        "factorized_dirs_oracle_exact_correction0.5": 1.051559791100277e-07,
+        "factorized_dirs_oracle_exact_correction0.75": 9.973601378363515e-08,
+        "factorized_dirs_oracle_exact_correction1": 1.004587101545289e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.05": 1.3621527670007795e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.1": 1.3997024091016416e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.2": 1.5337091642435135e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.3": 1.746259213972315e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.5": 2.406989197190402e-07,
+        "factorized_dirs_oracle_optimal_scale_correction0.75": 3.674707708264352e-07,
+        "factorized_dirs_oracle_optimal_scale_correction1": 5.433321810506046e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.05": 1.2184609979142744e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.1": 1.1391649215851484e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.2": 1.120018391836999e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.3": 1.2867993593020898e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.5": 2.1781437858715444e-07,
+        "factorized_dirs_factorized_scale1.153_correction0.75": 4.3381664909079386e-07,
+        "factorized_dirs_factorized_scale1.153_correction1": 7.660236053526859e-07,
+        "oracle_dirs_oracle_exact_correction0.05": 1.2882540747098882e-07,
+        "oracle_dirs_oracle_exact_correction0.1": 1.2390192118355828e-07,
+        "oracle_dirs_oracle_exact_correction0.2": 1.1607995189742846e-07,
+        "oracle_dirs_oracle_exact_correction0.3": 1.1095798699628008e-07,
+        "oracle_dirs_oracle_exact_correction0.5": 1.088140703489009e-07,
+        "oracle_dirs_oracle_exact_correction0.75": 1.2132169920519746e-07,
+        "oracle_dirs_oracle_exact_correction1": 1.5070435546759132e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.05": 1.3077363393361506e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.1": 1.278418022275546e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.2": 1.2413342646038684e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.3": 1.232987675531668e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.5": 1.3025060031852952e-07,
+        "oracle_dirs_oracle_optimal_scale_correction0.75": 1.551050486124038e-07,
+        "oracle_dirs_oracle_optimal_scale_correction1": 1.9792022728091402e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.05": 1.4772252216727833e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.1": 1.6475028370030925e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.2": 2.0999320942755305e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.3": 2.701526720363893e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.5": 4.3522120789885753e-07,
+        "oracle_dirs_factorized_scale1.153_correction0.75": 7.254623976858879e-07,
+        "oracle_dirs_factorized_scale1.153_correction1": 1.108931942982883e-06
+      },
+      "anchor_diagnostics": {
+        "factorized_dirs": {
+          "oracle_optimal_scale": 1.325854467130291,
+          "unscaled_relative_error": 0.2514810557420751,
+          "optimal_scaled_relative_error": 0.054979073022535595
+        },
+        "oracle_dirs": {
+          "oracle_optimal_scale": 1.3513137689849435,
+          "unscaled_relative_error": 0.2611170511915731,
+          "optimal_scaled_relative_error": 0.025214845748041358
+        }
+      },
+      "seconds": 0.7032286250032485
+    }
+  ]
+}

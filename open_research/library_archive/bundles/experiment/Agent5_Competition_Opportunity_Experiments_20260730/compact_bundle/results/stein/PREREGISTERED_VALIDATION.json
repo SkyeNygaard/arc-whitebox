@@ -1,0 +1,26 @@
+{
+  "frozen_at": "2026-07-30T10:31:00-04:00",
+  "development_networks": [7100,7101,7102,7103,7104,7105,7106,7107],
+  "validation_networks": [7200,7201,7202,7203,7204,7205,7206,7207,7208,7209,7210,7211,7212,7213,7214,7215],
+  "primary": {
+    "label": "stein_tanh_k8_stable",
+    "feature_set": "tanh_k8_hp",
+    "directions": "top 8 left singular directions of frozen linearized depth-32 Jacobian",
+    "control": "uniform-sphere Stein tanh fields, biases -0.1, 0, 0.1, projected off degrees 1-5",
+    "fit": "same-design centered row ridge, ridge multiplier 1.0, full coefficient rank",
+    "scalar_multiplier": 2.0
+  },
+  "secondary": {"same_candidate_multiplier": 1.0},
+  "comparators": [
+    {"label":"harmonic_d68_k8","mode":"cf4","scalar_multiplier":1.0},
+    {"label":"harmonic_d68_k8","mode":"full","scalar_multiplier":1.0}
+  ],
+  "reference": "two independent scrambled Sobol references, 262144 samples per half, post-ReLU final means",
+  "continuation_gate": {
+    "primary_candidate_over_base_max": 0.98,
+    "paired_network_bootstrap_upper_max": 1.0,
+    "minimum_network_wins": 9,
+    "worst_network_ratio_max": 1.10
+  },
+  "holdout_rule": "Open 7300-7315 only if every primary gate passes. Do not promote a comparator selected after validation."
+}

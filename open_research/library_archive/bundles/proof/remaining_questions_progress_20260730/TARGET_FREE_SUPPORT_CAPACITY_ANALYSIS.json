@@ -1,0 +1,1431 @@
+{
+  "protocol": {
+    "stage": "A_target_free_support_high_reference",
+    "networks": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "weight_seeds": [
+      51008,
+      51009,
+      51010,
+      51011,
+      51012,
+      51013,
+      51014,
+      51015
+    ],
+    "truth_n_per_split": 524288,
+    "truth_seeds": "930000+2*network and 930001+2*network",
+    "rotations": [
+      3,
+      19
+    ],
+    "target_activation_layer_one_based": 31,
+    "k_values": [
+      8,
+      12,
+      16,
+      32
+    ],
+    "selector_families": [
+      "gaussian_gap_sens",
+      "radial_h3_row_sens",
+      "block_h3_output_coupling",
+      "basis_pca12_sens"
+    ],
+    "support_inputs": "weights and complete-design Kerdock baseline observables only",
+    "amplitude_for_grading_only": "two-split Sobol high-reference exact signed layer-31 mean defect",
+    "stability_rule": "median support overlap >=0.50 and aggregate capture difference <=0.15",
+    "continuation_gate": "both rotations aggregate full-oracle gap capture >=0.50, wins >=6/8, and stability rule"
+  },
+  "per_rotation": {
+    "3": {
+      "8": {
+        "gaussian_gap_sens": {
+          "candidate_over_baseline": 0.9871476912519009,
+          "gap_capture": 0.01314660416275625,
+          "raw_gain": 1.0130196411965466,
+          "baseline_sum": 2.772390478721775e-06,
+          "candidate_sum": 2.7367588603189524e-06,
+          "full_oracle_sum": 6.206179142735877e-08
+        },
+        "radial_h3_row_sens": {
+          "candidate_over_baseline": 0.8213117621925803,
+          "gap_capture": 0.18277988624744587,
+          "raw_gain": 1.2175644451144743,
+          "baseline_sum": 2.772390478721775e-06,
+          "candidate_sum": 2.276996909564912e-06,
+          "full_oracle_sum": 6.206179142735877e-08
+        },
+        "block_h3_output_coupling": {
+          "candidate_over_baseline": 0.9665024184394285,
+          "gap_capture": 0.03426461765102017,
+          "raw_gain": 1.0346585594836468,
+          "baseline_sum": 2.772390478721775e-06,
+          "candidate_sum": 2.6795221025430403e-06,
+          "full_oracle_sum": 6.206179142735877e-08
+        },
+        "basis_pca12_sens": {
+          "candidate_over_baseline": 0.8357405422351909,
+          "gap_capture": 0.16802071235195923,
+          "raw_gain": 1.196543603503423,
+          "baseline_sum": 2.772390478721775e-06,
+          "candidate_sum": 2.3169991219746165e-06,
+          "full_oracle_sum": 6.206179142735877e-08
+        },
+        "oracle_best_family_per_record": {
+          "candidate_over_baseline": 0.812731032335397,
+          "gap_capture": 0.19155709982602698,
+          "raw_gain": 1.2304193641117434,
+          "baseline_sum": 2.772390478721775e-06,
+          "candidate_sum": 2.2532077758083737e-06,
+          "full_oracle_sum": 6.206179142735877e-08
+        }
+      },
+      "12": {
+        "gaussian_gap_sens": {
+          "candidate_over_baseline": 0.9788891546327466,
+          "gap_capture": 0.02159424684109664,
+          "raw_gain": 1.021566124486458,
+          "baseline_sum": 2.772390478721775e-06,
+          "candidate_sum": 2.713862972027834e-06,
+          "full_oracle_sum": 6.206179142735877e-08
+        },
+        "radial_h3_row_sens": {
+          "candidate_over_baseline": 0.7606444002965119,
+          "gap_capture": 0.24483642473235095,
+          "raw_gain": 1.314674767355394,
+          "baseline_sum": 2.772390478721775e-06,
+          "candidate_sum": 2.108803293075084e-06,
+          "full_oracle_sum": 6.206179142735877e-08
+        },
+        "block_h3_output_coupling": {
+          "candidate_over_baseline": 0.9585349875209256,
+          "gap_capture": 0.0424144888167868,
+          "raw_gain": 1.0432587365290817,
+          "baseline_sum": 2.772390478721775e-06,
+          "candidate_sum": 2.6574332729247094e-06,
+          "full_oracle_sum": 6.206179142735877e-08
+        },
+        "basis_pca12_sens": {
+          "candidate_over_baseline": 0.7463233680054726,
+          "gap_capture": 0.2594853836410132,
+          "raw_gain": 1.339901767611097,
+          "baseline_sum": 2.772390478721775e-06,
+          "candidate_sum": 2.0690997995059396e-06,
+          "full_oracle_sum": 6.206179142735877e-08
+        },
+        "oracle_best_family_per_record": {
+          "candidate_over_baseline": 0.7387137369183697,
+          "gap_capture": 0.267269261984392,
+          "raw_gain": 1.3537043512573845,
+          "baseline_sum": 2.772390478721775e-06,
+          "candidate_sum": 2.0480029307334703e-06,
+          "full_oracle_sum": 6.206179142735877e-08
+        }
+      },
+      "16": {
+        "gaussian_gap_sens": {
+          "candidate_over_baseline": 0.9718869282216835,
+          "gap_capture": 0.028756812002617423,
+          "raw_gain": 1.0289262783169195,
+          "baseline_sum": 2.772390478721775e-06,
+          "candidate_sum": 2.6944500661959485e-06,
+          "full_oracle_sum": 6.206179142735877e-08
+        },
+        "radial_h3_row_sens": {
+          "candidate_over_baseline": 0.6729379935649256,
+          "gap_capture": 0.3345511549366348,
+          "raw_gain": 1.4860210146590858,
+          "baseline_sum": 2.772390478721775e-06,
+          "candidate_sum": 1.8656468861295346e-06,
+          "full_oracle_sum": 6.206179142735877e-08
+        },
+        "block_h3_output_coupling": {
+          "candidate_over_baseline": 0.9469287335237342,
+          "gap_capture": 0.05428650575195808,
+          "raw_gain": 1.0560456817893524,
+          "baseline_sum": 2.772390478721775e-06,
+          "candidate_sum": 2.6252562048492696e-06,
+          "full_oracle_sum": 6.206179142735877e-08
+        },
+        "basis_pca12_sens": {
+          "candidate_over_baseline": 0.6637188294238927,
+          "gap_capture": 0.34398142182868735,
+          "raw_gain": 1.5066620919403462,
+          "baseline_sum": 2.772390478721775e-06,
+          "candidate_sum": 1.840087763243162e-06,
+          "full_oracle_sum": 6.206179142735877e-08
+        },
+        "oracle_best_family_per_record": {
+          "candidate_over_baseline": 0.6522391242695808,
+          "gap_capture": 0.3557239921735846,
+          "raw_gain": 1.5331800298239762,
+          "baseline_sum": 2.772390478721775e-06,
+          "candidate_sum": 1.8082615379748143e-06,
+          "full_oracle_sum": 6.206179142735877e-08
+        }
+      },
+      "32": {
+        "gaussian_gap_sens": {
+          "candidate_over_baseline": 0.9363742700626945,
+          "gap_capture": 0.06508264798539816,
+          "raw_gain": 1.0679490370159845,
+          "baseline_sum": 2.772390478721775e-06,
+          "candidate_sum": 2.595995110841866e-06,
+          "full_oracle_sum": 6.206179142735877e-08
+        },
+        "radial_h3_row_sens": {
+          "candidate_over_baseline": 0.5005873497253662,
+          "gap_capture": 0.5108483273874599,
+          "raw_gain": 1.9976533576979585,
+          "baseline_sum": 2.772390478721775e-06,
+          "candidate_sum": 1.3878236021471725e-06,
+          "full_oracle_sum": 6.206179142735877e-08
+        },
+        "block_h3_output_coupling": {
+          "candidate_over_baseline": 0.8633800696601385,
+          "gap_capture": 0.13974828804102166,
+          "raw_gain": 1.1582384573617048,
+          "baseline_sum": 2.772390478721775e-06,
+          "candidate_sum": 2.3936266846439107e-06,
+          "full_oracle_sum": 6.206179142735877e-08
+        },
+        "basis_pca12_sens": {
+          "candidate_over_baseline": 0.4798208286163658,
+          "gap_capture": 0.5320903655463961,
+          "raw_gain": 2.0841112772941677,
+          "baseline_sum": 2.772390478721775e-06,
+          "candidate_sum": 1.3302506967484051e-06,
+          "full_oracle_sum": 6.206179142735877e-08
+        },
+        "oracle_best_family_per_record": {
+          "candidate_over_baseline": 0.4771419588438803,
+          "gap_capture": 0.5348305767561252,
+          "raw_gain": 2.095812328940867,
+          "baseline_sum": 2.772390478721775e-06,
+          "candidate_sum": 1.3228238236974306e-06,
+          "full_oracle_sum": 6.206179142735877e-08
+        }
+      }
+    },
+    "19": {
+      "8": {
+        "gaussian_gap_sens": {
+          "candidate_over_baseline": 0.96792346361115,
+          "gap_capture": 0.03337342745939791,
+          "raw_gain": 1.0331395379849333,
+          "baseline_sum": 1.7395640564259003e-06,
+          "candidate_sum": 1.6837648666692195e-06,
+          "full_oracle_sum": 6.759944252563103e-08
+        },
+        "radial_h3_row_sens": {
+          "candidate_over_baseline": 0.8474924906301382,
+          "gap_capture": 0.1586735624840637,
+          "raw_gain": 1.1799514580435604,
+          "baseline_sum": 1.7395640564259003e-06,
+          "candidate_sum": 1.4742674747910525e-06,
+          "full_oracle_sum": 6.759944252563103e-08
+        },
+        "block_h3_output_coupling": {
+          "candidate_over_baseline": 0.9666371408830763,
+          "gap_capture": 0.03471175768727335,
+          "raw_gain": 1.0345143567382946,
+          "baseline_sum": 1.7395640564259003e-06,
+          "candidate_sum": 1.6815272258864986e-06,
+          "full_oracle_sum": 6.759944252563103e-08
+        },
+        "basis_pca12_sens": {
+          "candidate_over_baseline": 0.8304653909796545,
+          "gap_capture": 0.1763890872570839,
+          "raw_gain": 1.2041440990338619,
+          "baseline_sum": 1.7395640564259003e-06,
+          "candidate_sum": 1.444647744253889e-06,
+          "full_oracle_sum": 6.759944252563103e-08
+        },
+        "oracle_best_family_per_record": {
+          "candidate_over_baseline": 0.8196808268725178,
+          "gap_capture": 0.18760968363156855,
+          "raw_gain": 1.2199870574202496,
+          "baseline_sum": 1.7395640564259003e-06,
+          "candidate_sum": 1.4258873041688932e-06,
+          "full_oracle_sum": 6.759944252563103e-08
+        }
+      },
+      "12": {
+        "gaussian_gap_sens": {
+          "candidate_over_baseline": 0.9624352103063576,
+          "gap_capture": 0.039083577125368626,
+          "raw_gain": 1.039030980258593,
+          "baseline_sum": 1.7395640564259003e-06,
+          "candidate_sum": 1.674217698487642e-06,
+          "full_oracle_sum": 6.759944252563103e-08
+        },
+        "radial_h3_row_sens": {
+          "candidate_over_baseline": 0.7840892433533043,
+          "gap_capture": 0.22464027559898758,
+          "raw_gain": 1.2753650282502447,
+          "baseline_sum": 1.7395640564259003e-06,
+          "candidate_sum": 1.363973464767589e-06,
+          "full_oracle_sum": 6.759944252563103e-08
+        },
+        "block_h3_output_coupling": {
+          "candidate_over_baseline": 0.9548661766345481,
+          "gap_capture": 0.04695863548957792,
+          "raw_gain": 1.0472671715365678,
+          "baseline_sum": 1.7395640564259003e-06,
+          "candidate_sum": 1.6610508795702847e-06,
+          "full_oracle_sum": 6.759944252563103e-08
+        },
+        "basis_pca12_sens": {
+          "candidate_over_baseline": 0.7993013325970577,
+          "gap_capture": 0.20881314418031102,
+          "raw_gain": 1.2510926220413525,
+          "baseline_sum": 1.7395640564259003e-06,
+          "candidate_sum": 1.3904358684391653e-06,
+          "full_oracle_sum": 6.759944252563103e-08
+        },
+        "oracle_best_family_per_record": {
+          "candidate_over_baseline": 0.7795109769299238,
+          "gap_capture": 0.22940364657265666,
+          "raw_gain": 1.2828555717566217,
+          "baseline_sum": 1.7395640564259003e-06,
+          "candidate_sum": 1.3560092770567346e-06,
+          "full_oracle_sum": 6.759944252563103e-08
+        }
+      },
+      "16": {
+        "gaussian_gap_sens": {
+          "candidate_over_baseline": 0.9607487500474501,
+          "gap_capture": 0.040838222902316416,
+          "raw_gain": 1.0408548540402591,
+          "baseline_sum": 1.7395640564259003e-06,
+          "candidate_sum": 1.6712839928386557e-06,
+          "full_oracle_sum": 6.759944252563103e-08
+        },
+        "radial_h3_row_sens": {
+          "candidate_over_baseline": 0.7524553740962053,
+          "gap_capture": 0.25755313838796534,
+          "raw_gain": 1.3289824678322317,
+          "baseline_sum": 1.7395640564259003e-06,
+          "candidate_sum": 1.3089443228422632e-06,
+          "full_oracle_sum": 6.759944252563103e-08
+        },
+        "block_h3_output_coupling": {
+          "candidate_over_baseline": 0.9491041319704777,
+          "gap_capture": 0.05295364621277462,
+          "raw_gain": 1.0536251674764656,
+          "baseline_sum": 1.7395640564259003e-06,
+          "candidate_sum": 1.6510274337811472e-06,
+          "full_oracle_sum": 6.759944252563103e-08
+        },
+        "basis_pca12_sens": {
+          "candidate_over_baseline": 0.7575817376660129,
+          "gap_capture": 0.25221951007306587,
+          "raw_gain": 1.3199895803729886,
+          "baseline_sum": 1.7395640564259003e-06,
+          "candidate_sum": 1.3178619606484717e-06,
+          "full_oracle_sum": 6.759944252563103e-08
+        },
+        "oracle_best_family_per_record": {
+          "candidate_over_baseline": 0.7323526033981953,
+          "gap_capture": 0.2784686871083738,
+          "raw_gain": 1.3654624771727333,
+          "baseline_sum": 1.7395640564259003e-06,
+          "candidate_sum": 1.2739742655014333e-06,
+          "full_oracle_sum": 6.759944252563103e-08
+        }
+      },
+      "32": {
+        "gaussian_gap_sens": {
+          "candidate_over_baseline": 0.9025756952188306,
+          "gap_capture": 0.1013632809035714,
+          "raw_gain": 1.1079403149201228,
+          "baseline_sum": 1.7395640564259003e-06,
+          "candidate_sum": 1.570088237606296e-06,
+          "full_oracle_sum": 6.759944252563103e-08
+        },
+        "radial_h3_row_sens": {
+          "candidate_over_baseline": 0.6491727327258364,
+          "gap_capture": 0.36501161513257985,
+          "raw_gain": 1.5404220627090444,
+          "baseline_sum": 1.7395640564259003e-06,
+          "candidate_sum": 1.1292775522616428e-06,
+          "full_oracle_sum": 6.759944252563103e-08
+        },
+        "block_h3_output_coupling": {
+          "candidate_over_baseline": 0.8426682150832738,
+          "gap_capture": 0.16369288901158086,
+          "raw_gain": 1.1867066801625814,
+          "baseline_sum": 1.7395640564259003e-06,
+          "candidate_sum": 1.465875338451433e-06,
+          "full_oracle_sum": 6.759944252563103e-08
+        },
+        "basis_pca12_sens": {
+          "candidate_over_baseline": 0.6261551357276791,
+          "gap_capture": 0.3889598399158105,
+          "raw_gain": 1.597048307905135,
+          "baseline_sum": 1.7395640564259003e-06,
+          "candidate_sum": 1.0892369678583517e-06,
+          "full_oracle_sum": 6.759944252563103e-08
+        },
+        "oracle_best_family_per_record": {
+          "candidate_over_baseline": 0.6104222305777601,
+          "gap_capture": 0.40532884442369504,
+          "raw_gain": 1.6382103237844194,
+          "baseline_sum": 1.7395640564259003e-06,
+          "candidate_sum": 1.0618685715563947e-06,
+          "full_oracle_sum": 6.759944252563103e-08
+        }
+      }
+    }
+  },
+  "pooled": {
+    "8": {
+      "gaussian_gap_sens": {
+        "candidate_over_baseline": 0.9797358755618512,
+        "gap_capture": 0.020863689825274166,
+        "raw_gain": 1.0206832524393659,
+        "baseline_sum": 4.511954535147675e-06,
+        "candidate_sum": 4.4205237269881725e-06,
+        "full_oracle_sum": 1.296612339529898e-07
+      },
+      "radial_h3_row_sens": {
+        "candidate_over_baseline": 0.8314056259064646,
+        "gap_capture": 0.1735826651731261,
+        "raw_gain": 1.2027823349279365,
+        "baseline_sum": 4.511954535147675e-06,
+        "candidate_sum": 3.7512643843559647e-06,
+        "full_oracle_sum": 1.296612339529898e-07
+      },
+      "block_h3_output_coupling": {
+        "candidate_over_baseline": 0.9665543600799611,
+        "gap_capture": 0.034435213790230935,
+        "raw_gain": 1.0346029579932494,
+        "baseline_sum": 4.511954535147675e-06,
+        "candidate_sum": 4.361049328429539e-06,
+        "full_oracle_sum": 1.296612339529898e-07
+      },
+      "basis_pca12_sens": {
+        "candidate_over_baseline": 0.8337067310686871,
+        "gap_capture": 0.1712134759931799,
+        "raw_gain": 1.1994625480810859,
+        "baseline_sum": 4.511954535147675e-06,
+        "candidate_sum": 3.761646866228506e-06,
+        "full_oracle_sum": 1.296612339529898e-07
+      },
+      "oracle_best_family_per_record": {
+        "candidate_over_baseline": 0.8154104947905577,
+        "gap_capture": 0.19005105270871694,
+        "raw_gain": 1.2263761705162441,
+        "baseline_sum": 4.511954535147675e-06,
+        "candidate_sum": 3.679095079977267e-06,
+        "full_oracle_sum": 1.296612339529898e-07
+      }
+    },
+    "12": {
+      "gaussian_gap_sens": {
+        "candidate_over_baseline": 0.9725454093858362,
+        "gap_capture": 0.028266904134058968,
+        "raw_gain": 1.028229623366894,
+        "baseline_sum": 4.511954535147675e-06,
+        "candidate_sum": 4.388080670515476e-06,
+        "full_oracle_sum": 1.296612339529898e-07
+      },
+      "radial_h3_row_sens": {
+        "candidate_over_baseline": 0.7696834555379689,
+        "gap_capture": 0.23713104210110847,
+        "raw_gain": 1.2992354100960268,
+        "baseline_sum": 4.511954535147675e-06,
+        "candidate_sum": 3.4727767578426727e-06,
+        "full_oracle_sum": 1.296612339529898e-07
+      },
+      "block_h3_output_coupling": {
+        "candidate_over_baseline": 0.9571204937581781,
+        "gap_capture": 0.04414820491360957,
+        "raw_gain": 1.0448005308855666,
+        "baseline_sum": 4.511954535147675e-06,
+        "candidate_sum": 4.318484152494994e-06,
+        "full_oracle_sum": 1.296612339529898e-07
+      },
+      "basis_pca12_sens": {
+        "candidate_over_baseline": 0.7667487872485566,
+        "gap_capture": 0.24015253997619548,
+        "raw_gain": 1.3042081273952253,
+        "baseline_sum": 4.511954535147675e-06,
+        "candidate_sum": 3.459535667945105e-06,
+        "full_oracle_sum": 1.296612339529898e-07
+      },
+      "oracle_best_family_per_record": {
+        "candidate_over_baseline": 0.754442931832156,
+        "gap_capture": 0.25282249525731815,
+        "raw_gain": 1.325481302570509,
+        "baseline_sum": 4.511954535147675e-06,
+        "candidate_sum": 3.404012207790205e-06,
+        "full_oracle_sum": 1.296612339529898e-07
+      }
+    },
+    "16": {
+      "gaussian_gap_sens": {
+        "candidate_over_baseline": 0.9675926530345047,
+        "gap_capture": 0.033366200311879826,
+        "raw_gain": 1.0334927584080567,
+        "baseline_sum": 4.511954535147675e-06,
+        "candidate_sum": 4.365734059034604e-06,
+        "full_oracle_sum": 1.296612339529898e-07
+      },
+      "radial_h3_row_sens": {
+        "candidate_over_baseline": 0.7035955668972392,
+        "gap_capture": 0.30517430812111324,
+        "raw_gain": 1.4212710355891867,
+        "baseline_sum": 4.511954535147675e-06,
+        "candidate_sum": 3.174591208971798e-06,
+        "full_oracle_sum": 1.296612339529898e-07
+      },
+      "block_h3_output_coupling": {
+        "candidate_over_baseline": 0.9477674487450161,
+        "gap_capture": 0.05377798342548416,
+        "raw_gain": 1.0551111470689856,
+        "baseline_sum": 4.511954535147675e-06,
+        "candidate_sum": 4.276283638630417e-06,
+        "full_oracle_sum": 1.296612339529898e-07
+      },
+      "basis_pca12_sens": {
+        "candidate_over_baseline": 0.6999072573297271,
+        "gap_capture": 0.30897174565812785,
+        "raw_gain": 1.4287607244068035,
+        "baseline_sum": 4.511954535147675e-06,
+        "candidate_sum": 3.1579497238916334e-06,
+        "full_oracle_sum": 1.296612339529898e-07
+      },
+      "oracle_best_family_per_record": {
+        "candidate_over_baseline": 0.6831265207718603,
+        "gap_capture": 0.32624898276015957,
+        "raw_gain": 1.4638576743735647,
+        "baseline_sum": 4.511954535147675e-06,
+        "candidate_sum": 3.0822358034762475e-06,
+        "full_oracle_sum": 1.296612339529898e-07
+      }
+    },
+    "32": {
+      "gaussian_gap_sens": {
+        "candidate_over_baseline": 0.9233433794588995,
+        "gap_capture": 0.07892470059117734,
+        "raw_gain": 1.0830207074057574,
+        "baseline_sum": 4.511954535147675e-06,
+        "candidate_sum": 4.1660833484481626e-06,
+        "full_oracle_sum": 1.296612339529898e-07
+      },
+      "radial_h3_row_sens": {
+        "candidate_over_baseline": 0.5578737850306,
+        "gap_capture": 0.45520763756160054,
+        "raw_gain": 1.7925201485227502,
+        "baseline_sum": 4.511954535147675e-06,
+        "candidate_sum": 2.517101154408815e-06,
+        "full_oracle_sum": 1.296612339529898e-07
+      },
+      "block_h3_output_coupling": {
+        "candidate_over_baseline": 0.8553947060038413,
+        "gap_capture": 0.14888380745178828,
+        "raw_gain": 1.16905095738985,
+        "baseline_sum": 4.511954535147675e-06,
+        "candidate_sum": 3.859502023095344e-06,
+        "full_oracle_sum": 1.296612339529898e-07
+      },
+      "basis_pca12_sens": {
+        "candidate_over_baseline": 0.5362393715980933,
+        "gap_capture": 0.4774821598477851,
+        "raw_gain": 1.8648388256532031,
+        "baseline_sum": 4.511954535147675e-06,
+        "candidate_sum": 2.419487664606757e-06,
+        "full_oracle_sum": 1.296612339529898e-07
+      },
+      "oracle_best_family_per_record": {
+        "candidate_over_baseline": 0.5285275763922951,
+        "gap_capture": 0.48542212802459467,
+        "raw_gain": 1.8920488630431622,
+        "baseline_sum": 4.511954535147675e-06,
+        "candidate_sum": 2.384692395253825e-06,
+        "full_oracle_sum": 1.296612339529898e-07
+      }
+    }
+  },
+  "support_relationships": {
+    "gaussian_gap_sens": {
+      "8": {
+        "mean_overlap_fraction": 0.953125,
+        "median_overlap_fraction": 1.0,
+        "min_overlap_fraction": 0.875,
+        "mean_absolute_per_network_capture_change": 0.04199164730510357,
+        "median_absolute_per_network_capture_change": 0.029173795865785786,
+        "capture_pairs": [
+          [
+            0.026691133868145832,
+            0.004684074597700254
+          ],
+          [
+            0.001823204821107556,
+            0.0025228834936583864
+          ],
+          [
+            -0.010398813778480776,
+            0.11786244335971262
+          ],
+          [
+            0.04663088332500813,
+            -0.033556390114141736
+          ],
+          [
+            0.017625418845147248,
+            0.028528537716230006
+          ],
+          [
+            0.01882614552891733,
+            -0.017514386932208664
+          ],
+          [
+            0.02009659172366858,
+            0.06322703733720571
+          ],
+          [
+            0.03808891876759902,
+            0.05249273174234201
+          ]
+        ]
+      },
+      "12": {
+        "mean_overlap_fraction": 0.9270833333333333,
+        "median_overlap_fraction": 0.9166666666666666,
+        "min_overlap_fraction": 0.8333333333333334,
+        "mean_absolute_per_network_capture_change": 0.044979870174297575,
+        "median_absolute_per_network_capture_change": 0.025122143969271427,
+        "capture_pairs": [
+          [
+            0.02210337768375681,
+            0.019158213425120772
+          ],
+          [
+            -0.017785176155870525,
+            0.012041055024375422
+          ],
+          [
+            0.006006559785014069,
+            0.1269786210820414
+          ],
+          [
+            0.048740542914751876,
+            -0.06440017407719684
+          ],
+          [
+            0.013274244871057305,
+            0.029352361300301395
+          ],
+          [
+            0.01874764560868167,
+            -0.0013033200665640155
+          ],
+          [
+            0.05426451205837783,
+            0.09067216086211376
+          ],
+          [
+            0.02596742503914387,
+            0.04638548179744078
+          ]
+        ]
+      },
+      "16": {
+        "mean_overlap_fraction": 0.9140625,
+        "median_overlap_fraction": 0.9375,
+        "min_overlap_fraction": 0.8125,
+        "mean_absolute_per_network_capture_change": 0.05151540065282346,
+        "median_absolute_per_network_capture_change": 0.02056164784886726,
+        "capture_pairs": [
+          [
+            0.03884039874851412,
+            0.015580289403318251
+          ],
+          [
+            0.028704131712561125,
+            0.01811379910834917
+          ],
+          [
+            0.018809049404111617,
+            0.11342953235553864
+          ],
+          [
+            0.04676944531911268,
+            -0.06555191664536254
+          ],
+          [
+            0.027408895885164115,
+            0.01069077344078094
+          ],
+          [
+            0.0327949732525919,
+            0.05065815960513055
+          ],
+          [
+            0.05328430298888341,
+            0.185167879654759
+          ],
+          [
+            0.01779399316737179,
+            0.012927960272891597
+          ]
+        ]
+      },
+      "32": {
+        "mean_overlap_fraction": 0.96484375,
+        "median_overlap_fraction": 0.96875,
+        "min_overlap_fraction": 0.90625,
+        "mean_absolute_per_network_capture_change": 0.05976825024419476,
+        "median_absolute_per_network_capture_change": 0.044539104147700216,
+        "capture_pairs": [
+          [
+            0.018982428207472486,
+            0.025089376456324638
+          ],
+          [
+            0.08091705084363779,
+            0.11237796773678727
+          ],
+          [
+            0.031187356380067543,
+            0.11578317076064129
+          ],
+          [
+            0.08190460036400819,
+            0.0035420606564574484
+          ],
+          [
+            0.042215566984581315,
+            0.09856409637667851
+          ],
+          [
+            0.10886826392704448,
+            0.1415979428303477
+          ],
+          [
+            0.15835575118243822,
+            0.3452643386877227
+          ],
+          [
+            0.04354027937274949,
+            0.04517326629549651
+          ]
+        ]
+      }
+    },
+    "radial_h3_row_sens": {
+      "8": {
+        "mean_overlap_fraction": 0.953125,
+        "median_overlap_fraction": 1.0,
+        "min_overlap_fraction": 0.875,
+        "mean_absolute_per_network_capture_change": 0.14209791955848977,
+        "median_absolute_per_network_capture_change": 0.1436769679709584,
+        "capture_pairs": [
+          [
+            0.04395367960659184,
+            0.22819021728352162
+          ],
+          [
+            -0.017156801169440378,
+            0.30758548441129047
+          ],
+          [
+            0.24196232826722588,
+            0.05799075268221138
+          ],
+          [
+            0.15342066193735082,
+            0.18191234801429507
+          ],
+          [
+            0.20265833876218192,
+            0.07687464477988831
+          ],
+          [
+            0.19052319594211226,
+            0.07684660158428404
+          ],
+          [
+            0.18722884776936155,
+            0.025658605809738354
+          ],
+          [
+            0.14488905552026182,
+            0.1305783142717079
+          ]
+        ]
+      },
+      "12": {
+        "mean_overlap_fraction": 0.96875,
+        "median_overlap_fraction": 1.0,
+        "min_overlap_fraction": 0.9166666666666666,
+        "mean_absolute_per_network_capture_change": 0.15184448004149592,
+        "median_absolute_per_network_capture_change": 0.14413603336585554,
+        "capture_pairs": [
+          [
+            0.10017235080950194,
+            0.2603556644776852
+          ],
+          [
+            0.002885911371197091,
+            0.36988823728489817
+          ],
+          [
+            0.3393244665866326,
+            0.17005418362611216
+          ],
+          [
+            0.14166209928140033,
+            0.2577285311649145
+          ],
+          [
+            0.2577340149514555,
+            0.1296452618879277
+          ],
+          [
+            0.19577895836488254,
+            0.11255049126036841
+          ],
+          [
+            0.22721221614819928,
+            0.04312925716329103
+          ],
+          [
+            0.2064926955451235,
+            0.2133260022982217
+          ]
+        ]
+      },
+      "16": {
+        "mean_overlap_fraction": 0.9765625,
+        "median_overlap_fraction": 1.0,
+        "min_overlap_fraction": 0.875,
+        "mean_absolute_per_network_capture_change": 0.18824761725751632,
+        "median_absolute_per_network_capture_change": 0.19041073686311047,
+        "capture_pairs": [
+          [
+            0.10739855064983299,
+            0.29153294736531765
+          ],
+          [
+            0.018341412955814068,
+            0.3916957019554013
+          ],
+          [
+            0.49135136097130166,
+            0.22482973479972568
+          ],
+          [
+            0.17177699492328605,
+            0.3725754838542844
+          ],
+          [
+            0.24965737932211596,
+            0.14251803983703853
+          ],
+          [
+            0.22493613352329486,
+            0.13338757984172733
+          ],
+          [
+            0.27726167215367636,
+            0.08057459514294009
+          ],
+          [
+            0.316206731917717,
+            0.23040956485261394
+          ]
+        ]
+      },
+      "32": {
+        "mean_overlap_fraction": 0.984375,
+        "median_overlap_fraction": 1.0,
+        "min_overlap_fraction": 0.9375,
+        "mean_absolute_per_network_capture_change": 0.21275878266845827,
+        "median_absolute_per_network_capture_change": 0.17198485944512248,
+        "capture_pairs": [
+          [
+            0.25816416788145546,
+            0.4705583949118476
+          ],
+          [
+            0.060964618317885404,
+            0.4564866378659718
+          ],
+          [
+            0.6568711732249085,
+            0.2814605905679026
+          ],
+          [
+            0.3776326323189377,
+            0.4466949179742259
+          ],
+          [
+            0.27934258904169923,
+            0.3263406359017688
+          ],
+          [
+            0.33956749783222917,
+            0.21138688655625998
+          ],
+          [
+            0.5515514563583452,
+            0.2086244598973433
+          ],
+          [
+            0.5142866041419601,
+            0.3827111122821073
+          ]
+        ]
+      }
+    },
+    "block_h3_output_coupling": {
+      "8": {
+        "mean_overlap_fraction": 0.046875,
+        "median_overlap_fraction": 0.0,
+        "min_overlap_fraction": 0.0,
+        "mean_absolute_per_network_capture_change": 0.050661147091999224,
+        "median_absolute_per_network_capture_change": 0.04740045795150989,
+        "capture_pairs": [
+          [
+            0.055215183591756825,
+            -0.03318835152526977
+          ],
+          [
+            0.03302558792990062,
+            0.014232802202391412
+          ],
+          [
+            -0.0015479654995567268,
+            0.05274442964108467
+          ],
+          [
+            0.009035861865244845,
+            0.12376448171360334
+          ],
+          [
+            0.003649678939986993,
+            0.06663366946187509
+          ],
+          [
+            0.028195102892819675,
+            0.005455403715610663
+          ],
+          [
+            0.11137563677908578,
+            0.0708671160167074
+          ],
+          [
+            0.04005927805845707,
+            0.0428989084994397
+          ]
+        ]
+      },
+      "12": {
+        "mean_overlap_fraction": 0.0625,
+        "median_overlap_fraction": 0.08333333333333333,
+        "min_overlap_fraction": 0.0,
+        "mean_absolute_per_network_capture_change": 0.053029887800252154,
+        "median_absolute_per_network_capture_change": 0.050360116299788975,
+        "capture_pairs": [
+          [
+            0.06627240268815847,
+            -0.02117631987651493
+          ],
+          [
+            0.01398713594352127,
+            0.043562280921543114
+          ],
+          [
+            0.01036534080736161,
+            0.06910351431424876
+          ],
+          [
+            0.05057501159899685,
+            0.14711944692742782
+          ],
+          [
+            0.007728559013567244,
+            0.07448813987092848
+          ],
+          [
+            0.0269622590547069,
+            -0.012820047208504902
+          ],
+          [
+            0.1111449685692739,
+            0.0691629094765831
+          ],
+          [
+            0.05106219793976491,
+            0.04765351812902487
+          ]
+        ]
+      },
+      "16": {
+        "mean_overlap_fraction": 0.1484375,
+        "median_overlap_fraction": 0.15625,
+        "min_overlap_fraction": 0.0625,
+        "mean_absolute_per_network_capture_change": 0.06237580994910282,
+        "median_absolute_per_network_capture_change": 0.05628924776200393,
+        "capture_pairs": [
+          [
+            0.08681235514067066,
+            -0.039410730079262477
+          ],
+          [
+            0.018154238367618154,
+            0.011961088836590682
+          ],
+          [
+            0.008417902955647281,
+            0.07518148247676504
+          ],
+          [
+            0.056614692609675145,
+            0.19996862104662133
+          ],
+          [
+            0.06559963145132952,
+            0.05453846708255535
+          ],
+          [
+            0.018170361692261036,
+            -0.005473806508247127
+          ],
+          [
+            0.1324940714792221,
+            0.05654158316759652
+          ],
+          [
+            0.07311827007793913,
+            0.11893318608082924
+          ]
+        ]
+      },
+      "32": {
+        "mean_overlap_fraction": 0.19140625,
+        "median_overlap_fraction": 0.21875,
+        "min_overlap_fraction": 0.0625,
+        "mean_absolute_per_network_capture_change": 0.11814227147038005,
+        "median_absolute_per_network_capture_change": 0.1130401715576734,
+        "capture_pairs": [
+          [
+            0.15147972876972815,
+            0.02617495496381487
+          ],
+          [
+            0.16992581682405158,
+            0.03875004483885205
+          ],
+          [
+            0.013368783703533171,
+            0.16850715843618752
+          ],
+          [
+            0.15414905629413586,
+            0.4697042096171214
+          ],
+          [
+            0.1671184637538966,
+            0.06634289444446309
+          ],
+          [
+            0.109347863331691,
+            0.14483819889792363
+          ],
+          [
+            0.24098085615270354,
+            0.2722012939654392
+          ],
+          [
+            0.2696959284073178,
+            0.3201736836352037
+          ]
+        ]
+      }
+    },
+    "basis_pca12_sens": {
+      "8": {
+        "mean_overlap_fraction": 0.78125,
+        "median_overlap_fraction": 0.8125,
+        "min_overlap_fraction": 0.625,
+        "mean_absolute_per_network_capture_change": 0.11574188916850806,
+        "median_absolute_per_network_capture_change": 0.1094488261993321,
+        "capture_pairs": [
+          [
+            0.09659171235993931,
+            0.20553598562905523
+          ],
+          [
+            0.006940764850868886,
+            0.32196207649170994
+          ],
+          [
+            0.2162196371242857,
+            0.07880588301001666
+          ],
+          [
+            0.24194401384048608,
+            0.20562987014965708
+          ],
+          [
+            0.09336316247940205,
+            0.10088590846056979
+          ],
+          [
+            0.20053035867857794,
+            0.09057697954902964
+          ],
+          [
+            0.18402411851401582,
+            0.033036224458288584
+          ],
+          [
+            0.1130781798439373,
+            0.17285579131050338
+          ]
+        ]
+      },
+      "12": {
+        "mean_overlap_fraction": 0.8125,
+        "median_overlap_fraction": 0.8333333333333334,
+        "min_overlap_fraction": 0.75,
+        "mean_absolute_per_network_capture_change": 0.1394228448810504,
+        "median_absolute_per_network_capture_change": 0.10834885353907192,
+        "capture_pairs": [
+          [
+            0.12059035517470842,
+            0.24111725576257206
+          ],
+          [
+            -0.0006757425563540411,
+            0.3415761993902906
+          ],
+          [
+            0.37840780438852784,
+            0.13709143207195978
+          ],
+          [
+            0.3242444748560043,
+            0.28782041815454884
+          ],
+          [
+            0.20256404274416004,
+            0.11744402511637347
+          ],
+          [
+            0.1974206282583848,
+            0.10124982176810461
+          ],
+          [
+            0.21995442155136494,
+            0.041684431875395
+          ],
+          [
+            0.1926018188252071,
+            0.2079044925270417
+          ]
+        ]
+      },
+      "16": {
+        "mean_overlap_fraction": 0.8359375,
+        "median_overlap_fraction": 0.84375,
+        "min_overlap_fraction": 0.6875,
+        "mean_absolute_per_network_capture_change": 0.16317042585490962,
+        "median_absolute_per_network_capture_change": 0.13423615950956008,
+        "capture_pairs": [
+          [
+            0.24043563180710462,
+            0.4021009519557134
+          ],
+          [
+            -0.0030510542458916843,
+            0.3399080483780314
+          ],
+          [
+            0.47544797074654843,
+            0.22482973479972568
+          ],
+          [
+            0.3600333391117616,
+            0.2890344934401247
+          ],
+          [
+            0.27923869135971313,
+            0.17243169248920173
+          ],
+          [
+            0.20372615888752663,
+            0.10375871542167081
+          ],
+          [
+            0.25806785159979706,
+            0.09088629572164897
+          ],
+          [
+            0.3375124540132312,
+            0.2323465497794611
+          ]
+        ]
+      },
+      "32": {
+        "mean_overlap_fraction": 0.87109375,
+        "median_overlap_fraction": 0.875,
+        "min_overlap_fraction": 0.8125,
+        "mean_absolute_per_network_capture_change": 0.177585301295662,
+        "median_absolute_per_network_capture_change": 0.13258402853278875,
+        "capture_pairs": [
+          [
+            0.2888955673258984,
+            0.4622222343198588
+          ],
+          [
+            0.16688209505705665,
+            0.4847831760693105
+          ],
+          [
+            0.6565262254933434,
+            0.22429363186126575
+          ],
+          [
+            0.506852760001208,
+            0.4315543547013379
+          ],
+          [
+            0.3817885242387942,
+            0.33737232607090273
+          ],
+          [
+            0.3214088244914171,
+            0.29487368698814037
+          ],
+          [
+            0.5445476021973292,
+            0.28541666451298064
+          ],
+          [
+            0.5532241150207611,
+            0.461382724949144
+          ]
+        ]
+      }
+    }
+  },
+  "theorem_interpretation": {
+    "support_capacity_principle": "For a frozen support S, the exact-amplitude replay is an upper bound on every deployable coefficient policy whose correction is restricted to S. Failure of this oracle support gate closes all amplitude-learning descendants on that support.",
+    "four_family_menu_rotation19_ceiling": 0.40532884442369504,
+    "four_family_menu_pooled_ceiling": 0.48542212802459467,
+    "rotation19_gate_half_passed": false,
+    "strongest_honest_conclusion": "The tested target-free selectors identify reproducible support, but the selected 32-coordinate subspace does not uniformly contain half of the full layer-31 oracle repair. Stable index selection and signed repair capacity are distinct properties."
+  },
+  "cross_family_radial_vs_pca_k32": {
+    "3": {
+      "mean_intersection": 26.5,
+      "mean_jaccard": 0.7081859187122346,
+      "mean_overlap_fraction": 0.828125,
+      "rows": [
+        {
+          "network": 8,
+          "intersection": 27,
+          "jaccard": 0.7297297297297297,
+          "overlap_fraction_of_32": 0.84375
+        },
+        {
+          "network": 9,
+          "intersection": 26,
+          "jaccard": 0.6842105263157895,
+          "overlap_fraction_of_32": 0.8125
+        },
+        {
+          "network": 10,
+          "intersection": 28,
+          "jaccard": 0.7777777777777778,
+          "overlap_fraction_of_32": 0.875
+        },
+        {
+          "network": 11,
+          "intersection": 25,
+          "jaccard": 0.6410256410256411,
+          "overlap_fraction_of_32": 0.78125
+        },
+        {
+          "network": 12,
+          "intersection": 26,
+          "jaccard": 0.6842105263157895,
+          "overlap_fraction_of_32": 0.8125
+        },
+        {
+          "network": 13,
+          "intersection": 28,
+          "jaccard": 0.7777777777777778,
+          "overlap_fraction_of_32": 0.875
+        },
+        {
+          "network": 14,
+          "intersection": 27,
+          "jaccard": 0.7297297297297297,
+          "overlap_fraction_of_32": 0.84375
+        },
+        {
+          "network": 15,
+          "intersection": 25,
+          "jaccard": 0.6410256410256411,
+          "overlap_fraction_of_32": 0.78125
+        }
+      ]
+    },
+    "19": {
+      "mean_intersection": 26.625,
+      "mean_jaccard": 0.7170807046968037,
+      "mean_overlap_fraction": 0.83203125,
+      "rows": [
+        {
+          "network": 8,
+          "intersection": 25,
+          "jaccard": 0.6410256410256411,
+          "overlap_fraction_of_32": 0.78125
+        },
+        {
+          "network": 9,
+          "intersection": 29,
+          "jaccard": 0.8285714285714286,
+          "overlap_fraction_of_32": 0.90625
+        },
+        {
+          "network": 10,
+          "intersection": 30,
+          "jaccard": 0.8823529411764706,
+          "overlap_fraction_of_32": 0.9375
+        },
+        {
+          "network": 11,
+          "intersection": 24,
+          "jaccard": 0.6,
+          "overlap_fraction_of_32": 0.75
+        },
+        {
+          "network": 12,
+          "intersection": 26,
+          "jaccard": 0.6842105263157895,
+          "overlap_fraction_of_32": 0.8125
+        },
+        {
+          "network": 13,
+          "intersection": 25,
+          "jaccard": 0.6410256410256411,
+          "overlap_fraction_of_32": 0.78125
+        },
+        {
+          "network": 14,
+          "intersection": 27,
+          "jaccard": 0.7297297297297297,
+          "overlap_fraction_of_32": 0.84375
+        },
+        {
+          "network": 15,
+          "intersection": 27,
+          "jaccard": 0.7297297297297297,
+          "overlap_fraction_of_32": 0.84375
+        }
+      ]
+    }
+  },
+  "marginal_capture": {
+    "3": {
+      "radial_h3_row_sens": {
+        "K": [
+          8,
+          12,
+          16,
+          32
+        ],
+        "capture": [
+          0.18277988624744587,
+          0.24483642473235095,
+          0.3345511549366348,
+          0.5108483273874599
+        ],
+        "increments": [
+          0.18277988624744587,
+          0.06205653848490508,
+          0.08971473020428383,
+          0.1762971724508251
+        ]
+      },
+      "basis_pca12_sens": {
+        "K": [
+          8,
+          12,
+          16,
+          32
+        ],
+        "capture": [
+          0.16802071235195923,
+          0.2594853836410132,
+          0.34398142182868735,
+          0.5320903655463961
+        ],
+        "increments": [
+          0.16802071235195923,
+          0.09146467128905397,
+          0.08449603818767415,
+          0.18810894371770875
+        ]
+      }
+    },
+    "19": {
+      "radial_h3_row_sens": {
+        "K": [
+          8,
+          12,
+          16,
+          32
+        ],
+        "capture": [
+          0.1586735624840637,
+          0.22464027559898758,
+          0.25755313838796534,
+          0.36501161513257985
+        ],
+        "increments": [
+          0.1586735624840637,
+          0.06596671311492389,
+          0.03291286278897776,
+          0.1074584767446145
+        ]
+      },
+      "basis_pca12_sens": {
+        "K": [
+          8,
+          12,
+          16,
+          32
+        ],
+        "capture": [
+          0.1763890872570839,
+          0.20881314418031102,
+          0.25221951007306587,
+          0.3889598399158105
+        ],
+        "increments": [
+          0.1763890872570839,
+          0.03242405692322711,
+          0.043406365892754845,
+          0.13674032984274465
+        ]
+      }
+    }
+  }
+}

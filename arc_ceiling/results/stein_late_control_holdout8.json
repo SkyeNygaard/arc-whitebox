@@ -1,0 +1,1194 @@
+{
+  "protocol": {
+    "indices": [
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167
+    ],
+    "layers": [
+      15,
+      29
+    ],
+    "rotation_seed": 3,
+    "skew_seeds": [
+      20260729
+    ],
+    "rank": 4,
+    "folds": 6,
+    "ridges": [
+      0.1
+    ],
+    "target_leakage": false,
+    "stein_sign": "div(phi) - x dot phi",
+    "radial_identity": "(d + 1 - norm(x)^2) s(x)",
+    "tangential_identity": "(A x) dot grad s(x), A^T=-A",
+    "rows": 66048
+  },
+  "summary": {
+    "layer15_radial_linear_left:ridge=0.1": {
+      "ratio": 3803302.571805903,
+      "wins": 0,
+      "worst": 9756725.897779454
+    },
+    "layer15_radial_linear_both:ridge=0.1": {
+      "ratio": 4045060.660795186,
+      "wins": 0,
+      "worst": 10468868.841933426
+    },
+    "layer15_radial_cubic:ridge=0.1": {
+      "ratio": 2652278.8347065304,
+      "wins": 0,
+      "worst": 6792613.332824708
+    },
+    "layer15_tangent_linear_left:ridge=0.1": {
+      "ratio": 0.9852656162014688,
+      "wins": 5,
+      "worst": 1.0402333662908336
+    },
+    "layer15_tangent_linear_both:ridge=0.1": {
+      "ratio": 0.9861753267525304,
+      "wins": 5,
+      "worst": 1.0455701160860182
+    },
+    "layer15_tangent_cubic:ridge=0.1": {
+      "ratio": 0.9806489339336668,
+      "wins": 5,
+      "worst": 1.1403130832706725
+    },
+    "layer15_tangent_joint:ridge=0.1": {
+      "ratio": 0.9936377062763357,
+      "wins": 4,
+      "worst": 1.1703338376413501
+    },
+    "layer29_radial_linear_left:ridge=0.1": {
+      "ratio": 3905195.4045916516,
+      "wins": 0,
+      "worst": 10327648.804130523
+    },
+    "layer29_radial_linear_both:ridge=0.1": {
+      "ratio": 4085235.384662731,
+      "wins": 0,
+      "worst": 10644172.63865428
+    },
+    "layer29_radial_cubic:ridge=0.1": {
+      "ratio": 2677491.454641881,
+      "wins": 0,
+      "worst": 6994202.57885019
+    },
+    "layer29_tangent_linear_left:ridge=0.1": {
+      "ratio": 0.9839369574337941,
+      "wins": 4,
+      "worst": 1.077778625676455
+    },
+    "layer29_tangent_linear_both:ridge=0.1": {
+      "ratio": 0.9724197878902162,
+      "wins": 5,
+      "worst": 1.0822726814179897
+    },
+    "layer29_tangent_cubic:ridge=0.1": {
+      "ratio": 0.9888003890178065,
+      "wins": 5,
+      "worst": 1.2440520551448395
+    },
+    "layer29_tangent_joint:ridge=0.1": {
+      "ratio": 0.9617523119967195,
+      "wins": 4,
+      "worst": 1.221038494402598
+    }
+  },
+  "records": [
+    {
+      "index": 160,
+      "name": "amy-scott",
+      "baseline_mse": 2.1440138991546879e-07,
+      "method_mses": {
+        "layer15_radial_linear_left:ridge=0.1": 0.7116693845290496,
+        "layer15_radial_linear_both:ridge=0.1": 0.7619574802548896,
+        "layer15_radial_cubic:ridge=0.1": 0.5020445349974446,
+        "layer15_tangent_linear_left:ridge=0.1": 2.0326211234589148e-07,
+        "layer15_tangent_linear_both:ridge=0.1": 2.0135722660467813e-07,
+        "layer15_tangent_cubic:ridge=0.1": 2.0183774601181324e-07,
+        "layer15_tangent_joint:ridge=0.1": 1.8799973625216315e-07,
+        "layer29_radial_linear_left:ridge=0.1": 0.7172877485787847,
+        "layer29_radial_linear_both:ridge=0.1": 0.7668545361234288,
+        "layer29_radial_cubic:ridge=0.1": 0.4862532261091642,
+        "layer29_tangent_linear_left:ridge=0.1": 2.078675015561914e-07,
+        "layer29_tangent_linear_both:ridge=0.1": 2.0489721680393888e-07,
+        "layer29_tangent_cubic:ridge=0.1": 2.0006649999514478e-07,
+        "layer29_tangent_joint:ridge=0.1": 1.9659139586312755e-07
+      },
+      "diagnostics": {
+        "layer15_radial_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 7.464153689091288,
+          "condition_ridge_0.1": 8.824985819111049,
+          "sample_mean_norm": 14.48876671253882,
+          "sample_rms": 7.464153689091288
+        },
+        "layer15_radial_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 7.582130603876878,
+          "condition_ridge_0.1": 45.07780859080137,
+          "sample_mean_norm": 20.771037062002108,
+          "sample_rms": 7.582130603876878
+        },
+        "layer15_radial_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.5001264419235254,
+          "condition_ridge_0.1": 6.78089248223554,
+          "sample_mean_norm": 0.8746038548994454,
+          "sample_rms": 0.5001264419235254
+        },
+        "layer15_tangent_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2740617220089419,
+          "condition_ridge_0.1": 1.4652718547495878,
+          "sample_mean_norm": 0.001403096899826689,
+          "sample_rms": 0.2740617220089419
+        },
+        "layer15_tangent_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.2881364083755099,
+          "condition_ridge_0.1": 25.07976852280443,
+          "sample_mean_norm": 0.0021745904154540103,
+          "sample_rms": 0.2881364083755099
+        },
+        "layer15_tangent_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.03217972605938652,
+          "condition_ridge_0.1": 1.8856058336491774,
+          "sample_mean_norm": 0.00011089712820746466,
+          "sample_rms": 0.03217972605938652
+        },
+        "layer15_tangent_joint": {
+          "features": 12.0,
+          "kept": 12.0,
+          "feature_rms": 0.2359948547690072,
+          "condition_ridge_0.1": 31.07585512045609,
+          "sample_mean_norm": 0.002177416278075717,
+          "sample_rms": 0.2359948547690072
+        },
+        "layer29_radial_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 10.336864838921105,
+          "condition_ridge_0.1": 11.037106378731432,
+          "sample_mean_norm": 20.270875351472682,
+          "sample_rms": 10.336864838921105
+        },
+        "layer29_radial_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 10.477571588654914,
+          "condition_ridge_0.1": 49.49879933085067,
+          "sample_mean_norm": 29.039516763781073,
+          "sample_rms": 10.477571588654914
+        },
+        "layer29_radial_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 1.272351083039595,
+          "condition_ridge_0.1": 7.960146220507702,
+          "sample_mean_norm": 2.2062287071231057,
+          "sample_rms": 1.272351083039595
+        },
+        "layer29_tangent_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.4115455160202059,
+          "condition_ridge_0.1": 1.7126210326948406,
+          "sample_mean_norm": 0.0020204816490582513,
+          "sample_rms": 0.4115455160202059
+        },
+        "layer29_tangent_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.4307523288608343,
+          "condition_ridge_0.1": 26.568604781686663,
+          "sample_mean_norm": 0.0029238352660760727,
+          "sample_rms": 0.4307523288608343
+        },
+        "layer29_tangent_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10506339618701614,
+          "condition_ridge_0.1": 2.0564133833928566,
+          "sample_mean_norm": 0.0001984684465151895,
+          "sample_rms": 0.10506339618701614
+        },
+        "layer29_tangent_joint": {
+          "features": 12.0,
+          "kept": 12.0,
+          "feature_rms": 0.35690029179796356,
+          "condition_ridge_0.1": 37.18482474659154,
+          "sample_mean_norm": 0.0029305634931549073,
+          "sample_rms": 0.35690029179796356
+        }
+      },
+      "seconds": 2.6445408328436315
+    },
+    {
+      "index": 161,
+      "name": "dylan-brown",
+      "baseline_mse": 2.2409177572262604e-07,
+      "method_mses": {
+        "layer15_radial_linear_left:ridge=0.1": 0.8483799061937847,
+        "layer15_radial_linear_both:ridge=0.1": 0.9098710227465929,
+        "layer15_radial_cubic:ridge=0.1": 0.5964839291411126,
+        "layer15_tangent_linear_left:ridge=0.1": 1.9264414394877633e-07,
+        "layer15_tangent_linear_both:ridge=0.1": 1.9032697306879415e-07,
+        "layer15_tangent_cubic:ridge=0.1": 2.0465401053008276e-07,
+        "layer15_tangent_joint:ridge=0.1": 1.9225173398768947e-07,
+        "layer29_radial_linear_left:ridge=0.1": 0.889113268387606,
+        "layer29_radial_linear_both:ridge=0.1": 0.9275698307906863,
+        "layer29_radial_cubic:ridge=0.1": 0.595364793311058,
+        "layer29_tangent_linear_left:ridge=0.1": 2.4152132606372827e-07,
+        "layer29_tangent_linear_both:ridge=0.1": 2.4252840699504526e-07,
+        "layer29_tangent_cubic:ridge=0.1": 2.787818341287894e-07,
+        "layer29_tangent_joint:ridge=0.1": 2.7362468443635996e-07
+      },
+      "diagnostics": {
+        "layer15_radial_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 13.216499591812173,
+          "condition_ridge_0.1": 8.260681284711229,
+          "sample_mean_norm": 25.81710017814888,
+          "sample_rms": 13.216499591812173
+        },
+        "layer15_radial_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 13.398124786573579,
+          "condition_ridge_0.1": 49.79755005917228,
+          "sample_mean_norm": 36.97475655377562,
+          "sample_rms": 13.398124786573579
+        },
+        "layer15_radial_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 2.686483206139363,
+          "condition_ridge_0.1": 8.147511669939092,
+          "sample_mean_norm": 4.651122326461974,
+          "sample_rms": 2.686483206139363
+        },
+        "layer15_tangent_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3920995490573907,
+          "condition_ridge_0.1": 1.4383978081870497,
+          "sample_mean_norm": 0.0015873511800399568,
+          "sample_rms": 0.3920995490573907
+        },
+        "layer15_tangent_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.408744954451121,
+          "condition_ridge_0.1": 24.430893688192537,
+          "sample_mean_norm": 0.0023878881122238447,
+          "sample_rms": 0.408744954451121
+        },
+        "layer15_tangent_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17112393356281316,
+          "condition_ridge_0.1": 1.8145338888213243,
+          "sample_mean_norm": 0.0008536696322794918,
+          "sample_rms": 0.17112393356281316
+        },
+        "layer15_tangent_joint": {
+          "features": 12.0,
+          "kept": 12.0,
+          "feature_rms": 0.34805568338821313,
+          "condition_ridge_0.1": 32.54661081098801,
+          "sample_mean_norm": 0.002535894610896943,
+          "sample_rms": 0.34805568338821313
+        },
+        "layer29_radial_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 13.001987871269225,
+          "condition_ridge_0.1": 21.69140321446425,
+          "sample_mean_norm": 25.494720143559917,
+          "sample_rms": 13.001987871269225
+        },
+        "layer29_radial_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 13.207755330809372,
+          "condition_ridge_0.1": 50.382319130339724,
+          "sample_mean_norm": 36.602572281354895,
+          "sample_rms": 13.207755330809372
+        },
+        "layer29_radial_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 3.086545281180014,
+          "condition_ridge_0.1": 6.564947477276854,
+          "sample_mean_norm": 5.359731022366975,
+          "sample_rms": 3.086545281180014
+        },
+        "layer29_tangent_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.46521353280780503,
+          "condition_ridge_0.1": 1.404192769910012,
+          "sample_mean_norm": 0.00365114347224797,
+          "sample_rms": 0.46521353280780503
+        },
+        "layer29_tangent_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.48976446936965506,
+          "condition_ridge_0.1": 24.648307394496246,
+          "sample_mean_norm": 0.0059759832978259105,
+          "sample_rms": 0.48976446936965506
+        },
+        "layer29_tangent_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.23403951559661432,
+          "condition_ridge_0.1": 1.6995300364298307,
+          "sample_mean_norm": 0.0005421715693728973,
+          "sample_rms": 0.23403951559661432
+        },
+        "layer29_tangent_joint": {
+          "features": 12.0,
+          "kept": 12.0,
+          "feature_rms": 0.42210305446836766,
+          "condition_ridge_0.1": 32.6974133617304,
+          "sample_mean_norm": 0.006000527175718023,
+          "sample_rms": 0.42210305446836766
+        }
+      },
+      "seconds": 2.6151661248877645
+    },
+    {
+      "index": 162,
+      "name": "yolanda-hawkins",
+      "baseline_mse": 2.3177619485927568e-07,
+      "method_mses": {
+        "layer15_radial_linear_left:ridge=0.1": 0.8021256744314107,
+        "layer15_radial_linear_both:ridge=0.1": 0.8358969518625792,
+        "layer15_radial_cubic:ridge=0.1": 0.5660983581713235,
+        "layer15_tangent_linear_left:ridge=0.1": 2.3838297334716173e-07,
+        "layer15_tangent_linear_both:ridge=0.1": 2.3735150059586902e-07,
+        "layer15_tangent_cubic:ridge=0.1": 2.6429742738872485e-07,
+        "layer15_tangent_joint:ridge=0.1": 2.7125552360356547e-07,
+        "layer29_radial_linear_left:ridge=0.1": 0.7704211649319338,
+        "layer29_radial_linear_both:ridge=0.1": 0.8291621748715289,
+        "layer29_radial_cubic:ridge=0.1": 0.5616753223000472,
+        "layer29_tangent_linear_left:ridge=0.1": 2.4293569815280044e-07,
+        "layer29_tangent_linear_both:ridge=0.1": 2.442122128723265e-07,
+        "layer29_tangent_cubic:ridge=0.1": 2.269219788749917e-07,
+        "layer29_tangent_joint:ridge=0.1": 2.442592736421824e-07
+      },
+      "diagnostics": {
+        "layer15_radial_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 9.926315765824443,
+          "condition_ridge_0.1": 17.454810097314805,
+          "sample_mean_norm": 19.40852830275389,
+          "sample_rms": 9.926315765824443
+        },
+        "layer15_radial_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 10.09087895846288,
+          "condition_ridge_0.1": 58.5966376155994,
+          "sample_mean_norm": 27.86431699530573,
+          "sample_rms": 10.09087895846288
+        },
+        "layer15_radial_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 1.193102725500805,
+          "condition_ridge_0.1": 6.079590862597793,
+          "sample_mean_norm": 2.085536017228721,
+          "sample_rms": 1.193102725500805
+        },
+        "layer15_tangent_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2863257061350828,
+          "condition_ridge_0.1": 1.3993845695791933,
+          "sample_mean_norm": 0.001991830430458111,
+          "sample_rms": 0.2863257061350828
+        },
+        "layer15_tangent_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.30332922431386494,
+          "condition_ridge_0.1": 23.877289849585217,
+          "sample_mean_norm": 0.0029907180211619787,
+          "sample_rms": 0.30332922431386494
+        },
+        "layer15_tangent_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.07072749159983296,
+          "condition_ridge_0.1": 1.703837800518403,
+          "sample_mean_norm": 0.0004303338479901307,
+          "sample_rms": 0.07072749159983296
+        },
+        "layer15_tangent_joint": {
+          "features": 12.0,
+          "kept": 12.0,
+          "feature_rms": 0.25101103210397374,
+          "condition_ridge_0.1": 33.57973379779233,
+          "sample_mean_norm": 0.0030215197339797427,
+          "sample_rms": 0.25101103210397374
+        },
+        "layer29_radial_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 11.467147791951861,
+          "condition_ridge_0.1": 9.413081004990516,
+          "sample_mean_norm": 22.54011295940518,
+          "sample_rms": 11.467147791951861
+        },
+        "layer29_radial_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 11.607012871248605,
+          "condition_ridge_0.1": 39.76476672981524,
+          "sample_mean_norm": 32.24629429171915,
+          "sample_rms": 11.607012871248605
+        },
+        "layer29_radial_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 1.9791591080985018,
+          "condition_ridge_0.1": 7.96823229233597,
+          "sample_mean_norm": 3.5050851819999616,
+          "sample_rms": 1.9791591080985018
+        },
+        "layer29_tangent_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.37639501869154834,
+          "condition_ridge_0.1": 1.1881073596501999,
+          "sample_mean_norm": 0.0019097102633110845,
+          "sample_rms": 0.37639501869154834
+        },
+        "layer29_tangent_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.39600861257306574,
+          "condition_ridge_0.1": 23.22307662409684,
+          "sample_mean_norm": 0.0027292844557223078,
+          "sample_rms": 0.39600861257306574
+        },
+        "layer29_tangent_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.13214433826254826,
+          "condition_ridge_0.1": 1.6071722945678697,
+          "sample_mean_norm": 0.0008348507648852244,
+          "sample_rms": 0.13214433826254826
+        },
+        "layer29_tangent_joint": {
+          "features": 12.0,
+          "kept": 12.0,
+          "feature_rms": 0.332218687312507,
+          "condition_ridge_0.1": 32.44431995648339,
+          "sample_mean_norm": 0.002854114475608303,
+          "sample_rms": 0.332218687312507
+        }
+      },
+      "seconds": 2.361662874929607
+    },
+    {
+      "index": 163,
+      "name": "scott-matthews",
+      "baseline_mse": 2.5893522357430787e-07,
+      "method_mses": {
+        "layer15_radial_linear_left:ridge=0.1": 2.4221159527125256,
+        "layer15_radial_linear_both:ridge=0.1": 2.6176450776937417,
+        "layer15_radial_cubic:ridge=0.1": 1.7216921276282715,
+        "layer15_tangent_linear_left:ridge=0.1": 2.562568801702866e-07,
+        "layer15_tangent_linear_both:ridge=0.1": 2.5338955287462175e-07,
+        "layer15_tangent_cubic:ridge=0.1": 2.478937668103749e-07,
+        "layer15_tangent_joint:ridge=0.1": 2.399624596725856e-07,
+        "layer29_radial_linear_left:ridge=0.1": 2.5530693097316046,
+        "layer29_radial_linear_both:ridge=0.1": 2.6633062448026985,
+        "layer29_radial_cubic:ridge=0.1": 1.8110454084785748,
+        "layer29_tangent_linear_left:ridge=0.1": 2.6288373663380154e-07,
+        "layer29_tangent_linear_both:ridge=0.1": 2.626330336813366e-07,
+        "layer29_tangent_cubic:ridge=0.1": 2.9318679136302604e-07,
+        "layer29_tangent_joint:ridge=0.1": 2.7240441686817114e-07
+      },
+      "diagnostics": {
+        "layer15_radial_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 14.246279989556257,
+          "condition_ridge_0.1": 6.2962640299507004,
+          "sample_mean_norm": 27.89728202263358,
+          "sample_rms": 14.246279989556257
+        },
+        "layer15_radial_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 14.433212779789649,
+          "condition_ridge_0.1": 41.51262345056147,
+          "sample_mean_norm": 39.93285017400997,
+          "sample_rms": 14.433212779789649
+        },
+        "layer15_radial_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 3.830358674303691,
+          "condition_ridge_0.1": 4.337447782248826,
+          "sample_mean_norm": 6.783872612946668,
+          "sample_rms": 3.830358674303691
+        },
+        "layer15_tangent_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.39028129699485625,
+          "condition_ridge_0.1": 1.533086059340399,
+          "sample_mean_norm": 0.002821480047311074,
+          "sample_rms": 0.39028129699485625
+        },
+        "layer15_tangent_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.40773304411033523,
+          "condition_ridge_0.1": 25.277541568411923,
+          "sample_mean_norm": 0.0042382247085319975,
+          "sample_rms": 0.40773304411033523
+        },
+        "layer15_tangent_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.20954334511860487,
+          "condition_ridge_0.1": 1.751597326751483,
+          "sample_mean_norm": 0.0020725011531402973,
+          "sample_rms": 0.20954334511860487
+        },
+        "layer15_tangent_joint": {
+          "features": 12.0,
+          "kept": 12.0,
+          "feature_rms": 0.3542131580477382,
+          "condition_ridge_0.1": 34.64822593491726,
+          "sample_mean_norm": 0.004717818320980472,
+          "sample_rms": 0.3542131580477382
+        },
+        "layer29_radial_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 17.746219407068896,
+          "condition_ridge_0.1": 21.00604777464166,
+          "sample_mean_norm": 34.87844034523939,
+          "sample_rms": 17.746219407068896
+        },
+        "layer29_radial_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 17.944854666785815,
+          "condition_ridge_0.1": 61.58998208956249,
+          "sample_mean_norm": 49.84896345580823,
+          "sample_rms": 17.944854666785815
+        },
+        "layer29_radial_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 6.435877166235284,
+          "condition_ridge_0.1": 6.472253468186488,
+          "sample_mean_norm": 11.367020714161933,
+          "sample_rms": 6.435877166235284
+        },
+        "layer29_tangent_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.5449734279508515,
+          "condition_ridge_0.1": 1.4320226053229543,
+          "sample_mean_norm": 0.0057250362605368805,
+          "sample_rms": 0.5449734279508515
+        },
+        "layer29_tangent_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.5716870822260319,
+          "condition_ridge_0.1": 23.889743667075773,
+          "sample_mean_norm": 0.008261266625848846,
+          "sample_rms": 0.5716870822260319
+        },
+        "layer29_tangent_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.4364859405919382,
+          "condition_ridge_0.1": 1.586305312371449,
+          "sample_mean_norm": 0.005823833642342004,
+          "sample_rms": 0.4364859405919382
+        },
+        "layer29_tangent_joint": {
+          "features": 12.0,
+          "kept": 12.0,
+          "feature_rms": 0.5304627590769706,
+          "condition_ridge_0.1": 34.21827056100723,
+          "sample_mean_norm": 0.010107698281856186,
+          "sample_rms": 0.5304627590769706
+        }
+      },
+      "seconds": 2.1550644170492887
+    },
+    {
+      "index": 164,
+      "name": "benjamin-walsh",
+      "baseline_mse": 3.457485566680732e-07,
+      "method_mses": {
+        "layer15_radial_linear_left:ridge=0.1": 0.3248802091589229,
+        "layer15_radial_linear_both:ridge=0.1": 0.3456369811515203,
+        "layer15_radial_cubic:ridge=0.1": 0.23188166432843418,
+        "layer15_tangent_linear_left:ridge=0.1": 3.596591849930268e-07,
+        "layer15_tangent_linear_both:ridge=0.1": 3.615043585320106e-07,
+        "layer15_tangent_cubic:ridge=0.1": 3.4749905741248697e-07,
+        "layer15_tangent_joint:ridge=0.1": 3.779079251904704e-07,
+        "layer29_radial_linear_left:ridge=0.1": 0.3419934538020988,
+        "layer29_radial_linear_both:ridge=0.1": 0.3525939583582832,
+        "layer29_radial_cubic:ridge=0.1": 0.21069004113586864,
+        "layer29_tangent_linear_left:ridge=0.1": 3.530754933443151e-07,
+        "layer29_tangent_linear_both:ridge=0.1": 3.40747947192792e-07,
+        "layer29_tangent_cubic:ridge=0.1": 3.6057986147431594e-07,
+        "layer29_tangent_joint:ridge=0.1": 3.631941732623745e-07
+      },
+      "diagnostics": {
+        "layer15_radial_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 11.98872265126862,
+          "condition_ridge_0.1": 11.347267849701058,
+          "sample_mean_norm": 23.436779401968195,
+          "sample_rms": 11.98872265126862
+        },
+        "layer15_radial_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 12.14412923661924,
+          "condition_ridge_0.1": 42.80943442887057,
+          "sample_mean_norm": 33.54930139800038,
+          "sample_rms": 12.14412923661924
+        },
+        "layer15_radial_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 1.883861303335348,
+          "condition_ridge_0.1": 8.416393058936562,
+          "sample_mean_norm": 3.2911473761034373,
+          "sample_rms": 1.883861303335348
+        },
+        "layer15_tangent_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3201114269240459,
+          "condition_ridge_0.1": 1.2656145602985502,
+          "sample_mean_norm": 0.0018229904092147535,
+          "sample_rms": 0.3201114269240459
+        },
+        "layer15_tangent_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.3329198817131796,
+          "condition_ridge_0.1": 23.951318051745556,
+          "sample_mean_norm": 0.0026900448128179383,
+          "sample_rms": 0.3329198817131796
+        },
+        "layer15_tangent_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.09648066247548255,
+          "condition_ridge_0.1": 1.7489047563004012,
+          "sample_mean_norm": 0.000611194130748998,
+          "sample_rms": 0.09648066247548255
+        },
+        "layer15_tangent_joint": {
+          "features": 12.0,
+          "kept": 12.0,
+          "feature_rms": 0.2774766137362108,
+          "condition_ridge_0.1": 32.81041771669064,
+          "sample_mean_norm": 0.0027586046038587555,
+          "sample_rms": 0.2774766137362108
+        },
+        "layer29_radial_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 6.946714707531656,
+          "condition_ridge_0.1": 23.139475188361875,
+          "sample_mean_norm": 13.534610685114478,
+          "sample_rms": 6.946714707531656
+        },
+        "layer29_radial_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 7.0524515784230015,
+          "condition_ridge_0.1": 64.64333966078073,
+          "sample_mean_norm": 19.40930303795338,
+          "sample_rms": 7.0524515784230015
+        },
+        "layer29_radial_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.4508955305571387,
+          "condition_ridge_0.1": 7.129076023960049,
+          "sample_mean_norm": 0.7584118696125193,
+          "sample_rms": 0.4508955305571387
+        },
+        "layer29_tangent_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.30610641363230223,
+          "condition_ridge_0.1": 1.6409516968193711,
+          "sample_mean_norm": 0.002340211992998244,
+          "sample_rms": 0.30610641363230223
+        },
+        "layer29_tangent_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.32372538733562456,
+          "condition_ridge_0.1": 25.78683221965274,
+          "sample_mean_norm": 0.003507027634009411,
+          "sample_rms": 0.32372538733562456
+        },
+        "layer29_tangent_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.038865238285792816,
+          "condition_ridge_0.1": 1.8403020480527232,
+          "sample_mean_norm": 0.0003728007165806654,
+          "sample_rms": 0.038865238285792816
+        },
+        "layer29_tangent_joint": {
+          "features": 12.0,
+          "kept": 12.0,
+          "feature_rms": 0.2652714079065764,
+          "condition_ridge_0.1": 32.79529440064436,
+          "sample_mean_norm": 0.003526786526001922,
+          "sample_rms": 0.2652714079065764
+        }
+      },
+      "seconds": 2.1025415409822017
+    },
+    {
+      "index": 165,
+      "name": "justin-crawford",
+      "baseline_mse": 3.0668110132632703e-07,
+      "method_mses": {
+        "layer15_radial_linear_left:ridge=0.1": 0.6913543907047732,
+        "layer15_radial_linear_both:ridge=0.1": 0.728263821912907,
+        "layer15_radial_cubic:ridge=0.1": 0.5193750144010025,
+        "layer15_tangent_linear_left:ridge=0.1": 3.0577788876530395e-07,
+        "layer15_tangent_linear_both:ridge=0.1": 3.0188123129680926e-07,
+        "layer15_tangent_cubic:ridge=0.1": 3.158466385779974e-07,
+        "layer15_tangent_joint:ridge=0.1": 3.0767961706451485e-07,
+        "layer29_radial_linear_left:ridge=0.1": 0.6632918609636496,
+        "layer29_radial_linear_both:ridge=0.1": 0.7100674357005037,
+        "layer29_radial_cubic:ridge=0.1": 0.467378953559151,
+        "layer29_tangent_linear_left:ridge=0.1": 2.976451450704676e-07,
+        "layer29_tangent_linear_both:ridge=0.1": 2.98045125502007e-07,
+        "layer29_tangent_cubic:ridge=0.1": 2.697411487453424e-07,
+        "layer29_tangent_joint:ridge=0.1": 2.692466413981654e-07
+      },
+      "diagnostics": {
+        "layer15_radial_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 9.899692506890961,
+          "condition_ridge_0.1": 17.59426386599505,
+          "sample_mean_norm": 19.268801954460905,
+          "sample_rms": 9.899692506890961
+        },
+        "layer15_radial_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 10.179758234473557,
+          "condition_ridge_0.1": 54.327529331766584,
+          "sample_mean_norm": 27.97763101379096,
+          "sample_rms": 10.179758234473557
+        },
+        "layer15_radial_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 1.0553998507834854,
+          "condition_ridge_0.1": 9.44498981317681,
+          "sample_mean_norm": 1.853401383551996,
+          "sample_rms": 1.0553998507834854
+        },
+        "layer15_tangent_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34107848406250013,
+          "condition_ridge_0.1": 1.8317845610362984,
+          "sample_mean_norm": 0.0022098248523678052,
+          "sample_rms": 0.34107848406250013
+        },
+        "layer15_tangent_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.36144209995862797,
+          "condition_ridge_0.1": 27.885746805685372,
+          "sample_mean_norm": 0.0031145651610645863,
+          "sample_rms": 0.36144209995862797
+        },
+        "layer15_tangent_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.07014907198788588,
+          "condition_ridge_0.1": 1.6602274160735508,
+          "sample_mean_norm": 0.0007967614344394068,
+          "sample_rms": 0.07014907198788588
+        },
+        "layer15_tangent_joint": {
+          "features": 12.0,
+          "kept": 12.0,
+          "feature_rms": 0.2978823456477222,
+          "condition_ridge_0.1": 35.33214552563813,
+          "sample_mean_norm": 0.0032148631270906714,
+          "sample_rms": 0.2978823456477222
+        },
+        "layer29_radial_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 10.46805881576261,
+          "condition_ridge_0.1": 10.954931110665639,
+          "sample_mean_norm": 20.545454489346845,
+          "sample_rms": 10.46805881576261
+        },
+        "layer29_radial_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 10.561995203012165,
+          "condition_ridge_0.1": 40.753125947055985,
+          "sample_mean_norm": 29.28415748289037,
+          "sample_rms": 10.561995203012165
+        },
+        "layer29_radial_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 1.3590595430810122,
+          "condition_ridge_0.1": 6.1597016932734485,
+          "sample_mean_norm": 2.3980841965902404,
+          "sample_rms": 1.3590595430810122
+        },
+        "layer29_tangent_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3970618433560108,
+          "condition_ridge_0.1": 1.5424243421105635,
+          "sample_mean_norm": 0.002513595772560839,
+          "sample_rms": 0.3970618433560108
+        },
+        "layer29_tangent_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.42295714722149225,
+          "condition_ridge_0.1": 24.59271841789452,
+          "sample_mean_norm": 0.0039663205807975435,
+          "sample_rms": 0.42295714722149225
+        },
+        "layer29_tangent_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10486265103016745,
+          "condition_ridge_0.1": 1.5691924105053714,
+          "sample_mean_norm": 0.0004146272093435159,
+          "sample_rms": 0.10486265103016745
+        },
+        "layer29_tangent_joint": {
+          "features": 12.0,
+          "kept": 12.0,
+          "feature_rms": 0.35060978896419914,
+          "condition_ridge_0.1": 32.49563022984834,
+          "sample_mean_norm": 0.003987933634400923,
+          "sample_rms": 0.35060978896419914
+        }
+      },
+      "seconds": 2.2770197500940412
+    },
+    {
+      "index": 166,
+      "name": "tara-harris",
+      "baseline_mse": 6.550653607037826e-07,
+      "method_mses": {
+        "layer15_radial_linear_left:ridge=0.1": 1.9060412350949794,
+        "layer15_radial_linear_both:ridge=0.1": 1.9848049709841766,
+        "layer15_radial_cubic:ridge=0.1": 1.2382181077748342,
+        "layer15_tangent_linear_left:ridge=0.1": 6.561270061206512e-07,
+        "layer15_tangent_linear_both:ridge=0.1": 6.692097577622386e-07,
+        "layer15_tangent_cubic:ridge=0.1": 6.126812870425121e-07,
+        "layer15_tangent_joint:ridge=0.1": 6.43789604984092e-07,
+        "layer29_radial_linear_left:ridge=0.1": 1.9362450513843226,
+        "layer29_radial_linear_both:ridge=0.1": 2.0062164237661713,
+        "layer29_radial_cubic:ridge=0.1": 1.286484861204461,
+        "layer29_tangent_linear_left:ridge=0.1": 6.006074914761043e-07,
+        "layer29_tangent_linear_both:ridge=0.1": 5.850356350601935e-07,
+        "layer29_tangent_cubic:ridge=0.1": 5.857700704416835e-07,
+        "layer29_tangent_joint:ridge=0.1": 5.340751460306888e-07
+      },
+      "diagnostics": {
+        "layer15_radial_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 11.785027204918153,
+          "condition_ridge_0.1": 17.447247890390184,
+          "sample_mean_norm": 23.053768823474588,
+          "sample_rms": 11.785027204918153
+        },
+        "layer15_radial_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 12.037204586600422,
+          "condition_ridge_0.1": 51.00271335053562,
+          "sample_mean_norm": 33.263257241643096,
+          "sample_rms": 12.037204586600422
+        },
+        "layer15_radial_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 2.493028319197698,
+          "condition_ridge_0.1": 3.127140836735503,
+          "sample_mean_norm": 4.370125560866917,
+          "sample_rms": 2.493028319197698
+        },
+        "layer15_tangent_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3245029250794402,
+          "condition_ridge_0.1": 1.7863977357854066,
+          "sample_mean_norm": 0.00133801089624231,
+          "sample_rms": 0.3245029250794402
+        },
+        "layer15_tangent_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.3418038993803027,
+          "condition_ridge_0.1": 26.93835162287675,
+          "sample_mean_norm": 0.002327622461334127,
+          "sample_rms": 0.3418038993803027
+        },
+        "layer15_tangent_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.13833036460237252,
+          "condition_ridge_0.1": 1.5986002601247669,
+          "sample_mean_norm": 0.0006399816307330674,
+          "sample_rms": 0.13833036460237252
+        },
+        "layer15_tangent_joint": {
+          "features": 12.0,
+          "kept": 12.0,
+          "feature_rms": 0.2902844013688331,
+          "condition_ridge_0.1": 32.00840902200251,
+          "sample_mean_norm": 0.0024140014105594253,
+          "sample_rms": 0.2902844013688331
+        },
+        "layer29_radial_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 17.035327493667168,
+          "condition_ridge_0.1": 29.807992342386108,
+          "sample_mean_norm": 33.447571434333526,
+          "sample_rms": 17.035327493667168
+        },
+        "layer29_radial_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 17.299767803403814,
+          "condition_ridge_0.1": 61.00901918390957,
+          "sample_mean_norm": 48.009488035232074,
+          "sample_rms": 17.299767803403814
+        },
+        "layer29_radial_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 6.414907111756197,
+          "condition_ridge_0.1": 9.651153517158718,
+          "sample_mean_norm": 11.22895818852934,
+          "sample_rms": 6.414907111756197
+        },
+        "layer29_tangent_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.4817999282832541,
+          "condition_ridge_0.1": 1.5563543429388442,
+          "sample_mean_norm": 0.0020986198620693924,
+          "sample_rms": 0.4817999282832541
+        },
+        "layer29_tangent_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.5065985704137388,
+          "condition_ridge_0.1": 23.246818430564492,
+          "sample_mean_norm": 0.003226353423910482,
+          "sample_rms": 0.5065985704137388
+        },
+        "layer29_tangent_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.40921371929666917,
+          "condition_ridge_0.1": 2.6036868389916368,
+          "sample_mean_norm": 0.0013052829336308326,
+          "sample_rms": 0.40921371929666917
+        },
+        "layer29_tangent_joint": {
+          "features": 12.0,
+          "kept": 12.0,
+          "feature_rms": 0.4763542418379767,
+          "condition_ridge_0.1": 34.70258479439215,
+          "sample_mean_norm": 0.0034803907758765833,
+          "sample_rms": 0.4763542418379767
+        }
+      },
+      "seconds": 1.9795180829241872
+    },
+    {
+      "index": 167,
+      "name": "kathy-wright",
+      "baseline_mse": 1.3442326455351485e-07,
+      "method_mses": {
+        "layer15_radial_linear_left:ridge=0.1": 1.3115309465333371,
+        "layer15_radial_linear_both:ridge=0.1": 1.4072595259152654,
+        "layer15_radial_cubic:ridge=0.1": 0.913085259048028,
+        "layer15_tangent_linear_left:ridge=0.1": 1.2407564327166142e-07,
+        "layer15_tangent_linear_both:ridge=0.1": 1.2332226771800554e-07,
+        "layer15_tangent_cubic:ridge=0.1": 1.305291782924159e-07,
+        "layer15_tangent_joint:ridge=0.1": 1.3519048643148684e-07,
+        "layer29_radial_linear_left:ridge=0.1": 1.3882762674134286,
+        "layer29_radial_linear_both:ridge=0.1": 1.4308244345591086,
+        "layer29_radial_cubic:ridge=0.1": 0.9297686090659693,
+        "layer29_tangent_linear_left:ridge=0.1": 1.264990274784478e-07,
+        "layer29_tangent_linear_both:ridge=0.1": 1.276272175965987e-07,
+        "layer29_tangent_cubic:ridge=0.1": 1.2951902859507736e-07,
+        "layer29_tangent_joint:ridge=0.1": 1.270371681754784e-07
+      },
+      "diagnostics": {
+        "layer15_radial_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 14.1280240263712,
+          "condition_ridge_0.1": 9.970491398830045,
+          "sample_mean_norm": 27.682329115624476,
+          "sample_rms": 14.1280240263712
+        },
+        "layer15_radial_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 14.287360243609388,
+          "condition_ridge_0.1": 45.36732563870781,
+          "sample_mean_norm": 39.55869130407069,
+          "sample_rms": 14.287360243609388
+        },
+        "layer15_radial_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 3.313327479668665,
+          "condition_ridge_0.1": 6.025926927984791,
+          "sample_mean_norm": 5.778015023621708,
+          "sample_rms": 3.313327479668665
+        },
+        "layer15_tangent_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34952719935725324,
+          "condition_ridge_0.1": 1.2717151439235481,
+          "sample_mean_norm": 0.0012583409139294874,
+          "sample_rms": 0.34952719935725324
+        },
+        "layer15_tangent_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.3639075054612128,
+          "condition_ridge_0.1": 22.377529336784477,
+          "sample_mean_norm": 0.0019567497759010424,
+          "sample_rms": 0.3639075054612128
+        },
+        "layer15_tangent_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17768410296165785,
+          "condition_ridge_0.1": 1.6615511831334704,
+          "sample_mean_norm": 0.0006182901941955417,
+          "sample_rms": 0.17768410296165785
+        },
+        "layer15_tangent_joint": {
+          "features": 12.0,
+          "kept": 12.0,
+          "feature_rms": 0.31434004173150576,
+          "condition_ridge_0.1": 31.93638445209106,
+          "sample_mean_norm": 0.00205210926846675,
+          "sample_rms": 0.31434004173150576
+        },
+        "layer29_radial_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 15.175326855576206,
+          "condition_ridge_0.1": 24.653472327056633,
+          "sample_mean_norm": 29.80499695252549,
+          "sample_rms": 15.175326855576206
+        },
+        "layer29_radial_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 15.398200722561509,
+          "condition_ridge_0.1": 53.73391918840817,
+          "sample_mean_norm": 42.752071908543826,
+          "sample_rms": 15.398200722561509
+        },
+        "layer29_radial_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 4.384336622898152,
+          "condition_ridge_0.1": 7.118074323298932,
+          "sample_mean_norm": 7.602664564695414,
+          "sample_rms": 4.384336622898152
+        },
+        "layer29_tangent_linear_left": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.4022352383484771,
+          "condition_ridge_0.1": 1.9244912511805474,
+          "sample_mean_norm": 0.002030530689385874,
+          "sample_rms": 0.4022352383484771
+        },
+        "layer29_tangent_linear_both": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.4195233018350426,
+          "condition_ridge_0.1": 25.511781525199133,
+          "sample_mean_norm": 0.002981908209581364,
+          "sample_rms": 0.4195233018350426
+        },
+        "layer29_tangent_cubic": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.27082951649969905,
+          "condition_ridge_0.1": 1.5112202942884698,
+          "sample_mean_norm": 0.0013404346952515915,
+          "sample_rms": 0.27082951649969905
+        },
+        "layer29_tangent_joint": {
+          "features": 12.0,
+          "kept": 12.0,
+          "feature_rms": 0.3765404929852004,
+          "condition_ridge_0.1": 36.11825237918072,
+          "sample_mean_norm": 0.00326933353186899,
+          "sample_rms": 0.3765404929852004
+        }
+      },
+      "seconds": 2.1619109171442688
+    }
+  ]
+}

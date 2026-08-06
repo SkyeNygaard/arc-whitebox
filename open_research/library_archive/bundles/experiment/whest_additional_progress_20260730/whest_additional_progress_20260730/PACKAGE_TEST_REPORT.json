@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "manuscript_checks": {
+    "THEOREM_PAPER_REVISION_V18.md": {
+      "old_tight_bound_absent": true,
+      "malformed_rac_absent": true,
+      "universal_impossibility_not_asserted": true,
+      "signed_floor_present": true
+    },
+    "EMPIRICAL_COMPANION_REVISION_V18.md": {
+      "old_tight_bound_absent": true,
+      "malformed_rac_absent": true,
+      "universal_impossibility_not_asserted": true,
+      "signed_floor_present": true
+    }
+  },
+  "executions": [
+    {
+      "command": "python validate_v5_2.py",
+      "returncode": 0,
+      "stdout_tail": "{\n  \"passed\": true,\n  \"t22_clean_regeneration\": true,\n  \"t16_second_interval_stack\": true,\n  \"signed_floor_exact\": \"790161513053615965080819/10000000000000000000000000000000\",\n  \"signed_max_improvement_below_3_1x\": true\n}\n"
+    },
+    {
+      "command": "python t16_mpmath_iv_second_stack.py",
+      "returncode": 0,
+      "stdout_tail": "{\n  \"status\": \"PASSED\",\n  \"rho\": \"1.595590873085262773638572219658743962347019404754386258756204405665528304385571355032758939265e-72\",\n  \"outer_upper\": \"2.3985863895490841793195233334653050190667219273153882590915921507927729499065395761956327293471\",\n  \"H_min\": \"8.1492862257392721860919360166557128292784679670965212457992790866928439681447202519085875711533\",\n  \"smallest_coefficient_lower\": \"0.00017989892346364458549448698909864663853047158683039399322157885175165338757428298252788823986899\"\n}\n"
+    },
+    {
+      "command": "python generate_multirank_signed_certificate.py",
+      "returncode": 0,
+      "stdout_tail": "{\n  \"signed_rule_mse_lower_bound_decimal\": \"0.0000000790161513053615965080819\",\n  \"fraction_of_kerdock_mse_lower_bound\": \"0.32468027455209637484239705402560491832232104954217968099016\",\n  \"maximum_permitted_improvement_factor_vs_kerdock\": \"3.079953044204863180599909047290358663173099108903909373206\"\n}\n"
+    }
+  ]
+}

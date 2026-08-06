@@ -1,0 +1,12 @@
+{
+  "status": "pass_synthetic_unit_test",
+  "test_shape": {"batch": 2, "depth": 4, "width": 9, "label_dim": 3},
+  "permuted_layers": "all hidden layers; input and output identities",
+  "maximum_absolute_difference": {
+    "correction": 2.9802322387695312e-08,
+    "scale": 0.0,
+    "confidence": 0.0
+  },
+  "tolerance": 3e-05,
+  "note": "This verifies the implemented symmetry algebra, not full-corpus generalization."
+}

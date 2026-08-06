@@ -1,0 +1,106 @@
+{
+  "protocol": {
+    "selection_index": 0,
+    "name": "daniel-harrison",
+    "holdout_loaded": false,
+    "rotation_seed": 3,
+    "flopscope_version": "0.9.1+np2.4.6"
+  },
+  "profiles": [
+    {
+      "rows": 4096,
+      "tiles": 16,
+      "levels": 3,
+      "flopscope_flops_used": 423058432,
+      "theoretical_flops": 394610688,
+      "flops_agree": false,
+      "dense_flops": 535822336,
+      "max_abs_error": 1.3113021850585938e-05,
+      "rms_error": 1.4618491377405007e-06,
+      "operations": {
+        "reshape": {
+          "flop_cost": 24161280,
+          "calls": 12,
+          "flopscope_backend_time_s": 0.00191370933316648,
+          "flopscope_overhead_time_s": 0.0024234165903180838
+        },
+        "add": {
+          "flop_cost": 13999104,
+          "calls": 36,
+          "flopscope_backend_time_s": 0.02024104236625135,
+          "flopscope_overhead_time_s": 0.00313712190836668
+        },
+        "subtract": {
+          "flop_cost": 6285312,
+          "calls": 18,
+          "flopscope_backend_time_s": 0.007530791684985161,
+          "flopscope_overhead_time_s": 0.0008332061115652323
+        },
+        "stack": {
+          "flop_cost": 11332608,
+          "calls": 6,
+          "flopscope_backend_time_s": 0.017549374606460333,
+          "flopscope_overhead_time_s": 0.0003503751941025257
+        },
+        "matmul": {
+          "flop_cost": 354041856,
+          "calls": 1,
+          "flopscope_backend_time_s": 0.01503208396025002,
+          "flopscope_overhead_time_s": 0.00868395809084177
+        },
+        "concatenate": {
+          "flop_cost": 13238272,
+          "calls": 10,
+          "flopscope_backend_time_s": 0.009430206846445799,
+          "flopscope_overhead_time_s": 0.0009205893147736788
+        }
+      }
+    }
+  ],
+  "level_costs": {
+    "0": {
+      "deep_31_flops": 267844190208,
+      "ratio_to_classical": 1.0
+    },
+    "1": {
+      "deep_31_flops": 237317128192,
+      "ratio_to_classical": 0.8860267904549523
+    },
+    "2": {
+      "deep_31_flops": 213247557632,
+      "ratio_to_classical": 0.7961627148470092
+    },
+    "3": {
+      "deep_31_flops": 196809498624,
+      "ratio_to_classical": 0.7347909934920129
+    },
+    "4": {
+      "deep_31_flops": 190516123648,
+      "ratio_to_classical": 0.7112945907098105
+    },
+    "5": {
+      "deep_31_flops": 199166792192,
+      "ratio_to_classical": 0.7435919817313673
+    },
+    "6": {
+      "deep_31_flops": 231511527552,
+      "ratio_to_classical": 0.8643514999232011
+    },
+    "7": {
+      "deep_31_flops": 303170121664,
+      "ratio_to_classical": 1.1318898551750065
+    },
+    "8": {
+      "deep_31_flops": 441746055188,
+      "ratio_to_classical": 1.6492650254797496
+    }
+  },
+  "end_to_end": {
+    "dense_seconds": 0.8388450408820063,
+    "strassen_seconds": 13.72171949991025,
+    "dense_final_mse": 1.7326172944260587e-07,
+    "strassen_final_mse": 1.7320670268938588e-07,
+    "prediction_max_abs_error": 9.789635146972842e-07,
+    "prediction_rms_error": 3.08336963463821e-07
+  }
+}

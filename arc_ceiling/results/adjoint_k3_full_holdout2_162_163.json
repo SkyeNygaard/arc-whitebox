@@ -1,0 +1,367 @@
+{
+  "protocol": {
+    "indices": [
+      162,
+      163
+    ],
+    "source_mode": "full",
+    "direction_family": "sample",
+    "target_layer": 29,
+    "control_rank": 2,
+    "matrix_ranks": [
+      16,
+      32,
+      64
+    ],
+    "handoffs": [
+      27,
+      24,
+      20
+    ],
+    "dtype": "float64",
+    "weights_dir": "arc_whitebox/submissions/whest_bounded_ml/data/official_weights_fresh",
+    "directions_dir": "arc_ceiling/results/adjoint_k3_directions_rank2",
+    "factorized_dir": "arc_ceiling/results/factorized_k3_layer29_diagfix",
+    "full_mode_is_oracle_audit_only": true,
+    "born_mode_discards_k3_feedback": false
+  },
+  "summary": {
+    "q16_h27": {
+      "relative_error_vs_factorized": 0.17596978809284455,
+      "relative_error_vs_oracle": 0.38283925706169397,
+      "cosine_vs_factorized": 0.9997801197758233,
+      "adjoint_flops_representative": {
+        "source_projection": 4684259328,
+        "source_vector_dots": 116164608,
+        "source_elementwise_reductions": 21829632,
+        "adjoint_matrix_pullback": 514891776,
+        "adjoint_vector_pullback": 7848960,
+        "total_excluding_handoff_eigh": 5344994304
+      }
+    },
+    "q16_h24": {
+      "relative_error_vs_factorized": 0.08842442347663887,
+      "relative_error_vs_oracle": 0.317688196197652,
+      "cosine_vs_factorized": 0.9998899944081624,
+      "adjoint_flops_representative": {
+        "source_projection": 7509884928,
+        "source_vector_dots": 116164608,
+        "source_elementwise_reductions": 32520192,
+        "adjoint_matrix_pullback": 904200192,
+        "adjoint_vector_pullback": 7848960,
+        "total_excluding_handoff_eigh": 8570618880
+      }
+    },
+    "q16_h20": {
+      "relative_error_vs_factorized": 0.028815723841011505,
+      "relative_error_vs_oracle": 0.27290369188969926,
+      "cosine_vs_factorized": 0.9999850720997734,
+      "adjoint_flops_representative": {
+        "source_projection": 11277385728,
+        "source_vector_dots": 116164608,
+        "source_elementwise_reductions": 46774272,
+        "adjoint_matrix_pullback": 1423278080,
+        "adjoint_vector_pullback": 7848960,
+        "total_excluding_handoff_eigh": 12871451648
+      }
+    },
+    "q32_h27": {
+      "relative_error_vs_factorized": 0.07988305503000949,
+      "relative_error_vs_oracle": 0.310931462255419,
+      "cosine_vs_factorized": 0.9999190288223971,
+      "adjoint_flops_representative": {
+        "source_projection": 6354518016,
+        "source_vector_dots": 116164608,
+        "source_elementwise_reductions": 31635456,
+        "adjoint_matrix_pullback": 627916800,
+        "adjoint_vector_pullback": 7848960,
+        "total_excluding_handoff_eigh": 7138083840
+      }
+    },
+    "q32_h24": {
+      "relative_error_vs_factorized": 0.02131588498920318,
+      "relative_error_vs_oracle": 0.2671595229965172,
+      "cosine_vs_factorized": 0.9999963385707991,
+      "adjoint_flops_representative": {
+        "source_projection": 8991768576,
+        "source_vector_dots": 116164608,
+        "source_elementwise_reductions": 41220096,
+        "adjoint_matrix_pullback": 1004666880,
+        "adjoint_vector_pullback": 7848960,
+        "total_excluding_handoff_eigh": 10161669120
+      }
+    },
+    "q32_h20": {
+      "relative_error_vs_factorized": 0.003367735994524814,
+      "relative_error_vs_oracle": 0.2537502369418776,
+      "cosine_vs_factorized": 0.999999839281178,
+      "adjoint_flops_representative": {
+        "source_projection": 12508102656,
+        "source_vector_dots": 116164608,
+        "source_elementwise_reductions": 53999616,
+        "adjoint_matrix_pullback": 1507000320,
+        "adjoint_vector_pullback": 7848960,
+        "total_excluding_handoff_eigh": 14193116160
+      }
+    },
+    "q64_h27": {
+      "relative_error_vs_factorized": 0.018490080230662034,
+      "relative_error_vs_oracle": 0.2649438190648481,
+      "cosine_vs_factorized": 0.9999951282377815,
+      "adjoint_flops_representative": {
+        "source_projection": 9695035392,
+        "source_vector_dots": 116164608,
+        "source_elementwise_reductions": 51247104,
+        "adjoint_matrix_pullback": 853966848,
+        "adjoint_vector_pullback": 7848960,
+        "total_excluding_handoff_eigh": 10724262912
+      }
+    },
+    "q64_h24": {
+      "relative_error_vs_factorized": 0.0013604231424334532,
+      "relative_error_vs_oracle": 0.2522564742199163,
+      "cosine_vs_factorized": 0.9999999718038243,
+      "adjoint_flops_representative": {
+        "source_projection": 11955535872,
+        "source_vector_dots": 116164608,
+        "source_elementwise_reductions": 58619904,
+        "adjoint_matrix_pullback": 1205600256,
+        "adjoint_vector_pullback": 7848960,
+        "total_excluding_handoff_eigh": 13343769600
+      }
+    },
+    "q64_h20": {
+      "relative_error_vs_factorized": 4.331141449630814e-05,
+      "relative_error_vs_oracle": 0.2512849721132919,
+      "cosine_vs_factorized": 0.9999999999721604,
+      "adjoint_flops_representative": {
+        "source_projection": 14969536512,
+        "source_vector_dots": 116164608,
+        "source_elementwise_reductions": 68450304,
+        "adjoint_matrix_pullback": 1674444800,
+        "adjoint_vector_pullback": 7848960,
+        "total_excluding_handoff_eigh": 16836445184
+      }
+    }
+  },
+  "records": [
+    {
+      "index": 162,
+      "source_ranks": [
+        768,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280
+      ],
+      "factorized_truth": [
+        0.904239686104347,
+        0.2040161736389698
+      ],
+      "oracle_truth": [
+        1.3814312392501922,
+        0.2226199924913894
+      ],
+      "direct_factor": [
+        0.9042396861043457,
+        0.20401617363896848
+      ],
+      "direct_factor_relative_error": 2.0114885873678316e-15,
+      "estimates": {
+        "q16_h27": [
+          0.7288949668288993,
+          0.18539567721334801
+        ],
+        "q16_h24": [
+          0.7896298478868642,
+          0.19736578829610682
+        ],
+        "q16_h20": [
+          0.8648827664680534,
+          0.2026742758534008
+        ],
+        "q32_h27": [
+          0.8209935009093317,
+          0.1961681457764203
+        ],
+        "q32_h24": [
+          0.8825777249490481,
+          0.20164436707884495
+        ],
+        "q32_h20": [
+          0.9011688214285098,
+          0.20404628932592025
+        ],
+        "q64_h27": [
+          0.8881766829536692,
+          0.2029081729085073
+        ],
+        "q64_h24": [
+          0.9031412195752405,
+          0.20398755871832838
+        ],
+        "q64_h20": [
+          0.9042133655651398,
+          0.20401529491786272
+        ]
+      },
+      "relative_errors_vs_factorized": {
+        "q16_h27": 0.19022274456928653,
+        "q16_h24": 0.12384728347065296,
+        "q16_h20": 0.04248230345369195,
+        "q32_h27": 0.09020288652099015,
+        "q32_h24": 0.0235082455261959,
+        "q32_h20": 0.0033129602842338723,
+        "q64_h27": 0.017369693443040908,
+        "q64_h24": 0.0011854105857668179,
+        "q64_h20": 2.8410007187295234e-05
+      },
+      "relative_errors_vs_oracle": {
+        "q16_h27": 0.4671039872603872,
+        "q16_h24": 0.4233255449021546,
+        "q16_h20": 0.36943499385821044,
+        "q32_h27": 0.40097195405329294,
+        "q32_h24": 0.3568289141865204,
+        "q32_h20": 0.34348404415170414,
+        "q64_h27": 0.352793879308648,
+        "q64_h24": 0.34207712589196054,
+        "q64_h20": 0.34131070835754324
+      },
+      "seconds": 13.664945791009814
+    },
+    {
+      "index": 163,
+      "source_ranks": [
+        768,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280
+      ],
+      "factorized_truth": [
+        3.441148254794556,
+        0.49314691301031033
+      ],
+      "oracle_truth": [
+        4.5431445062045315,
+        0.5497152022981937
+      ],
+      "direct_factor": [
+        3.441148254794559,
+        0.4931469130103005
+      ],
+      "direct_factor_relative_error": 2.9284997239470874e-15,
+      "estimates": {
+        "q16_h27": [
+          2.8338005265432598,
+          0.4639762175824532
+        ],
+        "q16_h24": [
+          3.1446993743589866,
+          0.48107514252633954
+        ],
+        "q16_h20": [
+          3.3452590143232417,
+          0.49157963327797083
+        ],
+        "q32_h27": [
+          3.1661799782763693,
+          0.4936928190874498
+        ],
+        "q32_h24": [
+          3.3676346590800805,
+          0.4916649711544952
+        ],
+        "q32_h20": [
+          3.4294301109050096,
+          0.4933916113158999
+        ],
+        "q64_h27": [
+          3.376622017994444,
+          0.4947090374173477
+        ],
+        "q64_h24": [
+          3.43638056947347,
+          0.49328029600438816
+        ],
+        "q64_h20": [
+          3.4409946724627107,
+          0.4931473986116634
+        ]
+      },
+      "relative_errors_vs_factorized": {
+        "q16_h27": 0.17491212237435738,
+        "q16_h24": 0.08534768467174378,
+        "q16_h20": 0.02758735294504666,
+        "q32_h27": 0.07909801723381767,
+        "q32_h24": 0.021151347504343252,
+        "q32_h20": 0.0033715968878426645,
+        "q64_h27": 0.018567170097539124,
+        "q64_h24": 0.0013720174144790799,
+        "q64_h20": 4.417998638456147e-05
+      },
+      "relative_errors_vs_oracle": {
+        "q16_h27": 0.37399208618995256,
+        "q16_h24": 0.30595337543213375,
+        "q16_h20": 0.2620676802175595,
+        "q32_h27": 0.30114052664176005,
+        "q32_h24": 0.2571831348916798,
+        "q32_h20": 0.24367771077949046,
+        "q64_h27": 0.25518944733570675,
+        "q64_h24": 0.2421620983364261,
+        "q64_h20": 0.2411566340686786
+      },
+      "seconds": 5.386095874942839
+    }
+  ]
+}

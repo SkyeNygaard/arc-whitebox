@@ -1,0 +1,144 @@
+{
+  "agent": 5,
+  "date": "2026-07-30",
+  "protected_data_opened": false,
+  "evidence_scope": "full-width synthetic, grouped 12 networks x 3 rotations; target-free source construction, oracle target evaluation",
+  "primary_conclusion": "No tested natural network-covariant rank-4/5 source has winning capacity. The best legal late-block source needs about rank 20 for aggregate r*<0.15 and rank 64 for every tested case below 0.15.",
+  "best_source_family": "late_block_hankel",
+  "thresholds": {
+    "development": {
+      "first_aggregate_below_target": 10,
+      "first_aggregate_below_0.15": 20,
+      "first_crossfit_below_target": null,
+      "first_all_cases_below_target": 48,
+      "first_all_cases_below_0.15": 64,
+      "first_fixed_replay_zero_noise_win": 12
+    },
+    "validation": {
+      "first_aggregate_below_target": 12,
+      "first_aggregate_below_0.15": 20,
+      "first_crossfit_below_target": null,
+      "first_all_cases_below_target": 32,
+      "first_all_cases_below_0.15": 64,
+      "first_fixed_replay_zero_noise_win": 12
+    },
+    "confirmation": {
+      "first_aggregate_below_target": 12,
+      "first_aggregate_below_0.15": 20,
+      "first_crossfit_below_target": 48,
+      "first_all_cases_below_target": 32,
+      "first_all_cases_below_0.15": 48,
+      "first_fixed_replay_zero_noise_win": 16
+    },
+    "all": {
+      "first_aggregate_below_target": 12,
+      "first_aggregate_below_0.15": 20,
+      "first_crossfit_below_target": null,
+      "first_all_cases_below_target": 48,
+      "first_all_cases_below_0.15": 64,
+      "first_fixed_replay_zero_noise_win": 12
+    }
+  },
+  "economics": {
+    "target_ratio": 0.2304147465437788,
+    "fixed_replay_multiplier": 1.0312478632478632,
+    "splits": {
+      "development": {
+        "best_equal_per_coordinate_rank_after_fixed_replay": 24,
+        "best_equal_per_coordinate_budget_after_fixed_replay": 0.006009964607034124,
+        "row": {
+          "rank": 24,
+          "full_reference_ratio": 0.10787795121880277,
+          "crossfit_unbiased_ratio": 0.373277165856749,
+          "median_case_ratio": 0.12016542283220406,
+          "p90_case_ratio": 0.20626164580723913,
+          "worst_case_ratio": 0.3461934562971609,
+          "worst_base_ratio": 0.14110977460181526,
+          "smax": 0.15156757003261268,
+          "count_below_0.15": 9,
+          "count_below_target": 11,
+          "split": "development",
+          "fixed_replay_adjusted_ratio": 0.11124890668594757,
+          "fixed_replay_zero_noise_win": true,
+          "smax_after_fixed_replay": 0.14423915056881897,
+          "equal_per_coordinate_budget_no_fixed_cost": 0.006315315418025528,
+          "equal_per_coordinate_budget_after_fixed_replay": 0.006009964607034124
+        }
+      },
+      "validation": {
+        "best_equal_per_coordinate_rank_after_fixed_replay": 32,
+        "best_equal_per_coordinate_budget_after_fixed_replay": 0.0056014896022008945,
+        "row": {
+          "rank": 32,
+          "full_reference_ratio": 0.08610660752746463,
+          "crossfit_unbiased_ratio": 0.4105398982687587,
+          "median_case_ratio": 0.11535997556896488,
+          "p90_case_ratio": 0.21073339224169704,
+          "worst_case_ratio": 0.21583949231757857,
+          "worst_base_ratio": 0.1501735229541073,
+          "smax": 0.18657608673422232,
+          "count_below_0.15": 9,
+          "count_below_target": 12,
+          "split": "validation",
+          "fixed_replay_adjusted_ratio": 0.08879725502422027,
+          "fixed_replay_zero_noise_win": true,
+          "smax_after_fixed_replay": 0.17924766727042862,
+          "equal_per_coordinate_budget_no_fixed_cost": 0.005830502710444448,
+          "equal_per_coordinate_budget_after_fixed_replay": 0.0056014896022008945
+        }
+      },
+      "confirmation": {
+        "best_equal_per_coordinate_rank_after_fixed_replay": 24,
+        "best_equal_per_coordinate_budget_after_fixed_replay": 0.00598962681455269,
+        "row": {
+          "rank": 24,
+          "full_reference_ratio": 0.10819882481166555,
+          "crossfit_unbiased_ratio": 0.2541874156587788,
+          "median_case_ratio": 0.1338083251963509,
+          "p90_case_ratio": 0.22673670931183137,
+          "worst_case_ratio": 0.26733894039212247,
+          "worst_base_ratio": 0.20490555979506833,
+          "smax": 0.15107946301305825,
+          "count_below_0.15": 7,
+          "count_below_target": 11,
+          "split": "confirmation",
+          "fixed_replay_adjusted_ratio": 0.11157980689295999,
+          "fixed_replay_zero_noise_win": true,
+          "smax_after_fixed_replay": 0.14375104354926455,
+          "equal_per_coordinate_budget_no_fixed_cost": 0.006294977625544093,
+          "equal_per_coordinate_budget_after_fixed_replay": 0.00598962681455269
+        }
+      },
+      "all": {
+        "best_equal_per_coordinate_rank_after_fixed_replay": 32,
+        "best_equal_per_coordinate_budget_after_fixed_replay": 0.00579597319426102,
+        "row": {
+          "rank": 32,
+          "full_reference_ratio": 0.08249291522805036,
+          "crossfit_unbiased_ratio": 0.32221327402869454,
+          "median_case_ratio": 0.09894129389568046,
+          "p90_case_ratio": 0.19978637589391376,
+          "worst_case_ratio": 0.32640166157560213,
+          "worst_base_ratio": 0.16053464353162095,
+          "smax": 0.19279956168014634,
+          "count_below_0.15": 28,
+          "count_below_target": 35,
+          "split": "all",
+          "fixed_replay_adjusted_ratio": 0.08507064256201405,
+          "fixed_replay_zero_noise_win": true,
+          "smax_after_fixed_replay": 0.18547114221635264,
+          "equal_per_coordinate_budget_no_fixed_cost": 0.006024986302504573,
+          "equal_per_coordinate_budget_after_fixed_replay": 0.00579597319426102
+        }
+      }
+    }
+  },
+  "verification_pass": true,
+  "recommendation": {
+    "rank_4_5": "STOP tested physical band/Hankel class",
+    "rank_8": "STOP",
+    "rank_12": "QUARANTINE; confirmation loses after idealized fixed replay even with perfect coefficients",
+    "rank_20_32": "CONDITIONALLY CONTINUE only for shared/analytic contraction discovery and information-theoretic audit",
+    "protected_promotion": "DO NOT OPEN"
+  }
+}

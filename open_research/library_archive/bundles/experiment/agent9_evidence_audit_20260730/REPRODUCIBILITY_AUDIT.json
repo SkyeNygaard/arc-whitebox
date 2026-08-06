@@ -1,0 +1,105 @@
+{
+  "created_utc": "2026-07-30T14:04:21.272678+00:00",
+  "agent9_scope": "Evidence/data audit of Agent 1-8 saved review bundles and prioritized paper claims.",
+  "bundle_assessments": [
+    {
+      "agent": 1,
+      "verdict": "VERIFIED AFTER SPECIFIED CORRECTIONS",
+      "manifest": "PASS",
+      "core_rerun": "PASS",
+      "self_contained": "Yes for review computation",
+      "primary_issue": "Stale artifact implied a positive lower gap; certificate supports only a one-sided upper bound."
+    },
+    {
+      "agent": 2,
+      "verdict": "T22 VERIFIED; T23 VERIFIED AFTER DOCUMENTATION/RELEASE CORRECTIONS",
+      "manifest": "PASS",
+      "core_rerun": "Clean-room proof package reproduced 32/32 files and 23/23 chunks",
+      "self_contained": "Review evidence yes; original proof source identified by ZIP hash",
+      "primary_issue": "Call it a rigorous computer-assisted proof, not proof-assistant formalization; manifest is not authenticated provenance."
+    },
+    {
+      "agent": 3,
+      "verdict": "VERIFIED AFTER SPECIFIED CORRECTIONS",
+      "manifest": "PASS",
+      "core_rerun": "PASS",
+      "self_contained": "Yes",
+      "primary_issue": "Theorem is restricted to symmetrized lines in fixed Kerdock universe; point-budget and arbitrary-node language would leak scope."
+    },
+    {
+      "agent": 4,
+      "verdict": "ALL-DEGREE REDUCED-COST NEGATIVITY PROVED; FULL LP CLAIM CONDITIONAL",
+      "manifest": "PASS",
+      "core_rerun": "PASS",
+      "self_contained": "Yes",
+      "primary_issue": "Primal-attainment/complementarity certificate remains a dependency for the strongest T16 statement."
+    },
+    {
+      "agent": 5,
+      "verdict": "SIGNED-WEIGHT STABILITY VERIFIED, PRACTICALLY WEAK",
+      "manifest": "PASS",
+      "core_rerun": "PASS",
+      "self_contained": "Yes",
+      "primary_issue": "Certified negative-mass thresholds are too tiny to close meaningful unrestricted signed rules."
+    },
+    {
+      "agent": 6,
+      "verdict": "THEORY ACCEPT; M146 EMPIRICAL NUMBERS UNREPRODUCIBLE",
+      "manifest": "PASS",
+      "core_rerun": "PASS after creating expected output directory",
+      "self_contained": "Theory and synthetic audit yes; original M146 no",
+      "primary_issue": "No M146 rows/scripts/cohort/reference package. Approximate tolerance is direction-dependent."
+    },
+    {
+      "agent": 7,
+      "verdict": "M152 NOT REPRODUCIBLE; SCOPED PATH2 SUBSTITUTE NEGATIVE",
+      "manifest": "PASS",
+      "core_rerun": "Blocked without omitted Path2 archive; packaged predictions verify internally",
+      "self_contained": "No",
+      "primary_issue": "Claimed M152 corpus, target, features, splits, and predictions are absent. Review script hard-depends on external Path2 files."
+    },
+    {
+      "agent": 8,
+      "verdict": "ACCEPT WITH SCOPE CORRECTIONS",
+      "manifest": "Internal review files PASS",
+      "core_rerun": "PASS",
+      "self_contained": "No; five cited source inputs omitted from ZIP",
+      "primary_issue": "Source provenance must be packaged; theorem covers named classes only and high-degree result is empirical."
+    }
+  ],
+  "source_hashes": {
+    "agent1_zip": "d5773a9e4c93bf67d985048974b3bf8d4c59eb6c17ceafc0157647e1a8bee745",
+    "agent2_zip": "69a82ecf3be908b1d7e7239e727abd5fe5226e87490b0d700b1f75b188a24610",
+    "agent3_zip": "07f3ac0e3a5016944ea9dd3b82aa5e008e1713c45c6d809f212c4eea04985df2",
+    "agent4_zip": "e03bb218c081a74a0efda193605e5c1ae5fb8df973d88f6b909fad773d8940d6",
+    "agent5_zip": "49d6468cfdbae06b78ca2bfd9e89743d8df683bf60cb20c9f88aebe6bf8948c2",
+    "agent6_zip": "9c2016a1c8a870c9cb02d01708e80d997d16db148d8712e18f647ebbd4b30df3",
+    "agent7_zip": "af20251b3a2394970e43d2036db9bf24f07fa1cc69690177a0e17eebcb92d528",
+    "agent8_zip": "f5dbbd9fb0a43c2266e7acbd5c9d5b38dabd4621a994384ae54b388a4af466a1",
+    "T4_REPORT": "4388c1d1c1069c28d89639090b8161d873dcc8faf3b7eee5aa4cbfaf5788c102",
+    "T4_RESULTS": "83c5577d9b1042c230ae15afe2ed136d2fd24c73b788502b59ec9b54aa4d9532",
+    "harmonic_report": "bb4a2a8972fa2e6d96631e956fda6669e2e74ac51fa358a471a26be45bbcd253",
+    "public_accounting_report": "a20e489a3dbb98ae86ed3a8c6674862d27b47b26fc9ccde42ef5ece70a2b8e9e",
+    "local_M145_transcript": "8e8a1396204f98a680528b1227feae0b2416be4c3f09cb6e2c043a90b25a1f72",
+    "agent8_high_degree_source": "e253f1b5a5a76f2c5916c4ee563b11389d788efc01ece18f4ac14086dadf2b54",
+    "agent8_probe_source": "1c03c07997ffdc3d9dd744e4559cd1ac3c93cffe0748f641a420a912a6b01455",
+    "agent8_depth2_source": "12debc6d0427837ca9645be283d7ecfb7d3965230f7a9da088e32245d9c5c609"
+  },
+  "priority_decisions": {
+    "T22-gap": "KEEP, CORRECT WORDING",
+    "T27-restricted-signed": "KEEP WITH SCOPE",
+    "T16-tail": "KEEP NARROW RESULT; DO NOT OVER-UPGRADE",
+    "signed-negative-mass": "KEEP AS LIMITATION/ROBUSTNESS, NOT HEADLINE CLOSURE",
+    "M146-depth-ratio": "REMOVE NUMBER FROM HEADLINE; DOWNGRADE",
+    "M146-exact-anchor": "REMOVE NUMERIC HEADLINE PENDING SOURCE RECOVERY",
+    "M146-tolerance": "REPLACE UNIVERSAL THRESHOLD CLAIM",
+    "M147-T4": "KEEP AS TRACEABLE NEGATIVE RESULT; LABEL DEVELOPMENT",
+    "M76": "KEEP ONLY QUALITATIVE HISTORICAL SUMMARY OR REMOVE",
+    "M145": "REMOVE NUMERIC DETAILS FROM PAPER PENDING ARTIFACT RECOVERY",
+    "M152": "REMOVE ALL M152 NUMBERS; DO NOT CITE",
+    "Path2-substitute": "KEEP AS SEPARATE NEGATIVE RESULT, NOT AS M152",
+    "V71-degree6plus": "KEEP NARROW NEGATIVE RESULT",
+    "T29-ReLU-Stein": "ADD TO LEDGER WITH NARROW SCOPE",
+    "M149-public-accounting": "KEEP WITH STRONG ATTRIBUTION CAVEAT"
+  }
+}

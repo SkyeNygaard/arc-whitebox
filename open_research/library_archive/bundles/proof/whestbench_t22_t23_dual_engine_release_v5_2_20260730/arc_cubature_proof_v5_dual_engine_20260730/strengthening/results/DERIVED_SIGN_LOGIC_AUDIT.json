@@ -1,0 +1,145 @@
+{
+  "title": "Derived sign-logic verification with no hard-coded sign pattern",
+  "special_box_order_verified": true,
+  "critical_boxes": [
+    {
+      "index": 0,
+      "left_gprime": "positive",
+      "right_gprime": "negative",
+      "derived_kind": "maximum",
+      "g_upper": "-1.006381225140822106958480467939964383163637139821963921E-13"
+    },
+    {
+      "index": 1,
+      "left_gprime": "negative",
+      "right_gprime": "positive",
+      "derived_kind": "minimum",
+      "g_upper": "-0.0000120650022803713869974943342568159700503380342835520"
+    },
+    {
+      "index": 2,
+      "left_gprime": "positive",
+      "right_gprime": "negative",
+      "derived_kind": "maximum",
+      "g_upper": "-1.004586240658455604403124565024659239239177837259174401E-13"
+    },
+    {
+      "index": 3,
+      "left_gprime": "negative",
+      "right_gprime": "positive",
+      "derived_kind": "minimum",
+      "g_upper": "-6.8810321337378423424081331024842417889893590569E-9"
+    },
+    {
+      "index": 4,
+      "left_gprime": "positive",
+      "right_gprime": "negative",
+      "derived_kind": "maximum",
+      "g_upper": "-1.006076192704191719337187722901912947809913469492792329E-13"
+    }
+  ],
+  "inflection_boxes": [
+    {
+      "index": 0,
+      "gprime_sign": "negative"
+    },
+    {
+      "index": 1,
+      "gprime_sign": "positive"
+    },
+    {
+      "index": 2,
+      "gprime_sign": "negative"
+    },
+    {
+      "index": 3,
+      "gprime_sign": "positive"
+    }
+  ],
+  "connecting_regions": [
+    {
+      "region": 0,
+      "left": "-98727893490099402502424916405650773887282506729427396571085444072528219280489187/100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "right": "-4733032160414009/5000000000000000",
+      "subintervals": 28,
+      "curvature": "negative",
+      "derived_gprime_sign": "negative"
+    },
+    {
+      "region": 1,
+      "left": "-4533032160414009/5000000000000000",
+      "right": "-144940350257911067622630420603687740365669240947162467463175069371863702352741959/200000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "subintervals": 122,
+      "curvature": "positive",
+      "derived_gprime_sign": "negative"
+    },
+    {
+      "region": 2,
+      "left": "-140940350257911067622630420603687740365669240947162467463175069371863702352741959/200000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "right": "-51813713491761513/100000000000000000",
+      "subintervals": 125,
+      "curvature": "positive",
+      "derived_gprime_sign": "positive"
+    },
+    {
+      "region": 3,
+      "left": "-47813713491761513/100000000000000000",
+      "right": "-62724855312916344699825331682043113878951364731294359286854708766492067398183921/1000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "subintervals": 280,
+      "curvature": "negative",
+      "derived_gprime_sign": "positive"
+    },
+    {
+      "region": 4,
+      "left": "-61724855312916344699825331682043113878951364731294359286854708766492067398183921/1000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "right": "-3681931654866477/100000000000000000",
+      "subintervals": 86,
+      "curvature": "negative",
+      "derived_gprime_sign": "negative"
+    },
+    {
+      "region": 5,
+      "left": "-3081931654866477/100000000000000000",
+      "right": "20561206220754420756422761534584828354098957431679581289787091355215200342291831/10000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "subintervals": 132,
+      "curvature": "positive",
+      "derived_gprime_sign": "negative"
+    },
+    {
+      "region": 6,
+      "left": "24561206220754420756422761534584828354098957431679581289787091355215200342291831/10000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "right": "1742403692258249/50000000000000000",
+      "subintervals": 125,
+      "curvature": "positive",
+      "derived_gprime_sign": "positive"
+    },
+    {
+      "region": 7,
+      "left": "2042403692258249/50000000000000000",
+      "right": "123571782713126200680775559127101223180796187720015367189208240836993041047171037/2000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "subintervals": 69,
+      "curvature": "negative",
+      "derived_gprime_sign": "positive"
+    },
+    {
+      "region": 8,
+      "left": "125571782713126200680775559127101223180796187720015367189208240836993041047171037/2000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "right": "37/50",
+      "subintervals": 454,
+      "curvature": "negative",
+      "derived_gprime_sign": "negative"
+    }
+  ],
+  "derived_maxima": [
+    0,
+    2,
+    4
+  ],
+  "derived_minima": [
+    1,
+    3
+  ],
+  "global_candidate_upper_bound": "-1.004586240658455604403124565024659239239177837259174401E-13",
+  "conclusion": "All possible interior maxima and both endpoints are strictly negative; monotonicity covers all intervening regions, so h-K<0 on [-1,1].",
+  "passed": true
+}

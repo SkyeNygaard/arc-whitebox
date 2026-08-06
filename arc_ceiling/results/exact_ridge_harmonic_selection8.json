@@ -1,0 +1,2306 @@
+{
+  "protocol": {
+    "indices": [
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167
+    ],
+    "rotation_seed": 3,
+    "degrees": [
+      6,
+      8,
+      10,
+      12
+    ],
+    "direction_counts": [
+      8,
+      16,
+      32,
+      64
+    ],
+    "ridges": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "folds": 6,
+    "families": [
+      "linearized"
+    ],
+    "anchor": "exact zero spherical mean",
+    "target_leakage": false
+  },
+  "summary": {
+    "linearized_degree6_q8_ridge0.01": {
+      "ratio": 0.9247265709018532,
+      "wins": 7,
+      "worst": 1.8870754345515632
+    },
+    "linearized_degree6_q8_ridge0.1": {
+      "ratio": 0.9164197140995072,
+      "wins": 7,
+      "worst": 1.7720229034545996
+    },
+    "linearized_degree6_q8_ridge1": {
+      "ratio": 0.923279755905944,
+      "wins": 7,
+      "worst": 1.3335370987439221
+    },
+    "linearized_degrees6_8_10_12_q8_ridge0.01": {
+      "ratio": 1.695629224174579,
+      "wins": 6,
+      "worst": 3.5972586320165547
+    },
+    "linearized_degrees6_8_10_12_q8_ridge0.1": {
+      "ratio": 1.0573931878120493,
+      "wins": 6,
+      "worst": 1.749781618414457
+    },
+    "linearized_degrees6_8_10_12_q8_ridge1": {
+      "ratio": 0.8330779788725171,
+      "wins": 6,
+      "worst": 1.0152336215320248
+    },
+    "linearized_degree6_q16_ridge0.01": {
+      "ratio": 1.2108826381665352,
+      "wins": 2,
+      "worst": 2.0797227308219806
+    },
+    "linearized_degree6_q16_ridge0.1": {
+      "ratio": 1.1768435373148374,
+      "wins": 2,
+      "worst": 1.945086596387473
+    },
+    "linearized_degree6_q16_ridge1": {
+      "ratio": 1.0531311385501423,
+      "wins": 2,
+      "worst": 1.4077860418295727
+    },
+    "linearized_degrees6_8_10_12_q16_ridge0.01": {
+      "ratio": 4.607394221903606,
+      "wins": 3,
+      "worst": 12.88115672792108
+    },
+    "linearized_degrees6_8_10_12_q16_ridge0.1": {
+      "ratio": 2.1783327669958417,
+      "wins": 3,
+      "worst": 6.4049588805673245
+    },
+    "linearized_degrees6_8_10_12_q16_ridge1": {
+      "ratio": 1.1071526725256458,
+      "wins": 4,
+      "worst": 2.3327225680603654
+    },
+    "linearized_degree6_q32_ridge0.01": {
+      "ratio": 1.6809217249472197,
+      "wins": 3,
+      "worst": 3.650728004047971
+    },
+    "linearized_degree6_q32_ridge0.1": {
+      "ratio": 1.5579194913370074,
+      "wins": 4,
+      "worst": 3.3331562498236638
+    },
+    "linearized_degree6_q32_ridge1": {
+      "ratio": 1.1597623526445855,
+      "wins": 3,
+      "worst": 1.9493401069689855
+    },
+    "linearized_degrees6_8_10_12_q32_ridge0.01": {
+      "ratio": 4.514536189302173,
+      "wins": 1,
+      "worst": 14.770867425320684
+    },
+    "linearized_degrees6_8_10_12_q32_ridge0.1": {
+      "ratio": 2.177196297563617,
+      "wins": 3,
+      "worst": 11.645401693535813
+    },
+    "linearized_degrees6_8_10_12_q32_ridge1": {
+      "ratio": 0.9405741364288055,
+      "wins": 5,
+      "worst": 1.9403869788131645
+    },
+    "linearized_degree6_q64_ridge0.01": {
+      "ratio": 1.910081656321269,
+      "wins": 3,
+      "worst": 8.67342119900257
+    },
+    "linearized_degree6_q64_ridge0.1": {
+      "ratio": 1.7177504151360543,
+      "wins": 3,
+      "worst": 7.651635772223019
+    },
+    "linearized_degree6_q64_ridge1": {
+      "ratio": 1.1568739194294164,
+      "wins": 3,
+      "worst": 3.5173664396706528
+    },
+    "linearized_degrees6_8_10_12_q64_ridge0.01": {
+      "ratio": 5.636136030471674,
+      "wins": 1,
+      "worst": 41.828569435749905
+    },
+    "linearized_degrees6_8_10_12_q64_ridge0.1": {
+      "ratio": 2.3844705909930717,
+      "wins": 3,
+      "worst": 18.801290273271665
+    },
+    "linearized_degrees6_8_10_12_q64_ridge1": {
+      "ratio": 1.1205133112169217,
+      "wins": 4,
+      "worst": 2.0914405353752725
+    }
+  },
+  "records": [
+    {
+      "index": 160,
+      "name": "amy-scott",
+      "baseline_mse": 2.1440298520066416e-07,
+      "method_mses": {
+        "linearized_degree6_q8_ridge0.01": 2.141561939572552e-07,
+        "linearized_degree6_q8_ridge0.1": 2.097815942573541e-07,
+        "linearized_degree6_q8_ridge1": 2.0599203118773529e-07,
+        "linearized_degrees6_8_10_12_q8_ridge0.01": 1.9392714967537693e-07,
+        "linearized_degrees6_8_10_12_q8_ridge0.1": 1.7766474043946045e-07,
+        "linearized_degrees6_8_10_12_q8_ridge1": 1.922503436134049e-07,
+        "linearized_degree6_q16_ridge0.01": 1.7876032333989468e-07,
+        "linearized_degree6_q16_ridge0.1": 1.7708468902011882e-07,
+        "linearized_degree6_q16_ridge1": 1.7991614787860013e-07,
+        "linearized_degrees6_8_10_12_q16_ridge0.01": 1.4881043372429406e-06,
+        "linearized_degrees6_8_10_12_q16_ridge0.1": 4.295105383786619e-07,
+        "linearized_degrees6_8_10_12_q16_ridge1": 1.8651367968725649e-07,
+        "linearized_degree6_q32_ridge0.01": 2.1661113907531712e-07,
+        "linearized_degree6_q32_ridge0.1": 1.9819055813040571e-07,
+        "linearized_degree6_q32_ridge1": 1.7811044779913554e-07,
+        "linearized_degrees6_8_10_12_q32_ridge0.01": 4.057767440655446e-07,
+        "linearized_degrees6_8_10_12_q32_ridge0.1": 1.832803923264902e-07,
+        "linearized_degrees6_8_10_12_q32_ridge1": 1.7652001459416338e-07,
+        "linearized_degree6_q64_ridge0.01": 4.519586273891921e-07,
+        "linearized_degree6_q64_ridge0.1": 3.55665365443533e-07,
+        "linearized_degree6_q64_ridge1": 1.8714085690890127e-07,
+        "linearized_degrees6_8_10_12_q64_ridge0.01": 1.2825520345599609e-06,
+        "linearized_degrees6_8_10_12_q64_ridge0.1": 5.096255037180165e-07,
+        "linearized_degrees6_8_10_12_q64_ridge1": 2.6363481761195694e-07
+      },
+      "diagnostics": {
+        "linearized_degree6_q8_ridge0.01": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 1.1472283472213571,
+          "condition_ridge_0.01": 3.8260324455056387,
+          "condition_ridge_0.1": 3.1660402539700963,
+          "condition_ridge_1": 1.64940904672825,
+          "full_feature_mean_norm": 0.02040401955607576
+        },
+        "linearized_degree6_q8_ridge0.1": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 1.1472283472213571,
+          "condition_ridge_0.01": 3.8260324455056387,
+          "condition_ridge_0.1": 3.1660402539700963,
+          "condition_ridge_1": 1.64940904672825,
+          "full_feature_mean_norm": 0.02040401955607576
+        },
+        "linearized_degree6_q8_ridge1": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 1.1472283472213571,
+          "condition_ridge_0.01": 3.8260324455056387,
+          "condition_ridge_0.1": 3.1660402539700963,
+          "condition_ridge_1": 1.64940904672825,
+          "full_feature_mean_norm": 0.02040401955607576
+        },
+        "linearized_degrees6_8_10_12_q8_ridge0.01": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.998822926168137,
+          "condition_ridge_0.01": 176.2063653567161,
+          "condition_ridge_0.1": 28.573961165111598,
+          "condition_ridge_1": 3.9981083844906666,
+          "full_feature_mean_norm": 0.03126773311237784
+        },
+        "linearized_degrees6_8_10_12_q8_ridge0.1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.998822926168137,
+          "condition_ridge_0.01": 176.2063653567161,
+          "condition_ridge_0.1": 28.573961165111598,
+          "condition_ridge_1": 3.9981083844906666,
+          "full_feature_mean_norm": 0.03126773311237784
+        },
+        "linearized_degrees6_8_10_12_q8_ridge1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.998822926168137,
+          "condition_ridge_0.01": 176.2063653567161,
+          "condition_ridge_0.1": 28.573961165111598,
+          "condition_ridge_1": 3.9981083844906666,
+          "full_feature_mean_norm": 0.03126773311237784
+        },
+        "linearized_degree6_q16_ridge0.01": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 1.0920712400351449,
+          "condition_ridge_0.01": 3.910718207643023,
+          "condition_ridge_0.1": 3.230864328280722,
+          "condition_ridge_1": 1.6687862334122299,
+          "full_feature_mean_norm": 0.022121955970632046
+        },
+        "linearized_degree6_q16_ridge0.1": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 1.0920712400351449,
+          "condition_ridge_0.01": 3.910718207643023,
+          "condition_ridge_0.1": 3.230864328280722,
+          "condition_ridge_1": 1.6687862334122299,
+          "full_feature_mean_norm": 0.022121955970632046
+        },
+        "linearized_degree6_q16_ridge1": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 1.0920712400351449,
+          "condition_ridge_0.01": 3.910718207643023,
+          "condition_ridge_0.1": 3.230864328280722,
+          "condition_ridge_1": 1.6687862334122299,
+          "full_feature_mean_norm": 0.022121955970632046
+        },
+        "linearized_degrees6_8_10_12_q16_ridge0.01": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.9445889184353851,
+          "condition_ridge_0.01": 176.3425955539871,
+          "condition_ridge_0.1": 28.582112857764148,
+          "condition_ridge_1": 3.998739196471084,
+          "full_feature_mean_norm": 0.03653089900901355
+        },
+        "linearized_degrees6_8_10_12_q16_ridge0.1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.9445889184353851,
+          "condition_ridge_0.01": 176.3425955539871,
+          "condition_ridge_0.1": 28.582112857764148,
+          "condition_ridge_1": 3.998739196471084,
+          "full_feature_mean_norm": 0.03653089900901355
+        },
+        "linearized_degrees6_8_10_12_q16_ridge1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.9445889184353851,
+          "condition_ridge_0.01": 176.3425955539871,
+          "condition_ridge_0.1": 28.582112857764148,
+          "condition_ridge_1": 3.998739196471084,
+          "full_feature_mean_norm": 0.03653089900901355
+        },
+        "linearized_degree6_q32_ridge0.01": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 1.0122586607594892,
+          "condition_ridge_0.01": 3.9653564421039076,
+          "condition_ridge_0.1": 3.272332240673728,
+          "condition_ridge_1": 1.6809365879352491,
+          "full_feature_mean_norm": 0.027401341166677393
+        },
+        "linearized_degree6_q32_ridge0.1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 1.0122586607594892,
+          "condition_ridge_0.01": 3.9653564421039076,
+          "condition_ridge_0.1": 3.272332240673728,
+          "condition_ridge_1": 1.6809365879352491,
+          "full_feature_mean_norm": 0.027401341166677393
+        },
+        "linearized_degree6_q32_ridge1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 1.0122586607594892,
+          "condition_ridge_0.01": 3.9653564421039076,
+          "condition_ridge_0.1": 3.272332240673728,
+          "condition_ridge_1": 1.6809365879352491,
+          "full_feature_mean_norm": 0.027401341166677393
+        },
+        "linearized_degrees6_8_10_12_q32_ridge0.01": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 0.8831178651450463,
+          "condition_ridge_0.01": 197.49698768158586,
+          "condition_ridge_0.1": 29.939201211900716,
+          "condition_ridge_1": 4.037520565390448,
+          "full_feature_mean_norm": 0.049876694659562
+        },
+        "linearized_degrees6_8_10_12_q32_ridge0.1": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 0.8831178651450463,
+          "condition_ridge_0.01": 197.49698768158586,
+          "condition_ridge_0.1": 29.939201211900716,
+          "condition_ridge_1": 4.037520565390448,
+          "full_feature_mean_norm": 0.049876694659562
+        },
+        "linearized_degrees6_8_10_12_q32_ridge1": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 0.8831178651450463,
+          "condition_ridge_0.01": 197.49698768158586,
+          "condition_ridge_0.1": 29.939201211900716,
+          "condition_ridge_1": 4.037520565390448,
+          "full_feature_mean_norm": 0.049876694659562
+        },
+        "linearized_degree6_q64_ridge0.01": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 1.0078845944817592,
+          "condition_ridge_0.01": 4.427101438963437,
+          "condition_ridge_0.1": 3.5683010453305894,
+          "condition_ridge_1": 1.732563546737092,
+          "full_feature_mean_norm": 0.041061104075009236
+        },
+        "linearized_degree6_q64_ridge0.1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 1.0078845944817592,
+          "condition_ridge_0.01": 4.427101438963437,
+          "condition_ridge_0.1": 3.5683010453305894,
+          "condition_ridge_1": 1.732563546737092,
+          "full_feature_mean_norm": 0.041061104075009236
+        },
+        "linearized_degree6_q64_ridge1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 1.0078845944817592,
+          "condition_ridge_0.01": 4.427101438963437,
+          "condition_ridge_0.1": 3.5683010453305894,
+          "condition_ridge_1": 1.732563546737092,
+          "full_feature_mean_norm": 0.041061104075009236
+        },
+        "linearized_degrees6_8_10_12_q64_ridge0.01": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 0.8777597276751635,
+          "condition_ridge_0.01": 238.49916097619553,
+          "condition_ridge_0.1": 35.938334319905714,
+          "condition_ridge_1": 4.666562614708266,
+          "full_feature_mean_norm": 0.07253067878279974
+        },
+        "linearized_degrees6_8_10_12_q64_ridge0.1": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 0.8777597276751635,
+          "condition_ridge_0.01": 238.49916097619553,
+          "condition_ridge_0.1": 35.938334319905714,
+          "condition_ridge_1": 4.666562614708266,
+          "full_feature_mean_norm": 0.07253067878279974
+        },
+        "linearized_degrees6_8_10_12_q64_ridge1": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 0.8777597276751635,
+          "condition_ridge_0.01": 238.49916097619553,
+          "condition_ridge_0.1": 35.938334319905714,
+          "condition_ridge_1": 4.666562614708266,
+          "full_feature_mean_norm": 0.07253067878279974
+        }
+      },
+      "linearized_singular_values": [
+        0.9739828803748432,
+        0.33079670587855187,
+        0.2582878271014899,
+        0.21669240593646352,
+        0.16389850710324824,
+        0.13199838936300035,
+        0.10683954169657253,
+        0.08957219700312453,
+        0.07769110965686127,
+        0.07021302222717592,
+        0.057177028716455136,
+        0.049634927684239154,
+        0.04168501495476581,
+        0.03212175996755731,
+        0.02999485175413537,
+        0.022694731556398822
+      ],
+      "seconds": 3.0957290830556303
+    },
+    {
+      "index": 161,
+      "name": "dylan-brown",
+      "baseline_mse": 2.24091425569048e-07,
+      "method_mses": {
+        "linearized_degree6_q8_ridge0.01": 1.665456439595225e-07,
+        "linearized_degree6_q8_ridge0.1": 1.6645391369662487e-07,
+        "linearized_degree6_q8_ridge1": 1.8449089744587622e-07,
+        "linearized_degrees6_8_10_12_q8_ridge0.01": 2.063311856660791e-07,
+        "linearized_degrees6_8_10_12_q8_ridge0.1": 1.697525623089281e-07,
+        "linearized_degrees6_8_10_12_q8_ridge1": 1.7832276805356264e-07,
+        "linearized_degree6_q16_ridge0.01": 3.0591747220884044e-07,
+        "linearized_degree6_q16_ridge0.1": 3.030611718114677e-07,
+        "linearized_degree6_q16_ridge1": 2.7159024057250653e-07,
+        "linearized_degrees6_8_10_12_q16_ridge0.01": 9.368656730324205e-07,
+        "linearized_degrees6_8_10_12_q16_ridge0.1": 5.494076564998853e-07,
+        "linearized_degrees6_8_10_12_q16_ridge1": 3.071113973872249e-07,
+        "linearized_degree6_q32_ridge0.01": 1.7373631453253598e-07,
+        "linearized_degree6_q32_ridge0.1": 1.8914194231411154e-07,
+        "linearized_degree6_q32_ridge1": 2.3297710797726506e-07,
+        "linearized_degrees6_8_10_12_q32_ridge0.01": 1.7337366190498367e-07,
+        "linearized_degrees6_8_10_12_q32_ridge0.1": 1.9358421564687838e-07,
+        "linearized_degrees6_8_10_12_q32_ridge1": 2.604436897952228e-07,
+        "linearized_degree6_q64_ridge0.01": 1.7596188303664492e-07,
+        "linearized_degree6_q64_ridge0.1": 1.9894164154334927e-07,
+        "linearized_degree6_q64_ridge1": 2.538931229034535e-07,
+        "linearized_degrees6_8_10_12_q64_ridge0.01": 3.7201062254213474e-07,
+        "linearized_degrees6_8_10_12_q64_ridge0.1": 2.0450550408743198e-07,
+        "linearized_degrees6_8_10_12_q64_ridge1": 2.6390310173080293e-07
+      },
+      "diagnostics": {
+        "linearized_degree6_q8_ridge0.01": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.925410871859684,
+          "condition_ridge_0.01": 2.7698415822284637,
+          "condition_ridge_0.1": 2.441468117464474,
+          "condition_ridge_1": 1.5048247216826216,
+          "full_feature_mean_norm": 0.008532308841015128
+        },
+        "linearized_degree6_q8_ridge0.1": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.925410871859684,
+          "condition_ridge_0.01": 2.7698415822284637,
+          "condition_ridge_0.1": 2.441468117464474,
+          "condition_ridge_1": 1.5048247216826216,
+          "full_feature_mean_norm": 0.008532308841015128
+        },
+        "linearized_degree6_q8_ridge1": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.925410871859684,
+          "condition_ridge_0.01": 2.7698415822284637,
+          "condition_ridge_0.1": 2.441468117464474,
+          "condition_ridge_1": 1.5048247216826216,
+          "full_feature_mean_norm": 0.008532308841015128
+        },
+        "linearized_degrees6_8_10_12_q8_ridge0.01": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.798237577753018,
+          "condition_ridge_0.01": 137.31708719888366,
+          "condition_ridge_0.1": 23.161196091574418,
+          "condition_ridge_1": 3.364039784871025,
+          "full_feature_mean_norm": 0.017478844492579845
+        },
+        "linearized_degrees6_8_10_12_q8_ridge0.1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.798237577753018,
+          "condition_ridge_0.01": 137.31708719888366,
+          "condition_ridge_0.1": 23.161196091574418,
+          "condition_ridge_1": 3.364039784871025,
+          "full_feature_mean_norm": 0.017478844492579845
+        },
+        "linearized_degrees6_8_10_12_q8_ridge1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.798237577753018,
+          "condition_ridge_0.01": 137.31708719888366,
+          "condition_ridge_0.1": 23.161196091574418,
+          "condition_ridge_1": 3.364039784871025,
+          "full_feature_mean_norm": 0.017478844492579845
+        },
+        "linearized_degree6_q16_ridge0.01": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.9602471602046863,
+          "condition_ridge_0.01": 2.8006585575795486,
+          "condition_ridge_0.1": 2.4665201520947226,
+          "condition_ridge_1": 1.5135511820438639,
+          "full_feature_mean_norm": 0.023070102292968762
+        },
+        "linearized_degree6_q16_ridge0.1": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.9602471602046863,
+          "condition_ridge_0.01": 2.8006585575795486,
+          "condition_ridge_0.1": 2.4665201520947226,
+          "condition_ridge_1": 1.5135511820438639,
+          "full_feature_mean_norm": 0.023070102292968762
+        },
+        "linearized_degree6_q16_ridge1": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.9602471602046863,
+          "condition_ridge_0.01": 2.8006585575795486,
+          "condition_ridge_0.1": 2.4665201520947226,
+          "condition_ridge_1": 1.5135511820438639,
+          "full_feature_mean_norm": 0.023070102292968762
+        },
+        "linearized_degrees6_8_10_12_q16_ridge0.01": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.8176226125538832,
+          "condition_ridge_0.01": 145.18751340828086,
+          "condition_ridge_0.1": 24.432156716179605,
+          "condition_ridge_1": 3.4994612206917832,
+          "full_feature_mean_norm": 0.034903043568680146
+        },
+        "linearized_degrees6_8_10_12_q16_ridge0.1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.8176226125538832,
+          "condition_ridge_0.01": 145.18751340828086,
+          "condition_ridge_0.1": 24.432156716179605,
+          "condition_ridge_1": 3.4994612206917832,
+          "full_feature_mean_norm": 0.034903043568680146
+        },
+        "linearized_degrees6_8_10_12_q16_ridge1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.8176226125538832,
+          "condition_ridge_0.01": 145.18751340828086,
+          "condition_ridge_0.1": 24.432156716179605,
+          "condition_ridge_1": 3.4994612206917832,
+          "full_feature_mean_norm": 0.034903043568680146
+        },
+        "linearized_degree6_q32_ridge0.01": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 1.0098783722056823,
+          "condition_ridge_0.01": 5.072523947179662,
+          "condition_ridge_0.1": 3.9223538204813253,
+          "condition_ridge_1": 1.7641700150335058,
+          "full_feature_mean_norm": 0.031470317051336155
+        },
+        "linearized_degree6_q32_ridge0.1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 1.0098783722056823,
+          "condition_ridge_0.01": 5.072523947179662,
+          "condition_ridge_0.1": 3.9223538204813253,
+          "condition_ridge_1": 1.7641700150335058,
+          "full_feature_mean_norm": 0.031470317051336155
+        },
+        "linearized_degree6_q32_ridge1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 1.0098783722056823,
+          "condition_ridge_0.01": 5.072523947179662,
+          "condition_ridge_0.1": 3.9223538204813253,
+          "condition_ridge_1": 1.7641700150335058,
+          "full_feature_mean_norm": 0.031470317051336155
+        },
+        "linearized_degrees6_8_10_12_q32_ridge0.01": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 0.8736398910626915,
+          "condition_ridge_0.01": 238.86965343345733,
+          "condition_ridge_0.1": 37.36824298792797,
+          "condition_ridge_1": 4.8747482488664,
+          "full_feature_mean_norm": 0.051454691768949894
+        },
+        "linearized_degrees6_8_10_12_q32_ridge0.1": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 0.8736398910626915,
+          "condition_ridge_0.01": 238.86965343345733,
+          "condition_ridge_0.1": 37.36824298792797,
+          "condition_ridge_1": 4.8747482488664,
+          "full_feature_mean_norm": 0.051454691768949894
+        },
+        "linearized_degrees6_8_10_12_q32_ridge1": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 0.8736398910626915,
+          "condition_ridge_0.01": 238.86965343345733,
+          "condition_ridge_0.1": 37.36824298792797,
+          "condition_ridge_1": 4.8747482488664,
+          "full_feature_mean_norm": 0.051454691768949894
+        },
+        "linearized_degree6_q64_ridge0.01": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 1.0229818830004442,
+          "condition_ridge_0.01": 6.1125090933505595,
+          "condition_ridge_0.1": 4.50052983246648,
+          "condition_ridge_1": 1.8428898030486591,
+          "full_feature_mean_norm": 0.04190379314901666
+        },
+        "linearized_degree6_q64_ridge0.1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 1.0229818830004442,
+          "condition_ridge_0.01": 6.1125090933505595,
+          "condition_ridge_0.1": 4.50052983246648,
+          "condition_ridge_1": 1.8428898030486591,
+          "full_feature_mean_norm": 0.04190379314901666
+        },
+        "linearized_degree6_q64_ridge1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 1.0229818830004442,
+          "condition_ridge_0.01": 6.1125090933505595,
+          "condition_ridge_0.1": 4.50052983246648,
+          "condition_ridge_1": 1.8428898030486591,
+          "full_feature_mean_norm": 0.04190379314901666
+        },
+        "linearized_degrees6_8_10_12_q64_ridge0.01": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 0.889562130840505,
+          "condition_ridge_0.01": 307.70422019951,
+          "condition_ridge_0.1": 40.369601519234536,
+          "condition_ridge_1": 5.105111200080321,
+          "full_feature_mean_norm": 0.07211302285401101
+        },
+        "linearized_degrees6_8_10_12_q64_ridge0.1": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 0.889562130840505,
+          "condition_ridge_0.01": 307.70422019951,
+          "condition_ridge_0.1": 40.369601519234536,
+          "condition_ridge_1": 5.105111200080321,
+          "full_feature_mean_norm": 0.07211302285401101
+        },
+        "linearized_degrees6_8_10_12_q64_ridge1": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 0.889562130840505,
+          "condition_ridge_0.01": 307.70422019951,
+          "condition_ridge_0.1": 40.369601519234536,
+          "condition_ridge_1": 5.105111200080321,
+          "full_feature_mean_norm": 0.07211302285401101
+        }
+      },
+      "linearized_singular_values": [
+        1.3105285904090491,
+        0.4683795024237606,
+        0.3419017648612602,
+        0.2370084145426106,
+        0.19058380269071348,
+        0.1454619612174933,
+        0.12067829055486538,
+        0.0983917747411934,
+        0.08089944789576257,
+        0.0699535680571014,
+        0.06155466831521637,
+        0.0573850472473284,
+        0.05245333022886239,
+        0.03357712033982041,
+        0.032182322521591235,
+        0.024629607058590432
+      ],
+      "seconds": 3.103070291923359
+    },
+    {
+      "index": 162,
+      "name": "yolanda-hawkins",
+      "baseline_mse": 2.3177693298152411e-07,
+      "method_mses": {
+        "linearized_degree6_q8_ridge0.01": 4.3738055652513816e-07,
+        "linearized_degree6_q8_ridge0.1": 4.107140337357225e-07,
+        "linearized_degree6_q8_ridge1": 3.090831387639461e-07,
+        "linearized_degrees6_8_10_12_q8_ridge0.01": 2.237315231634101e-07,
+        "linearized_degrees6_8_10_12_q8_ridge0.1": 2.1464059150751074e-07,
+        "linearized_degrees6_8_10_12_q8_ridge1": 2.353077350584181e-07,
+        "linearized_degree6_q16_ridge0.01": 4.820317560018785e-07,
+        "linearized_degree6_q16_ridge0.1": 4.508262056941602e-07,
+        "linearized_degree6_q16_ridge1": 3.2629233106945795e-07,
+        "linearized_degrees6_8_10_12_q16_ridge0.01": 1.461437987068426e-07,
+        "linearized_degrees6_8_10_12_q16_ridge0.1": 1.483295988896576e-07,
+        "linearized_degrees6_8_10_12_q16_ridge1": 2.069680474150053e-07,
+        "linearized_degree6_q32_ridge0.01": 6.680861147546232e-07,
+        "linearized_degree6_q32_ridge0.1": 6.12219534218019e-07,
+        "linearized_degree6_q32_ridge1": 3.861799585258287e-07,
+        "linearized_degrees6_8_10_12_q32_ridge0.01": 2.3352882400774177e-07,
+        "linearized_degrees6_8_10_12_q32_ridge0.1": 4.3420190203564196e-07,
+        "linearized_degrees6_8_10_12_q32_ridge1": 1.5888044031949375e-07,
+        "linearized_degree6_q64_ridge0.01": 1.3843109120691033e-06,
+        "linearized_degree6_q64_ridge0.1": 1.212726028901046e-06,
+        "linearized_degree6_q64_ridge1": 5.865359062394464e-07,
+        "linearized_degrees6_8_10_12_q64_ridge0.01": 1.5764367372749173e-07,
+        "linearized_degrees6_8_10_12_q64_ridge0.1": 1.9720760231322576e-07,
+        "linearized_degrees6_8_10_12_q64_ridge1": 2.172370469096752e-07
+      },
+      "diagnostics": {
+        "linearized_degree6_q8_ridge0.01": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.958302987323747,
+          "condition_ridge_0.01": 2.0522226803744745,
+          "condition_ridge_0.1": 1.9042227492061647,
+          "condition_ridge_1": 1.3757347056496374,
+          "full_feature_mean_norm": 0.008838378926901825
+        },
+        "linearized_degree6_q8_ridge0.1": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.958302987323747,
+          "condition_ridge_0.01": 2.0522226803744745,
+          "condition_ridge_0.1": 1.9042227492061647,
+          "condition_ridge_1": 1.3757347056496374,
+          "full_feature_mean_norm": 0.008838378926901825
+        },
+        "linearized_degree6_q8_ridge1": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.958302987323747,
+          "condition_ridge_0.01": 2.0522226803744745,
+          "condition_ridge_0.1": 1.9042227492061647,
+          "condition_ridge_1": 1.3757347056496374,
+          "full_feature_mean_norm": 0.008838378926901825
+        },
+        "linearized_degrees6_8_10_12_q8_ridge0.01": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.8125441837143136,
+          "condition_ridge_0.01": 95.646937240732,
+          "condition_ridge_0.1": 19.632754073251398,
+          "condition_ridge_1": 3.0967782060033167,
+          "full_feature_mean_norm": 0.026622602561571198
+        },
+        "linearized_degrees6_8_10_12_q8_ridge0.1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.8125441837143136,
+          "condition_ridge_0.01": 95.646937240732,
+          "condition_ridge_0.1": 19.632754073251398,
+          "condition_ridge_1": 3.0967782060033167,
+          "full_feature_mean_norm": 0.026622602561571198
+        },
+        "linearized_degrees6_8_10_12_q8_ridge1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.8125441837143136,
+          "condition_ridge_0.01": 95.646937240732,
+          "condition_ridge_0.1": 19.632754073251398,
+          "condition_ridge_1": 3.0967782060033167,
+          "full_feature_mean_norm": 0.026622602561571198
+        },
+        "linearized_degree6_q16_ridge0.01": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.949007551796971,
+          "condition_ridge_0.01": 4.1512407170966945,
+          "condition_ridge_0.1": 3.370587286531343,
+          "condition_ridge_1": 1.681734308766129,
+          "full_feature_mean_norm": 0.015557790420235286
+        },
+        "linearized_degree6_q16_ridge0.1": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.949007551796971,
+          "condition_ridge_0.01": 4.1512407170966945,
+          "condition_ridge_0.1": 3.370587286531343,
+          "condition_ridge_1": 1.681734308766129,
+          "full_feature_mean_norm": 0.015557790420235286
+        },
+        "linearized_degree6_q16_ridge1": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.949007551796971,
+          "condition_ridge_0.01": 4.1512407170966945,
+          "condition_ridge_0.1": 3.370587286531343,
+          "condition_ridge_1": 1.681734308766129,
+          "full_feature_mean_norm": 0.015557790420235286
+        },
+        "linearized_degrees6_8_10_12_q16_ridge0.01": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.8298589664881453,
+          "condition_ridge_0.01": 148.69265994833955,
+          "condition_ridge_0.1": 30.04866935887126,
+          "condition_ridge_1": 4.247338267686033,
+          "full_feature_mean_norm": 0.03570651674326525
+        },
+        "linearized_degrees6_8_10_12_q16_ridge0.1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.8298589664881453,
+          "condition_ridge_0.01": 148.69265994833955,
+          "condition_ridge_0.1": 30.04866935887126,
+          "condition_ridge_1": 4.247338267686033,
+          "full_feature_mean_norm": 0.03570651674326525
+        },
+        "linearized_degrees6_8_10_12_q16_ridge1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.8298589664881453,
+          "condition_ridge_0.01": 148.69265994833955,
+          "condition_ridge_0.1": 30.04866935887126,
+          "condition_ridge_1": 4.247338267686033,
+          "full_feature_mean_norm": 0.03570651674326525
+        },
+        "linearized_degree6_q32_ridge0.01": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 1.0796052220224774,
+          "condition_ridge_0.01": 4.424808570586673,
+          "condition_ridge_0.1": 3.5532623239418797,
+          "condition_ridge_1": 1.7291492928933088,
+          "full_feature_mean_norm": 0.03231218681830983
+        },
+        "linearized_degree6_q32_ridge0.1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 1.0796052220224774,
+          "condition_ridge_0.01": 4.424808570586673,
+          "condition_ridge_0.1": 3.5532623239418797,
+          "condition_ridge_1": 1.7291492928933088,
+          "full_feature_mean_norm": 0.03231218681830983
+        },
+        "linearized_degree6_q32_ridge1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 1.0796052220224774,
+          "condition_ridge_0.01": 4.424808570586673,
+          "condition_ridge_0.1": 3.5532623239418797,
+          "condition_ridge_1": 1.7291492928933088,
+          "full_feature_mean_norm": 0.03231218681830983
+        },
+        "linearized_degrees6_8_10_12_q32_ridge0.01": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 1.0807198915916651,
+          "condition_ridge_0.01": 260.36520249355465,
+          "condition_ridge_0.1": 33.18233805804333,
+          "condition_ridge_1": 4.347041007248017,
+          "full_feature_mean_norm": 0.07248785231154407
+        },
+        "linearized_degrees6_8_10_12_q32_ridge0.1": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 1.0807198915916651,
+          "condition_ridge_0.01": 260.36520249355465,
+          "condition_ridge_0.1": 33.18233805804333,
+          "condition_ridge_1": 4.347041007248017,
+          "full_feature_mean_norm": 0.07248785231154407
+        },
+        "linearized_degrees6_8_10_12_q32_ridge1": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 1.0807198915916651,
+          "condition_ridge_0.01": 260.36520249355465,
+          "condition_ridge_0.1": 33.18233805804333,
+          "condition_ridge_1": 4.347041007248017,
+          "full_feature_mean_norm": 0.07248785231154407
+        },
+        "linearized_degree6_q64_ridge0.01": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 1.0256391442233563,
+          "condition_ridge_0.01": 4.492473368746819,
+          "condition_ridge_0.1": 3.6030591544962096,
+          "condition_ridge_1": 1.7345809116993163,
+          "full_feature_mean_norm": 0.041392537045055466
+        },
+        "linearized_degree6_q64_ridge0.1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 1.0256391442233563,
+          "condition_ridge_0.01": 4.492473368746819,
+          "condition_ridge_0.1": 3.6030591544962096,
+          "condition_ridge_1": 1.7345809116993163,
+          "full_feature_mean_norm": 0.041392537045055466
+        },
+        "linearized_degree6_q64_ridge1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 1.0256391442233563,
+          "condition_ridge_0.01": 4.492473368746819,
+          "condition_ridge_0.1": 3.6030591544962096,
+          "condition_ridge_1": 1.7345809116993163,
+          "full_feature_mean_norm": 0.041392537045055466
+        },
+        "linearized_degrees6_8_10_12_q64_ridge0.01": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 0.957469860779675,
+          "condition_ridge_0.01": 261.94584881816763,
+          "condition_ridge_0.1": 33.36397100261607,
+          "condition_ridge_1": 4.3528932977722965,
+          "full_feature_mean_norm": 0.08502274255417569
+        },
+        "linearized_degrees6_8_10_12_q64_ridge0.1": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 0.957469860779675,
+          "condition_ridge_0.01": 261.94584881816763,
+          "condition_ridge_0.1": 33.36397100261607,
+          "condition_ridge_1": 4.3528932977722965,
+          "full_feature_mean_norm": 0.08502274255417569
+        },
+        "linearized_degrees6_8_10_12_q64_ridge1": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 0.957469860779675,
+          "condition_ridge_0.01": 261.94584881816763,
+          "condition_ridge_0.1": 33.36397100261607,
+          "condition_ridge_1": 4.3528932977722965,
+          "full_feature_mean_norm": 0.08502274255417569
+        }
+      },
+      "linearized_singular_values": [
+        1.1178410565621475,
+        0.371385346143082,
+        0.2850957354765634,
+        0.25298377279891776,
+        0.192906223298785,
+        0.13974006720682441,
+        0.11992780603417018,
+        0.09311400132653307,
+        0.0861771139585629,
+        0.061455614226084955,
+        0.04256496110140036,
+        0.04101234734622089,
+        0.03729223880265002,
+        0.02871674566022994,
+        0.02708563411990619,
+        0.022450974860407764
+      ],
+      "seconds": 2.9122687079943717
+    },
+    {
+      "index": 163,
+      "name": "scott-matthews",
+      "baseline_mse": 2.5893801088228656e-07,
+      "method_mses": {
+        "linearized_degree6_q8_ridge0.01": 2.4764047416647335e-07,
+        "linearized_degree6_q8_ridge0.1": 2.475894393907131e-07,
+        "linearized_degree6_q8_ridge1": 2.4985938350412466e-07,
+        "linearized_degrees6_8_10_12_q8_ridge0.01": 6.5227018560242e-07,
+        "linearized_degrees6_8_10_12_q8_ridge0.1": 3.6589997526091005e-07,
+        "linearized_degrees6_8_10_12_q8_ridge1": 2.623744643639162e-07,
+        "linearized_degree6_q16_ridge0.01": 5.369697199640824e-07,
+        "linearized_degree6_q16_ridge0.1": 5.029553289269028e-07,
+        "linearized_degree6_q16_ridge1": 3.608883172713026e-07,
+        "linearized_degrees6_8_10_12_q16_ridge0.01": 3.3354211009908674e-06,
+        "linearized_degrees6_8_10_12_q16_ridge0.1": 1.6584873123169398e-06,
+        "linearized_degrees6_8_10_12_q16_ridge1": 6.040305417137703e-07,
+        "linearized_degree6_q32_ridge0.01": 9.453122476404418e-07,
+        "linearized_degree6_q32_ridge0.1": 8.630808492892013e-07,
+        "linearized_degree6_q32_ridge1": 5.047582498316128e-07,
+        "linearized_degrees6_8_10_12_q32_ridge0.01": 3.685640275706048e-06,
+        "linearized_degrees6_8_10_12_q32_ridge0.1": 1.3996754800416456e-06,
+        "linearized_degrees6_8_10_12_q32_ridge1": 5.024399446357703e-07,
+        "linearized_degree6_q64_ridge0.01": 2.610542296604749e-07,
+        "linearized_degree6_q64_ridge0.1": 2.8153758833748964e-07,
+        "linearized_degree6_q64_ridge1": 2.9267609912840965e-07,
+        "linearized_degrees6_8_10_12_q64_ridge0.01": 5.800159143954782e-07,
+        "linearized_degrees6_8_10_12_q64_ridge0.1": 3.4311661204760543e-07,
+        "linearized_degrees6_8_10_12_q64_ridge1": 2.39128277888608e-07
+      },
+      "diagnostics": {
+        "linearized_degree6_q8_ridge0.01": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.9127470157308337,
+          "condition_ridge_0.01": 1.6369529076177143,
+          "condition_ridge_0.1": 1.562575540388008,
+          "condition_ridge_1": 1.259525768111789,
+          "full_feature_mean_norm": 0.015180616190404278
+        },
+        "linearized_degree6_q8_ridge0.1": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.9127470157308337,
+          "condition_ridge_0.01": 1.6369529076177143,
+          "condition_ridge_0.1": 1.562575540388008,
+          "condition_ridge_1": 1.259525768111789,
+          "full_feature_mean_norm": 0.015180616190404278
+        },
+        "linearized_degree6_q8_ridge1": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.9127470157308337,
+          "condition_ridge_0.01": 1.6369529076177143,
+          "condition_ridge_0.1": 1.562575540388008,
+          "condition_ridge_1": 1.259525768111789,
+          "full_feature_mean_norm": 0.015180616190404278
+        },
+        "linearized_degrees6_8_10_12_q8_ridge0.01": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.775342200779353,
+          "condition_ridge_0.01": 79.88177819459816,
+          "condition_ridge_0.1": 19.38135841882567,
+          "condition_ridge_1": 3.1201695731369914,
+          "full_feature_mean_norm": 0.026925488735940997
+        },
+        "linearized_degrees6_8_10_12_q8_ridge0.1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.775342200779353,
+          "condition_ridge_0.01": 79.88177819459816,
+          "condition_ridge_0.1": 19.38135841882567,
+          "condition_ridge_1": 3.1201695731369914,
+          "full_feature_mean_norm": 0.026925488735940997
+        },
+        "linearized_degrees6_8_10_12_q8_ridge1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.775342200779353,
+          "condition_ridge_0.01": 79.88177819459816,
+          "condition_ridge_0.1": 19.38135841882567,
+          "condition_ridge_1": 3.1201695731369914,
+          "full_feature_mean_norm": 0.026925488735940997
+        },
+        "linearized_degree6_q16_ridge0.01": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.9239184725985083,
+          "condition_ridge_0.01": 2.665919648543557,
+          "condition_ridge_0.1": 2.375261908832531,
+          "condition_ridge_1": 1.5010557279627563,
+          "full_feature_mean_norm": 0.024564337358696623
+        },
+        "linearized_degree6_q16_ridge0.1": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.9239184725985083,
+          "condition_ridge_0.01": 2.665919648543557,
+          "condition_ridge_0.1": 2.375261908832531,
+          "condition_ridge_1": 1.5010557279627563,
+          "full_feature_mean_norm": 0.024564337358696623
+        },
+        "linearized_degree6_q16_ridge1": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.9239184725985083,
+          "condition_ridge_0.01": 2.665919648543557,
+          "condition_ridge_0.1": 2.375261908832531,
+          "condition_ridge_1": 1.5010557279627563,
+          "full_feature_mean_norm": 0.024564337358696623
+        },
+        "linearized_degrees6_8_10_12_q16_ridge0.01": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.7889010839987433,
+          "condition_ridge_0.01": 93.36618859931677,
+          "condition_ridge_0.1": 20.92281152742345,
+          "condition_ridge_1": 3.265981740995407,
+          "full_feature_mean_norm": 0.040834933219010855
+        },
+        "linearized_degrees6_8_10_12_q16_ridge0.1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.7889010839987433,
+          "condition_ridge_0.01": 93.36618859931677,
+          "condition_ridge_0.1": 20.92281152742345,
+          "condition_ridge_1": 3.265981740995407,
+          "full_feature_mean_norm": 0.040834933219010855
+        },
+        "linearized_degrees6_8_10_12_q16_ridge1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.7889010839987433,
+          "condition_ridge_0.01": 93.36618859931677,
+          "condition_ridge_0.1": 20.92281152742345,
+          "condition_ridge_1": 3.265981740995407,
+          "full_feature_mean_norm": 0.040834933219010855
+        },
+        "linearized_degree6_q32_ridge0.01": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.902861081058008,
+          "condition_ridge_0.01": 2.6775420406870576,
+          "condition_ridge_0.1": 2.384634480628902,
+          "condition_ridge_1": 1.5042273383905604,
+          "full_feature_mean_norm": 0.03147963740521666
+        },
+        "linearized_degree6_q32_ridge0.1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.902861081058008,
+          "condition_ridge_0.01": 2.6775420406870576,
+          "condition_ridge_0.1": 2.384634480628902,
+          "condition_ridge_1": 1.5042273383905604,
+          "full_feature_mean_norm": 0.03147963740521666
+        },
+        "linearized_degree6_q32_ridge1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.902861081058008,
+          "condition_ridge_0.01": 2.6775420406870576,
+          "condition_ridge_0.1": 2.384634480628902,
+          "condition_ridge_1": 1.5042273383905604,
+          "full_feature_mean_norm": 0.03147963740521666
+        },
+        "linearized_degrees6_8_10_12_q32_ridge0.01": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 0.7733545191093195,
+          "condition_ridge_0.01": 147.98798750565476,
+          "condition_ridge_0.1": 22.77994070252646,
+          "condition_ridge_1": 3.2882294566696033,
+          "full_feature_mean_norm": 0.050275375665447535
+        },
+        "linearized_degrees6_8_10_12_q32_ridge0.1": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 0.7733545191093195,
+          "condition_ridge_0.01": 147.98798750565476,
+          "condition_ridge_0.1": 22.77994070252646,
+          "condition_ridge_1": 3.2882294566696033,
+          "full_feature_mean_norm": 0.050275375665447535
+        },
+        "linearized_degrees6_8_10_12_q32_ridge1": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 0.7733545191093195,
+          "condition_ridge_0.01": 147.98798750565476,
+          "condition_ridge_0.1": 22.77994070252646,
+          "condition_ridge_1": 3.2882294566696033,
+          "full_feature_mean_norm": 0.050275375665447535
+        },
+        "linearized_degree6_q64_ridge0.01": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 1.0312724942961895,
+          "condition_ridge_0.01": 12.838317197671861,
+          "condition_ridge_0.1": 7.0624833450957984,
+          "condition_ridge_1": 2.0312219760968024,
+          "full_feature_mean_norm": 0.04373588625625703
+        },
+        "linearized_degree6_q64_ridge0.1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 1.0312724942961895,
+          "condition_ridge_0.01": 12.838317197671861,
+          "condition_ridge_0.1": 7.0624833450957984,
+          "condition_ridge_1": 2.0312219760968024,
+          "full_feature_mean_norm": 0.04373588625625703
+        },
+        "linearized_degree6_q64_ridge1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 1.0312724942961895,
+          "condition_ridge_0.01": 12.838317197671861,
+          "condition_ridge_0.1": 7.0624833450957984,
+          "condition_ridge_1": 2.0312219760968024,
+          "full_feature_mean_norm": 0.04373588625625703
+        },
+        "linearized_degrees6_8_10_12_q64_ridge0.01": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 1.0002741033726663,
+          "condition_ridge_0.01": 399.4030943998451,
+          "condition_ridge_0.1": 42.59641274617989,
+          "condition_ridge_1": 5.178057548934867,
+          "full_feature_mean_norm": 0.08724795667744013
+        },
+        "linearized_degrees6_8_10_12_q64_ridge0.1": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 1.0002741033726663,
+          "condition_ridge_0.01": 399.4030943998451,
+          "condition_ridge_0.1": 42.59641274617989,
+          "condition_ridge_1": 5.178057548934867,
+          "full_feature_mean_norm": 0.08724795667744013
+        },
+        "linearized_degrees6_8_10_12_q64_ridge1": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 1.0002741033726663,
+          "condition_ridge_0.01": 399.4030943998451,
+          "condition_ridge_0.1": 42.59641274617989,
+          "condition_ridge_1": 5.178057548934867,
+          "full_feature_mean_norm": 0.08724795667744013
+        }
+      },
+      "linearized_singular_values": [
+        2.1881806465742346,
+        0.5175600567584525,
+        0.45110176622891535,
+        0.44004594104808537,
+        0.3000301452553659,
+        0.26113405708581244,
+        0.20726973188478331,
+        0.15421592967008482,
+        0.12686064971524275,
+        0.10851864043296645,
+        0.08924931450361134,
+        0.07022840100098936,
+        0.06739538333166581,
+        0.05658422560955704,
+        0.044834302504617535,
+        0.04093834495756233
+      ],
+      "seconds": 2.9223875829484314
+    },
+    {
+      "index": 164,
+      "name": "benjamin-walsh",
+      "baseline_mse": 3.457466003272283e-07,
+      "method_mses": {
+        "linearized_degree6_q8_ridge0.01": 3.439425176707698e-07,
+        "linearized_degree6_q8_ridge0.1": 3.4357493238204706e-07,
+        "linearized_degree6_q8_ridge1": 3.4335713474054513e-07,
+        "linearized_degrees6_8_10_12_q8_ridge0.01": 1.1341215393116261e-07,
+        "linearized_degrees6_8_10_12_q8_ridge0.1": 1.4803769176890452e-07,
+        "linearized_degrees6_8_10_12_q8_ridge1": 2.4526288091322887e-07,
+        "linearized_degree6_q16_ridge0.01": 3.7410351976209524e-07,
+        "linearized_degree6_q16_ridge0.1": 3.69658458527927e-07,
+        "linearized_degree6_q16_ridge1": 3.548966293019462e-07,
+        "linearized_degrees6_8_10_12_q16_ridge0.01": 1.3413967277255862e-07,
+        "linearized_degrees6_8_10_12_q16_ridge0.1": 1.1787367465241611e-07,
+        "linearized_degrees6_8_10_12_q16_ridge1": 1.8688389962811826e-07,
+        "linearized_degree6_q32_ridge0.01": 2.970823662259191e-07,
+        "linearized_degree6_q32_ridge0.1": 2.9880244122481267e-07,
+        "linearized_degree6_q32_ridge1": 3.1469958963060314e-07,
+        "linearized_degrees6_8_10_12_q32_ridge0.01": 6.294070292746966e-07,
+        "linearized_degrees6_8_10_12_q32_ridge0.1": 3.0995684853811617e-07,
+        "linearized_degrees6_8_10_12_q32_ridge1": 1.2466811792200628e-07,
+        "linearized_degree6_q64_ridge0.01": 2.5163998204600504e-07,
+        "linearized_degree6_q64_ridge0.1": 2.5454311006333054e-07,
+        "linearized_degree6_q64_ridge1": 2.825645499999789e-07,
+        "linearized_degrees6_8_10_12_q64_ridge0.01": 1.0746165053385331e-06,
+        "linearized_degrees6_8_10_12_q64_ridge0.1": 5.310024538950072e-07,
+        "linearized_degrees6_8_10_12_q64_ridge1": 1.2541256774796964e-07
+      },
+      "diagnostics": {
+        "linearized_degree6_q8_ridge0.01": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.840246899238759,
+          "condition_ridge_0.01": 1.5066119583257545,
+          "condition_ridge_0.1": 1.4508669499351112,
+          "condition_ridge_1": 1.214662848015721,
+          "full_feature_mean_norm": 0.01280401286505819
+        },
+        "linearized_degree6_q8_ridge0.1": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.840246899238759,
+          "condition_ridge_0.01": 1.5066119583257545,
+          "condition_ridge_0.1": 1.4508669499351112,
+          "condition_ridge_1": 1.214662848015721,
+          "full_feature_mean_norm": 0.01280401286505819
+        },
+        "linearized_degree6_q8_ridge1": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.840246899238759,
+          "condition_ridge_0.01": 1.5066119583257545,
+          "condition_ridge_0.1": 1.4508669499351112,
+          "condition_ridge_1": 1.214662848015721,
+          "full_feature_mean_norm": 0.01280401286505819
+        },
+        "linearized_degrees6_8_10_12_q8_ridge0.01": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.7381441455086418,
+          "condition_ridge_0.01": 104.18627641325067,
+          "condition_ridge_0.1": 20.417981025482078,
+          "condition_ridge_1": 3.1295936703797573,
+          "full_feature_mean_norm": 0.025532344686975145
+        },
+        "linearized_degrees6_8_10_12_q8_ridge0.1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.7381441455086418,
+          "condition_ridge_0.01": 104.18627641325067,
+          "condition_ridge_0.1": 20.417981025482078,
+          "condition_ridge_1": 3.1295936703797573,
+          "full_feature_mean_norm": 0.025532344686975145
+        },
+        "linearized_degrees6_8_10_12_q8_ridge1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.7381441455086418,
+          "condition_ridge_0.01": 104.18627641325067,
+          "condition_ridge_0.1": 20.417981025482078,
+          "condition_ridge_1": 3.1295936703797573,
+          "full_feature_mean_norm": 0.025532344686975145
+        },
+        "linearized_degree6_q16_ridge0.01": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.9879905079074144,
+          "condition_ridge_0.01": 5.216181882499193,
+          "condition_ridge_0.1": 4.000805392296052,
+          "condition_ridge_1": 1.7728761427532818,
+          "full_feature_mean_norm": 0.01985304462429767
+        },
+        "linearized_degree6_q16_ridge0.1": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.9879905079074144,
+          "condition_ridge_0.01": 5.216181882499193,
+          "condition_ridge_0.1": 4.000805392296052,
+          "condition_ridge_1": 1.7728761427532818,
+          "full_feature_mean_norm": 0.01985304462429767
+        },
+        "linearized_degree6_q16_ridge1": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.9879905079074144,
+          "condition_ridge_0.01": 5.216181882499193,
+          "condition_ridge_0.1": 4.000805392296052,
+          "condition_ridge_1": 1.7728761427532818,
+          "full_feature_mean_norm": 0.01985304462429767
+        },
+        "linearized_degrees6_8_10_12_q16_ridge0.01": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.894353367660413,
+          "condition_ridge_0.01": 236.58427670118792,
+          "condition_ridge_0.1": 38.25197648787921,
+          "condition_ridge_1": 4.98569426579689,
+          "full_feature_mean_norm": 0.041069168350957974
+        },
+        "linearized_degrees6_8_10_12_q16_ridge0.1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.894353367660413,
+          "condition_ridge_0.01": 236.58427670118792,
+          "condition_ridge_0.1": 38.25197648787921,
+          "condition_ridge_1": 4.98569426579689,
+          "full_feature_mean_norm": 0.041069168350957974
+        },
+        "linearized_degrees6_8_10_12_q16_ridge1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.894353367660413,
+          "condition_ridge_0.01": 236.58427670118792,
+          "condition_ridge_0.1": 38.25197648787921,
+          "condition_ridge_1": 4.98569426579689,
+          "full_feature_mean_norm": 0.041069168350957974
+        },
+        "linearized_degree6_q32_ridge0.01": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.9499491064133369,
+          "condition_ridge_0.01": 5.239756361943455,
+          "condition_ridge_0.1": 4.017146917473694,
+          "condition_ridge_1": 1.776878643472092,
+          "full_feature_mean_norm": 0.02943294415014884
+        },
+        "linearized_degree6_q32_ridge0.1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.9499491064133369,
+          "condition_ridge_0.01": 5.239756361943455,
+          "condition_ridge_0.1": 4.017146917473694,
+          "condition_ridge_1": 1.776878643472092,
+          "full_feature_mean_norm": 0.02943294415014884
+        },
+        "linearized_degree6_q32_ridge1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.9499491064133369,
+          "condition_ridge_0.01": 5.239756361943455,
+          "condition_ridge_0.1": 4.017146917473694,
+          "condition_ridge_1": 1.776878643472092,
+          "full_feature_mean_norm": 0.02943294415014884
+        },
+        "linearized_degrees6_8_10_12_q32_ridge0.01": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 0.8364689018815524,
+          "condition_ridge_0.01": 249.78051335036082,
+          "condition_ridge_0.1": 38.8553221075211,
+          "condition_ridge_1": 4.993866396405515,
+          "full_feature_mean_norm": 0.05530273114941653
+        },
+        "linearized_degrees6_8_10_12_q32_ridge0.1": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 0.8364689018815524,
+          "condition_ridge_0.01": 249.78051335036082,
+          "condition_ridge_0.1": 38.8553221075211,
+          "condition_ridge_1": 4.993866396405515,
+          "full_feature_mean_norm": 0.05530273114941653
+        },
+        "linearized_degrees6_8_10_12_q32_ridge1": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 0.8364689018815524,
+          "condition_ridge_0.01": 249.78051335036082,
+          "condition_ridge_0.1": 38.8553221075211,
+          "condition_ridge_1": 4.993866396405515,
+          "full_feature_mean_norm": 0.05530273114941653
+        },
+        "linearized_degree6_q64_ridge0.01": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.950997000734968,
+          "condition_ridge_0.01": 5.281584423818568,
+          "condition_ridge_0.1": 4.045725282853728,
+          "condition_ridge_1": 1.7836774118738334,
+          "full_feature_mean_norm": 0.04368020350300017
+        },
+        "linearized_degree6_q64_ridge0.1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.950997000734968,
+          "condition_ridge_0.01": 5.281584423818568,
+          "condition_ridge_0.1": 4.045725282853728,
+          "condition_ridge_1": 1.7836774118738334,
+          "full_feature_mean_norm": 0.04368020350300017
+        },
+        "linearized_degree6_q64_ridge1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.950997000734968,
+          "condition_ridge_0.01": 5.281584423818568,
+          "condition_ridge_0.1": 4.045725282853728,
+          "condition_ridge_1": 1.7836774118738334,
+          "full_feature_mean_norm": 0.04368020350300017
+        },
+        "linearized_degrees6_8_10_12_q64_ridge0.01": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 0.8305389846466275,
+          "condition_ridge_0.01": 250.45908839880028,
+          "condition_ridge_0.1": 38.91047913036298,
+          "condition_ridge_1": 4.99887221076755,
+          "full_feature_mean_norm": 0.07290638088786229
+        },
+        "linearized_degrees6_8_10_12_q64_ridge0.1": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 0.8305389846466275,
+          "condition_ridge_0.01": 250.45908839880028,
+          "condition_ridge_0.1": 38.91047913036298,
+          "condition_ridge_1": 4.99887221076755,
+          "full_feature_mean_norm": 0.07290638088786229
+        },
+        "linearized_degrees6_8_10_12_q64_ridge1": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 0.8305389846466275,
+          "condition_ridge_0.01": 250.45908839880028,
+          "condition_ridge_0.1": 38.91047913036298,
+          "condition_ridge_1": 4.99887221076755,
+          "full_feature_mean_norm": 0.07290638088786229
+        }
+      },
+      "linearized_singular_values": [
+        0.8149790760917033,
+        0.4107001704813396,
+        0.2551591636544329,
+        0.23561856833154202,
+        0.18403035031630388,
+        0.163640696095693,
+        0.1276458982600423,
+        0.09359024807986663,
+        0.08520109508238416,
+        0.07584109652394506,
+        0.059539859632858315,
+        0.054495242006811655,
+        0.04019650285674014,
+        0.03504714737897218,
+        0.03246733568076803,
+        0.025796400121306018
+      ],
+      "seconds": 2.9261758748907596
+    },
+    {
+      "index": 165,
+      "name": "justin-crawford",
+      "baseline_mse": 3.0668500009183507e-07,
+      "method_mses": {
+        "linearized_degree6_q8_ridge0.01": 2.995380464547288e-07,
+        "linearized_degree6_q8_ridge0.1": 2.966246908132498e-07,
+        "linearized_degree6_q8_ridge1": 2.95945421214431e-07,
+        "linearized_degrees6_8_10_12_q8_ridge0.01": 1.6015382588826836e-07,
+        "linearized_degrees6_8_10_12_q8_ridge0.1": 1.6564187084514536e-07,
+        "linearized_degrees6_8_10_12_q8_ridge1": 2.1284960560568123e-07,
+        "linearized_degree6_q16_ridge0.01": 4.263630300362279e-07,
+        "linearized_degree6_q16_ridge0.1": 4.118866945879905e-07,
+        "linearized_degree6_q16_ridge1": 3.5788518221793875e-07,
+        "linearized_degrees6_8_10_12_q16_ridge0.01": 2.3307497024740886e-07,
+        "linearized_degrees6_8_10_12_q16_ridge0.1": 2.469278524129452e-07,
+        "linearized_degrees6_8_10_12_q16_ridge1": 2.6521610446429554e-07,
+        "linearized_degree6_q32_ridge0.01": 8.296255209226853e-07,
+        "linearized_degree6_q32_ridge0.1": 7.65464411424273e-07,
+        "linearized_degree6_q32_ridge1": 5.124677499320653e-07,
+        "linearized_degrees6_8_10_12_q32_ridge0.01": 7.262993521549256e-07,
+        "linearized_degrees6_8_10_12_q32_ridge0.1": 3.539351626406703e-07,
+        "linearized_degrees6_8_10_12_q32_ridge1": 2.310719932830649e-07,
+        "linearized_degree6_q64_ridge0.01": 3.2060494958246883e-07,
+        "linearized_degree6_q64_ridge0.1": 3.210737090387019e-07,
+        "linearized_degree6_q64_ridge1": 3.184699712015478e-07,
+        "linearized_degrees6_8_10_12_q64_ridge0.01": 5.12698700814434e-07,
+        "linearized_degrees6_8_10_12_q64_ridge0.1": 1.598150988087227e-07,
+        "linearized_degrees6_8_10_12_q64_ridge1": 1.5788049913981196e-07
+      },
+      "diagnostics": {
+        "linearized_degree6_q8_ridge0.01": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.960021038811565,
+          "condition_ridge_0.01": 2.711082054085436,
+          "condition_ridge_0.1": 2.404965812762131,
+          "condition_ridge_1": 1.5037486669604019,
+          "full_feature_mean_norm": 0.014999731090345051
+        },
+        "linearized_degree6_q8_ridge0.1": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.960021038811565,
+          "condition_ridge_0.01": 2.711082054085436,
+          "condition_ridge_0.1": 2.404965812762131,
+          "condition_ridge_1": 1.5037486669604019,
+          "full_feature_mean_norm": 0.014999731090345051
+        },
+        "linearized_degree6_q8_ridge1": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.960021038811565,
+          "condition_ridge_0.01": 2.711082054085436,
+          "condition_ridge_0.1": 2.404965812762131,
+          "condition_ridge_1": 1.5037486669604019,
+          "full_feature_mean_norm": 0.014999731090345051
+        },
+        "linearized_degrees6_8_10_12_q8_ridge0.01": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.829978610411625,
+          "condition_ridge_0.01": 108.73494117243924,
+          "condition_ridge_0.1": 23.384343464244388,
+          "condition_ridge_1": 3.5088153037465895,
+          "full_feature_mean_norm": 0.020385762998039247
+        },
+        "linearized_degrees6_8_10_12_q8_ridge0.1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.829978610411625,
+          "condition_ridge_0.01": 108.73494117243924,
+          "condition_ridge_0.1": 23.384343464244388,
+          "condition_ridge_1": 3.5088153037465895,
+          "full_feature_mean_norm": 0.020385762998039247
+        },
+        "linearized_degrees6_8_10_12_q8_ridge1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.829978610411625,
+          "condition_ridge_0.01": 108.73494117243924,
+          "condition_ridge_0.1": 23.384343464244388,
+          "condition_ridge_1": 3.5088153037465895,
+          "full_feature_mean_norm": 0.020385762998039247
+        },
+        "linearized_degree6_q16_ridge0.01": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.9851728568483489,
+          "condition_ridge_0.01": 2.7174014377314544,
+          "condition_ridge_0.1": 2.410034551937897,
+          "condition_ridge_1": 1.5054393313617656,
+          "full_feature_mean_norm": 0.02398748359409353
+        },
+        "linearized_degree6_q16_ridge0.1": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.9851728568483489,
+          "condition_ridge_0.01": 2.7174014377314544,
+          "condition_ridge_0.1": 2.410034551937897,
+          "condition_ridge_1": 1.5054393313617656,
+          "full_feature_mean_norm": 0.02398748359409353
+        },
+        "linearized_degree6_q16_ridge1": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.9851728568483489,
+          "condition_ridge_0.01": 2.7174014377314544,
+          "condition_ridge_0.1": 2.410034551937897,
+          "condition_ridge_1": 1.5054393313617656,
+          "full_feature_mean_norm": 0.02398748359409353
+        },
+        "linearized_degrees6_8_10_12_q16_ridge0.01": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.843664895012373,
+          "condition_ridge_0.01": 155.7652737088282,
+          "condition_ridge_0.1": 25.351829962243457,
+          "condition_ridge_1": 3.727070127889049,
+          "full_feature_mean_norm": 0.035526627249255524
+        },
+        "linearized_degrees6_8_10_12_q16_ridge0.1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.843664895012373,
+          "condition_ridge_0.01": 155.7652737088282,
+          "condition_ridge_0.1": 25.351829962243457,
+          "condition_ridge_1": 3.727070127889049,
+          "full_feature_mean_norm": 0.035526627249255524
+        },
+        "linearized_degrees6_8_10_12_q16_ridge1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.843664895012373,
+          "condition_ridge_0.01": 155.7652737088282,
+          "condition_ridge_0.1": 25.351829962243457,
+          "condition_ridge_1": 3.727070127889049,
+          "full_feature_mean_norm": 0.035526627249255524
+        },
+        "linearized_degree6_q32_ridge0.01": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.9602916792318423,
+          "condition_ridge_0.01": 2.7448706788121284,
+          "condition_ridge_0.1": 2.4324400621549342,
+          "condition_ridge_1": 1.5133152364304436,
+          "full_feature_mean_norm": 0.03466223831397295
+        },
+        "linearized_degree6_q32_ridge0.1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.9602916792318423,
+          "condition_ridge_0.01": 2.7448706788121284,
+          "condition_ridge_0.1": 2.4324400621549342,
+          "condition_ridge_1": 1.5133152364304436,
+          "full_feature_mean_norm": 0.03466223831397295
+        },
+        "linearized_degree6_q32_ridge1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.9602916792318423,
+          "condition_ridge_0.01": 2.7448706788121284,
+          "condition_ridge_0.1": 2.4324400621549342,
+          "condition_ridge_1": 1.5133152364304436,
+          "full_feature_mean_norm": 0.03466223831397295
+        },
+        "linearized_degrees6_8_10_12_q32_ridge0.01": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 0.8177303962879525,
+          "condition_ridge_0.01": 156.33245797240454,
+          "condition_ridge_0.1": 25.55899012123034,
+          "condition_ridge_1": 3.7494634093800694,
+          "full_feature_mean_norm": 0.049525118574601755
+        },
+        "linearized_degrees6_8_10_12_q32_ridge0.1": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 0.8177303962879525,
+          "condition_ridge_0.01": 156.33245797240454,
+          "condition_ridge_0.1": 25.55899012123034,
+          "condition_ridge_1": 3.7494634093800694,
+          "full_feature_mean_norm": 0.049525118574601755
+        },
+        "linearized_degrees6_8_10_12_q32_ridge1": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 0.8177303962879525,
+          "condition_ridge_0.01": 156.33245797240454,
+          "condition_ridge_0.1": 25.55899012123034,
+          "condition_ridge_1": 3.7494634093800694,
+          "full_feature_mean_norm": 0.049525118574601755
+        },
+        "linearized_degree6_q64_ridge0.01": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.9672023817500317,
+          "condition_ridge_0.01": 2.9069286784656887,
+          "condition_ridge_0.1": 2.5700639524810454,
+          "condition_ridge_1": 1.5675209707945537,
+          "full_feature_mean_norm": 0.0412761457383907
+        },
+        "linearized_degree6_q64_ridge0.1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.9672023817500317,
+          "condition_ridge_0.01": 2.9069286784656887,
+          "condition_ridge_0.1": 2.5700639524810454,
+          "condition_ridge_1": 1.5675209707945537,
+          "full_feature_mean_norm": 0.0412761457383907
+        },
+        "linearized_degree6_q64_ridge1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.9672023817500317,
+          "condition_ridge_0.01": 2.9069286784656887,
+          "condition_ridge_0.1": 2.5700639524810454,
+          "condition_ridge_1": 1.5675209707945537,
+          "full_feature_mean_norm": 0.0412761457383907
+        },
+        "linearized_degrees6_8_10_12_q64_ridge0.01": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 0.8190557725026679,
+          "condition_ridge_0.01": 157.0314632620909,
+          "condition_ridge_0.1": 26.08126579826181,
+          "condition_ridge_1": 3.764529638316041,
+          "full_feature_mean_norm": 0.067133133743414
+        },
+        "linearized_degrees6_8_10_12_q64_ridge0.1": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 0.8190557725026679,
+          "condition_ridge_0.01": 157.0314632620909,
+          "condition_ridge_0.1": 26.08126579826181,
+          "condition_ridge_1": 3.764529638316041,
+          "full_feature_mean_norm": 0.067133133743414
+        },
+        "linearized_degrees6_8_10_12_q64_ridge1": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 0.8190557725026679,
+          "condition_ridge_0.01": 157.0314632620909,
+          "condition_ridge_0.1": 26.08126579826181,
+          "condition_ridge_1": 3.764529638316041,
+          "full_feature_mean_norm": 0.067133133743414
+        }
+      },
+      "linearized_singular_values": [
+        0.995390591798027,
+        0.3794107692961687,
+        0.3667879170432999,
+        0.3043153808075753,
+        0.20456734191382694,
+        0.16731204031055086,
+        0.16409477483880863,
+        0.08927042379157597,
+        0.08107327927929031,
+        0.07001048546090613,
+        0.06017060865367777,
+        0.05088128476222196,
+        0.03465023186495247,
+        0.034042049471821,
+        0.02516310895500292,
+        0.023087803943655675
+      ],
+      "seconds": 2.850193749880418
+    },
+    {
+      "index": 166,
+      "name": "tara-harris",
+      "baseline_mse": 6.550635664715546e-07,
+      "method_mses": {
+        "linearized_degree6_q8_ridge0.01": 3.608248635457395e-07,
+        "linearized_degree6_q8_ridge0.1": 3.7453655392221486e-07,
+        "linearized_degree6_q8_ridge1": 4.714768097302831e-07,
+        "linearized_degrees6_8_10_12_q8_ridge0.01": 2.35643306900935e-06,
+        "linearized_degrees6_8_10_12_q8_ridge0.1": 1.1462181875049432e-06,
+        "linearized_degrees6_8_10_12_q8_ridge1": 5.31044893480702e-07,
+        "linearized_degree6_q16_ridge0.01": 3.7631456331389823e-07,
+        "linearized_degree6_q16_ridge0.1": 3.909719513912467e-07,
+        "linearized_degree6_q16_ridge1": 4.887387198053702e-07,
+        "linearized_degrees6_8_10_12_q16_ridge0.01": 4.247685144846908e-06,
+        "linearized_degrees6_8_10_12_q16_ridge0.1": 1.6409704878317942e-06,
+        "linearized_degrees6_8_10_12_q16_ridge1": 7.091807696967683e-07,
+        "linearized_degree6_q32_ridge0.01": 3.670033120895525e-07,
+        "linearized_degree6_q32_ridge0.1": 3.303630201495669e-07,
+        "linearized_degree6_q32_ridge1": 3.729516295995219e-07,
+        "linearized_degrees6_8_10_12_q32_ridge0.01": 2.864961628417459e-06,
+        "linearized_degrees6_8_10_12_q32_ridge0.1": 7.223577551662135e-07,
+        "linearized_degrees6_8_10_12_q32_ridge1": 5.206194850234476e-07,
+        "linearized_degree6_q64_ridge0.01": 5.176032498384472e-07,
+        "linearized_degree6_q64_ridge0.1": 4.199566957366585e-07,
+        "linearized_degree6_q64_ridge1": 3.4899802169326966e-07,
+        "linearized_degrees6_8_10_12_q64_ridge0.01": 3.761705629297622e-06,
+        "linearized_degrees6_8_10_12_q64_ridge0.1": 1.1812705346269785e-06,
+        "linearized_degrees6_8_10_12_q64_ridge1": 1.1085450595062603e-06
+      },
+      "diagnostics": {
+        "linearized_degree6_q8_ridge0.01": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.8985597197527699,
+          "condition_ridge_0.01": 1.6378286523256376,
+          "condition_ridge_0.1": 1.5616638629328137,
+          "condition_ridge_1": 1.2559852151244697,
+          "full_feature_mean_norm": 0.010524957886764278
+        },
+        "linearized_degree6_q8_ridge0.1": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.8985597197527699,
+          "condition_ridge_0.01": 1.6378286523256376,
+          "condition_ridge_0.1": 1.5616638629328137,
+          "condition_ridge_1": 1.2559852151244697,
+          "full_feature_mean_norm": 0.010524957886764278
+        },
+        "linearized_degree6_q8_ridge1": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.8985597197527699,
+          "condition_ridge_0.01": 1.6378286523256376,
+          "condition_ridge_0.1": 1.5616638629328137,
+          "condition_ridge_1": 1.2559852151244697,
+          "full_feature_mean_norm": 0.010524957886764278
+        },
+        "linearized_degrees6_8_10_12_q8_ridge0.01": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.7670857861626179,
+          "condition_ridge_0.01": 82.0035378342963,
+          "condition_ridge_0.1": 18.957525363878347,
+          "condition_ridge_1": 3.044550075872062,
+          "full_feature_mean_norm": 0.02422486812213119
+        },
+        "linearized_degrees6_8_10_12_q8_ridge0.1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.7670857861626179,
+          "condition_ridge_0.01": 82.0035378342963,
+          "condition_ridge_0.1": 18.957525363878347,
+          "condition_ridge_1": 3.044550075872062,
+          "full_feature_mean_norm": 0.02422486812213119
+        },
+        "linearized_degrees6_8_10_12_q8_ridge1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.7670857861626179,
+          "condition_ridge_0.01": 82.0035378342963,
+          "condition_ridge_0.1": 18.957525363878347,
+          "condition_ridge_1": 3.044550075872062,
+          "full_feature_mean_norm": 0.02422486812213119
+        },
+        "linearized_degree6_q16_ridge0.01": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.9143546190361097,
+          "condition_ridge_0.01": 1.8023281968123026,
+          "condition_ridge_0.1": 1.701185163789649,
+          "condition_ridge_1": 1.3101739397544643,
+          "full_feature_mean_norm": 0.018065333709250564
+        },
+        "linearized_degree6_q16_ridge0.1": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.9143546190361097,
+          "condition_ridge_0.01": 1.8023281968123026,
+          "condition_ridge_0.1": 1.701185163789649,
+          "condition_ridge_1": 1.3101739397544643,
+          "full_feature_mean_norm": 0.018065333709250564
+        },
+        "linearized_degree6_q16_ridge1": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.9143546190361097,
+          "condition_ridge_0.01": 1.8023281968123026,
+          "condition_ridge_0.1": 1.701185163789649,
+          "condition_ridge_1": 1.3101739397544643,
+          "full_feature_mean_norm": 0.018065333709250564
+        },
+        "linearized_degrees6_8_10_12_q16_ridge0.01": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.7779839326552374,
+          "condition_ridge_0.01": 91.73189201366964,
+          "condition_ridge_0.1": 19.521034968694213,
+          "condition_ridge_1": 3.087650621366328,
+          "full_feature_mean_norm": 0.03583341253180322
+        },
+        "linearized_degrees6_8_10_12_q16_ridge0.1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.7779839326552374,
+          "condition_ridge_0.01": 91.73189201366964,
+          "condition_ridge_0.1": 19.521034968694213,
+          "condition_ridge_1": 3.087650621366328,
+          "full_feature_mean_norm": 0.03583341253180322
+        },
+        "linearized_degrees6_8_10_12_q16_ridge1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.7779839326552374,
+          "condition_ridge_0.01": 91.73189201366964,
+          "condition_ridge_0.1": 19.521034968694213,
+          "condition_ridge_1": 3.087650621366328,
+          "full_feature_mean_norm": 0.03583341253180322
+        },
+        "linearized_degree6_q32_ridge0.01": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.9606698341253344,
+          "condition_ridge_0.01": 6.949527669496464,
+          "condition_ridge_0.1": 4.832303942709598,
+          "condition_ridge_1": 1.8406679431713346,
+          "full_feature_mean_norm": 0.025480733372157675
+        },
+        "linearized_degree6_q32_ridge0.1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.9606698341253344,
+          "condition_ridge_0.01": 6.949527669496464,
+          "condition_ridge_0.1": 4.832303942709598,
+          "condition_ridge_1": 1.8406679431713346,
+          "full_feature_mean_norm": 0.025480733372157675
+        },
+        "linearized_degree6_q32_ridge1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.9606698341253344,
+          "condition_ridge_0.01": 6.949527669496464,
+          "condition_ridge_0.1": 4.832303942709598,
+          "condition_ridge_1": 1.8406679431713346,
+          "full_feature_mean_norm": 0.025480733372157675
+        },
+        "linearized_degrees6_8_10_12_q32_ridge0.01": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 0.8260608136571767,
+          "condition_ridge_0.01": 181.87056457692375,
+          "condition_ridge_0.1": 32.55345779716376,
+          "condition_ridge_1": 4.4189584051584685,
+          "full_feature_mean_norm": 0.05161162203194998
+        },
+        "linearized_degrees6_8_10_12_q32_ridge0.1": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 0.8260608136571767,
+          "condition_ridge_0.01": 181.87056457692375,
+          "condition_ridge_0.1": 32.55345779716376,
+          "condition_ridge_1": 4.4189584051584685,
+          "full_feature_mean_norm": 0.05161162203194998
+        },
+        "linearized_degrees6_8_10_12_q32_ridge1": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 0.8260608136571767,
+          "condition_ridge_0.01": 181.87056457692375,
+          "condition_ridge_0.1": 32.55345779716376,
+          "condition_ridge_1": 4.4189584051584685,
+          "full_feature_mean_norm": 0.05161162203194998
+        },
+        "linearized_degree6_q64_ridge0.01": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.9674817061962134,
+          "condition_ridge_0.01": 7.2750073969618185,
+          "condition_ridge_0.1": 5.040121575034527,
+          "condition_ridge_1": 1.8856872481118603,
+          "full_feature_mean_norm": 0.03862055626020896
+        },
+        "linearized_degree6_q64_ridge0.1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.9674817061962134,
+          "condition_ridge_0.01": 7.2750073969618185,
+          "condition_ridge_0.1": 5.040121575034527,
+          "condition_ridge_1": 1.8856872481118603,
+          "full_feature_mean_norm": 0.03862055626020896
+        },
+        "linearized_degree6_q64_ridge1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.9674817061962134,
+          "condition_ridge_0.01": 7.2750073969618185,
+          "condition_ridge_0.1": 5.040121575034527,
+          "condition_ridge_1": 1.8856872481118603,
+          "full_feature_mean_norm": 0.03862055626020896
+        },
+        "linearized_degrees6_8_10_12_q64_ridge0.01": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 0.8323136566570979,
+          "condition_ridge_0.01": 316.61741110838256,
+          "condition_ridge_0.1": 37.82351918939738,
+          "condition_ridge_1": 4.744782616315723,
+          "full_feature_mean_norm": 0.0752328834723513
+        },
+        "linearized_degrees6_8_10_12_q64_ridge0.1": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 0.8323136566570979,
+          "condition_ridge_0.01": 316.61741110838256,
+          "condition_ridge_0.1": 37.82351918939738,
+          "condition_ridge_1": 4.744782616315723,
+          "full_feature_mean_norm": 0.0752328834723513
+        },
+        "linearized_degrees6_8_10_12_q64_ridge1": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 0.8323136566570979,
+          "condition_ridge_0.01": 316.61741110838256,
+          "condition_ridge_0.1": 37.82351918939738,
+          "condition_ridge_1": 4.744782616315723,
+          "full_feature_mean_norm": 0.0752328834723513
+        }
+      },
+      "linearized_singular_values": [
+        2.0457025450301516,
+        0.6347672618478251,
+        0.3589442197288106,
+        0.33504582287594553,
+        0.2559241498911651,
+        0.2424770186159718,
+        0.1893829912848724,
+        0.15878348470895354,
+        0.10304561124280964,
+        0.10167781370437601,
+        0.08356931248238125,
+        0.07527170005428781,
+        0.07316780796324007,
+        0.051560021226563536,
+        0.05059213180285246,
+        0.044354107315798606
+      ],
+      "seconds": 2.8645781250670552
+    },
+    {
+      "index": 167,
+      "name": "kathy-wright",
+      "baseline_mse": 1.3442389485466154e-07,
+      "method_mses": {
+        "linearized_degree6_q8_ridge0.01": 1.2261715336628393e-07,
+        "linearized_degree6_q8_ridge0.1": 1.2367366723315268e-07,
+        "linearized_degree6_q8_ridge1": 1.2901004890892663e-07,
+        "linearized_degrees6_8_10_12_q8_ridge0.01": 1.1429554414661972e-07,
+        "linearized_degrees6_8_10_12_q8_ridge0.1": 1.1935941527071575e-07,
+        "linearized_degrees6_8_10_12_q8_ridge1": 1.1792217767513077e-07,
+        "linearized_degree6_q16_ridge0.01": 1.906978476294855e-07,
+        "linearized_degree6_q16_ridge0.1": 1.8400265299914433e-07,
+        "linearized_degree6_q16_ridge1": 1.569016006724816e-07,
+        "linearized_degrees6_8_10_12_q16_ridge0.01": 4.0328866717519393e-07,
+        "linearized_degrees6_8_10_12_q16_ridge0.1": 3.735996031706035e-07,
+        "linearized_degrees6_8_10_12_q16_ridge1": 1.5929672310285418e-07,
+        "linearized_degree6_q32_ridge0.01": 4.88224252489751e-07,
+        "linearized_degree6_q32_ridge0.1": 4.3676441958919685e-07,
+        "linearized_degree6_q32_ridge1": 2.4780073730587737e-07,
+        "linearized_degrees6_8_10_12_q32_ridge0.01": 1.985557529693453e-06,
+        "linearized_degrees6_8_10_12_q32_ridge0.1": 1.5654202527921557e-06,
+        "linearized_degrees6_8_10_12_q32_ridge1": 2.5557837702412414e-07,
+        "linearized_degree6_q64_ridge0.01": 1.165915059284914e-06,
+        "linearized_degree6_q64_ridge0.1": 1.028562682511474e-06,
+        "linearized_degree6_q64_ridge1": 4.72818096451603e-07,
+        "linearized_degrees6_8_10_12_q64_ridge0.01": 5.622759219752154e-06,
+        "linearized_degrees6_8_10_12_q64_ridge0.1": 2.5273426668262407e-06,
+        "linearized_degrees6_8_10_12_q64_ridge1": 2.8113958262206264e-07
+      },
+      "diagnostics": {
+        "linearized_degree6_q8_ridge0.01": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.9833570256296094,
+          "condition_ridge_0.01": 2.1447699587651456,
+          "condition_ridge_0.1": 1.975921339192225,
+          "condition_ridge_1": 1.3943185403313798,
+          "full_feature_mean_norm": 0.014529514231112164
+        },
+        "linearized_degree6_q8_ridge0.1": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.9833570256296094,
+          "condition_ridge_0.01": 2.1447699587651456,
+          "condition_ridge_0.1": 1.975921339192225,
+          "condition_ridge_1": 1.3943185403313798,
+          "full_feature_mean_norm": 0.014529514231112164
+        },
+        "linearized_degree6_q8_ridge1": {
+          "features": 8.0,
+          "kept": 8.0,
+          "feature_rms": 0.9833570256296094,
+          "condition_ridge_0.01": 2.1447699587651456,
+          "condition_ridge_0.1": 1.975921339192225,
+          "condition_ridge_1": 1.3943185403313798,
+          "full_feature_mean_norm": 0.014529514231112164
+        },
+        "linearized_degrees6_8_10_12_q8_ridge0.01": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.8451666800766082,
+          "condition_ridge_0.01": 127.17857983257926,
+          "condition_ridge_0.1": 24.98872221231543,
+          "condition_ridge_1": 3.636462963169838,
+          "full_feature_mean_norm": 0.02341881897566621
+        },
+        "linearized_degrees6_8_10_12_q8_ridge0.1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.8451666800766082,
+          "condition_ridge_0.01": 127.17857983257926,
+          "condition_ridge_0.1": 24.98872221231543,
+          "condition_ridge_1": 3.636462963169838,
+          "full_feature_mean_norm": 0.02341881897566621
+        },
+        "linearized_degrees6_8_10_12_q8_ridge1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.8451666800766082,
+          "condition_ridge_0.01": 127.17857983257926,
+          "condition_ridge_0.1": 24.98872221231543,
+          "condition_ridge_1": 3.636462963169838,
+          "full_feature_mean_norm": 0.02341881897566621
+        },
+        "linearized_degree6_q16_ridge0.01": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.9775149965518638,
+          "condition_ridge_0.01": 2.177986311072541,
+          "condition_ridge_0.1": 2.0041545795425946,
+          "condition_ridge_1": 1.4056094633649396,
+          "full_feature_mean_norm": 0.021957874662419267
+        },
+        "linearized_degree6_q16_ridge0.1": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.9775149965518638,
+          "condition_ridge_0.01": 2.177986311072541,
+          "condition_ridge_0.1": 2.0041545795425946,
+          "condition_ridge_1": 1.4056094633649396,
+          "full_feature_mean_norm": 0.021957874662419267
+        },
+        "linearized_degree6_q16_ridge1": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.9775149965518638,
+          "condition_ridge_0.01": 2.177986311072541,
+          "condition_ridge_0.1": 2.0041545795425946,
+          "condition_ridge_1": 1.4056094633649396,
+          "full_feature_mean_norm": 0.021957874662419267
+        },
+        "linearized_degrees6_8_10_12_q16_ridge0.01": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.8318460667220591,
+          "condition_ridge_0.01": 127.3256027862659,
+          "condition_ridge_0.1": 25.00879390532426,
+          "condition_ridge_1": 3.638488044289412,
+          "full_feature_mean_norm": 0.0350638770661555
+        },
+        "linearized_degrees6_8_10_12_q16_ridge0.1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.8318460667220591,
+          "condition_ridge_0.01": 127.3256027862659,
+          "condition_ridge_0.1": 25.00879390532426,
+          "condition_ridge_1": 3.638488044289412,
+          "full_feature_mean_norm": 0.0350638770661555
+        },
+        "linearized_degrees6_8_10_12_q16_ridge1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.8318460667220591,
+          "condition_ridge_0.01": 127.3256027862659,
+          "condition_ridge_0.1": 25.00879390532426,
+          "condition_ridge_1": 3.638488044289412,
+          "full_feature_mean_norm": 0.0350638770661555
+        },
+        "linearized_degree6_q32_ridge0.01": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.9924239168628646,
+          "condition_ridge_0.01": 2.2527971673119764,
+          "condition_ridge_0.1": 2.0678448119815442,
+          "condition_ridge_1": 1.4312232925142274,
+          "full_feature_mean_norm": 0.033981833042886524
+        },
+        "linearized_degree6_q32_ridge0.1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.9924239168628646,
+          "condition_ridge_0.01": 2.2527971673119764,
+          "condition_ridge_0.1": 2.0678448119815442,
+          "condition_ridge_1": 1.4312232925142274,
+          "full_feature_mean_norm": 0.033981833042886524
+        },
+        "linearized_degree6_q32_ridge1": {
+          "features": 32.0,
+          "kept": 32.0,
+          "feature_rms": 0.9924239168628646,
+          "condition_ridge_0.01": 2.2527971673119764,
+          "condition_ridge_0.1": 2.0678448119815442,
+          "condition_ridge_1": 1.4312232925142274,
+          "full_feature_mean_norm": 0.033981833042886524
+        },
+        "linearized_degrees6_8_10_12_q32_ridge0.01": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 0.838215895520369,
+          "condition_ridge_0.01": 145.2985053660369,
+          "condition_ridge_0.1": 25.583062848867105,
+          "condition_ridge_1": 3.6443709992783004,
+          "full_feature_mean_norm": 0.052813101307213894
+        },
+        "linearized_degrees6_8_10_12_q32_ridge0.1": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 0.838215895520369,
+          "condition_ridge_0.01": 145.2985053660369,
+          "condition_ridge_0.1": 25.583062848867105,
+          "condition_ridge_1": 3.6443709992783004,
+          "full_feature_mean_norm": 0.052813101307213894
+        },
+        "linearized_degrees6_8_10_12_q32_ridge1": {
+          "features": 128.0,
+          "kept": 128.0,
+          "feature_rms": 0.838215895520369,
+          "condition_ridge_0.01": 145.2985053660369,
+          "condition_ridge_0.1": 25.583062848867105,
+          "condition_ridge_1": 3.6443709992783004,
+          "full_feature_mean_norm": 0.052813101307213894
+        },
+        "linearized_degree6_q64_ridge0.01": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.9566458130893017,
+          "condition_ridge_0.01": 2.365961944220054,
+          "condition_ridge_0.1": 2.1617287345276,
+          "condition_ridge_1": 1.4655928220144725,
+          "full_feature_mean_norm": 0.045174884394340954
+        },
+        "linearized_degree6_q64_ridge0.1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.9566458130893017,
+          "condition_ridge_0.01": 2.365961944220054,
+          "condition_ridge_0.1": 2.1617287345276,
+          "condition_ridge_1": 1.4655928220144725,
+          "full_feature_mean_norm": 0.045174884394340954
+        },
+        "linearized_degree6_q64_ridge1": {
+          "features": 64.0,
+          "kept": 64.0,
+          "feature_rms": 0.9566458130893017,
+          "condition_ridge_0.01": 2.365961944220054,
+          "condition_ridge_0.1": 2.1617287345276,
+          "condition_ridge_1": 1.4655928220144725,
+          "full_feature_mean_norm": 0.045174884394340954
+        },
+        "linearized_degrees6_8_10_12_q64_ridge0.01": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 0.8086689843096838,
+          "condition_ridge_0.01": 146.13750518565377,
+          "condition_ridge_0.1": 25.68593599598963,
+          "condition_ridge_1": 3.65559472273352,
+          "full_feature_mean_norm": 0.07031657313554007
+        },
+        "linearized_degrees6_8_10_12_q64_ridge0.1": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 0.8086689843096838,
+          "condition_ridge_0.01": 146.13750518565377,
+          "condition_ridge_0.1": 25.68593599598963,
+          "condition_ridge_1": 3.65559472273352,
+          "full_feature_mean_norm": 0.07031657313554007
+        },
+        "linearized_degrees6_8_10_12_q64_ridge1": {
+          "features": 256.0,
+          "kept": 256.0,
+          "feature_rms": 0.8086689843096838,
+          "condition_ridge_0.01": 146.13750518565377,
+          "condition_ridge_0.1": 25.68593599598963,
+          "condition_ridge_1": 3.65559472273352,
+          "full_feature_mean_norm": 0.07031657313554007
+        }
+      },
+      "linearized_singular_values": [
+        1.8265303807887003,
+        0.3986994848578543,
+        0.28477110817856344,
+        0.2774176612272679,
+        0.25348835971663364,
+        0.17620442551120635,
+        0.15765517313213878,
+        0.13334742229864638,
+        0.12381697620007276,
+        0.10178910046567845,
+        0.07326592928466562,
+        0.06968719413618789,
+        0.05929221868060557,
+        0.046758456886107476,
+        0.04018554156071435,
+        0.03457766346101685
+      ],
+      "seconds": 2.836656207917258
+    }
+  ]
+}

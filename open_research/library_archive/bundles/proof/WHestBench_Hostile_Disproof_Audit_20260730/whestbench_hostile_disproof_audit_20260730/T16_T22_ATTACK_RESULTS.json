@@ -1,0 +1,49 @@
+{
+  "T16_endpoint_attack": {
+    "method": "100-digit independent mpmath recurrence plus certified coefficient intervals; not directed interval arithmetic",
+    "K32_plus_1": "1",
+    "h_plus_1_interval": [
+      "0.98297810573162901929986088440218737764593209273598403696165634564889317032543142156",
+      "0.98297810573162901929986088440218737764593209273598403696165634564889324967456857844"
+    ],
+    "residual_plus_1_interval": [
+      "0.01702189426837098070013911560",
+      "0.01702189426837098070013911560"
+    ],
+    "K32_minus_1_100digit": "0.973418112569938068653060080163896978173540134485603428231520662347226283791515789800475558345928819",
+    "h_minus_1_interval": [
+      "0.97341789205122516057871552147346656666447095503815453593873438031300623032543142156",
+      "0.97341789205122516057871552147346656666447095503815453593873438031300630967456857844"
+    ],
+    "robust_residual_minus_1_envelope": [
+      "2.205187129080743445587265334E-7",
+      "2.205187129080743445587265334E-7"
+    ],
+    "verdict": "Endpoint equality counterexample not found. Both endpoint residuals are strictly positive. The prose's appeal to continuity alone was incomplete, but the claimed equality set survives this attack."
+  },
+  "fast_reruns_performed_separately": [
+    {
+      "command": "./t16_independent_cpp_audit",
+      "returncode": 0,
+      "elapsed_seconds": 1.4,
+      "result": "best degree 7 exact negative fraction"
+    },
+    {
+      "command": "python arc_cubature_proof_v5_1/verify_theorem_package.py",
+      "returncode": 0,
+      "elapsed_seconds": 27.32,
+      "result": "one_sided_logic_verified=true"
+    },
+    {
+      "command": "python arc_cubature_proof_v5_1/verify_manifest.py",
+      "returncode": 0,
+      "elapsed_seconds": 0.54,
+      "result": "manifest verified: 59 files"
+    }
+  ],
+  "slow_rerun_status": {
+    "prove_t16_all_degree.py": "Full fresh run exceeded this execution window; archived rerun output exists and the independent C++ finite/tail audit passed.",
+    "prove_t16_primal_dual.py": "Full fresh run exceeded this execution window; no second arithmetic/interval implementation of the primal sixth-derivative/Hermite/Krawczyk step was found."
+  },
+  "verdict": "T22 survived the scoped attack. T16 was not disproved, but its primal computer-assisted step remains insufficiently independent for external release."
+}

@@ -1,0 +1,32 @@
+{
+  "terminal_state": "externally_blocked",
+  "required_for_real_run": [
+    {
+      "name": "Official Phase-1 Mini-100 parquet dataset",
+      "expected_layout": "DATA_DIR/*.parquet",
+      "required_columns": ["mlp_name", "weights", "all_layer_means"],
+      "required_rows": 100,
+      "reason": "raw MSE and paired per-network errors require official weights and targets"
+    },
+    {
+      "name": "flopscope 0.9.1 runtime",
+      "reason": "exact tracked FLOPs and residual wall time must come from BudgetContext; proxy accounting is forbidden"
+    },
+    {
+      "name": "whestbench challenge runtime",
+      "reason": "submission-environment compatibility and official subprocess behavior"
+    },
+    {
+      "name": "pyarrow",
+      "reason": "loads the official parquet shards in the supplied runner"
+    }
+  ],
+  "present": [
+    "Kerdock seed-3 asset",
+    "current partial-tree production estimator and fast multiplication source",
+    "adaptive suffix compiler reference",
+    "60-network historical adaptive holdout table",
+    "canonical merged ledger"
+  ],
+  "failed_install_attempt": "flopscope==0.9.1 was unavailable from the sandbox package index; see results/pip_runtime_install.txt"
+}

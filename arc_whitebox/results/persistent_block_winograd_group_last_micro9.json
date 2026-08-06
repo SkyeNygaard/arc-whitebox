@@ -1,0 +1,64 @@
+{
+  "method": "persistent 64-block canonical Winograd",
+  "selection_only": true,
+  "selection_id_limit": 50,
+  "points": 66048,
+  "width": 256,
+  "micro": {
+    "canonical_levels": 3,
+    "decode_mode": "group_last",
+    "canonical_blocks": 64,
+    "block_size": 32,
+    "tracked_flops_including_initial_canonicalization": 5446415616,
+    "steady_state_tracked_flops": 5429507328,
+    "residual_wall_time_s_median": 0.007921328069642186,
+    "effective_compute_including_initial_canonicalization": 6238548422.964218,
+    "max_abs_difference": 0.0001038089394569397,
+    "rms_difference": 8.84675874161295e-06,
+    "operation_breakdown": {
+      "asarray": {
+        "flop_cost": 0,
+        "calls": 2,
+        "flopscope_backend_time_s": 1.125037670135498e-06,
+        "flopscope_overhead_time_s": 6.241700612008572e-05
+      },
+      "stack": {
+        "flop_cost": 219218944,
+        "calls": 9,
+        "flopscope_backend_time_s": 0.021899623796343803,
+        "flopscope_overhead_time_s": 0.0003598735202103853
+      },
+      "add": {
+        "flop_cost": 608087424,
+        "calls": 113,
+        "flopscope_backend_time_s": 0.1894944568630308,
+        "flopscope_overhead_time_s": 0.004040424479171634
+      },
+      "subtract": {
+        "flop_cost": 348825344,
+        "calls": 94,
+        "flopscope_backend_time_s": 0.22547850152477622,
+        "flopscope_overhead_time_s": 0.003029625164344907
+      },
+      "matmul": {
+        "flop_cost": 4162757760,
+        "calls": 49,
+        "flopscope_backend_time_s": 0.12762245582416654,
+        "flopscope_overhead_time_s": 0.0028827935457229614
+      },
+      "block": {
+        "flop_cost": 90617856,
+        "calls": 1,
+        "flopscope_backend_time_s": 0.07247141608968377,
+        "flopscope_overhead_time_s": 7.270881906151772e-05
+      },
+      "concatenate": {
+        "flop_cost": 16908288,
+        "calls": 1,
+        "flopscope_backend_time_s": 0.0013067498803138733,
+        "flopscope_overhead_time_s": 6.091711111366749e-05
+      }
+    }
+  },
+  "full_id0": null
+}

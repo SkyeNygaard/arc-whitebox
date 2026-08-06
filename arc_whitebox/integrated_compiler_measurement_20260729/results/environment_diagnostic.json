@@ -1,0 +1,40 @@
+{
+  "terminal_state": "externally_blocked",
+  "python": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
+  "platform": "Linux-6.12.13-x86_64-with-glibc2.41",
+  "dependencies": {
+    "numpy": true,
+    "scipy": true,
+    "pyarrow": false,
+    "flopscope": false,
+    "whestbench": false,
+    "psutil": true,
+    "pytest": true
+  },
+  "official_data_expected_path": "/mnt/data/whestbench/arc_code/arc_whitebox/data/official_phase1_mini/data",
+  "official_data_exists": false,
+  "official_parquet_count": 0,
+  "assets": {
+    "assets/kerdock_mub5_seed3.npz": {
+      "exists": true,
+      "size_bytes": 250162,
+      "sha256": "58eac1b69707b204d00f6d50cf4e1996b1fcd566154ec93a7ecb5668c1acbfad"
+    },
+    "vendor/original_estimator.py": {
+      "exists": true,
+      "size_bytes": 3880,
+      "sha256": "7c3fcc2ac542bda41ab568e62428ec75b7edec6f146d61a036c0710d9ee49694"
+    },
+    "vendor/original_fast_matmul.py": {
+      "exists": true,
+      "size_bytes": 5133,
+      "sha256": "fb1b93cb625b66ce5f26220ea3b6b685dbb9887d50f8756cafa9426577d45085"
+    }
+  },
+  "blockers": [
+    "official Mini-100 parquet data absent",
+    "flopscope runtime absent",
+    "whestbench runtime absent",
+    "pyarrow parquet loader absent"
+  ]
+}

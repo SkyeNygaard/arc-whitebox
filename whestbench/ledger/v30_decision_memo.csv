@@ -1,0 +1,26 @@
+WHestBench V30 Decision Memo — local hybrid and mixture results,,,,,
+,,,,,
+Status,Object,Measured local result,Canonical decision,Next gate,Priority
+NO CANDIDATE,Compact joint-modulation state,K32 full-cov≈4.8e-3 fails; r64 latent≈1.96e-3 passes but particles uneconomic,PRIMARY,M192 middle rungs then M188,1
+CLOSED TESTED,Sampled-moment analytic-mean hybrid,K3+K4 reaches2.73e-7 at66048 but remains MC-rate; matched cost worse,STOP,No same-row moment hybrids,0
+CLOSED TESTED,Smoothed-network hybrid,Residual Gate A strong; honest hybrid2-2.7x worse; analytic closure regimes disjoint,STOP FAMILY,New anchor class required,0
+ADOPTED METRIC,Complete-block residual variance,Rank128 pointwise0.597 but blockwise0.949; smooth alpha0.2≈0.0392,MANDATORY GATE,Use S_r/S_f and full cost,All
+BOUNDED,Kerdock QTT,Unaffected by local results,One cheap falsifier,M189,3
+ONE SHOT,Cubic boundary/Walsh phase,Not tested by static LORO,Keep one algebraic kernel,M194,4
+BOUNDED,Boundary-normal fan,Covariance rank is not boundary-normal rank,Keep one declared audit,M193,5
+ENGINE/PROOF,Environment-weighted degree10 chaos,Standalone low-band ceiling≈1.58x,No standalone candidate,M190 inside M192/M188,6
+SUBCLASS CLOSED,Weight/state feature prediction,"29-feature LONO R2<0, chance sign",Stop features; broad quotient deferred,M195 only after anchor,7
+SEALED,Protected evaluation,No legal candidate,Do not open,Frozen rollout first,8
+Representation,"Use one coherent generative law, not separately fitted means/covariances/pair matrices.",T89 nonclosure and M70 incompatibility.,"Held-out latent oracle <=0.3%, PSD, legal factors.",Only unrestricted/overfit oracle passes.,"T89-T92,M187"
+Local result,What is real,What is closed,What remains,Key number,Canonical ID
+Hybrid marginal closure,Fourth-order Edgeworth marginal is very accurate,Sampling its moments from same rows,An analytically known high-degree anchor,2.73e-7 at66048 but same variance law,M197
+Design-aware residual,Smooth anchor preserves cancellation,Full smoothed-anchor estimator,Use Gate A for future anchors,S_r/S_f=0.0392 atalpha0.2,"T104,M198-M200"
+Mixture representation,Joint copula state can pass at r64,Naive particles and K32 full covariance,Compact tied/shared-low-rank modulation,1.96e-3 pass vs4.8e-3 fail,"M192,M201,M202"
+Degree10 engine,Exact low-band contribution is bounded,Standalone M190 winning claim,Internal contraction engine,1.58x zero-cost ceiling,"T105,M190"
+Learning scope,Handcrafted weight/state features fail,Feature expansion,Complete quotient remains logically open,R2 -0.018 to -0.002,"M203,M195"
+Shared Library through 2026-07-30 22:22 ET,"Agents 1,2,5,6","Agents 3,4,7,8,9,10 (Agent4 concept covered by Agent1)",Pending is not negative evidence,Sealed,v28
+Audit cutoff,Source,Artifact quarantine,Canonical version,Protected data,Conclusion
+2026-07-31 08:49 ET,Pasted text(67).txt local transcript,10.02x and5687x projections rejected for omitted anchor cost / wrong objective,v30,Sealed,No candidate; compact joint modulation remains primary
+2026-07-30 23:01 ET,Agents 1-10 relevant final markdowns located/reconciled,No later substantive Library result located in cutoff scan,v29,Sealed,Up to date at cutoff; no deployable candidate
+2026-07-30 23:01 ET,Agents 1-10 relevant final markdowns located/reconciled,No later substantive Library result located in cutoff scan,v29,Sealed,Up to date at cutoff; no deployable candidate
+2026-07-30 23:01 ET,Agents 1-10 relevant final markdowns located/reconciled,No later substantive Library result located in cutoff scan,v29,Sealed,Up to date at cutoff; no deployable candidate

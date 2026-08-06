@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-07-30T20:10:00Z",
+  "execution_mode": "Each step executed in a separate fresh process from package-relative paths.",
+  "tasks": [
+    {
+      "name": "inertia_exact_replay",
+      "script": "code/verify_inertia_certificates_exact.py",
+      "passed": true
+    },
+    {
+      "name": "v21_degree280",
+      "script": "source_v21/verify_signed_near_optimality_certificate_blocktrace_order320.py",
+      "passed": true
+    },
+    {
+      "name": "shared_profile_and_sturm",
+      "script": "code/verify_shared_profile_and_sturm_gap.py",
+      "passed": true
+    },
+    {
+      "name": "gaussian_suffix_nonexpansivity",
+      "script": "code/verify_gaussian_relu_nonexpansivity.py",
+      "passed": true
+    },
+    {
+      "name": "gaussian_crossing_formula",
+      "script": "code/verify_gaussian_crossing_formula.py",
+      "passed": true
+    },
+    {
+      "name": "finite_width_monotonicity_no_go",
+      "script": "code/verify_finite_width_monotonicity_counterexample.py",
+      "passed": true
+    }
+  ],
+  "headline": {
+    "T70_floor_fraction_of_kerdock": 0.9370605225569535,
+    "T70_same_cost_cap": 1.0671669288460728,
+    "T71_free_mass_floor_fraction": 0.9370603033214825,
+    "T75_negative_atoms_for_below_1_05x": 1072,
+    "T75_negative_atoms_worse_than_kerdock": 4160
+  },
+  "trust_note": "The package exactly replays rational witnesses against stored v21 order-320 directed kernel coefficient endpoints. It does not independently regenerate those interval endpoints."
+}

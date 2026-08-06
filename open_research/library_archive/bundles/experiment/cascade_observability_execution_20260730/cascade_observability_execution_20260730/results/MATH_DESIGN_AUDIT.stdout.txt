@@ -1,0 +1,58 @@
+{
+  "test0_architecture_assumed_from_source": {
+    "D": 256,
+    "depth": 32,
+    "bias_free": true,
+    "weight_sd": 0.08838834764831845
+  },
+  "test1a": {
+    "chirp_shape": [
+      128,
+      256
+    ],
+    "chirp_values": [
+      -1.0,
+      1.0
+    ],
+    "all_chirp_pairs_checked": 8128,
+    "integer_walsh_mub_violations": [],
+    "max_integer_abs_deviation_from_16": 0,
+    "rotation_orthogonality_max_abs": 1.7178599653888682e-08,
+    "all_basis_orthogonality_max_abs": 1.7178599653888682e-08,
+    "sampled_cross_basis_abs_inner_product_max_deviation": 1.2726915327165855e-08,
+    "standard_vs_chirp_abs_inner_product_max_deviation": 1.1981392961102344e-08,
+    "certified_row_profile": {
+      "self": 1,
+      "antipode": 1,
+      "orthogonal": 510,
+      "cross_abs_1_over_16": 65536
+    }
+  },
+  "test1b_infinite_width": {
+    "A0_quadrature": 0.9747299895417149,
+    "row_average_kernel": 0.9747302329077503,
+    "baseline_linear_risk": 2.433660354350664e-07,
+    "alpha_star_unconstrained_linear": 0.9999997503247287,
+    "alpha_minus_one": -2.496752713465611e-07,
+    "scaled_linear_risk": 2.4336597467258545e-07,
+    "relative_risk_reduction": 2.496752714529582e-07,
+    "absolute_risk_reduction": 6.076248095968046e-14,
+    "kernel_values": {
+      "1.0": 1.0,
+      "-1.0": 0.9734181125699383,
+      "0.0": 0.9747204751243136,
+      "0.0625": 0.9749038431237257,
+      "-0.0625": 0.9745560434322168
+    }
+  },
+  "nonlinear_counterexample": {
+    "dimension": 16,
+    "trials": 10000,
+    "c_d": 0.1013051510340953,
+    "nonlinear_exact_max_abs_error": 0.0,
+    "linear_mse": 0.0006355379830340274,
+    "nonlinear_mse": 0.0,
+    "linear_relative_bias": -0.0009896500414100361,
+    "statement": "For f_a(u)=ReLU(a^T u), antipodal orthonormal-basis observations recover |a_i|, and nonlinear L2 postprocessing recovers the exact spherical integral. The equal-weight linear rule uses L1 instead and is not Bayes-exact."
+  }
+}

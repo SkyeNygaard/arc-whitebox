@@ -1,0 +1,48 @@
+{
+  "experiment": "integrated_compiler_measurement_20260729",
+  "protected_baseline": {
+    "design": "complete 66048-row Kerdock/MUB seed-3",
+    "propagation": "depth-5 partial-tree Strassen-Winograd",
+    "candidate": "baseline"
+  },
+  "shared": {
+    "width": 256,
+    "depth": 32,
+    "pilot_columns_per_basis": 8,
+    "pilot_rows": 2064,
+    "basis_count_including_coordinates": 129,
+    "minimum_saving_guard_ratio": 0.995,
+    "score_budget": 272000000000,
+    "residual_wall_flops_per_second": 100000000000
+  },
+  "candidates": {
+    "baseline": {
+      "suffix_depths": [],
+      "classification": null,
+      "correction_alpha": 0.0,
+      "guard": null
+    },
+    "two_layer": {
+      "suffix_depths": [2],
+      "rare_threshold": 1,
+      "correction_alpha": 1.0,
+      "guard": null,
+      "status": "frozen fallback"
+    },
+    "fixed_three": {
+      "suffix_depths": [3],
+      "rare_threshold": 8,
+      "middle_correction_alpha": 0.0,
+      "final_correction_alpha": 0.875,
+      "guard": 0.995
+    },
+    "adaptive_2_6": {
+      "suffix_depths": [2, 3, 4, 5, 6],
+      "rare_threshold": 1,
+      "selection": "minimum predicted arithmetic ratio, ties to shallower depth",
+      "final_correction_alpha": 1.0,
+      "guard": 0.995
+    }
+  },
+  "adoption_gate": "measured adjusted-score improvement with no material runtime, memory, prediction, or tail regression"
+}

@@ -1,0 +1,99 @@
+{
+  "protocol": {
+    "seed": 707,
+    "repeats": 7,
+    "chunk_rows": 2048,
+    "threads": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  "summary": {
+    "materialize_median_s": 2.031798161000097,
+    "direct_2048_median_s": 0.9900122010001269,
+    "wall_speedup": 2.0522960817528717,
+    "wall_reduction_fraction": 0.5127408716066459,
+    "max_abs_mean_diff_max": 4.1690199320543186e-07,
+    "rms_mean_diff_max": 4.238600915166425e-08
+  },
+  "rows": [
+    {
+      "rep": 0,
+      "order": [
+        "materialize",
+        "direct"
+      ],
+      "materialize_s": 2.016745637999975,
+      "direct_s": 1.0167503729999225,
+      "max_abs_mean_diff": 4.1690199320543186e-07,
+      "rms_mean_diff": 4.238600915166425e-08
+    },
+    {
+      "rep": 1,
+      "order": [
+        "materialize",
+        "direct"
+      ],
+      "materialize_s": 2.687630752000132,
+      "direct_s": 0.9191199679999045,
+      "max_abs_mean_diff": 4.1690199320543186e-07,
+      "rms_mean_diff": 4.238600915166425e-08
+    },
+    {
+      "rep": 2,
+      "order": [
+        "materialize",
+        "direct"
+      ],
+      "materialize_s": 1.9916772649999075,
+      "direct_s": 0.917234580000013,
+      "max_abs_mean_diff": 4.1690199320543186e-07,
+      "rms_mean_diff": 4.238600915166425e-08
+    },
+    {
+      "rep": 3,
+      "order": [
+        "direct",
+        "materialize"
+      ],
+      "direct_s": 1.0932291220001389,
+      "materialize_s": 2.3412336869998853,
+      "max_abs_mean_diff": 4.1690199320543186e-07,
+      "rms_mean_diff": 4.238600915166425e-08
+    },
+    {
+      "rep": 4,
+      "order": [
+        "materialize",
+        "direct"
+      ],
+      "materialize_s": 1.4081699930000013,
+      "direct_s": 0.9900122010001269,
+      "max_abs_mean_diff": 4.1690199320543186e-07,
+      "rms_mean_diff": 4.238600915166425e-08
+    },
+    {
+      "rep": 5,
+      "order": [
+        "direct",
+        "materialize"
+      ],
+      "direct_s": 1.1162943639999412,
+      "materialize_s": 2.7410909319999064,
+      "max_abs_mean_diff": 4.1690199320543186e-07,
+      "rms_mean_diff": 4.238600915166425e-08
+    },
+    {
+      "rep": 6,
+      "order": [
+        "direct",
+        "materialize"
+      ],
+      "direct_s": 0.9118050790000325,
+      "materialize_s": 2.031798161000097,
+      "max_abs_mean_diff": 4.1690199320543186e-07,
+      "rms_mean_diff": 4.238600915166425e-08
+    }
+  ]
+}

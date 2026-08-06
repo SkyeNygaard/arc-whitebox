@@ -1,0 +1,215 @@
+=== assemble ===
+{
+  "theorem_target": "h(t) <= K_32(t) for every t in [-1,1]",
+  "dimension": 256,
+  "depth": 32,
+  "precision": 55,
+  "mesh_original_intervals": 1079,
+  "mesh_certified_subintervals": 1421,
+  "mesh_sources": [
+    "formal_gpp_chunk_0000_0100.json",
+    "formal_gpp_chunk_0100_0200.json",
+    "formal_gpp_chunk_0200_0300.json",
+    "formal_gpp_chunk_0300_0400.json",
+    "formal_gpp_chunk_0400_0500.json",
+    "formal_gpp_chunk_0500_0550.json",
+    "formal_gpp_chunk_0550_0551.json",
+    "formal_gpp_chunk_0551_0560.json",
+    "formal_gpp_chunk_0560_0565.json",
+    "formal_gpp_chunk_0565_0570.json",
+    "formal_gpp_chunk_0570_0575.json",
+    "formal_gpp_chunk_0575_0585.json",
+    "formal_gpp_chunk_0585_0600.json",
+    "formal_gpp_chunk_0600_0605.json",
+    "formal_gpp_chunk_0605_0606.json",
+    "formal_gpp_chunk_0606_0607.json",
+    "formal_gpp_chunk_0607_0613.json",
+    "formal_gpp_chunk_0613_0627.json",
+    "formal_gpp_chunk_0627_0727.json",
+    "formal_gpp_chunk_0727_0827.json",
+    "formal_gpp_chunk_0827_0927.json",
+    "formal_gpp_chunk_0927_1027.json",
+    "formal_gpp_chunk_1027_1079.json"
+  ],
+  "minimum_curvature_sign_margin": "3.786310565067545258386528753204913730281604342983E-9",
+  "minimum_margin_row": {
+    "index": 616,
+    "left": "1040623759200084274042326677381303669542388563160046101567624722510979123141513111/22400000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "right": "327812151938951100680775559127101223180796187720015367189208240836993041047171037/7000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "sign": "negative",
+    "region": 7,
+    "piece": 3,
+    "pieces": 14,
+    "level": 2,
+    "lower": "-0.000009287509687496840607395798297442959248664251394950443",
+    "upper": "-3.786310565067545258386528753204913730281604342983E-9"
+  },
+  "coverage_exact": true,
+  "no_gaps_or_overlaps": true,
+  "logical_conclusion": [
+    "g=h-K has positive derivative on the left tail and negative derivative on the right tail.",
+    "The certified sign pattern of g second derivative and the four inflection boxes forces exactly five derivative sign transitions.",
+    "The three possible local maxima lie inside critical boxes 0, 2, and 4.",
+    "Strong-concavity bounds make g strictly negative in all three maximum boxes.",
+    "The two minimum boxes and both endpoint boxes are also strictly negative.",
+    "Therefore h(t) < K_32(t) for every t in [-1,1]."
+  ],
+  "global_upper_bound": "-1.004586240658455604403124565024659239239177837259174401E-13",
+  "passed": true
+}
+elapsed=0.66 user=0.92 sys=0.14 maxrss=114868 exit=0
+=== sign ===
+{
+  "passed": true,
+  "special_box_order_verified": true,
+  "curvature_region_signs": [
+    "negative",
+    "positive",
+    "positive",
+    "negative",
+    "negative",
+    "positive",
+    "positive",
+    "negative",
+    "negative"
+  ],
+  "derived_connecting_region_signs": [
+    {
+      "region": 0,
+      "curvature": "negative",
+      "gprime_sign": "negative"
+    },
+    {
+      "region": 1,
+      "curvature": "positive",
+      "gprime_sign": "negative"
+    },
+    {
+      "region": 2,
+      "curvature": "positive",
+      "gprime_sign": "positive"
+    },
+    {
+      "region": 3,
+      "curvature": "negative",
+      "gprime_sign": "positive"
+    },
+    {
+      "region": 4,
+      "curvature": "negative",
+      "gprime_sign": "negative"
+    },
+    {
+      "region": 5,
+      "curvature": "positive",
+      "gprime_sign": "negative"
+    },
+    {
+      "region": 6,
+      "curvature": "positive",
+      "gprime_sign": "positive"
+    },
+    {
+      "region": 7,
+      "curvature": "negative",
+      "gprime_sign": "positive"
+    },
+    {
+      "region": 8,
+      "curvature": "negative",
+      "gprime_sign": "negative"
+    }
+  ],
+  "left_tail_gprime_sign": "positive",
+  "right_tail_gprime_sign": "negative",
+  "only_interior_maximum_boxes": [
+    0,
+    2,
+    4
+  ],
+  "candidate_maximum_bounds": [
+    {
+      "critical_box": 0,
+      "g_upper": "-1.006381225140822106958480467939964383163637139821963921E-13"
+    },
+    {
+      "critical_box": 2,
+      "g_upper": "-1.004586240658455604403124565024659239239177837259174401E-13"
+    },
+    {
+      "critical_box": 4,
+      "g_upper": "-1.006076192704191719337187722901912947809913469492792329E-13"
+    }
+  ],
+  "endpoint_bounds": [
+    {
+      "name": "left",
+      "left": "-1",
+      "right": "-9999999/10000000",
+      "g_upper": "-2.205091577204745461908195008385380517601245973581E-7"
+    },
+    {
+      "name": "right",
+      "left": "9999999/10000000",
+      "right": "1",
+      "g_upper": "-0.0170217945708778150896577001006134382668800048535828331"
+    }
+  ],
+  "conclusion": "The certified curvature and endpoint signs force exactly five stationary transitions (max,min,max,min,max). g is negative at all three possible interior maxima and both endpoint boxes; hence g=h-K<0 on [-1,1]."
+}
+elapsed=0.61 user=0.91 sys=0.10 maxrss=112964 exit=0
+=== multiplicity ===
+{
+  "dimension": 256,
+  "number_of_bases": 129,
+  "antipodal_nodes_per_basis": 512,
+  "total_nodes": 66048,
+  "abstract_input": "An antipodal union of 129 pairwise mutually unbiased orthonormal bases in R^256. The proof of near-optimality uses only this incidence property; existence is supplied by the classical real Kerdock construction.",
+  "per_fixed_node": {
+    "inner_product_1": 1,
+    "inner_product_minus_1": 1,
+    "inner_product_0": 510,
+    "inner_product_plus_1_over_16": 32768,
+    "inner_product_minus_1_over_16": 32768
+  },
+  "derivation": [
+    "A maximal real MUB family in dimension d=256 has d/2+1=129 bases.",
+    "Including both signs gives 2d=512 nodes per basis and N=2d(d/2+1)=d(d+2)=66048.",
+    "Within the fixed node's own basis: one self, one antipode, and 2(d-1)=510 signed orthogonal nodes.",
+    "There are d/2=128 other bases. In each, the d antipodal pairs contribute exactly d positive and d negative inner products of magnitude 1/sqrt(d)=1/16.",
+    "Thus each sign occurs 128d=32768 times."
+  ],
+  "count_sum_check": 66048,
+  "passed": true
+}
+elapsed=0.53 user=0.88 sys=0.06 maxrss=109648 exit=0
+=== kernel_mean ===
+{
+  "dimension": 256,
+  "depth": 32,
+  "precision": 120,
+  "maximum_computed_degree": 30,
+  "method": "interval Taylor jets plus nonnegative-series moment tail bound",
+  "lemmas_used": [
+    "The normalized ReLU dual activation has nonnegative Maclaurin coefficients summing to one.",
+    "Composition of power series with nonnegative coefficients preserves nonnegativity and unit coefficient sum.",
+    "Odd spherical moments vanish.",
+    "Even spherical moments decrease with degree."
+  ],
+  "A0_partial": {
+    "lower": "0.974729989541714712312258085264191196422089014048652080604140725421300908486529660854678526902154912616533635138269820861",
+    "upper": "0.974729989541714712312258085264191196422089014048652080604140725421300908486529660854678526902154912616533635138269821581"
+  },
+  "first_omitted_even_moment_exact": "13485/58919902301434770108710912",
+  "first_omitted_even_moment_decimal": {
+    "lower": "2.28870033270092915912462379299874248747164368681340802429130584686084251978254649439086168261185579555866863135679204037E-22",
+    "upper": "2.28870033270092915912462379299874248747164368681340802429130584686084251978254649439086168261185579555866863135679204038E-22"
+  },
+  "A0_certified": {
+    "lower": "0.974729989541714712312258085264191196422089014048652080604140725421300908486529660854678526902154912616533635138269820861",
+    "upper": "0.974729989541714712312486955297461289338001476427951954852887889789982249288958791439364611154133167265972721306531007161"
+  },
+  "A0_width": "2.288700332700929159124623793E-22",
+  "passed": true
+}
+elapsed=25.37 user=25.68 sys=0.07 maxrss=110816 exit=0

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "probe_count": 128,
+  "dimension": 256,
+  "probe_contract": {
+    "left": "u_p=e_{i_p}",
+    "right": "v_p=normalized selected observable Q row",
+    "selection": "top 128 Q-row norms, no replacement"
+  },
+  "exact_counts_per_network": {
+    "unique_selected_indices": 128,
+    "marginal_second_slots": 128,
+    "row_direction_slots": 128,
+    "exact_pair_slot_deduplications": 0
+  },
+  "observable_pair_slots": [
+    {
+      "name": "s_p",
+      "formula": "(D/rho^2) mean(h_i_p^2)",
+      "count": 128
+    },
+    {
+      "name": "t_p",
+      "formula": "(D/rho^2) mean(h_i_p (v_p^T h))",
+      "count": 128
+    }
+  ],
+  "external_center_slots": [
+    {
+      "name": "d_i_p",
+      "formula": "mu_i_p-m_i_p",
+      "count": 128
+    },
+    {
+      "name": "a_p",
+      "formula": "v_p^T(mu-m)",
+      "count": 128
+    }
+  ],
+  "derived_without_extra_estimation": [
+    "mu_i=m_i+d_i",
+    "z_p=v_p^T mu=v_p^T m+a_p"
+  ],
+  "downstream_map": "c_output = lower_defect @ beta, beta shape (128,256)",
+  "smallest_defensible_runtime_representation": "256 primary-cloud pair scalars + 256 independent center contractions; no full covariance and no independent pair cloud"
+}

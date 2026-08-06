@@ -1,0 +1,58 @@
+{
+  "protocol": {
+    "split": "full",
+    "indices": [
+      0
+    ],
+    "rotation_seed": 3,
+    "folds": 4,
+    "ridges": [
+      0.01
+    ],
+    "configs": [
+      "had16_linear_pair"
+    ],
+    "anti_leakage": "Coefficients use pointwise final outputs from training basis blocks only; each correction is evaluated on held-out whole basis blocks. No ground-truth means enter fitting."
+  },
+  "summary": {
+    "mean_field_linear": {
+      "mean_mse": 1.9807119906429148e-07,
+      "ratio": 0.8855548640270408,
+      "ci95": [
+        0.8855548640270408,
+        0.8855548640270408
+      ],
+      "wins": 1,
+      "worst_ratio": 0.8855548640270408
+    },
+    "had16_linear_pair:ridge=0.01": {
+      "mean_mse": 1.2975209440039235e-07,
+      "ratio": 0.5801075515106425,
+      "ci95": [
+        0.5801075515106425,
+        0.5801075515106425
+      ],
+      "wins": 1,
+      "worst_ratio": 0.5801075515106425
+    }
+  },
+  "records": [
+    {
+      "index": 0,
+      "name": "dominic-nelson",
+      "baseline_mse": 2.2366903182437187e-07,
+      "mse": {
+        "mean_field_linear": 1.9807119906429148e-07,
+        "had16_linear_pair:ridge=0.01": 1.2975209440039235e-07
+      },
+      "diagnostics": {
+        "had16_linear_pair:ridge=0.01": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 243.64939480495391
+        }
+      },
+      "seconds": 0.5190437079872936
+    }
+  ]
+}

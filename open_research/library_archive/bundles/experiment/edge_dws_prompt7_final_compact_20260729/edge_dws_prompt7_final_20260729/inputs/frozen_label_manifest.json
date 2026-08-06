@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "status": "frozen",
+  "label_kind": "v80_scale",
+  "label_dim": 1,
+  "examples": 82,
+  "data_sha256": "0236378ede6f61a9a3cb66f0202180ba3e78084acbee9c6d8d691e85892d59e9",
+  "source_sha256": [
+    "e2ce2c13b538978df08c57693f71592cc36ee5138ab4b10063cadb3328933332",
+    "81e072cc327d41d808602e6a433c41efc73a7f6a51b4b7b36e3ed3f69bac544c",
+    "68e2c52b7e463dbd2298e04a153b34b0906fbfafd40568237bec6649ea3b405a"
+  ],
+  "surrogate": {
+    "kind": "exact_linear_final_replay",
+    "verified": true,
+    "verification": {
+      "verified": true,
+      "proof_kind": "additive_final_output",
+      "equation": "mse(scale)=||baseline_error-scale*c||^2/256",
+      "development_parabola_reconstruction": "exact from stored baseline MSE, optimal scale, and regenerated frozen correction",
+      "test_replay": "direct additive final-output vectors",
+      "max_abs_error": 0.0,
+      "tolerance": 0.0,
+      "development_network_count": 50,
+      "fresh_test_network_count": 16
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "formula": "v = template^T E_b[(X_b-q)^T(Y_b-Ybar)]; candidate = sample + gamma v",
+  "gamma_train": 3.4395182596408644,
+  "oof_shrink": 0.8844725441533017,
+  "effective_gamma": 3.0421594657662916,
+  "validation": {
+    "ratio": 0.9790222067851153,
+    "bootstrap95": [
+      0.7598371963250617,
+      1.1795947473483226
+    ],
+    "wins": 25,
+    "median": 0.9891546557314329,
+    "worst": 2.1482410184531755,
+    "mean_direction_cosine": 0.11765689281043386
+  },
+  "incremental_ops": 2113536
+}

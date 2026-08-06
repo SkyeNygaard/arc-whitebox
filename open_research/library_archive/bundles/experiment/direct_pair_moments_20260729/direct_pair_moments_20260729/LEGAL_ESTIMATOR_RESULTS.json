@@ -1,0 +1,578 @@
+{
+  "status": "development reanalysis on an exposed 24-network prospective companion-validation block plus an exposed high-reference 8-network oracle pair substitution audit",
+  "primary_decision": "close independent pair-moment estimation; retain fused same-cloud selected contractions",
+  "high_reference_pair_substitution": {
+    "exact_pairs_ratio": 0.8893497614666946,
+    "primary_sample_pairs_ratio": 0.8899138547283495,
+    "absolute_ratio_difference": 0.0005640932616548522,
+    "exact_diag_sample_row_ratio": 0.8898278473596914,
+    "sample_diag_exact_row_ratio": 0.8894337230618434
+  },
+  "new_24_network_ablation": {
+    "arms": [
+      {
+        "probes": 32,
+        "companion_bases": 129,
+        "shrinkage": 0.5,
+        "pair_source": "companion_pairs",
+        "raw_ratio": 0.7728314186162508,
+        "raw_ci95": [
+          0.6165089847020234,
+          0.9136118374032571
+        ],
+        "noise_corrected_ratio": 0.7477828210113325,
+        "wins": 19,
+        "n": 24,
+        "median": 0.8356426505774271,
+        "p90": 1.1448616027664995,
+        "worst": 1.5198759039244203
+      },
+      {
+        "probes": 32,
+        "companion_bases": 129,
+        "shrinkage": 0.5,
+        "pair_source": "primary_pairs",
+        "raw_ratio": 0.7729100014052817,
+        "raw_ci95": [
+          0.6167886860499207,
+          0.9137017351259868
+        ],
+        "noise_corrected_ratio": 0.7478700686810837,
+        "wins": 19,
+        "n": 24,
+        "median": 0.8361123925217657,
+        "p90": 1.1445348620564604,
+        "worst": 1.5253651064190923
+      },
+      {
+        "probes": 32,
+        "companion_bases": 129,
+        "shrinkage": 0.5,
+        "pair_source": "companion_diag_primary_row",
+        "raw_ratio": 0.7728955406972383,
+        "raw_ci95": [
+          0.61672492543608,
+          0.9137341881197508
+        ],
+        "noise_corrected_ratio": 0.7478540134723634,
+        "wins": 19,
+        "n": 24,
+        "median": 0.8360482666292925,
+        "p90": 1.1445449007986295,
+        "worst": 1.5237372384560999
+      },
+      {
+        "probes": 32,
+        "companion_bases": 129,
+        "shrinkage": 0.5,
+        "pair_source": "primary_diag_companion_row",
+        "raw_ratio": 0.772843435737166,
+        "raw_ci95": [
+          0.616571486708124,
+          0.9137227194608079
+        ],
+        "noise_corrected_ratio": 0.747796163192361,
+        "wins": 19,
+        "n": 24,
+        "median": 0.8357067139901915,
+        "p90": 1.1448515299833157,
+        "worst": 1.5214978126640335
+      },
+      {
+        "probes": 32,
+        "companion_bases": 16,
+        "shrinkage": 0.1,
+        "pair_source": "companion_pairs",
+        "raw_ratio": 0.8488609144861164,
+        "raw_ci95": [
+          0.7417970499163347,
+          0.9411759371685088
+        ],
+        "noise_corrected_ratio": 0.8321956603724007,
+        "wins": 19,
+        "n": 24,
+        "median": 0.8759201102221981,
+        "p90": 1.0554883277000833,
+        "worst": 1.2018629315004064
+      },
+      {
+        "probes": 32,
+        "companion_bases": 16,
+        "shrinkage": 0.1,
+        "pair_source": "primary_pairs",
+        "raw_ratio": 0.8496207760922992,
+        "raw_ci95": [
+          0.7435185574687743,
+          0.9412040372148657
+        ],
+        "noise_corrected_ratio": 0.8330393076301584,
+        "wins": 19,
+        "n": 24,
+        "median": 0.876198641010109,
+        "p90": 1.0570410553760334,
+        "worst": 1.2038672110650661
+      },
+      {
+        "probes": 32,
+        "companion_bases": 16,
+        "shrinkage": 0.1,
+        "pair_source": "companion_diag_primary_row",
+        "raw_ratio": 0.8493879419400266,
+        "raw_ci95": [
+          0.7428925811524426,
+          0.9411820388313501
+        ],
+        "noise_corrected_ratio": 0.832780800169749,
+        "wins": 19,
+        "n": 24,
+        "median": 0.876109607621458,
+        "p90": 1.0566915968436883,
+        "worst": 1.2033068330991423
+      },
+      {
+        "probes": 32,
+        "companion_bases": 16,
+        "shrinkage": 0.1,
+        "pair_source": "primary_diag_companion_row",
+        "raw_ratio": 0.849087022083769,
+        "raw_ci95": [
+          0.7423468214880192,
+          0.9411327619813921
+        ],
+        "noise_corrected_ratio": 0.8324466995789688,
+        "wins": 19,
+        "n": 24,
+        "median": 0.8760091047206124,
+        "p90": 1.0558361479575005,
+        "worst": 1.2024197619667152
+      },
+      {
+        "probes": 128,
+        "companion_bases": 129,
+        "shrinkage": 0.5,
+        "pair_source": "companion_pairs",
+        "raw_ratio": 0.7260082278233035,
+        "raw_ci95": [
+          0.5809708201699144,
+          0.8565693042811601
+        ],
+        "noise_corrected_ratio": 0.6957967011830115,
+        "wins": 20,
+        "n": 24,
+        "median": 0.819203561697874,
+        "p90": 1.0706991685751897,
+        "worst": 1.2307521866744389
+      },
+      {
+        "probes": 128,
+        "companion_bases": 129,
+        "shrinkage": 0.5,
+        "pair_source": "primary_pairs",
+        "raw_ratio": 0.7260185705557611,
+        "raw_ci95": [
+          0.5809811645310576,
+          0.8566961178121586
+        ],
+        "noise_corrected_ratio": 0.6958081843502152,
+        "wins": 20,
+        "n": 24,
+        "median": 0.8187614975395968,
+        "p90": 1.0706650470268837,
+        "worst": 1.2354150798251724
+      },
+      {
+        "probes": 128,
+        "companion_bases": 129,
+        "shrinkage": 0.5,
+        "pair_source": "companion_diag_primary_row",
+        "raw_ratio": 0.7260195128638961,
+        "raw_ci95": [
+          0.5809574248384828,
+          0.856732560969229
+        ],
+        "noise_corrected_ratio": 0.6958092305613511,
+        "wins": 20,
+        "n": 24,
+        "median": 0.8188985833851424,
+        "p90": 1.0706485240603705,
+        "worst": 1.2339843228627432
+      },
+      {
+        "probes": 128,
+        "companion_bases": 129,
+        "shrinkage": 0.5,
+        "pair_source": "primary_diag_companion_row",
+        "raw_ratio": 0.7260048127756802,
+        "raw_ci95": [
+          0.5809767761122231,
+          0.8566000887561909
+        ],
+        "noise_corrected_ratio": 0.6957929095773571,
+        "wins": 20,
+        "n": 24,
+        "median": 0.819066021684854,
+        "p90": 1.0707156519284196,
+        "worst": 1.2321773488627625
+      },
+      {
+        "probes": 128,
+        "companion_bases": 129,
+        "shrinkage": 0.2,
+        "pair_source": "companion_pairs",
+        "raw_ratio": 0.7903006317107247,
+        "raw_ci95": [
+          0.7062493519963261,
+          0.860443478551817
+        ],
+        "noise_corrected_ratio": 0.7671782656586588,
+        "wins": 23,
+        "n": 24,
+        "median": 0.8227711231588163,
+        "p90": 0.9299767884821499,
+        "worst": 1.0117830853786804
+      },
+      {
+        "probes": 128,
+        "companion_bases": 129,
+        "shrinkage": 0.2,
+        "pair_source": "primary_pairs",
+        "raw_ratio": 0.7904814577847286,
+        "raw_ci95": [
+          0.7066497932147416,
+          0.8604782841293279
+        ],
+        "noise_corrected_ratio": 0.7673790304034798,
+        "wins": 23,
+        "n": 24,
+        "median": 0.8228872126060991,
+        "p90": 0.9299372773869541,
+        "worst": 1.0117313201207394
+      },
+      {
+        "probes": 128,
+        "companion_bases": 129,
+        "shrinkage": 0.2,
+        "pair_source": "companion_diag_primary_row",
+        "raw_ratio": 0.7904299806630921,
+        "raw_ci95": [
+          0.7065111971816249,
+          0.8604741417427232
+        ],
+        "noise_corrected_ratio": 0.7673218771901151,
+        "wins": 23,
+        "n": 24,
+        "median": 0.8228688987162934,
+        "p90": 0.9299391442227094,
+        "worst": 1.0117257001985525
+      },
+      {
+        "probes": 128,
+        "companion_bases": 129,
+        "shrinkage": 0.2,
+        "pair_source": "primary_diag_companion_row",
+        "raw_ratio": 0.7903517131940392,
+        "raw_ci95": [
+          0.7063350445590594,
+          0.8604418783318712
+        ],
+        "noise_corrected_ratio": 0.7672349796088964,
+        "wins": 23,
+        "n": 24,
+        "median": 0.8227884551928816,
+        "p90": 0.9299749041480659,
+        "worst": 1.0117887061229043
+      },
+      {
+        "probes": 128,
+        "companion_bases": 16,
+        "shrinkage": 0.1,
+        "pair_source": "companion_pairs",
+        "raw_ratio": 0.8409783205361926,
+        "raw_ci95": [
+          0.7300746891862987,
+          0.9355587626612133
+        ],
+        "noise_corrected_ratio": 0.8234438972674294,
+        "wins": 20,
+        "n": 24,
+        "median": 0.862512597622728,
+        "p90": 1.0420645135763364,
+        "worst": 1.220096364865978
+      },
+      {
+        "probes": 128,
+        "companion_bases": 16,
+        "shrinkage": 0.1,
+        "pair_source": "primary_pairs",
+        "raw_ratio": 0.8417383134301891,
+        "raw_ci95": [
+          0.7320098027649158,
+          0.9357342861546021
+        ],
+        "noise_corrected_ratio": 0.8242876902893677,
+        "wins": 20,
+        "n": 24,
+        "median": 0.8619767105225307,
+        "p90": 1.0436058743563097,
+        "worst": 1.2221495278041172
+      },
+      {
+        "probes": 128,
+        "companion_bases": 16,
+        "shrinkage": 0.1,
+        "pair_source": "companion_diag_primary_row",
+        "raw_ratio": 0.8415073975381744,
+        "raw_ci95": [
+          0.7314521143286993,
+          0.9357100961655029
+        ],
+        "noise_corrected_ratio": 0.8240313126049499,
+        "wins": 20,
+        "n": 24,
+        "median": 0.8620041800578022,
+        "p90": 1.0432618752970182,
+        "worst": 1.2215573323729165
+      },
+      {
+        "probes": 128,
+        "companion_bases": 16,
+        "shrinkage": 0.1,
+        "pair_source": "primary_diag_companion_row",
+        "raw_ratio": 0.8412022864062948,
+        "raw_ci95": [
+          0.7306564288878424,
+          0.9356221175198247
+        ],
+        "noise_corrected_ratio": 0.8236925585902356,
+        "wins": 20,
+        "n": 24,
+        "median": 0.8624850236571664,
+        "p90": 1.042406991502139,
+        "worst": 1.2206847965009253
+      }
+    ],
+    "pair_source_deltas": {
+      "p128_b129_a0.5": {
+        "point": -1.0342732457576156e-05,
+        "ci95": [
+          -0.0003897406785244917,
+          0.00036644363726335584
+        ]
+      },
+      "p128_b129_a0.2": {
+        "point": -0.0001808260740037679,
+        "ci95": [
+          -0.0006270803223031349,
+          0.00024916613987002907
+        ]
+      },
+      "p128_b16_a0.1": {
+        "point": -0.0007599928939965494,
+        "ci95": [
+          -0.001905634757750324,
+          0.00020675058752091333
+        ]
+      }
+    },
+    "pair_increment_geometry": {
+      "p32_b16": {
+        "full_correction_norm2": {
+          "median": 0.0003929841928073909,
+          "p90": 0.0008843135096144406,
+          "max": 0.0055846235382754385,
+          "mean": 0.000632978168272486
+        },
+        "primary_pair_correction_norm2": {
+          "median": 0.0003909424115725109,
+          "p90": 0.0008868629287151706,
+          "max": 0.005375917240849903,
+          "mean": 0.0006233880508808452
+        },
+        "independent_pair_increment_norm2": {
+          "median": 9.915705952532237e-09,
+          "p90": 8.517586488564913e-08,
+          "max": 2.034528363456832e-06,
+          "mean": 1.0703229928811205e-07
+        },
+        "independent_pair_increment_over_full_norm": {
+          "median": 0.005012823342580977,
+          "p90": 0.010918441183991044,
+          "max": 0.01908687912337686,
+          "mean": 0.006125466241648163
+        },
+        "full_vs_primary_pair_cosine": {
+          "median": 0.9999973834980884,
+          "p90": 0.9999991991423169,
+          "max": 0.9999994794961518,
+          "mean": 0.9999960898188535
+        },
+        "diag_increment_norm2": {
+          "median": 5.491685890959865e-10,
+          "p90": 7.433696345125525e-09,
+          "max": 2.0725819277592196e-07,
+          "mean": 1.0289201668888923e-08
+        },
+        "row_increment_norm2": {
+          "median": 6.941925008736724e-09,
+          "p90": 4.399900709232003e-08,
+          "max": 9.451316948426825e-07,
+          "mean": 5.143945456026414e-08
+        }
+      },
+      "p32_b129": {
+        "full_correction_norm2": {
+          "median": 7.48792176046154e-05,
+          "p90": 0.0001830303809690739,
+          "max": 0.00048257136861084736,
+          "mean": 9.86353204162553e-05
+        },
+        "primary_pair_correction_norm2": {
+          "median": 7.510907484951641e-05,
+          "p90": 0.00018498780005664724,
+          "max": 0.0004778308836453096,
+          "mean": 9.844535789141622e-05
+        },
+        "independent_pair_increment_norm2": {
+          "median": 1.9549011857644497e-10,
+          "p90": 3.016548001695551e-09,
+          "max": 1.4045858359132619e-08,
+          "mean": 1.6099257734171386e-09
+        },
+        "independent_pair_increment_over_full_norm": {
+          "median": 0.0017155172196719726,
+          "p90": 0.004763553830406345,
+          "max": 0.008401457163039801,
+          "mean": 0.0023569381958123935
+        },
+        "full_vs_primary_pair_cosine": {
+          "median": 0.9999995699822548,
+          "p90": 0.9999997867221014,
+          "max": 0.9999998983560612,
+          "mean": 0.9999993796576169
+        },
+        "diag_increment_norm2": {
+          "median": 5.712223362400935e-12,
+          "p90": 2.7867542791727003e-10,
+          "max": 1.2649181142291746e-09,
+          "mean": 1.4094186484039063e-10
+        },
+        "row_increment_norm2": {
+          "median": 1.468171176525428e-10,
+          "p90": 1.4985441915828297e-09,
+          "max": 6.935217112815975e-09,
+          "mean": 8.106772122608176e-10
+        }
+      },
+      "p128_b16": {
+        "full_correction_norm2": {
+          "median": 0.0004484575840238696,
+          "p90": 0.0011635426079243242,
+          "max": 0.0058208910215329455,
+          "mean": 0.0007391158111004547
+        },
+        "primary_pair_correction_norm2": {
+          "median": 0.0004441655912540937,
+          "p90": 0.0011669572123806041,
+          "max": 0.005603518223463067,
+          "mean": 0.0007291106892217154
+        },
+        "independent_pair_increment_norm2": {
+          "median": 1.1433792493897745e-08,
+          "p90": 9.090144867692021e-08,
+          "max": 2.1213136197895294e-06,
+          "mean": 1.1124756357283343e-07
+        },
+        "independent_pair_increment_over_full_norm": {
+          "median": 0.004546054832963967,
+          "p90": 0.009448266866952788,
+          "max": 0.019090078133293602,
+          "mean": 0.005862598426781665
+        },
+        "full_vs_primary_pair_cosine": {
+          "median": 0.9999967752926187,
+          "p90": 0.9999986842239601,
+          "max": 0.9999992983892506,
+          "mean": 0.9999960110109761
+        },
+        "diag_increment_norm2": {
+          "median": 5.230076030656166e-10,
+          "p90": 7.918675350011441e-09,
+          "max": 2.1282428396504904e-07,
+          "mean": 1.0584065243840023e-08
+        },
+        "row_increment_norm2": {
+          "median": 7.167990702063384e-09,
+          "p90": 4.6913123917894626e-08,
+          "max": 9.929945555314468e-07,
+          "mean": 5.385479305299853e-08
+        }
+      },
+      "p128_b129": {
+        "full_correction_norm2": {
+          "median": 9.95023548769375e-05,
+          "p90": 0.00017226912754948458,
+          "max": 0.000532652483325005,
+          "mean": 0.00011247974042973367
+        },
+        "primary_pair_correction_norm2": {
+          "median": 9.935319204692203e-05,
+          "p90": 0.00017468236302848594,
+          "max": 0.0005274906417266285,
+          "mean": 0.00011228140574486549
+        },
+        "independent_pair_increment_norm2": {
+          "median": 2.634191847405083e-10,
+          "p90": 2.872998454259883e-09,
+          "max": 1.4121535084059616e-08,
+          "mean": 1.657646212648214e-09
+        },
+        "independent_pair_increment_over_full_norm": {
+          "median": 0.001736818229538385,
+          "p90": 0.0045058733165706565,
+          "max": 0.008693372945249326,
+          "mean": 0.0023744328612290886
+        },
+        "full_vs_primary_pair_cosine": {
+          "median": 0.999999479465483,
+          "p90": 0.9999997207643654,
+          "max": 0.9999998377329207,
+          "mean": 0.9999992178305864
+        },
+        "diag_increment_norm2": {
+          "median": 6.2984379407101785e-12,
+          "p90": 2.7505586452826625e-10,
+          "max": 1.2383761562069491e-09,
+          "mean": 1.415013058266651e-10
+        },
+        "row_increment_norm2": {
+          "median": 2.0369670111462553e-10,
+          "p90": 1.3854900976862468e-09,
+          "max": 7.17730180312007e-09,
+          "mean": 8.49984508015543e-10
+        }
+      }
+    }
+  },
+  "rank_audit": {
+    "pooled_shared_r90": 29,
+    "pooled_shared_r95": 36,
+    "pooled_shared_r99": 44,
+    "local_rank2_median_anchor_relative_error": 0.002619825991297459,
+    "local_rank2_pooled_ratio": 0.8899462774536139,
+    "local_exact_pooled_ratio": 0.8893497614666948,
+    "local_rank2_energy_median": 0.9999475673480828
+  },
+  "gate_assessment": {
+    "development_ratio_below_0.75": "pass only for full 129-basis companion center at 128 probes and alpha 0.5 (post-hoc extension)",
+    "promotion_ratio_at_most_0.595": "fail",
+    "wins_at_least_75_percent": "pass for several arms",
+    "worst_at_most_1.10_1.15": "fails for the raw-best 0.5 arm; safe 0.2 arm fails the ratio gate",
+    "positive_alignment": "pair-source substitution alignment is effectively identical (median cosine >0.999999 at full companion)",
+    "added_compute_below_14B": "pair accumulator passes; independent companion center does not"
+  },
+  "limitations": [
+    "No new immutable cohort was opened. The 24-network block was already exposed by the frozen 32-probe companion validation before this 128-probe/pair-source extension.",
+    "The high-reference 8-network pair substitution bundle does not ship scalar contraction arrays, so exact scalar RMSE cannot be recomputed; final-output metrics are authoritative.",
+    "Measured subprocess FlopScope was not available; the pair-specific arithmetic is counted exactly, while companion propagation uses the prior measured/proxy report."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "frozen_after_development_before_calibration_generation": true,
+  "development_networks": [5000,5001,5002,5003,5004,5005,5006,5007,5008],
+  "severe_definition": "c17_ratio > 1.10",
+  "diagnostic_rules": {
+    "A_jackknife_or_coherent_late": {
+      "flag": "jackknife_cv >= 0.33 OR downstream_weighted_late_relative_change <= 0.50",
+      "action": "suppress c17 to zero correction"
+    },
+    "B_probe_concentration": {
+      "flag": "c17_top5_probe_contribution_share >= 0.255 OR mid_increment_l1_over_total <= 4.04",
+      "action": "suppress c17 to zero correction"
+    },
+    "C_smooth_or_jackknife": {
+      "flag": "cos(c12,c17) >= 0.963 OR jackknife_cv >= 0.33",
+      "action": "suppress c17 to zero correction"
+    },
+    "D_paired_disagreement": {
+      "flag": "cos(paired2,c17) <= -0.05",
+      "action": "suppress c17 to zero correction"
+    }
+  },
+  "fixed_estimator_formulas": [
+    "c8", "c12", "c17", "count_weighted_8_12_17", "inverse_variance_8_12_17",
+    "bounded_aitken", "bounded_richardson", "trimmed_basis_mean", "median_of_four_basis_groups"
+  ],
+  "calibration_selection": "Choose at most one diagnostic rule. It must satisfy catch>=0.75 and false_suppression<=0.20 on calibration; ties use lower pooled ratio, then fewer suppressions. If none pass, freeze no nested uncertainty rule.",
+  "validation_policy": "Open all validation labels once after calibration selection. No threshold or formula changes."
+}

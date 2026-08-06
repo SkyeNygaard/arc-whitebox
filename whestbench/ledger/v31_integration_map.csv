@@ -1,0 +1,17 @@
+WHestBench V31 Integration Map — final local writeup,,,,,,,,
+,,,,,,,,
+Branch,Measured fact,Scope,Status,Feeds,Next gate,Kill/reopen rule,IDs,Role
+Shipping baseline,Official Mini100 score1.4641716e-7;0 failures,Exposed official split,VALIDATED,Submission,Tail audit,Only replace with fully validated lower score,M208,Production
+Heteroscedastic mixture,K1536 accurate; exact/Taylor/low-rank evaluation fail,Current implementation family,MOSTLY CLOSED,Tied exception,Independent rerun,No reopening with larger K/centers/rank,"T106,T107,M205-M207",Former primary
+Tied/shared covariance,Reusable correlation structure not isolated,Special M192 rung,ONE FINAL TEST,M188 if pass,Exact K<=64,Failure closes M192,M192,Candidate exception
+Cubic boundary phase,Not touched by mixture work,One exact nonlinear primitive,CONDITIONAL PRIMARY,Direct-output source,M194,No grouped positive covariance,M194,Class escape
+Kerdock QTT,Unchanged,Stored-array test,BOUNDED,Direct compute,M189,Rank/pivot failure,M189,Cheap hedge
+Activation fan,Covariance ranks not facet ranks,Boundary audit,BOUNDED,Boundary identity,M193,Normal/current failure,M193,Geometry hedge
+Tail robustness,Worst network≈6% total loss,Exposed grouped diagnostics,LOW UPSIDE,Shipping,M210,No general mechanism,M210,Robustness
+M190 chaos,Degree10 standalone ceiling1.58x,Engine/proof,DEFERRED,Potential compression,Only with new state,No standalone claim,"T105,M190",Internal
+M195 learning,Feature subclass negative,Full quotient untested,DEFERRED,Later,Anchor first,No handcrafted expansion,"M195,M203",Low prior
+Root estimator,dot(out=) crash,Current package,QUARANTINED,None,Port separately,Never submit unvalidated,M209,Safety
+Protected evaluation,No new candidate,Governance,SEALED,Frozen estimator only,Immutable package,Any oracle/cost leak,M211,Governance
+Protected evaluation,No full legal candidate,Governance,SEALED,Candidate only,Immutable package,Any oracle/cost leak,M204,Governance
+Protected evaluation,No full legal candidate.,Score/tails/cost after M188.,SEALED,Candidate only,Immutable package,Any oracle/refit/cost leak,M196,Governance
+Protected evaluation,No full legal candidate.,Score/tails/cost after M188.,SEALED,Candidate only,Immutable package,Any oracle/refit/cost leak,M196,Governance

@@ -1,0 +1,131 @@
+{
+  "method": "Strassen/Winograd on rectangular or 258-square-block Kerdock activations",
+  "selection_only": true,
+  "indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "width": 256,
+  "depth": 32,
+  "points": 66048,
+  "square_blocks": 258,
+  "micro_rows": 66048,
+  "budget": 272000000000,
+  "lambda_flops_per_second": 100000000000.0,
+  "microbenchmark": [
+    {
+      "layout": "rectangular",
+      "schedule": "hybrid_p3",
+      "variant": "winograd",
+      "recursion_depth": 5,
+      "leaf_size": 8,
+      "leaf_products": 16807,
+      "tracked_flops": 5639804672,
+      "tracked_flop_ratio_to_blas": 0.6527449585381301,
+      "wall_time_s_median": 0.7874752080533653,
+      "residual_wall_time_s_median": 0.0018270344007760286,
+      "max_abs_difference": 0.0001038089394569397,
+      "rms_difference": 8.84675874161295e-06,
+      "operation_breakdown": {
+        "asarray": {
+          "flop_cost": 0,
+          "calls": 2,
+          "flopscope_backend_time_s": 1.4170072972774506e-06,
+          "flopscope_overhead_time_s": 2.6250025257468224e-05
+        },
+        "add": {
+          "flop_cost": 608087424,
+          "calls": 77,
+          "flopscope_backend_time_s": 0.1804553314577788,
+          "flopscope_overhead_time_s": 0.0037550427950918674
+        },
+        "subtract": {
+          "flop_cost": 348825344,
+          "calls": 88,
+          "flopscope_backend_time_s": 0.23478995147161186,
+          "flopscope_overhead_time_s": 0.003642301307991147
+        },
+        "stack": {
+          "flop_cost": 172655616,
+          "calls": 6,
+          "flopscope_backend_time_s": 0.023620082531124353,
+          "flopscope_overhead_time_s": 0.00024683307856321335
+        },
+        "matmul": {
+          "flop_cost": 4162757760,
+          "calls": 49,
+          "flopscope_backend_time_s": 0.12859999854117632,
+          "flopscope_overhead_time_s": 0.0040158797055482864
+        },
+        "block": {
+          "flop_cost": 347478528,
+          "calls": 11,
+          "flopscope_backend_time_s": 0.16996583109721541,
+          "flopscope_overhead_time_s": 0.0005658781155943871
+        }
+      }
+    },
+    {
+      "layout": "rectangular",
+      "schedule": "hybrid_p4",
+      "variant": "winograd",
+      "recursion_depth": 5,
+      "leaf_size": 8,
+      "leaf_products": 16807,
+      "tracked_flops": 5799000576,
+      "tracked_flop_ratio_to_blas": 0.6711701221385337,
+      "wall_time_s_median": 1.5474758329801261,
+      "residual_wall_time_s_median": 0.0010771607048809528,
+      "max_abs_difference": 0.0001038089394569397,
+      "rms_difference": 8.84675874161295e-06,
+      "operation_breakdown": {
+        "asarray": {
+          "flop_cost": 0,
+          "calls": 2,
+          "flopscope_backend_time_s": 1.3329554349184036e-06,
+          "flopscope_overhead_time_s": 2.9709190130233765e-05
+        },
+        "add": {
+          "flop_cost": 608087424,
+          "calls": 35,
+          "flopscope_backend_time_s": 0.16763316467404366,
+          "flopscope_overhead_time_s": 0.0017438349314033985
+        },
+        "subtract": {
+          "flop_cost": 348825344,
+          "calls": 40,
+          "flopscope_backend_time_s": 0.21146528772078454,
+          "flopscope_overhead_time_s": 0.0016350061632692814
+        },
+        "stack": {
+          "flop_cost": 331851520,
+          "calls": 8,
+          "flopscope_backend_time_s": 0.06739020603708923,
+          "flopscope_overhead_time_s": 0.0002993352245539427
+        },
+        "matmul": {
+          "flop_cost": 4162757760,
+          "calls": 7,
+          "flopscope_backend_time_s": 0.1263712919317186,
+          "flopscope_overhead_time_s": 0.0008124159649014473
+        },
+        "block": {
+          "flop_cost": 347478528,
+          "calls": 5,
+          "flopscope_backend_time_s": 0.16582470713183284,
+          "flopscope_overhead_time_s": 0.0002605011686682701
+        }
+      }
+    }
+  ],
+  "selection": [],
+  "summaries": []
+}

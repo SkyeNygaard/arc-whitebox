@@ -1,0 +1,996 @@
+{
+  "construction": {
+    "name": "binary Kerdock maximal real MUB spherical 5-design",
+    "dimension": 256,
+    "bases": 129,
+    "points": 66048,
+    "field_polynomial": "x^7 + x + 1"
+  },
+  "validation": {
+    "points": 66048.0,
+    "max_norm_error": 0.0,
+    "max_abs_mean": 0.0,
+    "max_covariance_error": 0.0,
+    "diag4": 4.5421511627906976e-05,
+    "diag4_target": 4.5421511627906976e-05,
+    "diag4_error": 0.0,
+    "pair22": 1.5140503875968992e-05,
+    "pair22_target": 1.5140503875968992e-05,
+    "pair22_error": 0.0,
+    "max_random_distinct_fourth_moment": 0.0,
+    "max_mub_abs_inner_product_error": 0.0
+  },
+  "structured_flop_model": {
+    "dense_layers_after_first": 268368347136,
+    "first_layer_fwht_additions": 134217728,
+    "coordinate_basis_first_layer_dense": 67108864,
+    "note": "Conservative sketch; ReLU/stacking and rotation costs omitted."
+  },
+  "summaries": [
+    {
+      "rotation_seed": -1,
+      "networks": 10,
+      "mean_final_mse": 2.855302884390865e-07,
+      "median_final_mse": 1.418260695553458e-07,
+      "mean_seconds": 0.2492727791890502
+    },
+    {
+      "rotation_seed": 0,
+      "networks": 10,
+      "mean_final_mse": 1.7462687641911129e-07,
+      "median_final_mse": 1.7303276797474607e-07,
+      "mean_seconds": 0.2564791002077982
+    },
+    {
+      "rotation_seed": 1,
+      "networks": 10,
+      "mean_final_mse": 1.7195204025753247e-07,
+      "median_final_mse": 1.3248301877893443e-07,
+      "mean_seconds": 0.2509023124584928
+    },
+    {
+      "rotation_seed": 2,
+      "networks": 10,
+      "mean_final_mse": 2.895066269164164e-07,
+      "median_final_mse": 1.4259291066108682e-07,
+      "mean_seconds": 0.2570724793476984
+    },
+    {
+      "rotation_seed": 3,
+      "networks": 10,
+      "mean_final_mse": 1.7154706372118843e-07,
+      "median_final_mse": 1.497104357107087e-07,
+      "mean_seconds": 0.2693320375867188
+    },
+    {
+      "rotation_seed": 4,
+      "networks": 10,
+      "mean_final_mse": 3.392777927559984e-07,
+      "median_final_mse": 3.2182686253976726e-07,
+      "mean_seconds": 0.268372954428196
+    },
+    {
+      "rotation_seed": 5,
+      "networks": 10,
+      "mean_final_mse": 1.7083267137298408e-07,
+      "median_final_mse": 1.5553664049454592e-07,
+      "mean_seconds": 0.2600308375898749
+    },
+    {
+      "rotation_seed": 6,
+      "networks": 10,
+      "mean_final_mse": 2.671934009403741e-07,
+      "median_final_mse": 1.3687900433155197e-07,
+      "mean_seconds": 0.2743866499979049
+    },
+    {
+      "rotation_seed": 7,
+      "networks": 10,
+      "mean_final_mse": 2.4500090980506066e-07,
+      "median_final_mse": 1.8097918478159992e-07,
+      "mean_seconds": 0.26172239158768207
+    }
+  ],
+  "records": [
+    {
+      "index": 0,
+      "name": "daniel-harrison",
+      "rotation_seed": -1,
+      "points": 66048,
+      "seconds": 0.2481017920654267,
+      "final_mse": 1.9586875162035638e-07,
+      "mean_prediction": 0.4508489498528893,
+      "mean_target": 0.45064407108388127
+    },
+    {
+      "index": 0,
+      "name": "daniel-harrison",
+      "rotation_seed": 0,
+      "points": 66048,
+      "seconds": 0.27643929212354124,
+      "final_mse": 1.6439888986281366e-07,
+      "mean_prediction": 0.4507311057213268,
+      "mean_target": 0.45064407108388127
+    },
+    {
+      "index": 0,
+      "name": "daniel-harrison",
+      "rotation_seed": 1,
+      "points": 66048,
+      "seconds": 0.2518507079221308,
+      "final_mse": 1.2129998488542125e-07,
+      "mean_prediction": 0.45056037737774796,
+      "mean_target": 0.45064407108388127
+    },
+    {
+      "index": 0,
+      "name": "daniel-harrison",
+      "rotation_seed": 2,
+      "points": 66048,
+      "seconds": 0.25033533410169184,
+      "final_mse": 7.16126158038273e-08,
+      "mean_prediction": 0.45058462538633237,
+      "mean_target": 0.45064407108388127
+    },
+    {
+      "index": 0,
+      "name": "daniel-harrison",
+      "rotation_seed": 3,
+      "points": 66048,
+      "seconds": 0.25042245793156326,
+      "final_mse": 1.7326131864435212e-07,
+      "mean_prediction": 0.4508193830928987,
+      "mean_target": 0.45064407108388127
+    },
+    {
+      "index": 0,
+      "name": "daniel-harrison",
+      "rotation_seed": 4,
+      "points": 66048,
+      "seconds": 0.25081983394920826,
+      "final_mse": 1.221350888027411e-07,
+      "mean_prediction": 0.45064609618423157,
+      "mean_target": 0.45064407108388127
+    },
+    {
+      "index": 0,
+      "name": "daniel-harrison",
+      "rotation_seed": 5,
+      "points": 66048,
+      "seconds": 0.2507280840072781,
+      "final_mse": 1.6499122083754737e-07,
+      "mean_prediction": 0.45082645578760305,
+      "mean_target": 0.45064407108388127
+    },
+    {
+      "index": 0,
+      "name": "daniel-harrison",
+      "rotation_seed": 6,
+      "points": 66048,
+      "seconds": 0.2501702499575913,
+      "final_mse": 4.343011400858812e-07,
+      "mean_prediction": 0.4509897644757432,
+      "mean_target": 0.45064407108388127
+    },
+    {
+      "index": 0,
+      "name": "daniel-harrison",
+      "rotation_seed": 7,
+      "points": 66048,
+      "seconds": 0.25333283306099474,
+      "final_mse": 5.862408425029251e-07,
+      "mean_prediction": 0.4502374991225942,
+      "mean_target": 0.45064407108388127
+    },
+    {
+      "index": 1,
+      "name": "dustin-robinson",
+      "rotation_seed": -1,
+      "points": 66048,
+      "seconds": 0.24717041687108576,
+      "final_mse": 1.3905102765511033e-07,
+      "mean_prediction": 0.5677093975666055,
+      "mean_target": 0.5676696058864044
+    },
+    {
+      "index": 1,
+      "name": "dustin-robinson",
+      "rotation_seed": 0,
+      "points": 66048,
+      "seconds": 0.25211895792745054,
+      "final_mse": 2.9792565876519066e-07,
+      "mean_prediction": 0.5678880321508566,
+      "mean_target": 0.5676696058864044
+    },
+    {
+      "index": 1,
+      "name": "dustin-robinson",
+      "rotation_seed": 1,
+      "points": 66048,
+      "seconds": 0.24959749984554946,
+      "final_mse": 3.6644735476572396e-07,
+      "mean_prediction": 0.5674770502625432,
+      "mean_target": 0.5676696058864044
+    },
+    {
+      "index": 1,
+      "name": "dustin-robinson",
+      "rotation_seed": 2,
+      "points": 66048,
+      "seconds": 0.25059862481430173,
+      "final_mse": 7.197827989472267e-07,
+      "mean_prediction": 0.5680514056171546,
+      "mean_target": 0.5676696058864044
+    },
+    {
+      "index": 1,
+      "name": "dustin-robinson",
+      "rotation_seed": 3,
+      "points": 66048,
+      "seconds": 0.2507800830062479,
+      "final_mse": 1.711437127458579e-07,
+      "mean_prediction": 0.5675854343459382,
+      "mean_target": 0.5676696058864044
+    },
+    {
+      "index": 1,
+      "name": "dustin-robinson",
+      "rotation_seed": 4,
+      "points": 66048,
+      "seconds": 0.2516989998985082,
+      "final_mse": 3.8010771305992133e-07,
+      "mean_prediction": 0.5674745371208871,
+      "mean_target": 0.5676696058864044
+    },
+    {
+      "index": 1,
+      "name": "dustin-robinson",
+      "rotation_seed": 5,
+      "points": 66048,
+      "seconds": 0.25218504201620817,
+      "final_mse": 1.842687945431344e-07,
+      "mean_prediction": 0.5677416115303318,
+      "mean_target": 0.5676696058864044
+    },
+    {
+      "index": 1,
+      "name": "dustin-robinson",
+      "rotation_seed": 6,
+      "points": 66048,
+      "seconds": 0.2552158331964165,
+      "final_mse": 2.5738403383527873e-07,
+      "mean_prediction": 0.5678001358023703,
+      "mean_target": 0.5676696058864044
+    },
+    {
+      "index": 1,
+      "name": "dustin-robinson",
+      "rotation_seed": 7,
+      "points": 66048,
+      "seconds": 0.2559799998998642,
+      "final_mse": 1.8139051028837566e-07,
+      "mean_prediction": 0.5677920847391296,
+      "mean_target": 0.5676696058864044
+    },
+    {
+      "index": 2,
+      "name": "cole-martin",
+      "rotation_seed": -1,
+      "points": 66048,
+      "seconds": 0.25382345798425376,
+      "final_mse": 1.0612633153799742e-06,
+      "mean_prediction": 0.73925792873365,
+      "mean_target": 0.7398060234404461
+    },
+    {
+      "index": 2,
+      "name": "cole-martin",
+      "rotation_seed": 0,
+      "points": 66048,
+      "seconds": 0.2548623748589307,
+      "final_mse": 1.8166664608667852e-07,
+      "mean_prediction": 0.739843915655456,
+      "mean_target": 0.7398060234404461
+    },
+    {
+      "index": 2,
+      "name": "cole-martin",
+      "rotation_seed": 1,
+      "points": 66048,
+      "seconds": 0.2534115829039365,
+      "final_mse": 2.466247259286499e-07,
+      "mean_prediction": 0.7399753811619842,
+      "mean_target": 0.7398060234404461
+    },
+    {
+      "index": 2,
+      "name": "cole-martin",
+      "rotation_seed": 2,
+      "points": 66048,
+      "seconds": 0.2569362078793347,
+      "final_mse": 9.555064854048971e-07,
+      "mean_prediction": 0.7392861835248149,
+      "mean_target": 0.7398060234404461
+    },
+    {
+      "index": 2,
+      "name": "cole-martin",
+      "rotation_seed": 3,
+      "points": 66048,
+      "seconds": 0.25615599984303117,
+      "final_mse": 3.060513067096178e-07,
+      "mean_prediction": 0.7395729835806316,
+      "mean_target": 0.7398060234404461
+    },
+    {
+      "index": 2,
+      "name": "cole-martin",
+      "rotation_seed": 4,
+      "points": 66048,
+      "seconds": 0.2747744170483202,
+      "final_mse": 1.1584913404992013e-06,
+      "mean_prediction": 0.7392474469537567,
+      "mean_target": 0.7398060234404461
+    },
+    {
+      "index": 2,
+      "name": "cole-martin",
+      "rotation_seed": 5,
+      "points": 66048,
+      "seconds": 0.26740441704168916,
+      "final_mse": 1.8375622455343032e-07,
+      "mean_prediction": 0.7397909585939306,
+      "mean_target": 0.7398060234404461
+    },
+    {
+      "index": 2,
+      "name": "cole-martin",
+      "rotation_seed": 6,
+      "points": 66048,
+      "seconds": 0.25431200000457466,
+      "final_mse": 1.1646784608603748e-06,
+      "mean_prediction": 0.7392418511637492,
+      "mean_target": 0.7398060234404461
+    },
+    {
+      "index": 2,
+      "name": "cole-martin",
+      "rotation_seed": 7,
+      "points": 66048,
+      "seconds": 0.2560044589918107,
+      "final_mse": 1.8056785927482418e-07,
+      "mean_prediction": 0.739746351757796,
+      "mean_target": 0.7398060234404461
+    },
+    {
+      "index": 3,
+      "name": "donna-clarke",
+      "rotation_seed": -1,
+      "points": 66048,
+      "seconds": 0.2529962919652462,
+      "final_mse": 1.4460111145558124e-07,
+      "mean_prediction": 0.25342958370005336,
+      "mean_target": 0.2532936438861783
+    },
+    {
+      "index": 3,
+      "name": "donna-clarke",
+      "rotation_seed": 0,
+      "points": 66048,
+      "seconds": 0.25476999999955297,
+      "final_mse": 6.049031966329817e-08,
+      "mean_prediction": 0.253301710739163,
+      "mean_target": 0.2532936438861783
+    },
+    {
+      "index": 3,
+      "name": "donna-clarke",
+      "rotation_seed": 1,
+      "points": 66048,
+      "seconds": 0.25407170900143683,
+      "final_mse": 5.827820269006042e-08,
+      "mean_prediction": 0.25324050267807685,
+      "mean_target": 0.2532936438861783
+    },
+    {
+      "index": 3,
+      "name": "donna-clarke",
+      "rotation_seed": 2,
+      "points": 66048,
+      "seconds": 0.2538167918100953,
+      "final_mse": 1.4194742441416936e-07,
+      "mean_prediction": 0.2532372481137249,
+      "mean_target": 0.2532936438861783
+    },
+    {
+      "index": 3,
+      "name": "donna-clarke",
+      "rotation_seed": 3,
+      "points": 66048,
+      "seconds": 0.2509634590242058,
+      "final_mse": 1.149768319071135e-07,
+      "mean_prediction": 0.25341697583267214,
+      "mean_target": 0.2532936438861783
+    },
+    {
+      "index": 3,
+      "name": "donna-clarke",
+      "rotation_seed": 4,
+      "points": 66048,
+      "seconds": 0.253425583941862,
+      "final_mse": 6.344296466247795e-08,
+      "mean_prediction": 0.25334319923419796,
+      "mean_target": 0.2532936438861783
+    },
+    {
+      "index": 3,
+      "name": "donna-clarke",
+      "rotation_seed": 5,
+      "points": 66048,
+      "seconds": 0.2537234998308122,
+      "final_mse": 9.174461730080874e-08,
+      "mean_prediction": 0.25332335062857525,
+      "mean_target": 0.2532936438861783
+    },
+    {
+      "index": 3,
+      "name": "donna-clarke",
+      "rotation_seed": 6,
+      "points": 66048,
+      "seconds": 0.2515112920664251,
+      "final_mse": 1.203711366049625e-07,
+      "mean_prediction": 0.2532702727391277,
+      "mean_target": 0.2532936438861783
+    },
+    {
+      "index": 3,
+      "name": "donna-clarke",
+      "rotation_seed": 7,
+      "points": 66048,
+      "seconds": 0.25325862504541874,
+      "final_mse": 5.864103312339969e-08,
+      "mean_prediction": 0.25322607060054725,
+      "mean_target": 0.2532936438861783
+    },
+    {
+      "index": 4,
+      "name": "rebecca-walker",
+      "rotation_seed": -1,
+      "points": 66048,
+      "seconds": 0.2502244580537081,
+      "final_mse": 4.499902938166487e-08,
+      "mean_prediction": 0.24862806867897738,
+      "mean_target": 0.2486132823759236
+    },
+    {
+      "index": 4,
+      "name": "rebecca-walker",
+      "rotation_seed": 0,
+      "points": 66048,
+      "seconds": 0.2525423339102417,
+      "final_mse": 4.191480261450528e-08,
+      "mean_prediction": 0.24859608684932455,
+      "mean_target": 0.2486132823759236
+    },
+    {
+      "index": 4,
+      "name": "rebecca-walker",
+      "rotation_seed": 1,
+      "points": 66048,
+      "seconds": 0.25181912491098046,
+      "final_mse": 7.469429766968198e-08,
+      "mean_prediction": 0.24855622896985824,
+      "mean_target": 0.2486132823759236
+    },
+    {
+      "index": 4,
+      "name": "rebecca-walker",
+      "rotation_seed": 2,
+      "points": 66048,
+      "seconds": 0.2524929998908192,
+      "final_mse": 8.08168953873718e-08,
+      "mean_prediction": 0.2486178712917253,
+      "mean_target": 0.2486132823759236
+    },
+    {
+      "index": 4,
+      "name": "rebecca-walker",
+      "rotation_seed": 3,
+      "points": 66048,
+      "seconds": 0.25193270901218057,
+      "final_mse": 9.935291638614107e-08,
+      "mean_prediction": 0.2486634920905974,
+      "mean_target": 0.2486132823759236
+    },
+    {
+      "index": 4,
+      "name": "rebecca-walker",
+      "rotation_seed": 4,
+      "points": 66048,
+      "seconds": 0.2504603751003742,
+      "final_mse": 8.493729795334493e-08,
+      "mean_prediction": 0.24859740570914274,
+      "mean_target": 0.2486132823759236
+    },
+    {
+      "index": 4,
+      "name": "rebecca-walker",
+      "rotation_seed": 5,
+      "points": 66048,
+      "seconds": 0.2500666659325361,
+      "final_mse": 1.4608206015154447e-07,
+      "mean_prediction": 0.24868796659401768,
+      "mean_target": 0.2486132823759236
+    },
+    {
+      "index": 4,
+      "name": "rebecca-walker",
+      "rotation_seed": 6,
+      "points": 66048,
+      "seconds": 0.25123737496323884,
+      "final_mse": 1.5338687205814146e-07,
+      "mean_prediction": 0.2485169587950372,
+      "mean_target": 0.2486132823759236
+    },
+    {
+      "index": 4,
+      "name": "rebecca-walker",
+      "rotation_seed": 7,
+      "points": 66048,
+      "seconds": 0.24991074996069074,
+      "final_mse": 2.990915558572619e-08,
+      "mean_prediction": 0.24861921606145335,
+      "mean_target": 0.2486132823759236
+    },
+    {
+      "index": 5,
+      "name": "monique-stevens",
+      "rotation_seed": -1,
+      "points": 66048,
+      "seconds": 0.24870370887219906,
+      "final_mse": 9.973743204434744e-08,
+      "mean_prediction": 0.3975456936137392,
+      "mean_target": 0.3974657565158824
+    },
+    {
+      "index": 5,
+      "name": "monique-stevens",
+      "rotation_seed": 0,
+      "points": 66048,
+      "seconds": 0.25038958387449384,
+      "final_mse": 3.375336405232405e-07,
+      "mean_prediction": 0.39716302831264033,
+      "mean_target": 0.3974657565158824
+    },
+    {
+      "index": 5,
+      "name": "monique-stevens",
+      "rotation_seed": 1,
+      "points": 66048,
+      "seconds": 0.2502427080180496,
+      "final_mse": 1.4148975802817854e-07,
+      "mean_prediction": 0.3975876911974049,
+      "mean_target": 0.3974657565158824
+    },
+    {
+      "index": 5,
+      "name": "monique-stevens",
+      "rotation_seed": 2,
+      "points": 66048,
+      "seconds": 0.274239334044978,
+      "final_mse": 3.9261478252243e-07,
+      "mean_prediction": 0.39737364859880475,
+      "mean_target": 0.3974657565158824
+    },
+    {
+      "index": 5,
+      "name": "monique-stevens",
+      "rotation_seed": 3,
+      "points": 66048,
+      "seconds": 0.2513672080822289,
+      "final_mse": 2.189716525728212e-07,
+      "mean_prediction": 0.3973733129122669,
+      "mean_target": 0.3974657565158824
+    },
+    {
+      "index": 5,
+      "name": "monique-stevens",
+      "rotation_seed": 4,
+      "points": 66048,
+      "seconds": 0.25198341719806194,
+      "final_mse": 2.64166482536124e-07,
+      "mean_prediction": 0.3976647865838407,
+      "mean_target": 0.3974657565158824
+    },
+    {
+      "index": 5,
+      "name": "monique-stevens",
+      "rotation_seed": 5,
+      "points": 66048,
+      "seconds": 0.2548005839344114,
+      "final_mse": 1.2638459542792741e-07,
+      "mean_prediction": 0.39755771407359175,
+      "mean_target": 0.3974657565158824
+    },
+    {
+      "index": 5,
+      "name": "monique-stevens",
+      "rotation_seed": 6,
+      "points": 66048,
+      "seconds": 0.25056462502107024,
+      "final_mse": 1.1521034366323949e-07,
+      "mean_prediction": 0.3974675248583574,
+      "mean_target": 0.3974657565158824
+    },
+    {
+      "index": 5,
+      "name": "monique-stevens",
+      "rotation_seed": 7,
+      "points": 66048,
+      "seconds": 0.2504725409671664,
+      "final_mse": 4.710930443463033e-07,
+      "mean_prediction": 0.39779428744873424,
+      "mean_target": 0.3974657565158824
+    },
+    {
+      "index": 6,
+      "name": "keith-brock",
+      "rotation_seed": -1,
+      "points": 66048,
+      "seconds": 0.2528183329850435,
+      "final_mse": 1.3365657652783918e-07,
+      "mean_prediction": 0.38305551700320667,
+      "mean_target": 0.38314552043470385
+    },
+    {
+      "index": 6,
+      "name": "keith-brock",
+      "rotation_seed": 0,
+      "points": 66048,
+      "seconds": 0.2545438341330737,
+      "final_mse": 1.5884784896508726e-07,
+      "mean_prediction": 0.38308747225580814,
+      "mean_target": 0.38314552043470385
+    },
+    {
+      "index": 6,
+      "name": "keith-brock",
+      "rotation_seed": 1,
+      "points": 66048,
+      "seconds": 0.24844416696578264,
+      "final_mse": 1.4052139201639272e-07,
+      "mean_prediction": 0.3832492999393562,
+      "mean_target": 0.38314552043470385
+    },
+    {
+      "index": 6,
+      "name": "keith-brock",
+      "rotation_seed": 2,
+      "points": 66048,
+      "seconds": 0.24855179199948907,
+      "final_mse": 1.4017109601551182e-07,
+      "mean_prediction": 0.38321917687244533,
+      "mean_target": 0.38314552043470385
+    },
+    {
+      "index": 6,
+      "name": "keith-brock",
+      "rotation_seed": 3,
+      "points": 66048,
+      "seconds": 0.2479627919383347,
+      "final_mse": 1.2827715867555951e-07,
+      "mean_prediction": 0.38313651017708306,
+      "mean_target": 0.38314552043470385
+    },
+    {
+      "index": 6,
+      "name": "keith-brock",
+      "rotation_seed": 4,
+      "points": 66048,
+      "seconds": 0.24698904203251004,
+      "final_mse": 3.794872425434105e-07,
+      "mean_prediction": 0.3830095229493666,
+      "mean_target": 0.38314552043470385
+    },
+    {
+      "index": 6,
+      "name": "keith-brock",
+      "rotation_seed": 5,
+      "points": 66048,
+      "seconds": 0.24613224994391203,
+      "final_mse": 1.8506637081656037e-07,
+      "mean_prediction": 0.3832676803747159,
+      "mean_target": 0.38314552043470385
+    },
+    {
+      "index": 6,
+      "name": "keith-brock",
+      "rotation_seed": 6,
+      "points": 66048,
+      "seconds": 0.24813820887356997,
+      "final_mse": 5.8931488388328836e-08,
+      "mean_prediction": 0.3831355300358854,
+      "mean_target": 0.38314552043470385
+    },
+    {
+      "index": 6,
+      "name": "keith-brock",
+      "rotation_seed": 7,
+      "points": 66048,
+      "seconds": 0.24699195800349116,
+      "final_mse": 3.583907812403224e-07,
+      "mean_prediction": 0.38345143065590837,
+      "mean_target": 0.38314552043470385
+    },
+    {
+      "index": 7,
+      "name": "robert-huff",
+      "rotation_seed": -1,
+      "points": 66048,
+      "seconds": 0.24473954201675951,
+      "final_mse": 6.304316307158011e-08,
+      "mean_prediction": 0.3006880924137555,
+      "mean_target": 0.30073168802088013
+    },
+    {
+      "index": 7,
+      "name": "robert-huff",
+      "rotation_seed": 0,
+      "points": 66048,
+      "seconds": 0.24648679210804403,
+      "final_mse": 2.0130525805522731e-07,
+      "mean_prediction": 0.3005399523534159,
+      "mean_target": 0.30073168802088013
+    },
+    {
+      "index": 7,
+      "name": "robert-huff",
+      "rotation_seed": 1,
+      "points": 66048,
+      "seconds": 0.24717008392326534,
+      "final_mse": 1.2444464554147612e-07,
+      "mean_prediction": 0.30082662502736124,
+      "mean_target": 0.30073168802088013
+    },
+    {
+      "index": 7,
+      "name": "robert-huff",
+      "rotation_seed": 2,
+      "points": 66048,
+      "seconds": 0.24801683402620256,
+      "final_mse": 1.432383969080043e-07,
+      "mean_prediction": 0.3007162697421044,
+      "mean_target": 0.30073168802088013
+    },
+    {
+      "index": 7,
+      "name": "robert-huff",
+      "rotation_seed": 3,
+      "points": 66048,
+      "seconds": 0.24849754199385643,
+      "final_mse": 1.2548227550644754e-07,
+      "mean_prediction": 0.30080463904630095,
+      "mean_target": 0.30073168802088013
+    },
+    {
+      "index": 7,
+      "name": "robert-huff",
+      "rotation_seed": 4,
+      "points": 66048,
+      "seconds": 0.24718137504532933,
+      "final_mse": 3.954502960014147e-07,
+      "mean_prediction": 0.300442424566704,
+      "mean_target": 0.30073168802088013
+    },
+    {
+      "index": 7,
+      "name": "robert-huff",
+      "rotation_seed": 5,
+      "points": 66048,
+      "seconds": 0.24759891699068248,
+      "final_mse": 1.243139950401551e-07,
+      "mean_prediction": 0.3007988754928753,
+      "mean_target": 0.30073168802088013
+    },
+    {
+      "index": 7,
+      "name": "robert-huff",
+      "rotation_seed": 6,
+      "points": 66048,
+      "seconds": 0.24837420810945332,
+      "final_mse": 1.0154226278010662e-07,
+      "mean_prediction": 0.3007230704034516,
+      "mean_target": 0.30073168802088013
+    },
+    {
+      "index": 7,
+      "name": "robert-huff",
+      "rotation_seed": 7,
+      "points": 66048,
+      "seconds": 0.24775295797735453,
+      "final_mse": 1.6180575666299548e-07,
+      "mean_prediction": 0.3008015955321901,
+      "mean_target": 0.30073168802088013
+    },
+    {
+      "index": 8,
+      "name": "kimberly-caldwell",
+      "rotation_seed": -1,
+      "points": 66048,
+      "seconds": 0.24377912492491305,
+      "final_mse": 7.448274453587101e-07,
+      "mean_prediction": 0.5778261544152786,
+      "mean_target": 0.5773628510583788
+    },
+    {
+      "index": 8,
+      "name": "kimberly-caldwell",
+      "rotation_seed": 0,
+      "points": 66048,
+      "seconds": 0.252042958047241,
+      "final_mse": 1.9845005206339264e-07,
+      "mean_prediction": 0.5775027439777487,
+      "mean_target": 0.5773628510583788
+    },
+    {
+      "index": 8,
+      "name": "kimberly-caldwell",
+      "rotation_seed": 1,
+      "points": 66048,
+      "seconds": 0.25001466600224376,
+      "final_mse": 3.795295447978888e-07,
+      "mean_prediction": 0.5771057363128285,
+      "mean_target": 0.5773628510583788
+    },
+    {
+      "index": 8,
+      "name": "kimberly-caldwell",
+      "rotation_seed": 2,
+      "points": 66048,
+      "seconds": 0.2478500830475241,
+      "final_mse": 1.0562723045389733e-07,
+      "mean_prediction": 0.5773199648604962,
+      "mean_target": 0.5773628510583788
+    },
+    {
+      "index": 8,
+      "name": "kimberly-caldwell",
+      "rotation_seed": 3,
+      "points": 66048,
+      "seconds": 0.24724000017158687,
+      "final_mse": 2.7107917609314016e-07,
+      "mean_prediction": 0.5771167499106123,
+      "mean_target": 0.5773628510583788
+    },
+    {
+      "index": 8,
+      "name": "kimberly-caldwell",
+      "rotation_seed": 4,
+      "points": 66048,
+      "seconds": 0.2507318330463022,
+      "final_mse": 4.68675703541109e-07,
+      "mean_prediction": 0.5776712485776025,
+      "mean_target": 0.5773628510583788
+    },
+    {
+      "index": 8,
+      "name": "kimberly-caldwell",
+      "rotation_seed": 5,
+      "points": 66048,
+      "seconds": 0.2513640411198139,
+      "final_mse": 3.716428215633381e-07,
+      "mean_prediction": 0.5771340461551087,
+      "mean_target": 0.5773628510583788
+    },
+    {
+      "index": 8,
+      "name": "kimberly-caldwell",
+      "rotation_seed": 6,
+      "points": 66048,
+      "seconds": 0.25060174986720085,
+      "final_mse": 1.6759489531503612e-07,
+      "mean_prediction": 0.5773191438343032,
+      "mean_target": 0.5773628510583788
+    },
+    {
+      "index": 8,
+      "name": "kimberly-caldwell",
+      "rotation_seed": 7,
+      "points": 66048,
+      "seconds": 0.2518598339520395,
+      "final_mse": 2.994329947237329e-07,
+      "mean_prediction": 0.5775482388315367,
+      "mean_target": 0.5773628510583788
+    },
+    {
+      "index": 9,
+      "name": "annette-hansen",
+      "rotation_seed": -1,
+      "points": 66048,
+      "seconds": 0.2503706661518663,
+      "final_mse": 2.282550318957012e-07,
+      "mean_prediction": 0.30225381705066734,
+      "mean_target": 0.3020199356661032
+    },
+    {
+      "index": 9,
+      "name": "annette-hansen",
+      "rotation_seed": 0,
+      "points": 66048,
+      "seconds": 0.27059487509541214,
+      "final_mse": 1.0373564759167906e-07,
+      "mean_prediction": 0.302073726944959,
+      "mean_target": 0.3020199356661032
+    },
+    {
+      "index": 9,
+      "name": "annette-hansen",
+      "rotation_seed": 1,
+      "points": 66048,
+      "seconds": 0.25240087509155273,
+      "final_mse": 6.619049625185103e-08,
+      "mean_prediction": 0.30207173302231116,
+      "mean_target": 0.3020199356661032
+    },
+    {
+      "index": 9,
+      "name": "annette-hansen",
+      "rotation_seed": 2,
+      "points": 66048,
+      "seconds": 0.2878867918625474,
+      "final_mse": 1.4374854330682885e-07,
+      "mean_prediction": 0.3018660674165985,
+      "mean_target": 0.3020199356661032
+    },
+    {
+      "index": 9,
+      "name": "annette-hansen",
+      "rotation_seed": 3,
+      "points": 66048,
+      "seconds": 0.4379981248639524,
+      "final_mse": 1.0687428797083308e-07,
+      "mean_prediction": 0.30200385764470505,
+      "mean_target": 0.3020199356661032
+    },
+    {
+      "index": 9,
+      "name": "annette-hansen",
+      "rotation_seed": 4,
+      "points": 66048,
+      "seconds": 0.4056646670214832,
+      "final_mse": 7.588379796023879e-08,
+      "mean_prediction": 0.3020580040123516,
+      "mean_target": 0.3020199356661032
+    },
+    {
+      "index": 9,
+      "name": "annette-hansen",
+      "rotation_seed": 5,
+      "points": 66048,
+      "seconds": 0.32630487508140504,
+      "final_mse": 1.3007601349539453e-07,
+      "mean_prediction": 0.3019066015415362,
+      "mean_target": 0.3020199356661032
+    },
+    {
+      "index": 9,
+      "name": "annette-hansen",
+      "rotation_seed": 6,
+      "points": 66048,
+      "seconds": 0.4837409579195082,
+      "final_mse": 9.853337581239174e-08,
+      "mean_prediction": 0.3020872012467489,
+      "mean_target": 0.3020199356661032
+    },
+    {
+      "index": 9,
+      "name": "annette-hansen",
+      "rotation_seed": 7,
+      "points": 66048,
+      "seconds": 0.35165995801799,
+      "final_mse": 1.2253712030200183e-07,
+      "mean_prediction": 0.30195095846264297,
+      "mean_target": 0.3020199356661032
+    }
+  ]
+}

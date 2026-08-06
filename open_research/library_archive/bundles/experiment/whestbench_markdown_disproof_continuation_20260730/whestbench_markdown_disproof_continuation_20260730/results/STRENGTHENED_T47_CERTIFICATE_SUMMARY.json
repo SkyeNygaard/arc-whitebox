@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "proposed_id": "T47-R2",
+  "scope": "static, network-independent, mass-one linear cubature; arbitrary real weights; at most 66,048 arbitrary nodes; dimension-256 depth-32 limiting ReLU kernel",
+  "degree_cutoff": 23,
+  "binding_degree": 8,
+  "floor_lower": "1.486477823691692199205348920799113356042073114405760804883283330382893220172192897042154673402266531E-7",
+  "fraction_of_kerdock_mse": "0.6107992099573098167548734683367801325016165687480884574205433422658960056609730815417199665904831677",
+  "maximum_same_cost_improvement_factor": "1.637199236177617740208281690867658785095971701858447488463638213863606096302494557408655906728062700",
+  "supersedes": {
+    "degree_cutoff": 15,
+    "floor_lower": "0.0000001229429543795685827203776697280876851328427667234606989325301867547385",
+    "fraction_of_kerdock_mse": "0.5051771254707468684835910828016483122671976958137404698301809540413111",
+    "maximum_improvement_factor": "1.979503721725632018365924276231889075530212725569634647432660120680737"
+  },
+  "floor_strengthening_factor": "1.2090793093375707",
+  "trust_base": [
+    "direct-C MPFR 384-bit directed interval Taylor jet",
+    "independent exact Python Fraction Gegenbauer recurrence",
+    "independent SymPy/exact-rational + mpmath.iv stack",
+    "exact rounded rational weights",
+    "GCC/Clang byte-identical MPFR jet in prior audit",
+    "ASan/UBSan clean in prior audit"
+  ],
+  "limitations": [
+    "limiting kernel, not width-256 realized ensemble",
+    "static linear rules only",
+    "mass one",
+    "does not cover adaptive support/weights or nonlinear aggregation",
+    "does not establish near-optimality among signed rules"
+  ]
+}

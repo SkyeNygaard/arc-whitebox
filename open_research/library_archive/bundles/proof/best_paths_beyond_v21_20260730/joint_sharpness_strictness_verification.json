@@ -1,0 +1,182 @@
+{
+  "status": "PASS",
+  "scope": {
+    "dimension": 256,
+    "maximum_nodes": 66048,
+    "certificate_components": 146
+  },
+  "active_harmonic_degrees": [
+    3,
+    140
+  ],
+  "minimum_active_harmonic_dimension": 2828800,
+  "all_active_dimensions_at_least_N": true,
+  "all_profile_schur_horn_conditions": true,
+  "simultaneous_abstract_sharpness_theorem": {
+    "construction": "Choose one N-frame U_l in every harmonic block and set M0_lm=sqrt(d_l d_m)/N U_l U_m^T. For every profile a, D_a M0 D_a has fixed block traces and N equal nonzero eigenvalues T_a/N.",
+    "consequence": "Any relaxation using only one shared abstract block system, rank <= N, and all individual block traces is simultaneously sharp for every nonnegative harmonic profile. Coupling profiles does not help without sphere/evaluation identities.",
+    "toy_checks": [
+      {
+        "profile": [
+          1,
+          0.2,
+          0.05
+        ],
+        "rank": 3,
+        "nonzero_eigenvalues": [
+          2.1833333333333327,
+          2.183333333333333,
+          2.1833333333333336
+        ],
+        "target_nonzero_eigenvalue": 2.183333333333333,
+        "block_traces": [
+          4.999999999999999,
+          1.2,
+          0.35
+        ],
+        "target_block_traces": [
+          5,
+          1.2000000000000002,
+          0.35000000000000003
+        ],
+        "frobenius_defect": 9.043333333333333,
+        "rank_floor": 9.043333333333331,
+        "absolute_error": 1.7763568394002505e-15
+      },
+      {
+        "profile": [
+          0.4,
+          1,
+          0.7
+        ],
+        "rank": 3,
+        "nonzero_eigenvalues": [
+          4.3,
+          4.3,
+          4.300000000000001
+        ],
+        "target_nonzero_eigenvalue": 4.3,
+        "block_traces": [
+          2.0,
+          6.0,
+          4.9
+        ],
+        "target_block_traces": [
+          2.0,
+          6,
+          4.8999999999999995
+        ],
+        "frobenius_defect": 45.24,
+        "rank_floor": 45.239999999999995,
+        "absolute_error": 7.105427357601002e-15
+      },
+      {
+        "profile": [
+          0.03,
+          0.11,
+          1
+        ],
+        "rank": 3,
+        "nonzero_eigenvalues": [
+          2.6033333333333335,
+          2.6033333333333335,
+          2.6033333333333344
+        ],
+        "target_nonzero_eigenvalue": 2.6033333333333335,
+        "block_traces": [
+          0.15000000000000002,
+          0.6599999999999998,
+          7.0
+        ],
+        "target_block_traces": [
+          0.15,
+          0.66,
+          7
+        ],
+        "frobenius_defect": 13.254933333333334,
+        "rank_floor": 13.254933333333335,
+        "absolute_error": 1.7763568394002505e-15
+      }
+    ]
+  },
+  "strict_atomic_nonattainment": {
+    "component_1": {
+      "s": 3,
+      "r": "0.005623413251903491",
+      "y": "4.749801425024029169796E-9"
+    },
+    "component_2": {
+      "s": 3,
+      "r": "0.0068129206905796083",
+      "y": "2.806834392465839696961E-8"
+    },
+    "radii_distinct": true,
+    "G3": "t*(86*t**2 - 1)/85",
+    "G4": "(22360*t**4 - 516*t**2 + 1)/21845",
+    "gcd_numerators": "1",
+    "resultant_numerators": "213744400",
+    "sympy_bezout_value": "1",
+    "explicit_bezout_value": "1",
+    "grid_min_G3sq_plus_G4sq": 2.0955397431947478e-09,
+    "grid_argmin": 0.0,
+    "strict_nonattainment_logic": [
+      "Total equality forces equality in every positive certificate component.",
+      "Equality in both s=3 profiles forces d3*G3(t)+r1*d4*G4(t)=0 and d3*G3(t)+r2*d4*G4(t)=0 for every distinct node pair.",
+      "Subtracting gives G4(t)=0, then G3(t)=0.",
+      "The exact gcd/resultant/Bezout checks show G3 and G4 have no common root, so no actual N>=2 atomic rule attains the released floor."
+    ]
+  },
+  "quantitative_conditioned_realizability_gap": {
+    "normalized_kernels": "K_j(t)=(d3 G3(t)+r_j d4 G4(t))/(d3+r_j d4)",
+    "exact_bezout_identity": "P1(t) K1(t)+P2(t) K2(t)=1",
+    "P1": "2078002707368994445753402283842747928793*t**3/92930268646571664062500000000000 + 78082325811017978251189760*t**2/1558254744665713663 - 662882863650709228195335328545836589284967*t/1546359670278952490000000000000000000 - 602924935859059606772450/1558254744665713663",
+    "P2": "-1812028844081014617473402283842747928793*t**3/92930268646571664062500000000000 - 82490715745942983483781888*t**2/1558254744665713663 + 578037201261843662974015328545836589284967*t/1546359670278952490000000000000000000 + 636965010756282121740685/1558254744665713663",
+    "coefficient_l1_bound_P1": "14845633673863486683059772662451280238296463797/202573116806542776190000000000000000000",
+    "coefficient_l1_bound_P2": "14832254327217764952320751732451280238296463797/202573116806542776190000000000000000000",
+    "rigorous_common_zero_margin_m2_lower": "20517933826358611685354532952136215458050000000000000000000000000000000000000/220194303802909799063944173698095250038984295091445483268630149427173277167824978154931657209",
+    "rigorous_common_zero_margin_m2_lower_decimal": "9.318103816492765053863704965532157219426e-17",
+    "stability_theorem": "For an N-atom rule with |w_i|>=mu and normalized evaluation matrices E_j having sigma_min(E_j)>=s, let Delta_j=||M_j||_F^2-1/N. Then sum_j (1/N+Delta_j)Delta_j/s^4 >= mu^4 N(N-1) m^2, where m^2=min_t(K1(t)^2+K2(t)^2). Thus both profile gaps cannot be small unless weights vanish/blow up, evaluation matrices become ill-conditioned, or nodes approach a singular configuration.",
+    "interpretation": "The exact rational margin is conservative and numerically tiny; its value is structural, not a competitive constant."
+  },
+  "bounded_total_variation_corollary": {
+    "statement": "For every finite V, the compact class of <=N-atom mass-one signed rules with total variation <=V has risk at least L+epsilon(V) for some epsilon(V)>0. Therefore every sequence approaching the released abstract floor must have total variation diverging to infinity.",
+    "proof_basis": "Compactness after padding to N atoms, continuity of kernel risk, and strict nonattainment at every point."
+  },
+  "profile_condition_sample": [
+    {
+      "s": 3,
+      "r": "5623413251903491/1000000000000000000",
+      "N_over_T_for_first_weight": "206400000000000000000/12058498717181192135449",
+      "N_r_over_T_for_second_weight": "5803362475964402712/60292493585905960677245",
+      "condition_holds": true
+    },
+    {
+      "s": 3,
+      "r": "68129206905796083/10000000000000000000",
+      "N_over_T_for_first_weight": "2064000000000000000000/127393002151256424348137",
+      "N_r_over_T_for_second_weight": "4135843619222444568/37468530044487183631805",
+      "condition_holds": true
+    },
+    {
+      "s": 4,
+      "r": "1/100",
+      "N_over_T_for_first_weight": "25800/108740041",
+      "N_r_over_T_for_second_weight": "258/108740041",
+      "condition_holds": true
+    },
+    {
+      "s": 4,
+      "r": "12115276586285877/1000000000000000000",
+      "N_over_T_for_first_weight": "129000000000000000000/583041880977141116581541",
+      "N_r_over_T_for_second_weight": "1562870679630878133/583041880977141116581541",
+      "condition_holds": true
+    },
+    {
+      "s": 5,
+      "r": "1467799267622069/100000000000000000",
+      "N_over_T_for_first_weight": "2400000000000000000/566927038313295507973067",
+      "N_r_over_T_for_second_weight": "35227182422929656/566927038313295507973067",
+      "condition_holds": true
+    }
+  ]
+}

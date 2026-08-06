@@ -1,0 +1,438 @@
+{
+  "protocol": {
+    "indices": [
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139
+    ],
+    "layer": 29,
+    "rotation_seed": 3,
+    "folds": [
+      6
+    ],
+    "ridges": [
+      0.1
+    ],
+    "target_leakage": false,
+    "oracle_state_warning": "Directions and anchors use 100M-sample higher moments. Coefficient estimation uses only pointwise sampled outputs."
+  },
+  "summary": {
+    "x1a_rank16:folds=6:ridge=0.1": {
+      "ratio": 252110.76197237172,
+      "ci95": [
+        0.4180391195303325,
+        926620.1940230005
+      ],
+      "wins": 13,
+      "worst": 7639476.508858535
+    },
+    "c21_rank4:folds=6:ridge=0.1": {
+      "ratio": 0.599260642407585,
+      "ci95": [
+        0.4917804590486022,
+        0.7281190176103473
+      ],
+      "wins": 16,
+      "worst": 0.983502336508473
+    }
+  },
+  "records": [
+    {
+      "index": 124,
+      "name": "sharon-mitchell",
+      "baseline_mse": 1.4073695270319212e-07,
+      "method_mses": {
+        "x1a_rank16:folds=6:ridge=0.1": 9.155746592433186e-08,
+        "c21_rank4:folds=6:ridge=0.1": 9.279800984505334e-08
+      },
+      "diagnostics": {
+        "x1a_rank16:folds=6": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.04947588643111308,
+          "condition_ridge_0.1": 62.66585935193227
+        },
+        "c21_rank4:folds=6": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2708737983932308,
+          "condition_ridge_0.1": 2.800144920741959
+        }
+      },
+      "seconds": 0.4045238750986755
+    },
+    {
+      "index": 125,
+      "name": "jennifer-morton",
+      "baseline_mse": 6.458651608010925e-08,
+      "method_mses": {
+        "x1a_rank16:folds=6:ridge=0.1": 5.2615963063332367e-08,
+        "c21_rank4:folds=6:ridge=0.1": 5.97057034042888e-08
+      },
+      "diagnostics": {
+        "x1a_rank16:folds=6": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.025208279810864733,
+          "condition_ridge_0.1": 97.81052018506304
+        },
+        "c21_rank4:folds=6": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.22170747053484427,
+          "condition_ridge_0.1": 2.734094737133147
+        }
+      },
+      "seconds": 0.3609340840484947
+    },
+    {
+      "index": 126,
+      "name": "anthony-torres",
+      "baseline_mse": 6.247343975266333e-07,
+      "method_mses": {
+        "x1a_rank16:folds=6:ridge=0.1": 1.0379117052069697e-07,
+        "c21_rank4:folds=6:ridge=0.1": 3.7999121963717294e-07
+      },
+      "diagnostics": {
+        "x1a_rank16:folds=6": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.3362868166368932,
+          "condition_ridge_0.1": 99.90478557885935
+        },
+        "c21_rank4:folds=6": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 2.868828479610096,
+          "condition_ridge_0.1": 2.3264731447054827
+        }
+      },
+      "seconds": 0.31843129196204245
+    },
+    {
+      "index": 127,
+      "name": "michael-cruz",
+      "baseline_mse": 2.3051883307085886e-07,
+      "method_mses": {
+        "x1a_rank16:folds=6:ridge=0.1": 8.117117973923009e-08,
+        "c21_rank4:folds=6:ridge=0.1": 1.4319829073228307e-07
+      },
+      "diagnostics": {
+        "x1a_rank16:folds=6": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.03522973292349032,
+          "condition_ridge_0.1": 117.05190491510119
+        },
+        "c21_rank4:folds=6": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.35148765975399476,
+          "condition_ridge_0.1": 2.4239992789202427
+        }
+      },
+      "seconds": 0.3159429579973221
+    },
+    {
+      "index": 128,
+      "name": "carol-wagner",
+      "baseline_mse": 2.4741767005473516e-07,
+      "method_mses": {
+        "x1a_rank16:folds=6:ridge=0.1": 1.0478038969494199e-07,
+        "c21_rank4:folds=6:ridge=0.1": 2.433358565923145e-07
+      },
+      "diagnostics": {
+        "x1a_rank16:folds=6": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.11372861081909762,
+          "condition_ridge_0.1": 130.30812655790288
+        },
+        "c21_rank4:folds=6": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.8416806744252515,
+          "condition_ridge_0.1": 2.2783652582162706
+        }
+      },
+      "seconds": 0.31268062512390316
+    },
+    {
+      "index": 129,
+      "name": "ruth-fuller",
+      "baseline_mse": 1.3718296772098174e-07,
+      "method_mses": {
+        "x1a_rank16:folds=6:ridge=0.1": 1.0480060593199387,
+        "c21_rank4:folds=6:ridge=0.1": 7.784553715627163e-08
+      },
+      "diagnostics": {
+        "x1a_rank16:folds=6": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.08739343955138361,
+          "condition_ridge_0.1": 106.64021488001052
+        },
+        "c21_rank4:folds=6": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 1.268202703871605,
+          "condition_ridge_0.1": 2.686541242113621
+        }
+      },
+      "seconds": 0.3456489169038832
+    },
+    {
+      "index": 130,
+      "name": "kristen-riley",
+      "baseline_mse": 1.66023876026804e-07,
+      "method_mses": {
+        "x1a_rank16:folds=6:ridge=0.1": 1.0466309088571128e-07,
+        "c21_rank4:folds=6:ridge=0.1": 9.088141288604196e-08
+      },
+      "diagnostics": {
+        "x1a_rank16:folds=6": {
+          "features": 16.0,
+          "kept": 14.0,
+          "feature_rms": 0.05382927579362494,
+          "condition_ridge_0.1": 93.0615139305646
+        },
+        "c21_rank4:folds=6": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.6236383612482417,
+          "condition_ridge_0.1": 2.399965289918922
+        }
+      },
+      "seconds": 0.3157679589930922
+    },
+    {
+      "index": 131,
+      "name": "robert-english",
+      "baseline_mse": 2.488906992207918e-07,
+      "method_mses": {
+        "x1a_rank16:folds=6:ridge=0.1": 8.730674344591992e-08,
+        "c21_rank4:folds=6:ridge=0.1": 1.4003596926340265e-07
+      },
+      "diagnostics": {
+        "x1a_rank16:folds=6": {
+          "features": 16.0,
+          "kept": 14.0,
+          "feature_rms": 0.03879413110749091,
+          "condition_ridge_0.1": 65.14147199537231
+        },
+        "c21_rank4:folds=6": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3548843346685118,
+          "condition_ridge_0.1": 2.954615727187532
+        }
+      },
+      "seconds": 0.31554958294145763
+    },
+    {
+      "index": 132,
+      "name": "rebecca-curry",
+      "baseline_mse": 9.826588514102579e-08,
+      "method_mses": {
+        "x1a_rank16:folds=6:ridge=0.1": 8.39440235844712e-08,
+        "c21_rank4:folds=6:ridge=0.1": 9.09920664200538e-08
+      },
+      "diagnostics": {
+        "x1a_rank16:folds=6": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.05524657668835023,
+          "condition_ridge_0.1": 82.78662772945675
+        },
+        "c21_rank4:folds=6": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2955904180011562,
+          "condition_ridge_0.1": 1.8311009005791452
+        }
+      },
+      "seconds": 0.3162144171074033
+    },
+    {
+      "index": 133,
+      "name": "laura-reeves",
+      "baseline_mse": 6.424914053710179e-07,
+      "method_mses": {
+        "x1a_rank16:folds=6:ridge=0.1": 2.0812575811683312e-07,
+        "c21_rank4:folds=6:ridge=0.1": 2.1109536160447663e-07
+      },
+      "diagnostics": {
+        "x1a_rank16:folds=6": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.2303066959092223,
+          "condition_ridge_0.1": 102.66576722780641
+        },
+        "c21_rank4:folds=6": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 1.8058201076979516,
+          "condition_ridge_0.1": 3.139004304458843
+        }
+      },
+      "seconds": 0.31628208397887647
+    },
+    {
+      "index": 134,
+      "name": "ricardo-smith",
+      "baseline_mse": 1.6945116223934716e-07,
+      "method_mses": {
+        "x1a_rank16:folds=6:ridge=0.1": 1.1488972110186332e-07,
+        "c21_rank4:folds=6:ridge=0.1": 7.270728647196621e-08
+      },
+      "diagnostics": {
+        "x1a_rank16:folds=6": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.023114001814933557,
+          "condition_ridge_0.1": 87.17588670404959
+        },
+        "c21_rank4:folds=6": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.12347710002552596,
+          "condition_ridge_0.1": 2.340176012812177
+        }
+      },
+      "seconds": 0.33665529103018343
+    },
+    {
+      "index": 135,
+      "name": "brandi-knight",
+      "baseline_mse": 4.3067808393641035e-07,
+      "method_mses": {
+        "x1a_rank16:folds=6:ridge=0.1": 3.27415079155806e-05,
+        "c21_rank4:folds=6:ridge=0.1": 1.8151432842006997e-07
+      },
+      "diagnostics": {
+        "x1a_rank16:folds=6": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.11647948057104826,
+          "condition_ridge_0.1": 96.28262314790095
+        },
+        "c21_rank4:folds=6": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 1.4048062533285384,
+          "condition_ridge_0.1": 2.9161253010484374
+        }
+      },
+      "seconds": 0.3118426660075784
+    },
+    {
+      "index": 136,
+      "name": "kevin-lam",
+      "baseline_mse": 3.29629624798089e-07,
+      "method_mses": {
+        "x1a_rank16:folds=6:ridge=0.1": 8.95783809497664e-08,
+        "c21_rank4:folds=6:ridge=0.1": 1.8066556092675236e-07
+      },
+      "diagnostics": {
+        "x1a_rank16:folds=6": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.08660840988120633,
+          "condition_ridge_0.1": 109.22030821476855
+        },
+        "c21_rank4:folds=6": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.9376902948256935,
+          "condition_ridge_0.1": 2.8995044652255997
+        }
+      },
+      "seconds": 0.3145403328817338
+    },
+    {
+      "index": 137,
+      "name": "sherry-knight",
+      "baseline_mse": 9.498410199331777e-08,
+      "method_mses": {
+        "x1a_rank16:folds=6:ridge=0.1": 0.0012635416114516749,
+        "c21_rank4:folds=6:ridge=0.1": 7.917214977207855e-08
+      },
+      "diagnostics": {
+        "x1a_rank16:folds=6": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.05522919259128478,
+          "condition_ridge_0.1": 68.93216904714856
+        },
+        "c21_rank4:folds=6": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.4519228330153884,
+          "condition_ridge_0.1": 2.972983719417904
+        }
+      },
+      "seconds": 0.31254612491466105
+    },
+    {
+      "index": 138,
+      "name": "randy-hill",
+      "baseline_mse": 3.891706715296407e-07,
+      "method_mses": {
+        "x1a_rank16:folds=6:ridge=0.1": 1.8265034397798534e-07,
+        "c21_rank4:folds=6:ridge=0.1": 3.521541836020235e-07
+      },
+      "diagnostics": {
+        "x1a_rank16:folds=6": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.6210715917470007,
+          "condition_ridge_0.1": 86.88024728630319
+        },
+        "c21_rank4:folds=6": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 3.3551828277860967,
+          "condition_ridge_0.1": 2.1742171912931174
+        }
+      },
+      "seconds": 0.320096124894917
+    },
+    {
+      "index": 139,
+      "name": "amy-fry",
+      "baseline_mse": 1.4731142883570571e-07,
+      "method_mses": {
+        "x1a_rank16:folds=6:ridge=0.1": 6.96571201515697e-08,
+        "c21_rank4:folds=6:ridge=0.1": 9.807436779860642e-08
+      },
+      "diagnostics": {
+        "x1a_rank16:folds=6": {
+          "features": 16.0,
+          "kept": 16.0,
+          "feature_rms": 0.015229913654219624,
+          "condition_ridge_0.1": 82.46471997547347
+        },
+        "c21_rank4:folds=6": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1565656679855177,
+          "condition_ridge_0.1": 2.3340284183737956
+        }
+      },
+      "seconds": 0.3194793330039829
+    }
+  ]
+}

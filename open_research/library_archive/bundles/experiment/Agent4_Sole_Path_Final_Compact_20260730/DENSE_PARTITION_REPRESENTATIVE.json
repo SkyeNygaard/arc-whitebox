@@ -1,0 +1,158 @@
+{
+  "scope": "representative development case only; not a full 36-case dense-partition audit",
+  "case_id": "seed910001_rot31001",
+  "source_rank": 37,
+  "source_ratio": 0.08514311596845166,
+  "required_global_S_max": 0.20640850764463164,
+  "partitions": [
+    {
+      "name": "p01_l1_final",
+      "times": [
+        1,
+        32
+      ],
+      "train_S": 1.2935723912793475,
+      "valid_S": 1.4764704429593931,
+      "validation_inflation": 1.141389885029286
+    },
+    {
+      "name": "p02_l1_4_final",
+      "times": [
+        1,
+        4,
+        32
+      ],
+      "train_S": 1.3277314202739126,
+      "valid_S": 1.4639234657982985,
+      "validation_inflation": 1.1025749963018043
+    },
+    {
+      "name": "p03_l1_8_final",
+      "times": [
+        1,
+        8,
+        32
+      ],
+      "train_S": 1.3254183223069016,
+      "valid_S": 1.468715780985268,
+      "validation_inflation": 1.1081148919300858
+    },
+    {
+      "name": "p04_l1_16_final",
+      "times": [
+        1,
+        16,
+        32
+      ],
+      "train_S": 1.344857543078442,
+      "valid_S": 1.477919990024148,
+      "validation_inflation": 1.0989416668185685
+    },
+    {
+      "name": "p05_l1_24_final",
+      "times": [
+        1,
+        24,
+        32
+      ],
+      "train_S": 1.3435560486398779,
+      "valid_S": 1.4920934291672454,
+      "validation_inflation": 1.1105554030870066
+    },
+    {
+      "name": "p06_l1_29_final",
+      "times": [
+        1,
+        29,
+        32
+      ],
+      "train_S": 1.3190389113702703,
+      "valid_S": 1.4886246391772189,
+      "validation_inflation": 1.1285676459921687
+    },
+    {
+      "name": "p07_l1_4_8_final",
+      "times": [
+        1,
+        4,
+        8,
+        32
+      ],
+      "train_S": 1.3615991942302454,
+      "valid_S": 1.4714089147757063,
+      "validation_inflation": 1.0806476098184972
+    },
+    {
+      "name": "p08_l1_4_8_16_final",
+      "times": [
+        1,
+        4,
+        8,
+        16,
+        32
+      ],
+      "train_S": 1.3944595827483615,
+      "valid_S": 1.4747453928856622,
+      "validation_inflation": 1.0575748563318446
+    },
+    {
+      "name": "p09_l1_4_8_16_24_final",
+      "times": [
+        1,
+        4,
+        8,
+        16,
+        24,
+        32
+      ],
+      "train_S": 1.4167811663520173,
+      "valid_S": 1.4870145040983762,
+      "validation_inflation": 1.0495724670925703
+    },
+    {
+      "name": "p10_agent2_dense",
+      "times": [
+        1,
+        4,
+        8,
+        16,
+        24,
+        27,
+        29,
+        31,
+        32
+      ],
+      "train_S": 1.4431067471350816,
+      "valid_S": 1.5035428337825327,
+      "validation_inflation": 1.0418791518835537
+    }
+  ],
+  "best_valid_partition": {
+    "name": "p02_l1_4_final",
+    "times": [
+      1,
+      4,
+      32
+    ],
+    "train_S": 1.3277314202739126,
+    "valid_S": 1.4639234657982985,
+    "validation_inflation": 1.1025749963018043
+  },
+  "dense_partition": {
+    "name": "p10_agent2_dense",
+    "times": [
+      1,
+      4,
+      8,
+      16,
+      24,
+      27,
+      29,
+      31,
+      32
+    ],
+    "train_S": 1.4431067471350816,
+    "valid_S": 1.5035428337825327,
+    "validation_inflation": 1.0418791518835537
+  }
+}

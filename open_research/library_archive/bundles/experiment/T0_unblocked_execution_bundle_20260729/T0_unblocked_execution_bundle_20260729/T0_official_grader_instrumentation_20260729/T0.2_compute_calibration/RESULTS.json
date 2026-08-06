@@ -1,0 +1,35 @@
+{
+  "all_outputs_identical": true,
+  "clean_package": "A43.tar.gz",
+  "delta_package": "A43_delta64.tar.gz",
+  "expected_tracked_delta_flops": 2147483648,
+  "local_pairs": [
+    {
+      "clean_digest": "c3b7a9addd8d087212227e2eae009a586aa44f5888059532532e4179d20777fb",
+      "clean_time_s": 25.136138066000058,
+      "delta_digest": "c3b7a9addd8d087212227e2eae009a586aa44f5888059532532e4179d20777fb",
+      "delta_time_s": 25.393290796999963,
+      "local_time_delta_s": 0.25715273099990554,
+      "output_identical": true,
+      "seed": 51000
+    },
+    {
+      "clean_digest": "5b8bb801d8284dfbd914d7b070d21c272d0a4d9b271d5efc491974ce46837d33",
+      "clean_time_s": 26.162420739000027,
+      "delta_digest": "5b8bb801d8284dfbd914d7b070d21c272d0a4d9b271d5efc491974ce46837d33",
+      "delta_time_s": 27.3354563580001,
+      "local_time_delta_s": 1.1730356190000748,
+      "output_identical": true,
+      "seed": 51001
+    }
+  ],
+  "official_estimands": {
+    "observed_residual_delta_seconds": "(C_delta-C_clean-observed_tracked_delta)/1e11",
+    "observed_tracked_delta": "F_delta-F_clean",
+    "raw_mse_parity": "must be exact except deterministic numerical reporting",
+    "score_sensitivity_per_effective_flop": "(S_delta-S_clean)/(C_delta-C_clean)"
+  },
+  "predicted_multiplier_delta": 0.007895160470588235,
+  "predicted_no_residual_score_delta_at_current_raw": 1.9074707696941174e-09,
+  "status": "BLOCKED_OFFICIAL_DEPENDENCY"
+}

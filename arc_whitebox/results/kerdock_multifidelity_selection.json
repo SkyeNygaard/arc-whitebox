@@ -1,0 +1,116 @@
+{
+  "method": "matched-basis multifidelity orientation control on a full Kerdock MUB 5-design",
+  "protocol": {
+    "split": "official IDs 0--49 only",
+    "holdout_ids_50_99_inspected": false,
+    "full_rotation_seed": 3,
+    "alternate_rotation_seeds": [
+      0,
+      1
+    ],
+    "alpha": 0.125,
+    "formula": "F3 + alpha * ((P0_S-P3_S) + (P1_S-P3_S))/2 = F3 + (P0_S+P1_S-2*P3_S)/16",
+    "pilot_bases": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      13,
+      15,
+      16,
+      29,
+      35,
+      57,
+      59,
+      66,
+      72,
+      84,
+      85,
+      87,
+      95,
+      96,
+      101,
+      108,
+      118,
+      120,
+      124
+    ],
+    "pilot_basis_count": 24,
+    "rows_per_antipodal_basis": 512,
+    "full_rows": 66048,
+    "pilot_rows_per_alternate_rotation": 12288,
+    "extra_rows": 24576,
+    "total_rows": 90624
+  },
+  "selection": {
+    "full_seed3_raw_mse": 1.7587467361245454e-7,
+    "multifidelity_raw_mse_dense": 1.3554747735188472e-7,
+    "multifidelity_raw_mse_basis_cache": 1.3554778660184164e-7,
+    "raw_mse_reduction_fraction": 0.22929507377186142,
+    "raw_mse_gain_factor": 1.2975134399283534,
+    "unconstrained_fitted_alpha": 0.12077576892395471,
+    "unconstrained_alpha_raw_mse": 1.354983939877664e-7,
+    "fivefold_refit_alpha_raw_mse": 1.3607484605590447e-7,
+    "fivefold_alphas": [
+      0.11716544572239855,
+      0.11972775964655491,
+      0.13061570432585592,
+      0.11767339870646643,
+      0.12001025577452148
+    ],
+    "networks_improved_at_alpha_one_eighth": 44,
+    "networks_total": 50,
+    "paired_gain_mean": 4.032688701061286e-8,
+    "paired_gain_standard_error": 7.342527956911028e-9,
+    "paired_t_statistic": 5.492234724507364
+  },
+  "harmonic_audit": {
+    "probe_count": 512,
+    "quartic_probe_rms": 9.641895164545461e-7,
+    "quartic_rms_percentile_among_10000_random_subsets": 0.0188,
+    "sixth_mismatch_probe_rms": 5.985579608400332e-8,
+    "sixth_mismatch_percentile_among_10000_random_subsets": 0.0804,
+    "three_rotation_quartic_feature_shape": [
+      512,
+      387
+    ],
+    "three_rotation_quartic_feature_rank": 384,
+    "three_rotation_quartic_feature_nullity": 3,
+    "interpretation": "the only resolved exact fourth-moment null directions are the three complete-set uniform mixtures; sparse generic MUB trades do not exist in this union"
+  },
+  "quadrature_weight_audit": {
+    "sum": 1.0,
+    "minimum": 4.964827578502225e-6,
+    "maximum": 1.5137475775193799e-5,
+    "negative_weights": 0,
+    "exact_moment_statement": "constant, odd moments, and degree 2 remain exact; the small pilot correction introduces controlled degree-4 leakage"
+  },
+  "layer2_transport_ablation": {
+    "strength_zero_raw_mse": 1.3554747735188472e-7,
+    "strength_half_raw_mse": 1.352900634183704e-7,
+    "strength_half_reduction_fraction": 0.0018990684190013816,
+    "strength_half_paired_t_statistic": 0.1876752215295961,
+    "fivefold_train_selected_strength_raw_mse": 1.3599129876685245e-7,
+    "fivefold_train_selected_change_fraction": 0.0032742875311176,
+    "decision": "reject transport and freeze strength 0"
+  },
+  "structured_compute_schedule": {
+    "later_layer_algorithm": "rectangular Winograd depth 4 hybrid_p2",
+    "rows": 90624,
+    "flops_per_later_layer": 7829873664,
+    "later_layers": 31,
+    "later_layer_flops": 242726083584,
+    "reported_residual_equivalent_flops": 5160000000,
+    "reported_effective_margin_for_first_layer_and_reductions": 24100000000,
+    "status": "separately measured by the fast-matmul workstream; combined Flopscope estimator validation still required"
+  },
+  "artifacts": {
+    "basis_cache": "results/kerdock_basis_selection_cache_0135.npz",
+    "moment_features": "results/kerdock_moment_features_013.npz",
+    "size_ladder": "results/kerdock_multifidelity_size_ladder.json",
+    "combined_transport_grid": "results/kerdock_multifidelity_h2_selection.json",
+    "selection_script": "scripts/select_kerdock_multifidelity_pilots.py",
+    "combined_dense_script": "scripts/eval_kerdock_multifidelity_h2.py"
+  }
+}

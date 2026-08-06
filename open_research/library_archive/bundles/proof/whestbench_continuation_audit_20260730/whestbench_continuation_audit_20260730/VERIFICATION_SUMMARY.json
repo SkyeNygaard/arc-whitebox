@@ -1,0 +1,446 @@
+{
+  "date": "2026-07-30",
+  "overall_verdict": "Verified upgrades materially strengthen the scoped theorem paper; universal adaptive impossibility remains invalid; no tested reopened branch is a submission candidate.",
+  "source_archives_sha256": {
+    "arc_cubature_proof_v5_1.zip": "07cb62e08db46e655d389f5a6c6f5397649dd1eaae1b9ef0ad057080115f216d",
+    "WHestBench_Agent_Review_Closure_20260730.zip": "3bbc59548833d16ed4c7cc73827d108146fe0c60a565b0c6e50fbf8b02e60bbf",
+    "arc_cubature_proof_v5_dual_engine_20260730.zip": "6c3efbbd2b2cd248894f47fda995405dc13199a9f4f9cc2d42bd1e18a78b46ee",
+    "open_questions_progress_20260730.zip": "46e6ae72b1ad4b7cd2d45b121dc762943586adef00c2c96a754b922ac070bdd0",
+    "REOPENED_PATHS_REPRO_PACKAGE_20260730.zip": "2ec340ccf17d2c2ff2871f2a7b7b2828243276fd86da932c18aca1f35dd3e436",
+    "Agent5_Competition_Opportunity_Experiments_20260730.zip": "3eba0cde2af37f2fb2c148aa33dfbfb4dd8fea9826e6eaacb3d3ad00fb710f95",
+    "T4_legal_layer31_anchor_hedge_20260729_review.zip": "3e960e5f86c6b3e38df3765d8c11f55abf65006bebc8e55e86cc7d86a3be9638"
+  },
+  "t22": {
+    "v5_1_fast_verifier_passed": true,
+    "v5_1_manifest_files": 59,
+    "dual_engine_full_curvature_passed": true,
+    "source_intervals": 1079,
+    "certified_leaves": 1421,
+    "splits": 342,
+    "max_depth": 4,
+    "gcc_clang_byte_identical": true,
+    "old_relative_excess_percent_upper": 0.02336550102949,
+    "status": "COMPUTER-ASSISTED CERTIFIED; full theorem-critical numerical path independently reproduced with Decimal/libmpdec and direct-C GMP/MPFR."
+  },
+  "t16": {
+    "all_degree_rerun_byte_identical": true,
+    "primal_dual_rerun_byte_identical": true,
+    "cpp_reduced_cost_audit_passed": true,
+    "full_auxiliary_lp_unique_optimizer": true,
+    "tight_relative_excess_percent_upper": 0.023324172950039,
+    "outer_log_derivative_upper": 2.398586389549084,
+    "kappa6_plus_3B62_lower": 8.149286225739273,
+    "dense_grid_points": 400001,
+    "sampled_sixth_derivatives_positive": true,
+    "status": "COMPUTER-ASSISTED CERTIFIED under directed Decimal/libmpdec trust base; independently rerun, with independent C++ reduced-cost audit and numerical primal sanity, but no complete second-stack primal interval proof yet."
+  },
+  "finite_width_t27": {
+    "bundled_checker_passed": true,
+    "direct_network_sanity": {
+      "architecture": {
+        "d": 4,
+        "width": 8,
+        "depth": 3,
+        "post_relu_output": true
+      },
+      "simulations": 120000,
+      "association": {
+        "A": 0.17091584082023295,
+        "O": 0.1307894302502053,
+        "C": 0.13915568006968101,
+        "se_A": 0.0006432021380839297,
+        "se_O": 0.0004620992979282291,
+        "se_C": 0.0005098138285083407,
+        "A_minus_O": 0.04012641057002764,
+        "O_minus_C": -0.008366249819475702,
+        "margin": 0.00666141129212483,
+        "sign_pass": true
+      },
+      "allocation": {
+        "1": {
+          "best_counts": [
+            1,
+            0
+          ],
+          "expected_counts": [
+            1,
+            0
+          ],
+          "pass": true,
+          "risk_term": 0.031760160750551936,
+          "runner_up_gap": 0.0
+        },
+        "2": {
+          "best_counts": [
+            2,
+            0
+          ],
+          "expected_counts": [
+            2,
+            0
+          ],
+          "pass": true,
+          "risk_term": 0.011696955465538117,
+          "runner_up_gap": 0.0
+        },
+        "3": {
+          "best_counts": [
+            3,
+            0
+          ],
+          "expected_counts": [
+            3,
+            0
+          ],
+          "pass": true,
+          "risk_term": 0.00500922037053351,
+          "runner_up_gap": 0.0
+        },
+        "4": {
+          "best_counts": [
+            4,
+            0
+          ],
+          "expected_counts": [
+            4,
+            0
+          ],
+          "pass": true,
+          "risk_term": 0.0016653528230312076,
+          "runner_up_gap": 0.0
+        },
+        "5": {
+          "best_counts": [
+            4,
+            1
+          ],
+          "expected_counts": [
+            4,
+            1
+          ],
+          "pass": true,
+          "risk_term": 0.0015823802751577804,
+          "runner_up_gap": 0.0
+        },
+        "6": {
+          "best_counts": [
+            4,
+            2
+          ],
+          "expected_counts": [
+            4,
+            2
+          ],
+          "pass": true,
+          "risk_term": 0.0014577988611494499,
+          "runner_up_gap": 0.0
+        },
+        "7": {
+          "best_counts": [
+            4,
+            3
+          ],
+          "expected_counts": [
+            4,
+            3
+          ],
+          "pass": true,
+          "risk_term": 0.0012498356139530326,
+          "runner_up_gap": 0.0
+        },
+        "8": {
+          "best_counts": [
+            4,
+            4
+          ],
+          "expected_counts": [
+            4,
+            4
+          ],
+          "pass": true,
+          "risk_term": 0.0008326764115156038,
+          "runner_up_gap": null
+        }
+      },
+      "all_budget_allocations_pass": true
+    },
+    "status": "PROVED UNDER EXPLICIT MODEL: fixed union of MUB antipodal lines, static linear rule, arbitrary real mass-one line weights, standard isotropic Gaussian first layer independent of later network randomness."
+  },
+  "group_invariant_observability": {
+    "n_rows": 48,
+    "n_base_networks": 16,
+    "cv": "8-fold grouped by base network",
+    "features": [
+      "feature_cos_c17_p2",
+      "feature_cos_c17_p4",
+      "feature_cos_p2_p4",
+      "feature_norm_p2_c17",
+      "feature_norm_p4_c17",
+      "feature_min_nested_cos",
+      "feature_max_loo_angle_sin",
+      "feature_cos_p32_p128",
+      "feature_norm_p32_p128"
+    ],
+    "targets": {
+      "geometry_c17_cos_ideal": {
+        "ridge": {
+          "oof_r2": -0.15146676328206676,
+          "oof_correlation": -0.06957925968643026,
+          "sign_accuracy": 0.6666666666666666,
+          "group_permutation_p_abs_corr": 0.6608678264347131,
+          "prediction_mean": 0.2041977734148406,
+          "target_mean": 0.19682876645748829
+        },
+        "poly2_ridge": {
+          "oof_r2": -0.10682633047216883,
+          "oof_correlation": 0.21093685363021675,
+          "sign_accuracy": 0.6458333333333334,
+          "group_permutation_p_abs_corr": 0.15476904619076184,
+          "prediction_mean": 0.18260602585326466,
+          "target_mean": 0.19682876645748829
+        },
+        "extra_trees": {
+          "oof_r2": -0.08474930428675731,
+          "oof_correlation": -0.05627213184935227,
+          "sign_accuracy": 0.7083333333333334,
+          "group_permutation_p_abs_corr": 0.7020595880823836,
+          "prediction_mean": 0.21583837867295397,
+          "target_mean": 0.19682876645748829
+        },
+        "diagnostics": {
+          "positive_fraction": 0.7083333333333334,
+          "networks_with_both_signs": 11,
+          "within_network_variance_fraction": 0.7540803432087658,
+          "best_constant_sign_accuracy": 0.7083333333333334
+        }
+      },
+      "geometry_p2_cos_ideal": {
+        "ridge": {
+          "oof_r2": 0.0009138689548897627,
+          "oof_correlation": 0.17827777158290606,
+          "sign_accuracy": 0.5625,
+          "group_permutation_p_abs_corr": 0.22955408918216358,
+          "prediction_mean": 0.07647999105011043,
+          "target_mean": 0.08006918661262898
+        },
+        "poly2_ridge": {
+          "oof_r2": -0.2833900253169648,
+          "oof_correlation": -0.06506410052953608,
+          "sign_accuracy": 0.5625,
+          "group_permutation_p_abs_corr": 0.6556688662267547,
+          "prediction_mean": 0.10583536138366915,
+          "target_mean": 0.08006918661262898
+        },
+        "extra_trees": {
+          "oof_r2": -0.06612550867775013,
+          "oof_correlation": -0.051882424049265255,
+          "sign_accuracy": 0.5,
+          "group_permutation_p_abs_corr": 0.7358528294341132,
+          "prediction_mean": 0.07882578272025022,
+          "target_mean": 0.08006918661262898
+        },
+        "diagnostics": {
+          "positive_fraction": 0.5625,
+          "networks_with_both_signs": 13,
+          "within_network_variance_fraction": 0.7037017633429137,
+          "best_constant_sign_accuracy": 0.5625
+        }
+      },
+      "geometry_p4_cos_ideal": {
+        "ridge": {
+          "oof_r2": -0.065549101438515,
+          "oof_correlation": 0.11592861660921998,
+          "sign_accuracy": 0.5416666666666666,
+          "group_permutation_p_abs_corr": 0.46010797840431916,
+          "prediction_mean": 0.11128454310387693,
+          "target_mean": 0.1095679886285531
+        },
+        "poly2_ridge": {
+          "oof_r2": -0.46634973265759205,
+          "oof_correlation": -0.15768152506161656,
+          "sign_accuracy": 0.6041666666666666,
+          "group_permutation_p_abs_corr": 0.28574285142971406,
+          "prediction_mean": 0.13313496053067997,
+          "target_mean": 0.1095679886285531
+        },
+        "extra_trees": {
+          "oof_r2": -0.1116039886943625,
+          "oof_correlation": -0.15155293101075332,
+          "sign_accuracy": 0.5833333333333334,
+          "group_permutation_p_abs_corr": 0.33653269346130776,
+          "prediction_mean": 0.11175610129809359,
+          "target_mean": 0.1095679886285531
+        },
+        "diagnostics": {
+          "positive_fraction": 0.625,
+          "networks_with_both_signs": 13,
+          "within_network_variance_fraction": 0.6474938975527711,
+          "best_constant_sign_accuracy": 0.625
+        }
+      }
+    }
+  },
+  "reopened_paths": {
+    "passed": true,
+    "checks": {
+      "projected_relu_48": {
+        "pooled_raw_ratio": 1.012682140618133,
+        "pooled_cross_ratio": 1.0162461364986783,
+        "mean_raw_ratio": 1.0423247210440894,
+        "wins_raw": 18,
+        "worst_raw_ratio": 1.3123910186960719
+      },
+      "terminal_descendants": {
+        "poisson_mid_r_0.1": {
+          "pooled_raw_ratio": 1.0379391539423775,
+          "pooled_cross_ratio": 1.0445741546970215,
+          "wins_raw": 7,
+          "worst_raw_ratio": 1.1859479628207268
+        },
+        "nonlinear_k4_m64_b0_0.001": {
+          "pooled_raw_ratio": 0.9272394367704979,
+          "pooled_cross_ratio": 0.9145146830063725,
+          "wins_raw": 9,
+          "worst_raw_ratio": 1.1950417993978952
+        }
+      },
+      "extended_families": {
+        "count": 42,
+        "best_poisson": "poisson_all_0.01",
+        "best_nonlinear": "nonlinear_k2_m32_b1_0.001"
+      },
+      "signed_network": {
+        "pooled_raw_ratio": 1.5573136434384325,
+        "pooled_cross_ratio": 1.7160851461130726,
+        "mean_raw_ratio": 1.749063290285823,
+        "wins_raw": 8,
+        "worst_raw_ratio": 5.403558317893894
+      },
+      "signed_random": {
+        "pooled_raw_ratio": 1.441833108745329,
+        "pooled_cross_ratio": 1.567705689531434,
+        "mean_raw_ratio": 1.4883970813855059,
+        "wins_raw": 10,
+        "worst_raw_ratio": 2.8515338024613337
+      }
+    }
+  },
+  "agent5": {
+    "passed": true,
+    "checks": {
+      "stein_validation": {
+        "n": 16,
+        "primary": {
+          "label": "stein_tanh_k8_stable",
+          "mode": "full",
+          "alpha": 2.0,
+          "candidate_over_base": 1.0107204113104977,
+          "gain_base_over_candidate": 0.9893932969092831,
+          "bootstrap_gain_ci95": [
+            0.9711274719249386,
+            1.0052756299441317
+          ],
+          "wins": 9,
+          "networks": 16,
+          "median_ratio": 0.9957582663555102,
+          "worst_ratio": 1.1301987130896345,
+          "ratios": [
+            0.990371496317817,
+            1.0307497839329731,
+            0.9739655785704595,
+            0.9837505686227135,
+            0.9915683972628561,
+            1.0375905316810787,
+            0.9999481354481645,
+            1.0059435228179197,
+            1.1301987130896345,
+            0.9735091667035839,
+            1.0565424300222086,
+            0.9480697484548407,
+            1.0281054797489877,
+            1.0042318955580252,
+            0.9891911649090288,
+            0.9881398680631737
+          ]
+        },
+        "recomputed_all_methods": true
+      },
+      "anchor_fresh": {
+        "n_rows": 24,
+        "frozen": {
+          "candidate_over_base": 1.0000971160040377,
+          "gain": 0.9999028934265647,
+          "row_wins": 5,
+          "network_wins": 3,
+          "median_network_ratio": 1.0,
+          "worst_network_ratio": 1.06802090327476,
+          "network_bootstrap_gain_ci95": [
+            0.9782139433983899,
+            1.0265175607318693
+          ]
+        },
+        "oracle": {
+          "candidate_over_base": 0.8564692816838451,
+          "gain": 1.1675841987397015,
+          "row_wins": 15,
+          "network_wins": 7,
+          "median_network_ratio": 0.8754065018657666,
+          "worst_network_ratio": 1.0,
+          "network_bootstrap_gain_ci95": [
+            1.0880350246196004,
+            1.2664567804568607
+          ]
+        },
+        "raw_vectors_in_bundle": false
+      },
+      "signed_weight_audit": {
+        "keys": [
+          {
+            "candidate": "primary_tanh_k8_alpha2",
+            "networks": 16,
+            "negative_mass_median": 0.0,
+            "negative_mass_max": 5.220315373405831e-06,
+            "signed_networks": 1,
+            "min_weight_min": -2.6101576867029967e-06,
+            "ess_median": 66024.01433244853,
+            "control_residual_median": 0.0058103866802418705
+          },
+          {
+            "candidate": "primary_tanh_k8_alpha1",
+            "networks": 16,
+            "negative_mass_median": 0.0,
+            "negative_mass_max": 0.0,
+            "signed_networks": 0,
+            "min_weight_min": 6.265173094632998e-06,
+            "ess_median": 66042.00194630446,
+            "control_residual_median": 0.00881004627218771
+          },
+          {
+            "candidate": "harmonic_d68_alpha1",
+            "networks": 16,
+            "negative_mass_median": 0.0,
+            "negative_mass_max": 1.1291054353756214e-05,
+            "signed_networks": 6,
+            "min_weight_min": -3.2022193407094755e-06,
+            "ess_median": 66004.89467936219,
+            "control_residual_median": 3.562663380695935e-10
+          }
+        ],
+        "source": "saved per-network weight audit; full network rows not included"
+      }
+    },
+    "reproducibility_note": "Stein and anchor aggregate headlines recomputed from saved row-level outputs. Compact bundle omits fresh-anchor vector NPZs and upstream T4/ARC dependencies, so generation/evaluation is not fully self-contained."
+  },
+  "packaging_findings": [
+    "ReopenedPaths hashes pass and row-level NPZ metrics reproduce, but scripts import an omitted upstream arc_experiments/agent9 bundle; not generation-self-contained.",
+    "Agent5 hashes pass and saved row-level Stein/anchor aggregates reproduce, but fresh-anchor vector NPZs and upstream T4/ARC dependencies are omitted; derived-output reproducibility only for those branches.",
+    "T22 dual-engine release is self-contained for the theorem-critical verification path and tracks 114 artifacts in the full manifest."
+  ],
+  "manuscript_corrections": [
+    "Replace 0.02336550102949% by 0.023324172950039% wherever the completed T16 optimum is used; retain the old number only when describing the standalone T22 v5.1 release.",
+    "Replace unsupported F_second/F_prime < 9/4 and one-quarter Bell-term wording by the certified F_second/F_prime < 2.398586389549085 < 3 plus kappa6+3 B_6,2 > 0 argument.",
+    "Upgrade T27 scope from infinite-width-only to exact finite-width fixed-line-universe under the Gaussian-first-layer model; arbitrary-node finite-width T22 remains open.",
+    "Mark Agent10/Agent11 pre-closure reports as historical: their universal-impossibility criticism remains valid, but their T16/T22-release/finite-width-T27 objections are superseded.",
+    "Fix the malformed formula rac1{sum_b h(r_b)} in STRONGER_CLAIMS_PROOF_ATTEMPTS_20260730.md."
+  ]
+}

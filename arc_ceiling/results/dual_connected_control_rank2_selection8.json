@@ -1,0 +1,3122 @@
+{
+  "protocol": {
+    "indices": [
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167
+    ],
+    "weights_dir": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/data/official_weights_fresh",
+    "layer": 29,
+    "rotation_seed": 3,
+    "directions": "sample radial-corrected connected-c21 SVD",
+    "direction_rank": 2,
+    "center": "same Kerdock activation sample mean",
+    "folds": 6,
+    "ridge": 0.1,
+    "scales": [
+      1.7,
+      1.8,
+      1.9,
+      1.95,
+      2.0,
+      2.1,
+      2.2
+    ],
+    "probe_rank": 32,
+    "dtype": "float64",
+    "target_leakage_in_coefficients": false,
+    "deployable_anchor_requires_target_mean_covariance": false,
+    "deployable_anchor_reconstructs_raw_m21": false,
+    "scope": "selection IDs only; no new holdout"
+  },
+  "summary": {
+    "oracle_arbitrary_center": {
+      "baseline_mean_mse": 2.963910520473503e-07,
+      "method_mean_mse": 1.6837953360389143e-07,
+      "raw_mse_ratio": 0.5680992473989794,
+      "ci95": [
+        0.46766048522191866,
+        0.7204828691097143
+      ],
+      "wins": 8,
+      "worst_per_network_ratio": 0.9198555852506562
+    },
+    "oracle_connected_approx": {
+      "baseline_mean_mse": 2.963910520473503e-07,
+      "method_mean_mse": 2.9342558925319354e-07,
+      "raw_mse_ratio": 0.9899947627511947,
+      "ci95": [
+        0.9220491230230475,
+        1.0877783185199725
+      ],
+      "wins": 4,
+      "worst_per_network_ratio": 1.2060995772689307
+    },
+    "cheap_dual_scale1.7": {
+      "baseline_mean_mse": 2.963910520473503e-07,
+      "method_mean_mse": 4.919768565831299e-05,
+      "raw_mse_ratio": 165.98910567129184,
+      "ci95": [
+        51.078524405219575,
+        424.200337452659
+      ],
+      "wins": 0,
+      "worst_per_network_ratio": 1075.9536113022277
+    },
+    "cheap_dual_probe32_scale1.7": {
+      "baseline_mean_mse": 2.963910520473503e-07,
+      "method_mean_mse": 2.5856811173510834e-06,
+      "raw_mse_ratio": 8.72388386724308,
+      "ci95": [
+        3.5553750152883707,
+        18.60622683837764
+      ],
+      "wins": 0,
+      "worst_per_network_ratio": 41.027815203212626
+    },
+    "cheap_dual_scale1.8": {
+      "baseline_mean_mse": 2.963910520473503e-07,
+      "method_mean_mse": 9.255536586304931e-05,
+      "raw_mse_ratio": 312.2744941985058,
+      "ci95": [
+        106.47025017710169,
+        772.008234326143
+      ],
+      "wins": 0,
+      "worst_per_network_ratio": 1930.840456884548
+    },
+    "cheap_dual_probe32_scale1.8": {
+      "baseline_mean_mse": 2.963910520473503e-07,
+      "method_mean_mse": 6.351965154774346e-06,
+      "raw_mse_ratio": 21.431028740231945,
+      "ci95": [
+        7.529615616144415,
+        51.58275373514292
+      ],
+      "wins": 0,
+      "worst_per_network_ratio": 124.73057188802687
+    },
+    "cheap_dual_scale1.9": {
+      "baseline_mean_mse": 2.963910520473503e-07,
+      "method_mean_mse": 0.00015963944511941354,
+      "raw_mse_ratio": 538.6108791634849,
+      "ci95": [
+        200.63721370017538,
+        1291.3256631115298
+      ],
+      "wins": 0,
+      "worst_per_network_ratio": 3187.0607211867464
+    },
+    "cheap_dual_probe32_scale1.9": {
+      "baseline_mean_mse": 2.963910520473503e-07,
+      "method_mean_mse": 1.4472260062377005e-05,
+      "raw_mse_ratio": 48.82826239998963,
+      "ci95": [
+        17.034146100260074,
+        118.94165155887637
+      ],
+      "wins": 0,
+      "worst_per_network_ratio": 288.52907811549045
+    },
+    "cheap_dual_scale1.95": {
+      "baseline_mean_mse": 2.963910520473503e-07,
+      "method_mean_mse": 0.0002042296560883642,
+      "raw_mse_ratio": 689.0547291412065,
+      "ci95": [
+        264.6346029932998,
+        1632.708406030726
+      ],
+      "wins": 0,
+      "worst_per_network_ratio": 3994.9563748267556
+    },
+    "cheap_dual_probe32_scale1.95": {
+      "baseline_mean_mse": 2.963910520473503e-07,
+      "method_mean_mse": 2.086033590399374e-05,
+      "raw_mse_ratio": 70.38112574552748,
+      "ci95": [
+        25.02479619319662,
+        169.78697538344719
+      ],
+      "wins": 0,
+      "worst_per_network_ratio": 410.91316037251835
+    },
+    "cheap_dual_scale2": {
+      "baseline_mean_mse": 2.963910520473503e-07,
+      "method_mean_mse": 0.0002574143236665607,
+      "raw_mse_ratio": 868.495596909711,
+      "ci95": [
+        343.889910070338,
+        2030.8721393827193
+      ],
+      "wins": 0,
+      "worst_per_network_ratio": 4938.7778071812145
+    },
+    "cheap_dual_probe32_scale2": {
+      "baseline_mean_mse": 2.963910520473503e-07,
+      "method_mean_mse": 2.9228043130095028e-05,
+      "raw_mse_ratio": 98.61310902673833,
+      "ci95": [
+        35.90098960307645,
+        235.49136711385938
+      ],
+      "wins": 0,
+      "worst_per_network_ratio": 566.443009553283
+    },
+    "cheap_dual_scale2.1": {
+      "baseline_mean_mse": 2.963910520473503e-07,
+      "method_mean_mse": 0.0003934648042002195,
+      "raw_mse_ratio": 1327.5191726684147,
+      "ci95": [
+        554.3500303868071,
+        3028.3377303524812
+      ],
+      "wins": 0,
+      "worst_per_network_ratio": 7283.0842570879195
+    },
+    "cheap_dual_probe32_scale2.1": {
+      "baseline_mean_mse": 2.963910520473503e-07,
+      "method_mean_mse": 5.334723967563698e-05,
+      "raw_mse_ratio": 179.98937318497195,
+      "ci95": [
+        68.36246696929594,
+        419.42907115249363
+      ],
+      "wins": 0,
+      "worst_per_network_ratio": 996.9743876831757
+    },
+    "cheap_dual_scale2.2": {
+      "baseline_mean_mse": 2.963910520473503e-07,
+      "method_mean_mse": 0.0005758777240673776,
+      "raw_mse_ratio": 1942.9659569323894,
+      "ci95": [
+        847.8880217390512,
+        4334.058497822204
+      ],
+      "wins": 0,
+      "worst_per_network_ratio": 10317.788255807745
+    },
+    "cheap_dual_probe32_scale2.2": {
+      "baseline_mean_mse": 2.963910520473503e-07,
+      "method_mean_mse": 8.997278203298664e-05,
+      "raw_mse_ratio": 303.5610603339433,
+      "ci95": [
+        119.81954712937218,
+        689.2563554190322
+      ],
+      "wins": 0,
+      "worst_per_network_ratio": 1622.4743547101136
+    }
+  },
+  "pooled_anchor_metrics": {
+    "oracle_arbitrary_center": {
+      "relative_to_exact_anchor": 0.0,
+      "relative_to_quadrature_discrepancy": 0.0,
+      "rmse": 0.0,
+      "mean_absolute_error": 0.0,
+      "cosine_with_exact": 0.9999999999999998
+    },
+    "oracle_connected_approx": {
+      "relative_to_exact_anchor": 0.07883580179313085,
+      "relative_to_quadrature_discrepancy": 1.0332524297650847,
+      "rmse": 0.0006202231919306549,
+      "mean_absolute_error": 0.0003615380115497304,
+      "cosine_with_exact": 0.9990342591399312
+    },
+    "cheap_dual_scale1.7": {
+      "relative_to_exact_anchor": 0.200131259667145,
+      "relative_to_quadrature_discrepancy": 2.622997491236811,
+      "rmse": 0.001574488314352056,
+      "mean_absolute_error": 0.0011725884374931862,
+      "cosine_with_exact": 0.9799542229579968
+    },
+    "cheap_dual_probe32_scale1.7": {
+      "relative_to_exact_anchor": 0.25517664886972957,
+      "relative_to_quadrature_discrepancy": 3.344443596271427,
+      "rmse": 0.0020075457097963037,
+      "mean_absolute_error": 0.0011223470810339123,
+      "cosine_with_exact": 0.9759026470807298
+    },
+    "cheap_dual_scale1.8": {
+      "relative_to_exact_anchor": 0.21387951163000365,
+      "relative_to_quadrature_discrepancy": 2.8031873849468036,
+      "rmse": 0.0016826496385464408,
+      "mean_absolute_error": 0.0012565455242352194,
+      "cosine_with_exact": 0.979954222957997
+    },
+    "cheap_dual_probe32_scale1.8": {
+      "relative_to_exact_anchor": 0.23334083776792616,
+      "relative_to_quadrature_discrepancy": 3.0582550326536766,
+      "rmse": 0.0018357573071681036,
+      "mean_absolute_error": 0.0010747019958417937,
+      "cosine_with_exact": 0.9759026470807298
+    },
+    "cheap_dual_scale1.9": {
+      "relative_to_exact_anchor": 0.24154289984876795,
+      "relative_to_quadrature_discrepancy": 3.165754422288251,
+      "rmse": 0.0019002852121108593,
+      "mean_absolute_error": 0.0014038644217038625,
+      "cosine_with_exact": 0.9799542229579972
+    },
+    "cheap_dual_probe32_scale1.9": {
+      "relative_to_exact_anchor": 0.2206941049559466,
+      "relative_to_quadrature_discrepancy": 2.8925020738538554,
+      "rmse": 0.0017362619406755724,
+      "mean_absolute_error": 0.0011435636523672139,
+      "cosine_with_exact": 0.9759026470807298
+    },
+    "cheap_dual_scale1.95": {
+      "relative_to_exact_anchor": 0.2592917505791655,
+      "relative_to_quadrature_discrepancy": 3.3983777067046845,
+      "rmse": 0.002039920360136551,
+      "mean_absolute_error": 0.0014827232526030908,
+      "cosine_with_exact": 0.979954222957997
+    },
+    "cheap_dual_probe32_scale1.95": {
+      "relative_to_exact_anchor": 0.21836157517904078,
+      "relative_to_quadrature_discrepancy": 2.8619310388079815,
+      "rmse": 0.0017179112798006819,
+      "mean_absolute_error": 0.0011794191403051504,
+      "cosine_with_exact": 0.9759026470807298
+    },
+    "cheap_dual_scale2": {
+      "relative_to_exact_anchor": 0.27901272733111565,
+      "relative_to_quadrature_discrepancy": 3.6568484355210527,
+      "rmse": 0.002195070772396968,
+      "mean_absolute_error": 0.0015615820835023194,
+      "cosine_with_exact": 0.9799542229579973
+    },
+    "cheap_dual_probe32_scale2": {
+      "relative_to_exact_anchor": 0.21883543201362865,
+      "relative_to_quadrature_discrepancy": 2.8681415892756927,
+      "rmse": 0.0017216392433880565,
+      "mean_absolute_error": 0.0012161909653673694,
+      "cosine_with_exact": 0.9759026470807297
+    },
+    "cheap_dual_scale2.1": {
+      "relative_to_exact_anchor": 0.32289291434045975,
+      "relative_to_quadrature_discrepancy": 4.231959093555885,
+      "rmse": 0.0025402884150216264,
+      "mean_absolute_error": 0.0017301157239761368,
+      "cosine_with_exact": 0.979954222957997
+    },
+    "cheap_dual_probe32_scale2.1": {
+      "relative_to_exact_anchor": 0.2280287736166052,
+      "relative_to_quadrature_discrepancy": 2.988633070720404,
+      "rmse": 0.001793965820194735,
+      "mean_absolute_error": 0.0012897346154918069,
+      "cosine_with_exact": 0.9759026470807298
+    },
+    "cheap_dual_scale2.2": {
+      "relative_to_exact_anchor": 0.37091531219799473,
+      "relative_to_quadrature_discrepancy": 4.861359164854037,
+      "rmse": 0.002918093983125322,
+      "mean_absolute_error": 0.0019064534602060638,
+      "cosine_with_exact": 0.9799542229579971
+    },
+    "cheap_dual_probe32_scale2.2": {
+      "relative_to_exact_anchor": 0.2470433440508181,
+      "relative_to_quadrature_discrepancy": 3.237845365835308,
+      "rmse": 0.0019435587373676198,
+      "mean_absolute_error": 0.001426570160354443,
+      "cosine_with_exact": 0.97590264708073
+    },
+    "sample_quadrature_anchor": {
+      "relative_to_exact_anchor": 0.07629868512484851,
+      "relative_to_quadrature_discrepancy": 1.0,
+      "rmse": 0.0006002629890467963,
+      "mean_absolute_error": 0.00032802533036267235,
+      "cosine_with_exact": 0.998837486534673
+    }
+  },
+  "records": [
+    {
+      "index": 160,
+      "name": "amy-scott",
+      "baseline_mse": 2.1440298520066416e-07,
+      "method_mses": {
+        "oracle_arbitrary_center": 1.3733890845874e-07,
+        "oracle_connected_approx": 1.8692604427328726e-07,
+        "cheap_dual_scale1.7": 1.441962784342936e-06,
+        "cheap_dual_probe32_scale1.7": 2.3752478049977387e-06,
+        "cheap_dual_scale1.8": 9.037137477142149e-07,
+        "cheap_dual_probe32_scale1.8": 2.6805127908406802e-06,
+        "cheap_dual_scale1.9": 1.227361950267524e-06,
+        "cheap_dual_probe32_scale1.9": 2.693803152575929e-06,
+        "cheap_dual_scale1.95": 2.062401964998804e-06,
+        "cheap_dual_probe32_scale1.95": 2.5648873760899174e-06,
+        "cheap_dual_scale2": 3.5776253423338043e-06,
+        "cheap_dual_probe32_scale2": 2.352464806022766e-06,
+        "cheap_dual_scale2.1": 9.473260966129988e-06,
+        "cheap_dual_probe32_scale2.1": 1.7599781353689583e-06,
+        "cheap_dual_scale2.2": 2.0773830918651205e-05,
+        "cheap_dual_probe32_scale2.2": 1.1854211001375272e-06
+      },
+      "fit_diagnostics": {
+        "oracle_arbitrary_center": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.1480919228977392,
+          "condition_ridge_0.1": 1.6439908078397296,
+          "feature_mean_norm": 0.00021535165883441806
+        },
+        "oracle_connected_approx": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.14809184480555163,
+          "condition_ridge_0.1": 1.643984768088916,
+          "feature_mean_norm": 1.0819439482834764e-05
+        },
+        "cheap_dual_scale1.7": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.14809974597499365,
+          "condition_ridge_0.1": 1.6444000502534728,
+          "feature_mean_norm": 0.0021634779759419974
+        },
+        "cheap_dual_probe32_scale1.7": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.14810720372009004,
+          "condition_ridge_0.1": 1.6429556814081787,
+          "feature_mean_norm": 0.003016406604820066
+        },
+        "cheap_dual_scale1.8": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.14809838434563438,
+          "condition_ridge_0.1": 1.6444607906519508,
+          "feature_mean_norm": 0.0019682512064217238
+        },
+        "cheap_dual_probe32_scale1.8": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.14810573284309467,
+          "condition_ridge_0.1": 1.6435205008930258,
+          "feature_mean_norm": 0.0028683310857266675
+        },
+        "cheap_dual_scale1.9": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.1480971618111504,
+          "condition_ridge_0.1": 1.6443368559997618,
+          "feature_mean_norm": 0.0017747659770331026
+        },
+        "cheap_dual_probe32_scale1.9": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.1481043401625885,
+          "condition_ridge_0.1": 1.643966374324782,
+          "feature_mean_norm": 0.0027207115298291387
+        },
+        "cheap_dual_scale1.95": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.14809660270557842,
+          "condition_ridge_0.1": 1.6442057728003447,
+          "feature_mean_norm": 0.0016788648262988214
+        },
+        "cheap_dual_probe32_scale1.95": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.14810367314671308,
+          "condition_ridge_0.1": 1.644144620318545,
+          "feature_mean_norm": 0.0026470965856836867
+        },
+        "cheap_dual_scale2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.14809607837498642,
+          "condition_ridge_0.1": 1.6440287193684402,
+          "feature_mean_norm": 0.0015836607393465096
+        },
+        "cheap_dual_probe32_scale2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.14810302568077752,
+          "condition_ridge_0.1": 1.6442930412894672,
+          "feature_mean_norm": 0.002573626398527211
+        },
+        "cheap_dual_scale2.1": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.14809513404019528,
+          "condition_ridge_0.1": 1.6435371233801914,
+          "feature_mean_norm": 0.0013959133224955048
+        },
+        "cheap_dual_probe32_scale2.1": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.14810178939974394,
+          "condition_ridge_0.1": 1.6445003585501041,
+          "feature_mean_norm": 0.002427172851137877
+        },
+        "cheap_dual_scale2.2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.14809432880943796,
+          "condition_ridge_0.1": 1.642863076782449,
+          "feature_mean_norm": 0.0012130837864515961
+        },
+        "cheap_dual_probe32_scale2.2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.14810063132144602,
+          "condition_ridge_0.1": 1.6445883002870454,
+          "feature_mean_norm": 0.0022814725198561873
+        }
+      },
+      "anchor_diagnostics": {
+        "oracle_arbitrary_center": {
+          "relative_to_exact_anchor": 0.0,
+          "relative_to_quadrature_discrepancy": 0.0,
+          "rmse": 0.0,
+          "mean_absolute_error": 0.0,
+          "cosine_with_exact": 1.0,
+          "anchor": [
+            0.005309145892996746,
+            0.0007189937240449093
+          ]
+        },
+        "oracle_connected_approx": {
+          "relative_to_exact_anchor": 0.04145460636211242,
+          "relative_to_quadrature_discrepancy": 1.0313252466659075,
+          "rmse": 0.00015704672093130206,
+          "mean_absolute_error": 0.00011631714596214987,
+          "cosine_with_exact": 0.999973659762714,
+          "anchor": [
+            0.005530980782066367,
+            0.0007081943211902302
+          ]
+        },
+        "cheap_dual_scale1.7": {
+          "relative_to_exact_anchor": 0.36367625492467204,
+          "relative_to_quadrature_discrepancy": 9.047691830443142,
+          "rmse": 0.001377751915374493,
+          "mean_absolute_error": 0.0010038083817584468,
+          "cosine_with_exact": 0.995666038159006,
+          "anchor": [
+            0.0033616378381274245,
+            0.000779102432692481
+          ]
+        },
+        "cheap_dual_probe32_scale1.7": {
+          "relative_to_exact_anchor": 0.5230718655753511,
+          "relative_to_quadrature_discrepancy": 13.013203311503018,
+          "rmse": 0.0019816065935462845,
+          "mean_absolute_error": 0.0014417252329906865,
+          "cosine_with_exact": 0.9935051758530735,
+          "anchor": [
+            0.00250793802159391,
+            0.0006367511294663725
+          ]
+        },
+        "cheap_dual_scale1.8": {
+          "relative_to_exact_anchor": 0.3271923085040842,
+          "relative_to_quadrature_discrepancy": 8.14002876610519,
+          "rmse": 0.0012395360533798826,
+          "mean_absolute_error": 0.0009278514580691835,
+          "cosine_with_exact": 0.995666038159006,
+          "anchor": [
+            0.0035593812403702145,
+            0.0008249319875567446
+          ]
+        },
+        "cheap_dual_probe32_scale1.8": {
+          "relative_to_exact_anchor": 0.4953813631445589,
+          "relative_to_quadrature_discrepancy": 12.3243072694014,
+          "rmse": 0.0018767038338937238,
+          "mean_absolute_error": 0.0013492343756065603,
+          "cosine_with_exact": 0.9935051758530735,
+          "anchor": [
+            0.002655463787570023,
+            0.0006742070782585121
+          ]
+        },
+        "cheap_dual_scale1.9": {
+          "relative_to_exact_anchor": 0.2910671264655646,
+          "relative_to_quadrature_discrepancy": 7.241291193945344,
+          "rmse": 0.0011026793351508308,
+          "mean_absolute_error": 0.0008518945343799207,
+          "cosine_with_exact": 0.9956660381590063,
+          "anchor": [
+            0.0037571246426130037,
+            0.0008707615424210081
+          ]
+        },
+        "cheap_dual_probe32_scale1.9": {
+          "relative_to_exact_anchor": 0.4677770842076617,
+          "relative_to_quadrature_discrepancy": 11.637556331883166,
+          "rmse": 0.0017721277235130243,
+          "mean_absolute_error": 0.0012567435182224344,
+          "cosine_with_exact": 0.9935051758530733,
+          "anchor": [
+            0.0028029895535461352,
+            0.0007116630270506516
+          ]
+        },
+        "cheap_dual_scale1.95": {
+          "relative_to_exact_anchor": 0.27318360798636887,
+          "relative_to_quadrature_discrepancy": 6.796377450326551,
+          "rmse": 0.0010349293748366758,
+          "mean_absolute_error": 0.000813916072535289,
+          "cosine_with_exact": 0.9956660381590061,
+          "anchor": [
+            0.003855996343734399,
+            0.00089367631985314
+          ]
+        },
+        "cheap_dual_probe32_scale1.95": {
+          "relative_to_exact_anchor": 0.45401219529423825,
+          "relative_to_quadrature_discrepancy": 11.295107598201794,
+          "rmse": 0.0017199807884063748,
+          "mean_absolute_error": 0.0012218953669321836,
+          "cosine_with_exact": 0.9935051758530736,
+          "anchor": [
+            0.0028767524365341914,
+            0.0007303910014467215
+          ]
+        },
+        "cheap_dual_scale2": {
+          "relative_to_exact_anchor": 0.2554529594467487,
+          "relative_to_quadrature_discrepancy": 6.355266869781203,
+          "rmse": 0.0009677585473341943,
+          "mean_absolute_error": 0.0007759376106906575,
+          "cosine_with_exact": 0.9956660381590063,
+          "anchor": [
+            0.003954868044855794,
+            0.0009165910972852718
+          ]
+        },
+        "cheap_dual_probe32_scale2": {
+          "relative_to_exact_anchor": 0.4402752471273619,
+          "relative_to_quadrature_discrepancy": 10.953353986241584,
+          "rmse": 0.0016679397040847324,
+          "mean_absolute_error": 0.0011943779126361903,
+          "cosine_with_exact": 0.9935051758530736,
+          "anchor": [
+            0.0029505153195222475,
+            0.0007491189758427912
+          ]
+        },
+        "cheap_dual_scale2.1": {
+          "relative_to_exact_anchor": 0.22059744760031968,
+          "relative_to_quadrature_discrepancy": 5.488116690168375,
+          "rmse": 0.0008357118504231663,
+          "mean_absolute_error": 0.0006999806870013945,
+          "cosine_with_exact": 0.9956660381590061,
+          "anchor": [
+            0.0041526114470985835,
+            0.0009624206521495354
+          ]
+        },
+        "cheap_dual_probe32_scale2.1": {
+          "relative_to_exact_anchor": 0.4128963224838347,
+          "relative_to_quadrature_discrepancy": 10.272209508236363,
+          "rmse": 0.0015642173263993187,
+          "mean_absolute_error": 0.001139343004044204,
+          "cosine_with_exact": 0.9935051758530734,
+          "anchor": [
+            0.00309804108549836,
+            0.0007865749246349309
+          ]
+        },
+        "cheap_dual_scale2.2": {
+          "relative_to_exact_anchor": 0.18692546723745676,
+          "relative_to_quadrature_discrepancy": 4.650410907845525,
+          "rmse": 0.0007081488467593836,
+          "mean_absolute_error": 0.000624023763312131,
+          "cosine_with_exact": 0.9956660381590062,
+          "anchor": [
+            0.004350354849341374,
+            0.001008250207013799
+          ]
+        },
+        "cheap_dual_probe32_scale2.2": {
+          "relative_to_exact_anchor": 0.38566648826760563,
+          "relative_to_quadrature_discrepancy": 9.594774164998114,
+          "rmse": 0.0014610597632130446,
+          "mean_absolute_error": 0.0010843080954522175,
+          "cosine_with_exact": 0.9935051758530735,
+          "anchor": [
+            0.0032455668514744726,
+            0.0008240308734270705
+          ]
+        },
+        "sample_quadrature_anchor": {
+          "relative_to_exact_anchor": 0.04019547324777305,
+          "relative_to_quadrature_discrepancy": 1.0,
+          "rmse": 0.0001522766183015556,
+          "mean_absolute_error": 0.00011665632673918229,
+          "cosine_with_exact": 0.9999637599921545,
+          "anchor": [
+            0.005523676986213703,
+            0.0007002121637835011
+          ]
+        }
+      },
+      "exact_arbitrary_anchor": [
+        0.005309145892996746,
+        0.0007189937240449093
+      ],
+      "oracle_connected_anchor": [
+        0.005530980782066367,
+        0.0007081943211902302
+      ],
+      "sample_quadrature_anchor": [
+        0.005523676986213703,
+        0.0007002121637835011
+      ],
+      "cheap_q": [
+        0.5082005437639695,
+        0.11778195600115743
+      ],
+      "cheap_probe32_q": [
+        0.37914121855860883,
+        0.09626178839579867
+      ],
+      "sample_mean_relative_error": 0.000528402867872241,
+      "seconds": 2.841989250155166
+    },
+    {
+      "index": 161,
+      "name": "dylan-brown",
+      "baseline_mse": 2.24091425569048e-07,
+      "method_mses": {
+        "oracle_arbitrary_center": 1.4754283298380033e-07,
+        "oracle_connected_approx": 2.3430089316553934e-07,
+        "cheap_dual_scale1.7": 2.9939485300559903e-05,
+        "cheap_dual_probe32_scale1.7": 2.7828594671252496e-06,
+        "cheap_dual_scale1.8": 5.450258540223021e-05,
+        "cheap_dual_probe32_scale1.8": 5.865658851933601e-06,
+        "cheap_dual_scale1.9": 9.178210526802722e-05,
+        "cheap_dual_probe32_scale1.9": 1.174546749274069e-05,
+        "cheap_dual_scale1.95": 0.0001162966591645728,
+        "cheap_dual_probe32_scale1.95": 1.6109761931834555e-05,
+        "cheap_dual_scale2": 0.00014536396501803255,
+        "cheap_dual_probe32_scale2": 2.165038570198018e-05,
+        "cheap_dual_scale2.1": 0.00021919389678136316,
+        "cheap_dual_probe32_scale2.1": 3.701764776415996e-05,
+        "cheap_dual_scale2.2": 0.0003175414603226981,
+        "cheap_dual_probe32_scale2.2": 5.948452691505564e-05
+      },
+      "fit_diagnostics": {
+        "oracle_arbitrary_center": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.36784012431152696,
+          "condition_ridge_0.1": 1.6202035511244817,
+          "feature_mean_norm": 0.0006199043394428473
+        },
+        "oracle_connected_approx": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.3678398648188895,
+          "condition_ridge_0.1": 1.6201925422724321,
+          "feature_mean_norm": 4.974242260436561e-05
+        },
+        "cheap_dual_scale1.7": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.36784133915427414,
+          "condition_ridge_0.1": 1.6185878642611695,
+          "feature_mean_norm": 0.0014736878809000742
+        },
+        "cheap_dual_probe32_scale1.7": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.3678447671846888,
+          "condition_ridge_0.1": 1.6202501566103114,
+          "feature_mean_norm": 0.002686198925359783
+        },
+        "cheap_dual_scale1.8": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.36784065551449413,
+          "condition_ridge_0.1": 1.617605111586501,
+          "feature_mean_norm": 0.0010797559985340167
+        },
+        "cheap_dual_probe32_scale1.8": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.3678431521677019,
+          "condition_ridge_0.1": 1.619925090997144,
+          "feature_mean_norm": 0.0021998562891963947
+        },
+        "cheap_dual_scale1.9": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.3678404623197382,
+          "condition_ridge_0.1": 1.616425041984538,
+          "feature_mean_norm": 0.0009389427822907674
+        },
+        "cheap_dual_probe32_scale1.9": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.36784190169480885,
+          "condition_ridge_0.1": 1.619460806979237,
+          "feature_mean_norm": 0.001731894701683558
+        },
+        "cheap_dual_scale1.95": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.3678405496395625,
+          "condition_ridge_0.1": 1.6157616520101403,
+          "feature_mean_norm": 0.0010050336420659878
+        },
+        "cheap_dual_probe32_scale1.95": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.3678414131636016,
+          "condition_ridge_0.1": 1.6191766490808162,
+          "feature_mean_norm": 0.0015101823538248608
+        },
+        "cheap_dual_scale2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.3678407595707792,
+          "condition_ridge_0.1": 1.6150497350648545,
+          "feature_mean_norm": 0.0011484674860220423
+        },
+        "cheap_dual_probe32_scale2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.3678410157697273,
+          "condition_ridge_0.1": 1.618857933973281,
+          "feature_mean_norm": 0.0013022823658521874
+        },
+        "cheap_dual_scale2.1": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.367841547266428,
+          "condition_ridge_0.1": 1.6134815542729055,
+          "feature_mean_norm": 0.001574155351441643
+        },
+        "cheap_dual_probe32_scale2.1": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.36784049439509126,
+          "condition_ridge_0.1": 1.6181172461381819,
+          "feature_mean_norm": 0.0009637468553463686
+        },
+        "cheap_dual_scale2.2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.367842825403534,
+          "condition_ridge_0.1": 1.6117231365218707,
+          "feature_mean_norm": 0.0020877203022631316
+        },
+        "cheap_dual_probe32_scale2.2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.3678403375724508,
+          "condition_ridge_0.1": 1.617239659949773,
+          "feature_mean_norm": 0.000835502950358906
+        }
+      },
+      "anchor_diagnostics": {
+        "oracle_arbitrary_center": {
+          "relative_to_exact_anchor": 0.0,
+          "relative_to_quadrature_discrepancy": 0.0,
+          "rmse": 0.0,
+          "mean_absolute_error": 0.0,
+          "cosine_with_exact": 1.0000000000000002,
+          "anchor": [
+            0.01070471292276348,
+            0.001225648305862653
+          ]
+        },
+        "oracle_connected_approx": {
+          "relative_to_exact_anchor": 0.06214924855543746,
+          "relative_to_quadrature_discrepancy": 1.0802254265858664,
+          "rmse": 0.0004735044602410713,
+          "mean_absolute_error": 0.0003480716776168483,
+          "cosine_with_exact": 0.9999594535894154,
+          "anchor": [
+            0.011373802638984363,
+            0.001198594666849839
+          ]
+        },
+        "cheap_dual_scale1.7": {
+          "relative_to_exact_anchor": 0.08904332655761434,
+          "relative_to_quadrature_discrepancy": 1.5476754369688697,
+          "rmse": 0.0006784058256492601,
+          "mean_absolute_error": 0.0006783865662383727,
+          "cosine_with_exact": 0.9972582532707,
+          "anchor": [
+            0.010031438207673583,
+            0.0019091467232495018
+          ]
+        },
+        "cheap_dual_probe32_scale1.7": {
+          "relative_to_exact_anchor": 0.19213267600574224,
+          "relative_to_quadrature_discrepancy": 3.3394869081040346,
+          "rmse": 0.0014638258894734797,
+          "mean_absolute_error": 0.001192073826147653,
+          "cosine_with_exact": 0.9978831625792344,
+          "anchor": [
+            0.008663082607789734,
+            0.0015681656431842132
+          ]
+        },
+        "cheap_dual_scale1.8": {
+          "relative_to_exact_anchor": 0.07426111388454193,
+          "relative_to_quadrature_discrepancy": 1.2907435775850995,
+          "rmse": 0.0005657826838474998,
+          "mean_absolute_error": 0.0004394956402258988,
+          "cosine_with_exact": 0.9972582532707,
+          "anchor": [
+            0.010621522808124973,
+            0.0020214494716759433
+          ]
+        },
+        "cheap_dual_probe32_scale1.8": {
+          "relative_to_exact_anchor": 0.1478035356901128,
+          "relative_to_quadrature_discrepancy": 2.5689954601676774,
+          "rmse": 0.001126089776069315,
+          "mean_absolute_error": 0.000983399797776902,
+          "cosine_with_exact": 0.9978831625792345,
+          "anchor": [
+            0.009172675702365601,
+            0.0016604106810185787
+          ]
+        },
+        "cheap_dual_scale1.9": {
+          "relative_to_exact_anchor": 0.09652261801599349,
+          "relative_to_quadrature_discrepancy": 1.6776741255126395,
+          "rmse": 0.000735389263861332,
+          "mean_absolute_error": 0.0007074992000263049,
+          "cosine_with_exact": 0.9972582532707001,
+          "anchor": [
+            0.011211607408576359,
+            0.0021337522201023843
+          ]
+        },
+        "cheap_dual_probe32_scale1.9": {
+          "relative_to_exact_anchor": 0.10675737136528236,
+          "relative_to_quadrature_discrepancy": 1.855565911169144,
+          "rmse": 0.0008133660933966514,
+          "mean_absolute_error": 0.0007747257694061522,
+          "cosine_with_exact": 0.9978831625792344,
+          "anchor": [
+            0.009682268796941467,
+            0.001752655718852944
+          ]
+        },
+        "cheap_dual_scale1.95": {
+          "relative_to_exact_anchor": 0.1163981574647606,
+          "relative_to_quadrature_discrepancy": 2.0231338628177054,
+          "rmse": 0.0008868175883774973,
+          "mean_absolute_error": 0.0008830960372457621,
+          "cosine_with_exact": 0.9972582532707001,
+          "anchor": [
+            0.011506649708802053,
+            0.002189903594315605
+          ]
+        },
+        "cheap_dual_probe32_scale1.95": {
+          "relative_to_exact_anchor": 0.08891223836933958,
+          "relative_to_quadrature_discrepancy": 1.5453969734734798,
+          "rmse": 0.0006774070872368776,
+          "mean_absolute_error": 0.0006703887552207767,
+          "cosine_with_exact": 0.9978831625792344,
+          "anchor": [
+            0.0099370653442294,
+            0.0017987782377701267
+          ]
+        },
+        "cheap_dual_scale2": {
+          "relative_to_exact_anchor": 0.13904827314393878,
+          "relative_to_quadrature_discrepancy": 2.4168189264421605,
+          "rmse": 0.0010593849330896444,
+          "mean_absolute_error": 0.0010586928744652194,
+          "cosine_with_exact": 0.9972582532707,
+          "anchor": [
+            0.011801692009027746,
+            0.0022460549685288256
+          ]
+        },
+        "cheap_dual_probe32_scale2": {
+          "relative_to_exact_anchor": 0.07462384822633157,
+          "relative_to_quadrature_discrepancy": 1.2970483176777738,
+          "rmse": 0.0005685462945541811,
+          "mean_absolute_error": 0.0005660517410354014,
+          "cosine_with_exact": 0.9978831625792345,
+          "anchor": [
+            0.010191861891517334,
+            0.0018449007566873096
+          ]
+        },
+        "cheap_dual_scale2.1": {
+          "relative_to_exact_anchor": 0.1885951549280176,
+          "relative_to_quadrature_discrepancy": 3.2780007227669268,
+          "rmse": 0.0014368741234033673,
+          "mean_absolute_error": 0.001409886548904134,
+          "cosine_with_exact": 0.9972582532706997,
+          "anchor": [
+            0.012391776609479134,
+            0.002358357716955267
+          ]
+        },
+        "cheap_dual_probe32_scale2.1": {
+          "relative_to_exact_anchor": 0.0660350839504558,
+          "relative_to_quadrature_discrepancy": 1.1477657154033876,
+          "rmse": 0.0005031099733256352,
+          "mean_absolute_error": 0.0003573777126646506,
+          "cosine_with_exact": 0.9978831625792344,
+          "anchor": [
+            0.010701454986093201,
+            0.0019371457945216752
+          ]
+        },
+        "cheap_dual_scale2.2": {
+          "relative_to_exact_anchor": 0.2408687326796403,
+          "relative_to_quadrature_discrepancy": 4.18657563136855,
+          "rmse": 0.0018351375424063032,
+          "mean_absolute_error": 0.0017610802233430484,
+          "cosine_with_exact": 0.9972582532706998,
+          "anchor": [
+            0.012981861209930522,
+            0.0024706604653817084
+          ]
+        },
+        "cheap_dual_probe32_scale2.2": {
+          "relative_to_exact_anchor": 0.08816392179081162,
+          "relative_to_quadrature_discrepancy": 1.5323903705933084,
+          "rmse": 0.0006717057916324864,
+          "mean_absolute_error": 0.0006550388421994878,
+          "cosine_with_exact": 0.9978831625792343,
+          "anchor": [
+            0.011211048080669068,
+            0.0020293908323560407
+          ]
+        },
+        "sample_quadrature_anchor": {
+          "relative_to_exact_anchor": 0.05753359162435643,
+          "relative_to_quadrature_discrepancy": 1.0,
+          "rmse": 0.0004383385621070018,
+          "mean_absolute_error": 0.0003217533156036282,
+          "cosine_with_exact": 0.9999656576661444,
+          "anchor": [
+            0.011324149793385026,
+            0.001201578545276943
+          ]
+        }
+      },
+      "exact_arbitrary_anchor": [
+        0.01070471292276348,
+        0.001225648305862653
+      ],
+      "oracle_connected_anchor": [
+        0.011373802638984363,
+        0.001198594666849839
+      ],
+      "sample_quadrature_anchor": [
+        0.011324149793385026,
+        0.001201578545276943
+      ],
+      "cheap_q": [
+        1.5165174231600653,
+        0.2886180634559541
+      ],
+      "cheap_probe32_q": [
+        1.3096542530599775,
+        0.23706974723431928
+      ],
+      "sample_mean_relative_error": 0.0005476204159161084,
+      "seconds": 3.2365520410239697
+    },
+    {
+      "index": 162,
+      "name": "yolanda-hawkins",
+      "baseline_mse": 2.3177693298152411e-07,
+      "method_mses": {
+        "oracle_arbitrary_center": 1.7018320743626693e-07,
+        "oracle_connected_approx": 2.657148914542e-07,
+        "cheap_dual_scale1.7": 0.0002493812280580253,
+        "cheap_dual_probe32_scale1.7": 9.50930117473337e-06,
+        "cheap_dual_scale1.8": 0.0004475242791733453,
+        "cheap_dual_probe32_scale1.8": 2.890966940123838e-05,
+        "cheap_dual_scale1.9": 0.0007386871591825485,
+        "cheap_dual_probe32_scale1.9": 6.687438480159496e-05,
+        "cheap_dual_scale1.95": 0.0009259387359523334,
+        "cheap_dual_probe32_scale1.95": 9.524019203288745e-05,
+        "cheap_dual_scale2": 0.001144694772825679,
+        "cheap_dual_probe32_scale2": 0.0001312884234630841,
+        "cheap_dual_scale2.1": 0.00168805093175386,
+        "cheap_dual_probe32_scale2.1": 0.00023107566583833945,
+        "cheap_dual_scale2.2": 0.0023914253170839086,
+        "cheap_dual_probe32_scale2.2": 0.0003760521297758876
+      },
+      "fit_diagnostics": {
+        "oracle_arbitrary_center": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.22884245640930734,
+          "condition_ridge_0.1": 1.2293263302705373,
+          "feature_mean_norm": 0.0003786909092456986
+        },
+        "oracle_connected_approx": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.22884231242230732,
+          "condition_ridge_0.1": 1.2293254031766188,
+          "feature_mean_norm": 0.00010772878484462364
+        },
+        "cheap_dual_scale1.7": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.22884765809632646,
+          "condition_ridge_0.1": 1.228771901806558,
+          "feature_mean_norm": 0.002214707262721221
+        },
+        "cheap_dual_probe32_scale1.7": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.22885066813290939,
+          "condition_ridge_0.1": 1.229965012477219,
+          "feature_mean_norm": 0.0027677257218394736
+        },
+        "cheap_dual_scale1.8": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.22884689163333732,
+          "condition_ridge_0.1": 1.228052708840539,
+          "feature_mean_norm": 0.002050199110855355
+        },
+        "cheap_dual_probe32_scale1.8": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.22884977704341122,
+          "condition_ridge_0.1": 1.229835853740358,
+          "feature_mean_norm": 0.002616218941782321
+        },
+        "cheap_dual_scale1.9": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.2288462249943624,
+          "condition_ridge_0.1": 1.2271757441230513,
+          "feature_mean_norm": 0.0018955432609075143
+        },
+        "cheap_dual_probe32_scale1.9": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.22884895225379928,
+          "condition_ridge_0.1": 1.2295973797702828,
+          "feature_mean_norm": 0.0024677097148357533
+        },
+        "cheap_dual_scale1.95": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.22884592910915802,
+          "condition_ridge_0.1": 1.226679400895635,
+          "feature_mean_norm": 0.0018227000797822511
+        },
+        "cheap_dual_probe32_scale1.95": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.22884856472167692,
+          "condition_ridge_0.1": 1.2294374959659866,
+          "feature_mean_norm": 0.0023947539030924046
+        },
+        "cheap_dual_scale2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.2288456581802741,
+          "condition_ridge_0.1": 1.2261452391419358,
+          "feature_mean_norm": 0.0017533487499660101
+        },
+        "cheap_dual_probe32_scale2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.2288481937647904,
+          "condition_ridge_0.1": 1.2292507317816477,
+          "feature_mean_norm": 0.002322773068424047
+        },
+        "cheap_dual_scale2.1": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.22884519119181418,
+          "condition_ridge_0.1": 1.224965892053578,
+          "feature_mean_norm": 0.001626886335690975
+        },
+        "cheap_dual_probe32_scale2.1": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.22884750157704384,
+          "condition_ridge_0.1": 1.2287973099123213,
+          "feature_mean_norm": 0.0021821209919352337
+        },
+        "cheap_dual_scale2.2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.22884482402959375,
+          "condition_ridge_0.1": 1.2236428176919554,
+          "feature_mean_norm": 0.0015200875582428444
+        },
+        "cheap_dual_probe32_scale2.2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.2288468756911612,
+          "condition_ridge_0.1": 1.2282387621083355,
+          "feature_mean_norm": 0.0020466370281123124
+        }
+      },
+      "anchor_diagnostics": {
+        "oracle_arbitrary_center": {
+          "relative_to_exact_anchor": 0.0,
+          "relative_to_quadrature_discrepancy": 0.0,
+          "rmse": 0.0,
+          "mean_absolute_error": 0.0,
+          "cosine_with_exact": 1.0,
+          "anchor": [
+            0.005863050214546501,
+            0.0008624792976099975
+          ]
+        },
+        "oracle_connected_approx": {
+          "relative_to_exact_anchor": 0.08201869136215997,
+          "relative_to_quadrature_discrepancy": 1.2835134927369194,
+          "rmse": 0.00034369270987472377,
+          "mean_absolute_error": 0.00024466617354627614,
+          "cosine_with_exact": 0.9999077098438295,
+          "anchor": [
+            0.005377006448122894,
+            0.0008657678782789427
+          ]
+        },
+        "cheap_dual_scale1.7": {
+          "relative_to_exact_anchor": 0.4356016842281141,
+          "relative_to_quadrature_discrepancy": 6.816746644944122,
+          "rmse": 0.0018253537186698604,
+          "mean_absolute_error": 0.0015404064542626718,
+          "cosine_with_exact": 0.9672873390655151,
+          "anchor": [
+            0.0033433255515652373,
+            0.0014235675431540774
+          ]
+        },
+        "cheap_dual_probe32_scale1.7": {
+          "relative_to_exact_anchor": 0.5305489439735791,
+          "relative_to_quadrature_discrepancy": 8.302579775877557,
+          "rmse": 0.002223222551433919,
+          "mean_absolute_error": 0.0017065109891605645,
+          "cosine_with_exact": 0.9687729682632146,
+          "anchor": [
+            0.0027315694863814283,
+            0.0011440205477660538
+          ]
+        },
+        "cheap_dual_scale1.8": {
+          "relative_to_exact_anchor": 0.4068228898344803,
+          "relative_to_quadrature_discrepancy": 6.36638624177909,
+          "rmse": 0.0017047585022892337,
+          "mean_absolute_error": 0.0014839429834270492,
+          "cosine_with_exact": 0.967287339065515,
+          "anchor": [
+            0.00353999176048084,
+            0.001507306810398435
+          ]
+        },
+        "cheap_dual_probe32_scale1.8": {
+          "relative_to_exact_anchor": 0.5047478790513288,
+          "relative_to_quadrature_discrepancy": 7.898817969822117,
+          "rmse": 0.0021151052701958396,
+          "mean_absolute_error": 0.0016598183733189358,
+          "cosine_with_exact": 0.9687729682632147,
+          "anchor": [
+            0.0028922500444038654,
+            0.0012113158741052334
+          ]
+        },
+        "cheap_dual_scale1.9": {
+          "relative_to_exact_anchor": 0.37929261217234317,
+          "relative_to_quadrature_discrepancy": 5.935563922484575,
+          "rmse": 0.0015893950945566784,
+          "mean_absolute_error": 0.0014274795125914271,
+          "cosine_with_exact": 0.967287339065515,
+          "anchor": [
+            0.0037366579693964416,
+            0.0015910460776427924
+          ]
+        },
+        "cheap_dual_probe32_scale1.9": {
+          "relative_to_exact_anchor": 0.47936091033531725,
+          "relative_to_quadrature_discrepancy": 7.501536370402158,
+          "rmse": 0.002008723225705718,
+          "mean_absolute_error": 0.0016131257574773072,
+          "cosine_with_exact": 0.9687729682632147,
+          "anchor": [
+            0.003052930602426302,
+            0.001278611200444413
+          ]
+        },
+        "cheap_dual_scale1.95": {
+          "relative_to_exact_anchor": 0.3660841996218433,
+          "relative_to_quadrature_discrepancy": 5.728864992708384,
+          "rmse": 0.0015340463072591646,
+          "mean_absolute_error": 0.001399247777173616,
+          "cosine_with_exact": 0.9672873390655152,
+          "anchor": [
+            0.003834991073854243,
+            0.0016329157112649712
+          ]
+        },
+        "cheap_dual_probe32_scale1.95": {
+          "relative_to_exact_anchor": 0.4668438667194917,
+          "relative_to_quadrature_discrepancy": 7.305656698302187,
+          "rmse": 0.001956271564157653,
+          "mean_absolute_error": 0.0015897794495564929,
+          "cosine_with_exact": 0.9687729682632146,
+          "anchor": [
+            0.0031332708814375207,
+            0.0013122588636140028
+          ]
+        },
+        "cheap_dual_scale2": {
+          "relative_to_exact_anchor": 0.3533028349279058,
+          "relative_to_quadrature_discrepancy": 5.5288489504159966,
+          "rmse": 0.0014804870295555075,
+          "mean_absolute_error": 0.0013710160417558046,
+          "cosine_with_exact": 0.9672873390655152,
+          "anchor": [
+            0.003933324178312044,
+            0.00167478534488715
+          ]
+        },
+        "cheap_dual_probe32_scale2": {
+          "relative_to_exact_anchor": 0.45445744003542016,
+          "relative_to_quadrature_discrepancy": 7.111821055331453,
+          "rmse": 0.0019043672423255057,
+          "mean_absolute_error": 0.0015664331416356786,
+          "cosine_with_exact": 0.9687729682632147,
+          "anchor": [
+            0.0032136111604487393,
+            0.0013459065267835927
+          ]
+        },
+        "cheap_dual_scale2.1": {
+          "relative_to_exact_anchor": 0.3292185994928057,
+          "relative_to_quadrature_discrepancy": 5.151953871625879,
+          "rmse": 0.0013795639837902425,
+          "mean_absolute_error": 0.001314552570920182,
+          "cosine_with_exact": 0.9672873390655152,
+          "anchor": [
+            0.004129990387227647,
+            0.0017585246121315074
+          ]
+        },
+        "cheap_dual_probe32_scale2.1": {
+          "relative_to_exact_anchor": 0.43012145813124153,
+          "relative_to_quadrature_discrepancy": 6.7309863868643385,
+          "rmse": 0.0018023892732894346,
+          "mean_absolute_error": 0.0015197405257940497,
+          "cosine_with_exact": 0.9687729682632145,
+          "anchor": [
+            0.0033742917184711764,
+            0.0014132018531227723
+          ]
+        },
+        "cheap_dual_scale2.2": {
+          "relative_to_exact_anchor": 0.30748799147324035,
+          "relative_to_quadrature_discrepancy": 4.811890794109414,
+          "rmse": 0.0012885036238475143,
+          "mean_absolute_error": 0.0012580891000845598,
+          "cosine_with_exact": 0.9672873390655152,
+          "anchor": [
+            0.004326656596143249,
+            0.0018422638793758651
+          ]
+        },
+        "cheap_dual_probe32_scale2.2": {
+          "relative_to_exact_anchor": 0.40645491039191234,
+          "relative_to_quadrature_discrepancy": 6.360627718060391,
+          "rmse": 0.0017032165141192945,
+          "mean_absolute_error": 0.001473047909952421,
+          "cosine_with_exact": 0.9687729682632146,
+          "anchor": [
+            0.0035349722764936135,
+            0.0014804971794619521
+          ]
+        },
+        "sample_quadrature_anchor": {
+          "relative_to_exact_anchor": 0.06390169782108497,
+          "relative_to_quadrature_discrepancy": 1.0,
+          "rmse": 0.00026777490990129404,
+          "mean_absolute_error": 0.0001919555152484651,
+          "cosine_with_exact": 0.9999595816927789,
+          "anchor": [
+            0.0054843957905215185,
+            0.0008572226911380499
+          ]
+        }
+      },
+      "exact_arbitrary_anchor": [
+        0.005863050214546501,
+        0.0008624792976099975
+      ],
+      "oracle_connected_anchor": [
+        0.005377006448122894,
+        0.0008657678782789427
+      ],
+      "sample_quadrature_anchor": [
+        0.0054843957905215185,
+        0.0008572226911380499
+      ],
+      "cheap_q": [
+        0.5054321569130976,
+        0.21520991681799875
+      ],
+      "cheap_probe32_q": [
+        0.412949034117663,
+        0.17294898869169165
+      ],
+      "sample_mean_relative_error": 0.0004884368636003801,
+      "seconds": 2.583540082909167
+    },
+    {
+      "index": 163,
+      "name": "scott-matthews",
+      "baseline_mse": 2.5893801088228656e-07,
+      "method_mses": {
+        "oracle_arbitrary_center": 2.1504358606469874e-07,
+        "oracle_connected_approx": 3.123050254639836e-07,
+        "cheap_dual_scale1.7": 1.7396445701839992e-05,
+        "cheap_dual_probe32_scale1.7": 1.892574679625751e-06,
+        "cheap_dual_scale1.8": 4.138743565982077e-05,
+        "cheap_dual_probe32_scale1.8": 3.5636721143992987e-06,
+        "cheap_dual_scale1.9": 8.40052100245783e-05,
+        "cheap_dual_probe32_scale1.9": 9.58268571559114e-06,
+        "cheap_dual_scale1.95": 0.00011448748239259888,
+        "cheap_dual_probe32_scale1.95": 1.5115828762191576e-05,
+        "cheap_dual_scale2": 0.00015237781933284477,
+        "cheap_dual_probe32_scale2": 2.2888107293935464e-05,
+        "cheap_dual_scale2.1": 0.0002546168870647282,
+        "cheap_dual_probe32_scale2.1": 4.7054970950480336e-05,
+        "cheap_dual_scale2.2": 0.0003997501351842883,
+        "cheap_dual_probe32_scale2.2": 8.627219585051035e-05
+      },
+      "fit_diagnostics": {
+        "oracle_arbitrary_center": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7559956874502596,
+          "condition_ridge_0.1": 1.0247169029450618,
+          "feature_mean_norm": 0.00046252864627007936
+        },
+        "oracle_connected_approx": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7559957340768956,
+          "condition_ridge_0.1": 1.0247148189649395,
+          "feature_mean_norm": 0.0005957607709246529
+        },
+        "cheap_dual_scale1.7": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7560021732370348,
+          "condition_ridge_0.1": 1.02438486275201,
+          "feature_mean_norm": 0.004452743447243693
+        },
+        "cheap_dual_probe32_scale1.7": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.756011190212593,
+          "condition_ridge_0.1": 1.0244930896942883,
+          "feature_mean_norm": 0.0068625432086408
+        },
+        "cheap_dual_scale1.8": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7560002839113398,
+          "condition_ridge_0.1": 1.02435016482131,
+          "feature_mean_norm": 0.003756806359224631
+        },
+        "cheap_dual_probe32_scale1.8": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7560086242406043,
+          "condition_ridge_0.1": 1.0244211621254329,
+          "feature_mean_norm": 0.006271754005877362
+        },
+        "cheap_dual_scale1.9": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7559987833080144,
+          "condition_ridge_0.1": 1.0243306088137558,
+          "feature_mean_norm": 0.0030944744891496616
+        },
+        "cheap_dual_probe32_scale1.9": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7560063128628707,
+          "condition_ridge_0.1": 1.0243596909367605,
+          "feature_mean_norm": 0.005687286083273859
+        },
+        "cheap_dual_scale1.95": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.755998178777987,
+          "condition_ridge_0.1": 1.024326524142531,
+          "feature_mean_norm": 0.0027834649691026603
+        },
+        "cheap_dual_probe32_scale1.95": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7560052526475891,
+          "condition_ridge_0.1": 1.0243328451438407,
+          "feature_mean_norm": 0.005398065158740815
+        },
+        "cheap_dual_scale2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7559976714293732,
+          "condition_ridge_0.1": 1.024326251842843,
+          "feature_mean_norm": 0.002492681134207144
+        },
+        "cheap_dual_probe32_scale2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.756004256081727,
+          "condition_ridge_0.1": 1.0243085801335348,
+          "feature_mean_norm": 0.00511130837836912
+        },
+        "cheap_dual_scale2.1": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7559969482771314,
+          "condition_ridge_0.1": 1.0243372205743428,
+          "feature_mean_norm": 0.002006652595549544
+        },
+        "cheap_dual_probe32_scale2.1": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7560024538992516,
+          "condition_ridge_0.1": 1.0242677683158943,
+          "feature_mean_norm": 0.00454704842151155
+        },
+        "cheap_dual_scale2.2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7559966138524046,
+          "condition_ridge_0.1": 1.0243637091088815,
+          "feature_mean_norm": 0.0017364787851192728
+        },
+        "cheap_dual_probe32_scale2.2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7560009063172648,
+          "condition_ridge_0.1": 1.0242372292567303,
+          "feature_mean_norm": 0.003999468842156101
+        }
+      },
+      "anchor_diagnostics": {
+        "oracle_arbitrary_center": {
+          "relative_to_exact_anchor": 0.0,
+          "relative_to_quadrature_discrepancy": 0.0,
+          "rmse": 0.0,
+          "mean_absolute_error": 0.0,
+          "cosine_with_exact": 1.0000000000000002,
+          "anchor": [
+            0.016630429003035158,
+            0.0021373935104094166
+          ]
+        },
+        "oracle_connected_approx": {
+          "relative_to_exact_anchor": 0.06308133905586405,
+          "relative_to_quadrature_discrepancy": 2.286774258315702,
+          "rmse": 0.0007479058539436876,
+          "mean_absolute_error": 0.0005306983194303201,
+          "cosine_with_exact": 0.9999729067143664,
+          "anchor": [
+            0.017688121117606436,
+            0.0021410980346987783
+          ]
+        },
+        "cheap_dual_scale1.7": {
+          "relative_to_exact_anchor": 0.23866190236099688,
+          "relative_to_quadrature_discrepancy": 8.651780430286358,
+          "rmse": 0.002829626583085878,
+          "mean_absolute_error": 0.0023495294176828626,
+          "cosine_with_exact": 0.9952643973954327,
+          "anchor": [
+            0.01270403620663203,
+            0.002910059549372014
+          ]
+        },
+        "cheap_dual_probe32_scale1.7": {
+          "relative_to_exact_anchor": 0.38183332157387556,
+          "relative_to_quadrature_discrepancy": 13.84191622769857,
+          "rmse": 0.00452709756498609,
+          "mean_absolute_error": 0.003390807273875691,
+          "cosine_with_exact": 0.9934777946880858,
+          "anchor": [
+            0.01024011537071735,
+            0.002528694425842991
+          ]
+        },
+        "cheap_dual_scale1.8": {
+          "relative_to_exact_anchor": 0.19778163462077442,
+          "relative_to_quadrature_discrepancy": 7.169821655463802,
+          "rmse": 0.0023449413812289366,
+          "mean_absolute_error": 0.002061471280704627,
+          "cosine_with_exact": 0.9952643973954328,
+          "anchor": [
+            0.013451332454080972,
+            0.0030812395228644856
+          ]
+        },
+        "cheap_dual_probe32_scale1.8": {
+          "relative_to_exact_anchor": 0.34669399479925533,
+          "relative_to_quadrature_discrepancy": 12.568073453822397,
+          "rmse": 0.004110478187659547,
+          "mean_absolute_error": 0.003164000775497033,
+          "cosine_with_exact": 0.9934777946880858,
+          "anchor": [
+            0.010842475098406607,
+            0.0026774411567749316
+          ]
+        },
+        "cheap_dual_scale1.9": {
+          "relative_to_exact_anchor": 0.15955210185618798,
+          "relative_to_quadrature_discrepancy": 5.783955205227658,
+          "rmse": 0.0018916838604454062,
+          "mean_absolute_error": 0.0017734131437263912,
+          "cosine_with_exact": 0.9952643973954326,
+          "anchor": [
+            0.014198628701529915,
+            0.0032524194963569567
+          ]
+        },
+        "cheap_dual_probe32_scale1.9": {
+          "relative_to_exact_anchor": 0.31198614529820545,
+          "relative_to_quadrature_discrepancy": 11.309872249022225,
+          "rmse": 0.0036989744972156357,
+          "mean_absolute_error": 0.0029371942771183757,
+          "cosine_with_exact": 0.9934777946880858,
+          "anchor": [
+            0.011444834826095861,
+            0.002826187887706872
+          ]
+        },
+        "cheap_dual_scale1.95": {
+          "relative_to_exact_anchor": 0.14210729180972986,
+          "relative_to_quadrature_discrepancy": 5.151559901758919,
+          "rmse": 0.0016848544597072997,
+          "mean_absolute_error": 0.0016293840752372737,
+          "cosine_with_exact": 0.9952643973954328,
+          "anchor": [
+            0.014572276825254386,
+            0.0033380094831031923
+          ]
+        },
+        "cheap_dual_probe32_scale1.95": {
+          "relative_to_exact_anchor": 0.29484172003047865,
+          "relative_to_quadrature_discrepancy": 10.688366254339153,
+          "rmse": 0.003495706522690276,
+          "mean_absolute_error": 0.002823791027929047,
+          "cosine_with_exact": 0.9934777946880858,
+          "anchor": [
+            0.01174601468994049,
+            0.0029005612531728424
+          ]
+        },
+        "cheap_dual_scale2": {
+          "relative_to_exact_anchor": 0.12640173368651086,
+          "relative_to_quadrature_discrepancy": 4.582214568159511,
+          "rmse": 0.0014986460019349313,
+          "mean_absolute_error": 0.0014853550067481555,
+          "cosine_with_exact": 0.9952643973954327,
+          "anchor": [
+            0.014945924948978858,
+            0.0034235994698494283
+          ]
+        },
+        "cheap_dual_probe32_scale2": {
+          "relative_to_exact_anchor": 0.2778715025846285,
+          "relative_to_quadrature_discrepancy": 10.073175502303545,
+          "rmse": 0.003294503993377944,
+          "mean_absolute_error": 0.0027103877787397184,
+          "cosine_with_exact": 0.993477794688086,
+          "anchor": [
+            0.012047194553785117,
+            0.0029749346186388127
+          ]
+        },
+        "cheap_dual_scale2.1": {
+          "relative_to_exact_anchor": 0.10333997392079321,
+          "relative_to_quadrature_discrepancy": 3.7461980952529887,
+          "rmse": 0.001225220843414618,
+          "mean_absolute_error": 0.0011972968697699198,
+          "cosine_with_exact": 0.9952643973954328,
+          "anchor": [
+            0.0156932211964278,
+            0.0035947794433419
+          ]
+        },
+        "cheap_dual_probe32_scale2.1": {
+          "relative_to_exact_anchor": 0.2445984000390944,
+          "relative_to_quadrature_discrepancy": 8.866985596790546,
+          "rmse": 0.0029000109698446995,
+          "mean_absolute_error": 0.0024835812803610602,
+          "cosine_with_exact": 0.9934777946880857,
+          "anchor": [
+            0.012649554281474374,
+            0.0031236813495707535
+          ]
+        },
+        "cheap_dual_scale2.2": {
+          "relative_to_exact_anchor": 0.0977861390980909,
+          "relative_to_quadrature_discrepancy": 3.5448649165732258,
+          "rmse": 0.0011593733893512724,
+          "mean_absolute_error": 0.0009092387327916832,
+          "cosine_with_exact": 0.9952643973954326,
+          "anchor": [
+            0.016440517443876746,
+            0.0037659594168343714
+          ]
+        },
+        "cheap_dual_probe32_scale2.2": {
+          "relative_to_exact_anchor": 0.2125623929983145,
+          "relative_to_quadrature_discrepancy": 7.705641888230417,
+          "rmse": 0.002520185215328584,
+          "mean_absolute_error": 0.002256774781982403,
+          "cosine_with_exact": 0.9934777946880858,
+          "anchor": [
+            0.01325191400916363,
+            0.0032724280805026943
+          ]
+        },
+        "sample_quadrature_anchor": {
+          "relative_to_exact_anchor": 0.027585293487747194,
+          "relative_to_quadrature_discrepancy": 1.0,
+          "rmse": 0.00032705714227103,
+          "mean_absolute_error": 0.00024064422158844197,
+          "cosine_with_exact": 0.9999973167997322,
+          "anchor": [
+            0.017092560770383142,
+            0.0021565501862383157
+          ]
+        }
+      },
+      "exact_arbitrary_anchor": [
+        0.016630429003035158,
+        0.0021373935104094166
+      ],
+      "oracle_connected_anchor": [
+        0.017688121117606436,
+        0.0021410980346987783
+      ],
+      "sample_quadrature_anchor": [
+        0.017092560770383142,
+        0.0021565501862383157
+      ],
+      "cheap_q": [
+        1.9205513559437832,
+        0.4399325318756515
+      ],
+      "cheap_probe32_q": [
+        1.5480645001613875,
+        0.38227909849508745
+      ],
+      "sample_mean_relative_error": 0.0003806670682608666,
+      "seconds": 2.2583570829592645
+    },
+    {
+      "index": 164,
+      "name": "benjamin-walsh",
+      "baseline_mse": 3.457466003272283e-07,
+      "method_mses": {
+        "oracle_arbitrary_center": 1.2204458090786367e-07,
+        "oracle_connected_approx": 3.0760124214904453e-07,
+        "cheap_dual_scale1.7": 1.068685506603706e-05,
+        "cheap_dual_probe32_scale1.7": 1.398768911499004e-06,
+        "cheap_dual_scale1.8": 2.690743811194498e-05,
+        "cheap_dual_probe32_scale1.8": 1.3760991966364528e-06,
+        "cheap_dual_scale1.9": 5.627104238767223e-05,
+        "cheap_dual_probe32_scale1.9": 3.4381287418242873e-06,
+        "cheap_dual_scale1.95": 7.739614229150906e-05,
+        "cheap_dual_probe32_scale1.95": 5.781981859610388e-06,
+        "cheap_dual_scale2": 0.0001036947674529795,
+        "cheap_dual_probe32_scale2": 9.335027572463287e-06,
+        "cheap_dual_scale2.1": 0.0001746268596418391,
+        "cheap_dual_probe32_scale2.1": 2.1214298525853567e-05,
+        "cheap_dual_scale2.2": 0.0002749429572463749,
+        "cheap_dual_probe32_scale2.2": 4.1590324912126575e-05
+      },
+      "fit_diagnostics": {
+        "oracle_arbitrary_center": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.0543851419745141,
+          "condition_ridge_0.1": 1.4494113370781143,
+          "feature_mean_norm": 0.00027953270263775314
+        },
+        "oracle_connected_approx": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.054384788292812326,
+          "condition_ridge_0.1": 1.4494213764264,
+          "feature_mean_norm": 3.4621723902019694e-05
+        },
+        "cheap_dual_scale1.7": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.05438525904339959,
+          "condition_ridge_0.1": 1.4480621023051796,
+          "feature_mean_norm": 0.00032187853467637874
+        },
+        "cheap_dual_probe32_scale1.7": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.054386857500021396,
+          "condition_ridge_0.1": 1.4498365282286911,
+          "feature_mean_norm": 0.0006718190314360249
+        },
+        "cheap_dual_scale1.8": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.05438515689371445,
+          "condition_ridge_0.1": 1.4467481330464877,
+          "feature_mean_norm": 0.00028527892246633967
+        },
+        "cheap_dual_probe32_scale1.8": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.05438621832503514,
+          "condition_ridge_0.1": 1.4495868044644005,
+          "feature_mean_norm": 0.0005588298063884621
+        },
+        "cheap_dual_scale1.9": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.05438528010329223,
+          "condition_ridge_0.1": 1.445077975910989,
+          "feature_mean_norm": 0.00032891820083110385
+        },
+        "cheap_dual_probe32_scale1.9": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.05438573438173574,
+          "condition_ridge_0.1": 1.4490771463835384,
+          "feature_mean_norm": 0.00045498553510788523
+        },
+        "cheap_dual_scale1.95": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.0543854262174355,
+          "condition_ridge_0.1": 1.4441112017861886,
+          "feature_mean_norm": 0.0003741297368210202
+        },
+        "cheap_dual_probe32_scale1.95": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.05438555062331551,
+          "condition_ridge_0.1": 1.4487253504195317,
+          "feature_mean_norm": 0.00040870106209762335
+        },
+        "cheap_dual_scale2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.05438562867060129,
+          "condition_ridge_0.1": 1.4430577615940785,
+          "feature_mean_norm": 0.00042896986932493644
+        },
+        "cheap_dual_probe32_scale2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.05438540567426713,
+          "condition_ridge_0.1": 1.4483092556737274,
+          "feature_mean_norm": 0.000368108767821678
+        },
+        "cheap_dual_scale2.1": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.054386202591308594,
+          "condition_ridge_0.1": 1.4406946501761033,
+          "feature_mean_norm": 0.0005557589058715617
+        },
+        "cheap_dual_probe32_scale2.1": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.054385232205444084,
+          "condition_ridge_0.1": 1.4472854268749213,
+          "feature_mean_norm": 0.00031267784679700136
+        },
+        "cheap_dual_scale2.2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.05438700185828001,
+          "condition_ridge_0.1": 1.437996765272182,
+          "feature_mean_norm": 0.0006947989787260121
+        },
+        "cheap_dual_probe32_scale2.2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.05438521397675206,
+          "condition_ridge_0.1": 1.4460085309817279,
+          "feature_mean_norm": 0.00030627104000963015
+        }
+      },
+      "anchor_diagnostics": {
+        "oracle_arbitrary_center": {
+          "relative_to_exact_anchor": 0.0,
+          "relative_to_quadrature_discrepancy": 0.0,
+          "rmse": 0.0,
+          "mean_absolute_error": 0.0,
+          "cosine_with_exact": 1.0,
+          "anchor": [
+            0.0030416446750841626,
+            0.000596828773515651
+          ]
+        },
+        "oracle_connected_approx": {
+          "relative_to_exact_anchor": 0.0790126669597868,
+          "relative_to_quadrature_discrepancy": 0.8761454922206425,
+          "rmse": 0.00017317845328351425,
+          "mean_absolute_error": 0.0001236179916564892,
+          "cosine_with_exact": 0.9998768963716853,
+          "anchor": [
+            0.002796744496687466,
+            0.0005944929685993691
+          ]
+        },
+        "cheap_dual_scale1.7": {
+          "relative_to_exact_anchor": 0.17931649739584254,
+          "relative_to_quadrature_discrepancy": 1.9883816977614643,
+          "rmse": 0.0003930224717390443,
+          "mean_absolute_error": 0.00036593621995726413,
+          "cosine_with_exact": 0.9929063783422826,
+          "anchor": [
+            0.0025323301226799883,
+            0.000819386661026005
+          ]
+        },
+        "cheap_dual_probe32_scale1.7": {
+          "relative_to_exact_anchor": 0.30613131566061763,
+          "relative_to_quadrature_discrepancy": 3.3945895330951434,
+          "rmse": 0.000670972766616459,
+          "mean_absolute_error": 0.0005199981516133148,
+          "cosine_with_exact": 0.992167809180191,
+          "anchor": [
+            0.00209761070439458,
+            0.0006927911060526982
+          ]
+        },
+        "cheap_dual_scale1.8": {
+          "relative_to_exact_anchor": 0.1454158189692424,
+          "relative_to_quadrature_discrepancy": 1.6124682179417797,
+          "rmse": 0.000318719612702931,
+          "mean_absolute_error": 0.0003155555299086174,
+          "cosine_with_exact": 0.9929063783422827,
+          "anchor": [
+            0.0026812907181317527,
+            0.0008675858763804758
+          ]
+        },
+        "cheap_dual_probe32_scale1.8": {
+          "relative_to_exact_anchor": 0.26840324531088194,
+          "relative_to_quadrature_discrepancy": 2.976235362314811,
+          "rmse": 0.000588281103115667,
+          "mean_absolute_error": 0.00047867992813267133,
+          "cosine_with_exact": 0.9921678091801909,
+          "anchor": [
+            0.002220999569358967,
+            0.0007335435240557981
+          ]
+        },
+        "cheap_dual_scale1.9": {
+          "relative_to_exact_anchor": 0.12344926042304462,
+          "relative_to_quadrature_discrepancy": 1.3688882706955088,
+          "rmse": 0.0002705737295253843,
+          "mean_absolute_error": 0.0002651748398599711,
+          "cosine_with_exact": 0.9929063783422828,
+          "anchor": [
+            0.002830251313583516,
+            0.0009157850917349467
+          ]
+        },
+        "cheap_dual_probe32_scale1.9": {
+          "relative_to_exact_anchor": 0.23211891505277352,
+          "relative_to_quadrature_discrepancy": 2.5738903508489104,
+          "rmse": 0.0005087538015536847,
+          "mean_absolute_error": 0.0004373617046520278,
+          "cosine_with_exact": 0.992167809180191,
+          "anchor": [
+            0.002344388434323354,
+            0.0007742959420588979
+          ]
+        },
+        "cheap_dual_scale1.95": {
+          "relative_to_exact_anchor": 0.1191644940486336,
+          "relative_to_quadrature_discrepancy": 1.3213759047849971,
+          "rmse": 0.00026118246048013915,
+          "mean_absolute_error": 0.00023998449483564772,
+          "cosine_with_exact": 0.9929063783422828,
+          "anchor": [
+            0.0029047316113093983,
+            0.0009398846994121821
+          ]
+        },
+        "cheap_dual_probe32_scale1.95": {
+          "relative_to_exact_anchor": 0.2147481045403303,
+          "relative_to_quadrature_discrepancy": 2.381271142913025,
+          "rmse": 0.00047068079107858,
+          "mean_absolute_error": 0.0004167025929117058,
+          "cosine_with_exact": 0.9921678091801909,
+          "anchor": [
+            0.002406082866805548,
+            0.0007946721510604479
+          ]
+        },
+        "cheap_dual_scale2": {
+          "relative_to_exact_anchor": 0.12015109119694546,
+          "relative_to_quadrature_discrepancy": 1.3323159562652378,
+          "rmse": 0.0002633448652531046,
+          "mean_absolute_error": 0.00021479414981132435,
+          "cosine_with_exact": 0.9929063783422827,
+          "anchor": [
+            0.0029792119090352805,
+            0.0009639843070894176
+          ]
+        },
+        "cheap_dual_probe32_scale2": {
+          "relative_to_exact_anchor": 0.1980733407697519,
+          "relative_to_quadrature_discrepancy": 2.1963701685050627,
+          "rmse": 0.00043413336254884263,
+          "mean_absolute_error": 0.0003960434811713841,
+          "cosine_with_exact": 0.992167809180191,
+          "anchor": [
+            0.0024677772992877413,
+            0.0008150483600619979
+          ]
+        },
+        "cheap_dual_scale2.1": {
+          "relative_to_exact_anchor": 0.1368775177191478,
+          "relative_to_quadrature_discrepancy": 1.5177898019442586,
+          "rmse": 0.00030000552721442777,
+          "mean_absolute_error": 0.00025094128916555985,
+          "cosine_with_exact": 0.9929063783422826,
+          "anchor": [
+            0.003128172504487045,
+            0.0010121835224438885
+          ]
+        },
+        "cheap_dual_probe32_scale2.1": {
+          "relative_to_exact_anchor": 0.16763613837312727,
+          "relative_to_quadrature_discrepancy": 1.8588620359270007,
+          "rmse": 0.00036742168407825746,
+          "mean_absolute_error": 0.0003547252576907404,
+          "cosine_with_exact": 0.9921678091801911,
+          "anchor": [
+            0.0025911661642521286,
+            0.0008558007780650978
+          ]
+        },
+        "cheap_dual_scale2.2": {
+          "relative_to_exact_anchor": 0.16774155812562783,
+          "relative_to_quadrature_discrepancy": 1.8600310009106962,
+          "rmse": 0.000367652741076914,
+          "mean_absolute_error": 0.00034952119456867724,
+          "cosine_with_exact": 0.9929063783422826,
+          "anchor": [
+            0.0032771330999388087,
+            0.0010603827377983594
+          ]
+        },
+        "cheap_dual_probe32_scale2.2": {
+          "relative_to_exact_anchor": 0.14312816082158245,
+          "relative_to_quadrature_discrepancy": 1.5871011287023518,
+          "rmse": 0.00031370556729860594,
+          "mean_absolute_error": 0.0003134070342100969,
+          "cosine_with_exact": 0.992167809180191,
+          "anchor": [
+            0.0027145550292165155,
+            0.0008965531960681977
+          ]
+        },
+        "sample_quadrature_anchor": {
+          "relative_to_exact_anchor": 0.0901821303212147,
+          "relative_to_quadrature_discrepancy": 1.0,
+          "rmse": 0.00019765946959857458,
+          "mean_absolute_error": 0.00014117398070591494,
+          "cosine_with_exact": 0.9998367805863724,
+          "anchor": [
+            0.002762126294080889,
+            0.0005939991931070947
+          ]
+        }
+      },
+      "exact_arbitrary_anchor": [
+        0.0030416446750841626,
+        0.000596828773515651
+      ],
+      "oracle_connected_anchor": [
+        0.002796744496687466,
+        0.0005944929685993691
+      ],
+      "sample_quadrature_anchor": [
+        0.002762126294080889,
+        0.0005939991931070947
+      ],
+      "cheap_q": [
+        0.38282873031103354,
+        0.12387198346099015
+      ],
+      "cheap_probe32_q": [
+        0.31710938295847474,
+        0.10473371426796672
+      ],
+      "sample_mean_relative_error": 0.0009795106917000903,
+      "seconds": 2.543547166045755
+    },
+    {
+      "index": 165,
+      "name": "justin-crawford",
+      "baseline_mse": 3.0668500009183507e-07,
+      "method_mses": {
+        "oracle_arbitrary_center": 1.3670723536001538e-07,
+        "oracle_connected_approx": 3.2214331126578617e-07,
+        "cheap_dual_scale1.7": 2.704040563457465e-05,
+        "cheap_dual_probe32_scale1.7": 8.486580381209314e-07,
+        "cheap_dual_scale1.8": 5.4692396633885726e-05,
+        "cheap_dual_probe32_scale1.8": 2.940572095845841e-06,
+        "cheap_dual_scale1.9": 9.937891947569305e-05,
+        "cheap_dual_probe32_scale1.9": 7.779343589320531e-06,
+        "cheap_dual_scale1.95": 0.00012985483471093234,
+        "cheap_dual_probe32_scale1.95": 1.1742397910553472e-05,
+        "cheap_dual_scale2": 0.00016676677812250902,
+        "cheap_dual_probe32_scale2": 1.70591873509114e-05,
+        "cheap_dual_scale2.1": 0.00026316732928852843,
+        "cheap_dual_probe32_scale2.1": 3.287435261693402e-05,
+        "cheap_dual_scale2.2": 0.0003954486347617684,
+        "cheap_dual_probe32_scale2.2": 5.769888072915561e-05
+      },
+      "fit_diagnostics": {
+        "oracle_arbitrary_center": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.15603450377716718,
+          "condition_ridge_0.1": 2.3621792257622936,
+          "feature_mean_norm": 0.0006457055791278346
+        },
+        "oracle_connected_approx": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.15603383699603657,
+          "condition_ridge_0.1": 2.3622194888034347,
+          "feature_mean_norm": 2.780526467984264e-05
+        },
+        "cheap_dual_scale1.7": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.15603413061183813,
+          "condition_ridge_0.1": 2.356723660946939,
+          "feature_mean_norm": 0.00042898636999099885
+        },
+        "cheap_dual_probe32_scale1.7": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.15603475972325778,
+          "condition_ridge_0.1": 2.3618499042553034,
+          "feature_mean_norm": 0.00075939549043033
+        },
+        "cheap_dual_scale1.8": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.15603456822757927,
+          "condition_ridge_0.1": 2.353772938660936,
+          "feature_mean_norm": 0.0006761373052150485
+        },
+        "cheap_dual_probe32_scale1.8": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.156034314359018,
+          "condition_ridge_0.1": 2.3610417558285395,
+          "feature_mean_norm": 0.0005465461545116464
+        },
+        "cheap_dual_scale1.9": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.15603530597479884,
+          "condition_ridge_0.1": 2.3502077090520728,
+          "feature_mean_norm": 0.0009579243286978929
+        },
+        "cheap_dual_probe32_scale1.9": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.15603406690745977,
+          "condition_ridge_0.1": 2.35980538211697,
+          "feature_mean_norm": 0.0003798277038092446
+        },
+        "cheap_dual_scale1.95": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.15603578739645033,
+          "condition_ridge_0.1": 2.3481976154360464,
+          "feature_mean_norm": 0.0011036732223886985
+        },
+        "cheap_dual_probe32_scale1.95": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.15603401739925993,
+          "condition_ridge_0.1": 2.359027337133939,
+          "feature_mean_norm": 0.0003367034695500999
+        },
+        "cheap_dual_scale2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.15603634384923973,
+          "condition_ridge_0.1": 2.3460376368951157,
+          "feature_mean_norm": 0.0012511600208049332
+        },
+        "cheap_dual_probe32_scale2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.1560340173695247,
+          "condition_ridge_0.1": 2.3581432033505774,
+          "feature_mean_norm": 0.000336675908841351
+        },
+        "cheap_dual_scale2.1": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.1560376818449131,
+          "condition_ridge_0.1": 2.341273870446268,
+          "feature_mean_norm": 0.0015493575410316974
+        },
+        "cheap_dual_probe32_scale2.1": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.15603416574540133,
+          "condition_ridge_0.1": 2.356058402678588,
+          "feature_mean_norm": 0.00045382534972290616
+        },
+        "cheap_dual_scale2.2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.15603931995409853,
+          "condition_ridge_0.1": 2.3359289644972336,
+          "feature_mean_norm": 0.0018501192384235286
+        },
+        "cheap_dual_probe32_scale2.2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.15603451203452498,
+          "condition_ridge_0.1": 2.353554910545033,
+          "feature_mean_norm": 0.0006496840970438657
+        }
+      },
+      "anchor_diagnostics": {
+        "oracle_arbitrary_center": {
+          "relative_to_exact_anchor": 0.0,
+          "relative_to_quadrature_discrepancy": 0.0,
+          "rmse": 0.0,
+          "mean_absolute_error": 0.0,
+          "cosine_with_exact": 1.0000000000000002,
+          "anchor": [
+            0.004181772382772262,
+            0.0009509525474695682
+          ]
+        },
+        "oracle_connected_approx": {
+          "relative_to_exact_anchor": 0.15671132186261763,
+          "relative_to_quadrature_discrepancy": 1.0408179581626333,
+          "rmse": 0.0004752195710202626,
+          "mean_absolute_error": 0.00034247119221055054,
+          "cosine_with_exact": 0.9994650329817186,
+          "anchor": [
+            0.004853708479314923,
+            0.0009379462595911278
+          ]
+        },
+        "cheap_dual_scale1.7": {
+          "relative_to_exact_anchor": 0.21640543411203145,
+          "relative_to_quadrature_discrepancy": 1.4372839140827383,
+          "rmse": 0.0006562391047618689,
+          "mean_absolute_error": 0.0006115878343139274,
+          "cosine_with_exact": 0.9994277709070165,
+          "anchor": [
+            0.005031288953345304,
+            0.0013246116455243812
+          ]
+        },
+        "cheap_dual_probe32_scale1.7": {
+          "relative_to_exact_anchor": 0.04002574204805918,
+          "relative_to_quadrature_discrepancy": 0.26583600098100374,
+          "rmse": 0.00012137614398097741,
+          "mean_absolute_error": 0.00011976595299224613,
+          "cosine_with_exact": 0.9992988057161231,
+          "anchor": [
+            0.004081711374122745,
+            0.0010904234448045433
+          ]
+        },
+        "cheap_dual_scale1.8": {
+          "relative_to_exact_anchor": 0.2871082088178406,
+          "relative_to_quadrature_discrepancy": 1.9068652865776061,
+          "rmse": 0.0008706418796621537,
+          "mean_absolute_error": 0.0007985260872218594,
+          "cosine_with_exact": 0.9994277709070166,
+          "anchor": [
+            0.0053272471270714985,
+            0.0014025299776140507
+          ]
+        },
+        "cheap_dual_probe32_scale1.8": {
+          "relative_to_exact_anchor": 0.05762399965927819,
+          "relative_to_quadrature_discrepancy": 0.38271704273615137,
+          "rmse": 0.0001747420165504086,
+          "mean_absolute_error": 0.00017182655666411994,
+          "cosine_with_exact": 0.999298805716123,
+          "anchor": [
+            0.004321812043188789,
+            0.0011545660003812813
+          ]
+        },
+        "cheap_dual_scale1.9": {
+          "relative_to_exact_anchor": 0.3580730799194587,
+          "relative_to_quadrature_discrepancy": 2.37818740525651,
+          "rmse": 0.0010858394493181835,
+          "mean_absolute_error": 0.0009854643401297912,
+          "cosine_with_exact": 0.9994277709070164,
+          "anchor": [
+            0.005623205300797692,
+            0.0014804483097037202
+          ]
+        },
+        "cheap_dual_probe32_scale1.9": {
+          "relative_to_exact_anchor": 0.10842235917395568,
+          "relative_to_quadrature_discrepancy": 0.7201007377982642,
+          "rmse": 0.00032878560657424223,
+          "mean_absolute_error": 0.00032394816898551076,
+          "cosine_with_exact": 0.999298805716123,
+          "anchor": [
+            0.004561912712254833,
+            0.001218708555958019
+          ]
+        },
+        "cheap_dual_scale1.95": {
+          "relative_to_exact_anchor": 0.3936095239064456,
+          "relative_to_quadrature_discrepancy": 2.614207168419005,
+          "rmse": 0.0011936020121398167,
+          "mean_absolute_error": 0.0010789334665837573,
+          "cosine_with_exact": 0.9994277709070165,
+          "anchor": [
+            0.00577118438766079,
+            0.0015194074757485549
+          ]
+        },
+        "cheap_dual_probe32_scale1.95": {
+          "relative_to_exact_anchor": 0.1359834761307703,
+          "relative_to_quadrature_discrepancy": 0.9031513632075837,
+          "rmse": 0.00041236337250323383,
+          "mean_absolute_error": 0.0004000089751462062,
+          "cosine_with_exact": 0.9992988057161227,
+          "anchor": [
+            0.004681963046787855,
+            0.001250779833746388
+          ]
+        },
+        "cheap_dual_scale2": {
+          "relative_to_exact_anchor": 0.4291700512506341,
+          "relative_to_quadrature_discrepancy": 2.8503868842279987,
+          "rmse": 0.0013014376065876405,
+          "mean_absolute_error": 0.0011724025930377232,
+          "cosine_with_exact": 0.9994277709070163,
+          "anchor": [
+            0.005919163474523887,
+            0.0015583666417933897
+          ]
+        },
+        "cheap_dual_probe32_scale2": {
+          "relative_to_exact_anchor": 0.16403264285756983,
+          "relative_to_quadrature_discrepancy": 1.0894434325600713,
+          "rmse": 0.000497421125963261,
+          "mean_absolute_error": 0.0004760697813069017,
+          "cosine_with_exact": 0.9992988057161231,
+          "anchor": [
+            0.004802013381320877,
+            0.001282851111534757
+          ]
+        },
+        "cheap_dual_scale2.1": {
+          "relative_to_exact_anchor": 0.5003428130322082,
+          "relative_to_quadrature_discrepancy": 3.3230897350101167,
+          "rmse": 0.0015172655947646397,
+          "mean_absolute_error": 0.0013593408459456554,
+          "cosine_with_exact": 0.9994277709070165,
+          "anchor": [
+            0.006215121648250082,
+            0.0016362849738830593
+          ]
+        },
+        "cheap_dual_probe32_scale2.1": {
+          "relative_to_exact_anchor": 0.22084932691477896,
+          "relative_to_quadrature_discrepancy": 1.4667985871661806,
+          "rmse": 0.0006697149966520097,
+          "mean_absolute_error": 0.0006281913936282927,
+          "cosine_with_exact": 0.9992988057161231,
+          "anchor": [
+            0.005042114050386921,
+            0.0013469936671114948
+          ]
+        },
+        "cheap_dual_scale2.2": {
+          "relative_to_exact_anchor": 0.5715630529963787,
+          "relative_to_quadrature_discrepancy": 3.7961079181146213,
+          "rmse": 0.0017332375582543226,
+          "mean_absolute_error": 0.0015462790988535874,
+          "cosine_with_exact": 0.9994277709070164,
+          "anchor": [
+            0.0065110798219762765,
+            0.0017142033059727288
+          ]
+        },
+        "cheap_dual_probe32_scale2.2": {
+          "relative_to_exact_anchor": 0.2781340680255869,
+          "relative_to_quadrature_discrepancy": 1.8472624015745307,
+          "rmse": 0.0008434282279177767,
+          "mean_absolute_error": 0.0007803130059496836,
+          "cosine_with_exact": 0.999298805716123,
+          "anchor": [
+            0.005282214719452965,
+            0.0014111362226882328
+          ]
+        },
+        "sample_quadrature_anchor": {
+          "relative_to_exact_anchor": 0.15056554379524903,
+          "relative_to_quadrature_discrepancy": 1.0,
+          "rmse": 0.0004565827936512284,
+          "mean_absolute_error": 0.00032475406163067475,
+          "cosine_with_exact": 0.9995540865122015,
+          "anchor": [
+            0.004827466698831608,
+            0.0009471387402675645
+          ]
+        }
+      },
+      "exact_arbitrary_anchor": [
+        0.004181772382772262,
+        0.0009509525474695682
+      ],
+      "oracle_connected_anchor": [
+        0.004853708479314923,
+        0.0009379462595911278
+      ],
+      "sample_quadrature_anchor": [
+        0.004827466698831608,
+        0.0009471387402675645
+      ],
+      "cheap_q": [
+        0.7606125064763195,
+        0.20025011347045057
+      ],
+      "cheap_probe32_q": [
+        0.6170587194997327,
+        0.16484636783221626
+      ],
+      "sample_mean_relative_error": 0.0006740356677630697,
+      "seconds": 2.9729353750590235
+    },
+    {
+      "index": 166,
+      "name": "tara-harris",
+      "baseline_mse": 6.550635664715546e-07,
+      "method_mses": {
+        "oracle_arbitrary_center": 2.9452534714653907e-07,
+        "oracle_connected_approx": 5.933011189397081e-07,
+        "cheap_dual_scale1.7": 4.5772202598017466e-05,
+        "cheap_dual_probe32_scale1.7": 1.3314702499527717e-06,
+        "cheap_dual_scale1.8": 9.062221681520509e-05,
+        "cheap_dual_probe32_scale1.8": 3.987272586992577e-06,
+        "cheap_dual_scale1.9": 0.00016277917968149562,
+        "cheap_dual_probe32_scale1.9": 9.919606317175037e-06,
+        "cheap_dual_scale1.95": 0.00021192765206832885,
+        "cheap_dual_probe32_scale1.95": 1.4759266465772443e-05,
+        "cheap_dual_scale2": 0.0002714455630124852,
+        "cheap_dual_probe32_scale2": 2.1265906545301108e-05,
+        "cheap_dual_scale2.1": 0.000426966523964071,
+        "cheap_dual_probe32_scale2.1": 4.075126675836429e-05,
+        "cheap_dual_scale2.2": 0.000640718631074708,
+        "cheap_dual_probe32_scale2.2": 7.166972899472148e-05
+      },
+      "fit_diagnostics": {
+        "oracle_arbitrary_center": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7608098377894978,
+          "condition_ridge_0.1": 1.578411266767074,
+          "feature_mean_norm": 0.0020578512089469455
+        },
+        "oracle_connected_approx": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7608084550607284,
+          "condition_ridge_0.1": 1.5784191329157249,
+          "feature_mean_norm": 0.00016364846075939439
+        },
+        "cheap_dual_scale1.7": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7608089119377301,
+          "condition_ridge_0.1": 1.5769164962945459,
+          "feature_mean_norm": 0.0011904473023594561
+        },
+        "cheap_dual_probe32_scale1.7": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7608100999866493,
+          "condition_ridge_0.1": 1.578187775247615,
+          "feature_mean_norm": 0.002243363640740251
+        },
+        "cheap_dual_scale1.8": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7608099961135059,
+          "condition_ridge_0.1": 1.5764351471666371,
+          "feature_mean_norm": 0.0021717664468197235
+        },
+        "cheap_dual_probe32_scale1.8": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7608090375866857,
+          "condition_ridge_0.1": 1.5779933802012462,
+          "feature_mean_norm": 0.0013414709062012078
+        },
+        "cheap_dual_scale1.9": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7608119396404239,
+          "condition_ridge_0.1": 1.5758995108475597,
+          "feature_mean_norm": 0.0032605514690228596
+        },
+        "cheap_dual_probe32_scale1.9": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7608085882677336,
+          "condition_ridge_0.1": 1.5777658639716552,
+          "feature_mean_norm": 0.0006573894718976388
+        },
+        "cheap_dual_scale1.95": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7608132336586171,
+          "condition_ridge_0.1": 1.5756116665476916,
+          "feature_mean_norm": 0.003816964395563331
+        },
+        "cheap_dual_probe32_scale1.95": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7608085935140342,
+          "condition_ridge_0.1": 1.577639760513262,
+          "feature_mean_norm": 0.0006694226167349049
+        },
+        "cheap_dual_scale2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7608147425118986,
+          "condition_ridge_0.1": 1.5753106655534537,
+          "feature_mean_norm": 0.004377332969690323
+        },
+        "cheap_dual_probe32_scale2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.760808752030879,
+          "condition_ridge_0.1": 1.5775054743633035,
+          "feature_mean_norm": 0.0009646401408441702
+        },
+        "cheap_dual_scale2.1": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7608184047184327,
+          "condition_ridge_0.1": 1.574669825600099,
+          "feature_mean_norm": 0.005505098876107086
+        },
+        "cheap_dual_probe32_scale2.1": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7608095288757262,
+          "condition_ridge_0.1": 1.5772125187747554,
+          "feature_mean_norm": 0.0018151179694121053
+        },
+        "cheap_dual_scale2.2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7608229262476166,
+          "condition_ridge_0.1": 1.573978335183291,
+          "feature_mean_norm": 0.006638253159278591
+        },
+        "cheap_dual_probe32_scale2.2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.7608109188003969,
+          "condition_ridge_0.1": 1.576887363184126,
+          "feature_mean_norm": 0.0027430874653256326
+        }
+      },
+      "anchor_diagnostics": {
+        "oracle_arbitrary_center": {
+          "relative_to_exact_anchor": 0.0,
+          "relative_to_quadrature_discrepancy": 0.0,
+          "rmse": 0.0,
+          "mean_absolute_error": 0.0,
+          "cosine_with_exact": 1.0,
+          "anchor": [
+            0.016331658125401098,
+            0.0026881307053506507
+          ]
+        },
+        "oracle_connected_approx": {
+          "relative_to_exact_anchor": 0.11447792355470901,
+          "relative_to_quadrature_discrepancy": 0.9207520938554962,
+          "rmse": 0.0013398052881784788,
+          "mean_absolute_error": 0.0009587328549579149,
+          "cosine_with_exact": 0.9998802338589423,
+          "anchor": [
+            0.018226291361305224,
+            0.0027109631793623547
+          ]
+        },
+        "cheap_dual_scale1.7": {
+          "relative_to_exact_anchor": 0.17680585346025324,
+          "relative_to_quadrature_discrepancy": 1.4220589850377285,
+          "rmse": 0.0020692672446469464,
+          "mean_absolute_error": 0.0018660044686916021,
+          "cosine_with_exact": 0.9996552326658994,
+          "anchor": [
+            0.019092030668540653,
+            0.0036597670995943002
+          ]
+        },
+        "cheap_dual_probe32_scale1.7": {
+          "relative_to_exact_anchor": 0.01765718677021548,
+          "relative_to_quadrature_discrepancy": 0.14201770250055087,
+          "rmse": 0.00020665287659400988,
+          "mean_absolute_error": 0.0002044468898869294,
+          "cosine_with_exact": 0.9998748525957071,
+          "anchor": [
+            0.016157325694170117,
+            0.0029226920538935287
+          ]
+        },
+        "cheap_dual_scale1.8": {
+          "relative_to_exact_anchor": 0.2453426644726256,
+          "relative_to_quadrature_discrepancy": 1.9733042407717933,
+          "rmse": 0.0028713955413344895,
+          "mean_absolute_error": 0.002535174991283806,
+          "cosine_with_exact": 0.9996552326658991,
+          "anchor": [
+            0.020215091296101866,
+            0.0038750475172174945
+          ]
+        },
+        "cheap_dual_probe32_scale1.8": {
+          "relative_to_exact_anchor": 0.05293230243373134,
+          "relative_to_quadrature_discrepancy": 0.4257373542869935,
+          "rmse": 0.000619499170792381,
+          "mean_absolute_error": 0.0005912914512460558,
+          "cosine_with_exact": 0.9998748525957069,
+          "anchor": [
+            0.017107756617356595,
+            0.0030946151158872657
+          ]
+        },
+        "cheap_dual_scale1.9": {
+          "relative_to_exact_anchor": 0.3141211773751068,
+          "relative_to_quadrature_discrepancy": 2.5264935178026824,
+          "rmse": 0.0036763526233500247,
+          "mean_absolute_error": 0.0032043455138760094,
+          "cosine_with_exact": 0.9996552326658995,
+          "anchor": [
+            0.02133815192366308,
+            0.004090327934840688
+          ]
+        },
+        "cheap_dual_probe32_scale1.9": {
+          "relative_to_exact_anchor": 0.11001119708873557,
+          "relative_to_quadrature_discrepancy": 0.8848259727439499,
+          "rmse": 0.0012875284512641723,
+          "mean_absolute_error": 0.001152468443836163,
+          "cosine_with_exact": 0.9998748525957072,
+          "anchor": [
+            0.018058187540543072,
+            0.0032665381778810027
+          ]
+        },
+        "cheap_dual_scale1.95": {
+          "relative_to_exact_anchor": 0.34855638182383836,
+          "relative_to_quadrature_discrepancy": 2.8034577185322602,
+          "rmse": 0.0040793689219280555,
+          "mean_absolute_error": 0.003538930775172113,
+          "cosine_with_exact": 0.9996552326658992,
+          "anchor": [
+            0.02189968223744369,
+            0.004197968143652285
+          ]
+        },
+        "cheap_dual_probe32_scale1.95": {
+          "relative_to_exact_anchor": 0.1389487291224734,
+          "relative_to_quadrature_discrepancy": 1.1175720986670088,
+          "rmse": 0.0016262021207521377,
+          "mean_absolute_error": 0.0014330569401312155,
+          "cosine_with_exact": 0.9998748525957073,
+          "anchor": [
+            0.01853340300213631,
+            0.003352499708877871
+          ]
+        },
+        "cheap_dual_scale2": {
+          "relative_to_exact_anchor": 0.3830112048136407,
+          "relative_to_quadrature_discrepancy": 3.0805797122424265,
+          "rmse": 0.004482614828313923,
+          "mean_absolute_error": 0.003873516036468215,
+          "cosine_with_exact": 0.9996552326658993,
+          "anchor": [
+            0.022461212551224297,
+            0.0043056083524638826
+          ]
+        },
+        "cheap_dual_probe32_scale2": {
+          "relative_to_exact_anchor": 0.16796928521762583,
+          "relative_to_quadrature_discrepancy": 1.3509859915796685,
+          "rmse": 0.001965847471705623,
+          "mean_absolute_error": 0.00171364543642627,
+          "cosine_with_exact": 0.9998748525957072,
+          "anchor": [
+            0.01900861846372955,
+            0.0034384612398747397
+          ]
+        },
+        "cheap_dual_scale2.1": {
+          "relative_to_exact_anchor": 0.45196175703520225,
+          "relative_to_quadrature_discrepancy": 3.635152710766071,
+          "rmse": 0.0052895853919014595,
+          "mean_absolute_error": 0.004542686559060421,
+          "cosine_with_exact": 0.9996552326658993,
+          "anchor": [
+            0.023584273178785514,
+            0.004520888770087077
+          ]
+        },
+        "cheap_dual_probe32_scale2.1": {
+          "relative_to_exact_anchor": 0.2261315557718704,
+          "relative_to_quadrature_discrepancy": 1.8187882606400219,
+          "rmse": 0.002646556164188182,
+          "mean_absolute_error": 0.0022748224290163772,
+          "cosine_with_exact": 0.9998748525957073,
+          "anchor": [
+            0.019959049386916027,
+            0.0036103843018684767
+          ]
+        },
+        "cheap_dual_scale2.2": {
+          "relative_to_exact_anchor": 0.5209488021909395,
+          "relative_to_quadrature_discrepancy": 4.19001922392127,
+          "rmse": 0.00609698305465949,
+          "mean_absolute_error": 0.005211857081652624,
+          "cosine_with_exact": 0.9996552326658993,
+          "anchor": [
+            0.024707333806346727,
+            0.004736169187710271
+          ]
+        },
+        "cheap_dual_probe32_scale2.2": {
+          "relative_to_exact_anchor": 0.2843727530948701,
+          "relative_to_quadrature_discrepancy": 2.2872253419448323,
+          "rmse": 0.003328188585009563,
+          "mean_absolute_error": 0.0028359994216064863,
+          "cosine_with_exact": 0.999874852595707,
+          "anchor": [
+            0.020909480310102507,
+            0.003782307363862214
+          ]
+        },
+        "sample_quadrature_anchor": {
+          "relative_to_exact_anchor": 0.12433088593407565,
+          "relative_to_quadrature_discrepancy": 1.0,
+          "rmse": 0.0014551205445194994,
+          "mean_absolute_error": 0.0010342121504759402,
+          "cosine_with_exact": 0.9998482812951028,
+          "anchor": [
+            0.018389482031813172,
+            0.002698731099890457
+          ]
+        }
+      },
+      "exact_arbitrary_anchor": [
+        0.016331658125401098,
+        0.0026881307053506507
+      ],
+      "oracle_connected_anchor": [
+        0.018226291361305224,
+        0.0027109631793623547
+      ],
+      "sample_quadrature_anchor": [
+        0.018389482031813172,
+        0.002698731099890457
+      ],
+      "cheap_q": [
+        2.886265812832322,
+        0.553270673291609
+      ],
+      "cheap_probe32_q": [
+        2.442607472589247,
+        0.4418422693239041
+      ],
+      "sample_mean_relative_error": 0.0005047639016077038,
+      "seconds": 2.23252383293584
+    },
+    {
+      "index": 167,
+      "name": "kathy-wright",
+      "baseline_mse": 1.3442389485466154e-07,
+      "method_mses": {
+        "oracle_arbitrary_center": 1.2365057047320737e-07,
+        "oracle_connected_approx": 1.2511218731399933e-07,
+        "cheap_dual_scale1.7": 1.192290012310659e-05,
+        "cheap_dual_probe32_scale1.7": 5.465686127538518e-07,
+        "cheap_dual_scale1.8": 2.390286136024823e-05,
+        "cheap_dual_probe32_scale1.8": 1.4922642003079312e-06,
+        "cheap_dual_scale1.9": 4.298458298502587e-05,
+        "cheap_dual_probe32_scale1.9": 3.7446606881934717e-06,
+        "cheap_dual_scale1.95": 5.5873340161639475e-05,
+        "cheap_dual_probe32_scale1.95": 5.568370893010133e-06,
+        "cheap_dual_scale2": 7.13932982256216e-05,
+        "cheap_dual_probe32_scale2": 7.98484230706193e-06,
+        "cheap_dual_scale2.1": 0.00011162274414123586,
+        "cheap_dual_probe32_scale2.1": 1.5029736815595251e-05,
+        "cheap_dual_scale2.2": 0.0001664208259466235,
+        "cheap_dual_probe32_scale2.2": 2.582904798629821e-05
+      },
+      "fit_diagnostics": {
+        "oracle_arbitrary_center": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.5174472176317212,
+          "condition_ridge_0.1": 1.821169069960786,
+          "feature_mean_norm": 0.0004972196607085504
+        },
+        "oracle_connected_approx": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.5174470993775951,
+          "condition_ridge_0.1": 1.8211704023396655,
+          "feature_mean_norm": 4.9662306866969864e-05
+        },
+        "cheap_dual_scale1.7": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.5174476972140964,
+          "condition_ridge_0.1": 1.8196495840319813,
+          "feature_mean_norm": 0.0011134909581178977
+        },
+        "cheap_dual_probe32_scale1.7": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.5174477519899757,
+          "condition_ridge_0.1": 1.8210569455313124,
+          "feature_mean_norm": 0.001163287036815443
+        },
+        "cheap_dual_scale1.8": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.5174491760803093,
+          "condition_ridge_0.1": 1.8188458029567909,
+          "feature_mean_norm": 0.0020738394713534017
+        },
+        "cheap_dual_probe32_scale1.8": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.5174471635346908,
+          "condition_ridge_0.1": 1.8207957896018732,
+          "feature_mean_norm": 0.0003677743403264484
+        },
+        "cheap_dual_scale1.9": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.5174515811915107,
+          "condition_ridge_0.1": 1.8178543324117635,
+          "feature_mean_norm": 0.003046130818001954
+        },
+        "cheap_dual_probe32_scale1.9": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.5174472712745114,
+          "condition_ridge_0.1": 1.820404773658985,
+          "feature_mean_norm": 0.0005985454427158468
+        },
+        "cheap_dual_scale1.95": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.5174531310851403,
+          "condition_ridge_0.1": 1.8172885616301548,
+          "feature_mean_norm": 0.0035336804329496214
+        },
+        "cheap_dual_probe32_scale1.95": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.5174475862175602,
+          "condition_ridge_0.1": 1.8201606588613903,
+          "feature_mean_norm": 0.0010050485212777013
+        },
+        "cheap_dual_scale2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.5174549125347855,
+          "condition_ridge_0.1": 1.8166763099556194,
+          "feature_mean_norm": 0.00402171238853851
+        },
+        "cheap_dual_probe32_scale2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.5174480752090028,
+          "condition_ridge_0.1": 1.8199050406107324,
+          "feature_mean_norm": 0.0014220523108528778
+        },
+        "cheap_dual_scale2.1": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.5174591700922445,
+          "condition_ridge_0.1": 1.815313062641936,
+          "feature_mean_norm": 0.0049986581079499515
+        },
+        "cheap_dual_probe32_scale2.1": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.5174495753349198,
+          "condition_ridge_0.1": 1.8193238286809081,
+          "feature_mean_norm": 0.0022643291167196602
+        },
+        "cheap_dual_scale2.2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.5174643538410261,
+          "condition_ridge_0.1": 1.8137661031496288,
+          "feature_mean_norm": 0.005976299021344731
+        },
+        "cheap_dual_probe32_scale2.2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.5174517716462075,
+          "condition_ridge_0.1": 1.8186138455219392,
+          "feature_mean_norm": 0.0031101635598560274
+        }
+      },
+      "anchor_diagnostics": {
+        "oracle_arbitrary_center": {
+          "relative_to_exact_anchor": 0.0,
+          "relative_to_quadrature_discrepancy": 0.0,
+          "rmse": 0.0,
+          "mean_absolute_error": 0.0,
+          "cosine_with_exact": 1.0,
+          "anchor": [
+            0.015050838054034982,
+            0.0008791998758969583
+          ]
+        },
+        "oracle_connected_approx": {
+          "relative_to_exact_anchor": 0.029685775805259766,
+          "relative_to_quadrature_discrepancy": 0.900120213795398,
+          "rmse": 0.00031647092009867077,
+          "mean_absolute_error": 0.00022772873701729427,
+          "cosine_with_exact": 0.9999993173997459,
+          "anchor": [
+            0.015498324534043524,
+            0.0008871708699230048
+          ]
+        },
+        "cheap_dual_scale1.7": {
+          "relative_to_exact_anchor": 0.10562626798068933,
+          "relative_to_quadrature_discrepancy": 3.2027574263476835,
+          "rmse": 0.0011260491365873205,
+          "mean_absolute_error": 0.0009650481570403415,
+          "cosine_with_exact": 0.9998439322817604,
+          "anchor": [
+            0.01659611781362907,
+            0.0012640164303835521
+          ]
+        },
+        "cheap_dual_probe32_scale1.7": {
+          "relative_to_exact_anchor": 0.04473057250616081,
+          "relative_to_quadrature_discrepancy": 1.3563025184708897,
+          "rmse": 0.00047685886770918926,
+          "mean_absolute_error": 0.00040344833160421397,
+          "cosine_with_exact": 0.9999157251894104,
+          "anchor": [
+            0.01439317756017517,
+            0.0010284360452455746
+          ]
+        },
+        "cheap_dual_scale1.8": {
+          "relative_to_exact_anchor": 0.16999896305261886,
+          "relative_to_quadrature_discrepancy": 5.154640524530508,
+          "rmse": 0.001812306628130969,
+          "mean_absolute_error": 0.0014903462230407129,
+          "cosine_with_exact": 0.9998439322817603,
+          "anchor": [
+            0.017572360037960193,
+            0.001338370338053173
+          ]
+        },
+        "cheap_dual_probe32_scale1.8": {
+          "relative_to_exact_anchor": 0.018726185976105973,
+          "relative_to_quadrature_discrepancy": 0.5678079169956662,
+          "rmse": 0.00019963410573043048,
+          "mean_absolute_error": 0.00019936470849207214,
+          "cosine_with_exact": 0.9999157251894105,
+          "anchor": [
+            0.015239835063714888,
+            0.0010889322832011966
+          ]
+        },
+        "cheap_dual_scale1.9": {
+          "relative_to_exact_anchor": 0.23468452989356392,
+          "relative_to_quadrature_discrepancy": 7.116010395282938,
+          "rmse": 0.002501899549318188,
+          "mean_absolute_error": 0.002015644289041084,
+          "cosine_with_exact": 0.9998439322817604,
+          "anchor": [
+            0.018548602262291315,
+            0.0014127242457227936
+          ]
+        },
+        "cheap_dual_probe32_scale1.9": {
+          "relative_to_exact_anchor": 0.07099321054487442,
+          "relative_to_quadrature_discrepancy": 2.15262771884007,
+          "rmse": 0.0007568367695451732,
+          "mean_absolute_error": 0.0006529415792397401,
+          "cosine_with_exact": 0.9999157251894106,
+          "anchor": [
+            0.016086492567254602,
+            0.0011494285211568185
+          ]
+        },
+        "cheap_dual_scale1.95": {
+          "relative_to_exact_anchor": 0.26707365080707945,
+          "relative_to_quadrature_discrepancy": 8.098100357579057,
+          "rmse": 0.0028471899996648222,
+          "mean_absolute_error": 0.002278293322041269,
+          "cosine_with_exact": 0.9998439322817603,
+          "anchor": [
+            0.019036723374456874,
+            0.001449901199557604
+          ]
+        },
+        "cheap_dual_probe32_scale1.95": {
+          "relative_to_exact_anchor": 0.09880303075444018,
+          "relative_to_quadrature_discrepancy": 2.9958659578154743,
+          "rmse": 0.0010533087043611907,
+          "mean_absolute_error": 0.0008797300146135751,
+          "cosine_with_exact": 0.9999157251894107,
+          "anchor": [
+            0.01650982131902446,
+            0.0011796766401346297
+          ]
+        },
+        "cheap_dual_scale2": {
+          "relative_to_exact_anchor": 0.2994803029995807,
+          "relative_to_quadrature_discrepancy": 9.080721896300608,
+          "rmse": 0.0031926673455814937,
+          "mean_absolute_error": 0.0025409423550414555,
+          "cosine_with_exact": 0.9998439322817603,
+          "anchor": [
+            0.019524844486622436,
+            0.0014870781533924144
+          ]
+        },
+        "cheap_dual_probe32_scale2": {
+          "relative_to_exact_anchor": 0.1267632510765657,
+          "relative_to_quadrature_discrepancy": 3.8436645688141744,
+          "rmse": 0.0013513840084917572,
+          "mean_absolute_error": 0.00110651844998741,
+          "cosine_with_exact": 0.9999157251894105,
+          "anchor": [
+            0.01693315007079432,
+            0.0012099247591124407
+          ]
+        },
+        "cheap_dual_scale2.1": {
+          "relative_to_exact_anchor": 0.3643274864445976,
+          "relative_to_quadrature_discrepancy": 11.046992241043153,
+          "rmse": 0.0038839832116474102,
+          "mean_absolute_error": 0.003066240421041827,
+          "cosine_with_exact": 0.9998439322817603,
+          "anchor": [
+            0.020501086710953558,
+            0.0015614320610620352
+          ]
+        },
+        "cheap_dual_probe32_scale2.1": {
+          "relative_to_exact_anchor": 0.1828587642999547,
+          "relative_to_quadrature_discrepancy": 5.5445702714925975,
+          "rmse": 0.0019494010116407078,
+          "mean_absolute_error": 0.0015600953207350798,
+          "cosine_with_exact": 0.9999157251894107,
+          "anchor": [
+            0.017779807574334037,
+            0.0012704209970680628
+          ]
+        },
+        "cheap_dual_scale2.2": {
+          "relative_to_exact_anchor": 0.4292027784792596,
+          "relative_to_quadrature_discrepancy": 13.01411488319193,
+          "rmse": 0.004575598734737149,
+          "mean_absolute_error": 0.003591538487042198,
+          "cosine_with_exact": 0.9998439322817602,
+          "anchor": [
+            0.02147732893528468,
+            0.001635785968731656
+          ]
+        },
+        "cheap_dual_probe32_scale2.2": {
+          "relative_to_exact_anchor": 0.23905073419022738,
+          "relative_to_quadrature_discrepancy": 7.248400694622555,
+          "rmse": 0.002548446309630884,
+          "mean_absolute_error": 0.0020136721914827496,
+          "cosine_with_exact": 0.9999157251894104,
+          "anchor": [
+            0.018626465077873754,
+            0.0013309172350236848
+          ]
+        },
+        "sample_quadrature_anchor": {
+          "relative_to_exact_anchor": 0.032979790199453844,
+          "relative_to_quadrature_discrepancy": 1.0,
+          "rmse": 0.00035158739382627204,
+          "mean_absolute_error": 0.0002530530709091314,
+          "cosine_with_exact": 0.9999991721330146,
+          "anchor": [
+            0.015547976845134804,
+            0.0008881672266153989
+          ]
+        }
+      },
+      "exact_arbitrary_anchor": [
+        0.015050838054034982,
+        0.0008791998758969583
+      ],
+      "oracle_connected_anchor": [
+        0.015498324534043524,
+        0.0008871708699230048
+      ],
+      "sample_quadrature_anchor": [
+        0.015547976845134804,
+        0.0008881672266153989
+      ],
+      "cheap_q": [
+        2.508942516530983,
+        0.19108954271092526
+      ],
+      "cheap_probe32_q": [
+        2.17590978409707,
+        0.15547533154594864
+      ],
+      "sample_mean_relative_error": 0.00035595723572113863,
+      "seconds": 1.7411266670096666
+    }
+  ]
+}

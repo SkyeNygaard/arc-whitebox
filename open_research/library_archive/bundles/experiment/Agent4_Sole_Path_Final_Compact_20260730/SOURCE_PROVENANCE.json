@@ -1,0 +1,59 @@
+{
+  "protected_data_opened": false,
+  "authenticated_ogap_archive": {
+    "path": "/mnt/data/sole_path_inputs/oracle_gap_experiment_campaign_20260730.zip",
+    "size_bytes": 30700010,
+    "sha256": "3cec26cdce9fba461d3259fa1c327449809da34d6ec695daf4b1e2ba64b0b978",
+    "expected_sha256": "3cec26cdce9fba461d3259fa1c327449809da34d6ec695daf4b1e2ba64b0b978",
+    "hash_matches": true
+  },
+  "source_snapshots": {
+    "sources/WHestBench_Agent2_Checkpoint_Gauge_Continuation_20260730.md": {
+      "sha256": "cf193188eac6c011c01a01946dbcba65d7c78d35cf8cbb9cc5c4cc29cb63238c",
+      "size_bytes": 29461
+    },
+    "sources/AGENT8_WHITEBOX_OBSERVABLE_DISCOVERY_REPORT.md": {
+      "sha256": "9a8c0918ba2668a65a7250cc8e33b0c3b592cbec215ced60cb30f4aaa649e136",
+      "size_bytes": 19868
+    },
+    "sources/T0_COST_MODEL.json": {
+      "sha256": "80757eb9584aeee8be57cbe1917849ef036cb1ad186d576ce33a41285b1738ca",
+      "size_bytes": 6007
+    },
+    "sources/TASK_PROMPT.md": {
+      "sha256": "72769addd8822c5df1bd73d7f79d33f8a076cb8b6edfab291d26124afb1fe0c1",
+      "size_bytes": 28046
+    }
+  },
+  "frozen_splits": {
+    "development": [
+      910001,
+      910003,
+      910009,
+      910019
+    ],
+    "validation": [
+      910033,
+      910043,
+      910051,
+      910067
+    ],
+    "confirmation": [
+      910079,
+      910081,
+      910089,
+      910103
+    ],
+    "rotations": [
+      31001,
+      31013,
+      31033
+    ]
+  },
+  "source_rule": {
+    "groups": 129,
+    "rows_per_group": 512,
+    "adaptive_energy_threshold": 0.9939596,
+    "maximum_modes_considered": 40
+  }
+}

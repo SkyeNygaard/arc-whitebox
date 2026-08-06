@@ -1,0 +1,575 @@
+{
+  "status": "A43 kernel passes local exactness and implementation gates; official FlopScope/subprocess promotion is still blocked. Integrated companion prototype is complete but not promotable because exact control overhead and official statistical validation remain unresolved.",
+  "environment": {
+    "python": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
+    "numpy": "2.3.5",
+    "flopscope_installed": false,
+    "whestbench_installed": false,
+    "benchmark_threads": 5
+  },
+  "archived_full_shape": {
+    "production_partial_tree": {
+      "tracked_flops": 170906815488,
+      "residual_wall_s": 0.04964647372253239,
+      "effective_compute": 175871462860.25323,
+      "raw_mse": 1.7292034610838877e-07,
+      "local_wall_s": 63.995,
+      "peak_rss_mib": null
+    },
+    "a42": {
+      "tracked_flops": 170906815488,
+      "local_wall_s": 28.011,
+      "peak_rss_mib": 374.7,
+      "max_abs_drift": 3.418e-12
+    },
+    "a43": {
+      "tracked_flops": 170382691584,
+      "local_wall_s": 25.702,
+      "peak_rss_mib": 374.8,
+      "max_abs_drift": 3.418e-12,
+      "a42_bit_identical": true
+    }
+  },
+  "local_measurements": {
+    "panel8": {
+      "baseline_s": 13.63313403699999,
+      "a42_s": 4.202675155999941,
+      "a43_s": 4.111221070999932,
+      "integrated_a43_median_s": 4.315795514500053,
+      "a43_vs_a42_saving_fraction": 0.021760921699942704,
+      "checkpoint_overhead_fraction": 0.04976002019039183,
+      "all_a42_a43_integrated_bit_identical": true
+    },
+    "panel16": {
+      "a43_s": 7.586590801000057,
+      "integrated_a43_s": 7.9966269600000714,
+      "checkpoint_overhead_fraction": 0.05404748585437935,
+      "companion16_s": 13.890627019000021,
+      "companion16_increment_s": 5.89400005899995,
+      "companion16_increment_per_basis_s": 0.36837500368749687,
+      "partial17_s": 14.30211101000009,
+      "partial17_increment_s": 6.305484050000018,
+      "partial17_increment_per_basis_s": 0.3709108264705893,
+      "pair2_increment_s": 0.8475518259999717
+    },
+    "pair_panel8": {
+      "partial17_s": 10.04855346499994,
+      "partial_plus_pair2_s": 11.740949285999932,
+      "partial_plus_pair4_s": 12.386095422999915,
+      "pair4_increment_s": 2.3375419579999743
+    },
+    "capture_panel8": {
+      "run_s": 4.637300894999953,
+      "peak_rss_mib": 299.140625,
+      "checkpoint_plus_final_bytes": 8388608,
+      "rss_delta_vs_reduction_only_mib": 7.63671875
+    },
+    "two_stage_panel8": {
+      "companion16": {
+        "arm": "companion16",
+        "seed": 51000,
+        "main_bases": 8,
+        "companion_bases": 16,
+        "paired_bases": 0,
+        "seconds": 10.475714934000052,
+        "peak_rss_mib": 320.58203125,
+        "checkpoint_bytes": 4194304,
+        "fold_stats_bytes": 608256,
+        "final_digest": "9bd4f46df6d1f014bcaa527a28613a972910317639ea52a16d55ec5aba7f51b0",
+        "radial_base_digest": "fe2d92b16d28e3db0698950e8af4955de1d440dae8aa6f510b210bd5d3b0899e",
+        "radial_candidate_digest": "9e26b3675ca369f9aac8854df9837f1176a7ad9c8b73cc6f4b5bcc81bbb0f82a",
+        "correction_norm": 0.004027415860124741,
+        "lower_anchor_norm": 0.0027094321532644583,
+        "paired_lower_anchor_norm": null,
+        "final_parity": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "identical": true
+        },
+        "selected_indices": [
+          87,
+          81,
+          133,
+          183,
+          188,
+          209,
+          44,
+          112,
+          0,
+          229,
+          52,
+          46,
+          131,
+          160,
+          83,
+          75,
+          61,
+          78,
+          140,
+          184,
+          88,
+          28,
+          149,
+          69,
+          224,
+          89,
+          191,
+          3,
+          159,
+          252,
+          155,
+          240
+        ],
+        "diagnostics": {
+          "main_bases": 8,
+          "companion_bases": 16,
+          "paired_bases": 0,
+          "moment_chunk_rows": 8192,
+          "sampleM_norm": 89.00269162624025,
+          "Q_norm": 0.002216416387536824,
+          "beta_norm": 84.25263704994182
+        }
+      },
+      "partial_pair4": {
+        "arm": "partial_mub_pair4",
+        "seed": 51000,
+        "main_bases": 8,
+        "companion_bases": 17,
+        "paired_bases": 4,
+        "seconds": 11.862891943000022,
+        "peak_rss_mib": 320.359375,
+        "checkpoint_bytes": 4194304,
+        "fold_stats_bytes": 608256,
+        "final_digest": "9bd4f46df6d1f014bcaa527a28613a972910317639ea52a16d55ec5aba7f51b0",
+        "radial_base_digest": "fe2d92b16d28e3db0698950e8af4955de1d440dae8aa6f510b210bd5d3b0899e",
+        "radial_candidate_digest": "e2bc5d3e741958ace5ac2540c70e5b695b4ea8d6e5a9e5b53286243288b95c72",
+        "correction_norm": 0.010849945243298601,
+        "lower_anchor_norm": 0.002548057754502019,
+        "paired_lower_anchor_norm": 0.00012119372861362355,
+        "final_parity": {
+          "max_abs": 0.0,
+          "rms": 0.0,
+          "identical": true
+        },
+        "selected_indices": [
+          87,
+          81,
+          133,
+          183,
+          188,
+          209,
+          44,
+          112,
+          0,
+          229,
+          52,
+          46,
+          131,
+          160,
+          83,
+          75,
+          61,
+          78,
+          140,
+          184,
+          88,
+          28,
+          149,
+          69,
+          224,
+          89,
+          191,
+          3,
+          159,
+          252,
+          155,
+          240
+        ],
+        "diagnostics": {
+          "main_bases": 8,
+          "companion_bases": 17,
+          "paired_bases": 4,
+          "moment_chunk_rows": 8192,
+          "sampleM_norm": 89.00269162624025,
+          "Q_norm": 0.002216416387536824,
+          "beta_norm": 84.25263704994182
+        }
+      }
+    }
+  },
+  "validation": {
+    "environment": {
+      "python": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
+      "numpy": "2.3.5"
+    },
+    "seconds": 14.591096651000043,
+    "asset_rotation_matches_seed3": true,
+    "first_layer_selected_vs_full": {
+      "identical": true,
+      "max_abs": 0.0,
+      "rms": 0.0
+    },
+    "kernel_parity": {
+      "a42_vs_a43": {
+        "identical": true,
+        "max_abs": 0.0,
+        "rms": 0.0
+      },
+      "a43_vs_integrated": {
+        "identical": true,
+        "max_abs": 0.0,
+        "rms": 0.0
+      }
+    },
+    "dense_reference_drift": {
+      "anchor": {
+        "identical": false,
+        "max_abs": 3.951181497541256e-06,
+        "rms": 1.1238068664329777e-06
+      },
+      "final": {
+        "identical": false,
+        "max_abs": 4.158889169048052e-06,
+        "rms": 1.2040526134383717e-06
+      }
+    },
+    "nested_exactness": {
+      "2": {
+        "identical": true,
+        "max_abs": 0.0,
+        "rms": 0.0
+      },
+      "4": {
+        "identical": true,
+        "max_abs": 0.0,
+        "rms": 0.0
+      }
+    },
+    "companion_does_not_change_main_output": {
+      "identical": true,
+      "max_abs": 0.0,
+      "rms": 0.0
+    },
+    "same_process_determinism": {
+      "identical": true,
+      "max_abs": 0.0,
+      "rms": 0.0
+    },
+    "weights_unchanged": true,
+    "manifest_audit": {
+      "production_partial_tree_source": {
+        "api_version": "2.0",
+        "entrypoint": {
+          "module": "estimator",
+          "class": "Estimator"
+        },
+        "files": {
+          "estimator.py": {
+            "exists": true,
+            "hash_ok": false,
+            "sha256": "f1e32ce44fe43b53eba3f70f9cf6383da588ec1bbb3d82c047edbc916a98d8df"
+          },
+          "fast_matmul.py": {
+            "exists": true,
+            "hash_ok": true,
+            "sha256": "fb1b93cb625b66ce5f26220ea3b6b685dbb9887d50f8756cafa9426577d45085"
+          },
+          "kerdock_mub5_seed3.npz": {
+            "exists": true,
+            "hash_ok": true,
+            "sha256": "58eac1b69707b204d00f6d50cf4e1996b1fcd566154ec93a7ecb5668c1acbfad"
+          }
+        },
+        "all_ok": false
+      },
+      "A42_exact_source": {
+        "api_version": "2.0",
+        "entrypoint": {
+          "module": "estimator",
+          "class": "Estimator"
+        },
+        "files": {
+          "estimator.py": {
+            "exists": true,
+            "hash_ok": true,
+            "sha256": "dbeadaba7304b83a6dea7d0484622ef579828e4490e3daa75ae66a5fd3b0cee6"
+          },
+          "fast_matmul.py": {
+            "exists": true,
+            "hash_ok": true,
+            "sha256": "f3e115e50d95bd585c23d10d6d0ee28d50a341bcda21190219b39c878d88838b"
+          },
+          "kerdock_mub5_seed3.npz": {
+            "exists": true,
+            "hash_ok": true,
+            "sha256": "58eac1b69707b204d00f6d50cf4e1996b1fcd566154ec93a7ecb5668c1acbfad"
+          }
+        },
+        "all_ok": true
+      },
+      "A43_exact_source": {
+        "api_version": "2.0",
+        "entrypoint": {
+          "module": "estimator",
+          "class": "Estimator"
+        },
+        "files": {
+          "estimator.py": {
+            "exists": true,
+            "hash_ok": true,
+            "sha256": "aa9f26d95e82a83f6f630ab3645524cd2627efbb205cccef2475fa11bb8e8653"
+          },
+          "fast_matmul.py": {
+            "exists": true,
+            "hash_ok": true,
+            "sha256": "9af18a845f94568714b9469436643161cef63a5eef0649a0deb04a00aae5b775"
+          },
+          "kerdock_mub5_seed3.npz": {
+            "exists": true,
+            "hash_ok": true,
+            "sha256": "58eac1b69707b204d00f6d50cf4e1996b1fcd566154ec93a7ecb5668c1acbfad"
+          }
+        },
+        "all_ok": true
+      }
+    },
+    "immutable_ast_audit": {
+      "augassign_lines": [],
+      "numpy_out_keyword_lines": [],
+      "functional_immutable_pass": true
+    },
+    "note_after_lint_fix": "Parity results retained from validation run; only functional accumulation syntax and lint classification changed."
+  },
+  "allocator_probe": {
+    "records": [
+      {
+        "seed": 97,
+        "seconds": 1.6670244189999721,
+        "rss_before_mib": 274.046875,
+        "rss_peak_sample_mib": 290.2890625,
+        "rss_after_gc_mib": 290.2890625,
+        "digest": 328.2586145032328
+      },
+      {
+        "seed": 1011,
+        "seconds": 1.589366162000033,
+        "rss_before_mib": 290.2890625,
+        "rss_peak_sample_mib": 290.2890625,
+        "rss_after_gc_mib": 290.2890625,
+        "digest": 327.49644041134525
+      },
+      {
+        "seed": 3005,
+        "seconds": 1.4801501540000572,
+        "rss_before_mib": 290.2890625,
+        "rss_peak_sample_mib": 290.2890625,
+        "rss_after_gc_mib": 290.2890625,
+        "digest": 327.1089943432489
+      },
+      {
+        "seed": 3007,
+        "seconds": 1.5798166380000112,
+        "rss_before_mib": 290.2890625,
+        "rss_peak_sample_mib": 290.2890625,
+        "rss_after_gc_mib": 290.2890625,
+        "digest": 327.4005182677647
+      },
+      {
+        "seed": 97,
+        "seconds": 1.4334352870000657,
+        "rss_before_mib": 290.2890625,
+        "rss_peak_sample_mib": 290.2890625,
+        "rss_after_gc_mib": 290.2890625,
+        "digest": 328.2586145032328
+      }
+    ],
+    "rss_growth_first_to_last_after_gc_mib": 0.0
+  },
+  "schedule_probe": {
+    "records": {
+      "main_then_companion": {
+        "seconds": 6.471725632000016,
+        "main_digest": "a080dc453da9a72620e2e31b88293710e43ed03bb7c463e51d15ff328344f516",
+        "anchor_digest": "175bc84da0e8c38591030e17a4a158f91b27f745fc191c04a5f9986c44ade5b0",
+        "companion_digest": "bbd565e8531afd7120ff7846de901e2065a39671bcc6dd4ad51bb4f9a4c6b180"
+      },
+      "interleaved": {
+        "seconds": 6.247128022999959,
+        "main_digest": "a080dc453da9a72620e2e31b88293710e43ed03bb7c463e51d15ff328344f516",
+        "anchor_digest": "175bc84da0e8c38591030e17a4a158f91b27f745fc191c04a5f9986c44ade5b0",
+        "companion_digest": "bbd565e8531afd7120ff7846de901e2065a39671bcc6dd4ad51bb4f9a4c6b180"
+      },
+      "companion_then_main": {
+        "seconds": 6.032892449000201,
+        "main_digest": "a080dc453da9a72620e2e31b88293710e43ed03bb7c463e51d15ff328344f516",
+        "anchor_digest": "175bc84da0e8c38591030e17a4a158f91b27f745fc191c04a5f9986c44ade5b0",
+        "companion_digest": "bbd565e8531afd7120ff7846de901e2065a39671bcc6dd4ad51bb4f9a4c6b180"
+      }
+    },
+    "all_main_equal": true,
+    "all_anchor_equal": true
+  },
+  "api_audit": {
+    "production_partial_tree_source": {
+      "import_ok": true,
+      "class_name": "Estimator",
+      "setup_asset_shapes": [
+        [
+          128,
+          256
+        ],
+        [
+          256,
+          256
+        ]
+      ],
+      "wrong_shape_output_shape": [
+        3,
+        8
+      ],
+      "wrong_shape_zero": true
+    },
+    "A42_exact_source": {
+      "import_ok": true,
+      "class_name": "Estimator",
+      "setup_asset_shapes": [
+        [
+          128,
+          256
+        ],
+        [
+          256,
+          256
+        ]
+      ],
+      "wrong_shape_output_shape": [
+        3,
+        8
+      ],
+      "wrong_shape_zero": true
+    },
+    "A43_exact_source": {
+      "import_ok": true,
+      "class_name": "Estimator",
+      "setup_asset_shapes": [
+        [
+          128,
+          256
+        ],
+        [
+          256,
+          256
+        ]
+      ],
+      "wrong_shape_output_shape": [
+        3,
+        8
+      ],
+      "wrong_shape_zero": true
+    }
+  },
+  "propagation_cost_projection": {
+    "a43_companion16": 190194632465.86047,
+    "a43_partial_mub": 168979345771.53488,
+    "a43_partial_mub_pair2": 171455838381.76743,
+    "a43_partial_mub_pair4": 173932330992.0
+  },
+  "control_cost_audit": {
+    "inherited_m111_flops": 2238000000,
+    "literal_129": {
+      "rows": 66048,
+      "moment_flops": 17330995200,
+      "feature_flops": 1107492864,
+      "crossfit_flops": 1236418560,
+      "total_flops": 19674906624
+    },
+    "literal_112": {
+      "rows": 57344,
+      "moment_flops": 15047065600,
+      "feature_flops": 961544192,
+      "crossfit_flops": 1073479680,
+      "total_flops": 17082089472
+    },
+    "cost_envelopes": {
+      "a43_companion16": {
+        "propagation_projection": 190194632465.86047,
+        "with_inherited_2p238B": 192432632465.86047,
+        "with_literal_operation_count": 209869539089.86047
+      },
+      "a43_partial_mub": {
+        "propagation_projection": 168979345771.53488,
+        "with_inherited_2p238B": 171217345771.53488,
+        "with_literal_operation_count": 186061435243.53488
+      },
+      "a43_partial_mub_pair2": {
+        "propagation_projection": 171455838381.76743,
+        "with_inherited_2p238B": 173693838381.76743,
+        "with_literal_operation_count": 188537927853.76743
+      },
+      "a43_partial_mub_pair4": {
+        "propagation_projection": 173932330992.0,
+        "with_inherited_2p238B": 176170330992.0,
+        "with_literal_operation_count": 191014420464.0
+      }
+    },
+    "conclusion": "The inherited 2.238B charge does not cover the literal two full moment GEMMs in the archived support construction. Official FlopScope or a proven lower-cost algebraically identical support path is mandatory."
+  },
+  "memory_projection": {
+    "112": {
+      "checkpoint_bytes": 58720256,
+      "checkpoint_mib": 56.0,
+      "fold_stats_projected_bytes": 8515584.0,
+      "fold_stats_projected_mib": 8.12109375
+    },
+    "129": {
+      "checkpoint_bytes": 67633152,
+      "checkpoint_mib": 64.5,
+      "fold_stats_projected_bytes": 9808128.0,
+      "fold_stats_projected_mib": 9.353759765625
+    },
+    "projected_peak_increment_fixed_radial_mib": 24.498046875,
+    "projected_peak_rss_mib": {
+      "companion16_full129": 473.151806640625,
+      "partial_mub_main112": 463.419140625
+    }
+  },
+  "archived_statistical_evidence": {
+    "companion16_exploratory": {
+      "raw_ratio": 0.848861,
+      "wins": "19/24",
+      "worst": 1.201863,
+      "adjusted_propagation_proxy": 0.947353,
+      "status": "post-hoc; immutable validation required"
+    },
+    "companion16_5pct": {
+      "raw_ratio": 0.901045,
+      "wins": "19/24",
+      "worst": 1.078642,
+      "adjusted_propagation_proxy": 1.005593
+    },
+    "partial_mub_validation": {
+      "raw_ratio": 0.9427,
+      "wins": "4/8",
+      "worst": 1.482,
+      "status": "average positive, catastrophic sign tail"
+    },
+    "paired_two_basis_safe_rule": {
+      "raw_ratio": 0.9847,
+      "worst": 1.064,
+      "adjusted_proxy": 0.996,
+      "status": "archived small-block safety evidence; not the full integrated three-way rule"
+    }
+  },
+  "promotion": {
+    "a43": "RUN OFFICIAL GATE; do not claim promotion yet",
+    "companion16": "HOLD; exact full-package cost can range from favorable to slightly score-negative depending on unresolved radial accounting",
+    "partial_mub": "NO PROMOTION due tail; implementation package is ready for safety experiments",
+    "paired_probes": "IMPLEMENTATION READY; no statistical gate was changed or selected"
+  },
+  "limitations": [
+    "No official final subprocess dependencies or protected network/target block",
+    "Full local sustained runs exhibit container throttling beyond about 32 bases, so full local wall projections are not authoritative",
+    "Production partial-tree archive has an inherited estimator.py manifest hash mismatch",
+    "Partial-MUB r3 and paired seeds are source-reconstructed, not confirmed by a separate official orientation asset"
+  ]
+}

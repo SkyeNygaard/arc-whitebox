@@ -1,0 +1,79 @@
+{
+  "method": "Strassen/Winograd on rectangular or 258-square-block Kerdock activations",
+  "selection_only": true,
+  "indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "width": 256,
+  "depth": 32,
+  "points": 66048,
+  "square_blocks": 258,
+  "micro_rows": 66048,
+  "budget": 272000000000,
+  "lambda_flops_per_second": 100000000000.0,
+  "microbenchmark": [
+    {
+      "layout": "rectangular",
+      "schedule": "hybrid_p2",
+      "variant": "winograd",
+      "recursion_depth": 5,
+      "leaf_size": 8,
+      "leaf_products": 16807,
+      "tracked_flops": 5548835584,
+      "tracked_flop_ratio_to_blas": 0.6422162936236139,
+      "wall_time_s_median": 0.768880165880546,
+      "residual_wall_time_s_median": 0.005608509993180633,
+      "max_abs_difference": 0.0001038089394569397,
+      "rms_difference": 8.84675874161295e-06,
+      "operation_breakdown": {
+        "asarray": {
+          "flop_cost": 0,
+          "calls": 2,
+          "flopscope_backend_time_s": 1.1669471859931946e-06,
+          "flopscope_overhead_time_s": 2.870708703994751e-05
+        },
+        "add": {
+          "flop_cost": 608087424,
+          "calls": 413,
+          "flopscope_backend_time_s": 0.1784870815463364,
+          "flopscope_overhead_time_s": 0.0075941323302686214
+        },
+        "subtract": {
+          "flop_cost": 348825344,
+          "calls": 472,
+          "flopscope_backend_time_s": 0.23761963518336415,
+          "flopscope_overhead_time_s": 0.00797698087990284
+        },
+        "stack": {
+          "flop_cost": 81686528,
+          "calls": 4,
+          "flopscope_backend_time_s": 0.008878958178684115,
+          "flopscope_overhead_time_s": 9.31259710341692e-05
+        },
+        "matmul": {
+          "flop_cost": 4162757760,
+          "calls": 343,
+          "flopscope_backend_time_s": 0.130724779330194,
+          "flopscope_overhead_time_s": 0.011987707577645779
+        },
+        "block": {
+          "flop_cost": 347478528,
+          "calls": 59,
+          "flopscope_backend_time_s": 0.1721106292679906,
+          "flopscope_overhead_time_s": 0.0014427904970943928
+        }
+      }
+    }
+  ],
+  "selection": [],
+  "summaries": []
+}

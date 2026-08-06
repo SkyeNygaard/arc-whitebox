@@ -1,0 +1,19 @@
+{
+  "protocol_id": "Path2-K32-scale-immutable-holdout-v1",
+  "frozen_before_reference_generation": true,
+  "network_seeds": [214337354, 644521337, 1850258944, 829034650, 1633132448, 739567565, 792642414, 236237212, 274745349, 1762331593, 1630841944, 407402736],
+  "rotation_seeds": [3, 11, 97],
+  "qmc_points_per_independent_half": 262144,
+  "independent_streams": ["target1", "target2", "anchor1", "anchor2"],
+  "seed_scheme": "audited",
+  "primary_candidates": {
+    "fixed_045": {"alpha": 0.45},
+    "fixed_05": {"alpha": 0.5},
+    "frozen_l08_04_05": {"risk_threshold": 0.00279066317598334, "high_risk_alpha": 0.4, "ordinary_alpha": 0.5},
+    "bounded_q925_045_055": {"risk_threshold": 0.0027637032840478275, "high_risk_alpha": 0.45, "ordinary_alpha": 0.55}
+  },
+  "secondary_teacher_candidate": {"support": 128, "alpha": 0.5},
+  "selection_forbidden_after_open": true,
+  "primary_metrics": ["pooled candidate/base", "base-network grouped bootstrap CI", "wins", "worst", "p90", "per-rotation ratios"],
+  "promotion_screen": {"pooled_ratio_max": 0.595, "worst_ratio_max": 1.10, "bootstrap_upper_below": 1.0}
+}

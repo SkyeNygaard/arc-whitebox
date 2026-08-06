@@ -1,0 +1,276 @@
+{
+  "protocol": {
+    "indices": [
+      160
+    ],
+    "source_mode": "full",
+    "direction_family": "sample",
+    "target_layer": 29,
+    "control_rank": 2,
+    "matrix_ranks": [
+      16,
+      32,
+      64
+    ],
+    "handoffs": [
+      27,
+      24,
+      20
+    ],
+    "dtype": "float64",
+    "weights_dir": "arc_whitebox/submissions/whest_bounded_ml/data/official_weights_fresh",
+    "directions_dir": "arc_ceiling/results/adjoint_k3_directions_rank2",
+    "factorized_dir": "arc_ceiling/results/factorized_k3_layer29_diagfix",
+    "full_mode_is_oracle_audit_only": true,
+    "born_mode_discards_k3_feedback": false
+  },
+  "summary": {
+    "dense": {
+      "relative_error_vs_factorized": 4.198756390093759e-16,
+      "relative_error_vs_oracle": 0.4809733154990888,
+      "cosine_vs_factorized": 1.0,
+      "adjoint_flops_representative": {
+        "source_projection": 29738139648,
+        "source_vector_dots": 116164608,
+        "source_elementwise_reductions": 116619264,
+        "adjoint_matrix_pullback": 4018667520,
+        "adjoint_vector_pullback": 7848960,
+        "total_excluding_handoff_eigh": 33997440000
+      }
+    },
+    "q16_h27": {
+      "relative_error_vs_factorized": 0.3226099188864012,
+      "relative_error_vs_oracle": 0.6493401536364728,
+      "cosine_vs_factorized": 0.9971679361686263,
+      "adjoint_flops_representative": {
+        "source_projection": 4684259328,
+        "source_vector_dots": 116164608,
+        "source_elementwise_reductions": 21829632,
+        "adjoint_matrix_pullback": 514891776,
+        "adjoint_vector_pullback": 7848960,
+        "total_excluding_handoff_eigh": 5344994304
+      }
+    },
+    "q16_h24": {
+      "relative_error_vs_factorized": 0.1356094074515241,
+      "relative_error_vs_oracle": 0.5516558791586252,
+      "cosine_vs_factorized": 0.9994869966810027,
+      "adjoint_flops_representative": {
+        "source_projection": 7509884928,
+        "source_vector_dots": 116164608,
+        "source_elementwise_reductions": 32520192,
+        "adjoint_matrix_pullback": 904200192,
+        "adjoint_vector_pullback": 7848960,
+        "total_excluding_handoff_eigh": 8570618880
+      }
+    },
+    "q16_h20": {
+      "relative_error_vs_factorized": 0.03133371359793278,
+      "relative_error_vs_oracle": 0.4973165557384563,
+      "cosine_vs_factorized": 0.9999819222150701,
+      "adjoint_flops_representative": {
+        "source_projection": 11277385728,
+        "source_vector_dots": 116164608,
+        "source_elementwise_reductions": 46774272,
+        "adjoint_matrix_pullback": 1423278080,
+        "adjoint_vector_pullback": 7848960,
+        "total_excluding_handoff_eigh": 12871451648
+      }
+    },
+    "q32_h27": {
+      "relative_error_vs_factorized": 0.14162381691657674,
+      "relative_error_vs_oracle": 0.554887232489787,
+      "cosine_vs_factorized": 0.9996944226580202,
+      "adjoint_flops_representative": {
+        "source_projection": 6354518016,
+        "source_vector_dots": 116164608,
+        "source_elementwise_reductions": 31635456,
+        "adjoint_matrix_pullback": 627916800,
+        "adjoint_vector_pullback": 7848960,
+        "total_excluding_handoff_eigh": 7138083840
+      }
+    },
+    "q32_h24": {
+      "relative_error_vs_factorized": 0.029379929210478453,
+      "relative_error_vs_oracle": 0.49627441592786686,
+      "cosine_vs_factorized": 0.9999786650878696,
+      "adjoint_flops_representative": {
+        "source_projection": 8991768576,
+        "source_vector_dots": 116164608,
+        "source_elementwise_reductions": 41220096,
+        "adjoint_matrix_pullback": 1004666880,
+        "adjoint_vector_pullback": 7848960,
+        "total_excluding_handoff_eigh": 10161669120
+      }
+    },
+    "q32_h20": {
+      "relative_error_vs_factorized": 0.004012875989384576,
+      "relative_error_vs_oracle": 0.4830650370950636,
+      "cosine_vs_factorized": 0.9999996742937911,
+      "adjoint_flops_representative": {
+        "source_projection": 12508102656,
+        "source_vector_dots": 116164608,
+        "source_elementwise_reductions": 53999616,
+        "adjoint_matrix_pullback": 1507000320,
+        "adjoint_vector_pullback": 7848960,
+        "total_excluding_handoff_eigh": 14193116160
+      }
+    },
+    "q64_h27": {
+      "relative_error_vs_factorized": 0.02516504440677282,
+      "relative_error_vs_oracle": 0.49408783039410276,
+      "cosine_vs_factorized": 0.9999860125607615,
+      "adjoint_flops_representative": {
+        "source_projection": 9695035392,
+        "source_vector_dots": 116164608,
+        "source_elementwise_reductions": 51247104,
+        "adjoint_matrix_pullback": 853966848,
+        "adjoint_vector_pullback": 7848960,
+        "total_excluding_handoff_eigh": 10724262912
+      }
+    },
+    "q64_h24": {
+      "relative_error_vs_factorized": 0.0017715244353577273,
+      "relative_error_vs_oracle": 0.4818902494294847,
+      "cosine_vs_factorized": 0.9999998794705406,
+      "adjoint_flops_representative": {
+        "source_projection": 11955535872,
+        "source_vector_dots": 116164608,
+        "source_elementwise_reductions": 58619904,
+        "adjoint_matrix_pullback": 1205600256,
+        "adjoint_vector_pullback": 7848960,
+        "total_excluding_handoff_eigh": 13343769600
+      }
+    },
+    "q64_h20": {
+      "relative_error_vs_factorized": 3.4620340680114006e-05,
+      "relative_error_vs_oracle": 0.48099132178172743,
+      "cosine_vs_factorized": 0.9999999999676048,
+      "adjoint_flops_representative": {
+        "source_projection": 14969536512,
+        "source_vector_dots": 116164608,
+        "source_elementwise_reductions": 68450304,
+        "adjoint_matrix_pullback": 1674444800,
+        "adjoint_vector_pullback": 7848960,
+        "total_excluding_handoff_eigh": 16836445184
+      }
+    }
+  },
+  "records": [
+    {
+      "index": 160,
+      "source_ranks": [
+        768,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280,
+        1280
+      ],
+      "factorized_truth": [
+        0.7329791273865353,
+        0.14856936972797696
+      ],
+      "oracle_truth": [
+        1.4214061298290737,
+        0.18187155547056816
+      ],
+      "direct_factor": [
+        0.7329791273865349,
+        0.14856936972797716
+      ],
+      "direct_factor_relative_error": 5.15577964377961e-16,
+      "estimates": {
+        "dense": [
+          0.732979127386535,
+          0.14856936972797719
+        ],
+        "q16_h27": [
+          0.4918969212825233,
+          0.13892682422997887
+        ],
+        "q16_h24": [
+          0.63156103358121,
+          0.14921939713240956
+        ],
+        "q16_h20": [
+          0.7095470774219422,
+          0.14826710549606115
+        ],
+        "q32_h27": [
+          0.6271893600954811,
+          0.14335371251635207
+        ],
+        "q32_h24": [
+          0.7110097722318613,
+          0.1489581171190358
+        ],
+        "q32_h20": [
+          0.7299779639776395,
+          0.1485745285019657
+        ],
+        "q64_h27": [
+          0.7141589757440706,
+          0.1486913930427348
+        ],
+        "q64_h24": [
+          0.7316585064598513,
+          0.1486757135117116
+        ],
+        "q64_h20": [
+          0.7329532509174917,
+          0.14857026688559086
+        ]
+      },
+      "relative_errors_vs_factorized": {
+        "dense": 4.198756390093759e-16,
+        "q16_h27": 0.3226099188864012,
+        "q16_h24": 0.1356094074515241,
+        "q16_h20": 0.03133371359793278,
+        "q32_h27": 0.14162381691657674,
+        "q32_h24": 0.029379929210478453,
+        "q32_h20": 0.004012875989384576,
+        "q64_h27": 0.02516504440677282,
+        "q64_h24": 0.0017715244353577273,
+        "q64_h20": 3.4620340680114006e-05
+      },
+      "relative_errors_vs_oracle": {
+        "dense": 0.4809733154990888,
+        "q16_h27": 0.6493401536364728,
+        "q16_h24": 0.5516558791586252,
+        "q16_h20": 0.4973165557384563,
+        "q32_h27": 0.554887232489787,
+        "q32_h24": 0.49627441592786686,
+        "q32_h20": 0.4830650370950636,
+        "q64_h27": 0.49408783039410276,
+        "q64_h24": 0.4818902494294847,
+        "q64_h20": 0.48099132178172743
+      },
+      "seconds": 5.106305250199512
+    }
+  ]
+}

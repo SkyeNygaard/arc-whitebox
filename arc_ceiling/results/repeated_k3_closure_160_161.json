@@ -1,0 +1,429 @@
+{
+  "protocol": {
+    "indices": [
+      160,
+      161
+    ],
+    "target_layer": 29,
+    "direction_family": "sample",
+    "caps": [
+      512,
+      768,
+      1024,
+      1536
+    ],
+    "closure": "retain cap-width CP columns by product of leg norms; repair (3,) and (2,1) slices exactly",
+    "dtype": "float64",
+    "profile_flops": false
+  },
+  "summary": {
+    "cap512": {
+      "relative_error_vs_full": 0.4767391594218825,
+      "optimal_scale_to_full": 1.7900471181562447,
+      "scaled_relative_error_vs_full": 0.20085925934585774,
+      "relative_error_vs_oracle": 0.6624368276689695,
+      "optimal_scale_to_oracle": 2.903814267853742,
+      "scaled_relative_error_vs_oracle": 0.1254849835965695,
+      "cosine_vs_oracle": 0.9920955190362312
+    },
+    "cap768": {
+      "relative_error_vs_full": 0.4709031428981513,
+      "optimal_scale_to_full": 1.8043571959241687,
+      "scaled_relative_error_vs_full": 0.16951390260723195,
+      "relative_error_vs_oracle": 0.6611842464872947,
+      "optimal_scale_to_oracle": 2.92033694741734,
+      "scaled_relative_error_vs_oracle": 0.09158945138787199,
+      "cosine_vs_oracle": 0.9957968529747767
+    },
+    "cap1024": {
+      "relative_error_vs_full": 0.4830044242816236,
+      "optimal_scale_to_full": 1.8547196681493214,
+      "scaled_relative_error_vs_full": 0.16299158673720618,
+      "relative_error_vs_oracle": 0.6704392997070137,
+      "optimal_scale_to_oracle": 2.9957635037381203,
+      "scaled_relative_error_vs_oracle": 0.10099174977806619,
+      "cosine_vs_oracle": 0.9948872631995873
+    },
+    "cap1536": {
+      "relative_error_vs_full": 0.42777944861808304,
+      "optimal_scale_to_full": 1.7133851009296774,
+      "scaled_relative_error_vs_full": 0.10798649510801586,
+      "relative_error_vs_oracle": 0.639398922481078,
+      "optimal_scale_to_oracle": 2.752697599703969,
+      "scaled_relative_error_vs_oracle": 0.07582600503678405,
+      "cosine_vs_oracle": 0.9971210643448275
+    }
+  },
+  "records": [
+    {
+      "index": 160,
+      "full_truth": [
+        0.7329791273865353,
+        0.14856936972797696
+      ],
+      "oracle_truth": [
+        1.4214061298290737,
+        0.18187155547056816
+      ],
+      "variants": {
+        "cap512": {
+          "estimate": [
+            0.6020242435750623,
+            0.07460904276009347
+          ],
+          "relative_error_vs_full": 0.20109679350248638,
+          "relative_error_vs_oracle": 0.5766755340143404,
+          "ranks": [
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512
+          ],
+          "seconds": 2.1914477499667555,
+          "vendor_flops": null,
+          "vendor_flop_breakdown": null
+        },
+        "cap768": {
+          "estimate": [
+            0.5695386957411848,
+            0.0755467564348551
+          ],
+          "relative_error_vs_full": 0.23935698874414416,
+          "relative_error_vs_oracle": 0.5990792807622218,
+          "ranks": [
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768
+          ],
+          "seconds": 2.548711333889514,
+          "vendor_flops": null,
+          "vendor_flop_breakdown": null
+        },
+        "cap1024": {
+          "estimate": [
+            0.5494768562970005,
+            0.08174498637941652
+          ],
+          "relative_error_vs_full": 0.26112456153456914,
+          "relative_error_vs_oracle": 0.6124653695995265,
+          "ranks": [
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024
+          ],
+          "seconds": 2.706907333107665,
+          "vendor_flops": null,
+          "vendor_flop_breakdown": null
+        },
+        "cap1536": {
+          "estimate": [
+            0.5398418764739117,
+            0.09556925866266544
+          ],
+          "relative_error_vs_full": 0.26779178520802177,
+          "relative_error_vs_oracle": 0.6181312387370296,
+          "ranks": [
+            1024,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536
+          ],
+          "seconds": 2.6533873749431223,
+          "vendor_flops": null,
+          "vendor_flop_breakdown": null
+        }
+      }
+    },
+    {
+      "index": 161,
+      "full_truth": [
+        1.8748237632616174,
+        0.3029468172847052
+      ],
+      "oracle_truth": [
+        2.9224745410143647,
+        0.3079591483619822
+      ],
+      "variants": {
+        "cap512": {
+          "estimate": [
+            0.9278229901296702,
+            0.13730850531200664
+          ],
+          "relative_error_vs_full": 0.5062166638747286,
+          "relative_error_vs_oracle": 0.6812428875707663,
+          "ranks": [
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512,
+            512
+          ],
+          "seconds": 2.1337459578644484,
+          "vendor_flops": null,
+          "vendor_flop_breakdown": null
+        },
+        "cap768": {
+          "estimate": [
+            0.9466415041979889,
+            0.12899807756377263
+          ],
+          "relative_error_vs_full": 0.4972462369317919,
+          "relative_error_vs_oracle": 0.6751118551547274,
+          "ranks": [
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768
+          ],
+          "seconds": 2.2732547079212964,
+          "vendor_flops": null,
+          "vendor_flop_breakdown": null
+        },
+        "cap1024": {
+          "estimate": [
+            0.9195727878707297,
+            0.1570920624857997
+          ],
+          "relative_error_vs_full": 0.5088202109356643,
+          "relative_error_vs_oracle": 0.6835015797471682,
+          "ranks": [
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024
+          ],
+          "seconds": 2.4199402921367437,
+          "vendor_flops": null,
+          "vendor_flop_breakdown": null
+        },
+        "cap1536": {
+          "estimate": [
+            1.032723735368539,
+            0.18836941677721308
+          ],
+          "relative_error_vs_full": 0.4474962908671154,
+          "relative_error_vs_oracle": 0.6443528438911663,
+          "ranks": [
+            1024,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536,
+            1536
+          ],
+          "seconds": 2.5032057920470834,
+          "vendor_flops": null,
+          "vendor_flop_breakdown": null
+        }
+      }
+    }
+  ]
+}

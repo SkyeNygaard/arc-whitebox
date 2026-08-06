@@ -1,0 +1,410 @@
+{
+  "title": "Independent exact Kerdock/MUB incidence certificate",
+  "implementation": {
+    "certificate_core": "Python integer/list arithmetic only",
+    "production_code_imported": false,
+    "numpy_role": "optional archived-asset comparison only"
+  },
+  "field": {
+    "description": "GF(2)[x]/(x^7+x+1)",
+    "elements": 128,
+    "inverse_failures": [],
+    "multiplication_permutation_failures": []
+  },
+  "walsh_matrix": {
+    "min_diagonal": 256,
+    "max_diagonal": 256,
+    "max_absolute_off_diagonal": 0
+  },
+  "chirps": {
+    "count": 128,
+    "unique": 128,
+    "canonical_sign_bit_sha256": "3dc064ac2a75e6a062c91a4f0dbd67e274b0b65e9b289c38d9131a7c622d05b6"
+  },
+  "mutual_unbiasedness": {
+    "checked_unordered_chirp_basis_pairs": 8128,
+    "expected_pairs": 8128,
+    "bad_pairs": [],
+    "pair_product_walsh_absolute_values": [
+      16
+    ],
+    "cross_basis_normalized_absolute_inner_product": "1/16",
+    "coordinate_basis_cross_inner_product_absolute": "1/16"
+  },
+  "incidence": {
+    "dimension": 256,
+    "signed_walsh_bases": 128,
+    "coordinate_bases": 1,
+    "total_bases": 129,
+    "unoriented_lines": 33024,
+    "antipodal_points": 66048,
+    "fixed_node_inner_product_multiplicities": {
+      "plus_one": 1,
+      "minus_one": 1,
+      "zero": 510,
+      "plus_one_over_16": 32768,
+      "minus_one_over_16": 32768
+    }
+  },
+  "archived_asset_comparison": {
+    "file": "kerdock_mub5_seed3.npz",
+    "archive_sha256": "58eac1b69707b204d00f6d50cf4e1996b1fcd566154ec93a7ecb5668c1acbfad",
+    "shape": [
+      128,
+      256
+    ],
+    "dtype": "float32",
+    "raw_array_sha256": "5ec825ca83e68a52aba32cce069ba8bd1a0fc123a463ecde1f56c9e80f502ffd",
+    "exact_match_to_independent_reconstruction": true
+  },
+  "passed": true
+}
+{
+  "title": "Derived sign-logic verification with no hard-coded sign pattern",
+  "special_box_order_verified": true,
+  "critical_boxes": [
+    {
+      "index": 0,
+      "left_gprime": "positive",
+      "right_gprime": "negative",
+      "derived_kind": "maximum",
+      "g_upper": "-1.006381225140822106958480467939964383163637139821963921E-13"
+    },
+    {
+      "index": 1,
+      "left_gprime": "negative",
+      "right_gprime": "positive",
+      "derived_kind": "minimum",
+      "g_upper": "-0.0000120650022803713869974943342568159700503380342835520"
+    },
+    {
+      "index": 2,
+      "left_gprime": "positive",
+      "right_gprime": "negative",
+      "derived_kind": "maximum",
+      "g_upper": "-1.004586240658455604403124565024659239239177837259174401E-13"
+    },
+    {
+      "index": 3,
+      "left_gprime": "negative",
+      "right_gprime": "positive",
+      "derived_kind": "minimum",
+      "g_upper": "-6.8810321337378423424081331024842417889893590569E-9"
+    },
+    {
+      "index": 4,
+      "left_gprime": "positive",
+      "right_gprime": "negative",
+      "derived_kind": "maximum",
+      "g_upper": "-1.006076192704191719337187722901912947809913469492792329E-13"
+    }
+  ],
+  "inflection_boxes": [
+    {
+      "index": 0,
+      "gprime_sign": "negative"
+    },
+    {
+      "index": 1,
+      "gprime_sign": "positive"
+    },
+    {
+      "index": 2,
+      "gprime_sign": "negative"
+    },
+    {
+      "index": 3,
+      "gprime_sign": "positive"
+    }
+  ],
+  "connecting_regions": [
+    {
+      "region": 0,
+      "left": "-98727893490099402502424916405650773887282506729427396571085444072528219280489187/100000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "right": "-4733032160414009/5000000000000000",
+      "subintervals": 28,
+      "curvature": "negative",
+      "derived_gprime_sign": "negative"
+    },
+    {
+      "region": 1,
+      "left": "-4533032160414009/5000000000000000",
+      "right": "-144940350257911067622630420603687740365669240947162467463175069371863702352741959/200000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "subintervals": 122,
+      "curvature": "positive",
+      "derived_gprime_sign": "negative"
+    },
+    {
+      "region": 2,
+      "left": "-140940350257911067622630420603687740365669240947162467463175069371863702352741959/200000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "right": "-51813713491761513/100000000000000000",
+      "subintervals": 125,
+      "curvature": "positive",
+      "derived_gprime_sign": "positive"
+    },
+    {
+      "region": 3,
+      "left": "-47813713491761513/100000000000000000",
+      "right": "-62724855312916344699825331682043113878951364731294359286854708766492067398183921/1000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "subintervals": 280,
+      "curvature": "negative",
+      "derived_gprime_sign": "positive"
+    },
+    {
+      "region": 4,
+      "left": "-61724855312916344699825331682043113878951364731294359286854708766492067398183921/1000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "right": "-3681931654866477/100000000000000000",
+      "subintervals": 86,
+      "curvature": "negative",
+      "derived_gprime_sign": "negative"
+    },
+    {
+      "region": 5,
+      "left": "-3081931654866477/100000000000000000",
+      "right": "20561206220754420756422761534584828354098957431679581289787091355215200342291831/10000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "subintervals": 132,
+      "curvature": "positive",
+      "derived_gprime_sign": "negative"
+    },
+    {
+      "region": 6,
+      "left": "24561206220754420756422761534584828354098957431679581289787091355215200342291831/10000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "right": "1742403692258249/50000000000000000",
+      "subintervals": 125,
+      "curvature": "positive",
+      "derived_gprime_sign": "positive"
+    },
+    {
+      "region": 7,
+      "left": "2042403692258249/50000000000000000",
+      "right": "123571782713126200680775559127101223180796187720015367189208240836993041047171037/2000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "subintervals": 69,
+      "curvature": "negative",
+      "derived_gprime_sign": "positive"
+    },
+    {
+      "region": 8,
+      "left": "125571782713126200680775559127101223180796187720015367189208240836993041047171037/2000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "right": "37/50",
+      "subintervals": 454,
+      "curvature": "negative",
+      "derived_gprime_sign": "negative"
+    }
+  ],
+  "derived_maxima": [
+    0,
+    2,
+    4
+  ],
+  "derived_minima": [
+    1,
+    3
+  ],
+  "global_candidate_upper_bound": "-1.004586240658455604403124565024659239239177837259174401E-13",
+  "conclusion": "All possible interior maxima and both endpoints are strictly negative; monotonicity covers all intervening regions, so h-K<0 on [-1,1].",
+  "passed": true
+}
+{
+  "title": "Independent pure-_pydecimal scalar theorem replay",
+  "scope": "Replays exact-fraction Delsarte bound, Kerdock multiplicity sum, spherical-mean subtraction, and one-sided ratio from certified interval inputs; does not recompute deep-kernel intervals.",
+  "precision": 100,
+  "implementation": {
+    "decimal_module_file": "decimal.py",
+    "decimal_implementation": "decimal",
+    "decimal_version": "1.70",
+    "libmpdec_version_attribute": "2.4.2",
+    "decimal_shim_sha256": "97ef3d395c7f17f1c095909ba4c67841313145b106b4793a5535dbdb96eb6c55",
+    "note": "Executed with a decimal.py shim that re-exports _pydecimal; no C decimal arithmetic is used by this process."
+  },
+  "input_sha256": {
+    "pointwise": "9449368da87077e4ad9501022f2678b990151998844e6af04740d7eadc1dbdc1",
+    "energy": "fd31336a679286723d03472393d6b1f06cb5bebf4b768e046305606a37a20e88",
+    "mean": "318df2cd8b866ad67f3637a64dbb2cb4906cc1b2bbb9acb273601d3d2bd74497",
+    "theorem": "d1c211e57815165fa924ae83251ab72e65cad643a716be2ea5c2dc795406317a"
+  },
+  "exact_checks": {
+    "higher_gegenbauer_coefficients_nonnegative": true,
+    "h1_exact": "9066372773250285785/9223372036854775808",
+    "c0_exact": "8779587105572243/9007199254740992",
+    "universal_bound_exact": "197930435402557054096653/203061758763394744188928",
+    "pointwise_global_upper_strictly_negative": true,
+    "coverage_exact": true,
+    "no_gaps_or_overlaps": true
+  },
+  "replayed": {
+    "energy": {
+      "lower": "0.9747302329077504666127808462108414633985481621607157811601376765058916374318677325581395348837209300",
+      "upper": "0.9747302329077504666127808462108414633985481621607157811601376765059431405053900193798449612403100781"
+    },
+    "bound": {
+      "lower": "0.9747302328509000564066126514960711073288701902848240637848543566326762354651162790697674418604651162",
+      "upper": "0.9747302328509000564066126514960711073288701902848240637848543566326762354651162790697674418604651163"
+    },
+    "gap": {
+      "lower": "5.68504102061681947147703560696779718758917173752833198732154019667514534883720930232558137E-11",
+      "upper": "5.68504102061681947147703560696779718758917173752833198732669050402737403100775193798449619E-11"
+    },
+    "kmse": {
+      "lower": "2.433660357543002938909133801740605466857327638263072497867159093881429089411187749237295877627340272E-7",
+      "upper": "2.433660357543005227609466502669764591481120637005559969510846422320188603585251664343381551654834664E-7"
+    },
+    "cert": {
+      "lower": "2.433091853440941256961986098179908687138568721089319664668426939861761574876304028307063319489340272E-7",
+      "upper": "2.433091853440943545662318799109067811762361719831807136312113753269785866182150889149583102036834664E-7"
+    },
+    "ratio": {
+      "lower": "1",
+      "upper": "1.000233655010294813770660200185981719050338763170397955080034409621193360702371343444711316050835668"
+    },
+    "percent": {
+      "lower": "0",
+      "upper": "0.023365501029481377066020018598171905033876317039795508003440962119336070237134344471131605083566800"
+    }
+  },
+  "shipped": {
+    "energy": {
+      "lower": "0.9747302329077504666127808462108414633985481621607157811601376765058907",
+      "upper": "0.9747302329077504666127808462108414633985481621607157811601376765059437"
+    },
+    "bound": {
+      "lower": "0.9747302328509000564066126514960711073288701902848240637848543566326762",
+      "upper": "0.9747302328509000564066126514960711073288701902848240637848543566326763"
+    },
+    "gap": {
+      "lower": "5.68504102061681947147703560696779718758917173752833198732144E-11",
+      "upper": "5.68504102061681947147703560696779718758917173752833198732675E-11"
+    },
+    "kmse": {
+      "lower": "2.4336603575430029389091338017406054668573276382630724978671590845071104120856063E-7",
+      "upper": "2.4336603575430052276094665026697645914811206370055599695108464279151347033914533E-7"
+    },
+    "cert": {
+      "lower": "2.4330918534409412569619860981799086871385687210893196646684269395071104120856063E-7",
+      "upper": "2.4330918534409435456623187991090678117623617198318071363121137539151347033914533E-7"
+    },
+    "ratio": {
+      "lower": "1",
+      "upper": "1.0002336550102948137706602001859817190503387631703979550800344120665100552627519"
+    },
+    "percent": {
+      "lower": "0",
+      "upper": "0.0233655010294813770660200185981719050338763170397955080034412066510055262751900"
+    }
+  },
+  "comparison": {
+    "energy": {
+      "byte_value_equal": false,
+      "replay_contains_shipped": false,
+      "shipped_contains_replay": true,
+      "overlap": true
+    },
+    "bound": {
+      "byte_value_equal": false,
+      "replay_contains_shipped": false,
+      "shipped_contains_replay": true,
+      "overlap": true
+    },
+    "gap": {
+      "byte_value_equal": false,
+      "replay_contains_shipped": false,
+      "shipped_contains_replay": true,
+      "overlap": true
+    },
+    "kmse": {
+      "byte_value_equal": false,
+      "replay_contains_shipped": false,
+      "shipped_contains_replay": true,
+      "overlap": true
+    },
+    "cert": {
+      "byte_value_equal": false,
+      "replay_contains_shipped": false,
+      "shipped_contains_replay": true,
+      "overlap": true
+    },
+    "ratio": {
+      "byte_value_equal": false,
+      "replay_contains_shipped": false,
+      "shipped_contains_replay": true,
+      "overlap": true
+    },
+    "percent": {
+      "byte_value_equal": false,
+      "replay_contains_shipped": false,
+      "shipped_contains_replay": true,
+      "overlap": true
+    }
+  },
+  "certified_ratio_upper": "1.000233655010294813770660200185981719050338763170397955080034409621193360702371343444711316050835668",
+  "certified_relative_excess_percent_upper": "0.023365501029481377066020018598171905033876317039795508003440962119336070237134344471131605083566800",
+  "passed": true
+}
+{
+  "title": "Pure-_pydecimal component regeneration",
+  "python": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
+  "engine": "standard-library pure-Python _pydecimal via strengthening/pydecimal_shim/decimal.py",
+  "artifacts": {
+    "FORMAL_CERTIFICATE_D256_L32.json": {
+      "original_sha256": "9449368da87077e4ad9501022f2678b990151998844e6af04740d7eadc1dbdc1",
+      "replay_sha256": "9449368da87077e4ad9501022f2678b990151998844e6af04740d7eadc1dbdc1",
+      "byte_identical": true
+    },
+    "FORMAL_SIGN_LOGIC_AUDIT.json": {
+      "original_sha256": "21140c66535f0eca608c87d67f27e34fe9a90f208b05f8468d66f4e415bcbe3b",
+      "replay_sha256": "21140c66535f0eca608c87d67f27e34fe9a90f208b05f8468d66f4e415bcbe3b",
+      "byte_identical": true
+    },
+    "KERDOCK_MULTIPLICITY_PROOF.json": {
+      "original_sha256": "1dc39468ec1efbf3a5ac54c212027ebbc6d512278fed8e24c35f7bd077f65483",
+      "replay_sha256": "1dc39468ec1efbf3a5ac54c212027ebbc6d512278fed8e24c35f7bd077f65483",
+      "byte_identical": true
+    },
+    "FORMAL_KERNEL_MEAN_D256_L32.json": {
+      "original_sha256": "318df2cd8b866ad67f3637a64dbb2cb4906cc1b2bbb9acb273601d3d2bd74497",
+      "replay_sha256": "318df2cd8b866ad67f3637a64dbb2cb4906cc1b2bbb9acb273601d3d2bd74497",
+      "byte_identical": true
+    }
+  },
+  "commands": [
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "assemble_formal_certificate.py"
+      ],
+      "returncode": 0,
+      "stdout_tail": "rivative and the four inflection boxes forces exactly five derivative sign transitions.\",\n    \"The three possible local maxima lie inside critical boxes 0, 2, and 4.\",\n    \"Strong-concavity bounds make g strictly negative in all three maximum boxes.\",\n    \"The two minimum boxes and both endpoint boxes are also strictly negative.\",\n    \"Therefore h(t) < K_32(t) for every t in [-1,1].\"\n  ],\n  \"global_upper_bound\": \"-1.004586240658455604403124565024659239239177837259174401E-13\",\n  \"passed\": true\n}\n"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "verify_sign_logic.py"
+      ],
+      "returncode": 0,
+      "stdout_tail": "99999/10000000\",\n      \"g_upper\": \"-2.205091577204745461908195008385380517601245973581E-7\"\n    },\n    {\n      \"name\": \"right\",\n      \"left\": \"9999999/10000000\",\n      \"right\": \"1\",\n      \"g_upper\": \"-0.0170217945708778150896577001006134382668800048535828331\"\n    }\n  ],\n  \"conclusion\": \"The certified curvature and endpoint signs force exactly five stationary transitions (max,min,max,min,max). g is negative at all three possible interior maxima and both endpoint boxes; hence g=h-K<0 on [-1,1].\"\n}\n"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "generate_kerdock_multiplicity.py"
+      ],
+      "returncode": 0,
+      "stdout_tail": "B family in dimension d=256 has d/2+1=129 bases.\",\n    \"Including both signs gives 2d=512 nodes per basis and N=2d(d/2+1)=d(d+2)=66048.\",\n    \"Within the fixed node's own basis: one self, one antipode, and 2(d-1)=510 signed orthogonal nodes.\",\n    \"There are d/2=128 other bases. In each, the d antipodal pairs contribute exactly d positive and d negative inner products of magnitude 1/sqrt(d)=1/16.\",\n    \"Thus each sign occurs 128d=32768 times.\"\n  ],\n  \"count_sum_check\": 66048,\n  \"passed\": true\n}\n"
+    },
+    {
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "formal_kernel_mean.py"
+      ],
+      "returncode": 0,
+      "stdout_tail": "870033270092915912462379299874248747164368681340802429130584686084251978254649439086168261185579555866863135679204038E-22\"\n  },\n  \"A0_certified\": {\n    \"lower\": \"0.974729989541714712312258085264191196422089014048652080604140725421300908486529660854678526902154912616533635138269820861\",\n    \"upper\": \"0.974729989541714712312486955297461289338001476427951954852887889789982249288958791439364611154133167265972721306531007161\"\n  },\n  \"A0_width\": \"2.288700332700929159124623793E-22\",\n  \"passed\": true\n}\n"
+    }
+  ],
+  "passed": true
+}
+{
+  "passed": true,
+  "tracked_files": 114,
+  "manifest_sha256": "2204f959bbe14f8b247b70731e04e1af4887a35257ebfb559ec6b40e9dc6a9a1",
+  "all_23_curvature_chunks_tracked": true
+}
+All strengthening checks passed.

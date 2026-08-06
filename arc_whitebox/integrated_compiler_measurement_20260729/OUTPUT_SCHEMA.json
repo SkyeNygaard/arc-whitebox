@@ -1,0 +1,42 @@
+{
+  "worker_json": {
+    "candidate": "string",
+    "indices": "array[int]",
+    "process_wall_time_s": "float",
+    "peak_rss_kib": "int",
+    "rows": [{
+      "index": "int",
+      "name": "string",
+      "raw_final_mse": "float",
+      "tracked_flops": "int",
+      "residual_wall_time_s": "float",
+      "effective_compute": "float",
+      "adjusted_score": "float",
+      "selected_depth": "int",
+      "predicted_cost_ratio": "float",
+      "fallback": "bool",
+      "kink_counts": "array[int]",
+      "stable_on_counts": "array[int]",
+      "stable_off_counts": "array[int]",
+      "timings": "object",
+      "approximation_mse_vs_baseline": "float, candidates only",
+      "approximation_max_abs_vs_baseline": "float, candidates only"
+    }]
+  },
+  "aggregate_summary": {
+    "per_candidate": {
+      "mean_raw_final_mse": "float",
+      "mean_adjusted_score": "float",
+      "mean_tracked_flops": "float",
+      "mean_residual_wall_time_s": "float",
+      "mean_effective_compute": "float",
+      "peak_rss_kib": "int",
+      "fallback_count": "int",
+      "wins": "int, candidates only",
+      "median_network_ratio": "float, candidates only",
+      "worst_network_ratio": "float, candidates only",
+      "mean_score_ratio": "float, candidates only",
+      "network_bootstrap_interval": "[lower, upper], candidates only"
+    }
+  }
+}

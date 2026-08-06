@@ -1,0 +1,90 @@
+{
+  "status": "Stage 0 complete; local implementation gate positive; official final-subprocess FlopScope and protected-score gate pending",
+  "environment": {
+    "numpy": "2.3.5",
+    "threads": 1,
+    "flopscope_installed": false,
+    "whestbench_installed": false
+  },
+  "archived_production_baseline": {
+    "tracked_flops": 170906815488,
+    "residual_wall_time_s": 0.04964647372253239,
+    "effective_compute": 175871462860.25323,
+    "raw_final_mse": 1.7292034610838877e-07,
+    "adjusted_score": 1.1180791995729278e-07,
+    "persistent_lower_flop_variant": {
+      "tracked_flops": 168403257856,
+      "residual_wall_time_s": 0.4349771444685757,
+      "effective_compute": 211900972302.85757
+    }
+  },
+  "candidate_final_layer_chunk2048": {
+    "algorithm": "Keep the first 31 layers unchanged. For the last weight only, call the existing partial-tree Winograd kernel on 2,048-row slices, ReLU each slice, cast to float64, sum immediately, and divide once.",
+    "final_output_identity": "mu_hat = N^{-1} sum_c sum_{i in c} ReLU(H_i W_32)",
+    "final_layer_flops": 5596378624,
+    "projected_package_tracked_flops": 170954337536,
+    "incremental_tracked_flops": 47522048,
+    "residual_wall_reduction_needed_to_break_even_s": 0.00047522048,
+    "paired_local_final_layer_materialize_median_s": 2.031798161000097,
+    "paired_local_final_layer_direct_median_s": 0.9900122010001269,
+    "paired_local_wall_reduction_fraction": 0.5127408716066459,
+    "peak_rss_materialize_kib": 2129656,
+    "peak_rss_direct_kib": 374480,
+    "peak_rss_reduction_fraction": 0.8241593947567118,
+    "max_abs_output_mean_drift": 4.1690199320543186e-07,
+    "max_rms_output_mean_drift": 4.238600915166425e-08,
+    "induced_squared_drift_upper": 1.796573771804966e-15,
+    "predicted_raw_candidate_base": "approximately 1.0; exact estimator and point set, reduction order only",
+    "promotion_gate": "Run paired official subprocess baseline/candidate. Promote only if measured effective compute falls, raw MSE is unchanged within numerical drift, and no tail regression occurs."
+  },
+  "candidate_final_layer_chunk512": {
+    "final_layer_flops": 5789668864,
+    "projected_package_tracked_flops": 171147627776,
+    "incremental_tracked_flops": 240812288,
+    "residual_wall_reduction_needed_to_break_even_s": 0.00240812288,
+    "peak_rss_direct_kib": 373972,
+    "role": "lowest-memory fallback if 2,048 rows fails the subprocess residual-time gate"
+  },
+  "penultimate_translation_reuse": {
+    "identity": "If Z=HW and H_corrected=H+1 delta^T, then H_corrected W = Z + 1 (delta^T W). Cache Z and avoid the second final-layer replay.",
+    "full_replay_flops": 5548856576,
+    "dense_reuse_flops": 84672256,
+    "sparse_q8_reuse_flops": 84545280,
+    "dense_saved_flops": 5464184320,
+    "dense_reduction_fraction": 0.9847405938790659,
+    "chunk512_local_median_s": 0.018563878000009026,
+    "replay_local_median_s": 1.7602450780000254,
+    "16_case_max_rms_mean_drift": 3.728726832369633e-08,
+    "scope_note": "Useful only for correction formulations that otherwise require both baseline and uniformly translated final replay. The currently preferred direct final-output control may not need it."
+  },
+  "feature_reuse": {
+    "k32_basis_means_flop_upper_bound": 12582912,
+    "all_129_basis_means_flop_upper_bound": 50724864,
+    "k32_mean_gram8_flops": 2097088,
+    "k32_basis_means_local_median_s": 0.0025158629999850746,
+    "all_129_basis_means_local_median_s": 0.016383542000085072,
+    "k32_mean_gram8_local_median_s": 0.00047822900000937807,
+    "conclusion": "Compute K32/K128 summaries from existing activations; never pay for separate propagation."
+  },
+  "closed_or_not_promoted": {
+    "persistent_64_block": "Archived variant lowers tracked FLOPs but raises residual wall enough to worsen effective compute; do not revive unchanged.",
+    "chunk_every_layer": "Not attempted/promoted because it changes reduction order at every layer and can compound gate drift. The frozen candidate chunks only the last layer.",
+    "mixed_precision": "Not promoted; current float32 Winograd plus float64 final reduction is retained."
+  },
+  "required_next_run": {
+    "stage": "official final subprocess package",
+    "comparison": [
+      "production partial-tree baseline",
+      "final-layer chunk2048 candidate",
+      "optional chunk512 memory fallback"
+    ],
+    "report": [
+      "exact FlopScope",
+      "residual wall time",
+      "peak memory",
+      "raw and adjusted MSE",
+      "per-network tails"
+    ],
+    "no_tuning_after_opening": true
+  }
+}

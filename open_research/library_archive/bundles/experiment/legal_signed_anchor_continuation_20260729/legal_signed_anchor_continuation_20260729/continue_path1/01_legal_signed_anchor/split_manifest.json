@@ -1,0 +1,8 @@
+{
+  "status": "all IDs exposed after terminal evaluation",
+  "architecture": "synthetic width-256 depth-32 challenge-matched network generator",
+  "tuning": {"network_ids": [3000, 3001, 3002, 3003, 3004, 3005], "opened_first": true},
+  "validation": {"network_ids": [3006, 3007, 3008, 3009, 3010, 3011], "opened_once_after freezing alpha/gate procedure": true},
+  "reference": "two independent scrambled Sobol blocks per network, 16384 samples each; evaluation only",
+  "contamination_note": "Do not reuse these IDs as protected validation."
+}

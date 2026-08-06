@@ -1,0 +1,14 @@
+{
+  "calibration_networks": [5009,5010,5011,5012],
+  "opened_after_development_rule_freeze": true,
+  "severe_records": 5,
+  "nonsevere_records": 7,
+  "rule_metrics": {
+    "A_jackknife_or_coherent_late": {"catch": 0.4, "false_suppression": 0.7142857142857143, "selected": false},
+    "B_probe_concentration": {"catch": 0.4, "false_suppression": 0.2857142857142857, "selected": false},
+    "C_smooth_or_jackknife": {"catch": 0.4, "false_suppression": 0.5714285714285714, "selected": false},
+    "D_paired_disagreement": {"catch": 0.2, "false_suppression": 0.14285714285714285, "selected": false}
+  },
+  "frozen_validation_rule": "none",
+  "reason": "No development-frozen rule met catch >= 0.75 and false suppression <= 0.20 on calibration."
+}

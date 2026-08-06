@@ -1,0 +1,61 @@
+{
+  "title": "Independent exact Kerdock/MUB incidence certificate",
+  "implementation": {
+    "certificate_core": "Python integer/list arithmetic only",
+    "production_code_imported": false,
+    "numpy_role": "optional archived-asset comparison only"
+  },
+  "field": {
+    "description": "GF(2)[x]/(x^7+x+1)",
+    "elements": 128,
+    "inverse_failures": [],
+    "multiplication_permutation_failures": []
+  },
+  "walsh_matrix": {
+    "min_diagonal": 256,
+    "max_diagonal": 256,
+    "max_absolute_off_diagonal": 0
+  },
+  "chirps": {
+    "count": 128,
+    "unique": 128,
+    "canonical_sign_bit_sha256": "3dc064ac2a75e6a062c91a4f0dbd67e274b0b65e9b289c38d9131a7c622d05b6"
+  },
+  "mutual_unbiasedness": {
+    "checked_unordered_chirp_basis_pairs": 8128,
+    "expected_pairs": 8128,
+    "bad_pairs": [],
+    "pair_product_walsh_absolute_values": [
+      16
+    ],
+    "cross_basis_normalized_absolute_inner_product": "1/16",
+    "coordinate_basis_cross_inner_product_absolute": "1/16"
+  },
+  "incidence": {
+    "dimension": 256,
+    "signed_walsh_bases": 128,
+    "coordinate_bases": 1,
+    "total_bases": 129,
+    "unoriented_lines": 33024,
+    "antipodal_points": 66048,
+    "fixed_node_inner_product_multiplicities": {
+      "plus_one": 1,
+      "minus_one": 1,
+      "zero": 510,
+      "plus_one_over_16": 32768,
+      "minus_one_over_16": 32768
+    }
+  },
+  "archived_asset_comparison": {
+    "file": "kerdock_mub5_seed3.npz",
+    "archive_sha256": "58eac1b69707b204d00f6d50cf4e1996b1fcd566154ec93a7ecb5668c1acbfad",
+    "shape": [
+      128,
+      256
+    ],
+    "dtype": "float32",
+    "raw_array_sha256": "5ec825ca83e68a52aba32cce069ba8bd1a0fc123a463ecde1f56c9e80f502ffd",
+    "exact_match_to_independent_reconstruction": true
+  },
+  "passed": true
+}

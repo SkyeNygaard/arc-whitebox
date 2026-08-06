@@ -1,0 +1,1088 @@
+{
+  "protocol": {
+    "indices": [
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167
+    ],
+    "checkpoint": 24,
+    "target_layer": 29,
+    "rotation_seed": 3,
+    "rank": 2,
+    "folds": 6,
+    "ridge": 0.1,
+    "inherited_scales": [
+      0.5,
+      0.75,
+      1.0,
+      1.25
+    ],
+    "dtype": "float32",
+    "oracle_k2_and_gates": true,
+    "uses_final_targets_for_construction": false,
+    "radial_conversion_corrected": true
+  },
+  "summary": {
+    "oracle": {
+      "mse_ratio": 0.5955574050851918,
+      "wins": 8,
+      "worst": 0.9000534306485103,
+      "mean_anchor_error_relative_to_same_cloud": 0.0
+    },
+    "same_cloud": {
+      "mse_ratio": 0.972071382805405,
+      "wins": 6,
+      "worst": 1.0144776614214155,
+      "mean_anchor_error_relative_to_same_cloud": 1.0
+    },
+    "marginal_only": {
+      "mse_ratio": 24.50554024906688,
+      "wins": 0,
+      "worst": 96.80079188304659,
+      "mean_anchor_error_relative_to_same_cloud": 3.778367461053941
+    },
+    "checkpoint_sample_only": {
+      "mse_ratio": 1.4312684435355467,
+      "wins": 2,
+      "worst": 3.450061569482899,
+      "mean_anchor_error_relative_to_same_cloud": 0.7384497248234896
+    },
+    "late_source_only": {
+      "mse_ratio": 10.395652170410994,
+      "wins": 0,
+      "worst": 38.65124744647834,
+      "mean_anchor_error_relative_to_same_cloud": 3.520725752753589
+    },
+    "combined_inherited_scale0.5": {
+      "mse_ratio": 2.434403200846679,
+      "wins": 0,
+      "worst": 7.644520181190931,
+      "mean_anchor_error_relative_to_same_cloud": 2.0006700202490215
+    },
+    "combined_inherited_scale0.75": {
+      "mse_ratio": 1.0299393694721048,
+      "wins": 4,
+      "worst": 2.604035309341351,
+      "mean_anchor_error_relative_to_same_cloud": 1.2413579017347014
+    },
+    "combined_inherited_scale1": {
+      "mse_ratio": 0.7000208828220091,
+      "wins": 7,
+      "worst": 1.1076824869591773,
+      "mean_anchor_error_relative_to_same_cloud": 0.48578013595462144
+    },
+    "combined_inherited_scale1.25": {
+      "mse_ratio": 1.1011160354455014,
+      "wins": 3,
+      "worst": 2.0301630022362946,
+      "mean_anchor_error_relative_to_same_cloud": 0.2946977164175008
+    }
+  },
+  "records": [
+    {
+      "index": 160,
+      "name": "amy-scott",
+      "baseline_mse": 2.1440298520066416e-07,
+      "method_mses": {
+        "oracle": 1.9297414237113956e-07,
+        "same_cloud": 2.0991739926806349e-07,
+        "marginal_only": 5.281776008722696e-06,
+        "checkpoint_sample_only": 2.2921549249272006e-07,
+        "late_source_only": 2.5587701382729223e-06,
+        "combined_inherited_scale0.5": 5.621336780307139e-07,
+        "combined_inherited_scale0.75": 2.496897809884702e-07,
+        "combined_inherited_scale1": 2.3749043185854335e-07,
+        "combined_inherited_scale1.25": 4.352730081234042e-07
+      },
+      "anchor_diagnostics": {
+        "same_cloud": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.0013787339988902136,
+            -3.333512224926172e-05
+          ]
+        },
+        "marginal_only": {
+          "relative_to_same_cloud": 4.043001944043315,
+          "error": [
+            -0.005530763151086138,
+            -0.0007076714220644736
+          ]
+        },
+        "checkpoint_sample_only": {
+          "relative_to_same_cloud": 0.8270398981809346,
+          "error": [
+            -0.0011267809317949684,
+            -0.00017701971362755684
+          ]
+        },
+        "late_source_only": {
+          "relative_to_same_cloud": 3.8059215422723045,
+          "error": [
+            -0.005225803117776984,
+            -0.0004917275483241178
+          ]
+        },
+        "combined_inherited_scale0.5": {
+          "relative_to_same_cloud": 2.198676417300869,
+          "error": [
+            -0.003023812008131399,
+            -0.00022640169410565944
+          ]
+        },
+        "combined_inherited_scale0.75": {
+          "relative_to_same_cloud": 1.3958730089887337,
+          "error": [
+            -0.0019228164533087178,
+            -9.37387669964311e-05
+          ]
+        },
+        "combined_inherited_scale1": {
+          "relative_to_same_cloud": 0.5965630773429834,
+          "error": [
+            -0.0008218208984858144,
+            3.8924160112798964e-05
+          ]
+        },
+        "combined_inherited_scale1.25": {
+          "relative_to_same_cloud": 0.23760499168289917,
+          "error": [
+            0.0002791746563368669,
+            0.0001715870872220273
+          ]
+        }
+      },
+      "scalar_decomposition": {
+        "true_c21_anchor": [
+          0.00553076315108589,
+          0.0007076714220644676
+        ],
+        "checkpoint_inherited_anchor": [
+          0.004403982219291102,
+          0.0005306517084369167
+        ],
+        "late_source_anchor": [
+          0.00030496003330913497,
+          0.0002159438737403558
+        ]
+      },
+      "late_source_diagnostics": {
+        "seconds": 0.5005350410938263,
+        "factor_rank": 5888,
+        "torch_flops": 11230377528,
+        "torch_residual_flops": 40768512,
+        "torch_flop_breakdown": {
+          "FactoredTensor3.get_dslice": 4467983616,
+          "FactoredTensor3.contract_W": 4227858432,
+          "nonlin_sum 111 factored": 1650735361,
+          "harmonic contract_W": 472514560,
+          "contract_W_basic": 252641280,
+          "nonlin_sum": 54682624,
+          "resid": 40768512,
+          "eval_part": 33652736,
+          "pK_to_K": 21715200,
+          "harmonic diagslice": 5378048,
+          "FactoredTensor3.from_dstensor": 983040,
+          "DSTensor.to_tensor": 660480,
+          "get_wick_coef": 464640,
+          "DS_harmonic_proj": 329015,
+          "DSTensor constructor": 9984,
+          "is_symmetric": 0,
+          "symmetrize": 0,
+          "coerce_input": 0,
+          "setup": 0,
+          "zero_repeated": 0,
+          "DSTower.from_slices": 0
+        }
+      },
+      "analytical_extra_flops": {
+        "factorized_tail_and_scalar": 11230377528,
+        "expected_gate_tail_map": 167772160,
+        "checkpoint_cloud_transport": 8657043456,
+        "target_control_features": 152306688,
+        "total_extra": 20207499832
+      },
+      "seconds": 1.6257619590032846
+    },
+    {
+      "index": 161,
+      "name": "dylan-brown",
+      "baseline_mse": 2.24091425569048e-07,
+      "method_mses": {
+        "oracle": 1.398825131100519e-07,
+        "same_cloud": 2.175395733956453e-07,
+        "marginal_only": 8.02274142157586e-06,
+        "checkpoint_sample_only": 4.904087702739342e-07,
+        "late_source_only": 2.4847206488486877e-06,
+        "combined_inherited_scale0.5": 5.630564193669088e-07,
+        "combined_inherited_scale0.75": 2.533649092742092e-07,
+        "combined_inherited_scale1": 1.8533465527371497e-07,
+        "combined_inherited_scale1.25": 2.7442445160484806e-07
+      },
+      "anchor_diagnostics": {
+        "same_cloud": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.0019386280368172137,
+            -0.00016614096429908368
+          ]
+        },
+        "marginal_only": {
+          "relative_to_same_cloud": 5.876680085480924,
+          "error": [
+            -0.011371496268535175,
+            -0.0011982846239765657
+          ]
+        },
+        "checkpoint_sample_only": {
+          "relative_to_same_cloud": 1.2375083033060068,
+          "error": [
+            -0.002374970725761205,
+            -0.0003966288222094251
+          ]
+        },
+        "late_source_only": {
+          "relative_to_same_cloud": 5.384366929482453,
+          "error": [
+            -0.010453872093682204,
+            -0.0006889050111800639
+          ]
+        },
+        "combined_inherited_scale0.5": {
+          "relative_to_same_cloud": 3.0644332471839637,
+          "error": [
+            -0.005955609322294997,
+            -0.0002880771102964953
+          ]
+        },
+        "combined_inherited_scale0.75": {
+          "relative_to_same_cloud": 1.90545785346503,
+          "error": [
+            -0.0037064779366016154,
+            -8.766315985470757e-05
+          ]
+        },
+        "combined_inherited_scale1": {
+          "relative_to_same_cloud": 0.7512339900181139,
+          "error": [
+            -0.001457346550908234,
+            0.00011275079058707671
+          ]
+        },
+        "combined_inherited_scale1.25": {
+          "relative_to_same_cloud": 0.4376068506405785,
+          "error": [
+            0.0007917848347855916,
+            0.000313164741028861
+          ]
+        }
+      },
+      "scalar_decomposition": {
+        "true_c21_anchor": [
+          0.011371496268538384,
+          0.0011982846239765844
+        ],
+        "checkpoint_inherited_anchor": [
+          0.008996525542774114,
+          0.0008016558017671401
+        ],
+        "late_source_anchor": [
+          0.0009176241748527794,
+          0.0005093796127965014
+        ]
+      },
+      "late_source_diagnostics": {
+        "seconds": 0.3436317080631852,
+        "factor_rank": 5888,
+        "torch_flops": 11230377528,
+        "torch_residual_flops": 40768512,
+        "torch_flop_breakdown": {
+          "FactoredTensor3.get_dslice": 4467983616,
+          "FactoredTensor3.contract_W": 4227858432,
+          "nonlin_sum 111 factored": 1650735361,
+          "harmonic contract_W": 472514560,
+          "contract_W_basic": 252641280,
+          "nonlin_sum": 54682624,
+          "resid": 40768512,
+          "eval_part": 33652736,
+          "pK_to_K": 21715200,
+          "harmonic diagslice": 5378048,
+          "FactoredTensor3.from_dstensor": 983040,
+          "DSTensor.to_tensor": 660480,
+          "get_wick_coef": 464640,
+          "DS_harmonic_proj": 329015,
+          "DSTensor constructor": 9984,
+          "is_symmetric": 0,
+          "symmetrize": 0,
+          "coerce_input": 0,
+          "setup": 0,
+          "zero_repeated": 0,
+          "DSTower.from_slices": 0
+        }
+      },
+      "analytical_extra_flops": {
+        "factorized_tail_and_scalar": 11230377528,
+        "expected_gate_tail_map": 167772160,
+        "checkpoint_cloud_transport": 8657043456,
+        "target_control_features": 152306688,
+        "total_extra": 20207499832
+      },
+      "seconds": 1.4191881669685245
+    },
+    {
+      "index": 162,
+      "name": "yolanda-hawkins",
+      "baseline_mse": 2.3177693298152411e-07,
+      "method_mses": {
+        "oracle": 1.7848597750280272e-07,
+        "same_cloud": 2.3513252094252474e-07,
+        "marginal_only": 2.8531751391314927e-06,
+        "checkpoint_sample_only": 2.159717857153403e-07,
+        "late_source_only": 1.4125680521333018e-06,
+        "combined_inherited_scale0.5": 3.7907208200909904e-07,
+        "combined_inherited_scale0.75": 2.0368788606522074e-07,
+        "combined_inherited_scale1": 1.9348035819619029e-07,
+        "combined_inherited_scale1.25": 3.101122516887821e-07
+      },
+      "anchor_diagnostics": {
+        "same_cloud": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0022463663764593633,
+            -4.716260170228165e-05
+          ]
+        },
+        "marginal_only": {
+          "relative_to_same_cloud": 2.423188320995265,
+          "error": [
+            -0.005375218829770212,
+            -0.0008662256517174872
+          ]
+        },
+        "checkpoint_sample_only": {
+          "relative_to_same_cloud": 0.429321939008678,
+          "error": [
+            -0.0009330827937561459,
+            -0.0002446662076325927
+          ]
+        },
+        "late_source_only": {
+          "relative_to_same_cloud": 2.2844624544878793,
+          "error": [
+            -0.005098580859528745,
+            -0.0005923117239063566
+          ]
+        },
+        "combined_inherited_scale0.5": {
+          "relative_to_same_cloud": 1.2867960525743907,
+          "error": [
+            -0.00287751284152149,
+            -0.00028153200186390934
+          ]
+        },
+        "combined_inherited_scale0.75": {
+          "relative_to_same_cloud": 0.7884223101802722,
+          "error": [
+            -0.0017669788325180846,
+            -0.00012614214084268743
+          ]
+        },
+        "combined_inherited_scale1": {
+          "relative_to_same_cloud": 0.292450641965251,
+          "error": [
+            -0.0006564448235146791,
+            2.924772017853794e-05
+          ]
+        },
+        "combined_inherited_scale1.25": {
+          "relative_to_same_cloud": 0.21816736077787682,
+          "error": [
+            0.00045408918548917043,
+            0.00018463758119975984
+          ]
+        }
+      },
+      "scalar_decomposition": {
+        "true_c21_anchor": [
+          0.005375218829767285,
+          0.0008662256517174685
+        ],
+        "checkpoint_inherited_anchor": [
+          0.004442136036014254,
+          0.0006215594440848936
+        ],
+        "late_source_anchor": [
+          0.00027663797024159116,
+          0.00027391392781112906
+        ]
+      },
+      "late_source_diagnostics": {
+        "seconds": 0.38362408289685845,
+        "factor_rank": 5888,
+        "torch_flops": 11230377528,
+        "torch_residual_flops": 40768512,
+        "torch_flop_breakdown": {
+          "FactoredTensor3.get_dslice": 4467983616,
+          "FactoredTensor3.contract_W": 4227858432,
+          "nonlin_sum 111 factored": 1650735361,
+          "harmonic contract_W": 472514560,
+          "contract_W_basic": 252641280,
+          "nonlin_sum": 54682624,
+          "resid": 40768512,
+          "eval_part": 33652736,
+          "pK_to_K": 21715200,
+          "harmonic diagslice": 5378048,
+          "FactoredTensor3.from_dstensor": 983040,
+          "DSTensor.to_tensor": 660480,
+          "get_wick_coef": 464640,
+          "DS_harmonic_proj": 329015,
+          "DSTensor constructor": 9984,
+          "is_symmetric": 0,
+          "symmetrize": 0,
+          "coerce_input": 0,
+          "setup": 0,
+          "zero_repeated": 0,
+          "DSTower.from_slices": 0
+        }
+      },
+      "analytical_extra_flops": {
+        "factorized_tail_and_scalar": 11230377528,
+        "expected_gate_tail_map": 167772160,
+        "checkpoint_cloud_transport": 8657043456,
+        "target_control_features": 152306688,
+        "total_extra": 20207499832
+      },
+      "seconds": 1.5594355838838965
+    },
+    {
+      "index": 163,
+      "name": "scott-matthews",
+      "baseline_mse": 2.5893801088228656e-07,
+      "method_mses": {
+        "oracle": 2.1616034584043983e-07,
+        "same_cloud": 2.5185594956739863e-07,
+        "marginal_only": 7.302183631480942e-06,
+        "checkpoint_sample_only": 4.6876121957541304e-07,
+        "late_source_only": 4.209789465653588e-06,
+        "combined_inherited_scale0.5": 1.1142056195104475e-06,
+        "combined_inherited_scale0.75": 4.4670817585081453e-07,
+        "combined_inherited_scale1": 2.09162388201382e-07,
+        "combined_inherited_scale1.25": 3.0040031524071617e-07
+      },
+      "anchor_diagnostics": {
+        "same_cloud": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.004983511315518996,
+            0.00037523681610281134
+          ]
+        },
+        "marginal_only": {
+          "relative_to_same_cloud": 3.563005529054969,
+          "error": [
+            -0.017677605082509373,
+            -0.0021389696587478385
+          ]
+        },
+        "checkpoint_sample_only": {
+          "relative_to_same_cloud": 0.6745725461765557,
+          "error": [
+            -0.00333171027486312,
+            -0.0005148532834020475
+          ]
+        },
+        "late_source_only": {
+          "relative_to_same_cloud": 3.4429284427586424,
+          "error": [
+            -0.017139392476558157,
+            -0.001517519978104051
+          ]
+        },
+        "combined_inherited_scale0.5": {
+          "relative_to_same_cloud": 1.9992286459396837,
+          "error": [
+            -0.009966445072734587,
+            -0.0007054617904311555
+          ]
+        },
+        "combined_inherited_scale0.75": {
+          "relative_to_same_cloud": 1.2780076266595497,
+          "error": [
+            -0.006379971370823689,
+            -0.00029943269659470084
+          ]
+        },
+        "combined_inherited_scale1": {
+          "relative_to_same_cloud": 0.5593726068487483,
+          "error": [
+            -0.002793497668911904,
+            0.00010659639724173997
+          ]
+        },
+        "combined_inherited_scale1.25": {
+          "relative_to_same_cloud": 0.18893871288038616,
+          "error": [
+            0.0007929760329998814,
+            0.0005126254910781947
+          ]
+        }
+      },
+      "scalar_decomposition": {
+        "true_c21_anchor": [
+          0.017677605082507906,
+          0.0021389696587478355
+        ],
+        "checkpoint_inherited_anchor": [
+          0.014345894807646392,
+          0.0016241163753457956
+        ],
+        "late_source_anchor": [
+          0.0005382126059513612,
+          0.0006214496806437867
+        ]
+      },
+      "late_source_diagnostics": {
+        "seconds": 0.8569586249068379,
+        "factor_rank": 5888,
+        "torch_flops": 11230377528,
+        "torch_residual_flops": 40768512,
+        "torch_flop_breakdown": {
+          "FactoredTensor3.get_dslice": 4467983616,
+          "FactoredTensor3.contract_W": 4227858432,
+          "nonlin_sum 111 factored": 1650735361,
+          "harmonic contract_W": 472514560,
+          "contract_W_basic": 252641280,
+          "nonlin_sum": 54682624,
+          "resid": 40768512,
+          "eval_part": 33652736,
+          "pK_to_K": 21715200,
+          "harmonic diagslice": 5378048,
+          "FactoredTensor3.from_dstensor": 983040,
+          "DSTensor.to_tensor": 660480,
+          "get_wick_coef": 464640,
+          "DS_harmonic_proj": 329015,
+          "DSTensor constructor": 9984,
+          "is_symmetric": 0,
+          "symmetrize": 0,
+          "coerce_input": 0,
+          "setup": 0,
+          "zero_repeated": 0,
+          "DSTower.from_slices": 0
+        }
+      },
+      "analytical_extra_flops": {
+        "factorized_tail_and_scalar": 11230377528,
+        "expected_gate_tail_map": 167772160,
+        "checkpoint_cloud_transport": 8657043456,
+        "target_control_features": 152306688,
+        "total_extra": 20207499832
+      },
+      "seconds": 2.5414641660172492
+    },
+    {
+      "index": 164,
+      "name": "benjamin-walsh",
+      "baseline_mse": 3.457466003272283e-07,
+      "method_mses": {
+        "oracle": 1.320064604069214e-07,
+        "same_cloud": 3.4860456517037017e-07,
+        "marginal_only": 8.192213298504065e-06,
+        "checkpoint_sample_only": 6.388957797789249e-07,
+        "late_source_only": 2.4514649872540128e-06,
+        "combined_inherited_scale0.5": 4.4251615860686666e-07,
+        "combined_inherited_scale0.75": 1.3105310119214527e-07,
+        "combined_inherited_scale1": 1.544037714012174e-07,
+        "combined_inherited_scale1.25": 4.346913700568238e-07
+      },
+      "anchor_diagnostics": {
+        "same_cloud": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0010653864535347113,
+            3.0237986698988806e-06
+          ]
+        },
+        "marginal_only": {
+          "relative_to_same_cloud": 2.68295312837301,
+          "error": [
+            -0.002795902445908771,
+            -0.0005944262112955231
+          ]
+        },
+        "checkpoint_sample_only": {
+          "relative_to_same_cloud": 0.6796204073809013,
+          "error": [
+            -0.0006926951340839871,
+            -0.0002108037134836982
+          ]
+        },
+        "late_source_only": {
+          "relative_to_same_cloud": 2.2432944582613956,
+          "error": [
+            -0.002365669423094685,
+            -0.00034005472153133577
+          ]
+        },
+        "combined_inherited_scale0.5": {
+          "relative_to_same_cloud": 1.2412358747123802,
+          "error": [
+            -0.001314065767182293,
+            -0.0001482434726254242
+          ]
+        },
+        "combined_inherited_scale0.75": {
+          "relative_to_same_cloud": 0.741511556676616,
+          "error": [
+            -0.0007882639392261526,
+            -5.2337848172467547e-05
+          ]
+        },
+        "combined_inherited_scale1": {
+          "relative_to_same_cloud": 0.24972395153279017,
+          "error": [
+            -0.00026246211126990104,
+            4.356777628048911e-05
+          ]
+        },
+        "combined_inherited_scale1.25": {
+          "relative_to_same_cloud": 0.2797042840675342,
+          "error": [
+            0.00026333971668623946,
+            0.00013947340073344403
+          ]
+        }
+      },
+      "scalar_decomposition": {
+        "true_c21_anchor": [
+          0.0027959024459085773,
+          0.0005944262112955124
+        ],
+        "checkpoint_inherited_anchor": [
+          0.0021032073118247762,
+          0.00038362249781182444
+        ],
+        "late_source_anchor": [
+          0.000430233022814131,
+          0.0002543714897641876
+        ]
+      },
+      "late_source_diagnostics": {
+        "seconds": 0.5208655840251595,
+        "factor_rank": 5888,
+        "torch_flops": 11230377528,
+        "torch_residual_flops": 40768512,
+        "torch_flop_breakdown": {
+          "FactoredTensor3.get_dslice": 4467983616,
+          "FactoredTensor3.contract_W": 4227858432,
+          "nonlin_sum 111 factored": 1650735361,
+          "harmonic contract_W": 472514560,
+          "contract_W_basic": 252641280,
+          "nonlin_sum": 54682624,
+          "resid": 40768512,
+          "eval_part": 33652736,
+          "pK_to_K": 21715200,
+          "harmonic diagslice": 5378048,
+          "FactoredTensor3.from_dstensor": 983040,
+          "DSTensor.to_tensor": 660480,
+          "get_wick_coef": 464640,
+          "DS_harmonic_proj": 329015,
+          "DSTensor constructor": 9984,
+          "is_symmetric": 0,
+          "symmetrize": 0,
+          "coerce_input": 0,
+          "setup": 0,
+          "zero_repeated": 0,
+          "DSTower.from_slices": 0
+        }
+      },
+      "analytical_extra_flops": {
+        "factorized_tail_and_scalar": 11230377528,
+        "expected_gate_tail_map": 167772160,
+        "checkpoint_cloud_transport": 8657043456,
+        "target_control_features": 152306688,
+        "total_extra": 20207499832
+      },
+      "seconds": 3.11457149987109
+    },
+    {
+      "index": 165,
+      "name": "justin-crawford",
+      "baseline_mse": 3.0668500009183507e-07,
+      "method_mses": {
+        "oracle": 1.4581550536809984e-07,
+        "same_cloud": 2.9661344282441717e-07,
+        "marginal_only": 7.975753265273211e-06,
+        "checkpoint_sample_only": 4.6998663218779663e-07,
+        "late_source_only": 2.951993024304803e-06,
+        "combined_inherited_scale0.5": 6.707315146915181e-07,
+        "combined_inherited_scale0.75": 2.8056166482944936e-07,
+        "combined_inherited_scale1": 1.4444830449873214e-07,
+        "combined_inherited_scale1.25": 1.4749603020812837e-07
+      },
+      "anchor_diagnostics": {
+        "same_cloud": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.002403729043152225,
+            2.2115785409223404e-05
+          ]
+        },
+        "marginal_only": {
+          "relative_to_same_cloud": 2.0552540935597863,
+          "error": [
+            -0.004850666355928013,
+            -0.000937767928264532
+          ]
+        },
+        "checkpoint_sample_only": {
+          "relative_to_same_cloud": 0.40688804403040446,
+          "error": [
+            -0.0009383428310407727,
+            -0.00027599418143273505
+          ]
+        },
+        "late_source_only": {
+          "relative_to_same_cloud": 1.8229900701600963,
+          "error": [
+            -0.004339265403514592,
+            -0.0006116362439575369
+          ]
+        },
+        "combined_inherited_scale0.5": {
+          "relative_to_same_cloud": 0.9982333107212269,
+          "error": [
+            -0.0023831036410708606,
+            -0.0002807493705416393
+          ]
+        },
+        "combined_inherited_scale0.75": {
+          "relative_to_same_cloud": 0.5864581794916623,
+          "error": [
+            -0.001405022759848995,
+            -0.00011530593383368877
+          ]
+        },
+        "combined_inherited_scale1": {
+          "relative_to_same_cloud": 0.1788294442972993,
+          "error": [
+            -0.00042694187862735156,
+            5.013750287426004e-05
+          ]
+        },
+        "combined_inherited_scale1.25": {
+          "relative_to_same_cloud": 0.2461911131587376,
+          "error": [
+            0.000551139002594514,
+            0.00021558093958220885
+          ]
+        }
+      },
+      "scalar_decomposition": {
+        "true_c21_anchor": [
+          0.004850666355928052,
+          0.000937767928264538
+        ],
+        "checkpoint_inherited_anchor": [
+          0.0039123235248873164,
+          0.000661773746831797
+        ],
+        "late_source_anchor": [
+          0.0005114009524133882,
+          0.0003261316843069945
+        ]
+      },
+      "late_source_diagnostics": {
+        "seconds": 0.4183985840063542,
+        "factor_rank": 5888,
+        "torch_flops": 11230377528,
+        "torch_residual_flops": 40768512,
+        "torch_flop_breakdown": {
+          "FactoredTensor3.get_dslice": 4467983616,
+          "FactoredTensor3.contract_W": 4227858432,
+          "nonlin_sum 111 factored": 1650735361,
+          "harmonic contract_W": 472514560,
+          "contract_W_basic": 252641280,
+          "nonlin_sum": 54682624,
+          "resid": 40768512,
+          "eval_part": 33652736,
+          "pK_to_K": 21715200,
+          "harmonic diagslice": 5378048,
+          "FactoredTensor3.from_dstensor": 983040,
+          "DSTensor.to_tensor": 660480,
+          "get_wick_coef": 464640,
+          "DS_harmonic_proj": 329015,
+          "DSTensor constructor": 9984,
+          "is_symmetric": 0,
+          "symmetrize": 0,
+          "coerce_input": 0,
+          "setup": 0,
+          "zero_repeated": 0,
+          "DSTower.from_slices": 0
+        }
+      },
+      "analytical_extra_flops": {
+        "factorized_tail_and_scalar": 11230377528,
+        "expected_gate_tail_map": 167772160,
+        "checkpoint_cloud_transport": 8657043456,
+        "target_control_features": 152306688,
+        "total_extra": 20207499832
+      },
+      "seconds": 3.8237912501208484
+    },
+    {
+      "index": 166,
+      "name": "tara-harris",
+      "baseline_mse": 6.550635664715546e-07,
+      "method_mses": {
+        "oracle": 2.875727910979081e-07,
+        "same_cloud": 6.187691871471576e-07,
+        "marginal_only": 5.46560060865406e-06,
+        "checkpoint_sample_only": 4.1671088425098725e-07,
+        "late_source_only": 3.38446872883725e-06,
+        "combined_inherited_scale0.5": 1.0129609571847718e-06,
+        "combined_inherited_scale0.75": 5.270084192815365e-07,
+        "combined_inherited_scale1": 4.066577038655735e-07,
+        "combined_inherited_scale1.25": 5.889434716299391e-07
+      },
+      "anchor_diagnostics": {
+        "same_cloud": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.007240007575721741,
+            6.019058085454665e-05
+          ]
+        },
+        "marginal_only": {
+          "relative_to_same_cloud": 2.543841782609703,
+          "error": [
+            -0.018217248717686374,
+            -0.002712408598875754
+          ]
+        },
+        "checkpoint_sample_only": {
+          "relative_to_same_cloud": 0.44998596433009636,
+          "error": [
+            -0.0032171378867023037,
+            -0.0005144720484302756
+          ]
+        },
+        "late_source_only": {
+          "relative_to_same_cloud": 2.4114736644092356,
+          "error": [
+            -0.017345696556017032,
+            -0.0019918882291382195
+          ]
+        },
+        "combined_inherited_scale0.5": {
+          "relative_to_same_cloud": 1.3654277016461829,
+          "error": [
+            -0.009845641140524997,
+            -0.0008929199539154803
+          ]
+        },
+        "combined_inherited_scale0.75": {
+          "relative_to_same_cloud": 0.8432407793637112,
+          "error": [
+            -0.006095613432779423,
+            -0.0003434358163041107
+          ]
+        },
+        "combined_inherited_scale1": {
+          "relative_to_same_cloud": 0.32521197162116117,
+          "error": [
+            -0.0023455857250329615,
+            0.00020604832130725892
+          ]
+        },
+        "combined_inherited_scale1.25": {
+          "relative_to_same_cloud": 0.22026405048140607,
+          "error": [
+            0.001404441982712612,
+            0.0007555324589186285
+          ]
+        }
+      },
+      "scalar_decomposition": {
+        "true_c21_anchor": [
+          0.01821724871767975,
+          0.002712408598875805
+        ],
+        "checkpoint_inherited_anchor": [
+          0.015000110830983843,
+          0.002197936550445476
+        ],
+        "late_source_anchor": [
+          0.0008715521616694528,
+          0.0007205203697375287
+        ]
+      },
+      "late_source_diagnostics": {
+        "seconds": 1.2184183329809457,
+        "factor_rank": 5888,
+        "torch_flops": 11230377528,
+        "torch_residual_flops": 40768512,
+        "torch_flop_breakdown": {
+          "FactoredTensor3.get_dslice": 4467983616,
+          "FactoredTensor3.contract_W": 4227858432,
+          "nonlin_sum 111 factored": 1650735361,
+          "harmonic contract_W": 472514560,
+          "contract_W_basic": 252641280,
+          "nonlin_sum": 54682624,
+          "resid": 40768512,
+          "eval_part": 33652736,
+          "pK_to_K": 21715200,
+          "harmonic diagslice": 5378048,
+          "FactoredTensor3.from_dstensor": 983040,
+          "DSTensor.to_tensor": 660480,
+          "get_wick_coef": 464640,
+          "DS_harmonic_proj": 329015,
+          "DSTensor constructor": 9984,
+          "is_symmetric": 0,
+          "symmetrize": 0,
+          "coerce_input": 0,
+          "setup": 0,
+          "zero_repeated": 0,
+          "DSTower.from_slices": 0
+        }
+      },
+      "analytical_extra_flops": {
+        "factorized_tail_and_scalar": 11230377528,
+        "expected_gate_tail_map": 167772160,
+        "checkpoint_cloud_transport": 8657043456,
+        "target_control_features": 152306688,
+        "total_extra": 20207499832
+      },
+      "seconds": 2.5723967500962317
+    },
+    {
+      "index": 167,
+      "name": "kathy-wright",
+      "baseline_mse": 1.3442389485466154e-07,
+      "method_mses": {
+        "oracle": 1.1924535108495643e-07,
+        "same_cloud": 1.2647344020295521e-07,
+        "marginal_only": 1.3012339469934629e-05,
+        "checkpoint_sample_only": 4.6377071365827776e-07,
+        "late_source_only": 5.195651222746909e-06,
+        "combined_inherited_scale0.5": 1.0276061770507478e-06,
+        "combined_inherited_scale0.75": 3.500445686207278e-07,
+        "combined_inherited_scale1": 1.28861794022488e-07,
+        "combined_inherited_scale1.25": 1.195466228225552e-07
+      },
+      "anchor_diagnostics": {
+        "same_cloud": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.0022050011699725758,
+            1.101729076940193e-05
+          ]
+        },
+        "marginal_only": {
+          "relative_to_same_cloud": 7.039014804314556,
+          "error": [
+            -0.015495886381627244,
+            -0.0008866082233907127
+          ]
+        },
+        "checkpoint_sample_only": {
+          "relative_to_same_cloud": 1.20266069617434,
+          "error": [
+            -0.0026363285597907904,
+            -0.00028697118789919145
+          ]
+        },
+        "late_source_only": {
+          "relative_to_same_cloud": 6.770368460196706,
+          "error": [
+            -0.01491651816000683,
+            -0.0006068352401718043
+          ]
+        },
+        "combined_inherited_scale0.5": {
+          "relative_to_same_cloud": 3.8513289119134746,
+          "error": [
+            -0.00848673924908816,
+            -0.00030701672242604283
+          ]
+        },
+        "combined_inherited_scale0.75": {
+          "relative_to_same_cloud": 2.3918918990520366,
+          "error": [
+            -0.005271849793629713,
+            -0.00015710746355316295
+          ]
+        },
+        "combined_inherited_scale1": {
+          "relative_to_same_cloud": 0.9328554040106244,
+          "error": [
+            -0.002056960338170377,
+            -7.198204680281331e-06
+          ]
+        },
+        "combined_inherited_scale1.25": {
+          "relative_to_same_cloud": 0.5291043676505879,
+          "error": [
+            0.0011579291172889583,
+            0.00014271105419259855
+          ]
+        }
+      },
+      "scalar_decomposition": {
+        "true_c21_anchor": [
+          0.015495886381626939,
+          0.0008866082233907514
+        ],
+        "checkpoint_inherited_anchor": [
+          0.012859557821836487,
+          0.0005996370354915221
+        ],
+        "late_source_anchor": [
+          0.0005793682216206414,
+          0.00027977298321890925
+        ]
+      },
+      "late_source_diagnostics": {
+        "seconds": 0.3874454591423273,
+        "factor_rank": 5888,
+        "torch_flops": 11230377528,
+        "torch_residual_flops": 40768512,
+        "torch_flop_breakdown": {
+          "FactoredTensor3.get_dslice": 4467983616,
+          "FactoredTensor3.contract_W": 4227858432,
+          "nonlin_sum 111 factored": 1650735361,
+          "harmonic contract_W": 472514560,
+          "contract_W_basic": 252641280,
+          "nonlin_sum": 54682624,
+          "resid": 40768512,
+          "eval_part": 33652736,
+          "pK_to_K": 21715200,
+          "harmonic diagslice": 5378048,
+          "FactoredTensor3.from_dstensor": 983040,
+          "DSTensor.to_tensor": 660480,
+          "get_wick_coef": 464640,
+          "DS_harmonic_proj": 329015,
+          "DSTensor constructor": 9984,
+          "is_symmetric": 0,
+          "symmetrize": 0,
+          "coerce_input": 0,
+          "setup": 0,
+          "zero_repeated": 0,
+          "DSTower.from_slices": 0
+        }
+      },
+      "analytical_extra_flops": {
+        "factorized_tail_and_scalar": 11230377528,
+        "expected_gate_tail_map": 167772160,
+        "checkpoint_cloud_transport": 8657043456,
+        "target_control_features": 152306688,
+        "total_extra": 20207499832
+      },
+      "seconds": 1.5630744160152972
+    }
+  ]
+}

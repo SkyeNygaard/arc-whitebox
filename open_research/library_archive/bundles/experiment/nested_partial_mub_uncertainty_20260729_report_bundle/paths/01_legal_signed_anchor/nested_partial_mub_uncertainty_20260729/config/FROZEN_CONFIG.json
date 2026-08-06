@@ -1,0 +1,24 @@
+{
+  "protocol": "nested-partial-mub-uncertainty-v1",
+  "freeze_timestamp_utc": "2026-07-30T00:55:00Z",
+  "architecture": {"width": 256, "depth": 32, "bias": false, "activation": "ReLU"},
+  "network_ids": [5000,5001,5002,5003,5004,5005,5006,5007,5008,5009,5010,5011,5012,5013,5014,5015,5016,5017],
+  "splits": {
+    "development": [5000,5001,5002,5003,5004,5005,5006,5007,5008],
+    "calibration": [5009,5010,5011,5012],
+    "validation": [5013,5014,5015,5016,5017]
+  },
+  "rotation_seed_offsets": [-1,7001,7003],
+  "rotation_grouping": "all rotations grouped by base network",
+  "truth_n_per_half": 16384,
+  "truth_method": "two independently scrambled Gaussian Sobol streams",
+  "main_basis_ids": "0-110 plus 128",
+  "companion": {"family": "chirp17", "basis_ids": "0-16", "orientation": "r3", "seed_formula": "1011+100*network_id", "anchor_layer": 29},
+  "prefixes": [2,4,8,12,17],
+  "amplitude": 0.20,
+  "radial_probes": 128,
+  "crossfit_folds": 6,
+  "ridge": 0.1,
+  "primary_gate": {"severe_ratio": 1.10, "minimum_catch": 0.75, "maximum_false_suppression": 0.20},
+  "notes": "No validation labels may be used for rule or threshold selection. Reference refinement is allowed only by a rule frozen before inspecting validation outcomes."
+}

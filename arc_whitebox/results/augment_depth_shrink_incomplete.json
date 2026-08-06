@@ -1,0 +1,27 @@
+{
+  "status": "interrupted_on_runtime_bound",
+  "holdout_opened": false,
+  "selection_complete": false,
+  "configuration": {
+    "rank": 64,
+    "sketch_columns": 256,
+    "sketch_seed": 2026,
+    "planned_start_layers": [8, 16, 24],
+    "planned_residual_lambdas": [0.85, 0.9, 0.95],
+    "required_selection_ratio_for_holdout": 0.9
+  },
+  "recovered_screen_result": {
+    "mlp_id": 0,
+    "schedule": {
+      "start_layer": 8,
+      "residual_lambda": 0.85
+    },
+    "target_mse_ratio_vs_augment_baseline": 0.9212370123528039
+  },
+  "notes": [
+    "The original staged run completed its ID0 screen and IDs0-4 top-two validation, then was interrupted while validating the winner on IDs5-9.",
+    "Intermediate winner state was in memory and was not recoverable after interruption.",
+    "A checkpointed restart recovered one screen result before it too was stopped to respect the runtime bound.",
+    "No IDs60-69 predictions or target comparisons were evaluated."
+  ]
+}

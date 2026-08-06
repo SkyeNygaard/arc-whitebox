@@ -1,0 +1,114 @@
+{
+  "n_rows": 48,
+  "n_base_networks": 16,
+  "cv": "8-fold grouped by base network",
+  "features": [
+    "feature_cos_c17_p2",
+    "feature_cos_c17_p4",
+    "feature_cos_p2_p4",
+    "feature_norm_p2_c17",
+    "feature_norm_p4_c17",
+    "feature_min_nested_cos",
+    "feature_max_loo_angle_sin",
+    "feature_cos_p32_p128",
+    "feature_norm_p32_p128"
+  ],
+  "targets": {
+    "geometry_c17_cos_ideal": {
+      "ridge": {
+        "oof_r2": -0.15146676328206676,
+        "oof_correlation": -0.06957925968643026,
+        "sign_accuracy": 0.6666666666666666,
+        "group_permutation_p_abs_corr": 0.6608678264347131,
+        "prediction_mean": 0.2041977734148406,
+        "target_mean": 0.19682876645748829
+      },
+      "poly2_ridge": {
+        "oof_r2": -0.10682633047216883,
+        "oof_correlation": 0.21093685363021675,
+        "sign_accuracy": 0.6458333333333334,
+        "group_permutation_p_abs_corr": 0.15476904619076184,
+        "prediction_mean": 0.18260602585326466,
+        "target_mean": 0.19682876645748829
+      },
+      "extra_trees": {
+        "oof_r2": -0.08474930428675731,
+        "oof_correlation": -0.05627213184935227,
+        "sign_accuracy": 0.7083333333333334,
+        "group_permutation_p_abs_corr": 0.7020595880823836,
+        "prediction_mean": 0.21583837867295397,
+        "target_mean": 0.19682876645748829
+      },
+      "diagnostics": {
+        "positive_fraction": 0.7083333333333334,
+        "networks_with_both_signs": 11,
+        "within_network_variance_fraction": 0.7540803432087658,
+        "best_constant_sign_accuracy": 0.7083333333333334
+      }
+    },
+    "geometry_p2_cos_ideal": {
+      "ridge": {
+        "oof_r2": 0.0009138689548897627,
+        "oof_correlation": 0.17827777158290606,
+        "sign_accuracy": 0.5625,
+        "group_permutation_p_abs_corr": 0.22955408918216358,
+        "prediction_mean": 0.07647999105011043,
+        "target_mean": 0.08006918661262898
+      },
+      "poly2_ridge": {
+        "oof_r2": -0.2833900253169648,
+        "oof_correlation": -0.06506410052953608,
+        "sign_accuracy": 0.5625,
+        "group_permutation_p_abs_corr": 0.6556688662267547,
+        "prediction_mean": 0.10583536138366915,
+        "target_mean": 0.08006918661262898
+      },
+      "extra_trees": {
+        "oof_r2": -0.06612550867775013,
+        "oof_correlation": -0.051882424049265255,
+        "sign_accuracy": 0.5,
+        "group_permutation_p_abs_corr": 0.7358528294341132,
+        "prediction_mean": 0.07882578272025022,
+        "target_mean": 0.08006918661262898
+      },
+      "diagnostics": {
+        "positive_fraction": 0.5625,
+        "networks_with_both_signs": 13,
+        "within_network_variance_fraction": 0.7037017633429137,
+        "best_constant_sign_accuracy": 0.5625
+      }
+    },
+    "geometry_p4_cos_ideal": {
+      "ridge": {
+        "oof_r2": -0.065549101438515,
+        "oof_correlation": 0.11592861660921998,
+        "sign_accuracy": 0.5416666666666666,
+        "group_permutation_p_abs_corr": 0.46010797840431916,
+        "prediction_mean": 0.11128454310387693,
+        "target_mean": 0.1095679886285531
+      },
+      "poly2_ridge": {
+        "oof_r2": -0.46634973265759205,
+        "oof_correlation": -0.15768152506161656,
+        "sign_accuracy": 0.6041666666666666,
+        "group_permutation_p_abs_corr": 0.28574285142971406,
+        "prediction_mean": 0.13313496053067997,
+        "target_mean": 0.1095679886285531
+      },
+      "extra_trees": {
+        "oof_r2": -0.1116039886943625,
+        "oof_correlation": -0.15155293101075332,
+        "sign_accuracy": 0.5833333333333334,
+        "group_permutation_p_abs_corr": 0.33653269346130776,
+        "prediction_mean": 0.11175610129809359,
+        "target_mean": 0.1095679886285531
+      },
+      "diagnostics": {
+        "positive_fraction": 0.625,
+        "networks_with_both_signs": 13,
+        "within_network_variance_fraction": 0.6474938975527711,
+        "best_constant_sign_accuracy": 0.625
+      }
+    }
+  }
+}

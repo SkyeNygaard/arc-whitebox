@@ -1,0 +1,107 @@
+[
+ {
+  "name": "EMP + well-propagated moments",
+  "kind": "target",
+  "mse": 1.3e-07,
+  "flops": 25132800000.0,
+  "score": 1.3e-08
+ },
+ {
+  "name": "MC[anchored, sphere]",
+  "kind": "mc",
+  "mse": 9.82927229373679e-07,
+  "flops": 136000000000.0,
+  "score": 4.914636146868396e-07
+ },
+ {
+  "name": "MC[anchored, anti_sphere]",
+  "kind": "mc",
+  "mse": 9.887761922130536e-07,
+  "flops": 136000000000.0,
+  "score": 4.943880961065268e-07
+ },
+ {
+  "name": "MC[anchored, iid]",
+  "kind": "mc",
+  "mse": 1.0225906905865865e-06,
+  "flops": 136000000000.0,
+  "score": 5.112953452932932e-07
+ },
+ {
+  "name": "MC[anchored, anti]",
+  "kind": "mc",
+  "mse": 1.0712155322226422e-06,
+  "flops": 136000000000.0,
+  "score": 5.356077661113211e-07
+ },
+ {
+  "name": "MC[plain, anti_sphere]",
+  "kind": "mc",
+  "mse": 1.2623663681975691e-06,
+  "flops": 136000000000.0,
+  "score": 6.311831840987846e-07
+ },
+ {
+  "name": "MC[plain, anti]",
+  "kind": "mc",
+  "mse": 1.4123556414511996e-06,
+  "flops": 136000000000.0,
+  "score": 7.061778207255998e-07
+ },
+ {
+  "name": "MC[plain, sphere]",
+  "kind": "mc",
+  "mse": 1.4671592889459662e-06,
+  "flops": 136000000000.0,
+  "score": 7.335796444729831e-07
+ },
+ {
+  "name": "MC[plain, iid]",
+  "kind": "mc",
+  "mse": 1.537392380183188e-06,
+  "flops": 136000000000.0,
+  "score": 7.68696190091594e-07
+ },
+ {
+  "name": "EMP order4 (Edgeworth marginals)",
+  "kind": "whitebox",
+  "mse": 1.2714849999999999e-05,
+  "flops": 25132800000.0,
+  "score": 1.271485e-06
+ },
+ {
+  "name": "ASGM[r=32,K=4096]",
+  "kind": "hybrid",
+  "mse": 4.938977414337852e-05,
+  "flops": 22801610069.333336,
+  "score": 4.938977414337853e-06
+ },
+ {
+  "name": "ASGM[r=8,K=4096]",
+  "kind": "hybrid",
+  "mse": 6.585641480035169e-05,
+  "flops": 22734790997.333336,
+  "score": 6.5856414800351695e-06
+ },
+ {
+  "name": "GaussProp[exact]",
+  "kind": "whitebox",
+  "mse": 6.929512548174267e-05,
+  "flops": 2157481984.0,
+  "score": 6.9295125481742665e-06
+ },
+ {
+  "name": "GaussProp[linearized]",
+  "kind": "whitebox",
+  "mse": 7.243330608020353e-05,
+  "flops": 1592393728.0,
+  "score": 7.243330608020353e-06
+ },
+ {
+  "name": "GaussProp[diag]",
+  "kind": "whitebox",
+  "mse": 0.0016515053321867848,
+  "flops": 1586102272.0,
+  "score": 0.0001651505332186785
+ }
+]

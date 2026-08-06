@@ -1,0 +1,32 @@
+{
+  "current_position": {
+    "adjusted_score": 1.55e-07,
+    "budget": 272000000000,
+    "compute_multiplier": 0.6415441176470589,
+    "effective_compute": 174500000000.0,
+    "raw_mse": 2.416e-07,
+    "score_multiplier": 0.6415562913907285
+  },
+  "decisions": {
+    "T0.1": "BLOCKED",
+    "T0.2": "BLOCKED",
+    "T0.3": "BLOCKED_PROMOTION_RETAIN_MODULE"
+  },
+  "exact_missing_dependencies": [
+    "whestbench==0.13.0",
+    "flopscope==0.9.1",
+    "official Phase-1 Mini cohort / official submission runner"
+  ],
+  "local_experiments": {
+    "additional_calibration_pair_runs": 3,
+    "basis_timing_runs": 8,
+    "common_T03_panel_runs": 3,
+    "floor_diagnostic_runs": 2,
+    "submission_package_parity_runs": 4,
+    "unique_complete_network_forward_runs": 20,
+    "validation_suite_runs": 1
+  },
+  "package_audit_pass": true,
+  "status": "BLOCKED_OFFICIAL_DEPENDENCY",
+  "unique_official_packages": 7
+}

@@ -1,0 +1,1634 @@
+{
+  "protocol": {
+    "indices": [
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167
+    ],
+    "checkpoint": 24,
+    "target_layer": 29,
+    "rotation_seed": 3,
+    "rank": 2,
+    "folds": 6,
+    "ridge": 0.1,
+    "inherited_scales": [
+      0.5,
+      0.75,
+      1.0,
+      1.25
+    ],
+    "dtype": "float32",
+    "oracle_k2_and_gates": true,
+    "uses_final_targets_for_construction": false,
+    "radial_conversion_corrected": true
+  },
+  "summary": {
+    "oracle_exact_oracle_center": {
+      "mse_ratio": 0.5661101147244977,
+      "wins": 8,
+      "worst": 0.9226877008664466,
+      "mean_anchor_error_relative_to_same_cloud": 0.0
+    },
+    "same_cloud_oracle_center": {
+      "mse_ratio": 0.9697584807790217,
+      "wins": 6,
+      "worst": 1.022378793520278,
+      "mean_anchor_error_relative_to_same_cloud": 1.0
+    },
+    "checkpoint_sample_only_oracle_center": {
+      "mse_ratio": 19.34465551171515,
+      "wins": 0,
+      "worst": 33.33403233925058,
+      "mean_anchor_error_relative_to_same_cloud": 3.753599524913433
+    },
+    "late_source_only_oracle_center": {
+      "mse_ratio": 443.4777874002965,
+      "wins": 0,
+      "worst": 1017.3374758492124,
+      "mean_anchor_error_relative_to_same_cloud": 18.216694007073535
+    },
+    "combined_inherited_scale0.5_oracle_center": {
+      "mse_ratio": 18.899705571878403,
+      "wins": 0,
+      "worst": 36.33256115173853,
+      "mean_anchor_error_relative_to_same_cloud": 10.396986368568367
+    },
+    "combined_inherited_scale0.75_oracle_center": {
+      "mse_ratio": 4.1680653459182695,
+      "wins": 0,
+      "worst": 11.317996471520033,
+      "mean_anchor_error_relative_to_same_cloud": 6.4906896856071405
+    },
+    "combined_inherited_scale1_oracle_center": {
+      "mse_ratio": 1.6563654720519863,
+      "wins": 1,
+      "worst": 3.3092404238139626,
+      "mean_anchor_error_relative_to_same_cloud": 2.602144697229096
+    },
+    "combined_inherited_scale1.25_oracle_center": {
+      "mse_ratio": 20.536432050835625,
+      "wins": 0,
+      "worst": 28.437793995281485,
+      "mean_anchor_error_relative_to_same_cloud": 1.4185364223941153
+    },
+    "oracle_exact_sample_center": {
+      "mse_ratio": 0.5661308507031333,
+      "wins": 8,
+      "worst": 0.9226815582726837,
+      "mean_anchor_error_relative_to_same_cloud": 0.0
+    },
+    "same_cloud_sample_center": {
+      "mse_ratio": 0.9697640749487151,
+      "wins": 6,
+      "worst": 1.0223722410576879,
+      "mean_anchor_error_relative_to_same_cloud": 1.0
+    },
+    "checkpoint_sample_only_sample_center": {
+      "mse_ratio": 20.98210497453631,
+      "wins": 0,
+      "worst": 33.20230422338799,
+      "mean_anchor_error_relative_to_same_cloud": 3.1493870735857152
+    },
+    "late_source_only_sample_center": {
+      "mse_ratio": 452.1889334038559,
+      "wins": 0,
+      "worst": 972.3130465313942,
+      "mean_anchor_error_relative_to_same_cloud": 17.612128045484816
+    },
+    "combined_inherited_scale0.5_sample_center": {
+      "mse_ratio": 20.00046685002872,
+      "wins": 0,
+      "worst": 30.36771897901083,
+      "mean_anchor_error_relative_to_same_cloud": 9.780959764344448
+    },
+    "combined_inherited_scale0.75_sample_center": {
+      "mse_ratio": 3.889173215347541,
+      "wins": 0,
+      "worst": 10.208097153525122,
+      "mean_anchor_error_relative_to_same_cloud": 5.868249816967482
+    },
+    "combined_inherited_scale1_sample_center": {
+      "mse_ratio": 1.7161441651657516,
+      "wins": 1,
+      "worst": 2.423914426906023,
+      "mean_anchor_error_relative_to_same_cloud": 2.067786392828109
+    },
+    "combined_inherited_scale1.25_sample_center": {
+      "mse_ratio": 22.558611324034114,
+      "wins": 0,
+      "worst": 35.42501901653053,
+      "mean_anchor_error_relative_to_same_cloud": 2.0987001382765964
+    }
+  },
+  "records": [
+    {
+      "index": 160,
+      "name": "amy-scott",
+      "baseline_mse": 2.1440298520066416e-07,
+      "method_mses": {
+        "oracle_exact_oracle_center": 1.3685021653296652e-07,
+        "same_cloud_oracle_center": 2.116019937536367e-07,
+        "checkpoint_sample_only_oracle_center": 3.0771488801667414e-06,
+        "late_source_only_oracle_center": 0.00012660516198663885,
+        "combined_inherited_scale0.5_oracle_center": 4.539524318394527e-06,
+        "combined_inherited_scale0.75_oracle_center": 1.3716140728051928e-06,
+        "combined_inherited_scale1_oracle_center": 3.742504474441563e-07,
+        "combined_inherited_scale1.25_oracle_center": 5.380194560918801e-06,
+        "oracle_exact_sample_center": 1.3686623390852794e-07,
+        "same_cloud_sample_center": 2.1159460409754884e-07,
+        "checkpoint_sample_only_sample_center": 4.113790181837217e-06,
+        "late_source_only_sample_center": 0.00014189928225250557,
+        "combined_inherited_scale0.5_sample_center": 5.820836954602802e-06,
+        "combined_inherited_scale0.75_sample_center": 1.198261891832793e-06,
+        "combined_inherited_scale1_sample_center": 2.6110543781974346e-07,
+        "combined_inherited_scale1.25_sample_center": 5.014676334135122e-06
+      },
+      "anchor_diagnostics": {
+        "oracle_exact_oracle_center": {
+          "relative_to_same_cloud": 0.0,
+          "error": [
+            0.0,
+            0.0
+          ]
+        },
+        "same_cloud_oracle_center": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.00021389454563370668,
+            -1.8993318906040707e-05
+          ]
+        },
+        "checkpoint_sample_only_oracle_center": {
+          "relative_to_same_cloud": 5.3116401598087375,
+          "error": [
+            -0.0011267809317947863,
+            -0.0001770197136275513
+          ]
+        },
+        "late_source_only_oracle_center": {
+          "relative_to_same_cloud": 24.443422564596073,
+          "error": [
+            -0.005225803117776753,
+            -0.0004917275483241122
+          ]
+        },
+        "combined_inherited_scale0.5_oracle_center": {
+          "relative_to_same_cloud": 14.120936586309426,
+          "error": [
+            -0.003023812008131202,
+            -0.00022640169410565386
+          ]
+        },
+        "combined_inherited_scale0.75_oracle_center": {
+          "relative_to_same_cloud": 8.964954591484055,
+          "error": [
+            -0.0019228164533084268,
+            -9.373876699642471e-05
+          ]
+        },
+        "combined_inherited_scale1_oracle_center": {
+          "relative_to_same_cloud": 3.8314093509195097,
+          "error": [
+            -0.0008218208984856513,
+            3.892416011280449e-05
+          ]
+        },
+        "combined_inherited_scale1.25_oracle_center": {
+          "relative_to_same_cloud": 1.5260112828545251,
+          "error": [
+            0.00027917465633712363,
+            0.0001715870872220337
+          ]
+        },
+        "oracle_exact_sample_center": {
+          "relative_to_same_cloud": 0.0,
+          "error": [
+            0.0,
+            0.0
+          ]
+        },
+        "same_cloud_sample_center": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.00021332205602643105,
+            -1.897374767844686e-05
+          ]
+        },
+        "checkpoint_sample_only_sample_center": {
+          "relative_to_same_cloud": 4.318446768878448,
+          "error": [
+            -0.0009054197094702007,
+            -0.0001886134292057427
+          ]
+        },
+        "late_source_only_sample_center": {
+          "relative_to_same_cloud": 23.485199941341897,
+          "error": [
+            -0.005004441895452167,
+            -0.0005033212639023036
+          ]
+        },
+        "combined_inherited_scale0.5_sample_center": {
+          "relative_to_same_cloud": 13.132626518245374,
+          "error": [
+            -0.0028024507858066166,
+            -0.00023799540968384524
+          ]
+        },
+        "combined_inherited_scale0.75_sample_center": {
+          "relative_to_same_cloud": 7.959839096087532,
+          "error": [
+            -0.0017014552309838411,
+            -0.00010533248257461609
+          ]
+        },
+        "combined_inherited_scale1_sample_center": {
+          "relative_to_same_cloud": 2.8066378559469913,
+          "error": [
+            -0.0006004596761610657,
+            2.733044453461311e-05
+          ]
+        },
+        "combined_inherited_scale1.25_sample_center": {
+          "relative_to_same_cloud": 2.453652812484899,
+          "error": [
+            0.0005005358786617092,
+            0.0001599933716438423
+          ]
+        }
+      },
+      "scalar_decomposition": {
+        "true_c21_anchor": [
+          0.00553076315108589,
+          0.0007076714220644676
+        ],
+        "checkpoint_inherited_anchor": [
+          0.004403982219291102,
+          0.0005306517084369167
+        ],
+        "late_source_anchor": [
+          0.00030496003330913497,
+          0.0002159438737403558
+        ]
+      },
+      "late_source_diagnostics": {
+        "seconds": 0.6575109579134732,
+        "factor_rank": 5888,
+        "torch_flops": 11230377528,
+        "torch_residual_flops": 40768512,
+        "torch_flop_breakdown": {
+          "FactoredTensor3.get_dslice": 4467983616,
+          "FactoredTensor3.contract_W": 4227858432,
+          "nonlin_sum 111 factored": 1650735361,
+          "harmonic contract_W": 472514560,
+          "contract_W_basic": 252641280,
+          "nonlin_sum": 54682624,
+          "resid": 40768512,
+          "eval_part": 33652736,
+          "pK_to_K": 21715200,
+          "harmonic diagslice": 5378048,
+          "FactoredTensor3.from_dstensor": 983040,
+          "DSTensor.to_tensor": 660480,
+          "get_wick_coef": 464640,
+          "DS_harmonic_proj": 329015,
+          "DSTensor constructor": 9984,
+          "is_symmetric": 0,
+          "symmetrize": 0,
+          "coerce_input": 0,
+          "setup": 0,
+          "zero_repeated": 0,
+          "DSTower.from_slices": 0
+        }
+      },
+      "analytical_extra_flops": {
+        "factorized_tail_and_scalar": 11230377528,
+        "expected_gate_tail_map": 167772160,
+        "checkpoint_cloud_transport": 8657043456,
+        "target_control_features": 152306688,
+        "total_extra": 20207499832
+      },
+      "seconds": 2.2681582500226796
+    },
+    {
+      "index": 161,
+      "name": "dylan-brown",
+      "baseline_mse": 2.24091425569048e-07,
+      "method_mses": {
+        "oracle_exact_oracle_center": 1.4640100229811642e-07,
+        "same_cloud_oracle_center": 2.203818579757852e-07,
+        "checkpoint_sample_only_oracle_center": 5.646710791881873e-06,
+        "late_source_only_oracle_center": 2.1113255539580692e-05,
+        "combined_inherited_scale0.5_oracle_center": 3.092132280332809e-06,
+        "combined_inherited_scale0.75_oracle_center": 1.3658912962537093e-06,
+        "combined_inherited_scale1_oracle_center": 5.050055863725859e-07,
+        "combined_inherited_scale1.25_oracle_center": 3.3266778000574557e-06,
+        "oracle_exact_sample_center": 1.4642290142374893e-07,
+        "same_cloud_sample_center": 2.203737789981414e-07,
+        "checkpoint_sample_only_sample_center": 7.331812554435248e-06,
+        "late_source_only_sample_center": 2.5372956935752237e-05,
+        "combined_inherited_scale0.5_sample_center": 3.2163878754276068e-06,
+        "combined_inherited_scale0.75_sample_center": 1.0971458540936854e-06,
+        "combined_inherited_scale1_sample_center": 2.98230624889182e-07,
+        "combined_inherited_scale1.25_sample_center": 3.111617946913622e-06
+      },
+      "anchor_diagnostics": {
+        "oracle_exact_oracle_center": {
+          "relative_to_same_cloud": 0.0,
+          "error": [
+            0.0,
+            0.0
+          ]
+        },
+        "same_cloud_oracle_center": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0006164876695141288,
+            -2.6544840441131926e-05
+          ]
+        },
+        "checkpoint_sample_only_oracle_center": {
+          "relative_to_same_cloud": 3.9021594755689426,
+          "error": [
+            -0.0023749707257642756,
+            -0.00039662882220944343
+          ]
+        },
+        "late_source_only_oracle_center": {
+          "relative_to_same_cloud": 16.978195926177094,
+          "error": [
+            -0.01045387209368561,
+            -0.0006889050111800821
+          ]
+        },
+        "combined_inherited_scale0.5_oracle_center": {
+          "relative_to_same_cloud": 9.662890504083002,
+          "error": [
+            -0.005955609322298553,
+            -0.000288077110296512
+          ]
+        },
+        "combined_inherited_scale0.75_oracle_center": {
+          "relative_to_same_cloud": 6.008364063763942,
+          "error": [
+            -0.003706477936605025,
+            -8.766315985472709e-05
+          ]
+        },
+        "combined_inherited_scale1_oracle_center": {
+          "relative_to_same_cloud": 2.3688203341263585,
+          "error": [
+            -0.001457346550911497,
+            0.00011275079058705806
+          ]
+        },
+        "combined_inherited_scale1.25_oracle_center": {
+          "relative_to_same_cloud": 1.379878998977482,
+          "error": [
+            0.0007917848347820319,
+            0.000313164741028843
+          ]
+        },
+        "oracle_exact_sample_center": {
+          "relative_to_same_cloud": 0.0,
+          "error": [
+            0.0,
+            0.0
+          ]
+        },
+        "same_cloud_sample_center": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.000615572794270984,
+            -2.6597130461946316e-05
+          ]
+        },
+        "checkpoint_sample_only_sample_center": {
+          "relative_to_same_cloud": 2.8609097745217316,
+          "error": [
+            -0.001710473041586922,
+            -0.0004260738431424274
+          ]
+        },
+        "late_source_only_sample_center": {
+          "relative_to_same_cloud": 15.930765872121745,
+          "error": [
+            -0.009789374409508257,
+            -0.0007183500321130661
+          ]
+        },
+        "combined_inherited_scale0.5_sample_center": {
+          "relative_to_same_cloud": 8.602864865715365,
+          "error": [
+            -0.005291111638121199,
+            -0.000317522131229496
+          ]
+        },
+        "combined_inherited_scale0.75_sample_center": {
+          "relative_to_same_cloud": 4.9407576547133765,
+          "error": [
+            -0.0030419802524276713,
+            -0.00011710818078771107
+          ]
+        },
+        "combined_inherited_scale1_sample_center": {
+          "relative_to_same_cloud": 1.293868554203552,
+          "error": [
+            -0.0007928488667341433,
+            8.330576965407408e-05
+          ]
+        },
+        "combined_inherited_scale1.25_sample_center": {
+          "relative_to_same_cloud": 2.4079686037412795,
+          "error": [
+            0.0014562825189593856,
+            0.000283719720095859
+          ]
+        }
+      },
+      "scalar_decomposition": {
+        "true_c21_anchor": [
+          0.011371496268538384,
+          0.0011982846239765844
+        ],
+        "checkpoint_inherited_anchor": [
+          0.008996525542774114,
+          0.0008016558017671401
+        ],
+        "late_source_anchor": [
+          0.0009176241748527794,
+          0.0005093796127965014
+        ]
+      },
+      "late_source_diagnostics": {
+        "seconds": 0.3925436669960618,
+        "factor_rank": 5888,
+        "torch_flops": 11230377528,
+        "torch_residual_flops": 40768512,
+        "torch_flop_breakdown": {
+          "FactoredTensor3.get_dslice": 4467983616,
+          "FactoredTensor3.contract_W": 4227858432,
+          "nonlin_sum 111 factored": 1650735361,
+          "harmonic contract_W": 472514560,
+          "contract_W_basic": 252641280,
+          "nonlin_sum": 54682624,
+          "resid": 40768512,
+          "eval_part": 33652736,
+          "pK_to_K": 21715200,
+          "harmonic diagslice": 5378048,
+          "FactoredTensor3.from_dstensor": 983040,
+          "DSTensor.to_tensor": 660480,
+          "get_wick_coef": 464640,
+          "DS_harmonic_proj": 329015,
+          "DSTensor constructor": 9984,
+          "is_symmetric": 0,
+          "symmetrize": 0,
+          "coerce_input": 0,
+          "setup": 0,
+          "zero_repeated": 0,
+          "DSTower.from_slices": 0
+        }
+      },
+      "analytical_extra_flops": {
+        "factorized_tail_and_scalar": 11230377528,
+        "expected_gate_tail_map": 167772160,
+        "checkpoint_cloud_transport": 8657043456,
+        "target_control_features": 152306688,
+        "total_extra": 20207499832
+      },
+      "seconds": 1.8189817920792848
+    },
+    {
+      "index": 162,
+      "name": "yolanda-hawkins",
+      "baseline_mse": 2.3177693298152411e-07,
+      "method_mses": {
+        "oracle_exact_oracle_center": 1.6944176481620175e-07,
+        "same_cloud_oracle_center": 2.3696382110748095e-07,
+        "checkpoint_sample_only_oracle_center": 7.327312733767377e-06,
+        "late_source_only_oracle_center": 0.00023579535995949582,
+        "combined_inherited_scale0.5_oracle_center": 8.421049591113628e-06,
+        "combined_inherited_scale0.75_oracle_center": 5.394241290134989e-07,
+        "combined_inherited_scale1_oracle_center": 2.9510480035962963e-07,
+        "combined_inherited_scale1.25_oracle_center": 4.625418288903991e-06,
+        "oracle_exact_sample_center": 1.6936676909869127e-07,
+        "same_cloud_sample_center": 2.3696230239779834e-07,
+        "checkpoint_sample_only_sample_center": 6.008526458833026e-06,
+        "late_source_only_sample_center": 0.00022535973582296848,
+        "combined_inherited_scale0.5_sample_center": 7.038536766599951e-06,
+        "combined_inherited_scale0.75_sample_center": 6.406685706695912e-07,
+        "combined_inherited_scale1_sample_center": 4.807951449273279e-07,
+        "combined_inherited_scale1.25_sample_center": 4.070311103225225e-06
+      },
+      "anchor_diagnostics": {
+        "oracle_exact_oracle_center": {
+          "relative_to_same_cloud": 0.0,
+          "error": [
+            0.0,
+            0.0
+          ]
+        },
+        "same_cloud_oracle_center": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.0003734897644654704,
+            -5.865021739129457e-06
+          ]
+        },
+        "checkpoint_sample_only_oracle_center": {
+          "relative_to_same_cloud": 2.582421465741841,
+          "error": [
+            -0.000933082793753026,
+            -0.00024466620763257513
+          ]
+        },
+        "late_source_only_oracle_center": {
+          "relative_to_same_cloud": 13.741307732346142,
+          "error": [
+            -0.0050985808595256895,
+            -0.0005923117239063397
+          ]
+        },
+        "combined_inherited_scale0.5_oracle_center": {
+          "relative_to_same_cloud": 7.740228127824289,
+          "error": [
+            -0.002877512841518562,
+            -0.00028153200186389286
+          ]
+        },
+        "combined_inherited_scale0.75_oracle_center": {
+          "relative_to_same_cloud": 4.742452022329544,
+          "error": [
+            -0.0017669788325149981,
+            -0.00012614214084266954
+          ]
+        },
+        "combined_inherited_scale1_oracle_center": {
+          "relative_to_same_cloud": 1.7591246727887868,
+          "error": [
+            -0.0006564448235114352,
+            2.9247720178553877e-05
+          ]
+        },
+        "combined_inherited_scale1.25_oracle_center": {
+          "relative_to_same_cloud": 1.3123020847778466,
+          "error": [
+            0.00045408918549212814,
+            0.0001846375811997773
+          ]
+        },
+        "oracle_exact_sample_center": {
+          "relative_to_same_cloud": 0.0,
+          "error": [
+            0.0,
+            0.0
+          ]
+        },
+        "same_cloud_sample_center": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.0003742399278972349,
+            -5.862086995944661e-06
+          ]
+        },
+        "checkpoint_sample_only_sample_center": {
+          "relative_to_same_cloud": 3.8346804457791963,
+          "error": [
+            -0.0014147743008099062,
+            -0.00024166884990536202
+          ]
+        },
+        "late_source_only_sample_center": {
+          "relative_to_same_cloud": 14.99202832619314,
+          "error": [
+            -0.00558027236658257,
+            -0.0005893143661791266
+          ]
+        },
+        "combined_inherited_scale0.5_sample_center": {
+          "relative_to_same_cloud": 9.00577003975976,
+          "error": [
+            -0.003359204348575442,
+            -0.00027853464413667975
+          ]
+        },
+        "combined_inherited_scale0.75_sample_center": {
+          "relative_to_same_cloud": 6.0168980640254155,
+          "error": [
+            -0.0022486703395718784,
+            -0.00012314478311545643
+          ]
+        },
+        "combined_inherited_scale1_sample_center": {
+          "relative_to_same_cloud": 3.042041407900995,
+          "error": [
+            -0.0011381363305683154,
+            3.224507790576699e-05
+          ]
+        },
+        "combined_inherited_scale1.25_sample_center": {
+          "relative_to_same_cloud": 0.5067098307403152,
+          "error": [
+            -2.760232156475209e-05,
+            0.0001876349389269904
+          ]
+        }
+      },
+      "scalar_decomposition": {
+        "true_c21_anchor": [
+          0.005375218829767285,
+          0.0008662256517174685
+        ],
+        "checkpoint_inherited_anchor": [
+          0.004442136036014254,
+          0.0006215594440848936
+        ],
+        "late_source_anchor": [
+          0.00027663797024159116,
+          0.00027391392781112906
+        ]
+      },
+      "late_source_diagnostics": {
+        "seconds": 0.362167791929096,
+        "factor_rank": 5888,
+        "torch_flops": 11230377528,
+        "torch_residual_flops": 40768512,
+        "torch_flop_breakdown": {
+          "FactoredTensor3.get_dslice": 4467983616,
+          "FactoredTensor3.contract_W": 4227858432,
+          "nonlin_sum 111 factored": 1650735361,
+          "harmonic contract_W": 472514560,
+          "contract_W_basic": 252641280,
+          "nonlin_sum": 54682624,
+          "resid": 40768512,
+          "eval_part": 33652736,
+          "pK_to_K": 21715200,
+          "harmonic diagslice": 5378048,
+          "FactoredTensor3.from_dstensor": 983040,
+          "DSTensor.to_tensor": 660480,
+          "get_wick_coef": 464640,
+          "DS_harmonic_proj": 329015,
+          "DSTensor constructor": 9984,
+          "is_symmetric": 0,
+          "symmetrize": 0,
+          "coerce_input": 0,
+          "setup": 0,
+          "zero_repeated": 0,
+          "DSTower.from_slices": 0
+        }
+      },
+      "analytical_extra_flops": {
+        "factorized_tail_and_scalar": 11230377528,
+        "expected_gate_tail_map": 167772160,
+        "checkpoint_cloud_transport": 8657043456,
+        "target_control_features": 152306688,
+        "total_extra": 20207499832
+      },
+      "seconds": 1.5346406248863786
+    },
+    {
+      "index": 163,
+      "name": "scott-matthews",
+      "baseline_mse": 2.5893801088228656e-07,
+      "method_mses": {
+        "oracle_exact_oracle_center": 2.1438457322809272e-07,
+        "same_cloud_oracle_center": 2.547161472273165e-07,
+        "checkpoint_sample_only_oracle_center": 4.008392387844018e-06,
+        "late_source_only_oracle_center": 0.00018115598055532006,
+        "combined_inherited_scale0.5_oracle_center": 6.653927539211902e-06,
+        "combined_inherited_scale0.75_oracle_center": 1.5575232973454775e-06,
+        "combined_inherited_scale1_oracle_center": 6.827632158148117e-07,
+        "combined_inherited_scale1.25_oracle_center": 6.961188992863429e-06,
+        "oracle_exact_sample_center": 2.1434777338400112e-07,
+        "same_cloud_sample_center": 2.5472336739149924e-07,
+        "checkpoint_sample_only_sample_center": 4.555500007625347e-06,
+        "late_source_only_sample_center": 0.00018382645020505195,
+        "combined_inherited_scale0.5_sample_center": 7.127176806457446e-06,
+        "combined_inherited_scale0.75_sample_center": 1.2210651832967576e-06,
+        "combined_inherited_scale1_sample_center": 4.74539532931168e-07,
+        "combined_inherited_scale1.25_sample_center": 8.240341447914999e-06
+      },
+      "anchor_diagnostics": {
+        "oracle_exact_oracle_center": {
+          "relative_to_same_cloud": 0.0,
+          "error": [
+            0.0,
+            0.0
+          ]
+        },
+        "same_cloud_oracle_center": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.000469481151745145,
+            2.067419582560447e-05
+          ]
+        },
+        "checkpoint_sample_only_oracle_center": {
+          "relative_to_same_cloud": 7.173859935462,
+          "error": [
+            -0.003331710274861524,
+            -0.0005148532834020395
+          ]
+        },
+        "late_source_only_oracle_center": {
+          "relative_to_same_cloud": 36.61442576661514,
+          "error": [
+            -0.017139392476556554,
+            -0.0015175199781040484
+          ]
+        },
+        "combined_inherited_scale0.5_oracle_center": {
+          "relative_to_same_cloud": 21.261147323931883,
+          "error": [
+            -0.009966445072733358,
+            -0.0007054617904311505
+          ]
+        },
+        "combined_inherited_scale0.75_oracle_center": {
+          "relative_to_same_cloud": 13.59119602787651,
+          "error": [
+            -0.00637997137082176,
+            -0.0002994326965947017
+          ]
+        },
+        "combined_inherited_scale1_oracle_center": {
+          "relative_to_same_cloud": 5.948745996277572,
+          "error": [
+            -0.0027934976689101623,
+            0.00010659639724174734
+          ]
+        },
+        "combined_inherited_scale1.25_oracle_center": {
+          "relative_to_same_cloud": 2.0093018464438304,
+          "error": [
+            0.0007929760330014357,
+            0.000512625491078196
+          ]
+        },
+        "oracle_exact_sample_center": {
+          "relative_to_same_cloud": 0.0,
+          "error": [
+            0.0,
+            0.0
+          ]
+        },
+        "same_cloud_sample_center": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.000468157323841735,
+            2.080084059224779e-05
+          ]
+        },
+        "checkpoint_sample_only_sample_center": {
+          "relative_to_same_cloud": 4.968192607224389,
+          "error": [
+            -0.0022714750812284634,
+            -0.0005107560174500709
+          ]
+        },
+        "late_source_only_sample_center": {
+          "relative_to_same_cloud": 34.463428648828085,
+          "error": [
+            -0.016079157282923494,
+            -0.0015134227121520799
+          ]
+        },
+        "combined_inherited_scale0.5_sample_center": {
+          "relative_to_same_cloud": 19.06405763655341,
+          "error": [
+            -0.008906209879100298,
+            -0.000701364524479182
+          ]
+        },
+        "combined_inherited_scale0.75_sample_center": {
+          "relative_to_same_cloud": 11.36941876423343,
+          "error": [
+            -0.0053197361771887,
+            -0.00029533543064273315
+          ]
+        },
+        "combined_inherited_scale1_sample_center": {
+          "relative_to_same_cloud": 3.7061937845498334,
+          "error": [
+            -0.0017332624752771017,
+            0.0001106936631937159
+          ]
+        },
+        "combined_inherited_scale1.25_sample_center": {
+          "relative_to_same_cloud": 4.105467277451882,
+          "error": [
+            0.0018532112266344963,
+            0.0005167227570301645
+          ]
+        }
+      },
+      "scalar_decomposition": {
+        "true_c21_anchor": [
+          0.017677605082507906,
+          0.0021389696587478355
+        ],
+        "checkpoint_inherited_anchor": [
+          0.014345894807646392,
+          0.0016241163753457956
+        ],
+        "late_source_anchor": [
+          0.0005382126059513612,
+          0.0006214496806437867
+        ]
+      },
+      "late_source_diagnostics": {
+        "seconds": 0.35745204193517566,
+        "factor_rank": 5888,
+        "torch_flops": 11230377528,
+        "torch_residual_flops": 40768512,
+        "torch_flop_breakdown": {
+          "FactoredTensor3.get_dslice": 4467983616,
+          "FactoredTensor3.contract_W": 4227858432,
+          "nonlin_sum 111 factored": 1650735361,
+          "harmonic contract_W": 472514560,
+          "contract_W_basic": 252641280,
+          "nonlin_sum": 54682624,
+          "resid": 40768512,
+          "eval_part": 33652736,
+          "pK_to_K": 21715200,
+          "harmonic diagslice": 5378048,
+          "FactoredTensor3.from_dstensor": 983040,
+          "DSTensor.to_tensor": 660480,
+          "get_wick_coef": 464640,
+          "DS_harmonic_proj": 329015,
+          "DSTensor constructor": 9984,
+          "is_symmetric": 0,
+          "symmetrize": 0,
+          "coerce_input": 0,
+          "setup": 0,
+          "zero_repeated": 0,
+          "DSTower.from_slices": 0
+        }
+      },
+      "analytical_extra_flops": {
+        "factorized_tail_and_scalar": 11230377528,
+        "expected_gate_tail_map": 167772160,
+        "checkpoint_cloud_transport": 8657043456,
+        "target_control_features": 152306688,
+        "total_extra": 20207499832
+      },
+      "seconds": 1.495301292045042
+    },
+    {
+      "index": 164,
+      "name": "benjamin-walsh",
+      "baseline_mse": 3.457466003272283e-07,
+      "method_mses": {
+        "oracle_exact_oracle_center": 1.2246510306021166e-07,
+        "same_cloud_oracle_center": 3.499791722875346e-07,
+        "checkpoint_sample_only_oracle_center": 1.1525128356493773e-05,
+        "late_source_only_oracle_center": 6.055584153639792e-05,
+        "combined_inherited_scale0.5_oracle_center": 2.377982711877772e-06,
+        "combined_inherited_scale0.75_oracle_center": 1.1055526872597753e-06,
+        "combined_inherited_scale1_oracle_center": 4.282824773874755e-07,
+        "combined_inherited_scale1.25_oracle_center": 4.2908215272328726e-06,
+        "oracle_exact_sample_center": 1.2238084940537406e-07,
+        "same_cloud_sample_center": 3.499662991884253e-07,
+        "checkpoint_sample_only_sample_center": 1.0952774664409523e-05,
+        "late_source_only_sample_center": 6.117248256856832e-05,
+        "combined_inherited_scale0.5_sample_center": 2.5204739223797735e-06,
+        "combined_inherited_scale0.75_sample_center": 1.662769469765232e-06,
+        "combined_inherited_scale1_sample_center": 7.795028297028742e-07,
+        "combined_inherited_scale1.25_sample_center": 3.027433940789765e-06
+      },
+      "anchor_diagnostics": {
+        "oracle_exact_oracle_center": {
+          "relative_to_same_cloud": 0.0,
+          "error": [
+            0.0,
+            0.0
+          ]
+        },
+        "same_cloud_oracle_center": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.00027554164196800417,
+            -3.2066423009446997e-06
+          ]
+        },
+        "checkpoint_sample_only_oracle_center": {
+          "relative_to_same_cloud": 2.6275965424412258,
+          "error": [
+            -0.0006926951340838023,
+            -0.00021080371348368757
+          ]
+        },
+        "late_source_only_oracle_center": {
+          "relative_to_same_cloud": 8.67318388057535,
+          "error": [
+            -0.0023656694230944474,
+            -0.00034005472153132444
+          ]
+        },
+        "combined_inherited_scale0.5_oracle_center": {
+          "relative_to_same_cloud": 4.7989540298200115,
+          "error": [
+            -0.0013140657671820595,
+            -0.00014824347262541222
+          ]
+        },
+        "combined_inherited_scale0.75_oracle_center": {
+          "relative_to_same_cloud": 2.866884486315112,
+          "error": [
+            -0.0007882639392258655,
+            -5.2337848172456054e-05
+          ]
+        },
+        "combined_inherited_scale1_oracle_center": {
+          "relative_to_same_cloud": 0.9655004241863022,
+          "error": [
+            -0.0002624621112696712,
+            4.356777628049995e-05
+          ]
+        },
+        "combined_inherited_scale1.25_oracle_center": {
+          "relative_to_same_cloud": 1.081412508719378,
+          "error": [
+            0.0002633397166865231,
+            0.00013947340073345617
+          ]
+        },
+        "oracle_exact_sample_center": {
+          "relative_to_same_cloud": 0.0,
+          "error": [
+            0.0,
+            0.0
+          ]
+        },
+        "same_cloud_sample_center": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.00027626182025191704,
+            -3.216394199697086e-06
+          ]
+        },
+        "checkpoint_sample_only_sample_center": {
+          "relative_to_same_cloud": 3.4697708325237473,
+          "error": [
+            -0.000934535726496035,
+            -0.0002135761670170104
+          ]
+        },
+        "late_source_only_sample_center": {
+          "relative_to_same_cloud": 9.519129870213428,
+          "error": [
+            -0.00260751001550668,
+            -0.00034282717506464727
+          ]
+        },
+        "combined_inherited_scale0.5_sample_center": {
+          "relative_to_same_cloud": 5.658081992970237,
+          "error": [
+            -0.0015559063595942922,
+            -0.00015101592615873505
+          ]
+        },
+        "combined_inherited_scale0.75_sample_center": {
+          "relative_to_same_cloud": 3.733804991583404,
+          "error": [
+            -0.0010301045316380981,
+            -5.511030170577888e-05
+          ]
+        },
+        "combined_inherited_scale1_sample_center": {
+          "relative_to_same_cloud": 1.8312909992980697,
+          "error": [
+            -0.0005043027036819039,
+            4.079532274717712e-05
+          ]
+        },
+        "combined_inherited_scale1.25_sample_center": {
+          "relative_to_same_cloud": 0.5008721054171378,
+          "error": [
+            2.149912427429042e-05,
+            0.00013670094720013334
+          ]
+        }
+      },
+      "scalar_decomposition": {
+        "true_c21_anchor": [
+          0.0027959024459085773,
+          0.0005944262112955124
+        ],
+        "checkpoint_inherited_anchor": [
+          0.0021032073118247762,
+          0.00038362249781182444
+        ],
+        "late_source_anchor": [
+          0.000430233022814131,
+          0.0002543714897641876
+        ]
+      },
+      "late_source_diagnostics": {
+        "seconds": 0.44049920816905797,
+        "factor_rank": 5888,
+        "torch_flops": 11230377528,
+        "torch_residual_flops": 40768512,
+        "torch_flop_breakdown": {
+          "FactoredTensor3.get_dslice": 4467983616,
+          "FactoredTensor3.contract_W": 4227858432,
+          "nonlin_sum 111 factored": 1650735361,
+          "harmonic contract_W": 472514560,
+          "contract_W_basic": 252641280,
+          "nonlin_sum": 54682624,
+          "resid": 40768512,
+          "eval_part": 33652736,
+          "pK_to_K": 21715200,
+          "harmonic diagslice": 5378048,
+          "FactoredTensor3.from_dstensor": 983040,
+          "DSTensor.to_tensor": 660480,
+          "get_wick_coef": 464640,
+          "DS_harmonic_proj": 329015,
+          "DSTensor constructor": 9984,
+          "is_symmetric": 0,
+          "symmetrize": 0,
+          "coerce_input": 0,
+          "setup": 0,
+          "zero_repeated": 0,
+          "DSTower.from_slices": 0
+        }
+      },
+      "analytical_extra_flops": {
+        "factorized_tail_and_scalar": 11230377528,
+        "expected_gate_tail_map": 167772160,
+        "checkpoint_cloud_transport": 8657043456,
+        "target_control_features": 152306688,
+        "total_extra": 20207499832
+      },
+      "seconds": 1.5836187079548836
+    },
+    {
+      "index": 165,
+      "name": "justin-crawford",
+      "baseline_mse": 3.0668500009183507e-07,
+      "method_mses": {
+        "oracle_exact_oracle_center": 1.3605364609481162e-07,
+        "same_cloud_oracle_center": 2.895273350453415e-07,
+        "checkpoint_sample_only_oracle_center": 7.772409494816285e-06,
+        "late_source_only_oracle_center": 0.00013553306907023908,
+        "combined_inherited_scale0.5_oracle_center": 6.602941740237487e-06,
+        "combined_inherited_scale0.75_oracle_center": 9.398816398774211e-07,
+        "combined_inherited_scale1_oracle_center": 1.8307885165016866e-07,
+        "combined_inherited_scale1.25_oracle_center": 4.690562284071755e-06,
+        "oracle_exact_sample_center": 1.3609201735953005e-07,
+        "same_cloud_sample_center": 2.895094867268047e-07,
+        "checkpoint_sample_only_sample_center": 1.0182648673798881e-05,
+        "late_source_only_sample_center": 0.00014783391402307063,
+        "combined_inherited_scale0.5_sample_center": 8.527880395115009e-06,
+        "combined_inherited_scale0.75_sample_center": 1.0371824085169016e-06,
+        "combined_inherited_scale1_sample_center": 1.7119041661577616e-07,
+        "combined_inherited_scale1.25_sample_center": 5.7612568601817e-06
+      },
+      "anchor_diagnostics": {
+        "oracle_exact_oracle_center": {
+          "relative_to_same_cloud": 0.0,
+          "error": [
+            0.0,
+            0.0
+          ]
+        },
+        "same_cloud_oracle_center": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0006420069429392385,
+            -4.0293506340838454e-06
+          ]
+        },
+        "checkpoint_sample_only_oracle_center": {
+          "relative_to_same_cloud": 1.523458199412183,
+          "error": [
+            -0.0009383428310407336,
+            -0.0002759941814327406
+          ]
+        },
+        "late_source_only_oracle_center": {
+          "relative_to_same_cloud": 6.825585589398659,
+          "error": [
+            -0.004339265403514662,
+            -0.000611636243957543
+          ]
+        },
+        "combined_inherited_scale0.5_oracle_center": {
+          "relative_to_same_cloud": 3.737555685050136,
+          "error": [
+            -0.0023831036410710037,
+            -0.00028074937054164463
+          ]
+        },
+        "combined_inherited_scale0.75_oracle_center": {
+          "relative_to_same_cloud": 2.1957993980582513,
+          "error": [
+            -0.0014050227598491746,
+            -0.00011530593383369538
+          ]
+        },
+        "combined_inherited_scale1_oracle_center": {
+          "relative_to_same_cloud": 0.6695679246615875,
+          "error": [
+            -0.0004269418786273455,
+            5.013750287425386e-05
+          ]
+        },
+        "combined_inherited_scale1.25_oracle_center": {
+          "relative_to_same_cloud": 0.9217814960816583,
+          "error": [
+            0.0005511390025944836,
+            0.0002155809395822031
+          ]
+        },
+        "oracle_exact_sample_center": {
+          "relative_to_same_cloud": 0.0,
+          "error": [
+            0.0,
+            0.0
+          ]
+        },
+        "same_cloud_sample_center": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0006409151191585334,
+            -4.0251042057431585e-06
+          ]
+        },
+        "checkpoint_sample_only_sample_center": {
+          "relative_to_same_cloud": 0.6194349116565079,
+          "error": [
+            -0.0002722317345357035,
+            -0.00028897963285502584
+          ]
+        },
+        "late_source_only_sample_center": {
+          "relative_to_same_cloud": 5.813267387411004,
+          "error": [
+            -0.0036731543070096318,
+            -0.0006246216953798283
+          ]
+        },
+        "combined_inherited_scale0.5_sample_center": {
+          "relative_to_same_cloud": 2.7178362918008503,
+          "error": [
+            -0.0017169925445659736,
+            -0.0002937348219639299
+          ]
+        },
+        "combined_inherited_scale0.75_sample_center": {
+          "relative_to_same_cloud": 1.1701257642452292,
+          "error": [
+            -0.0007389116633441445,
+            -0.00012829138525598065
+          ]
+        },
+        "combined_inherited_scale1_sample_center": {
+          "relative_to_same_cloud": 0.37763628734601196,
+          "error": [
+            0.00023916921787768466,
+            3.7152051451968594e-05
+          ]
+        },
+        "combined_inherited_scale1.25_sample_center": {
+          "relative_to_same_cloud": 1.9253256070441147,
+          "error": [
+            0.0012172500990995138,
+            0.00020259548815991784
+          ]
+        }
+      },
+      "scalar_decomposition": {
+        "true_c21_anchor": [
+          0.004850666355928052,
+          0.000937767928264538
+        ],
+        "checkpoint_inherited_anchor": [
+          0.0039123235248873164,
+          0.000661773746831797
+        ],
+        "late_source_anchor": [
+          0.0005114009524133882,
+          0.0003261316843069945
+        ]
+      },
+      "late_source_diagnostics": {
+        "seconds": 0.3636729579884559,
+        "factor_rank": 5888,
+        "torch_flops": 11230377528,
+        "torch_residual_flops": 40768512,
+        "torch_flop_breakdown": {
+          "FactoredTensor3.get_dslice": 4467983616,
+          "FactoredTensor3.contract_W": 4227858432,
+          "nonlin_sum 111 factored": 1650735361,
+          "harmonic contract_W": 472514560,
+          "contract_W_basic": 252641280,
+          "nonlin_sum": 54682624,
+          "resid": 40768512,
+          "eval_part": 33652736,
+          "pK_to_K": 21715200,
+          "harmonic diagslice": 5378048,
+          "FactoredTensor3.from_dstensor": 983040,
+          "DSTensor.to_tensor": 660480,
+          "get_wick_coef": 464640,
+          "DS_harmonic_proj": 329015,
+          "DSTensor constructor": 9984,
+          "is_symmetric": 0,
+          "symmetrize": 0,
+          "coerce_input": 0,
+          "setup": 0,
+          "zero_repeated": 0,
+          "DSTower.from_slices": 0
+        }
+      },
+      "analytical_extra_flops": {
+        "factorized_tail_and_scalar": 11230377528,
+        "expected_gate_tail_map": 167772160,
+        "checkpoint_cloud_transport": 8657043456,
+        "target_control_features": 152306688,
+        "total_extra": 20207499832
+      },
+      "seconds": 1.5134772087913007
+    },
+    {
+      "index": 166,
+      "name": "tara-harris",
+      "baseline_mse": 6.550635664715546e-07,
+      "method_mses": {
+        "oracle_exact_oracle_center": 2.926921993073589e-07,
+        "same_cloud_oracle_center": 6.09029696170345e-07,
+        "checkpoint_sample_only_oracle_center": 2.68453922008312e-06,
+        "late_source_only_oracle_center": 0.00025907814507027783,
+        "combined_inherited_scale0.5_oracle_center": 9.90150052895359e-06,
+        "combined_inherited_scale0.75_oracle_center": 1.481721892822438e-06,
+        "combined_inherited_scale1_oracle_center": 1.014128872882762e-06,
+        "combined_inherited_scale1.25_oracle_center": 1.862856275713245e-05,
+        "oracle_exact_sample_center": 2.928619541374488e-07,
+        "same_cloud_sample_center": 6.090940566496606e-07,
+        "checkpoint_sample_only_sample_center": 2.902045365065648e-06,
+        "late_source_only_sample_center": 0.0002564819092068341,
+        "combined_inherited_scale0.5_sample_center": 1.0113488581763214e-05,
+        "combined_inherited_scale0.75_sample_center": 9.924235705232785e-07,
+        "combined_inherited_scale1_sample_center": 1.2780021916820062e-06,
+        "combined_inherited_scale1.25_sample_center": 2.320563929929113e-05
+      },
+      "anchor_diagnostics": {
+        "oracle_exact_oracle_center": {
+          "relative_to_same_cloud": 0.0,
+          "error": [
+            0.0,
+            0.0
+          ]
+        },
+        "same_cloud_oracle_center": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0020533036742074184,
+            1.497346014396779e-05
+          ]
+        },
+        "checkpoint_sample_only_oracle_center": {
+          "relative_to_same_cloud": 1.5866760437300766,
+          "error": [
+            -0.003217137886695908,
+            -0.0005144720484303263
+          ]
+        },
+        "late_source_only_oracle_center": {
+          "relative_to_same_cloud": 8.502992974694767,
+          "error": [
+            -0.017345696556010298,
+            -0.0019918882291382733
+          ]
+        },
+        "combined_inherited_scale0.5_oracle_center": {
+          "relative_to_same_cloud": 4.814575554318609,
+          "error": [
+            -0.009845641140518377,
+            -0.0008929199539155356
+          ]
+        },
+        "combined_inherited_scale0.75_oracle_center": {
+          "relative_to_same_cloud": 2.973314835953987,
+          "error": [
+            -0.006095613432772415,
+            -0.00034343581630416663
+          ]
+        },
+        "combined_inherited_scale1_oracle_center": {
+          "relative_to_same_cloud": 1.1467158654010219,
+          "error": [
+            -0.0023455857250264563,
+            0.0002060483213072021
+          ]
+        },
+        "combined_inherited_scale1.25_oracle_center": {
+          "relative_to_same_cloud": 0.776663540419733,
+          "error": [
+            0.0014044419827195058,
+            0.0007555324589185708
+          ]
+        },
+        "oracle_exact_sample_center": {
+          "relative_to_same_cloud": 0.0,
+          "error": [
+            0.0,
+            0.0
+          ]
+        },
+        "same_cloud_sample_center": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0020507113243591786,
+            1.497818763399961e-05
+          ]
+        },
+        "checkpoint_sample_only_sample_center": {
+          "relative_to_same_cloud": 0.6903659463447294,
+          "error": [
+            -0.001329614128764105,
+            -0.0004863707639575746
+          ]
+        },
+        "late_source_only_sample_center": {
+          "relative_to_same_cloud": 7.598337342039922,
+          "error": [
+            -0.015458172798078495,
+            -0.0019637869446655215
+          ]
+        },
+        "combined_inherited_scale0.5_sample_center": {
+          "relative_to_same_cloud": 3.903404796553606,
+          "error": [
+            -0.007958117382586574,
+            -0.0008648186694427838
+          ]
+        },
+        "combined_inherited_scale0.75_sample_center": {
+          "relative_to_same_cloud": 2.0577130369728334,
+          "error": [
+            -0.004208089674840612,
+            -0.00031533453183141486
+          ]
+        },
+        "combined_inherited_scale1_sample_center": {
+          "relative_to_same_cloud": 0.2508517949679005,
+          "error": [
+            -0.00045806196709465355,
+            0.00023414960577995388
+          ]
+        },
+        "combined_inherited_scale1.25_sample_center": {
+          "relative_to_same_cloud": 1.6500909209160743,
+          "error": [
+            0.0032919657406513085,
+            0.0007836337433913226
+          ]
+        }
+      },
+      "scalar_decomposition": {
+        "true_c21_anchor": [
+          0.01821724871767975,
+          0.002712408598875805
+        ],
+        "checkpoint_inherited_anchor": [
+          0.015000110830983843,
+          0.002197936550445476
+        ],
+        "late_source_anchor": [
+          0.0008715521616694528,
+          0.0007205203697375287
+        ]
+      },
+      "late_source_diagnostics": {
+        "seconds": 0.35404108301736414,
+        "factor_rank": 5888,
+        "torch_flops": 11230377528,
+        "torch_residual_flops": 40768512,
+        "torch_flop_breakdown": {
+          "FactoredTensor3.get_dslice": 4467983616,
+          "FactoredTensor3.contract_W": 4227858432,
+          "nonlin_sum 111 factored": 1650735361,
+          "harmonic contract_W": 472514560,
+          "contract_W_basic": 252641280,
+          "nonlin_sum": 54682624,
+          "resid": 40768512,
+          "eval_part": 33652736,
+          "pK_to_K": 21715200,
+          "harmonic diagslice": 5378048,
+          "FactoredTensor3.from_dstensor": 983040,
+          "DSTensor.to_tensor": 660480,
+          "get_wick_coef": 464640,
+          "DS_harmonic_proj": 329015,
+          "DSTensor constructor": 9984,
+          "is_symmetric": 0,
+          "symmetrize": 0,
+          "coerce_input": 0,
+          "setup": 0,
+          "zero_repeated": 0,
+          "DSTower.from_slices": 0
+        }
+      },
+      "analytical_extra_flops": {
+        "factorized_tail_and_scalar": 11230377528,
+        "expected_gate_tail_map": 167772160,
+        "checkpoint_cloud_transport": 8657043456,
+        "target_control_features": 152306688,
+        "total_extra": 20207499832
+      },
+      "seconds": 1.4973357918206602
+    },
+    {
+      "index": 167,
+      "name": "kathy-wright",
+      "baseline_mse": 1.3442389485466154e-07,
+      "method_mses": {
+        "oracle_exact_oracle_center": 1.240312744849606e-07,
+        "same_cloud_oracle_center": 1.2722186723203445e-07,
+        "checkpoint_sample_only_oracle_center": 3.82702052383343e-06,
+        "late_source_only_oracle_center": 3.1705970019690015e-05,
+        "combined_inherited_scale0.5_oracle_center": 3.2245702325519457e-06,
+        "combined_inherited_scale0.75_oracle_center": 1.5214091676530392e-06,
+        "combined_inherited_scale1_oracle_center": 4.448409867795637e-07,
+        "combined_inherited_scale1.25_oracle_center": 7.910913955880013e-07,
+        "oracle_exact_sample_center": 1.240304487735825e-07,
+        "same_cloud_sample_center": 1.2721125984432244e-07,
+        "checkpoint_sample_only_sample_center": 3.7041674345611808e-06,
+        "late_source_only_sample_center": 3.025129855115327e-05,
+        "combined_inherited_scale0.5_sample_center": 3.0588939865995245e-06,
+        "combined_inherited_scale0.75_sample_center": 1.3722121784316307e-06,
+        "combined_inherited_scale1_sample_center": 3.258320180591124e-07,
+        "combined_inherited_scale1.25_sample_center": 1.0580874120103674e-06
+      },
+      "anchor_diagnostics": {
+        "oracle_exact_oracle_center": {
+          "relative_to_same_cloud": 0.0,
+          "error": [
+            0.0,
+            0.0
+          ]
+        },
+        "same_cloud_oracle_center": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0004982947969119911,
+            9.506858925174204e-06
+          ]
+        },
+        "checkpoint_sample_only_oracle_center": {
+          "relative_to_same_cloud": 5.320984377142459,
+          "error": [
+            -0.0026363285597904556,
+            -0.0002869711878992285
+          ]
+        },
+        "late_source_only_oracle_center": {
+          "relative_to_same_cloud": 29.954437622185043,
+          "error": [
+            -0.0149165181600063,
+            -0.0006068352401718414
+          ]
+        },
+        "combined_inherited_scale0.5_oracle_center": {
+          "relative_to_same_cloud": 17.039603137209593,
+          "error": [
+            -0.008486739249088058,
+            -0.00030701672242608035
+          ]
+        },
+        "combined_inherited_scale0.75_oracle_center": {
+          "relative_to_same_cloud": 10.582552059075718,
+          "error": [
+            -0.0052718497936289355,
+            -0.0001571074635531998
+          ]
+        },
+        "combined_inherited_scale1_oracle_center": {
+          "relative_to_same_cloud": 4.127273009471625,
+          "error": [
+            -0.002056960338169815,
+            -7.198204680319278e-06
+          ]
+        },
+        "combined_inherited_scale1.25_oracle_center": {
+          "relative_to_same_cloud": 2.3409396208784687,
+          "error": [
+            0.0011579291172893087,
+            0.00014271105419256126
+          ]
+        },
+        "oracle_exact_sample_center": {
+          "relative_to_same_cloud": 0.0,
+          "error": [
+            0.0,
+            0.0
+          ]
+        },
+        "same_cloud_sample_center": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0004976428002795314,
+            9.502563034320113e-06
+          ]
+        },
+        "checkpoint_sample_only_sample_center": {
+          "relative_to_same_cloud": 4.43329530175697,
+          "error": [
+            -0.0021889238365510565,
+            -0.0002787373964144174
+          ]
+        },
+        "late_source_only_sample_center": {
+          "relative_to_same_cloud": 29.094866975729328,
+          "error": [
+            -0.014469113436766903,
+            -0.0005986014486870303
+          ]
+        },
+        "combined_inherited_scale0.5_sample_center": {
+          "relative_to_same_cloud": 16.163035973156994,
+          "error": [
+            -0.008039334525848658,
+            -0.0002987829309412692
+          ]
+        },
+        "combined_inherited_scale0.75_sample_center": {
+          "relative_to_same_cloud": 9.697441163878633,
+          "error": [
+            -0.004824445070389536,
+            -0.00014887367206838868
+          ]
+        },
+        "combined_inherited_scale1_sample_center": {
+          "relative_to_same_cloud": 3.233770458411518,
+          "error": [
+            -0.001609555614930416,
+            1.0355868044918583e-06
+          ]
+        },
+        "combined_inherited_scale1.25_sample_center": {
+          "relative_to_same_cloud": 3.2395139484170703,
+          "error": [
+            0.0016053338405287079,
+            0.0001509448456773724
+          ]
+        }
+      },
+      "scalar_decomposition": {
+        "true_c21_anchor": [
+          0.015495886381626939,
+          0.0008866082233907514
+        ],
+        "checkpoint_inherited_anchor": [
+          0.012859557821836487,
+          0.0005996370354915221
+        ],
+        "late_source_anchor": [
+          0.0005793682216206414,
+          0.00027977298321890925
+        ]
+      },
+      "late_source_diagnostics": {
+        "seconds": 0.34695845912210643,
+        "factor_rank": 5888,
+        "torch_flops": 11230377528,
+        "torch_residual_flops": 40768512,
+        "torch_flop_breakdown": {
+          "FactoredTensor3.get_dslice": 4467983616,
+          "FactoredTensor3.contract_W": 4227858432,
+          "nonlin_sum 111 factored": 1650735361,
+          "harmonic contract_W": 472514560,
+          "contract_W_basic": 252641280,
+          "nonlin_sum": 54682624,
+          "resid": 40768512,
+          "eval_part": 33652736,
+          "pK_to_K": 21715200,
+          "harmonic diagslice": 5378048,
+          "FactoredTensor3.from_dstensor": 983040,
+          "DSTensor.to_tensor": 660480,
+          "get_wick_coef": 464640,
+          "DS_harmonic_proj": 329015,
+          "DSTensor constructor": 9984,
+          "is_symmetric": 0,
+          "symmetrize": 0,
+          "coerce_input": 0,
+          "setup": 0,
+          "zero_repeated": 0,
+          "DSTower.from_slices": 0
+        }
+      },
+      "analytical_extra_flops": {
+        "factorized_tail_and_scalar": 11230377528,
+        "expected_gate_tail_map": 167772160,
+        "checkpoint_cloud_transport": 8657043456,
+        "target_control_features": 152306688,
+        "total_extra": 20207499832
+      },
+      "seconds": 1.5025038328021765
+    }
+  ]
+}

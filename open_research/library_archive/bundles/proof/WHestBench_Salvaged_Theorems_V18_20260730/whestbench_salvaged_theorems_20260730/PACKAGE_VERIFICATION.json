@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "subchecks": [
+    {
+      "script": "verify_salvaged_theorems.py",
+      "returncode": 0,
+      "stdout_tail": "\"bound\": \"0.01662259501672636158083109\",\n        \"ratio\": \"0.98771939981167132285\"\n      },\n      {\n        \"t\": \"0.1\",\n        \"exact\": \"0.0001329143172139122431224268\",\n        \"bound\": \"0.0001329807601338108926466487\",\n        \"ratio\": \"0.99950035689499900712\"\n      },\n      {\n        \"t\": \"0.02\",\n        \"exact\": \"0.000001063824804756760891740454\",\n        \"bound\": \"0.000001063846081070487141173189\",\n        \"ratio\": \"0.99998000057141269882\"\n      },\n      {\n        \"t\": \"-0.1\",\n        \"exact\": \"0.0001329143172139122431224268\",\n        \"bound\": \"0.0001329807601338108926466487\",\n        \"ratio\": \"0.99950035689499900712\"\n      }\n    ],\n    \"small_t_ratio_to_t_cubed\": \"0.1329807600673205126272364\",\n    \"normal_density_at_zero_over_3\": \"0.1329807601338108926466487\"\n  },\n  \"haar\": {\n    \"conditional_mean\": 0.4,\n    \"chi_square\": 0.12000000000000001,\n    \"orientation_risk\": 1.875,\n    \"mean_squared\": 0.16000000000000003,\n    \"chi_square_times_risk\": 0.225,\n    \"bound_holds\": true\n  }\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "certify_k32_mub_line_spectrum.py",
+      "returncode": 0,
+      "stdout_tail": "41064620128164969596274045250468144400933690\",\n      \"hi\": \"0.9747302329077504666127808462108414633985481621607157811601376765059186782638042862222041064620128164969596274045250468144400934442\",\n      \"width\": \"7.52E-128\"\n    },\n    \"zero_sum_stability_modulus_min\": {\n      \"lo\": \"0.0095647338241964647578385472030766712243161576392396333683637061907007102204173897116339194935081326562573848580957506942016371955\",\n      \"hi\": \"0.0095647338241964647578385472030766712243161576392396333683637061907007102204173897116339194935081326562573848580957506942016754510\",\n      \"width\": \"3.82555E-125\"\n    }\n  },\n  \"multiplicities\": {\n    \"within_basis_zero_sum\": 32895,\n    \"between_basis_zero_sum\": 128,\n    \"global\": 1\n  },\n  \"interpretation\": \"The K32 symmetrized line Gram matrix is positive definite. Uniform mass-one line weights and the free-mass scaled-uniform line weights are unique; fixed-mass excess risk is at least the certified transverse modulus times squared Euclidean weight distance.\"\n}\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "certify_t16_endpoints.py",
+      "returncode": 0,
+      "stdout_tail": "56034282315206623472262837915157898004755583459288189488873323024778265892383207366\"\n  ],\n  \"h_minus_one_interval\": [\n    \"0.97341789205122516057871552147346656666447095503815453593873438031300623032543142156\",\n    \"0.97341789205122516057871552147346656666447095503815453593873438031300630967456857844\"\n  ],\n  \"K32_minus_h_at_plus_one\": [\n    \"0.01702189426837098070013911559781262235406790726401596303834365435110675032543142156\",\n    \"0.01702189426837098070013911559781262235406790726401596303834365435110682967456857844\"\n  ],\n  \"K32_minus_h_at_minus_one\": [\n    \"2.20518712908074344558690430411509069179447448892292786282034219974116947211360475558345928818948887332302477826589238320E-7\",\n    \"2.20518712908074344558690430411509069179447448892292786282034220053466084368240475558345928818948887332302477826589238321E-7\"\n  ],\n  \"conclusion\": \"Both endpoint residuals are strictly positive. Together with the interior Hermite remainder, equality occurs only at the three interior contact nodes.\"\n}\n",
+      "stderr_tail": ""
+    }
+  ],
+  "control_character_issues": [],
+  "stale_depth_wording": []
+}

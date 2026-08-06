@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "scope": {
+    "dimension": 256,
+    "node_budget": 66048,
+    "source_certificate_components": 146
+  },
+  "shared_abstract_relaxation": {
+    "active_harmonic_blocks": 123,
+    "minimum_active_block_dimension": 2828800,
+    "all_component_floors_simultaneously_attainable": true,
+    "construction": "For every block choose N orthonormal columns E_l and set global block factor Z_l=sqrt(d_l/N) E_l. Every profile-scaled principal moment matrix has N equal eigenvalues T_profile/N."
+  },
+  "atomic_equality": {
+    "possible": false,
+    "witness_degree": 3,
+    "distinct_r": [
+      "5623413251903491/1000000000000000000",
+      "68129206905796083/10000000000000000000"
+    ],
+    "reason": "Equality would force every off-diagonal inner product to be a common zero of G_3 and G_4; their exact polynomial gcd is 1.",
+    "duplicate_s_groups": 45
+  },
+  "arbitrary_total_mass": {
+    "k0_lower_partial_order320": "9.7472998954171471231225812084613060955034085053404245936390395621337525E-1",
+    "comparison_degree0_used": "3.8403497510205833169617943465327528559223928169964620844372964881228559E-10",
+    "optimal_total_mass_in_relaxation": "9.9999976604279241726156627426137219215984177067994680564765769956799723E-1",
+    "mse_floor": "2.2804510650033141149442884649527472172244455454121606670337841246422249E-7",
+    "fraction_of_kerdock_upper": "9.3704573768281695238547733097076483858891013421284526873500938021299344E-1",
+    "same_cost_cap": "1.0671837667954822921535310541859951521062491814150831906745797426162827E+0",
+    "mass_one_loss": "5.3352808801999893800070056278277555445458783933296621587535777514714019E-14"
+  },
+  "bounded_variation_consequence": {
+    "statement": "For every finite V, the minimum risk over mass-one signed rules with l1 weight norm at most V is strictly above the v21 floor. Hence any sequence approaching the abstract floor must have l1 norm tending to infinity."
+  },
+  "nonnegative_sturm_gap": {
+    "selected_profiles": [
+      {
+        "s": 3,
+        "r": "5623413251903491/1000000000000000000",
+        "y": "1187450356256007292449/250000000000000000000000000000",
+        "c": "1178316122746345697891700000/55222722957432157913575436325577365286555409"
+      },
+      {
+        "s": 3,
+        "r": "68129206905796083/10000000000000000000",
+        "y": "2806834392465839696961/100000000000000000000000000000",
+        "c": "99472977095630033216475000000/881646762782908929597959652972254416413133703"
+      },
+      {
+        "s": 4,
+        "r": "1/100",
+        "y": "9290717899843712429097/1000000000000000000000000000000",
+        "c": "1198502609079838903353513/151328526418033318400000000000000000000000000"
+      },
+      {
+        "s": 4,
+        "r": "12115276586285877/1000000000000000000",
+        "y": "14068959931438898587101/1000000000000000000000000000000",
+        "c": "2181365181677425381894265625/209163900295278895695038527532068219680476056448"
+      }
+    ],
+    "q_degree": 10,
+    "certified_q_lower": "1.3003500000000000000000000000000000000000000000000000000000000000000000E-12",
+    "sturm_length": 11,
+    "variations_at_minus_one": 5,
+    "variations_at_plus_one": 5,
+    "root_count_open_interval": 0,
+    "epsilon_absolute": "1.3003303120457848837209302325581395348837209302325581395348837209302326E-12",
+    "old_floor": "2.2804515985314021349432264656533100000000000000000000000000000000000000E-7",
+    "improved_nonnegative_floor": "2.2804646018345225927920636749556355813953488372093023255813953488372093E-7",
+    "fraction_of_kerdock_upper": "9.3705130001659394025920481632402487743794290873236864682275250596958044E-1",
+    "same_cost_cap": "1.0671774319957630083299502365985160103936267319310990605460838014253909E+0",
+    "note": "This quantitative corollary is weaker than the existing T22 positive-weight theorem; its value is as an independent shared-profile realizability check."
+  }
+}

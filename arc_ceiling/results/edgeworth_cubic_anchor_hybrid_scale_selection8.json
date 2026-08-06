@@ -1,0 +1,3506 @@
+{
+  "protocol": {
+    "indices": [
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167
+    ],
+    "layer": 29,
+    "rotation_seed": 3,
+    "rank": 4,
+    "folds": 6,
+    "ridge": 0.1,
+    "step": 0.2,
+    "half_width": 5,
+    "chunk": 512,
+    "nodes": 12,
+    "oracle_pre_moments": true
+  },
+  "summary": {
+    "oracle": {
+      "mse_ratio": 0.5431806564805083,
+      "wins": 8,
+      "worst": 0.9001889228665756,
+      "mean_anchor_error_relative_to_same_cloud": 0.0
+    },
+    "sample": {
+      "mse_ratio": 0.9606146786137774,
+      "wins": 6,
+      "worst": 1.0637285789156956,
+      "mean_anchor_error_relative_to_same_cloud": 1.0
+    },
+    "gaussian": {
+      "mse_ratio": 99.3836877259711,
+      "wins": 0,
+      "worst": 249.59030575621557,
+      "mean_anchor_error_relative_to_same_cloud": 3.8368730442725787
+    },
+    "third": {
+      "mse_ratio": 0.5507952136986074,
+      "wins": 8,
+      "worst": 0.9359810448298589,
+      "mean_anchor_error_relative_to_same_cloud": 0.009477691178577377
+    },
+    "third_fourth": {
+      "mse_ratio": 0.5440907910481025,
+      "wins": 8,
+      "worst": 0.896768263528247,
+      "mean_anchor_error_relative_to_same_cloud": 0.0026645582961513686
+    },
+    "full": {
+      "mse_ratio": 0.5452517560753604,
+      "wins": 8,
+      "worst": 0.9101380353009464,
+      "mean_anchor_error_relative_to_same_cloud": 0.002737937449245581
+    },
+    "sample_pre_gaussian": {
+      "mse_ratio": 107.04476115951495,
+      "wins": 0,
+      "worst": 271.5384723496508,
+      "mean_anchor_error_relative_to_same_cloud": 4.324878014223051
+    },
+    "sample_pre_third": {
+      "mse_ratio": 0.9663584794086336,
+      "wins": 6,
+      "worst": 1.0588521908626873,
+      "mean_anchor_error_relative_to_same_cloud": 1.0035970685739204
+    },
+    "sample_pre_third_fourth": {
+      "mse_ratio": 0.9615158825803294,
+      "wins": 6,
+      "worst": 1.0676100757753912,
+      "mean_anchor_error_relative_to_same_cloud": 0.9998850402427796
+    },
+    "sample_pre_full": {
+      "mse_ratio": 0.9596538568175482,
+      "wins": 6,
+      "worst": 1.0684929105586998,
+      "mean_anchor_error_relative_to_same_cloud": 1.0006464476441743
+    },
+    "factorized_pre_third_scale1.2": {
+      "mse_ratio": 25.139395367778658,
+      "wins": 2,
+      "worst": 103.77901152598754,
+      "mean_anchor_error_relative_to_same_cloud": 3.2988001718981828
+    },
+    "factorized_pre_third_scale1.25": {
+      "mse_ratio": 25.763546470624195,
+      "wins": 2,
+      "worst": 106.81021652335225,
+      "mean_anchor_error_relative_to_same_cloud": 3.360217371407014
+    },
+    "factorized_pre_third_scale1.3": {
+      "mse_ratio": 26.498259147991366,
+      "wins": 2,
+      "worst": 110.11828838906025,
+      "mean_anchor_error_relative_to_same_cloud": 3.426254936248075
+    },
+    "factorized_pre_third_scale1.35": {
+      "mse_ratio": 27.347275255964924,
+      "wins": 2,
+      "worst": 113.71317804306855,
+      "mean_anchor_error_relative_to_same_cloud": 3.5001876331921378
+    },
+    "factorized_pre_third_scale1.4": {
+      "mse_ratio": 28.31643931315654,
+      "wins": 2,
+      "worst": 117.60559426730242,
+      "mean_anchor_error_relative_to_same_cloud": 3.5846918771873706
+    },
+    "factorized_pre_third_scale1.5": {
+      "mse_ratio": 30.649076360118553,
+      "wins": 0,
+      "worst": 126.32960202046117,
+      "mean_anchor_error_relative_to_same_cloud": 3.7775838725304
+    },
+    "factorized_pre_third_scale1.6": {
+      "mse_ratio": 33.584799367143646,
+      "wins": 0,
+      "worst": 136.3909516669276,
+      "mean_anchor_error_relative_to_same_cloud": 3.984263409112449
+    },
+    "factorized_pre_third_scale1.75": {
+      "mse_ratio": 39.39492091146745,
+      "wins": 0,
+      "worst": 154.2396209999405,
+      "mean_anchor_error_relative_to_same_cloud": 4.304056800840747
+    },
+    "factorized_pre_third_scale2": {
+      "mse_ratio": 54.29101235901724,
+      "wins": 0,
+      "worst": 192.4312933039886,
+      "mean_anchor_error_relative_to_same_cloud": 4.8546318447038725
+    },
+    "oracle_mean_cov_factorized_c21_third_scale1.2": {
+      "mse_ratio": 1.195571027197409,
+      "wins": 3,
+      "worst": 2.3494731370702646,
+      "mean_anchor_error_relative_to_same_cloud": 0.7270776771276699
+    },
+    "oracle_mean_cov_factorized_c21_third_scale1.25": {
+      "mse_ratio": 0.964598950474118,
+      "wins": 5,
+      "worst": 1.742710246643931,
+      "mean_anchor_error_relative_to_same_cloud": 0.5986434873618043
+    },
+    "oracle_mean_cov_factorized_c21_third_scale1.3": {
+      "mse_ratio": 0.8206858016214813,
+      "wins": 4,
+      "worst": 1.320473916091605,
+      "mean_anchor_error_relative_to_same_cloud": 0.47141282088346703
+    },
+    "oracle_mean_cov_factorized_c21_third_scale1.35": {
+      "mse_ratio": 0.7524025749539914,
+      "wins": 4,
+      "worst": 1.2297200739210323,
+      "mean_anchor_error_relative_to_same_cloud": 0.35872224474907477
+    },
+    "oracle_mean_cov_factorized_c21_third_scale1.4": {
+      "mse_ratio": 0.7504442381785527,
+      "wins": 6,
+      "worst": 1.4327538775593074,
+      "mean_anchor_error_relative_to_same_cloud": 0.30717150580581953
+    },
+    "oracle_mean_cov_factorized_c21_third_scale1.5": {
+      "mse_ratio": 0.9189078417788459,
+      "wins": 4,
+      "worst": 2.2541262250916754,
+      "mean_anchor_error_relative_to_same_cloud": 0.349590440187694
+    },
+    "oracle_mean_cov_factorized_c21_third_scale1.6": {
+      "mse_ratio": 1.294138939513324,
+      "wins": 4,
+      "worst": 3.7037046040464077,
+      "mean_anchor_error_relative_to_same_cloud": 0.5044545703049277
+    },
+    "oracle_mean_cov_factorized_c21_third_scale1.75": {
+      "mse_ratio": 2.2584066710532174,
+      "wins": 1,
+      "worst": 7.700271176779988,
+      "mean_anchor_error_relative_to_same_cloud": 0.8079939818436418
+    },
+    "oracle_mean_cov_factorized_c21_third_scale2": {
+      "mse_ratio": 5.411277324685295,
+      "wins": 0,
+      "worst": 22.838686145133913,
+      "mean_anchor_error_relative_to_same_cloud": 1.3756792923347334
+    },
+    "sample_mean_cov_factorized_c21_third_scale1.2": {
+      "mse_ratio": 1.7789085302075895,
+      "wins": 2,
+      "worst": 3.5819746293236436,
+      "mean_anchor_error_relative_to_same_cloud": 1.4982423973958117
+    },
+    "sample_mean_cov_factorized_c21_third_scale1.25": {
+      "mse_ratio": 1.4974988607852882,
+      "wins": 2,
+      "worst": 2.713032782932683,
+      "mean_anchor_error_relative_to_same_cloud": 1.4144733106935126
+    },
+    "sample_mean_cov_factorized_c21_third_scale1.3": {
+      "mse_ratio": 1.3094701000850542,
+      "wins": 3,
+      "worst": 2.186398895047359,
+      "mean_anchor_error_relative_to_same_cloud": 1.3311198448908361
+    },
+    "sample_mean_cov_factorized_c21_third_scale1.35": {
+      "mse_ratio": 1.2018498998619114,
+      "wins": 3,
+      "worst": 1.9792996764853439,
+      "mean_anchor_error_relative_to_same_cloud": 1.2481782030740294
+    },
+    "sample_mean_cov_factorized_c21_third_scale1.4": {
+      "mse_ratio": 1.1637918107662717,
+      "wins": 3,
+      "worst": 1.8804085195413862,
+      "mean_anchor_error_relative_to_same_cloud": 1.1657135175265712
+    },
+    "sample_mean_cov_factorized_c21_third_scale1.5": {
+      "mse_ratio": 1.263616160986833,
+      "wins": 1,
+      "worst": 1.9547932132404435,
+      "mean_anchor_error_relative_to_same_cloud": 1.0030927538409828
+    },
+    "sample_mean_cov_factorized_c21_third_scale1.6": {
+      "mse_ratio": 1.5647419185053533,
+      "wins": 1,
+      "worst": 2.3322396467709647,
+      "mean_anchor_error_relative_to_same_cloud": 0.8552996011521398
+    },
+    "sample_mean_cov_factorized_c21_third_scale1.75": {
+      "mse_ratio": 2.380978853532018,
+      "wins": 0,
+      "worst": 3.6523460995681014,
+      "mean_anchor_error_relative_to_same_cloud": 0.8594072078358369
+    },
+    "sample_mean_cov_factorized_c21_third_scale2": {
+      "mse_ratio": 5.088831133269669,
+      "wins": 0,
+      "worst": 12.09159936627985,
+      "mean_anchor_error_relative_to_same_cloud": 1.1575991530795875
+    }
+  },
+  "records": [
+    {
+      "index": 160,
+      "name": "amy-scott",
+      "baseline_mse": 2.1440298520066416e-07,
+      "method_mses": {
+        "oracle": 1.9300319230716422e-07,
+        "sample": 2.0637052754205288e-07,
+        "gaussian": 3.188096432238616e-05,
+        "third": 2.0067713010275842e-07,
+        "third_fourth": 1.9226979273367204e-07,
+        "full": 1.9513631171319036e-07,
+        "sample_pre_gaussian": 3.329959637962947e-05,
+        "sample_pre_third": 2.1154117350555465e-07,
+        "sample_pre_third_fourth": 2.057555107979163e-07,
+        "sample_pre_full": 2.0759673445560535e-07,
+        "factorized_pre_third_scale1.2": 3.843272399504891e-06,
+        "factorized_pre_third_scale1.25": 4.0318183903551085e-06,
+        "factorized_pre_third_scale1.3": 4.2214918850168655e-06,
+        "factorized_pre_third_scale1.35": 4.412852070335356e-06,
+        "factorized_pre_third_scale1.4": 4.607050474841848e-06,
+        "factorized_pre_third_scale1.5": 5.011525167053227e-06,
+        "factorized_pre_third_scale1.6": 5.45594216844502e-06,
+        "factorized_pre_third_scale1.75": 6.266598566288609e-06,
+        "factorized_pre_third_scale2": 8.381715061932258e-06,
+        "oracle_mean_cov_factorized_c21_third_scale1.2": 3.9604292054319434e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.25": 3.2578755557682137e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.3": 2.8311354948965144e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.35": 2.636556548098507e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.4": 2.6363898762510563e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.5": 3.0978701803586783e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.6": 4.031962796665308e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.75": 6.151009784843794e-07,
+        "oracle_mean_cov_factorized_c21_third_scale2": 1.2141063945758283e-06,
+        "sample_mean_cov_factorized_c21_third_scale1.2": 6.41968191438893e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.25": 5.399237615956781e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.3": 4.6877044993758736e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.35": 4.2436775924516654e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.4": 4.0316519998643464e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.5": 4.1911350036874954e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.6": 5.000391424710373e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.75": 7.303145964354529e-07,
+        "sample_mean_cov_factorized_c21_third_scale2": 1.4734593931301495e-06
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "absolute_error_norm": 0.00137918019326765,
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.0013787339988902136,
+            -3.333512224926172e-05,
+            8.541322933269466e-06,
+            6.8103768742556504e-06
+          ]
+        },
+        "gaussian": {
+          "absolute_error_norm": 0.005655095011512271,
+          "relative_to_same_cloud": 4.100330790071618,
+          "error": [
+            -0.0055873507898469565,
+            -0.0007060530987383663,
+            -0.0004396814980431197,
+            -0.0002641589341061054
+          ]
+        },
+        "third": {
+          "absolute_error_norm": 1.9010408648208838e-05,
+          "relative_to_same_cloud": 0.01378384691210512,
+          "error": [
+            -1.6297711591617414e-05,
+            9.370291705659492e-06,
+            2.4329607886423507e-06,
+            1.4347714104101864e-06
+          ]
+        },
+        "third_fourth": {
+          "absolute_error_norm": 4.235322763234123e-06,
+          "relative_to_same_cloud": 0.0030708987729873793,
+          "error": [
+            3.87108670807379e-06,
+            -1.5146723256562883e-06,
+            4.6999868045464327e-07,
+            -6.614496153188251e-07
+          ]
+        },
+        "full": {
+          "absolute_error_norm": 2.9862450340574195e-06,
+          "relative_to_same_cloud": 0.0021652319607216803,
+          "error": [
+            -1.5508031041555626e-06,
+            2.52812831529059e-06,
+            2.910395099035151e-07,
+            -1.9113440473958812e-07
+          ]
+        },
+        "sample_pre_gaussian": {
+          "absolute_error_norm": 0.007015924797750077,
+          "relative_to_same_cloud": 5.087025489488402,
+          "error": [
+            -0.006959365429042297,
+            -0.0007321789574909546,
+            -0.00042939143555000697,
+            -0.0002645194927016676
+          ]
+        },
+        "sample_pre_third": {
+          "absolute_error_norm": 0.0013949182790434895,
+          "relative_to_same_cloud": 1.011411188945914,
+          "error": [
+            -0.0013946471649513015,
+            -2.3683373203232244e-05,
+            1.1100381790396172e-05,
+            8.495284619780292e-06
+          ]
+        },
+        "sample_pre_third_fourth": {
+          "absolute_error_norm": 0.0013740958911588742,
+          "relative_to_same_cloud": 0.9963135331165613,
+          "error": [
+            -0.0013736140960938226,
+            -3.4700993670302646e-05,
+            8.919972672763107e-06,
+            6.3331064938496225e-06
+          ]
+        },
+        "sample_pre_full": {
+          "absolute_error_norm": 0.0013793264738005723,
+          "relative_to_same_cloud": 1.000106063394498,
+          "error": [
+            -0.0013789378494903914,
+            -3.080099240794151e-05,
+            8.777433879423452e-06,
+            6.7958878090940145e-06
+          ]
+        },
+        "factorized_pre_third_scale1.2": {
+          "absolute_error_norm": 0.01188904490734465,
+          "relative_to_same_cloud": 8.62037097500385,
+          "error": [
+            0.011845028180792472,
+            0.001019220234202164,
+            5.75609028311214e-05,
+            -5.0725356066896616e-05
+          ]
+        },
+        "factorized_pre_third_scale1.25": {
+          "absolute_error_norm": 0.012035470302591203,
+          "relative_to_same_cloud": 8.726539404597979,
+          "error": [
+            0.011989730390018716,
+            0.0010448237714856274,
+            7.429743302286157e-05,
+            -4.16384101663181e-05
+          ]
+        },
+        "factorized_pre_third_scale1.3": {
+          "absolute_error_norm": 0.012181938101520984,
+          "relative_to_same_cloud": 8.832738579763596,
+          "error": [
+            0.01213443259924607,
+            0.001070427308769063,
+            9.103396321456271e-05,
+            -3.255146426573612e-05
+          ]
+        },
+        "factorized_pre_third_scale1.35": {
+          "absolute_error_norm": 0.01232844679280583,
+          "relative_to_same_cloud": 8.938967404684382,
+          "error": [
+            0.012279134808473868,
+            0.0010960308460525228,
+            0.00010777049340632196,
+            -2.3464518365163244e-05
+          ]
+        },
+        "factorized_pre_third_scale1.4": {
+          "absolute_error_norm": 0.012474994935702595,
+          "relative_to_same_cloud": 9.045224834722985,
+          "error": [
+            0.012423837017701445,
+            0.0011216343833359722,
+            0.00012450702359802484,
+            -1.4377572464591669e-05
+          ]
+        },
+        "factorized_pre_third_scale1.5": {
+          "absolute_error_norm": 0.012768204142255674,
+          "relative_to_same_cloud": 9.257821570076608,
+          "error": [
+            0.01271324143615482,
+            0.001172841457902878,
+            0.00015798008398147396,
+            3.7963193365666593e-06
+          ]
+        },
+        "factorized_pre_third_scale1.6": {
+          "absolute_error_norm": 0.013061555459701356,
+          "relative_to_same_cloud": 9.47052134555022,
+          "error": [
+            0.013002645854607753,
+            0.0012240485324697906,
+            0.0001914531443649248,
+            2.1970211137728457e-05
+          ]
+        },
+        "factorized_pre_third_scale1.75": {
+          "absolute_error_norm": 0.01350182863012701,
+          "relative_to_same_cloud": 9.78974951644102,
+          "error": [
+            0.013436752482290037,
+            0.0013008591443201597,
+            0.00024166273494012017,
+            4.923104883944535e-05
+          ]
+        },
+        "factorized_pre_third_scale2": {
+          "absolute_error_norm": 0.014236206075411062,
+          "relative_to_same_cloud": 10.32222340844502,
+          "error": [
+            0.01416026352842481,
+            0.0014288768307374102,
+            0.0003253453858987794,
+            9.466577834234269e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.2": {
+          "absolute_error_norm": 0.0021155185197111025,
+          "relative_to_same_cloud": 1.5338956650028945,
+          "error": [
+            -0.0021127091192154612,
+            -9.076127698631233e-05,
+            -3.8530052799372674e-05,
+            -4.643932014550397e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.25": {
+          "absolute_error_norm": 0.001969485026431222,
+          "relative_to_same_cloud": 1.4280113911475054,
+          "error": [
+            -0.001967932382937798,
+            -6.512411774666979e-05,
+            -2.1815409247552195e-05,
+            -3.73676695638054e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.3": {
+          "absolute_error_norm": 0.0018238098624447383,
+          "relative_to_same_cloud": 1.3223869305457763,
+          "error": [
+            -0.0018231556466625776,
+            -3.9486958507008174e-05,
+            -5.10076569573345e-06,
+            -2.829601898211593e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.35": {
+          "absolute_error_norm": 0.0016785863225548818,
+          "relative_to_same_cloud": 1.217089928313035,
+          "error": [
+            -0.0016783789103862468,
+            -1.3849799267310128e-05,
+            1.1613877856100907e-05,
+            -1.922436840042646e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.4": {
+          "absolute_error_norm": 0.0015339426824663304,
+          "relative_to_same_cloud": 1.1122133931114586,
+          "error": [
+            -0.0015336021741092498,
+            1.1787359972346284e-05,
+            2.8328521407916182e-05,
+            -1.015271781873179e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.5": {
+          "absolute_error_norm": 0.0012472015969638669,
+          "relative_to_same_cloud": 0.9043064880513617,
+          "error": [
+            -0.0012440487015570323,
+            6.306167845166778e-05,
+            6.175780851157796e-05,
+            7.99058334464758e-06
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.6": {
+          "absolute_error_norm": 0.0009663733364888575,
+          "relative_to_same_cloud": 0.700686785676104,
+          "error": [
+            -0.0009544952290039266,
+            0.0001143359969310153,
+            9.518709561521458e-05,
+            2.6133884508032588e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.75": {
+          "absolute_error_norm": 0.0005754254515576053,
+          "relative_to_same_cloud": 0.4172228214750294,
+          "error": [
+            -0.0005201650201751562,
+            0.0001912474746500071,
+            0.00014533102627067342,
+            5.334883625310923e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale2": {
+          "absolute_error_norm": 0.0004535186322902661,
+          "relative_to_same_cloud": 0.32883203696230445,
+          "error": [
+            0.00020371866120694193,
+            0.00031943327084835334,
+            0.00022890424402980964,
+            9.870708916156264e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.2": {
+          "absolute_error_norm": 0.0034870891403351806,
+          "relative_to_same_cloud": 2.5283782042093614,
+          "error": [
+            -0.003484700996331247,
+            -0.00011687831241983387,
+            -2.8245664055333818e-05,
+            -4.6811124313880705e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.25": {
+          "absolute_error_norm": 0.0033414023824849606,
+          "relative_to_same_cloud": 2.4227453372632017,
+          "error": [
+            -0.003339923311634463,
+            -9.124078554187572e-05,
+            -1.1531256909740398e-05,
+            -3.773994229772353e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.3": {
+          "absolute_error_norm": 0.003195951834391908,
+          "relative_to_same_cloud": 2.317283738551839,
+          "error": [
+            -0.003195145626938345,
+            -6.560325866389674e-05,
+            5.18315023587991e-06,
+            -2.866876028156766e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.35": {
+          "absolute_error_norm": 0.003050771281310803,
+          "relative_to_same_cloud": 2.212017904696487,
+          "error": [
+            -0.003050367942242449,
+            -3.9965731785921235e-05,
+            2.1897557381478534e-05,
+            -1.9597578265400078e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.4": {
+          "absolute_error_norm": 0.002905901190856328,
+          "relative_to_same_cloud": 2.1069771774864776,
+          "error": [
+            -0.002905590257545221,
+            -1.4328204907997771e-05,
+            3.8611964527088434e-05,
+            -1.052639624924941e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.5": {
+          "absolute_error_norm": 0.002617298508472983,
+          "relative_to_same_cloud": 1.89772048732218,
+          "error": [
+            -0.002616034888153651,
+            3.694684884796191e-05,
+            7.20407788183091e-05,
+            7.615967783057131e-06
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.6": {
+          "absolute_error_norm": 0.0023306817419029707,
+          "relative_to_same_cloud": 1.6899037219936845,
+          "error": [
+            -0.002326479518760527,
+            8.822190260388517e-05,
+            0.0001054695931095367,
+            2.5758331815379717e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.75": {
+          "absolute_error_norm": 0.0019064388291306063,
+          "relative_to_same_cloud": 1.3822985846495797,
+          "error": [
+            -0.0018921464646710628,
+            0.000165134483237777,
+            0.00015561281454637508,
+            5.297187786385167e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale2": {
+          "absolute_error_norm": 0.001231966907825893,
+          "relative_to_same_cloud": 0.893260296108974,
+          "error": [
+            -0.001168258041190251,
+            0.0002933221176275782,
+            0.0002391848502744211,
+            9.83277879446384e-05
+          ]
+        }
+      },
+      "seconds": 9.032400541938841
+    },
+    {
+      "index": 161,
+      "name": "dylan-brown",
+      "baseline_mse": 2.24091425569048e-07,
+      "method_mses": {
+        "oracle": 1.0511573657570729e-07,
+        "sample": 2.0908829876798055e-07,
+        "gaussian": 2.7447805103110654e-05,
+        "third": 1.0710295184560044e-07,
+        "third_fourth": 1.0588092635477292e-07,
+        "full": 1.0515719866192361e-07,
+        "sample_pre_gaussian": 4.221411517659937e-05,
+        "sample_pre_third": 2.0898665310562776e-07,
+        "sample_pre_third_fourth": 2.110448182178757e-07,
+        "sample_pre_full": 2.0654699149963885e-07,
+        "factorized_pre_third_scale1.2": 2.1839710123542326e-06,
+        "factorized_pre_third_scale1.25": 2.4376326718102774e-06,
+        "factorized_pre_third_scale1.3": 2.7539101308916467e-06,
+        "factorized_pre_third_scale1.35": 3.141687048730419e-06,
+        "factorized_pre_third_scale1.4": 3.6111500306813046e-06,
+        "factorized_pre_third_scale1.5": 4.8423605559512576e-06,
+        "factorized_pre_third_scale1.6": 6.554862021644873e-06,
+        "factorized_pre_third_scale1.75": 1.0310986597488029e-05,
+        "factorized_pre_third_scale2": 2.10730325103023e-05,
+        "oracle_mean_cov_factorized_c21_third_scale1.2": 2.2738504147920173e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.25": 2.2225053213844107e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.3": 2.3550579120111622e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.35": 2.677887209226855e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.4": 3.2106785891184644e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.5": 5.051303591933704e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.6": 8.29968444607406e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.75": 1.7255647452728784e-06,
+        "oracle_mean_cov_factorized_c21_third_scale2": 5.117953736387124e-06,
+        "sample_mean_cov_factorized_c21_third_scale1.2": 3.6440427311957506e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.25": 2.8957587358765313e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.3": 2.405812265241146e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.35": 2.1388289754319485e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.4": 2.072774757092097e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.5": 2.522018368326701e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.6": 3.8439587824013866e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.75": 8.18459444123768e-07,
+        "sample_mean_cov_factorized_c21_third_scale2": 2.709623739399449e-06
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "absolute_error_norm": 0.0019519462427442708,
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.0019386280368172137,
+            -0.00016614096429908368,
+            -0.0001518839501264361,
+            -3.38218140476243e-05
+          ]
+        },
+        "gaussian": {
+          "absolute_error_norm": 0.011593959646032959,
+          "relative_to_same_cloud": 5.939692083800851,
+          "error": [
+            -0.011484184256900232,
+            -0.0011757514611098648,
+            -0.0008678973862910559,
+            -0.0006306939479436349
+          ]
+        },
+        "third": {
+          "absolute_error_norm": 1.775455171956904e-05,
+          "relative_to_same_cloud": 0.009095820023510302,
+          "error": [
+            -1.327833374009657e-05,
+            -6.348764235684923e-06,
+            9.92469179461608e-06,
+            3.219399183594651e-07
+          ]
+        },
+        "third_fourth": {
+          "absolute_error_norm": 8.477112190597953e-06,
+          "relative_to_same_cloud": 0.004342902486228233,
+          "error": [
+            -7.393323769200322e-06,
+            -3.7530745266890764e-06,
+            1.469006331735953e-06,
+            -9.78083191860088e-07
+          ]
+        },
+        "full": {
+          "absolute_error_norm": 9.633505885624521e-06,
+          "relative_to_same_cloud": 0.004935333604311064,
+          "error": [
+            -8.783578643978274e-06,
+            7.910411908562676e-07,
+            3.4580489324271407e-06,
+            1.7519512746418803e-06
+          ]
+        },
+        "sample_pre_gaussian": {
+          "absolute_error_norm": 0.01349402829406381,
+          "relative_to_same_cloud": 6.91311471523537,
+          "error": [
+            -0.013373096370187021,
+            -0.001343452220584334,
+            -0.001005468849289863,
+            -0.0006582261000599374
+          ]
+        },
+        "sample_pre_third": {
+          "absolute_error_norm": 0.001962974229371643,
+          "relative_to_same_cloud": 1.0056497389046266,
+          "error": [
+            -0.0019499291741102986,
+            -0.00017140463671672448,
+            -0.00014291761783993655,
+            -3.520008741026044e-05
+          ]
+        },
+        "sample_pre_third_fourth": {
+          "absolute_error_norm": 0.001958122198783944,
+          "relative_to_same_cloud": 1.0031639990407677,
+          "error": [
+            -0.001944634900806097,
+            -0.00016962228884587552,
+            -0.00015047904568781488,
+            -3.495688591535415e-05
+          ]
+        },
+        "sample_pre_full": {
+          "absolute_error_norm": 0.0019587047175309135,
+          "relative_to_same_cloud": 1.003462428748622,
+          "error": [
+            -0.0019458142158179648,
+            -0.00016503719428628827,
+            -0.00014850714844402875,
+            -3.224219846268209e-05
+          ]
+        },
+        "factorized_pre_third_scale1.2": {
+          "absolute_error_norm": 0.0014716763878294752,
+          "relative_to_same_cloud": 0.7539533392889054,
+          "error": [
+            -0.001304841025699055,
+            0.0005374574836048765,
+            0.00030179755256097736,
+            -0.0002885809743083702
+          ]
+        },
+        "factorized_pre_third_scale1.25": {
+          "absolute_error_norm": 0.0011840615055249911,
+          "relative_to_same_cloud": 0.606605591688991,
+          "error": [
+            -0.0009333233393191698,
+            0.0005871547068518855,
+            0.0003392324115738237,
+            -0.0002666081662434719
+          ]
+        },
+        "factorized_pre_third_scale1.3": {
+          "absolute_error_norm": 0.0009606928040448129,
+          "relative_to_same_cloud": 0.49217175299569743,
+          "error": [
+            -0.0005618056529357318,
+            0.0006368519300987835,
+            0.00037666727058669955,
+            -0.0002446353581785788
+          ]
+        },
+        "factorized_pre_third_scale1.35": {
+          "absolute_error_norm": 0.000853591491954725,
+          "relative_to_same_cloud": 0.4373027664709904,
+          "error": [
+            -0.0001902879665549584,
+            0.0006865491533458133,
+            0.0004141021295995598,
+            -0.00022266255011368398
+          ]
+        },
+        "factorized_pre_third_scale1.4": {
+          "absolute_error_norm": 0.0009050220787597349,
+          "relative_to_same_cloud": 0.46365112877665654,
+          "error": [
+            0.00018122971982492686,
+            0.0007362463765927564,
+            0.00045153698861244776,
+            -0.00020068974204878916
+          ]
+        },
+        "factorized_pre_third_scale1.5": {
+          "absolute_error_norm": 0.001361702716595426,
+          "relative_to_same_cloud": 0.6976128167756237,
+          "error": [
+            0.0009242650925846974,
+            0.0008356408230866912,
+            0.0005264067066381647,
+            -0.00015674412591903594
+          ]
+        },
+        "factorized_pre_third_scale1.6": {
+          "absolute_error_norm": 0.0020070970678507686,
+          "relative_to_same_cloud": 1.0282542745792838,
+          "error": [
+            0.0016673004653475765,
+            0.0009350352695805947,
+            0.0006012764246638835,
+            -0.00011279850978922722
+          ]
+        },
+        "factorized_pre_third_scale1.75": {
+          "absolute_error_norm": 0.003070087269230801,
+          "relative_to_same_cloud": 1.5728339244192087,
+          "error": [
+            0.0027818535244894527,
+            0.0010841269393214656,
+            0.0007135810017025162,
+            -4.688008559453061e-05
+          ]
+        },
+        "factorized_pre_third_scale2": {
+          "absolute_error_norm": 0.004910764330098513,
+          "relative_to_same_cloud": 2.5158296998970604,
+          "error": [
+            0.004639441956391099,
+            0.0013326130555562435,
+            0.0009007552967668087,
+            6.298395472989493e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.2": {
+          "absolute_error_norm": 0.0025682333928966437,
+          "relative_to_same_cloud": 1.3157295711617167,
+          "error": [
+            -0.002565901497507017,
+            1.763575022501601e-05,
+            3.0529735169745886e-05,
+            -0.00010358176029166312
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.25": {
+          "absolute_error_norm": 0.002197907789777216,
+          "relative_to_same_cloud": 1.1260083611150808,
+          "error": [
+            -0.0021943063825360376,
+            6.73602173639383e-05,
+            6.796419856392594e-05,
+            -8.161875247283436e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.3": {
+          "absolute_error_norm": 0.001830478864680128,
+          "relative_to_same_cloud": 0.9377711458419213,
+          "error": [
+            -0.0018227112675579527,
+            0.00011708468450289528,
+            0.00010539866195812507,
+            -5.965574465402641e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.35": {
+          "absolute_error_norm": 0.0014681230961573438,
+          "relative_to_same_cloud": 0.7521329553078712,
+          "error": [
+            -0.0014511161525843086,
+            0.0001668091516419043,
+            0.00014283312535233982,
+            -3.769273683522888e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.4": {
+          "absolute_error_norm": 0.0011157940251819963,
+          "relative_to_same_cloud": 0.5716315340802032,
+          "error": [
+            -0.0010795210376097764,
+            0.00021653361878084046,
+            0.0001802675887465563,
+            -1.572972901640532e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.5": {
+          "absolute_error_norm": 0.0005280653919342511,
+          "relative_to_same_cloud": 0.27053275360280205,
+          "error": [
+            -0.00033633080766204415,
+            0.0003159825530587579,
+            0.0002551365155349355,
+            2.8196286621330266e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.6": {
+          "absolute_error_norm": 0.0006724753739884922,
+          "relative_to_same_cloud": 0.34451531464465374,
+          "error": [
+            0.0004068594222874644,
+            0.0004154314873366198,
+            0.0003300054423233372,
+            7.212230225897912e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.75": {
+          "absolute_error_norm": 0.001687858319683168,
+          "relative_to_same_cloud": 0.8647053298507762,
+          "error": [
+            0.0015216447672110611,
+            0.0005646048887535116,
+            0.000442308832505945,
+            0.00013801132571548448
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale2": {
+          "absolute_error_norm": 0.0035413043641941426,
+          "relative_to_same_cloud": 1.8142427730055564,
+          "error": [
+            0.0033796203420850546,
+            0.0008132272244482756,
+            0.0006294811494769199,
+            0.0002478263648096179
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.2": {
+          "absolute_error_norm": 0.004461144897400151,
+          "relative_to_same_cloud": 2.2854855321876895,
+          "error": [
+            -0.0044554300668875335,
+            -0.0001495904156935679,
+            -0.00010677130115454951,
+            -0.00013106987242055348
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.25": {
+          "absolute_error_norm": 0.004087125751399215,
+          "relative_to_same_cloud": 2.0938720861764426,
+          "error": [
+            -0.00408386063758126,
+            -9.984617382310934e-05,
+            -6.932556998226654e-05,
+            -0.00010910502960219913
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.3": {
+          "absolute_error_norm": 0.0037137886255017697,
+          "relative_to_same_cloud": 1.9026080453324872,
+          "error": [
+            -0.0037122912082763193,
+            -5.010193195263343e-05,
+            -3.187983880996274e-05,
+            -8.714018678390029e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.35": {
+          "absolute_error_norm": 0.0033413621379701783,
+          "relative_to_same_cloud": 1.7118105328928048,
+          "error": [
+            -0.0033407217789722665,
+            -3.5769008220956633e-07,
+            5.565892362342784e-06,
+            -6.517534396558583e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.4": {
+          "absolute_error_norm": 0.0029701888583394255,
+          "relative_to_same_cloud": 1.5216550503786375,
+          "error": [
+            -0.0029691523496677696,
+            4.93865517882594e-05,
+            4.301162353465872e-05,
+            -4.321050114727831e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.5": {
+          "absolute_error_norm": 0.0022340997053564046,
+          "relative_to_same_cloud": 1.1445498120970021,
+          "error": [
+            -0.0022260134910605522,
+            0.00014887503552914877,
+            0.0001179030858792559,
+            7.191844893731508e-07
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.6": {
+          "absolute_error_norm": 0.001516497567652392,
+          "relative_to_same_cloud": 0.7769156416522645,
+          "error": [
+            -0.0014828746324497821,
+            0.0002483635192700069,
+            0.00019279454822384787,
+            4.464887012594655e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.75": {
+          "absolute_error_norm": 0.0006316284144841975,
+          "relative_to_same_cloud": 0.32358904187657417,
+          "error": [
+            -0.0003681663445407324,
+            0.0003975962448813687,
+            0.0003051317417407575,
+            0.00011054339858092982
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale2": {
+          "absolute_error_norm": 0.001711097831592144,
+          "relative_to_same_cloud": 0.8766111453901956,
+          "error": [
+            0.0014896808019808638,
+            0.0006463174542335713,
+            0.0004923603976022817,
+            0.00022036761267243098
+          ]
+        }
+      },
+      "seconds": 8.982378917047754
+    },
+    {
+      "index": 162,
+      "name": "yolanda-hawkins",
+      "baseline_mse": 2.3177693298152411e-07,
+      "method_mses": {
+        "oracle": 1.5944554733656508e-07,
+        "sample": 2.4654774754587507e-07,
+        "gaussian": 1.2001904627599821e-05,
+        "third": 1.5637174191806627e-07,
+        "third_fourth": 1.5946541567098395e-07,
+        "full": 1.5940423148109932e-07,
+        "sample_pre_gaussian": 1.2814753957329521e-05,
+        "sample_pre_third": 2.454175132789211e-07,
+        "sample_pre_third_fourth": 2.474473889833927e-07,
+        "sample_pre_full": 2.476520097217974e-07,
+        "factorized_pre_third_scale1.2": 1.7112409880090646e-06,
+        "factorized_pre_third_scale1.25": 1.7071819442915702e-06,
+        "factorized_pre_third_scale1.3": 1.69110164439198e-06,
+        "factorized_pre_third_scale1.35": 1.6632807213181446e-06,
+        "factorized_pre_third_scale1.4": 1.6243600052515173e-06,
+        "factorized_pre_third_scale1.5": 1.5175813830012218e-06,
+        "factorized_pre_third_scale1.6": 1.3830812307331005e-06,
+        "factorized_pre_third_scale1.75": 1.1703934353820545e-06,
+        "factorized_pre_third_scale2": 1.0142485123575298e-06,
+        "oracle_mean_cov_factorized_c21_third_scale1.2": 1.6425712368331697e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.25": 1.6622016499092672e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.3": 1.7703816613826224e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.35": 1.9557149013192462e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.4": 2.210401659412923e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.5": 2.914621152198156e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.6": 3.892564484236571e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.75": 6.034948413657366e-07,
+        "oracle_mean_cov_factorized_c21_third_scale2": 1.2740535474530334e-06,
+        "sample_mean_cov_factorized_c21_third_scale1.2": 1.910610086123986e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.25": 1.9716324367182753e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.3": 2.1017473314382545e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.35": 2.2838740715404135e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.4": 2.5045316894273425e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.5": 3.0255240136990415e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.6": 3.628915120515932e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.75": 4.751929501349068e-07,
+        "sample_mean_cov_factorized_c21_third_scale2": 8.16468604586727e-07
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "absolute_error_norm": 0.002247193241458802,
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0022463663764593633,
+            -4.716260170228165e-05,
+            -1.3714283179976604e-05,
+            -3.6099509809392125e-05
+          ]
+        },
+        "gaussian": {
+          "absolute_error_norm": 0.005523806964067153,
+          "relative_to_same_cloud": 2.4580916594788635,
+          "error": [
+            -0.0054361406002643164,
+            -0.0008534529907624731,
+            -0.00036918272763930993,
+            -0.0003100658907491949
+          ]
+        },
+        "third": {
+          "absolute_error_norm": 1.2428827382970417e-05,
+          "relative_to_same_cloud": 0.005530822696361458,
+          "error": [
+            -6.9577151080579824e-06,
+            -9.794435073467306e-06,
+            1.0497392837101327e-06,
+            -3.005501558583229e-06
+          ]
+        },
+        "third_fourth": {
+          "absolute_error_norm": 2.452470713357633e-06,
+          "relative_to_same_cloud": 0.001091348384336352,
+          "error": [
+            8.447764328067819e-07,
+            -7.969806168212079e-07,
+            -8.673207651070658e-07,
+            -1.978267415006507e-06
+          ]
+        },
+        "full": {
+          "absolute_error_norm": 3.6484840985481315e-06,
+          "relative_to_same_cloud": 0.001623573812539441,
+          "error": [
+            2.1498658906438095e-06,
+            -1.166455268323402e-06,
+            -1.259002143159764e-06,
+            -2.396624413654458e-06
+          ]
+        },
+        "sample_pre_gaussian": {
+          "absolute_error_norm": 0.0034522194046022565,
+          "relative_to_same_cloud": 1.5362361104117563,
+          "error": [
+            -0.0032962703627066325,
+            -0.0008896219031045496,
+            -0.00038043916224389,
+            -0.00034096836627764936
+          ]
+        },
+        "sample_pre_third": {
+          "absolute_error_norm": 0.0022406082466627456,
+          "relative_to_same_cloud": 0.9970696802239484,
+          "error": [
+            0.0022395352723636464,
+            -5.588384404804983e-05,
+            -1.3036827358719853e-05,
+            -3.8911642975127114e-05
+          ]
+        },
+        "sample_pre_third_fourth": {
+          "absolute_error_norm": 0.0022476753628507123,
+          "relative_to_same_cloud": 1.0002145438064762,
+          "error": [
+            0.002246821792529108,
+            -4.699686970691813e-05,
+            -1.4842636352750162e-05,
+            -3.7514793964766105e-05
+          ]
+        },
+        "sample_pre_full": {
+          "absolute_error_norm": 0.002248933478286332,
+          "relative_to_same_cloud": 1.0007744046196936,
+          "error": [
+            0.00224806303180225,
+            -4.7358319514211045e-05,
+            -1.5213800406422597e-05,
+            -3.794897430919181e-05
+          ]
+        },
+        "factorized_pre_third_scale1.2": {
+          "absolute_error_norm": 0.013238388783648566,
+          "relative_to_same_cloud": 5.89107716212899,
+          "error": [
+            0.013235180780319045,
+            -0.00022401208732210007,
+            9.205609734664732e-05,
+            0.0001620850362631706
+          ]
+        },
+        "factorized_pre_third_scale1.25": {
+          "absolute_error_norm": 0.013415841373023506,
+          "relative_to_same_cloud": 5.970043486030776,
+          "error": [
+            0.0134129459853356,
+            -0.0001898568346057443,
+            0.00010673385508715508,
+            0.00017390229190716346
+          ]
+        },
+        "factorized_pre_third_scale1.3": {
+          "absolute_error_norm": 0.013593414073447552,
+          "relative_to_same_cloud": 6.049063259296369,
+          "error": [
+            0.013590711190350824,
+            -0.00015570158188937464,
+            0.00012141161282765069,
+            0.00018571954755114937
+          ]
+        },
+        "factorized_pre_third_scale1.35": {
+          "absolute_error_norm": 0.013771102238575009,
+          "relative_to_same_cloud": 6.128134414303985,
+          "error": [
+            0.013768476395366047,
+            -0.00012154632917301539,
+            0.00013608937056814804,
+            0.00019753680319514223
+          ]
+        },
+        "factorized_pre_third_scale1.4": {
+          "absolute_error_norm": 0.013948901455862675,
+          "relative_to_same_cloud": 6.20725498747385,
+          "error": [
+            0.013946241600380826,
+            -8.73910764566492e-05,
+            0.00015076712830862805,
+            0.00020935405883912989
+          ]
+        },
+        "factorized_pre_third_scale1.5": {
+          "absolute_error_norm": 0.014304816480704686,
+          "relative_to_same_cloud": 6.365637016342432,
+          "error": [
+            0.01430177201041305,
+            -1.908057102391683e-05,
+            0.00018012264378963055,
+            0.00023298857012710866
+          ]
+        },
+        "factorized_pre_third_scale1.6": {
+          "absolute_error_norm": 0.014661128003530973,
+          "relative_to_same_cloud": 6.524195486638908,
+          "error": [
+            0.01465730242044394,
+            4.922993440879472e-05,
+            0.00020947815927062352,
+            0.0002566230814150892
+          ]
+        },
+        "factorized_pre_third_scale1.75": {
+          "absolute_error_norm": 0.015196277702858325,
+          "relative_to_same_cloud": 6.762336866496366,
+          "error": [
+            0.015190598035489167,
+            0.00015169569255787593,
+            0.00025351143249210777,
+            0.0002920748483470643
+          ]
+        },
+        "factorized_pre_third_scale2": {
+          "absolute_error_norm": 0.016089811812864587,
+          "relative_to_same_cloud": 7.1599591508292475,
+          "error": [
+            0.01607942406056484,
+            0.0003224719561396479,
+            0.0003269002211945893,
+            0.0003511611265669904
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.2": {
+          "absolute_error_norm": 0.0011659229526607558,
+          "relative_to_same_cloud": 0.5188351990164753,
+          "error": [
+            -0.0011650241771241632,
+            -3.415330868334829e-05,
+            -1.7026888797203217e-05,
+            -2.527122516240987e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.25": {
+          "absolute_error_norm": 0.000987154816631503,
+          "relative_to_same_cloud": 0.43928345743451747,
+          "error": [
+            -0.0009870609928275265,
+            -1.582193010982169e-08,
+            -2.353728845457155e-06,
+            -1.3404780762954135e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.3": {
+          "absolute_error_norm": 0.0008099121474808453,
+          "relative_to_same_cloud": 0.36041054793982813,
+          "error": [
+            -0.0008090978085282252,
+            3.412166482321885e-05,
+            1.2319431106291509e-05,
+            -1.5383363635036035e-06
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.35": {
+          "absolute_error_norm": 0.0006354726551674109,
+          "relative_to_same_cloud": 0.2827850508997097,
+          "error": [
+            -0.0006311346242315885,
+            6.825915157648507e-05,
+            2.6992591058052316e-05,
+            1.0328108035931316e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.4": {
+          "absolute_error_norm": 0.0004669882851611756,
+          "relative_to_same_cloud": 0.20780958065627794,
+          "error": [
+            -0.0004531714399336195,
+            0.00010239663832981374,
+            4.166575100979491e-05,
+            2.2194552435416542e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.5": {
+          "absolute_error_norm": 0.00021386315031047602,
+          "relative_to_same_cloud": 0.09516900743775969,
+          "error": [
+            -9.724507134123428e-05,
+            0.0001706716118363913,
+            7.101207091330872e-05,
+            4.592744123430893e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.6": {
+          "absolute_error_norm": 0.0003727409990649073,
+          "relative_to_same_cloud": 0.1658695799667573,
+          "error": [
+            0.0002586812972542596,
+            0.00023894658534300353,
+            0.0001003583908168286,
+            6.966033003319785e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.75": {
+          "absolute_error_norm": 0.0008812599598087986,
+          "relative_to_same_cloud": 0.39216029291575943,
+          "error": [
+            0.0007925708501477224,
+            0.00034135904560286465,
+            0.00014437787067208586,
+            0.00010525966323154251
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale2": {
+          "absolute_error_norm": 0.0017796403122821004,
+          "relative_to_same_cloud": 0.7919391530061821,
+          "error": [
+            0.0016823867716340146,
+            0.0005120464793693415,
+            0.00021774367043085347,
+            0.00016459188522880384
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.2": {
+          "absolute_error_norm": 0.0009794626724434238,
+          "relative_to_same_cloud": 0.4358604566679765,
+          "error": [
+            0.0009749133514076469,
+            -7.043240567614767e-05,
+            -2.8330860887184478e-05,
+            -5.592604499859814e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.25": {
+          "absolute_error_norm": 0.001154372276161955,
+          "relative_to_same_cloud": 0.5136951530757432,
+          "error": [
+            0.0011528793394952608,
+            -3.629950994999548e-05,
+            -1.3659681663973598e-05,
+            -4.4049281611998475e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.3": {
+          "absolute_error_norm": 0.0013312362954130276,
+          "relative_to_same_cloud": 0.592399563532344,
+          "error": [
+            0.0013308453275837628,
+            -2.166614223808594e-06,
+            1.0114975592260059e-06,
+            -3.217251822536238e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.35": {
+          "absolute_error_norm": 0.0015093678456475266,
+          "relative_to_same_cloud": 0.6716680247167778,
+          "error": [
+            0.0015088113156740413,
+            3.196628150237829e-05,
+            1.5682676782408263e-05,
+            -2.0295754838734956e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.4": {
+          "absolute_error_norm": 0.0016883657807803994,
+          "relative_to_same_cloud": 0.7513220267983581,
+          "error": [
+            0.0016867773037625433,
+            6.609917722856518e-05,
+            3.0353856005586183e-05,
+            -8.418991452112737e-06
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.5": {
+          "absolute_error_norm": 0.0020480512525681395,
+          "relative_to_same_cloud": 0.9113819028926119,
+          "error": [
+            0.002042709279937771,
+            0.0001343649686809216,
+            5.9696214451994065e-05,
+            1.5334535321133436e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.6": {
+          "absolute_error_norm": 0.0024091481574493533,
+          "relative_to_same_cloud": 1.072069866090117,
+          "error": [
+            0.002398641256112999,
+            0.0002026307601332919,
+            8.903857289837679e-05,
+            3.908806209437267e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.75": {
+          "absolute_error_norm": 0.0029523067149393066,
+          "relative_to_same_cloud": 1.3137751842929044,
+          "error": [
+            0.002932539220378505,
+            0.0003050294473118387,
+            0.00013305211056796867,
+            7.47183522542879e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale2": {
+          "absolute_error_norm": 0.003859712213334668,
+          "relative_to_same_cloud": 1.717570230332783,
+          "error": [
+            0.003822369160819239,
+            0.00047569392594273147,
+            0.0002064080066839693,
+            0.00013410216918741807
+          ]
+        }
+      },
+      "seconds": 8.792142332997173
+    },
+    {
+      "index": 163,
+      "name": "scott-matthews",
+      "baseline_mse": 2.5893801088228656e-07,
+      "method_mses": {
+        "oracle": 2.1197954620686203e-07,
+        "sample": 2.461254739494654e-07,
+        "gaussian": 2.7856665657089917e-05,
+        "third": 2.1146049934094466e-07,
+        "third_fourth": 2.1310825634300544e-07,
+        "full": 2.125778335684471e-07,
+        "sample_pre_gaussian": 2.5865391945458643e-05,
+        "sample_pre_third": 2.505211825420828e-07,
+        "sample_pre_third_fourth": 2.452087511430418e-07,
+        "sample_pre_full": 2.4613261873516103e-07,
+        "factorized_pre_third_scale1.2": 4.9596053014247154e-06,
+        "factorized_pre_third_scale1.25": 4.7783279460873655e-06,
+        "factorized_pre_third_scale1.3": 4.628323082805059e-06,
+        "factorized_pre_third_scale1.35": 4.506953465012075e-06,
+        "factorized_pre_third_scale1.4": 4.411807279566474e-06,
+        "factorized_pre_third_scale1.5": 4.291666106006658e-06,
+        "factorized_pre_third_scale1.6": 4.253119491594577e-06,
+        "factorized_pre_third_scale1.75": 4.324854866156987e-06,
+        "factorized_pre_third_scale2": 4.745828965477724e-06,
+        "oracle_mean_cov_factorized_c21_third_scale1.2": 5.074172484569445e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.25": 3.906519742805703e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.3": 3.099188793107199e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.35": 2.6144888708208214e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.4": 2.4169964061044544e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.5": 2.753293081471298e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.6": 3.870140409730947e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.75": 6.578139981851994e-07,
+        "oracle_mean_cov_factorized_c21_third_scale2": 1.2660696129042063e-06,
+        "sample_mean_cov_factorized_c21_third_scale1.2": 4.788320058489359e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.25": 3.756256944845978e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.3": 3.061371158010509e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.35": 2.66962857125527e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.4": 2.5492643883363476e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.5": 3.0069737578392724e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.6": 4.225858041865911e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.75": 7.114686790238127e-07,
+        "sample_mean_cov_factorized_c21_third_scale2": 1.381673880058354e-06
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "absolute_error_norm": 0.004998981903873719,
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.004983511315518996,
+            0.00037523681610281134,
+            0.00010851024573980961,
+            -4.310338457190824e-05
+          ]
+        },
+        "gaussian": {
+          "absolute_error_norm": 0.018059124078518844,
+          "relative_to_same_cloud": 3.6125604024541076,
+          "error": [
+            -0.017841523173857787,
+            -0.002060705782943137,
+            -0.001522668041516989,
+            -0.0011166857353446073
+          ]
+        },
+        "third": {
+          "absolute_error_norm": 3.463624970596723e-05,
+          "relative_to_same_cloud": 0.006928660749727368,
+          "error": [
+            -3.072573757378905e-05,
+            1.5091295150357342e-05,
+            -6.2280794012326e-07,
+            -5.240588248973943e-06
+          ]
+        },
+        "third_fourth": {
+          "absolute_error_norm": 7.462293517633303e-06,
+          "relative_to_same_cloud": 0.0014927626587027168,
+          "error": [
+            -2.8770235660502408e-06,
+            -4.983901854049844e-06,
+            -4.748086204077462e-06,
+            1.5798623848733984e-07
+          ]
+        },
+        "full": {
+          "absolute_error_norm": 4.753641339868057e-06,
+          "relative_to_same_cloud": 0.0009509218939529371,
+          "error": [
+            3.917825431187794e-06,
+            -1.924210331891163e-06,
+            -1.6826066671776774e-06,
+            -8.44984781551289e-07
+          ]
+        },
+        "sample_pre_gaussian": {
+          "absolute_error_norm": 0.02237674294661511,
+          "relative_to_same_cloud": 4.476260041924804,
+          "error": [
+            -0.0222351970619723,
+            -0.001699721511931096,
+            -0.0014381484333371095,
+            -0.001165037501420576
+          ]
+        },
+        "sample_pre_third": {
+          "absolute_error_norm": 0.005027736882696436,
+          "relative_to_same_cloud": 1.0057521670163347,
+          "error": [
+            -0.005011085995589859,
+            0.00039185921993220574,
+            0.00010579809382482708,
+            -4.9075671431118156e-05
+          ]
+        },
+        "sample_pre_third_fourth": {
+          "absolute_error_norm": 0.0049999711489946905,
+          "relative_to_same_cloud": 1.000197889318264,
+          "error": [
+            -0.0049848588679992645,
+            0.00037185643912715505,
+            0.00010348995575346076,
+            -4.3659760033593065e-05
+          ]
+        },
+        "sample_pre_full": {
+          "absolute_error_norm": 0.004993806264817806,
+          "relative_to_same_cloud": 0.9989646613739683,
+          "error": [
+            -0.004978368305133429,
+            0.0003749777981676,
+            0.00010659335976308248,
+            -4.449197132367841e-05
+          ]
+        },
+        "factorized_pre_third_scale1.2": {
+          "absolute_error_norm": 0.020273086616829562,
+          "relative_to_same_cloud": 4.055443089545876,
+          "error": [
+            0.020167925436679113,
+            0.0011367159495026535,
+            -0.001470139615220717,
+            0.0008940866378212668
+          ]
+        },
+        "factorized_pre_third_scale1.25": {
+          "absolute_error_norm": 0.02093924226629018,
+          "relative_to_same_cloud": 4.1887013533824415,
+          "error": [
+            0.02083475274947766,
+            0.0012153105927422692,
+            -0.0014194698038721143,
+            0.0009343822523946166
+          ]
+        },
+        "factorized_pre_third_scale1.3": {
+          "absolute_error_norm": 0.021605919242151436,
+          "relative_to_same_cloud": 4.322063903733873,
+          "error": [
+            0.02150158006228331,
+            0.0012939052359817044,
+            -0.0013687999925235395,
+            0.0009746778669679421
+          ]
+        },
+        "factorized_pre_third_scale1.35": {
+          "absolute_error_norm": 0.022273070731467615,
+          "relative_to_same_cloud": 4.455521376104238,
+          "error": [
+            0.022168407375085408,
+            0.0013724998792212367,
+            -0.0013181301811747217,
+            0.0010149734815413057
+          ]
+        },
+        "factorized_pre_third_scale1.4": {
+          "absolute_error_norm": 0.022940655335414253,
+          "relative_to_same_cloud": 4.589065489042379,
+          "error": [
+            0.02283523468788662,
+            0.001451094522460894,
+            -0.0012674603698260359,
+            0.0010552690961146
+          ]
+        },
+        "factorized_pre_third_scale1.5": {
+          "absolute_error_norm": 0.024276980943542532,
+          "relative_to_same_cloud": 4.856385042068318,
+          "error": [
+            0.02416888931348815,
+            0.0016082838089398893,
+            -0.0011661207471289348,
+            0.0011358603252613203
+          ]
+        },
+        "factorized_pre_third_scale1.6": {
+          "absolute_error_norm": 0.02561464729101068,
+          "relative_to_same_cloud": 5.123972797573412,
+          "error": [
+            0.02550254393908702,
+            0.0017654730954191344,
+            -0.001064781124431792,
+            0.0012164515544080615
+          ]
+        },
+        "factorized_pre_third_scale1.75": {
+          "absolute_error_norm": 0.027623234572527907,
+          "relative_to_same_cloud": 5.525772067932996,
+          "error": [
+            0.027503025877498644,
+            0.0020012570251377454,
+            -0.0009127716903859842,
+            0.0013373383981280344
+          ]
+        },
+        "factorized_pre_third_scale2": {
+          "absolute_error_norm": 0.03097524366705159,
+          "relative_to_same_cloud": 6.196310421337757,
+          "error": [
+            0.030837162441501142,
+            0.002394230241335518,
+            -0.0006594226336431863,
+            0.0015388164709946896
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.2": {
+          "absolute_error_norm": 0.0018745143162183994,
+          "relative_to_same_cloud": 0.37497921622117397,
+          "error": [
+            -0.0018356012653608644,
+            -0.00017178097238966517,
+            -0.00030460790350322897,
+            -0.00014858411409553532
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.25": {
+          "absolute_error_norm": 0.0012044310996135732,
+          "relative_to_same_cloud": 0.24093527897755693,
+          "error": [
+            -0.001168687852501904,
+            -9.307577194994643e-05,
+            -0.0002538553977526614,
+            -0.00010824654654356669
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.3": {
+          "absolute_error_norm": 0.0005457531637787149,
+          "relative_to_same_cloud": 0.10917286244941393,
+          "error": [
+            -0.0005017744396456081,
+            -1.4370571510144425e-05,
+            -0.00020310289200208692,
+            -6.790897899153908e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.35": {
+          "absolute_error_norm": 0.00023533093266767547,
+          "relative_to_same_cloud": 0.04707577206577146,
+          "error": [
+            0.00016513897320447057,
+            6.433462892957431e-05,
+            -0.00015235038625135977,
+            -2.7571411439508003e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.4": {
+          "absolute_error_norm": 0.0008504449835196184,
+          "relative_to_same_cloud": 0.17012363714711734,
+          "error": [
+            0.0008320523860572138,
+            0.0001430398293692653,
+            -0.00010159788050103508,
+            1.276615611255777e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.5": {
+          "absolute_error_norm": 0.002188614718117833,
+          "relative_to_same_cloud": 0.4378120905822588,
+          "error": [
+            0.0021658792117698056,
+            0.00030045023024878603,
+            -9.286899980975871e-08,
+            9.344129121650196e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.6": {
+          "absolute_error_norm": 0.0035352764614421687,
+          "relative_to_same_cloud": 0.7071992916603033,
+          "error": [
+            0.0034997060374735156,
+            0.000457860631128168,
+            0.00010141214250122127,
+            0.0001741164263207584
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.75": {
+          "absolute_error_norm": 0.005557693923367109,
+          "relative_to_same_cloud": 1.1117651614342599,
+          "error": [
+            0.0055004462760379624,
+            0.0006939762324474213,
+            0.0002536696597531321,
+            0.0002951291289768204
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale2": {
+          "absolute_error_norm": 0.008929974040177422,
+          "relative_to_same_cloud": 1.7863585449784427,
+          "error": [
+            0.008835013340313225,
+            0.001087502234646126,
+            0.0005074321885059699,
+            0.0004968169667370001
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.2": {
+          "absolute_error_norm": 0.006238977161037186,
+          "relative_to_same_cloud": 1.2480495590917406,
+          "error": [
+            -0.006229125566049376,
+            0.00018866413658037706,
+            -0.00022001344207701196,
+            -0.00019705488374429161
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.25": {
+          "absolute_error_norm": 0.0055734028322876935,
+          "relative_to_same_cloud": 1.1149075830758368,
+          "error": [
+            -0.005562205920394803,
+            0.0002673468719350397,
+            -0.00016925781744103752,
+            -0.00015672227467445482
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.3": {
+          "absolute_error_norm": 0.004910310939704718,
+          "relative_to_same_cloud": 0.982262195408171,
+          "error": [
+            -0.004895286274724242,
+            0.00034602960728961907,
+            -0.00011850219280559737,
+            -0.00011638966560452782
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.35": {
+          "absolute_error_norm": 0.004250863347263914,
+          "relative_to_same_cloud": 0.8503458162090791,
+          "error": [
+            -0.004228366629062563,
+            0.00042471234264425395,
+            -6.774656816966457e-05,
+            -7.605705653473613e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.4": {
+          "absolute_error_norm": 0.0035970649352501287,
+          "relative_to_same_cloud": 0.7195595031985927,
+          "error": [
+            -0.0035614469833964435,
+            0.0005033950779989305,
+            -1.6990943533891356e-05,
+            -3.572444746481607e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.5": {
+          "absolute_error_norm": 0.0023255115324287774,
+          "relative_to_same_cloud": 0.4651970295445028,
+          "error": [
+            -0.0022276076920721977,
+            0.0006607605487082002,
+            8.452030573780078e-05,
+            4.494077067480201e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.6": {
+          "absolute_error_norm": 0.0012322892281065477,
+          "relative_to_same_cloud": 0.24650803939731103,
+          "error": [
+            -0.0008937684007470637,
+            0.0008181260194176088,
+            0.000186031555009597,
+            0.00012560598881453458
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.75": {
+          "absolute_error_norm": 0.0015849197500457165,
+          "relative_to_same_cloud": 0.317048507180544,
+          "error": [
+            0.0011069905362424137,
+            0.0010541742254814163,
+            0.0003382984289170554,
+            0.000246603816024038
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale2": {
+          "absolute_error_norm": 0.004730192312238947,
+          "relative_to_same_cloud": 0.9462311332980647,
+          "error": [
+            0.00444158876455969,
+            0.0014475879022546878,
+            0.0005920765520961227,
+            0.00044826686137322547
+          ]
+        }
+      },
+      "seconds": 8.968775374814868
+    },
+    {
+      "index": 164,
+      "name": "benjamin-walsh",
+      "baseline_mse": 3.457466003272283e-07,
+      "method_mses": {
+        "oracle": 1.3031184460296895e-07,
+        "sample": 3.6611847877929835e-07,
+        "gaussian": 2.7975014593478568e-05,
+        "third": 1.3743036795140264e-07,
+        "third_fourth": 1.2951614476679902e-07,
+        "full": 1.3114024090138808e-07,
+        "sample_pre_gaussian": 2.185033683480014e-05,
+        "sample_pre_third": 3.6484708915409913e-07,
+        "sample_pre_third_fourth": 3.664080587086214e-07,
+        "sample_pre_full": 3.6843046223070203e-07,
+        "factorized_pre_third_scale1.2": 3.5881240420430435e-05,
+        "factorized_pre_third_scale1.25": 3.6929269243164186e-05,
+        "factorized_pre_third_scale1.3": 3.807302384437088e-05,
+        "factorized_pre_third_scale1.35": 3.931594472079577e-05,
+        "factorized_pre_third_scale1.4": 4.066173439738318e-05,
+        "factorized_pre_third_scale1.5": 4.36780304192662e-05,
+        "factorized_pre_third_scale1.6": 4.715670785423553e-05,
+        "factorized_pre_third_scale1.75": 5.33278245964896e-05,
+        "factorized_pre_third_scale2": 6.65324654564258e-05,
+        "oracle_mean_cov_factorized_c21_third_scale1.2": 3.0075970792418425e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.25": 2.1181381735606893e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.3": 1.5658589939439797e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.35": 1.309531687173811e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.4": 1.3106899637306987e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.5": 1.9454638705540705e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.6": 3.2180304664712075e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.75": 5.8812404589581e-07,
+        "oracle_mean_cov_factorized_c21_third_scale2": 1.1211339542518727e-06,
+        "sample_mean_cov_factorized_c21_third_scale1.2": 2.9206957826765357e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.25": 2.9130667189112517e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.3": 3.1424840514625886e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.35": 3.57174676126179e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.4": 4.166437042005665e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.5": 5.728394619500685e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.6": 7.608973551244092e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.75": 1.0658050621325932e-06,
+        "sample_mean_cov_factorized_c21_third_scale2": 1.550592598175472e-06
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "absolute_error_norm": 0.0010667137897615187,
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0010653864535347113,
+            3.0237986698988806e-06,
+            5.162166623324388e-05,
+            1.249296237965168e-05
+          ]
+        },
+        "gaussian": {
+          "absolute_error_norm": 0.0029703726569536323,
+          "relative_to_same_cloud": 2.7846013480501717,
+          "error": [
+            -0.0028982013900588077,
+            -0.0005442652258045976,
+            -0.00028049615865957146,
+            -0.00022054408356623036
+          ]
+        },
+        "third": {
+          "absolute_error_norm": 1.4395033602184275e-05,
+          "relative_to_same_cloud": 0.013494747832408277,
+          "error": [
+            -1.277390193421546e-05,
+            3.452141106497289e-06,
+            -5.210067768445653e-07,
+            -5.644085001342081e-06
+          ]
+        },
+        "third_fourth": {
+          "absolute_error_norm": 4.798752466130654e-06,
+          "relative_to_same_cloud": 0.0044986316968898404,
+          "error": [
+            -4.044644316913981e-06,
+            2.218524087178181e-06,
+            -4.4846130715578414e-07,
+            1.2433466577929132e-06
+          ]
+        },
+        "full": {
+          "absolute_error_norm": 3.7546694699633495e-06,
+          "relative_to_same_cloud": 0.0035198471286311647,
+          "error": [
+            -8.164579897718127e-07,
+            3.5936366295837713e-06,
+            -6.298693031835112e-07,
+            3.4638073709942693e-07
+          ]
+        },
+        "sample_pre_gaussian": {
+          "absolute_error_norm": 0.0019038931756609758,
+          "relative_to_same_cloud": 1.7848210025358557,
+          "error": [
+            -0.0017992733287889306,
+            -0.0005411046437285658,
+            -0.00022185906439555272,
+            -0.00021309395279582154
+          ]
+        },
+        "sample_pre_third": {
+          "absolute_error_norm": 0.0010540025190768024,
+          "relative_to_same_cloud": 0.9880837101697559,
+          "error": [
+            0.0010527146632970386,
+            6.706637781399294e-06,
+            5.111157845840569e-05,
+            7.468296780880311e-06
+          ]
+        },
+        "sample_pre_third_fourth": {
+          "absolute_error_norm": 0.0010617717850788342,
+          "relative_to_same_cloud": 0.9953670752828747,
+          "error": [
+            0.001060424486344469,
+            5.5487045608048485e-06,
+            5.135794112054448e-05,
+            1.3813258562661297e-05
+          ]
+        },
+        "sample_pre_full": {
+          "absolute_error_norm": 0.0010651167610528387,
+          "relative_to_same_cloud": 0.9985028517264812,
+          "error": [
+            0.0010637856348585384,
+            6.962687814872012e-06,
+            5.118984272058612e-05,
+            1.2843625848666849e-05
+          ]
+        },
+        "factorized_pre_third_scale1.2": {
+          "absolute_error_norm": 0.0025629782755952667,
+          "relative_to_same_cloud": 2.4026859877458437,
+          "error": [
+            -0.0023296891446146217,
+            8.640570617932108e-05,
+            0.0010553123217884493,
+            0.00014232388435960332
+          ]
+        },
+        "factorized_pre_third_scale1.25": {
+          "absolute_error_norm": 0.0024720266606295645,
+          "relative_to_same_cloud": 2.317422615472353,
+          "error": [
+            -0.002223073542943599,
+            0.00010571602128683216,
+            0.0010653749802892725,
+            0.00015053274641906543
+          ]
+        },
+        "factorized_pre_third_scale1.3": {
+          "absolute_error_norm": 0.002382601690411953,
+          "relative_to_same_cloud": 2.2335904094242776,
+          "error": [
+            -0.0021164579412719098,
+            0.0001250263363943606,
+            0.0010754376387900992,
+            0.00015874160847851703
+          ]
+        },
+        "factorized_pre_third_scale1.35": {
+          "absolute_error_norm": 0.002294881838799457,
+          "relative_to_same_cloud": 2.15135668145109,
+          "error": [
+            -0.002009842339601109,
+            0.00014433665150188207,
+            0.001085500297290926,
+            0.00016695047053797752
+          ]
+        },
+        "factorized_pre_third_scale1.4": {
+          "absolute_error_norm": 0.0022090702405200154,
+          "relative_to_same_cloud": 2.07091186194742,
+          "error": [
+            -0.001903226737929975,
+            0.00016364696660938795,
+            0.0010955629557917474,
+            0.00017515933259743953
+          ]
+        },
+        "factorized_pre_third_scale1.5": {
+          "absolute_error_norm": 0.0020441279750448814,
+          "relative_to_same_cloud": 1.9162853191406475,
+          "error": [
+            -0.0016899955345879292,
+            0.00020226759682443786,
+            0.0011156882727933973,
+            0.00019157705671634696
+          ]
+        },
+        "factorized_pre_third_scale1.6": {
+          "absolute_error_norm": 0.001890024964804298,
+          "relative_to_same_cloud": 1.7718201292090205,
+          "error": [
+            -0.0014767643312456613,
+            0.00024088822703947042,
+            0.0011358135897950473,
+            0.00020799478083526838
+          ]
+        },
+        "factorized_pre_third_scale1.75": {
+          "absolute_error_norm": 0.0016856522212310837,
+          "relative_to_same_cloud": 1.5802291461966933,
+          "error": [
+            -0.0011569175262319265,
+            0.0002988191723620349,
+            0.0011660015652975187,
+            0.00023262136701363218
+          ]
+        },
+        "factorized_pre_third_scale2": {
+          "absolute_error_norm": 0.0014490716023047806,
+          "relative_to_same_cloud": 1.358444613928488,
+          "error": [
+            -0.0006238395178764788,
+            0.00039537074789962844,
+            0.0012163148578016435,
+            0.00027366567731091696
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.2": {
+          "absolute_error_norm": 0.0003489265284381927,
+          "relative_to_same_cloud": 0.32710416963504424,
+          "error": [
+            -0.0003362895679271949,
+            -8.079241670791264e-05,
+            -3.778849284517653e-05,
+            -2.652666511747284e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.25": {
+          "absolute_error_norm": 0.0002399501865690263,
+          "relative_to_same_cloud": 0.22494336238277288,
+          "error": [
+            -0.00022954324200497034,
+            -6.148104966221743e-05,
+            -2.7675673436240375e-05,
+            -1.8442606015438377e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.3": {
+          "absolute_error_norm": 0.00013142723487579464,
+          "relative_to_same_cloud": 0.12320758964330754,
+          "error": [
+            -0.00012279691608252374,
+            -4.216968261651008e-05,
+            -1.7562854027307687e-05,
+            -1.0358546913404347e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.35": {
+          "absolute_error_norm": 2.899655748302558e-05,
+          "relative_to_same_cloud": 0.02718307174927235,
+          "error": [
+            -1.6050590160854306e-05,
+            -2.285831557082875e-05,
+            -7.450034618376733e-06,
+            -2.27448781137422e-06
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.4": {
+          "absolute_error_norm": 9.098977343953668e-05,
+          "relative_to_same_cloud": 0.08529914426237888,
+          "error": [
+            9.069573576148127e-05,
+            -3.5469485251161947e-06,
+            2.662784790552486e-06,
+            5.809571290651353e-06
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.5": {
+          "absolute_error_norm": 0.00030784376663851946,
+          "relative_to_same_cloud": 0.2885907818884979,
+          "error": [
+            0.00030418838760593037,
+            3.507578556626728e-05,
+            2.2888423608423067e-05,
+            2.1977689494715076e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.6": {
+          "absolute_error_norm": 0.0005260599352066116,
+          "relative_to_same_cloud": 0.49315940250872814,
+          "error": [
+            0.0005176810394499354,
+            7.369851965764729e-05,
+            4.311406242628671e-05,
+            3.8145807698781835e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.75": {
+          "absolute_error_norm": 0.000853654428579216,
+          "relative_to_same_cloud": 0.800265672735012,
+          "error": [
+            0.0008379200172168311,
+            0.00013163262079474158,
+            7.345252065308824e-05,
+            6.239798500487547e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale2": {
+          "absolute_error_norm": 0.0013998036963655505,
+          "relative_to_same_cloud": 1.3122579925384668,
+          "error": [
+            0.0013716516468277318,
+            0.00022818945602321415,
+            0.00012401661769775169,
+            0.00010281828051503824
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.2": {
+          "absolute_error_norm": 0.0007669599336456962,
+          "relative_to_same_cloud": 0.7189931741832668,
+          "error": [
+            0.0007625095302216112,
+            -7.752716091368426e-05,
+            2.0831267310747123e-05,
+            -1.9035591977148436e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.25": {
+          "absolute_error_norm": 0.0008718155556217095,
+          "relative_to_same_cloud": 0.8172909771951276,
+          "error": [
+            0.0008692504826803837,
+            -5.821143246307302e-05,
+            3.094336446517881e-05,
+            -1.0949826943025022e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.3": {
+          "absolute_error_norm": 0.0009776328099212904,
+          "relative_to_same_cloud": 0.9164902706843756,
+          "error": [
+            0.0009759914351389343,
+            -3.889570401244789e-05,
+            4.105546161960877e-05,
+            -2.864061908921557e-06
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.35": {
+          "absolute_error_norm": 0.0010841301507896438,
+          "relative_to_same_cloud": 1.0163271171660946,
+          "error": [
+            0.00108273238759804,
+            -1.9579975561826238e-05,
+            5.1167558774035254e-05,
+            5.221703125192641e-06
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.4": {
+          "absolute_error_norm": 0.001191125174560578,
+          "relative_to_same_cloud": 1.116630520757469,
+          "error": [
+            0.0011894733400568125,
+            -2.642471112149908e-07,
+            6.127965592846521e-05,
+            1.3307468159303587e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.5": {
+          "absolute_error_norm": 0.0014061533881930856,
+          "relative_to_same_cloud": 1.3182105656545924,
+          "error": [
+            0.0014029552449739136,
+            3.836720979003179e-05,
+            8.15038502373338e-05,
+            2.9478998227523527e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.6": {
+          "absolute_error_norm": 0.0016221067844022356,
+          "relative_to_same_cloud": 1.5206579309009252,
+          "error": [
+            0.0016164371498919028,
+            7.699866669125602e-05,
+            0.00010172804454618503,
+            4.5650528295749213e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.75": {
+          "absolute_error_norm": 0.0019470979583351255,
+          "relative_to_same_cloud": 1.825323696968829,
+          "error": [
+            0.0019366600072679985,
+            0.00013494585204313313,
+            0.00013206433600948184,
+            6.990782339808335e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale2": {
+          "absolute_error_norm": 0.0024903477041768947,
+          "relative_to_same_cloud": 2.3345978350328185,
+          "error": [
+            0.0024703647695617503,
+            0.0002315244942962258,
+            0.00018262482178161947,
+            0.00011033664856863938
+          ]
+        }
+      },
+      "seconds": 8.89595445804298
+    },
+    {
+      "index": 165,
+      "name": "justin-crawford",
+      "baseline_mse": 3.0668500009183507e-07,
+      "method_mses": {
+        "oracle": 1.5217905377830965e-07,
+        "sample": 2.778752988830994e-07,
+        "gaussian": 2.8644778631722726e-05,
+        "third": 1.5267646816275014e-07,
+        "third_fourth": 1.5312973185032613e-07,
+        "full": 1.5282127029859604e-07,
+        "sample_pre_gaussian": 3.1393515604422306e-05,
+        "sample_pre_third": 2.809767132725329e-07,
+        "sample_pre_third_fourth": 2.7950273349793694e-07,
+        "sample_pre_full": 2.781345036778318e-07,
+        "factorized_pre_third_scale1.2": 1.739055340218977e-07,
+        "factorized_pre_third_scale1.25": 1.924231848561423e-07,
+        "factorized_pre_third_scale1.3": 2.1519043114878217e-07,
+        "factorized_pre_third_scale1.35": 2.435883335602656e-07,
+        "factorized_pre_third_scale1.4": 2.799504146860309e-07,
+        "factorized_pre_third_scale1.5": 3.906539529060219e-07,
+        "factorized_pre_third_scale1.6": 5.849499545197801e-07,
+        "factorized_pre_third_scale1.75": 1.1526147888584264e-06,
+        "factorized_pre_third_scale2": 3.476963548654889e-06,
+        "oracle_mean_cov_factorized_c21_third_scale1.2": 2.3822039261247186e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.25": 2.0338943306152858e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.3": 1.815276229933565e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.35": 1.6986385397469917e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.4": 1.6657916162105017e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.5": 1.8263346179859452e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.6": 2.3418376902320408e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.75": 4.253152874772536e-07,
+        "oracle_mean_cov_factorized_c21_third_scale2": 1.4163469585539904e-06,
+        "sample_mean_cov_factorized_c21_third_scale1.2": 3.8729303860469293e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.25": 3.307242232808197e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.3": 2.9462872659329604e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.35": 2.762951426296746e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.4": 2.739630722871171e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.5": 3.1501839549981347e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.6": 4.227330489834792e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.75": 7.574683550900891e-07,
+        "sample_mean_cov_factorized_c21_third_scale2": 2.149402555114166e-06
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "absolute_error_norm": 0.002405049670063896,
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.002403729043152225,
+            2.2115785409223404e-05,
+            7.569412170414791e-05,
+            -1.1484535520250513e-05
+          ]
+        },
+        "gaussian": {
+          "absolute_error_norm": 0.005041261079852768,
+          "relative_to_same_cloud": 2.0961151624443723,
+          "error": [
+            -0.004923563399919395,
+            -0.0008928988097364667,
+            -0.0005217599394072925,
+            -0.0003214576230444123
+          ]
+        },
+        "third": {
+          "absolute_error_norm": 4.704040331861942e-06,
+          "relative_to_same_cloud": 0.0019559015310220045,
+          "error": [
+            1.250719069201267e-06,
+            1.2667833679778917e-07,
+            -1.1543202420444265e-06,
+            -4.383513959315376e-06
+          ]
+        },
+        "third_fourth": {
+          "absolute_error_norm": 4.259361523293822e-06,
+          "relative_to_same_cloud": 0.0017710077161028702,
+          "error": [
+            -1.781763126373903e-06,
+            -3.771755724378545e-06,
+            5.925916211416138e-07,
+            -6.246396351342054e-07
+          ]
+        },
+        "full": {
+          "absolute_error_norm": 3.10232489093461e-06,
+          "relative_to_same_cloud": 0.0012899213390683067,
+          "error": [
+            1.073771584536587e-06,
+            -2.800937214308616e-06,
+            5.323219584105893e-07,
+            5.855069318541281e-07
+          ]
+        },
+        "sample_pre_gaussian": {
+          "absolute_error_norm": 0.007374487873093081,
+          "relative_to_same_cloud": 3.0662517971602474,
+          "error": [
+            -0.007299660853645973,
+            -0.000878881206053967,
+            -0.00045431486509741725,
+            -0.0003452370796164701
+          ]
+        },
+        "sample_pre_third": {
+          "absolute_error_norm": 0.002402523612004052,
+          "relative_to_same_cloud": 0.9989496857003469,
+          "error": [
+            -0.002401237718917759,
+            2.1983270470413152e-05,
+            7.361371871228168e-05,
+            -1.6579496988987363e-05
+          ]
+        },
+        "sample_pre_third_fourth": {
+          "absolute_error_norm": 0.0024043624666386485,
+          "relative_to_same_cloud": 0.9997142664312503,
+          "error": [
+            -0.0024030819850660023,
+            1.744940510610242e-05,
+            7.548186504521565e-05,
+            -1.2403642314548144e-05
+          ]
+        },
+        "sample_pre_full": {
+          "absolute_error_norm": 0.002401445703374114,
+          "relative_to_same_cloud": 0.9985015001001263,
+          "error": [
+            -0.002400161549248825,
+            1.8534824904107433e-05,
+            7.548106114186898e-05,
+            -1.1183623569558515e-05
+          ]
+        },
+        "factorized_pre_third_scale1.2": {
+          "absolute_error_norm": 0.0012739628612735828,
+          "relative_to_same_cloud": 0.5297033475569496,
+          "error": [
+            0.0012416980402019107,
+            0.0002770558824412399,
+            6.430564957987488e-05,
+            1.649758466942472e-05
+          ]
+        },
+        "factorized_pre_third_scale1.25": {
+          "absolute_error_norm": 0.0014608254074797446,
+          "relative_to_same_cloud": 0.6073992673261231,
+          "error": [
+            0.0014242107088935363,
+            0.00031290619536854247,
+            8.253431159482676e-05,
+            3.020808039058947e-05
+          ]
+        },
+        "factorized_pre_third_scale1.3": {
+          "absolute_error_norm": 0.001647808584860525,
+          "relative_to_same_cloud": 0.685145344551968,
+          "error": [
+            0.0016067233775864942,
+            0.00034875650829586935,
+            0.00010076297360976649,
+            4.391857611176289e-05
+          ]
+        },
+        "factorized_pre_third_scale1.35": {
+          "absolute_error_norm": 0.0018348755149879086,
+          "relative_to_same_cloud": 0.7629262454854666,
+          "error": [
+            0.0017892360462783419,
+            0.00038460682122320664,
+            0.00011899163562471837,
+            5.762907183292764e-05
+          ]
+        },
+        "factorized_pre_third_scale1.4": {
+          "absolute_error_norm": 0.0020220029526751247,
+          "relative_to_same_cloud": 0.8407323049679074,
+          "error": [
+            0.0019717487149699675,
+            0.0004204571341505335,
+            0.00013722029763967025,
+            7.133956755409326e-05
+          ]
+        },
+        "factorized_pre_third_scale1.5": {
+          "absolute_error_norm": 0.0023963826482381826,
+          "relative_to_same_cloud": 0.996396323147254,
+          "error": [
+            0.0023367740523554392,
+            0.0004921577600051647,
+            0.00017367762166955753,
+            9.876055899643663e-05
+          ]
+        },
+        "factorized_pre_third_scale1.6": {
+          "absolute_error_norm": 0.0027708725522453104,
+          "relative_to_same_cloud": 1.152106165097079,
+          "error": [
+            0.002701799389741355,
+            0.0005638583858598133,
+            0.00021013494569945782,
+            0.00012618155043877567
+          ]
+        },
+        "factorized_pre_third_scale1.75": {
+          "absolute_error_norm": 0.003332732778295412,
+          "relative_to_same_cloud": 1.3857230558597444,
+          "error": [
+            0.0032493373958188965,
+            0.0006714093246417609,
+            0.00026482093174430045,
+            0.00016731303760228466
+          ]
+        },
+        "factorized_pre_third_scale2": {
+          "absolute_error_norm": 0.004269354142652081,
+          "relative_to_same_cloud": 1.775162565577556,
+          "error": [
+            0.004161900739282798,
+            0.0008506608892783693,
+            0.0003559642418190191,
+            0.00023586551620812923
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.2": {
+          "absolute_error_norm": 0.0005501162192843087,
+          "relative_to_same_cloud": 0.22873382871535186,
+          "error": [
+            -0.000542528842847112,
+            -3.2694397337414485e-05,
+            -8.464631507607793e-05,
+            7.509136130066582e-06
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.25": {
+          "absolute_error_norm": 0.0003666921534471864,
+          "relative_to_same_cloud": 0.15246760098615522,
+          "error": [
+            -0.00035998573630102726,
+            3.1474531791923083e-06,
+            -6.643324739562511e-05,
+            2.1216084429002968e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.3": {
+          "absolute_error_norm": 0.00019118278323285222,
+          "relative_to_same_cloud": 0.07949223902214583,
+          "error": [
+            -0.00017744262975760705,
+            3.898930369583553e-05,
+            -4.822017971515061e-05,
+            3.492303272794369e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.35": {
+          "absolute_error_norm": 9.429219655710823e-05,
+          "relative_to_same_cloud": 0.03920592482175353,
+          "error": [
+            5.1004767873674695e-06,
+            7.483115421245967e-05,
+            -3.0007112034693452e-05,
+            4.862998102687574e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.4": {
+          "absolute_error_norm": 0.00022690002331676832,
+          "relative_to_same_cloud": 0.0943431755863654,
+          "error": [
+            0.00018764358333123177,
+            0.00011067300472908381,
+            -1.1794044354234562e-05,
+            6.233692932581473e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.5": {
+          "absolute_error_norm": 0.0005894286612049692,
+          "relative_to_same_cloud": 0.24507962082517387,
+          "error": [
+            0.0005527297964214029,
+            0.0001823567057623321,
+            2.4632091006701433e-05,
+            8.975082592369097e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.6": {
+          "absolute_error_norm": 0.0009614460124259214,
+          "relative_to_same_cloud": 0.3997613955309198,
+          "error": [
+            0.0009178160095106858,
+            0.0002540404067955908,
+            6.10582263676435e-05,
+            0.00011716472252156027
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.75": {
+          "absolute_error_norm": 0.001522071013773836,
+          "relative_to_same_cloud": 0.6328646899560284,
+          "error": [
+            0.001465445329144499,
+            0.00036156595834546147,
+            0.00011569742940902798,
+            0.00015828556741836943
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale2": {
+          "absolute_error_norm": 0.0024581060205701444,
+          "relative_to_same_cloud": 1.0220603969916509,
+          "error": [
+            0.0023781608618678174,
+            0.0005407752109286013,
+            0.0002067627678113788,
+            0.0002268203089130583
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.2": {
+          "absolute_error_norm": 0.0029187107207106103,
+          "relative_to_same_cloud": 1.2135760674884803,
+          "error": [
+            -0.00291855412195563,
+            -1.8762639968085762e-05,
+            -1.7287213388654347e-05,
+            -1.6224179533451052e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.25": {
+          "absolute_error_norm": 0.0027360626044012565,
+          "relative_to_same_cloud": 1.1376324732322747,
+          "error": [
+            -0.0027360080081344496,
+            1.7075633618836294e-05,
+            9.222720992133754e-07,
+            -2.5153086966548527e-06
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.3": {
+          "absolute_error_norm": 0.0025541062717257044,
+          "relative_to_same_cloud": 1.0619765169581086,
+          "error": [
+            -0.0025534618943134912,
+            5.291390720576529e-05,
+            1.913175758707676e-05,
+            1.1193562140132673e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.35": {
+          "absolute_error_norm": 0.0023730008612286232,
+          "relative_to_same_cloud": 0.9866743671724578,
+          "error": [
+            -0.002370915780493643,
+            8.875218079266653e-05,
+            3.7341243074944484e-05,
+            2.4902432976931475e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.4": {
+          "absolute_error_norm": 0.0021929572033137276,
+          "relative_to_same_cloud": 0.9118136854343911,
+          "error": [
+            -0.002188369666673573,
+            0.00012459045437956603,
+            5.5550728562807e-05,
+            3.861130381371987e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.5": {
+          "absolute_error_norm": 0.001837302265840927,
+          "relative_to_same_cloud": 0.7639352686600084,
+          "error": [
+            -0.0018232774390323225,
+            0.0001962670015534084,
+            9.196969953854418e-05,
+            6.602904548730273e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.6": {
+          "absolute_error_norm": 0.0014910780693093066,
+          "relative_to_same_cloud": 0.619978076905868,
+          "error": [
+            -0.0014581852113924043,
+            0.0002679435487272317,
+            0.00012838867051427703,
+            9.344678716089166e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.75": {
+          "absolute_error_norm": 0.001010776858771004,
+          "relative_to_same_cloud": 0.4202727583352365,
+          "error": [
+            -0.0009105468699315278,
+            0.0003754583694879684,
+            0.00018301712697786198,
+            0.00013457339967126117
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale2": {
+          "absolute_error_norm": 0.0006511599662786661,
+          "relative_to_same_cloud": 0.2707469930387618,
+          "error": [
+            2.1836991721535526e-06,
+            0.000554649737422518,
+            0.000274064554417198,
+            0.00020311775385523003
+          ]
+        }
+      },
+      "seconds": 8.843360709026456
+    },
+    {
+      "index": 166,
+      "name": "tara-harris",
+      "baseline_mse": 6.550635664715546e-07,
+      "method_mses": {
+        "oracle": 2.3349769534946565e-07,
+        "sample": 6.02054856039839e-07,
+        "gaussian": 4.6293452138463075e-05,
+        "third": 2.3843223915976896e-07,
+        "third_fourth": 2.342627766531825e-07,
+        "full": 2.3436901587427138e-07,
+        "sample_pre_gaussian": 4.9877906055443425e-05,
+        "sample_pre_third": 6.074396605993095e-07,
+        "sample_pre_third_fourth": 6.008932046537779e-07,
+        "sample_pre_full": 5.974450436496715e-07,
+        "factorized_pre_third_scale1.2": 3.8602420130014396e-07,
+        "factorized_pre_third_scale1.25": 4.2674117979751054e-07,
+        "factorized_pre_third_scale1.3": 4.805414891647576e-07,
+        "factorized_pre_third_scale1.35": 5.425926226076867e-07,
+        "factorized_pre_third_scale1.4": 6.087208025798479e-07,
+        "factorized_pre_third_scale1.5": 7.398108112682799e-07,
+        "factorized_pre_third_scale1.6": 8.536182875816136e-07,
+        "factorized_pre_third_scale1.75": 9.737602811594998e-07,
+        "factorized_pre_third_scale2": 1.101996365865639e-06,
+        "oracle_mean_cov_factorized_c21_third_scale1.2": 6.849446717462711e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.25": 5.32812605516988e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.3": 4.251066461113761e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.35": 3.551964331683753e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.4": 3.1711073995476706e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.5": 3.1583010250020577e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.6": 3.8671553859195244e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.75": 5.788703266600116e-07,
+        "oracle_mean_cov_factorized_c21_third_scale2": 1.0721846595635444e-06,
+        "sample_mean_cov_factorized_c21_third_scale1.2": 1.3808894892774495e-06,
+        "sample_mean_cov_factorized_c21_third_scale1.25": 1.161746200240987e-06,
+        "sample_mean_cov_factorized_c21_third_scale1.3": 9.9347009492259e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.35": 8.696870766259525e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.4": 7.846826899650522e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.5": 7.114562921088698e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.6": 7.413039165804947e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.75": 9.343762223754865e-07,
+        "sample_mean_cov_factorized_c21_third_scale2": 1.6130665963802763e-06
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "absolute_error_norm": 0.007240988396408198,
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.007240007575721741,
+            6.019058085454665e-05,
+            -5.92222113235466e-05,
+            8.410162942722524e-05
+          ]
+        },
+        "gaussian": {
+          "absolute_error_norm": 0.018774431223555318,
+          "relative_to_same_cloud": 2.5927995179315766,
+          "error": [
+            -0.018549857267963432,
+            -0.0025823801864624657,
+            -0.0011123567044543873,
+            -0.0006899552455156312
+          ]
+        },
+        "third": {
+          "absolute_error_norm": 7.938966093340335e-05,
+          "relative_to_same_cloud": 0.01096392599838768,
+          "error": [
+            -6.877059348564529e-05,
+            3.6767299600767855e-05,
+            -2.207421134246129e-06,
+            -1.4717904292266965e-05
+          ]
+        },
+        "third_fourth": {
+          "absolute_error_norm": 2.764841646998798e-05,
+          "relative_to_same_cloud": 0.0038183207811384743,
+          "error": [
+            -2.2450560318354462e-05,
+            1.4742142424653548e-05,
+            1.8142477464407059e-06,
+            -6.3075364870601724e-06
+          ]
+        },
+        "full": {
+          "absolute_error_norm": 4.842456121862779e-05,
+          "relative_to_same_cloud": 0.006687562328182737,
+          "error": [
+            -3.724327237897285e-05,
+            2.8154155116935642e-05,
+            8.145779117171154e-06,
+            -9.943169713328565e-06
+          ]
+        },
+        "sample_pre_gaussian": {
+          "absolute_error_norm": 0.026106505806872307,
+          "relative_to_same_cloud": 3.6053787656699066,
+          "error": [
+            -0.025951410624727167,
+            -0.002510870097986548,
+            -0.0011818022941341832,
+            -0.0006105790036282054
+          ]
+        },
+        "sample_pre_third": {
+          "absolute_error_norm": 0.007308023578473664,
+          "relative_to_same_cloud": 1.0092577391918924,
+          "error": [
+            -0.007306818805465909,
+            9.389731047637628e-05,
+            -6.300272627467185e-05,
+            6.943715996516123e-05
+          ]
+        },
+        "sample_pre_third_fourth": {
+          "absolute_error_norm": 0.007263242792814655,
+          "relative_to_same_cloud": 1.0030733920824255,
+          "error": [
+            -0.0072622191671287695,
+            7.399678421532441e-05,
+            -5.784980255956612e-05,
+            7.775932247100145e-05
+          ]
+        },
+        "sample_pre_full": {
+          "absolute_error_norm": 0.007277515935327682,
+          "relative_to_same_cloud": 1.0050445515059245,
+          "error": [
+            -0.0072764380989598365,
+            8.697646137002801e-05,
+            -5.136309472778336e-05,
+            7.405206696395675e-05
+          ]
+        },
+        "factorized_pre_third_scale1.2": {
+          "absolute_error_norm": 0.014583542329096848,
+          "relative_to_same_cloud": 2.014026474111025,
+          "error": [
+            0.014577596465036535,
+            -0.0002935216514058925,
+            9.57433031620776e-05,
+            -0.0002794036992765647
+          ]
+        },
+        "factorized_pre_third_scale1.25": {
+          "absolute_error_norm": 0.015210817348933228,
+          "relative_to_same_cloud": 2.1006548438164,
+          "error": [
+            0.015206777943752137,
+            -0.00019636231995079356,
+            0.00013261107147790122,
+            -0.0002583120884639585
+          ]
+        },
+        "factorized_pre_third_scale1.3": {
+          "absolute_error_norm": 0.01583895352273208,
+          "relative_to_same_cloud": 2.187402141203374,
+          "error": [
+            0.01583595942247218,
+            -9.920298849575016e-05,
+            0.0001694788397938185,
+            -0.00023722047765142515
+          ]
+        },
+        "factorized_pre_third_scale1.35": {
+          "absolute_error_norm": 0.01646785230934788,
+          "relative_to_same_cloud": 2.274254757474346,
+          "error": [
+            0.016465140901194886,
+            -2.043657040623481e-06,
+            0.00020634660810968375,
+            -0.00021612886683882934
+          ]
+        },
+        "factorized_pre_third_scale1.4": {
+          "absolute_error_norm": 0.017097429554879216,
+          "relative_to_same_cloud": 2.361201070748875,
+          "error": [
+            0.01709432237991315,
+            9.511567441436442e-05,
+            0.00024321437642551777,
+            -0.00019503725602631333
+          ]
+        },
+        "factorized_pre_third_scale1.5": {
+          "absolute_error_norm": 0.018358340146396007,
+          "relative_to_same_cloud": 2.535336219500425,
+          "error": [
+            0.018352685337354124,
+            0.0002894343373245345,
+            0.00031694991305729336,
+            -0.0001528540344012709
+          ]
+        },
+        "factorized_pre_third_scale1.6": {
+          "absolute_error_norm": 0.019621215949457534,
+          "relative_to_same_cloud": 2.7097427692592895,
+          "error": [
+            0.019611048294790656,
+            0.0004837530002347462,
+            0.00039068544968893365,
+            -0.00011067081277602378
+          ]
+        },
+        "factorized_pre_third_scale1.75": {
+          "absolute_error_norm": 0.021518457409875853,
+          "relative_to_same_cloud": 2.971756924862608,
+          "error": [
+            0.02149859273094812,
+            0.0007752309945999736,
+            0.0005012887546365363,
+            -4.739598033846881e-05
+          ]
+        },
+        "factorized_pre_third_scale2": {
+          "absolute_error_norm": 0.02468633293003422,
+          "relative_to_same_cloud": 3.409249066367731,
+          "error": [
+            0.024644500124543,
+            0.0012610276518753294,
+            0.0006856275962158313,
+            5.8062073724308993e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.2": {
+          "absolute_error_norm": 0.0034641549753101977,
+          "relative_to_same_cloud": 0.4784091322434032,
+          "error": [
+            -0.003442651017123488,
+            -0.00025304673988170434,
+            -0.0002274013043074008,
+            -0.00018105154376459043
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.25": {
+          "absolute_error_norm": 0.002828460727637226,
+          "relative_to_same_cloud": 0.3906180444979374,
+          "error": [
+            -0.002813184090005194,
+            -0.00015599117960751752,
+            -0.00019052816263455744,
+            -0.000159847222858292
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.3": {
+          "absolute_error_norm": 0.002194293912501582,
+          "relative_to_same_cloud": 0.3030378992997743,
+          "error": [
+            -0.0021837171628869,
+            -5.8935619333302935e-05,
+            -0.00015365502096179734,
+            -0.00013864290195216705
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.35": {
+          "absolute_error_norm": 0.0015635142317643326,
+          "relative_to_same_cloud": 0.2159255264847399,
+          "error": [
+            -0.001554250235767718,
+            3.8119940940856134e-05,
+            -0.00011678187928895398,
+            -0.00011743858104562577
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.4": {
+          "absolute_error_norm": 0.0009429438070500442,
+          "relative_to_same_cloud": 0.13022307942349137,
+          "error": [
+            -0.0009247833086476476,
+            0.00013517550121511235,
+            -7.990873761618e-05,
+            -9.623426013937245e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.5": {
+          "absolute_error_norm": 0.0004722514578254495,
+          "relative_to_same_cloud": 0.06521919826024082,
+          "error": [
+            0.0003341505455853877,
+            0.00032928662176340273,
+            -6.162454270625117e-06,
+            -5.382561832676172e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.6": {
+          "absolute_error_norm": 0.001678261309490473,
+          "relative_to_same_cloud": 0.23177240697180976,
+          "error": [
+            0.0015930843998264166,
+            0.000523397742311929,
+            6.758382907494018e-05,
+            -1.1416976514300181e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.75": {
+          "absolute_error_norm": 0.003580326114611177,
+          "relative_to_same_cloud": 0.4944526794694427,
+          "error": [
+            0.0034814851811812986,
+            0.0008145644231345034,
+            0.00017820325409333496,
+            5.219598620473734e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale2": {
+          "absolute_error_norm": 0.00676663365569111,
+          "relative_to_same_cloud": 0.9344903327075643,
+          "error": [
+            0.0066288198167674395,
+            0.0012998422245054375,
+            0.00036256896245729503,
+            0.00015821759073606292
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.2": {
+          "absolute_error_norm": 0.010849937361770985,
+          "relative_to_same_cloud": 1.4984055722493577,
+          "error": [
+            -0.01084388765648292,
+            -0.00018131770619943255,
+            -0.0002968620531354632,
+            -0.00010118329288016231
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.25": {
+          "absolute_error_norm": 0.010218375983385434,
+          "relative_to_same_cloud": 1.4111852448837139,
+          "error": [
+            -0.010214407532804337,
+            -8.425302320824724e-05,
+            -0.00025998954309370756,
+            -7.995847159899747e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.3": {
+          "absolute_error_norm": 0.009587712366821561,
+          "relative_to_same_cloud": 1.3240889008436232,
+          "error": [
+            -0.00958492740912309,
+            1.2811659782938079e-05,
+            -0.00022311703305213926,
+            -5.873365031782915e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.35": {
+          "absolute_error_norm": 0.008958136124652006,
+          "relative_to_same_cloud": 1.2371427261360586,
+          "error": [
+            -0.008955447285450724,
+            0.000109876342774054,
+            -0.00018624452301052238,
+            -3.7508829036667773e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.4": {
+          "absolute_error_norm": 0.00832989381289914,
+          "relative_to_same_cloud": 1.1503807708117693,
+          "error": [
+            -0.008325967161769476,
+            0.00020694102576511442,
+            -0.0001493720129689402,
+            -1.628400775548905e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.5": {
+          "absolute_error_norm": 0.007078830996013659,
+          "relative_to_same_cloud": 0.977605626260225,
+          "error": [
+            -0.00706700691442208,
+            0.0004010703917474573,
+            -7.562699288569605e-05,
+            2.616563480685105e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.6": {
+          "absolute_error_norm": 0.005838868078366468,
+          "relative_to_same_cloud": 0.8063634076893101,
+          "error": [
+            -0.005808046667069355,
+            0.0005951997577296197,
+            -1.881972802434545e-06,
+            6.861527736929524e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.75": {
+          "absolute_error_norm": 0.004022229666930789,
+          "relative_to_same_cloud": 0.5554807502420478,
+          "error": [
+            -0.003919606296035383,
+            0.0008863938067030924,
+            0.00010873555732242648,
+            0.00013228974121274467
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale2": {
+          "absolute_error_norm": 0.001618844466949644,
+          "relative_to_same_cloud": 0.22356678098706131,
+          "error": [
+            -0.0007722056776557906,
+            0.0013717172216588386,
+            0.00029309810753049004,
+            0.00023841384761846482
+          ]
+        }
+      },
+      "seconds": 8.95888170809485
+    },
+    {
+      "index": 167,
+      "name": "kathy-wright",
+      "baseline_mse": 1.3442389485466154e-07,
+      "method_mses": {
+        "oracle": 1.0241847365118288e-07,
+        "sample": 1.2356008014410725e-07,
+        "gaussian": 3.3550901017716345e-05,
+        "third": 1.0185478432491137e-07,
+        "third_fourth": 1.0247609137143526e-07,
+        "full": 1.0225583041181437e-07,
+        "sample_pre_gaussian": 3.650125905612488e-05,
+        "sample_pre_third": 1.2163006547629323e-07,
+        "sample_pre_third_fourth": 1.2361716598319988e-07,
+        "sample_pre_full": 1.2352416581719526e-07,
+        "factorized_pre_third_scale1.2": 1.0469474870076229e-05,
+        "factorized_pre_third_scale1.25": 1.0585282582830675e-05,
+        "factorized_pre_third_scale1.3": 1.0767192742581912e-05,
+        "factorized_pre_third_scale1.35": 1.1017002487591586e-05,
+        "factorized_pre_third_scale1.4": 1.1337140501101118e-05,
+        "factorized_pre_third_scale1.5": 1.220126749778802e-05,
+        "factorized_pre_third_scale1.6": 1.3391591129060616e-05,
+        "factorized_pre_third_scale1.75": 1.5883383302352782e-05,
+        "factorized_pre_third_scale2": 2.2404711737422387e-05,
+        "oracle_mean_cov_factorized_c21_third_scale1.2": 3.1582532994138505e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.25": 2.3426189895700507e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.3": 1.7715487050443025e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.35": 1.3956491722299244e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.4": 1.1719410701533139e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.5": 1.0412974372474679e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.6": 1.1643204628940474e-07,
+        "oracle_mean_cov_factorized_c21_third_scale1.75": 1.6068801013246915e-07,
+        "oracle_mean_cov_factorized_c21_third_scale2": 3.4898456977796556e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.2": 4.815029809442667e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.25": 3.6469643355019275e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.3": 2.769110126413427e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.35": 2.1298263333486e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.4": 1.683880833320991e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.5": 1.2231692279736813e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.6": 1.1535736962938355e-07,
+        "sample_mean_cov_factorized_c21_third_scale1.75": 1.5252130909068036e-07,
+        "sample_mean_cov_factorized_c21_third_scale2": 3.719847394042615e-07
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "absolute_error_norm": 0.002205916459098132,
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.0022050011699725758,
+            1.101729076940193e-05,
+            5.1412145689398725e-05,
+            -3.567457805396003e-05
+          ]
+        },
+        "gaussian": {
+          "absolute_error_norm": 0.015685816176134848,
+          "relative_to_same_cloud": 7.110793389949067,
+          "error": [
+            -0.01564111293609116,
+            -0.0008549191756899409,
+            -0.0006444768386319466,
+            -0.0005041607277842964
+          ]
+        },
+        "third": {
+          "absolute_error_norm": 3.103239969231638e-05,
+          "relative_to_same_cloud": 0.014067803685096797,
+          "error": [
+            -2.8526732371858543e-05,
+            9.354528116459898e-06,
+            7.752141382183497e-06,
+            1.277684842609754e-06
+          ]
+        },
+        "third_fourth": {
+          "absolute_error_norm": 2.7145872785301647e-06,
+          "relative_to_same_cloud": 0.0012305938728250834,
+          "error": [
+            -2.4482593214969484e-06,
+            6.600296239989839e-07,
+            7.814271798939343e-07,
+            -5.733610079416626e-07
+          ]
+        },
+        "full": {
+          "absolute_error_norm": 1.6127621262033045e-06,
+          "relative_to_same_cloud": 0.0007311075265573144,
+          "error": [
+            1.092696511051372e-08,
+            4.4617608748603876e-07,
+            -1.3171486809848698e-06,
+            -8.166569220209585e-07
+          ]
+        },
+        "sample_pre_gaussian": {
+          "absolute_error_norm": 0.017933960055934353,
+          "relative_to_same_cloud": 8.129936191358073,
+          "error": [
+            -0.01789647055383181,
+            -0.0008448902054559761,
+            -0.0005835987326210171,
+            -0.0005374365671290951
+          ]
+        },
+        "sample_pre_third": {
+          "absolute_error_norm": 0.002233716826657779,
+          "relative_to_same_cloud": 1.012602638438544,
+          "error": [
+            -0.002232583203666927,
+            2.1662824295326857e-05,
+            5.8854333041556683e-05,
+            -3.361532275915086e-05
+          ]
+        },
+        "sample_pre_third_fourth": {
+          "absolute_error_norm": 0.002208200956618402,
+          "relative_to_same_cloud": 1.0010356228636166,
+          "error": [
+            -0.0022072647687192415,
+            1.2178096307362968e-05,
+            5.1794352817831346e-05,
+            -3.609355299399441e-05
+          ]
+        },
+        "sample_pre_full": {
+          "absolute_error_norm": 0.0022055086285662786,
+          "relative_to_same_cloud": 0.999815119684079,
+          "error": [
+            -0.002204617620410687,
+            1.1905478272379588e-05,
+            4.9638687209183074e-05,
+            -3.6382946201237755e-05
+          ]
+        },
+        "factorized_pre_third_scale1.2": {
+          "absolute_error_norm": 0.004683471676453766,
+          "relative_to_same_cloud": 2.1231409998040265,
+          "error": [
+            0.004453636943833494,
+            0.000657935824461716,
+            -0.0012855149958833773,
+            -0.00012081623613960889
+          ]
+        },
+        "factorized_pre_third_scale1.25": {
+          "absolute_error_norm": 0.005215608012320559,
+          "relative_to_same_cloud": 2.364372408941049,
+          "error": [
+            0.0050105386942069785,
+            0.0006914888829087674,
+            -0.0012680762634903683,
+            -0.00010437742487208294
+          ]
+        },
+        "factorized_pre_third_scale1.3": {
+          "absolute_error_norm": 0.0057527303391093024,
+          "relative_to_same_cloud": 2.6078640990154502,
+          "error": [
+            0.0055674404445698045,
+            0.0007250419413558345,
+            -0.0012506375310973525,
+            -8.793861360454746e-05
+          ]
+        },
+        "factorized_pre_third_scale1.35": {
+          "absolute_error_norm": 0.006293562202236014,
+          "relative_to_same_cloud": 2.8530374195626056,
+          "error": [
+            0.006124342194948618,
+            0.0007585949998028339,
+            -0.0012331987987042811,
+            -7.149980233702152e-05
+          ]
+        },
+        "factorized_pre_third_scale1.4": {
+          "absolute_error_norm": 0.006837223373171535,
+          "relative_to_same_cloud": 3.099493339818893,
+          "error": [
+            0.006681243945320325,
+            0.0007921480582498888,
+            -0.0012157600663112028,
+            -5.506099106946695e-05
+          ]
+        },
+        "factorized_pre_third_scale1.5": {
+          "absolute_error_norm": 0.007930703515088839,
+          "relative_to_same_cloud": 3.5951966731918903,
+          "error": [
+            0.0077950474460593,
+            0.0008592541751440055,
+            -0.001180882601525185,
+            -2.2183368534410726e-05
+          ]
+        },
+        "factorized_pre_third_scale1.6": {
+          "absolute_error_norm": 0.009029906462607156,
+          "relative_to_same_cloud": 4.093494304992379,
+          "error": [
+            0.008908850946798275,
+            0.0009263602920380858,
+            -0.0011460051367391186,
+            1.0694254000654171e-05
+          ]
+        },
+        "factorized_pre_third_scale1.75": {
+          "absolute_error_norm": 0.010685576030816909,
+          "relative_to_same_cloud": 4.844052904517338,
+          "error": [
+            0.010579556197914286,
+            0.0010270194673792088,
+            -0.0010936889395599461,
+            6.00106878032693e-05
+          ]
+        },
+        "factorized_pre_third_scale2": {
+          "absolute_error_norm": 0.013455816494605139,
+          "relative_to_same_cloud": 6.099875831248125,
+          "error": [
+            0.013364064949767496,
+            0.0011947847596144399,
+            -0.001006495277594735,
+            0.00014220474414093805
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.2": {
+          "absolute_error_norm": 0.002291803011329418,
+          "relative_to_same_cloud": 1.0389346350252993,
+          "error": [
+            -0.002277494970993388,
+            -5.013391555227023e-05,
+            -0.00022568465298434398,
+            -0.00010922787078923753
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.25": {
+          "absolute_error_norm": 0.0017357924308920392,
+          "relative_to_same_cloud": 0.7868804023529076,
+          "error": [
+            -0.001720677555778316,
+            -1.6601196379880875e-05,
+            -0.00020823497858238338,
+            -9.277233508113176e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.3": {
+          "absolute_error_norm": 0.00118198155206411,
+          "relative_to_same_cloud": 0.535823352325569,
+          "error": [
+            -0.0011638601405659088,
+            1.693152279254838e-05,
+            -0.00019078530418031175,
+            -7.631679937298696e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.35": {
+          "absolute_error_norm": 0.000636141589238496,
+          "relative_to_same_cloud": 0.28837972835044556,
+          "error": [
+            -0.0006070427253526134,
+            5.0464241964934264e-05,
+            -0.000173335629778483,
+            -5.9861263664846495e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.4": {
+          "absolute_error_norm": 0.00018910991397106771,
+          "relative_to_same_cloud": 0.08572850217926363,
+          "error": [
+            -5.0225310141094326e-05,
+            8.399696113733056e-05,
+            -0.00015588595537641137,
+            -4.340572795671991e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.5": {
+          "absolute_error_norm": 0.0010809290231862537,
+          "relative_to_same_cloud": 0.49001358085345686,
+          "error": [
+            0.0010634095202899374,
+            0.00015106239948212835,
+            -0.00012098660657243465,
+            -1.049465654048582e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.6": {
+          "absolute_error_norm": 0.002189752353622858,
+          "relative_to_same_cloud": 0.9926723854801454,
+          "error": [
+            0.002177044350709423,
+            0.0002181278378269383,
+            -8.608725776847181e-05,
+            2.241641487577776e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale1.75": {
+          "absolute_error_norm": 0.0038614903068305757,
+          "relative_to_same_cloud": 1.7505152069128262,
+          "error": [
+            0.003847496596349309,
+            0.0003187259953441289,
+            -3.373823456245123e-05,
+            7.17830220001792e-05
+          ]
+        },
+        "oracle_mean_cov_factorized_c21_third_scale2": {
+          "absolute_error_norm": 0.006651396460359822,
+          "relative_to_same_cloud": 3.0152531084876997,
+          "error": [
+            0.006631583672411345,
+            0.0004863895912061312,
+            5.351013744736566e-05,
+            0.00015406070054078524
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.2": {
+          "absolute_error_norm": 0.004537990632914366,
+          "relative_to_same_cloud": 2.057190613088621,
+          "error": [
+            -0.004532578278356958,
+            -4.0121102664386274e-05,
+            -0.00016489757116130987,
+            -0.00014245077441454694
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.25": {
+          "absolute_error_norm": 0.003980482787186701,
+          "relative_to_same_cloud": 1.8044576306457605,
+          "error": [
+            -0.003975749433544173,
+            -6.589056714738362e-06,
+            -0.00014745168943385012,
+            -0.00012599303305145266
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.3": {
+          "absolute_error_norm": 0.003423250415452405,
+          "relative_to_same_cloud": 1.55184952781574,
+          "error": [
+            -0.0034189205887331653,
+            2.6942989234911285e-05,
+            -0.00013000580770630016,
+            -0.0001095352916883471
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.35": {
+          "absolute_error_norm": 0.002866454176821747,
+          "relative_to_same_cloud": 1.2994391356024741,
+          "error": [
+            -0.002862091743922157,
+            6.047503518454879e-05,
+            -0.00011255992597876407,
+            -9.307755032523807e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.4": {
+          "absolute_error_norm": 0.002310409410010495,
+          "relative_to_same_cloud": 1.0473694053468752,
+          "error": [
+            -0.002305262899112037,
+            9.40070811341967e-05,
+            -9.511404425131126e-05,
+            -7.66198089621568e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.5": {
+          "absolute_error_norm": 0.0012047421671426601,
+          "relative_to_same_cloud": 0.5461413382967402,
+          "error": [
+            -0.00119160520948558,
+            0.0001610711730334717,
+            -6.022228079626685e-05,
+            -4.370432623593962e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.6": {
+          "absolute_error_norm": 0.00024265108533071488,
+          "relative_to_same_cloud": 0.1100001245876376,
+          "error": [
+            -7.79475198653401e-05,
+            0.0002281352649327953,
+            -2.5330517341402847e-05,
+            -1.0788843509685134e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale1.75": {
+          "absolute_error_norm": 0.0016267953121080186,
+          "relative_to_same_cloud": 0.7374691391409802,
+          "error": [
+            0.0015925390145747897,
+            0.0003287314027817321,
+            2.700712784109438e-05,
+            3.8584380579616794e-05
+          ]
+        },
+        "sample_mean_cov_factorized_c21_third_scale2": {
+          "absolute_error_norm": 0.004407881703682234,
+          "relative_to_same_cloud": 1.9982088104480413,
+          "error": [
+            0.004376683238628054,
+            0.0004963916325299821,
+            0.00011423653647860826,
+            0.00012087308739513677
+          ]
+        }
+      },
+      "seconds": 8.909316791919991
+    }
+  ]
+}

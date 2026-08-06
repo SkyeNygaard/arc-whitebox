@@ -1,0 +1,925 @@
+{
+  "identity": {
+    "statement": "E[f(X)] = E[Delta f(X)] for degree-1 homogeneous f and X~N(0,I)",
+    "derivation": "Gaussian integration by parts gives E[Delta f]=E[(||X||^2-d)f]. With f(RU)=R f(U) and E[R^3]=(d+1)E[R], the right side equals E[f].",
+    "proxy": "Gaussian mollifier for every ReLU delta and one independent Rademacher Hutchinson direction per input point"
+  },
+  "protocol": {
+    "selection_ids": [
+      0,
+      9
+    ],
+    "validation_ids": [
+      10,
+      19
+    ],
+    "challenge_holdout_loaded": false,
+    "samples": 8192,
+    "epsilon_grid": [
+      0.4,
+      0.2,
+      0.1,
+      0.05,
+      0.025
+    ],
+    "selected_epsilon": 0.025,
+    "baseline": "sphere Sobol antithetic at 3x rows"
+  },
+  "cost": {
+    "samples": 8192,
+    "dense_matmul_flops_fma2": 103079215104,
+    "activation_forward_flops_fma2": 34359738368,
+    "jvp_forward_flops_fma2": 34359738368,
+    "laplacian_forward_flops_fma2": 34359738368,
+    "equal_cost_baseline_samples": 24576,
+    "equal_cost_baseline_dense_matmul_flops_fma2": 103079215104
+  },
+  "selection": {
+    "summary": {
+      "equal_cost_baseline_mean_mse": 5.87444660752628e-07,
+      "by_epsilon": {
+        "0.4": {
+          "mean_mse": 7.959289584256306,
+          "median_mlp_mse": 7.521656683842792,
+          "ratio_to_equal_cost_baseline": 13549003.193013867
+        },
+        "0.2": {
+          "mean_mse": 2.5633832844874065,
+          "median_mlp_mse": 2.1731819473634366,
+          "ratio_to_equal_cost_baseline": 4363616.6191437105
+        },
+        "0.1": {
+          "mean_mse": 0.7537999297181346,
+          "median_mlp_mse": 0.7497360756814107,
+          "ratio_to_equal_cost_baseline": 1283184.5790416647
+        },
+        "0.05": {
+          "mean_mse": 0.28308018555776066,
+          "median_mlp_mse": 0.23878546757730956,
+          "ratio_to_equal_cost_baseline": 481884.00452066626
+        },
+        "0.025": {
+          "mean_mse": 0.19723842967811364,
+          "median_mlp_mse": 0.18912729551023705,
+          "ratio_to_equal_cost_baseline": 335756.613100226
+        }
+      }
+    },
+    "records": [
+      {
+        "id": 0,
+        "name": "daniel-harrison",
+        "target_mean": 0.45064407108388127,
+        "equal_cost_baseline_mse": 6.041840683843002e-07,
+        "equal_cost_baseline_seconds": 0.11226441687904298,
+        "epsilons": [
+          {
+            "epsilon": 0.4,
+            "mse": 5.046356683732343,
+            "prediction_mean": 1.866799576996499,
+            "prediction_min": -0.9424631861452528,
+            "prediction_max": 12.015110213116714,
+            "elapsed_seconds": 0.3312903339974582,
+            "maximum_abs_laplacian": 363.7374267578125,
+            "mean_layer_kernel_hit_fraction": 0.2669770121574402,
+            "final_layer_kernel_hit_fraction": 0.3007030487060547
+          },
+          {
+            "epsilon": 0.2,
+            "mse": 1.9394903043171496,
+            "prediction_mean": 1.3213689637541393,
+            "prediction_min": -0.6696096973912358,
+            "prediction_max": 8.182716898238027,
+            "elapsed_seconds": 0.3349872080143541,
+            "maximum_abs_laplacian": 369.53887939453125,
+            "mean_layer_kernel_hit_fraction": 0.13534444570541382,
+            "final_layer_kernel_hit_fraction": 0.1477494239807129
+          },
+          {
+            "epsilon": 0.1,
+            "mse": 0.65033992390569,
+            "prediction_mean": 0.9302530551971523,
+            "prediction_min": -0.5165829987056832,
+            "prediction_max": 6.12217983518546,
+            "elapsed_seconds": 0.4535030419938266,
+            "maximum_abs_laplacian": 389.46380615234375,
+            "mean_layer_kernel_hit_fraction": 0.06799189746379852,
+            "final_layer_kernel_hit_fraction": 0.0729832649230957
+          },
+          {
+            "epsilon": 0.05,
+            "mse": 0.21815846742440556,
+            "prediction_mean": 0.6768288624428573,
+            "prediction_min": -0.5620051575234235,
+            "prediction_max": 4.8845183529848555,
+            "elapsed_seconds": 0.5092987089883536,
+            "maximum_abs_laplacian": 696.1365356445312,
+            "mean_layer_kernel_hit_fraction": 0.03403051197528839,
+            "final_layer_kernel_hit_fraction": 0.03648948669433594
+          },
+          {
+            "epsilon": 0.025,
+            "mse": 0.11645619681916992,
+            "prediction_mean": 0.534813627230059,
+            "prediction_min": -0.45054648703479294,
+            "prediction_max": 4.217604551398679,
+            "elapsed_seconds": 0.506505458150059,
+            "maximum_abs_laplacian": 1385.33544921875,
+            "mean_layer_kernel_hit_fraction": 0.01701447367668152,
+            "final_layer_kernel_hit_fraction": 0.01818704605102539
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "name": "dustin-robinson",
+        "target_mean": 0.5676696058864044,
+        "equal_cost_baseline_mse": 7.785878846436453e-07,
+        "equal_cost_baseline_seconds": 0.1133688751142472,
+        "epsilons": [
+          {
+            "epsilon": 0.4,
+            "mse": 7.022214298947652,
+            "prediction_mean": 2.179217241596964,
+            "prediction_min": -0.8765626441150112,
+            "prediction_max": 11.87216260588923,
+            "elapsed_seconds": 0.4011902080383152,
+            "maximum_abs_laplacian": 339.17291259765625,
+            "mean_layer_kernel_hit_fraction": 0.22769388556480408,
+            "final_layer_kernel_hit_fraction": 0.19134902954101562
+          },
+          {
+            "epsilon": 0.2,
+            "mse": 1.7741807161975869,
+            "prediction_mean": 1.3636843066152062,
+            "prediction_min": -0.7732511730758063,
+            "prediction_max": 7.5622798695524125,
+            "elapsed_seconds": 0.4280507911462337,
+            "maximum_abs_laplacian": 468.87640380859375,
+            "mean_layer_kernel_hit_fraction": 0.11576403677463531,
+            "final_layer_kernel_hit_fraction": 0.09850883483886719
+          },
+          {
+            "epsilon": 0.1,
+            "mse": 0.41826534076386884,
+            "prediction_mean": 0.8837398844053515,
+            "prediction_min": -0.7932854660371609,
+            "prediction_max": 5.396158086365517,
+            "elapsed_seconds": 0.46544558298774064,
+            "maximum_abs_laplacian": 710.69677734375,
+            "mean_layer_kernel_hit_fraction": 0.05821618437767029,
+            "final_layer_kernel_hit_fraction": 0.05016374588012695
+          },
+          {
+            "epsilon": 0.05,
+            "mse": 0.1896647549244042,
+            "prediction_mean": 0.6535503575619889,
+            "prediction_min": -0.7089025132135105,
+            "prediction_max": 4.7093735647081445,
+            "elapsed_seconds": 0.5470469580031931,
+            "maximum_abs_laplacian": 1425.9703369140625,
+            "mean_layer_kernel_hit_fraction": 0.029154062271118164,
+            "final_layer_kernel_hit_fraction": 0.025173664093017578
+          },
+          {
+            "epsilon": 0.025,
+            "mse": 0.21062719923362855,
+            "prediction_mean": 0.5245784621284414,
+            "prediction_min": -1.408454582619969,
+            "prediction_max": 4.2585639086325955,
+            "elapsed_seconds": 0.4708457908127457,
+            "maximum_abs_laplacian": 2935.8525390625,
+            "mean_layer_kernel_hit_fraction": 0.014588460326194763,
+            "final_layer_kernel_hit_fraction": 0.012612342834472656
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "cole-martin",
+        "target_mean": 0.7398060234404461,
+        "equal_cost_baseline_mse": 1.896821268981301e-06,
+        "equal_cost_baseline_seconds": 0.1307501660194248,
+        "epsilons": [
+          {
+            "epsilon": 0.4,
+            "mse": 7.019049524494753,
+            "prediction_mean": 2.30615801968095,
+            "prediction_min": -0.39737726541533935,
+            "prediction_max": 14.531998887768683,
+            "elapsed_seconds": 0.3954372080042958,
+            "maximum_abs_laplacian": 261.3559875488281,
+            "mean_layer_kernel_hit_fraction": 0.22376151382923126,
+            "final_layer_kernel_hit_fraction": 0.21822690963745117
+          },
+          {
+            "epsilon": 0.2,
+            "mse": 1.8750863264419335,
+            "prediction_mean": 1.5497603275268301,
+            "prediction_min": -0.21219220221986923,
+            "prediction_max": 9.146466155814945,
+            "elapsed_seconds": 0.41721812495961785,
+            "maximum_abs_laplacian": 315.50927734375,
+            "mean_layer_kernel_hit_fraction": 0.11311087012290955,
+            "final_layer_kernel_hit_fraction": 0.12125110626220703
+          },
+          {
+            "epsilon": 0.1,
+            "mse": 0.5048586602858769,
+            "prediction_mean": 1.1483034659598435,
+            "prediction_min": -0.32644040281388964,
+            "prediction_max": 6.868789681969744,
+            "elapsed_seconds": 0.49442520807497203,
+            "maximum_abs_laplacian": 611.041015625,
+            "mean_layer_kernel_hit_fraction": 0.05663810670375824,
+            "final_layer_kernel_hit_fraction": 0.06281280517578125
+          },
+          {
+            "epsilon": 0.05,
+            "mse": 0.22972391610107537,
+            "prediction_mean": 0.9779145673785018,
+            "prediction_min": -0.3768562756471535,
+            "prediction_max": 5.935356989977663,
+            "elapsed_seconds": 0.5097487920429558,
+            "maximum_abs_laplacian": 1074.516845703125,
+            "mean_layer_kernel_hit_fraction": 0.028331995010375977,
+            "final_layer_kernel_hit_fraction": 0.03153514862060547
+          },
+          {
+            "epsilon": 0.025,
+            "mse": 0.2157277362227485,
+            "prediction_mean": 0.9166661891109003,
+            "prediction_min": -0.7474923631498399,
+            "prediction_max": 5.4807376131500405,
+            "elapsed_seconds": 0.4751632499974221,
+            "maximum_abs_laplacian": 1921.947265625,
+            "mean_layer_kernel_hit_fraction": 0.014189139008522034,
+            "final_layer_kernel_hit_fraction": 0.01586771011352539
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "donna-clarke",
+        "target_mean": 0.2532936438861783,
+        "equal_cost_baseline_mse": 3.5856075010379703e-07,
+        "equal_cost_baseline_seconds": 0.13018912496045232,
+        "epsilons": [
+          {
+            "epsilon": 0.4,
+            "mse": 9.945985934599541,
+            "prediction_mean": 2.2736824550754093,
+            "prediction_min": -1.3102370935503467,
+            "prediction_max": 10.716983271299455,
+            "elapsed_seconds": 0.4029726670123637,
+            "maximum_abs_laplacian": 271.853271484375,
+            "mean_layer_kernel_hit_fraction": 0.36019928753376007,
+            "final_layer_kernel_hit_fraction": 0.47731828689575195
+          },
+          {
+            "epsilon": 0.2,
+            "mse": 3.4727589879176306,
+            "prediction_mean": 1.4663855849013694,
+            "prediction_min": -1.46161288407047,
+            "prediction_max": 7.084840193853211,
+            "elapsed_seconds": 0.41197145893238485,
+            "maximum_abs_laplacian": 266.5530090332031,
+            "mean_layer_kernel_hit_fraction": 0.18839608132839203,
+            "final_layer_kernel_hit_fraction": 0.2673964500427246
+          },
+          {
+            "epsilon": 0.1,
+            "mse": 0.8855481235927157,
+            "prediction_mean": 0.8462509918622607,
+            "prediction_min": -0.8947185651679731,
+            "prediction_max": 4.193296407981123,
+            "elapsed_seconds": 0.47723924997262657,
+            "maximum_abs_laplacian": 461.66400146484375,
+            "mean_layer_kernel_hit_fraction": 0.09571430087089539,
+            "final_layer_kernel_hit_fraction": 0.14384174346923828
+          },
+          {
+            "epsilon": 0.05,
+            "mse": 0.24784701905354375,
+            "prediction_mean": 0.5110408380821408,
+            "prediction_min": -0.39173327044430195,
+            "prediction_max": 2.50356559827199,
+            "elapsed_seconds": 0.5482085000257939,
+            "maximum_abs_laplacian": 776.2900390625,
+            "mean_layer_kernel_hit_fraction": 0.04808567464351654,
+            "final_layer_kernel_hit_fraction": 0.07392263412475586
+          },
+          {
+            "epsilon": 0.025,
+            "mse": 0.14566828143926985,
+            "prediction_mean": 0.34443877436065257,
+            "prediction_min": -0.5148036687413219,
+            "prediction_max": 2.281625833762007,
+            "elapsed_seconds": 0.5166005832143128,
+            "maximum_abs_laplacian": 1523.0604248046875,
+            "mean_layer_kernel_hit_fraction": 0.024074047803878784,
+            "final_layer_kernel_hit_fraction": 0.03736066818237305
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "rebecca-walker",
+        "target_mean": 0.2486132823759236,
+        "equal_cost_baseline_mse": 2.4648034735906056e-07,
+        "equal_cost_baseline_seconds": 0.11843083309940994,
+        "epsilons": [
+          {
+            "epsilon": 0.4,
+            "mse": 4.385363749700888,
+            "prediction_mean": 1.4821032040001207,
+            "prediction_min": -1.532186034984826,
+            "prediction_max": 9.51369779758663,
+            "elapsed_seconds": 0.3967205840162933,
+            "maximum_abs_laplacian": 190.67898559570312,
+            "mean_layer_kernel_hit_fraction": 0.3256184160709381,
+            "final_layer_kernel_hit_fraction": 0.4761958122253418
+          },
+          {
+            "epsilon": 0.2,
+            "mse": 1.3950280477784793,
+            "prediction_mean": 0.9292864052776624,
+            "prediction_min": -0.971753696178382,
+            "prediction_max": 6.089679470943224,
+            "elapsed_seconds": 0.40927354199811816,
+            "maximum_abs_laplacian": 307.0843505859375,
+            "mean_layer_kernel_hit_fraction": 0.1675693541765213,
+            "final_layer_kernel_hit_fraction": 0.26446533203125
+          },
+          {
+            "epsilon": 0.1,
+            "mse": 0.4207091174461478,
+            "prediction_mean": 0.5804398418451934,
+            "prediction_min": -0.842973051288137,
+            "prediction_max": 3.805000680101813,
+            "elapsed_seconds": 0.4617910410743207,
+            "maximum_abs_laplacian": 632.5660400390625,
+            "mean_layer_kernel_hit_fraction": 0.08450528979301453,
+            "final_layer_kernel_hit_fraction": 0.13692903518676758
+          },
+          {
+            "epsilon": 0.05,
+            "mse": 0.18056413597496013,
+            "prediction_mean": 0.4150325702610542,
+            "prediction_min": -0.5985618433032016,
+            "prediction_max": 3.313523851512138,
+            "elapsed_seconds": 0.5119625839870423,
+            "maximum_abs_laplacian": 1014.6729736328125,
+            "mean_layer_kernel_hit_fraction": 0.042380526661872864,
+            "final_layer_kernel_hit_fraction": 0.06941795349121094
+          },
+          {
+            "epsilon": 0.025,
+            "mse": 0.11962947791991342,
+            "prediction_mean": 0.30556743310295925,
+            "prediction_min": -0.9326826396516881,
+            "prediction_max": 3.0790873266867322,
+            "elapsed_seconds": 0.49205449991859496,
+            "maximum_abs_laplacian": 1346.2613525390625,
+            "mean_layer_kernel_hit_fraction": 0.02119085192680359,
+            "final_layer_kernel_hit_fraction": 0.03485822677612305
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "monique-stevens",
+        "target_mean": 0.3974657565158824,
+        "equal_cost_baseline_mse": 3.586482469207025e-07,
+        "equal_cost_baseline_seconds": 0.1400838748086244,
+        "epsilons": [
+          {
+            "epsilon": 0.4,
+            "mse": 12.479470925021406,
+            "prediction_mean": 2.6737490045132573,
+            "prediction_min": -1.421059400443676,
+            "prediction_max": 16.448808244079004,
+            "elapsed_seconds": 0.41230258299037814,
+            "maximum_abs_laplacian": 371.3373107910156,
+            "mean_layer_kernel_hit_fraction": 0.2863748073577881,
+            "final_layer_kernel_hit_fraction": 0.3720283508300781
+          },
+          {
+            "epsilon": 0.2,
+            "mse": 3.9028947445019178,
+            "prediction_mean": 1.6246818250583266,
+            "prediction_min": -1.4232758175769684,
+            "prediction_max": 10.614707425938377,
+            "elapsed_seconds": 0.4068535000551492,
+            "maximum_abs_laplacian": 452.2455139160156,
+            "mean_layer_kernel_hit_fraction": 0.1466398686170578,
+            "final_layer_kernel_hit_fraction": 0.20136070251464844
+          },
+          {
+            "epsilon": 0.1,
+            "mse": 1.084705464638222,
+            "prediction_mean": 0.9797537674606881,
+            "prediction_min": -0.9651705308952477,
+            "prediction_max": 6.325336382678643,
+            "elapsed_seconds": 0.455904999980703,
+            "maximum_abs_laplacian": 838.7412109375,
+            "mean_layer_kernel_hit_fraction": 0.07389430701732635,
+            "final_layer_kernel_hit_fraction": 0.10353899002075195
+          },
+          {
+            "epsilon": 0.05,
+            "mse": 0.4346004246784285,
+            "prediction_mean": 0.670008845121215,
+            "prediction_min": -0.7481081005576442,
+            "prediction_max": 4.40628679230781,
+            "elapsed_seconds": 0.4614082919433713,
+            "maximum_abs_laplacian": 1446.1448974609375,
+            "mean_layer_kernel_hit_fraction": 0.03701178729534149,
+            "final_layer_kernel_hit_fraction": 0.052050113677978516
+          },
+          {
+            "epsilon": 0.025,
+            "mse": 0.2743350280493419,
+            "prediction_mean": 0.501586092335325,
+            "prediction_min": -0.9365751877427168,
+            "prediction_max": 3.2909969417059983,
+            "elapsed_seconds": 0.41740812500938773,
+            "maximum_abs_laplacian": 1700.531982421875,
+            "mean_layer_kernel_hit_fraction": 0.01852525770664215,
+            "final_layer_kernel_hit_fraction": 0.026065826416015625
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "keith-brock",
+        "target_mean": 0.38314552043470385,
+        "equal_cost_baseline_mse": 2.513030300054181e-07,
+        "equal_cost_baseline_seconds": 0.10352129209786654,
+        "epsilons": [
+          {
+            "epsilon": 0.4,
+            "mse": 5.027640452815751,
+            "prediction_mean": 1.607668772241298,
+            "prediction_min": -1.498671704006942,
+            "prediction_max": 13.05413832857198,
+            "elapsed_seconds": 0.3244685409590602,
+            "maximum_abs_laplacian": 207.58270263671875,
+            "mean_layer_kernel_hit_fraction": 0.25860442221164703,
+            "final_layer_kernel_hit_fraction": 0.26403284072875977
+          },
+          {
+            "epsilon": 0.2,
+            "mse": 1.517892722268473,
+            "prediction_mean": 1.0259576732032007,
+            "prediction_min": -0.7623948052743235,
+            "prediction_max": 8.8236029785776,
+            "elapsed_seconds": 0.34286066610366106,
+            "maximum_abs_laplacian": 364.34942626953125,
+            "mean_layer_kernel_hit_fraction": 0.1309066116809845,
+            "final_layer_kernel_hit_fraction": 0.1358013153076172
+          },
+          {
+            "epsilon": 0.1,
+            "mse": 0.4718279854332188,
+            "prediction_mean": 0.711372111567195,
+            "prediction_min": -0.26995300914423837,
+            "prediction_max": 6.27845673137881,
+            "elapsed_seconds": 0.4620169580448419,
+            "maximum_abs_laplacian": 502.4232177734375,
+            "mean_layer_kernel_hit_fraction": 0.06552091240882874,
+            "final_layer_kernel_hit_fraction": 0.06919050216674805
+          },
+          {
+            "epsilon": 0.05,
+            "mse": 0.18529762306439115,
+            "prediction_mean": 0.5581621269857392,
+            "prediction_min": -0.45041867634921573,
+            "prediction_max": 4.874175114108198,
+            "elapsed_seconds": 0.5168300000950694,
+            "maximum_abs_laplacian": 954.5284423828125,
+            "mean_layer_kernel_hit_fraction": 0.03275737166404724,
+            "final_layer_kernel_hit_fraction": 0.034764766693115234
+          },
+          {
+            "epsilon": 0.025,
+            "mse": 0.13368446821041963,
+            "prediction_mean": 0.4679958874280842,
+            "prediction_min": -0.8601451681742804,
+            "prediction_max": 4.159315027996996,
+            "elapsed_seconds": 0.4950121669098735,
+            "maximum_abs_laplacian": 1897.72509765625,
+            "mean_layer_kernel_hit_fraction": 0.01637531816959381,
+            "final_layer_kernel_hit_fraction": 0.01734018325805664
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "robert-huff",
+        "target_mean": 0.30073168802088013,
+        "equal_cost_baseline_mse": 4.5777952963116496e-07,
+        "equal_cost_baseline_seconds": 0.1640439999755472,
+        "epsilons": [
+          {
+            "epsilon": 0.4,
+            "mse": 8.021099068737932,
+            "prediction_mean": 2.065203833831816,
+            "prediction_min": -1.8828399266352815,
+            "prediction_max": 13.776964017188504,
+            "elapsed_seconds": 0.4012021250091493,
+            "maximum_abs_laplacian": 443.30731201171875,
+            "mean_layer_kernel_hit_fraction": 0.3066452890634537,
+            "final_layer_kernel_hit_fraction": 0.40522193908691406
+          },
+          {
+            "epsilon": 0.2,
+            "mse": 2.4068735904097234,
+            "prediction_mean": 1.261697785232672,
+            "prediction_min": -1.3143045851891497,
+            "prediction_max": 9.132499949415049,
+            "elapsed_seconds": 0.3900204999372363,
+            "maximum_abs_laplacian": 830.4754638671875,
+            "mean_layer_kernel_hit_fraction": 0.15767237544059753,
+            "final_layer_kernel_hit_fraction": 0.2226557731628418
+          },
+          {
+            "epsilon": 0.1,
+            "mse": 0.8491322274571313,
+            "prediction_mean": 0.8530349117314193,
+            "prediction_min": -0.4657745585077959,
+            "prediction_max": 6.955259574363481,
+            "elapsed_seconds": 0.466732291970402,
+            "maximum_abs_laplacian": 1489.56640625,
+            "mean_layer_kernel_hit_fraction": 0.07954663038253784,
+            "final_layer_kernel_hit_fraction": 0.1166229248046875
+          },
+          {
+            "epsilon": 0.05,
+            "mse": 0.41286148370926834,
+            "prediction_mean": 0.6379385751414121,
+            "prediction_min": -0.46918807323720557,
+            "prediction_max": 5.401304344546645,
+            "elapsed_seconds": 0.5123792919330299,
+            "maximum_abs_laplacian": 2148.053955078125,
+            "mean_layer_kernel_hit_fraction": 0.039878860116004944,
+            "final_layer_kernel_hit_fraction": 0.059216976165771484
+          },
+          {
+            "epsilon": 0.025,
+            "mse": 0.35403785227284007,
+            "prediction_mean": 0.5126742479456745,
+            "prediction_min": -0.702018567611182,
+            "prediction_max": 4.147522992311224,
+            "elapsed_seconds": 0.4930398748256266,
+            "maximum_abs_laplacian": 3025.185302734375,
+            "mean_layer_kernel_hit_fraction": 0.01995590329170227,
+            "final_layer_kernel_hit_fraction": 0.029771804809570312
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "kimberly-caldwell",
+        "target_mean": 0.5773628510583788,
+        "equal_cost_baseline_mse": 6.229843317243773e-07,
+        "equal_cost_baseline_seconds": 0.1364205409772694,
+        "epsilons": [
+          {
+            "epsilon": 0.4,
+            "mse": 9.851703317707326,
+            "prediction_mean": 2.599967283985071,
+            "prediction_min": -1.358299682867248,
+            "prediction_max": 12.47749030138857,
+            "elapsed_seconds": 0.3557077080477029,
+            "maximum_abs_laplacian": 243.60736083984375,
+            "mean_layer_kernel_hit_fraction": 0.2601121813058853,
+            "final_layer_kernel_hit_fraction": 0.23857927322387695
+          },
+          {
+            "epsilon": 0.2,
+            "mse": 3.070786657738671,
+            "prediction_mean": 1.6623433760131892,
+            "prediction_min": -0.828992279823769,
+            "prediction_max": 8.529107708902341,
+            "elapsed_seconds": 0.4010129999369383,
+            "maximum_abs_laplacian": 280.1792907714844,
+            "mean_layer_kernel_hit_fraction": 0.13192430138587952,
+            "final_layer_kernel_hit_fraction": 0.12371635437011719
+          },
+          {
+            "epsilon": 0.1,
+            "mse": 0.9129471253853783,
+            "prediction_mean": 1.1313306741991718,
+            "prediction_min": -0.8068157925530305,
+            "prediction_max": 5.937238209729123,
+            "elapsed_seconds": 0.4734350841026753,
+            "maximum_abs_laplacian": 459.5679626464844,
+            "mean_layer_kernel_hit_fraction": 0.06619320809841156,
+            "final_layer_kernel_hit_fraction": 0.06329536437988281
+          },
+          {
+            "epsilon": 0.05,
+            "mse": 0.327477006131322,
+            "prediction_mean": 0.8637627643117185,
+            "prediction_min": -0.9274743110631299,
+            "prediction_max": 4.745050388794425,
+            "elapsed_seconds": 0.5361716670449823,
+            "maximum_abs_laplacian": 900.7891235351562,
+            "mean_layer_kernel_hit_fraction": 0.03312358260154724,
+            "final_layer_kernel_hit_fraction": 0.032033443450927734
+          },
+          {
+            "epsilon": 0.025,
+            "mse": 0.16762739178684552,
+            "prediction_mean": 0.6422763383477238,
+            "prediction_min": -1.072344132204928,
+            "prediction_max": 3.4471582876403772,
+            "elapsed_seconds": 0.49276762502267957,
+            "maximum_abs_laplacian": 1548.77001953125,
+            "mean_layer_kernel_hit_fraction": 0.01657971739768982,
+            "final_layer_kernel_hit_fraction": 0.01618480682373047
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "annette-hansen",
+        "target_mean": 0.3020199356661032,
+        "equal_cost_baseline_mse": 2.990971497725133e-07,
+        "equal_cost_baseline_seconds": 0.13941224990412593,
+        "epsilons": [
+          {
+            "epsilon": 0.4,
+            "mse": 10.794011886805468,
+            "prediction_mean": 2.381731038742787,
+            "prediction_min": -1.6217171573822455,
+            "prediction_max": 13.394752209352362,
+            "elapsed_seconds": 0.390274666948244,
+            "maximum_abs_laplacian": 267.21197509765625,
+            "mean_layer_kernel_hit_fraction": 0.33644886314868927,
+            "final_layer_kernel_hit_fraction": 0.45114755630493164
+          },
+          {
+            "epsilon": 0.2,
+            "mse": 4.278840747302494,
+            "prediction_mean": 1.6349150824518932,
+            "prediction_min": -0.851251360048619,
+            "prediction_max": 8.322209157243037,
+            "elapsed_seconds": 0.39106329111382365,
+            "maximum_abs_laplacian": 348.3013916015625,
+            "mean_layer_kernel_hit_fraction": 0.1740630716085434,
+            "final_layer_kernel_hit_fraction": 0.23491430282592773
+          },
+          {
+            "epsilon": 0.1,
+            "mse": 1.3396653282730957,
+            "prediction_mean": 1.0139633473779468,
+            "prediction_min": -0.523423730082186,
+            "prediction_max": 5.310147539885444,
+            "elapsed_seconds": 0.4827526658773422,
+            "maximum_abs_laplacian": 502.0703430175781,
+            "mean_layer_kernel_hit_fraction": 0.08785296976566315,
+            "final_layer_kernel_hit_fraction": 0.11854410171508789
+          },
+          {
+            "epsilon": 0.05,
+            "mse": 0.40460702451580743,
+            "prediction_mean": 0.6311864127784705,
+            "prediction_min": -0.8967139194588185,
+            "prediction_max": 3.835800669655953,
+            "elapsed_seconds": 0.519354792078957,
+            "maximum_abs_laplacian": 882.0071411132812,
+            "mean_layer_kernel_hit_fraction": 0.04403485357761383,
+            "final_layer_kernel_hit_fraction": 0.05941438674926758
+          },
+          {
+            "epsilon": 0.025,
+            "mse": 0.23459066482695917,
+            "prediction_mean": 0.41130788106905664,
+            "prediction_min": -1.343910547999723,
+            "prediction_max": 2.951534006077793,
+            "elapsed_seconds": 0.5223779589869082,
+            "maximum_abs_laplacian": 1690.176025390625,
+            "mean_layer_kernel_hit_fraction": 0.022016867995262146,
+            "final_layer_kernel_hit_fraction": 0.02978801727294922
+          }
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "summary": {
+      "equal_cost_baseline_mean_mse": 6.916360946596633e-07,
+      "by_epsilon": {
+        "0.025": {
+          "mean_mse": 0.24932262123755744,
+          "median_mlp_mse": 0.23830970480022787,
+          "ratio_to_equal_cost_baseline": 360482.37384175684
+        }
+      }
+    },
+    "records": [
+      {
+        "id": 10,
+        "name": "emma-potter",
+        "target_mean": 0.3390452154274173,
+        "equal_cost_baseline_mse": 7.299194218500584e-07,
+        "equal_cost_baseline_seconds": 0.1228675830643624,
+        "epsilons": [
+          {
+            "epsilon": 0.025,
+            "mse": 0.18173005935482472,
+            "prediction_mean": 0.4311668515657821,
+            "prediction_min": -0.8591102057370144,
+            "prediction_max": 3.122316057397711,
+            "elapsed_seconds": 0.4695302920881659,
+            "maximum_abs_laplacian": 1467.203125,
+            "mean_layer_kernel_hit_fraction": 0.01883922517299652,
+            "final_layer_kernel_hit_fraction": 0.020938396453857422
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "alan-campbell",
+        "target_mean": 1.0038192681008649,
+        "equal_cost_baseline_mse": 5.815750856288212e-07,
+        "equal_cost_baseline_seconds": 0.0981528339907527,
+        "epsilons": [
+          {
+            "epsilon": 0.025,
+            "mse": 0.15851825071854853,
+            "prediction_mean": 1.1798948623801309,
+            "prediction_min": -0.3173324190048073,
+            "prediction_max": 8.661154294409698,
+            "elapsed_seconds": 0.37878708308562636,
+            "maximum_abs_laplacian": 2306.0869140625,
+            "mean_layer_kernel_hit_fraction": 0.01158885657787323,
+            "final_layer_kernel_hit_fraction": 0.007403850555419922
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "steven-williams",
+        "target_mean": 0.446949549716961,
+        "equal_cost_baseline_mse": 4.834179833531909e-07,
+        "equal_cost_baseline_seconds": 0.10244162520393729,
+        "epsilons": [
+          {
+            "epsilon": 0.025,
+            "mse": 0.24507593610163708,
+            "prediction_mean": 0.603216540960013,
+            "prediction_min": -0.7785555623192976,
+            "prediction_max": 2.978003729043877,
+            "elapsed_seconds": 0.42103541688993573,
+            "maximum_abs_laplacian": 3004.89892578125,
+            "mean_layer_kernel_hit_fraction": 0.016507357358932495,
+            "final_layer_kernel_hit_fraction": 0.015351295471191406
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "hannah-best",
+        "target_mean": 0.344167924982699,
+        "equal_cost_baseline_mse": 6.495613859613573e-07,
+        "equal_cost_baseline_seconds": 0.1097859579604119,
+        "epsilons": [
+          {
+            "epsilon": 0.025,
+            "mse": 0.3418956487486372,
+            "prediction_mean": 0.5770947682170307,
+            "prediction_min": -0.9931103422476548,
+            "prediction_max": 4.390442129700432,
+            "elapsed_seconds": 0.43917433312162757,
+            "maximum_abs_laplacian": 2262.809814453125,
+            "mean_layer_kernel_hit_fraction": 0.01790069043636322,
+            "final_layer_kernel_hit_fraction": 0.021490097045898438
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "thomas-parsons",
+        "target_mean": 0.8470430272961089,
+        "equal_cost_baseline_mse": 1.7200711356626858e-06,
+        "equal_cost_baseline_seconds": 0.12750812503509223,
+        "epsilons": [
+          {
+            "epsilon": 0.025,
+            "mse": 0.2904514057948607,
+            "prediction_mean": 1.0799305670141872,
+            "prediction_min": -0.38524070559141643,
+            "prediction_max": 8.057312315708941,
+            "elapsed_seconds": 0.48269729199819267,
+            "maximum_abs_laplacian": 3144.31591796875,
+            "mean_layer_kernel_hit_fraction": 0.01201598346233368,
+            "final_layer_kernel_hit_fraction": 0.009990215301513672
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "kenneth-frost",
+        "target_mean": 0.28002437274073577,
+        "equal_cost_baseline_mse": 3.9943177153148844e-07,
+        "equal_cost_baseline_seconds": 0.125795666128397,
+        "epsilons": [
+          {
+            "epsilon": 0.025,
+            "mse": 0.23154347349881865,
+            "prediction_mean": 0.42361702610082114,
+            "prediction_min": -1.025830848110522,
+            "prediction_max": 3.524172652366044,
+            "elapsed_seconds": 0.4785199591424316,
+            "maximum_abs_laplacian": 2301.0419921875,
+            "mean_layer_kernel_hit_fraction": 0.02180357277393341,
+            "final_layer_kernel_hit_fraction": 0.030628681182861328
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "name": "joseph-shaffer",
+        "target_mean": 0.3452233221390413,
+        "equal_cost_baseline_mse": 4.037411239601924e-07,
+        "equal_cost_baseline_seconds": 0.13712958293035626,
+        "epsilons": [
+          {
+            "epsilon": 0.025,
+            "mse": 0.1424663957686338,
+            "prediction_mean": 0.44847693581306414,
+            "prediction_min": -0.5947411507582651,
+            "prediction_max": 2.752341972565887,
+            "elapsed_seconds": 0.4743363328743726,
+            "maximum_abs_laplacian": 1568.133544921875,
+            "mean_layer_kernel_hit_fraction": 0.016461879014968872,
+            "final_layer_kernel_hit_fraction": 0.023797988891601562
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "name": "natasha-richardson",
+        "target_mean": 0.4372839595125395,
+        "equal_cost_baseline_mse": 8.897536485753823e-07,
+        "equal_cost_baseline_seconds": 0.13487762492150068,
+        "epsilons": [
+          {
+            "epsilon": 0.025,
+            "mse": 0.26295010449970796,
+            "prediction_mean": 0.6232465457951426,
+            "prediction_min": -0.9491933833132306,
+            "prediction_max": 3.2963098875551395,
+            "elapsed_seconds": 0.4857200840488076,
+            "maximum_abs_laplacian": 2209.24951171875,
+            "mean_layer_kernel_hit_fraction": 0.017383038997650146,
+            "final_layer_kernel_hit_fraction": 0.01547098159790039
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "name": "anne-clayton",
+        "target_mean": 0.291074155012385,
+        "equal_cost_baseline_mse": 4.596039797356348e-07,
+        "equal_cost_baseline_seconds": 0.12941495911218226,
+        "epsilons": [
+          {
+            "epsilon": 0.025,
+            "mse": 0.5053558541623746,
+            "prediction_mean": 0.6175994743320058,
+            "prediction_min": -0.7932954902572078,
+            "prediction_max": 4.621195784065321,
+            "elapsed_seconds": 0.5000100838951766,
+            "maximum_abs_laplacian": 2133.8876953125,
+            "mean_layer_kernel_hit_fraction": 0.020138949155807495,
+            "final_layer_kernel_hit_fraction": 0.02836465835571289
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "name": "jessica-benson",
+        "target_mean": 1.2998103533918033,
+        "equal_cost_baseline_mse": 5.992854103378212e-07,
+        "equal_cost_baseline_seconds": 0.12511287513189018,
+        "epsilons": [
+          {
+            "epsilon": 0.025,
+            "mse": 0.13323908372753063,
+            "prediction_mean": 1.4477428961044871,
+            "prediction_min": -0.46004226063455755,
+            "prediction_max": 10.48768802422812,
+            "elapsed_seconds": 0.4715273748151958,
+            "maximum_abs_laplacian": 1595.2137451171875,
+            "mean_layer_kernel_hit_fraction": 0.00859147310256958,
+            "final_layer_kernel_hit_fraction": 0.00705718994140625
+          }
+        ]
+      }
+    ]
+  }
+}

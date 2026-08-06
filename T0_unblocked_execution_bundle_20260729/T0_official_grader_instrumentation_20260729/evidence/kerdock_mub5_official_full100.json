@@ -1,0 +1,52 @@
+{
+  "method": "Kerdock maximal-real-MUB spherical 5-design",
+  "selection_protocol": {
+    "rotation_candidates": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "selection_ids": "0-49",
+    "selected_rotation_seed": 3,
+    "selection_raw_final_mse": 1.7587463296265153e-7,
+    "frozen_holdout_ids": "50-99",
+    "frozen_holdout_raw_final_mse": 2.806436961832838e-7
+  },
+  "official_full100": {
+    "dataset": "official_phase1_mini",
+    "split": "mini",
+    "whestbench_version": "0.13.0",
+    "flopscope_version": "0.9.1",
+    "networks": 100,
+    "failures": 0,
+    "raw_final_layer_mse": 2.28259132946107e-7,
+    "adjusted_score": 2.2565645893879035e-7,
+    "best_per_mlp_adjusted_score": 5.2609221015031975e-8,
+    "worst_per_mlp_adjusted_score": 1.3171255104589043e-6,
+    "mean_budget_multiplier": 0.9885991197858899,
+    "mean_effective_compute": 268898960581.762,
+    "tracked_flops_per_network": 268835176704,
+    "budget": 272000000000
+  },
+  "previous_best": {
+    "method": "two-nearfull RQMC blend",
+    "raw_final_layer_mse": 3.568094755e-7,
+    "adjusted_score": 3.460699463e-7
+  },
+  "improvement": {
+    "adjusted_score_reduction_fraction": 0.3479455198251339,
+    "adjusted_score_gain_factor": 1.5336141847101836,
+    "raw_mse_reduction_fraction": 0.3602772666666274
+  },
+  "package": {
+    "path": "submissions/kerdock_mub5/submission.tar.gz",
+    "sha256": "e60c0a686188f9fe030c1a3769b29859d539902d9a43be40e4b6f9883dd663ae",
+    "validation": "ok"
+  }
+}

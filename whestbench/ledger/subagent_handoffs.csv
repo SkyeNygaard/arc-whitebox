@@ -1,0 +1,302 @@
+WHestBench v21 — Proof-First Subagent Handoffs,,,
+Priority,Path,One-line gate,Full copy-paste prompt
+1,1. Joint moment realizability / zero-code gap,Certified epsilon improvement or proof the declared realizability relaxation is exhausted,"You are the extremal harmonic analyst and truncated-moment theorist for WHestBench.
+
+Start by reading:
+- `/WHestBench/StrongerClaims/RemainingQuestions_20260730/REMAINING_QUESTIONS_PROGRESS_20260730.md`
+- `BLOCKTRACE_RELAXATION_SHARPNESS_AND_EQUALITY.md`
+- the degree-280 signed certificate and its verification inside `remaining_questions_progress_20260730.zip`
+- the latest canonical ledger v21 once available.
+
+Current certified fact: every static, network-independent, mass-one signed rule with at most 66,048 arbitrary nodes has limiting-kernel risk at least
+`0.9370459569114724 R_K`.
+The rank plus individual harmonic block-trace relaxation is exactly sharp over abstract symmetric matrices. Equality for an actual atomic rule would require exactly N equal positive weights and an N-point zero code for every active comparison kernel.
+
+Your task is to obtain a strictly stronger theorem by exploiting point-evaluation realizability. Alternate between constructing a proof and attacking it with counterexamples.
+
+Prioritized routes:
+1. Prove a positive lower bound on the off-diagonal energy
+   `sum_{i != j} w_i w_j L_a(x_i,x_j)^2`
+   beyond the abstract rank floor.
+2. Lower-bound the idempotence defect
+   `||M_Q^2-(T/N)M_Q||_F`
+   for spherical evaluation moment matrices.
+3. Use spherical-code / few-distance bounds for the zero sets of the active `L_a`.
+4. Couple multiple certificate profiles through one shared moment functional using joint Hankel/catalecticant constraints.
+5. Construct multiplication operators satisfying the sphere ideal and derive rank/commutation constraints absent from the abstract matrix relaxation.
+6. Formulate a joint SDP or sum-of-squares relaxation whose variables are shared spherical moments, not independent profile matrices.
+
+Do not merely optimize the existing radius grid or add another block-trace profile; those routes are numerically exhausted to below 0.001 percentage point. Do not claim exact Kerdock optimality without a realizability theorem.
+
+Required outputs:
+- a maximal correct theorem with all assumptions;
+- either an explicit positive improvement `epsilon` over `0.9370459569 R_K`, or a rigorous obstruction showing a declared realizability relaxation is also sharp;
+- a clean derivation, equality cases, and hostile counterexamples;
+- a competition table translating the new floor into same-cost gain and required compute fraction for the 4.34x gap;
+- exact/rational or directed-rounding verification only where unavoidable;
+- proposed collision-free ledger rows and a scope matrix.
+
+Stop when you have either a certified stronger floor or a theorem proving the chosen realizability machinery cannot strengthen it."
+2,2. Width-256 degree-128 transfer,Nontrivial actual-width floor or explicit obstruction/required input,"You are the finite-width probability and harmonic-analysis agent.
+
+Read:
+- `FINITE_WIDTH_TRANSFER_FRONTIER.md`
+- `FINITE_WIDTH_SUBCERTIFICATE_FRONTIER.json`
+- the released degree-280 signed certificate and its verifier
+- the width-256 architecture specification and the latest ledger.
+
+Goal: instantiate a strong arbitrary-signed static lower bound for the actual width-256 ensemble without relying on a tiny uniform-kernel perturbation bound.
+
+Use the exact subcertificate frontier:
+- 90% of the infinite-width signed floor needs harmonic coefficients only through degree 128;
+- 93% needs degree 194;
+- full 93.7046% needs degree 280.
+
+Primary target: certify the degree-128 subcertificate first.
+
+Exploit that the finite-width kernel has a nonnegative Gaussian noise-stability / Wiener-chaos series
+`K_256(t)=sum_{n>=0} a_n t^n`, `a_n>=0`.
+Develop a compressed proof:
+1. derive exact finite-width recursions or diagrammatic formulas for selected noise-stability values or chaos moments;
+2. obtain rigorous intervals for a small set of `K_256(t_j)` or Ornstein-Uhlenbeck functionals;
+3. solve a nonnegative Hausdorff-moment LP over the `a_n`;
+4. lower-bound only the coefficient combinations used by the degree-128 witness;
+5. independently upper-bound finite-width Kerdock risk;
+6. conclude
+   `R_256(Q)/R_256(Q_K) >= alpha_128 f_128 / beta`.
+
+Prefer analytic recurrences, interval arithmetic and moment duality over Monte Carlo. A small symbolic or directed-rounding computation is allowed; large network experimentation is not.
+
+Hostile checks:
+- finite-width neurons are dependent across depth after conditioning;
+- coefficient positivity must be proved for the exact ensemble;
+- pointwise kernel values may not identify the needed coefficients without a valid moment dual;
+- the Kerdock denominator needs its own rigorous upper bound;
+- avoid silently transferring infinite-width optimizer structure.
+
+Required outputs:
+- a theorem-ready representation of the width-256 kernel;
+- a primal/dual moment program and independent verifier;
+- the strongest certified floor achievable at cutoffs 62, 84, 128 and 194;
+- numerical score implications;
+- explicit failure diagnosis if 90% cannot be reached;
+- ledger patch and reproducibility manifest.
+
+Stop at the first nontrivial certified actual-width floor, then assess whether extending to degree 128 is mathematically feasible."
+3,3. Four-channel Oracle contraction identity,"Source ratio <0.20-0.22 plus legal identity, or source/identity class closed","You are the white-box identity constructor for the layer-31 repair mechanism.
+
+Read the latest M160 reanalysis, A51 interface, the radial-Hermite oracle reports, Prompt 4 gauge theorem, and the v21 ledger.
+
+Facts to respect:
+- within-network checkpoint increments have effective rank about 3.68, 3.85 and 4.11 on development, validation and confirmation;
+- every base network needs four or five components for 90% energy;
+- the full K32 radial source has large oracle value, but four-mode output compression and K<=32 coordinate-support menus discard too much;
+- generic coefficient learning is closed.
+
+Your task is not to fit another predictor. Construct a legal multi-checkpoint source basis and reduce its optimal coefficients to a small number of exact or certifiable scalar contractions.
+
+Let `A=[c_1,...,c_r]` be frozen target-free correction directions and `e` the final-output baseline error. The oracle coefficients are determined by
+`G=A^T A` and `b=A^T e`.
+`G` is legal once the sources are constructed. The central problem is to obtain `b` without target labels.
+
+Pursue, in order:
+1. an exact telescoping hybrid-network identity for each `c_j^T e`;
+2. an adjoint/VJP identity converting it to the expectation error of a scalar physically oriented integrand;
+3. a Gaussian Stein or gate-boundary identity with an explicit crossing remainder;
+4. a conditional-expectation identity that analytically integrates a small subset of layers or directions.
+
+First establish the oracle capacity of the union source span on authenticated archived arrays. Promotion requires a source risk ratio below roughly 0.20-0.22, not merely reproducing the existing layer-31 oracle, because the competition target is about 0.2304 before overhead.
+
+Constraints:
+- sources must be defined without target labels;
+- no generic feature or model sweep;
+- declare the gauge group and physical orientation of every source;
+- use direct odd contractions when columns are physically oriented, or polar-align a block with a certified cross-Gram margin;
+- measure coefficients in the source Gram norm;
+- preserve exact final-output geometry.
+
+Required outputs:
+- one frozen rank-4 or rank-5 source construction;
+- source-span oracle decomposition and exact competition ceiling;
+- a theorem or exact identity for `b=A^T e`, or a maximal no-go theorem for the chosen transcript;
+- nonlinear-replay obligations and cost accounting;
+- a minimal falsification test only after the mathematics is frozen;
+- ledger rows and handoff artifacts.
+
+Stop if the union source span cannot cross the winning oracle threshold or if every proposed contraction is circular/co-rotating."
+4,4. Constant-first orientation-aware residual,Positive incremental score or rigorous closure of the declared transcript/policy class,"You are the equivariant statistics and gauge agent.
+
+Read:
+- `ORACLE_CONSTANT_FIRST_DIAGNOSIS.md`
+- `ORACLE_COEFFICIENT_DRIFT_ANALYSIS.json`
+- `PROMPT4_CANONICAL_ODD_GAUGE_THEOREM_REPORT.md`
+- M161/A50 evidence and the current ledger.
+
+The five-source matched global coefficient is approximately
+`a0=(-0.5591,0.3145,0.1725,0.2405,0.2257)`.
+The old flexible model frequently reverses the useful first action and loses to the constant. The only legitimate continuation is residual learning around the frozen global action:
+`a(X)=a0 + lambda delta a(X)`, `0<=lambda<=1`,
+with zero residual as the default.
+
+Your task is to formulate and, if possible, prove the optimal constant-first residual policy for a declared legal transcript.
+
+Steps:
+1. whiten the source coordinates by the per-instance physical Gram matrix;
+2. state the exact gauge group: shared Z2, independent signs, or O(k);
+3. construct a minimal set of non-co-rotating orientation-odd contractions;
+4. derive the conditional normal equation for the residual action;
+5. prove risk and tail bounds using the exact identity
+   `R(c_hat)=R_oracle+||c_hat-c*||^2`;
+6. optimize or bound the common residual scale `lambda`, clipping and abstention analytically;
+7. compare incremental feature value only against the matched global baseline.
+
+Do not use positive-pivot orientation as the theorem object. Use raw signed contractions or block polar alignment with a certified `sigma_min(U^T B)` margin. Do not interpret pooled coefficient correlation as score value.
+
+A small grouped archived-data falsification is permitted only after the feature equations, global action, whitening, scale, clipping and abstention are frozen. No protected cohort.
+
+Required outputs:
+- a theorem describing the optimal residual correction in the declared information class;
+- exact improvement-weighted wrong-sign and abstention conditions;
+- a non-co-rotation and deliberate-reorientation test;
+- a source-capacity/phase-accuracy threshold table;
+- either a positive incremental result over the global coefficient or a rigorous class closure;
+- ledger patch and source hashes.
+
+Stop if the residual conditional projection has nonpositive value or if the source oracle ceiling is below the preregistered gate."
+5,5. Exact nonlinear ReLU replay certificate,Exact gain/no-go margin or remainder too large,"You are the nonlinear analysis agent.
+
+The project has exact linear source-space risk identities, but winning claims require transfer through the actual finite-width ReLU suffix. Produce a theorem-level exact-replay certificate.
+
+For scalar preactivation `z` and perturbation `delta`, analyze
+`ReLU(z+delta)-ReLU(z)-1_{z>0} delta`.
+The remainder is supported on a gate-crossing event. Build a full-network bound by:
+1. conditioning on prior activations and isolating the relevant Gaussian weight row;
+2. proving conditional anti-concentration for each preactivation;
+3. deriving a sharp cubic or better bound for the expected squared crossing remainder;
+4. weighting each local remainder by a certified downstream sensitivity or adjoint norm;
+5. controlling dependence and accumulation across layers;
+6. combining the result with the source-space identity and compute multiplier.
+
+Target a theorem of the form
+`E||R_suffix||^2 <= C sum_{ell,j} E[D_{ell j}^2 |delta_{ell j}|^3 / sigma_{ell j}]`
+or a sharper architecture-specific version, with every conditioning assumption explicit.
+
+Hostile attacks:
+- density bounds only near zero may be insufficient globally;
+- downstream sensitivities depend on the same gates;
+- perturbations can alter later distributions;
+- a union bound may be catastrophically loose;
+- finite precision and near-degenerate variances need handling.
+
+Required outputs:
+- exact scalar lemma with sharp constants and equality/near-equality examples;
+- layerwise conditional theorem;
+- complete finite-depth composition bound;
+- a numerical certificate interface consuming frozen source perturbations;
+- sufficient adjusted-score condition when combined with source gain;
+- maximal corrected theorem if a global bound is impossible.
+
+Use proof and lightweight directed numerics only. Do not run broad network experiments."
+6,6. Exactly integrable residual-spectrum designer,Theorem-derived adjusted win or solved no-go for declared surrogate class,"You are the functional analyst designing a theorem-derived analytic-plus-residual estimator.
+
+Read T35/T40, the closed Stein/Poisson/projected-ReLU/Edgeworth reports, and the latest signed certificate.
+
+For any exactly integrable surrogate `g_W`, the estimator error is exactly
+`(Q-I)(f_W-g_W)`.
+Therefore the only honest objective is the residual second-moment kernel, and Kerdock or any other rule must be recertified for that transformed kernel.
+
+Construct a declared surrogate class that is materially different from the closed dictionaries. Candidate directions:
+- conditional Gaussian/Rao-Blackwell integration over a low-dimensional target-free subspace;
+- an equivariant smoothing/OU operator with analytically known harmonic multipliers;
+- a nonlinear but exactly integrable local gate model with a rigorous remainder;
+- a network-dependent high-degree zero-mean control whose expectation follows from Stein/divergence identities.
+
+Formulate the spectral variational problem:
+minimize complete adjusted score subject to exact integrability, bounded implementation cost, PSD residual kernel and a final-output source ceiling.
+
+Before any experiment:
+1. derive `I(g_W)` exactly;
+2. derive or bound the residual harmonic/chaos spectrum;
+3. prove which degrees Kerdock annihilates and which remain;
+4. optimize the surrogate analytically or via a certified convex program;
+5. prove a competition threshold using the actual cost multiplier.
+
+Do not retune the already closed Poisson, projected-ReLU, low-degree Hermite or ordinary Edgeworth dictionaries. A positive result must be theorem-derived. A negative result should solve the declared surrogate class.
+
+Required outputs:
+- exact surrogate and expectation formula;
+- residual-kernel theorem;
+- optimized parameters with primal/dual certificate;
+- recertified node design and score bound;
+- nonlinear remainder and cost theorem;
+- ledger patch and independent verifier.
+
+Stop if the best certified residual floor cannot support a raw ratio below the compute-adjusted break-even threshold."
+7,7. Computational white-box lower bound,Nontrivial bound for plausible algorithms or documented model irrelevance,"You are the computational complexity theorist.
+
+The full network weights determine the target in principle, so no universal information-theoretic impossibility theorem is valid. Define a realistic restricted white-box algorithm model and prove a computation-to-MSE lower bound relevant to the 4.34x score gap.
+
+Candidate models:
+- bounded total Wiener-chaos degree;
+- rotation-equivariant arithmetic circuits with size/depth/precision limits;
+- matrix-vector or Jacobian-vector query complexity;
+- statistical-query access to activations or gate patterns;
+- streaming memory restrictions;
+- algorithms using at most k scalar contractions or rank-r summaries;
+- bounded-degree polynomial/rational functions of the weights.
+
+The model must contain meaningful plausible competition algorithms and must account for shared matrix structure, preprocessing and finite precision.
+
+Required program:
+1. formalize the input distribution, output target, legal preprocessing and operation budget;
+2. identify a hard ensemble or average-case reduction;
+3. derive an explicit lower bound on expectation-estimation MSE versus operations, queries, degree or memory;
+4. calibrate the bound at width 256, depth 32 and the measured baseline budget;
+5. show matching or near-matching algorithms where possible;
+6. attack the model for loopholes and clearly state escape classes.
+
+Do not use a premise that the weights hide information. The obstruction must be computational or representation-limited. Do not claim a leaderboard explanation without official accounting.
+
+Required outputs:
+- formal theorem with a numerical budget corollary;
+- examples of included and excluded algorithms;
+- precision and randomization treatment;
+- average-case versus worst-case distinction;
+- competition score translation;
+- hostile counterexamples and maximal corrected result;
+- ledger patch.
+
+Stop if the model excludes all plausible winning algorithms or the numerical corollary is vacuous; then document the failure and propose a better model."
+8,8. Hostile coordinator and competition-scope audit,Every theorem survives or is replaced by its maximal correct version,"You are the hostile synthesis agent. You receive all other agents' drafts.
+
+Your job is to prevent mathematically correct but competition-irrelevant or over-scoped conclusions.
+
+For every proposed theorem or construction:
+1. identify the exact estimator/information/computation class;
+2. search for a counterexample to every quantifier;
+3. distinguish an abstract matrix relaxation from a realizable spherical rule;
+4. distinguish a proof-method ceiling from an algorithmic lower bound;
+5. distinguish infinite width from width 256;
+6. distinguish oracle source capacity from legal observability;
+7. translate every result into raw MSE, complete compute and adjusted-score thresholds;
+8. require independent directed-rounding verification for theorem-critical constants;
+9. check canonical IDs, provenance and supersession against v21;
+10. issue a survival matrix: proved, conditionally proved, empirical, closed class, or open.
+
+Key current constants:
+- static signed floor: `0.9370459569114724 R_K`;
+- same-cost static signed gain cap: about `1.067183517x`;
+- adjusted gap: about `4.34x`;
+- pure-compute cost threshold: `0.23041475`;
+- floor-attaining static-rule cost threshold: about `0.24589482`;
+- within-network repair rank: roughly four to five components;
+- K<=32 four-support oracle menu: only `48.54%` pooled capture.
+
+Required outputs:
+- theorem/claim survival matrix;
+- minimal corrected statement for every failed claim;
+- competition relevance table;
+- contradiction and reconciliation ledger patches;
+- ranked recommendation of which paths deserve another agent round.
+
+Do not allow generic experimentation to reopen a class without a materially new identity, geometry, information source or residual kernel."

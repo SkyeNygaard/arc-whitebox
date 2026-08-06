@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "special_box_order_verified": true,
+  "curvature_region_signs": [
+    "negative",
+    "positive",
+    "positive",
+    "negative",
+    "negative",
+    "positive",
+    "positive",
+    "negative",
+    "negative"
+  ],
+  "derived_connecting_region_signs": [
+    {
+      "region": 0,
+      "curvature": "negative",
+      "gprime_sign": "negative"
+    },
+    {
+      "region": 1,
+      "curvature": "positive",
+      "gprime_sign": "negative"
+    },
+    {
+      "region": 2,
+      "curvature": "positive",
+      "gprime_sign": "positive"
+    },
+    {
+      "region": 3,
+      "curvature": "negative",
+      "gprime_sign": "positive"
+    },
+    {
+      "region": 4,
+      "curvature": "negative",
+      "gprime_sign": "negative"
+    },
+    {
+      "region": 5,
+      "curvature": "positive",
+      "gprime_sign": "negative"
+    },
+    {
+      "region": 6,
+      "curvature": "positive",
+      "gprime_sign": "positive"
+    },
+    {
+      "region": 7,
+      "curvature": "negative",
+      "gprime_sign": "positive"
+    },
+    {
+      "region": 8,
+      "curvature": "negative",
+      "gprime_sign": "negative"
+    }
+  ],
+  "left_tail_gprime_sign": "positive",
+  "right_tail_gprime_sign": "negative",
+  "only_interior_maximum_boxes": [
+    0,
+    2,
+    4
+  ],
+  "candidate_maximum_bounds": [
+    {
+      "critical_box": 0,
+      "g_upper": "-1.006381225140822106958480467939964383163637139821963921E-13"
+    },
+    {
+      "critical_box": 2,
+      "g_upper": "-1.004586240658455604403124565024659239239177837259174401E-13"
+    },
+    {
+      "critical_box": 4,
+      "g_upper": "-1.006076192704191719337187722901912947809913469492792329E-13"
+    }
+  ],
+  "endpoint_bounds": [
+    {
+      "name": "left",
+      "left": "-1",
+      "right": "-9999999/10000000",
+      "g_upper": "-2.205091577204745461908195008385380517601245973581E-7"
+    },
+    {
+      "name": "right",
+      "left": "9999999/10000000",
+      "right": "1",
+      "g_upper": "-0.0170217945708778150896577001006134382668800048535828331"
+    }
+  ],
+  "conclusion": "The certified curvature and endpoint signs force exactly five stationary transitions (max,min,max,min,max). g is negative at all three possible interior maxima and both endpoint boxes; hence g=h-K<0 on [-1,1]."
+}

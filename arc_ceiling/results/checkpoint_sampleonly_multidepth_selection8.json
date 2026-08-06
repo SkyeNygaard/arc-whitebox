@@ -1,0 +1,4236 @@
+{
+  "protocol": {
+    "indices": [
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167
+    ],
+    "checkpoints": [
+      12,
+      16,
+      24,
+      27
+    ],
+    "target_layer": 29,
+    "rotation_seed": 3,
+    "rank": 4,
+    "control_ranks": [
+      2
+    ],
+    "folds": 6,
+    "ridge": 0.1,
+    "transport_ridge": 1e-12,
+    "transport_source": "oracle_gates",
+    "cheap_basis_ids": {},
+    "defect_scales": [],
+    "sample_only_scales": [
+      0.75,
+      1.0,
+      1.25,
+      1.5,
+      1.75,
+      2.0,
+      2.5,
+      3.0
+    ],
+    "skip_factorized_base": true,
+    "factor_root": "/Users/skyenygaard/Programming/AI-Safety/arc_ceiling/results/factorized_k3_checkpoint_factors_smoke2",
+    "compact_state_dir": null,
+    "oracle_target_marginals": true,
+    "uses_target_layer_state_for_correction": false,
+    "uses_final_targets_for_construction": false
+  },
+  "summary": {
+    "oracle_r2": {
+      "mse_ratio": 0.5955574050851918,
+      "wins": 8,
+      "worst": 0.9000534306485103,
+      "mean_anchor_error_relative_to_same_cloud": 0.0
+    },
+    "sample_r2": {
+      "mse_ratio": 0.972071382805405,
+      "wins": 6,
+      "worst": 1.0144776614214155,
+      "mean_anchor_error_relative_to_same_cloud": 1.0
+    },
+    "checkpoint12_full_sampleonly_scale0.75_r2": {
+      "mse_ratio": 9.856186136977197,
+      "wins": 0,
+      "worst": 25.73600783518018,
+      "mean_anchor_error_relative_to_same_cloud": 2.131239987180756
+    },
+    "checkpoint12_full_sampleonly_scale1_r2": {
+      "mse_ratio": 6.970444593605782,
+      "wins": 0,
+      "worst": 14.144170163696522,
+      "mean_anchor_error_relative_to_same_cloud": 1.5810491731687484
+    },
+    "checkpoint12_full_sampleonly_scale1.25_r2": {
+      "mse_ratio": 4.855839306784853,
+      "wins": 0,
+      "worst": 9.425999611221872,
+      "mean_anchor_error_relative_to_same_cloud": 1.0411703806124544
+    },
+    "checkpoint12_full_sampleonly_scale1.5_r2": {
+      "mse_ratio": 3.391477078371855,
+      "wins": 0,
+      "worst": 7.594985947930951,
+      "mean_anchor_error_relative_to_same_cloud": 0.7385927122686242
+    },
+    "checkpoint12_full_sampleonly_scale1.75_r2": {
+      "mse_ratio": 2.46702512009619,
+      "wins": 1,
+      "worst": 6.060425189100982,
+      "mean_anchor_error_relative_to_same_cloud": 0.7645723211241722
+    },
+    "checkpoint12_full_sampleonly_scale2_r2": {
+      "mse_ratio": 1.982792646948189,
+      "wins": 3,
+      "worst": 4.804171699840072,
+      "mean_anchor_error_relative_to_same_cloud": 1.027868971780065
+    },
+    "checkpoint12_full_sampleonly_scale2.5_r2": {
+      "mse_ratio": 1.9898432669854287,
+      "wins": 2,
+      "worst": 6.573404445923528,
+      "mean_anchor_error_relative_to_same_cloud": 1.845269060412638
+    },
+    "checkpoint12_full_sampleonly_scale3_r2": {
+      "mse_ratio": 2.8303272608972843,
+      "wins": 3,
+      "worst": 11.664278088974438,
+      "mean_anchor_error_relative_to_same_cloud": 2.910146278297958
+    },
+    "checkpoint16_full_sampleonly_scale0.75_r2": {
+      "mse_ratio": 6.774339486122499,
+      "wins": 0,
+      "worst": 15.475101987617045,
+      "mean_anchor_error_relative_to_same_cloud": 1.909254509202617
+    },
+    "checkpoint16_full_sampleonly_scale1_r2": {
+      "mse_ratio": 3.997586247524597,
+      "wins": 0,
+      "worst": 7.72558178875847,
+      "mean_anchor_error_relative_to_same_cloud": 1.2847288565878343
+    },
+    "checkpoint16_full_sampleonly_scale1.25_r2": {
+      "mse_ratio": 2.2759348213808055,
+      "wins": 1,
+      "worst": 5.431698514693788,
+      "mean_anchor_error_relative_to_same_cloud": 0.6878657955394905
+    },
+    "checkpoint16_full_sampleonly_scale1.5_r2": {
+      "mse_ratio": 1.3598667523742998,
+      "wins": 3,
+      "worst": 3.6962134520413965,
+      "mean_anchor_error_relative_to_same_cloud": 0.4678124194111655
+    },
+    "checkpoint16_full_sampleonly_scale1.75_r2": {
+      "mse_ratio": 1.0387373850618493,
+      "wins": 5,
+      "worst": 2.4631198207773366,
+      "mean_anchor_error_relative_to_same_cloud": 0.7322230729191155
+    },
+    "checkpoint16_full_sampleonly_scale2_r2": {
+      "mse_ratio": 1.1410515045197116,
+      "wins": 5,
+      "worst": 3.9217432423560266,
+      "mean_anchor_error_relative_to_same_cloud": 1.275312276653663
+    },
+    "checkpoint16_full_sampleonly_scale2.5_r2": {
+      "mse_ratio": 2.126880090783452,
+      "wins": 1,
+      "worst": 6.087135310092782,
+      "mean_anchor_error_relative_to_same_cloud": 2.51570117608482
+    },
+    "checkpoint16_full_sampleonly_scale3_r2": {
+      "mse_ratio": 3.7338928789261727,
+      "wins": 1,
+      "worst": 10.346116352915633,
+      "mean_anchor_error_relative_to_same_cloud": 3.769716425858441
+    },
+    "checkpoint24_full_sampleonly_scale0.75_r2": {
+      "mse_ratio": 3.6174803501110406,
+      "wins": 0,
+      "worst": 10.837506150210716,
+      "mean_anchor_error_relative_to_same_cloud": 1.5200366848461546
+    },
+    "checkpoint24_full_sampleonly_scale1_r2": {
+      "mse_ratio": 1.4632638569685286,
+      "wins": 2,
+      "worst": 3.5506435313442313,
+      "mean_anchor_error_relative_to_same_cloud": 0.7645176555631734
+    },
+    "checkpoint24_full_sampleonly_scale1.25_r2": {
+      "mse_ratio": 0.6905307142210008,
+      "wins": 7,
+      "worst": 1.2327070043010133,
+      "mean_anchor_error_relative_to_same_cloud": 0.12436337774008589
+    },
+    "checkpoint24_full_sampleonly_scale1.5_r2": {
+      "mse_ratio": 0.846384112116754,
+      "wins": 4,
+      "worst": 1.5264802368193209,
+      "mean_anchor_error_relative_to_same_cloud": 0.7621603868186535
+    },
+    "checkpoint24_full_sampleonly_scale1.75_r2": {
+      "mse_ratio": 1.5865391856953799,
+      "wins": 1,
+      "worst": 3.0150835112912393,
+      "mean_anchor_error_relative_to_same_cloud": 1.5162326339137517
+    },
+    "checkpoint24_full_sampleonly_scale2_r2": {
+      "mse_ratio": 2.675931370601185,
+      "wins": 1,
+      "worst": 4.942032569556182,
+      "mean_anchor_error_relative_to_same_cloud": 2.2729185690607454
+    },
+    "checkpoint24_full_sampleonly_scale2.5_r2": {
+      "mse_ratio": 5.509683298091518,
+      "wins": 0,
+      "worst": 10.003627488149462,
+      "mean_anchor_error_relative_to_same_cloud": 3.7875816709628642
+    },
+    "checkpoint24_full_sampleonly_scale3_r2": {
+      "mse_ratio": 9.65451079205999,
+      "wins": 0,
+      "worst": 15.47435521259812,
+      "mean_anchor_error_relative_to_same_cloud": 5.302701646611263
+    },
+    "checkpoint27_full_sampleonly_scale0.75_r2": {
+      "mse_ratio": 2.495973166557453,
+      "wins": 0,
+      "worst": 5.669424470455204,
+      "mean_anchor_error_relative_to_same_cloud": 1.383321875198091
+    },
+    "checkpoint27_full_sampleonly_scale1_r2": {
+      "mse_ratio": 0.8937577673217201,
+      "wins": 4,
+      "worst": 1.4984633984360332,
+      "mean_anchor_error_relative_to_same_cloud": 0.5811931257006422
+    },
+    "checkpoint27_full_sampleonly_scale1.25_r2": {
+      "mse_ratio": 0.6720166729550234,
+      "wins": 7,
+      "worst": 1.2449129043806035,
+      "mean_anchor_error_relative_to_same_cloud": 0.23597962571518918
+    },
+    "checkpoint27_full_sampleonly_scale1.5_r2": {
+      "mse_ratio": 1.2841474223513956,
+      "wins": 2,
+      "worst": 2.7798167225472223,
+      "mean_anchor_error_relative_to_same_cloud": 1.0271031421837598
+    },
+    "checkpoint27_full_sampleonly_scale1.75_r2": {
+      "mse_ratio": 2.416342700345597,
+      "wins": 1,
+      "worst": 4.943583106936594,
+      "mean_anchor_error_relative_to_same_cloud": 1.8296219450640725
+    },
+    "checkpoint27_full_sampleonly_scale2_r2": {
+      "mse_ratio": 3.98798902569818,
+      "wins": 1,
+      "worst": 7.493968676742466,
+      "mean_anchor_error_relative_to_same_cloud": 2.6324068310111093
+    },
+    "checkpoint27_full_sampleonly_scale2.5_r2": {
+      "mse_ratio": 9.288157100098811,
+      "wins": 0,
+      "worst": 19.358425690642385,
+      "mean_anchor_error_relative_to_same_cloud": 4.238162082222496
+    },
+    "checkpoint27_full_sampleonly_scale3_r2": {
+      "mse_ratio": 21.15253992057222,
+      "wins": 0,
+      "worst": 93.4376817933262,
+      "mean_anchor_error_relative_to_same_cloud": 5.843993199026427
+    }
+  },
+  "method_to_anchor": {
+    "oracle_r2": "oracle",
+    "sample_r2": "sample",
+    "checkpoint12_full_sampleonly_scale0.75_r2": "checkpoint12_full_sampleonly_scale0.75",
+    "checkpoint12_full_sampleonly_scale1_r2": "checkpoint12_full_sampleonly_scale1",
+    "checkpoint12_full_sampleonly_scale1.25_r2": "checkpoint12_full_sampleonly_scale1.25",
+    "checkpoint12_full_sampleonly_scale1.5_r2": "checkpoint12_full_sampleonly_scale1.5",
+    "checkpoint12_full_sampleonly_scale1.75_r2": "checkpoint12_full_sampleonly_scale1.75",
+    "checkpoint12_full_sampleonly_scale2_r2": "checkpoint12_full_sampleonly_scale2",
+    "checkpoint12_full_sampleonly_scale2.5_r2": "checkpoint12_full_sampleonly_scale2.5",
+    "checkpoint12_full_sampleonly_scale3_r2": "checkpoint12_full_sampleonly_scale3",
+    "checkpoint16_full_sampleonly_scale0.75_r2": "checkpoint16_full_sampleonly_scale0.75",
+    "checkpoint16_full_sampleonly_scale1_r2": "checkpoint16_full_sampleonly_scale1",
+    "checkpoint16_full_sampleonly_scale1.25_r2": "checkpoint16_full_sampleonly_scale1.25",
+    "checkpoint16_full_sampleonly_scale1.5_r2": "checkpoint16_full_sampleonly_scale1.5",
+    "checkpoint16_full_sampleonly_scale1.75_r2": "checkpoint16_full_sampleonly_scale1.75",
+    "checkpoint16_full_sampleonly_scale2_r2": "checkpoint16_full_sampleonly_scale2",
+    "checkpoint16_full_sampleonly_scale2.5_r2": "checkpoint16_full_sampleonly_scale2.5",
+    "checkpoint16_full_sampleonly_scale3_r2": "checkpoint16_full_sampleonly_scale3",
+    "checkpoint24_full_sampleonly_scale0.75_r2": "checkpoint24_full_sampleonly_scale0.75",
+    "checkpoint24_full_sampleonly_scale1_r2": "checkpoint24_full_sampleonly_scale1",
+    "checkpoint24_full_sampleonly_scale1.25_r2": "checkpoint24_full_sampleonly_scale1.25",
+    "checkpoint24_full_sampleonly_scale1.5_r2": "checkpoint24_full_sampleonly_scale1.5",
+    "checkpoint24_full_sampleonly_scale1.75_r2": "checkpoint24_full_sampleonly_scale1.75",
+    "checkpoint24_full_sampleonly_scale2_r2": "checkpoint24_full_sampleonly_scale2",
+    "checkpoint24_full_sampleonly_scale2.5_r2": "checkpoint24_full_sampleonly_scale2.5",
+    "checkpoint24_full_sampleonly_scale3_r2": "checkpoint24_full_sampleonly_scale3",
+    "checkpoint27_full_sampleonly_scale0.75_r2": "checkpoint27_full_sampleonly_scale0.75",
+    "checkpoint27_full_sampleonly_scale1_r2": "checkpoint27_full_sampleonly_scale1",
+    "checkpoint27_full_sampleonly_scale1.25_r2": "checkpoint27_full_sampleonly_scale1.25",
+    "checkpoint27_full_sampleonly_scale1.5_r2": "checkpoint27_full_sampleonly_scale1.5",
+    "checkpoint27_full_sampleonly_scale1.75_r2": "checkpoint27_full_sampleonly_scale1.75",
+    "checkpoint27_full_sampleonly_scale2_r2": "checkpoint27_full_sampleonly_scale2",
+    "checkpoint27_full_sampleonly_scale2.5_r2": "checkpoint27_full_sampleonly_scale2.5",
+    "checkpoint27_full_sampleonly_scale3_r2": "checkpoint27_full_sampleonly_scale3"
+  },
+  "records": [
+    {
+      "index": 160,
+      "name": "amy-scott",
+      "baseline_mse": 2.1440298520066416e-07,
+      "method_mses": {
+        "oracle_r2": 1.9297414237113956e-07,
+        "sample_r2": 2.0991739926806349e-07,
+        "checkpoint12_full_sampleonly_scale0.75_r2": 2.7420336714825657e-06,
+        "checkpoint12_full_sampleonly_scale1_r2": 2.123078699194039e-06,
+        "checkpoint12_full_sampleonly_scale1.25_r2": 1.6050249284322558e-06,
+        "checkpoint12_full_sampleonly_scale1.5_r2": 1.1804839182884163e-06,
+        "checkpoint12_full_sampleonly_scale1.75_r2": 8.423081913308379e-07,
+        "checkpoint12_full_sampleonly_scale2_r2": 5.835925226458804e-07,
+        "checkpoint12_full_sampleonly_scale2.5_r2": 2.7813905860666686e-07,
+        "checkpoint12_full_sampleonly_scale3_r2": 2.1377216461304036e-07,
+        "checkpoint16_full_sampleonly_scale0.75_r2": 1.7173078497599796e-06,
+        "checkpoint16_full_sampleonly_scale1_r2": 1.0534666442555224e-06,
+        "checkpoint16_full_sampleonly_scale1.25_r2": 5.952335738485319e-07,
+        "checkpoint16_full_sampleonly_scale1.5_r2": 3.1216297022870036e-07,
+        "checkpoint16_full_sampleonly_scale1.75_r2": 1.7615636301513537e-07,
+        "checkpoint16_full_sampleonly_scale2_r2": 1.6147776923806512e-07,
+        "checkpoint16_full_sampleonly_scale2.5_r2": 4.0505277028428176e-07,
+        "checkpoint16_full_sampleonly_scale3_r2": 8.847217572326987e-07,
+        "checkpoint24_full_sampleonly_scale0.75_r2": 6.464448566737024e-07,
+        "checkpoint24_full_sampleonly_scale1_r2": 2.3435455957214987e-07,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 1.625409331524618e-07,
+        "checkpoint24_full_sampleonly_scale1.5_r2": 3.272819196238792e-07,
+        "checkpoint24_full_sampleonly_scale1.75_r2": 6.464429054501421e-07,
+        "checkpoint24_full_sampleonly_scale2_r2": 1.0595865358717544e-06,
+        "checkpoint24_full_sampleonly_scale2.5_r2": 2.0348834722847547e-06,
+        "checkpoint24_full_sampleonly_scale3_r2": 3.204785004340762e-06,
+        "checkpoint27_full_sampleonly_scale0.75_r2": 4.2304187706611933e-07,
+        "checkpoint27_full_sampleonly_scale1_r2": 1.6503169424347805e-07,
+        "checkpoint27_full_sampleonly_scale1.25_r2": 2.669130430140304e-07,
+        "checkpoint27_full_sampleonly_scale1.5_r2": 5.960010036248508e-07,
+        "checkpoint27_full_sampleonly_scale1.75_r2": 1.0599189757147799e-06,
+        "checkpoint27_full_sampleonly_scale2_r2": 1.6067292552938558e-06,
+        "checkpoint27_full_sampleonly_scale2.5_r2": 2.943406247491926e-06,
+        "checkpoint27_full_sampleonly_scale3_r2": 4.996652081316992e-06
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.0013787339988902136,
+            -3.333512224926172e-05,
+            8.541322933269466e-06,
+            6.8103768742556504e-06
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 2.771795134055628,
+          "error": [
+            -0.0037517295777447224,
+            -0.0005767361589393751,
+            -0.0004059749752233187,
+            -0.00020229328617513056
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 2.3434958011192872,
+          "error": [
+            -0.003158718386629511,
+            -0.0005330910712309858,
+            -0.00039019112217480566,
+            -0.00018042367424916982
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 1.916668815170728,
+          "error": [
+            -0.002565707195516742,
+            -0.0004894459835226104,
+            -0.00037440726912630305,
+            -0.00015855406232320257
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 1.4925778360656032,
+          "error": [
+            -0.001972696004402419,
+            -0.0004458008958142367,
+            -0.0003586234160777822,
+            -0.00013668445039723143
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 1.0744674582637885,
+          "error": [
+            -0.0013796848132880957,
+            -0.0004021558081058717,
+            -0.0003428395630292406,
+            -0.00011481483847126809
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 0.6735684920701023,
+          "error": [
+            -0.0007866736221748827,
+            -0.0003585107203974893,
+            -0.0003270557099807397,
+            -9.294522654530301e-05
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 0.41193484952309883,
+          "error": [
+            0.00039934876005376374,
+            -0.0002712205449807593,
+            -0.0002954880038837015,
+            -4.9206002693372424e-05
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 1.1729347880180787,
+          "error": [
+            0.0015853711422826322,
+            -0.00018393036956399975,
+            -0.00026392029778665813,
+            -5.466778841439236e-06
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 2.376872614214846,
+          "error": [
+            -0.0032206089430870666,
+            -0.00047824224539789496,
+            -0.00033967313822383903,
+            -0.00017250439920649292
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 1.8166577844848053,
+          "error": [
+            -0.0024505575404203395,
+            -0.00040176585317570034,
+            -0.0003017886728421508,
+            -0.00014070515829098804
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 1.2582433874862218,
+          "error": [
+            -0.0016805061377540564,
+            -0.00032528946095349183,
+            -0.0002639042074604617,
+            -0.0001089059173754619
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.7059151314959888,
+          "error": [
+            -0.0009104547350891057,
+            -0.00024881306873131975,
+            -0.00022601974207879776,
+            -7.710667645996049e-05
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 0.2136931400213098,
+          "error": [
+            -0.00014040333242282266,
+            -0.00017233667650911819,
+            -0.000188135276697113,
+            -4.530743554445821e-05
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 0.4745757872116477,
+          "error": [
+            0.0006296480702447926,
+            -9.586028428691142e-05,
+            -0.0001502508113154161,
+            -1.3508194628945088e-05
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 1.5751074632313848,
+          "error": [
+            0.0021697508755758044,
+            5.709250015746223e-05,
+            -7.448188055204745e-05,
+            5.009028720208463e-05
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 2.6954666018407605,
+          "error": [
+            0.0037098536809088145,
+            0.0002100452846018324,
+            1.28705021131513e-06,
+            0.00011368876903309786
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 1.6546359468482719,
+          "error": [
+            -0.0022470483213807846,
+            -0.0003120047753783252,
+            -0.00022089428150780157,
+            -0.00011110478808310691
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 0.8532039786018139,
+          "error": [
+            -0.0011524767114792223,
+            -0.0001801158931496183,
+            -0.00014341686388745067,
+            -5.883901012646237e-05
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.07276040190540811,
+          "error": [
+            -5.790510157654971e-05,
+            -4.822701092091139e-05,
+            -6.59394462671041e-05,
+            -6.573232169823032e-06
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.7548716828404058,
+          "error": [
+            0.0010366665083250126,
+            8.366187130780418e-05,
+            1.1537971353264148e-05,
+            4.569254578682021e-05
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 1.556138995561045,
+          "error": [
+            0.002131238118225909,
+            0.00021555075353652496,
+            8.901538897359944e-05,
+            9.79583237434513e-05
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 2.3580725230457737,
+          "error": [
+            0.0032258097281279152,
+            0.00034743963576524227,
+            0.00016649280659396162,
+            0.00015022410170010365
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 3.96232019507168,
+          "error": [
+            0.005414952947931706,
+            0.0006112174002226804,
+            0.00032144764183467817,
+            0.0002547556576133858
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 5.566709725731051,
+          "error": [
+            0.007604096167736385,
+            0.000874995164680108,
+            0.0004764024770753921,
+            0.00035928721352666013
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 1.4221647598553067,
+          "error": [
+            -0.0019374722359410956,
+            -0.00024645095950289776,
+            -0.00015312491830772167,
+            -9.586550702588058e-05
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 0.5426220454963784,
+          "error": [
+            -0.0007397085975586748,
+            -9.271080531571274e-05,
+            -5.305771295401659e-05,
+            -3.8519968716826686e-05
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.33706191522269785,
+          "error": [
+            0.000458055040823524,
+            6.1029348871477485e-05,
+            4.700949239969197e-05,
+            1.882556959220986e-05
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 1.2165807640589394,
+          "error": [
+            0.0016558186792055007,
+            0.00021476950305869026,
+            0.00014707669775343088,
+            7.617110790126549e-05
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 2.096142348843006,
+          "error": [
+            0.0028535823175876995,
+            0.00036850965724588396,
+            0.0002471439031071377,
+            0.00013351664621031765
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 2.9757087740725447,
+          "error": [
+            0.004051345955968566,
+            0.0005222498114330464,
+            0.00034721110846085666,
+            0.00019086218451936547
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 4.734845355670569,
+          "error": [
+            0.006446873232733852,
+            0.0008297301198074373,
+            0.0005473455191682755,
+            0.0003055532611374663
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 6.493983543058132,
+          "error": [
+            0.008842400509495585,
+            0.0011372104281818316,
+            0.0007474799298757134,
+            0.0004202443377555507
+          ]
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint12_full_sampleonly_scale0.75": {
+          "relative_error": 0.6882093558958885,
+          "norm_ratio": 0.33069797888173613
+        },
+        "checkpoint12_full_sampleonly_scale1": {
+          "relative_error": 0.5888812390605562,
+          "norm_ratio": 0.4409306385089815
+        },
+        "checkpoint12_full_sampleonly_scale1.25": {
+          "relative_error": 0.4941989360463565,
+          "norm_ratio": 0.5511632981362269
+        },
+        "checkpoint12_full_sampleonly_scale1.5": {
+          "relative_error": 0.4074144591913715,
+          "norm_ratio": 0.6613959577634723
+        },
+        "checkpoint12_full_sampleonly_scale1.75": {
+          "relative_error": 0.3347282079897613,
+          "norm_ratio": 0.7716286173907175
+        },
+        "checkpoint12_full_sampleonly_scale2": {
+          "relative_error": 0.2870572824139258,
+          "norm_ratio": 0.881861277017963
+        },
+        "checkpoint12_full_sampleonly_scale2.5": {
+          "relative_error": 0.30988246030310934,
+          "norm_ratio": 1.1023265962724538
+        },
+        "checkpoint12_full_sampleonly_scale3": {
+          "relative_error": 0.4548211835525221,
+          "norm_ratio": 1.3227919155269445
+        },
+        "checkpoint16_full_sampleonly_scale0.75": {
+          "relative_error": 0.5933135753613066,
+          "norm_ratio": 0.42572842396198846
+        },
+        "checkpoint16_full_sampleonly_scale1": {
+          "relative_error": 0.46538284698047083,
+          "norm_ratio": 0.5676378986159847
+        },
+        "checkpoint16_full_sampleonly_scale1.25": {
+          "relative_error": 0.34845083987906567,
+          "norm_ratio": 0.7095473732699807
+        },
+        "checkpoint16_full_sampleonly_scale1.5": {
+          "relative_error": 0.2579367739473195,
+          "norm_ratio": 0.8514568479239769
+        },
+        "checkpoint16_full_sampleonly_scale1.75": {
+          "relative_error": 0.22786260967833508,
+          "norm_ratio": 0.9933663225779731
+        },
+        "checkpoint16_full_sampleonly_scale2": {
+          "relative_error": 0.2785461477343356,
+          "norm_ratio": 1.1352757972319694
+        },
+        "checkpoint16_full_sampleonly_scale2.5": {
+          "relative_error": 0.49975086338445834,
+          "norm_ratio": 1.4190947465399615
+        },
+        "checkpoint16_full_sampleonly_scale3": {
+          "relative_error": 0.7635576510401623,
+          "norm_ratio": 1.7029136958479538
+        },
+        "checkpoint24_full_sampleonly_scale0.75": {
+          "relative_error": 0.41474988283091396,
+          "norm_ratio": 0.5972439331594518
+        },
+        "checkpoint24_full_sampleonly_scale1": {
+          "relative_error": 0.23357388706839846,
+          "norm_ratio": 0.7963252442126023
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.12791713315075381,
+          "norm_ratio": 0.9954065552657532
+        },
+        "checkpoint24_full_sampleonly_scale1.5": {
+          "relative_error": 0.2396571759995035,
+          "norm_ratio": 1.1944878663189036
+        },
+        "checkpoint24_full_sampleonly_scale1.75": {
+          "relative_error": 0.4216338078046979,
+          "norm_ratio": 1.3935691773720542
+        },
+        "checkpoint24_full_sampleonly_scale2": {
+          "relative_error": 0.6143136906996323,
+          "norm_ratio": 1.5926504884252046
+        },
+        "checkpoint24_full_sampleonly_scale2.5": {
+          "relative_error": 1.0071712895228302,
+          "norm_ratio": 1.9908131105315063
+        },
+        "checkpoint24_full_sampleonly_scale3": {
+          "relative_error": 1.4030230395764307,
+          "norm_ratio": 2.388975732637807
+        },
+        "checkpoint27_full_sampleonly_scale0.75": {
+          "relative_error": 0.3543788496051631,
+          "norm_ratio": 0.6516500476035361
+        },
+        "checkpoint27_full_sampleonly_scale1": {
+          "relative_error": 0.15114509832773595,
+          "norm_ratio": 0.868866730138048
+        },
+        "checkpoint27_full_sampleonly_scale1.25": {
+          "relative_error": 0.12029749287545896,
+          "norm_ratio": 1.08608341267256
+        },
+        "checkpoint27_full_sampleonly_scale1.5": {
+          "relative_error": 0.31696104993885166,
+          "norm_ratio": 1.3033000952070721
+        },
+        "checkpoint27_full_sampleonly_scale1.75": {
+          "relative_error": 0.5299276383688203,
+          "norm_ratio": 1.5205167777415842
+        },
+        "checkpoint27_full_sampleonly_scale2": {
+          "relative_error": 0.7453512400060587,
+          "norm_ratio": 1.737733460276096
+        },
+        "checkpoint27_full_sampleonly_scale2.5": {
+          "relative_error": 1.1781754250319396,
+          "norm_ratio": 2.17216682534512
+        },
+        "checkpoint27_full_sampleonly_scale3": {
+          "relative_error": 1.6118656552858877,
+          "norm_ratio": 2.6066001904141443
+        }
+      },
+      "transport_diagnostics": {
+        "12": {
+          "transport_norm": 6.1678578111920155,
+          "transport_condition": 1.7426781128395673e+24,
+          "factor_rank": 0
+        },
+        "16": {
+          "transport_norm": 7.713035445526082,
+          "transport_condition": 8.220507872534301e+24,
+          "factor_rank": 0
+        },
+        "24": {
+          "transport_norm": 14.212159556518957,
+          "transport_condition": 1.2873480096028952e+23,
+          "factor_rank": 0
+        },
+        "27": {
+          "transport_norm": 15.131690324040928,
+          "transport_condition": 3.037300988971168e+16,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 2.311421833001077
+    },
+    {
+      "index": 161,
+      "name": "dylan-brown",
+      "baseline_mse": 2.24091425569048e-07,
+      "method_mses": {
+        "oracle_r2": 1.398825131100519e-07,
+        "sample_r2": 2.175395733956453e-07,
+        "checkpoint12_full_sampleonly_scale0.75_r2": 2.4429269846821347e-06,
+        "checkpoint12_full_sampleonly_scale1_r2": 1.4884586397876265e-06,
+        "checkpoint12_full_sampleonly_scale1.25_r2": 8.510474029946936e-07,
+        "checkpoint12_full_sampleonly_scale1.5_r2": 4.6174694897443693e-07,
+        "checkpoint12_full_sampleonly_scale1.75_r2": 2.6001939611045183e-07,
+        "checkpoint12_full_sampleonly_scale2_r2": 1.9379376116850024e-07,
+        "checkpoint12_full_sampleonly_scale2.5_r2": 3.0217472318387046e-07,
+        "checkpoint12_full_sampleonly_scale3_r2": 5.412064349201094e-07,
+        "checkpoint16_full_sampleonly_scale0.75_r2": 1.6832893426650123e-06,
+        "checkpoint16_full_sampleonly_scale1_r2": 8.468433815205299e-07,
+        "checkpoint16_full_sampleonly_scale1.25_r2": 3.865830071079387e-07,
+        "checkpoint16_full_sampleonly_scale1.5_r2": 1.8389685775152218e-07,
+        "checkpoint16_full_sampleonly_scale1.75_r2": 1.462725643888287e-07,
+        "checkpoint16_full_sampleonly_scale2_r2": 2.0743895873165958e-07,
+        "checkpoint16_full_sampleonly_scale2.5_r2": 4.927118067795458e-07,
+        "checkpoint16_full_sampleonly_scale3_r2": 1.0361122692278077e-06,
+        "checkpoint24_full_sampleonly_scale0.75_r2": 1.2032955011145524e-06,
+        "checkpoint24_full_sampleonly_scale1_r2": 5.013076235248394e-07,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 2.0466495768317338e-07,
+        "checkpoint24_full_sampleonly_scale1.5_r2": 1.544863594560698e-07,
+        "checkpoint24_full_sampleonly_scale1.75_r2": 2.3859830395594637e-07,
+        "checkpoint24_full_sampleonly_scale2_r2": 3.917331031128957e-07,
+        "checkpoint24_full_sampleonly_scale2.5_r2": 8.787496367325576e-07,
+        "checkpoint24_full_sampleonly_scale3_r2": 2.0303245329975248e-06,
+        "checkpoint27_full_sampleonly_scale0.75_r2": 7.005730687581456e-07,
+        "checkpoint27_full_sampleonly_scale1_r2": 2.28695625497424e-07,
+        "checkpoint27_full_sampleonly_scale1.25_r2": 1.4182638853080815e-07,
+        "checkpoint27_full_sampleonly_scale1.5_r2": 2.5728207382536006e-07,
+        "checkpoint27_full_sampleonly_scale1.75_r2": 5.112852195638573e-07,
+        "checkpoint27_full_sampleonly_scale2_r2": 9.58883713108271e-07,
+        "checkpoint27_full_sampleonly_scale2.5_r2": 3.2448087414883468e-06,
+        "checkpoint27_full_sampleonly_scale3_r2": 9.894008665212357e-06
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.0019386280368172137,
+            -0.00016614096429908368,
+            -0.0001518839501264361,
+            -3.38218140476243e-05
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 3.24322770831182,
+          "error": [
+            -0.006220808402843225,
+            -0.0008062416624700398,
+            -0.0007062045805396738,
+            -0.0004789221043356752
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 2.366710185862522,
+          "error": [
+            -0.004503912447610059,
+            -0.0006755606753012199,
+            -0.0006462562219315161,
+            -0.0004269528980253238
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 1.4978999536316921,
+          "error": [
+            -0.002787016492378225,
+            -0.0005448796881323721,
+            -0.0005863078633233029,
+            -0.0003749836917149481
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.6675982846208645,
+          "error": [
+            -0.001070120537143282,
+            -0.00041419870096355213,
+            -0.0005263595047151244,
+            -0.0003230144854045325
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 0.45526552635505413,
+          "error": [
+            0.0006467754180854435,
+            -0.00028351771379475296,
+            -0.00046641114610693896,
+            -0.00027104527909423137
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 1.2363017271918937,
+          "error": [
+            0.002363671373315057,
+            -0.00015283672662588094,
+            -0.0004064627874987639,
+            -0.00021907607278381577
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 2.9748244615368367,
+          "error": [
+            0.005797463283781834,
+            0.00010852524771180067,
+            -0.000286566070282367,
+            -0.0001151376601631407
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 4.733825442337224,
+          "error": [
+            0.009231255194245502,
+            0.00036988722204946145,
+            -0.00016666935306599434,
+            -1.1199247542406643e-05
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 3.0322180390514237,
+          "error": [
+            -0.005825402062215712,
+            -0.0006814083208578313,
+            -0.0006594697325978376,
+            -0.00044361903909159554
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 2.084706519331719,
+          "error": [
+            -0.00397670399344241,
+            -0.0005091162198182925,
+            -0.0005839430913423399,
+            -0.00037988214436657924
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 1.1455919474809424,
+          "error": [
+            -0.0021280059246699956,
+            -0.0003368241187787016,
+            -0.0005084164500868942,
+            -0.00031614524964150223
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.30575341619194785,
+          "error": [
+            -0.00027930785589669327,
+            -0.0001645320177391281,
+            -0.00043288980883139476,
+            -0.0002524083549164686
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 0.830249357653361,
+          "error": [
+            0.0015693902128743886,
+            7.760083300459297e-06,
+            -0.00035736316757595775,
+            -0.00018867146019146096
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 1.7606440421760854,
+          "error": [
+            0.0034180882816494673,
+            0.00018005218433999812,
+            -0.0002818365263204427,
+            -0.00012493456546637874
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 3.6558375438406365,
+          "error": [
+            0.007115484419195184,
+            0.000524636386419159,
+            -0.00013078324380954437,
+            2.5392239837059016e-06
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 5.557816771235287,
+          "error": [
+            0.010812880556740456,
+            0.0008692205884983407,
+            2.0270038701445878e-05,
+            0.0001300130134337489
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 2.427486783010414,
+          "error": [
+            -0.0046634709269719465,
+            -0.00060055082541359,
+            -0.0004757630146009842,
+            -0.00034167047071251115
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 1.2785224001073263,
+          "error": [
+            -0.002427462479779763,
+            -0.000401306225892524,
+            -0.0003390008006799051,
+            -0.00024395071986112182
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.19152930365038204,
+          "error": [
+            -0.00019145403259424043,
+            -0.00020206162637151706,
+            -0.00020223858675881556,
+            -0.00014623096900976025
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 1.048276643553606,
+          "error": [
+            0.0020445544145952788,
+            -2.8170268504996987e-06,
+            -6.547637283770523e-05,
+            -4.8511218158327554e-05
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 2.195727867786201,
+          "error": [
+            0.004280562861785686,
+            0.00019642757267048297,
+            7.128584108336868e-05,
+            4.920853269304269e-05
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 3.347192004951479,
+          "error": [
+            0.006516571308974761,
+            0.0003956721721915038,
+            0.00020804805500447728,
+            0.00014692828354444937
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 5.652349132646715,
+          "error": [
+            0.010988588203350247,
+            0.0007941613712335455,
+            0.0004815724828466563,
+            0.0003423677852472315
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 7.958326024949868,
+          "error": [
+            0.01546060509772662,
+            0.0011926505702755143,
+            0.0007550969106888371,
+            0.0005378072869500049
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 2.124346297642806,
+          "error": [
+            -0.0041011325377851016,
+            -0.00044630193115516303,
+            -0.00033610770284232296,
+            -0.00025085996781906185
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 0.8711247577460125,
+          "error": [
+            -0.001677677960861601,
+            -0.00019564103354802187,
+            -0.00015279371833501823,
+            -0.00012287004933651813
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.3834344747368614,
+          "error": [
+            0.0007457766160525736,
+            5.501986405907419e-05,
+            3.0520266172279556e-05,
+            5.119869146023859e-06
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 1.6362573608305235,
+          "error": [
+            0.003169231192971189,
+            0.00030568076166626393,
+            0.0002138342506796346,
+            0.00013310978762856758
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 2.889603226555079,
+          "error": [
+            0.005592685769886252,
+            0.0005563416592734016,
+            0.0003971482351869029,
+            0.0002610997061111165
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 4.142997461328803,
+          "error": [
+            0.008016140346806644,
+            0.0008070025568804873,
+            0.0005804622196942163,
+            0.0003890896245936932
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 6.649821635550982,
+          "error": [
+            0.012863049500637214,
+            0.001308324352094714,
+            0.0009470901887088413,
+            0.0006450694615588084
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 9.156660833029992,
+          "error": [
+            0.017709958654475333,
+            0.0018096461473090138,
+            0.0013137181577234525,
+            0.0009010492985239184
+          ]
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint12_full_sampleonly_scale0.75": {
+          "relative_error": 0.5576037044488118,
+          "norm_ratio": 0.45616612707000775
+        },
+        "checkpoint12_full_sampleonly_scale1": {
+          "relative_error": 0.41678836043204043,
+          "norm_ratio": 0.6082215027600104
+        },
+        "checkpoint12_full_sampleonly_scale1.25": {
+          "relative_error": 0.28765405980217756,
+          "norm_ratio": 0.7602768784500129
+        },
+        "checkpoint12_full_sampleonly_scale1.5": {
+          "relative_error": 0.19498423885580268,
+          "norm_ratio": 0.9123322541400155
+        },
+        "checkpoint12_full_sampleonly_scale1.75": {
+          "relative_error": 0.198832902800654,
+          "norm_ratio": 1.0643876298300181
+        },
+        "checkpoint12_full_sampleonly_scale2": {
+          "relative_error": 0.2954519717696052,
+          "norm_ratio": 1.2164430055200208
+        },
+        "checkpoint12_full_sampleonly_scale2.5": {
+          "relative_error": 0.5670375473041809,
+          "norm_ratio": 1.5205537569000258
+        },
+        "checkpoint12_full_sampleonly_scale3": {
+          "relative_error": 0.8606613681888815,
+          "norm_ratio": 1.824664508280031
+        },
+        "checkpoint16_full_sampleonly_scale0.75": {
+          "relative_error": 0.5226691170711413,
+          "norm_ratio": 0.4931630071950716
+        },
+        "checkpoint16_full_sampleonly_scale1": {
+          "relative_error": 0.3728322646299483,
+          "norm_ratio": 0.6575506762600956
+        },
+        "checkpoint16_full_sampleonly_scale1.25": {
+          "relative_error": 0.24263429403019018,
+          "norm_ratio": 0.8219383453251193
+        },
+        "checkpoint16_full_sampleonly_scale1.5": {
+          "relative_error": 0.18106770891361448,
+          "norm_ratio": 0.9863260143901432
+        },
+        "checkpoint16_full_sampleonly_scale1.75": {
+          "relative_error": 0.24646752578014344,
+          "norm_ratio": 1.1507136834551672
+        },
+        "checkpoint16_full_sampleonly_scale2": {
+          "relative_error": 0.3778274457982236,
+          "norm_ratio": 1.3151013525201911
+        },
+        "checkpoint16_full_sampleonly_scale2.5": {
+          "relative_error": 0.6847686385273848,
+          "norm_ratio": 1.6438766906502387
+        },
+        "checkpoint16_full_sampleonly_scale3": {
+          "relative_error": 1.0056087925967738,
+          "norm_ratio": 1.9726520287802864
+        },
+        "checkpoint24_full_sampleonly_scale0.75": {
+          "relative_error": 0.4217628267986283,
+          "norm_ratio": 0.5937341223539268
+        },
+        "checkpoint24_full_sampleonly_scale1": {
+          "relative_error": 0.24600980491290894,
+          "norm_ratio": 0.7916454964719023
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.14661374481246933,
+          "norm_ratio": 0.9895568705898777
+        },
+        "checkpoint24_full_sampleonly_scale1.5": {
+          "relative_error": 0.24659314717387182,
+          "norm_ratio": 1.1874682447078535
+        },
+        "checkpoint24_full_sampleonly_scale1.75": {
+          "relative_error": 0.42244359896774897,
+          "norm_ratio": 1.385379618825829
+        },
+        "checkpoint24_full_sampleonly_scale2": {
+          "relative_error": 0.6119206095524683,
+          "norm_ratio": 1.5832909929438046
+        },
+        "checkpoint24_full_sampleonly_scale2.5": {
+          "relative_error": 1.0007181324424657,
+          "norm_ratio": 1.9791137411797555
+        },
+        "checkpoint24_full_sampleonly_scale3": {
+          "relative_error": 1.3934769552616686,
+          "norm_ratio": 2.374936489415707
+        },
+        "checkpoint27_full_sampleonly_scale0.75": {
+          "relative_error": 0.3650230575090343,
+          "norm_ratio": 0.6408728516205372
+        },
+        "checkpoint27_full_sampleonly_scale1": {
+          "relative_error": 0.16390174493542065,
+          "norm_ratio": 0.8544971354940496
+        },
+        "checkpoint27_full_sampleonly_scale1.25": {
+          "relative_error": 0.10842693758217858,
+          "norm_ratio": 1.068121419367562
+        },
+        "checkpoint27_full_sampleonly_scale1.5": {
+          "relative_error": 0.29651254427926926,
+          "norm_ratio": 1.2817457032410744
+        },
+        "checkpoint27_full_sampleonly_scale1.75": {
+          "relative_error": 0.5053252876686696,
+          "norm_ratio": 1.495369987114587
+        },
+        "checkpoint27_full_sampleonly_scale2": {
+          "relative_error": 0.7169785722884775,
+          "norm_ratio": 1.7089942709880992
+        },
+        "checkpoint27_full_sampleonly_scale2.5": {
+          "relative_error": 1.1424883083036124,
+          "norm_ratio": 2.136242838735124
+        },
+        "checkpoint27_full_sampleonly_scale3": {
+          "relative_error": 1.568943425807267,
+          "norm_ratio": 2.563491406482149
+        }
+      },
+      "transport_diagnostics": {
+        "12": {
+          "transport_norm": 8.29751491179658,
+          "transport_condition": 2.2968078078515945e+24,
+          "factor_rank": 0
+        },
+        "16": {
+          "transport_norm": 9.90193670816977,
+          "transport_condition": 1.278751978002808e+24,
+          "factor_rank": 0
+        },
+        "24": {
+          "transport_norm": 13.764202380214469,
+          "transport_condition": 2.882745507605722e+23,
+          "factor_rank": 0
+        },
+        "27": {
+          "transport_norm": 15.123874653366638,
+          "transport_condition": 3.5093672734236376e+16,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 2.311719208024442
+    },
+    {
+      "index": 162,
+      "name": "yolanda-hawkins",
+      "baseline_mse": 2.3177693298152411e-07,
+      "method_mses": {
+        "oracle_r2": 1.7848597750280272e-07,
+        "sample_r2": 2.3513252094252474e-07,
+        "checkpoint12_full_sampleonly_scale0.75_r2": 1.272155085387072e-06,
+        "checkpoint12_full_sampleonly_scale1_r2": 9.222748907584329e-07,
+        "checkpoint12_full_sampleonly_scale1.25_r2": 6.493274661168037e-07,
+        "checkpoint12_full_sampleonly_scale1.5_r2": 4.4672377306460087e-07,
+        "checkpoint12_full_sampleonly_scale1.75_r2": 3.0813591578373164e-07,
+        "checkpoint12_full_sampleonly_scale2_r2": 2.2749823467856597e-07,
+        "checkpoint12_full_sampleonly_scale2.5_r2": 2.171280760001235e-07,
+        "checkpoint12_full_sampleonly_scale3_r2": 3.7237043044313875e-07,
+        "checkpoint16_full_sampleonly_scale0.75_r2": 9.513107178221327e-07,
+        "checkpoint16_full_sampleonly_scale1_r2": 5.992580801613107e-07,
+        "checkpoint16_full_sampleonly_scale1.25_r2": 3.615229585646836e-07,
+        "checkpoint16_full_sampleonly_scale1.5_r2": 2.2353724116879238e-07,
+        "checkpoint16_full_sampleonly_scale1.75_r2": 1.7168107747835508e-07,
+        "checkpoint16_full_sampleonly_scale2_r2": 1.9328725139741053e-07,
+        "checkpoint16_full_sampleonly_scale2.5_r2": 4.11004186834723e-07,
+        "checkpoint16_full_sampleonly_scale3_r2": 7.945423978486048e-07,
+        "checkpoint24_full_sampleonly_scale0.75_r2": 4.672186635720828e-07,
+        "checkpoint24_full_sampleonly_scale1_r2": 2.193803140773372e-07,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 1.5703643394215788e-07,
+        "checkpoint24_full_sampleonly_scale1.5_r2": 2.3710970234688012e-07,
+        "checkpoint24_full_sampleonly_scale1.75_r2": 4.2315510096577193e-07,
+        "checkpoint24_full_sampleonly_scale2_r2": 6.853868522914007e-07,
+        "checkpoint24_full_sampleonly_scale2.5_r2": 1.3526694435718425e-06,
+        "checkpoint24_full_sampleonly_scale3_r2": 2.1343871419728733e-06,
+        "checkpoint27_full_sampleonly_scale0.75_r2": 3.7365726309995174e-07,
+        "checkpoint27_full_sampleonly_scale1_r2": 1.7747681176975853e-07,
+        "checkpoint27_full_sampleonly_scale1.25_r2": 1.8182178429970676e-07,
+        "checkpoint27_full_sampleonly_scale1.5_r2": 3.3368219378434994e-07,
+        "checkpoint27_full_sampleonly_scale1.75_r2": 5.906426607902911e-07,
+        "checkpoint27_full_sampleonly_scale2_r2": 9.20918431281145e-07,
+        "checkpoint27_full_sampleonly_scale2.5_r2": 1.7275359190241819e-06,
+        "checkpoint27_full_sampleonly_scale3_r2": 2.7122460858013375e-06
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0022463663764593633,
+            -4.716260170228165e-05,
+            -1.3714283179976604e-05,
+            -3.6099509809392125e-05
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 1.4036787016683931,
+          "error": [
+            -0.003060823262887702,
+            -0.0006584799869701966,
+            -0.0002769851698424903,
+            -0.00026624805125038953
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 1.063443989530135,
+          "error": [
+            -0.002289358073926717,
+            -0.0005892314320544122,
+            -0.0002445922131602161,
+            -0.00025058581627347004
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.727761183155093,
+          "error": [
+            -0.0015178928849657325,
+            -0.0005199828771386625,
+            -0.0002121992564779098,
+            -0.00023492358129657658
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.40802396992909684,
+          "error": [
+            -0.0007464276960069682,
+            -0.0004507343222228781,
+            -0.000179806299795633,
+            -0.0002192613463196571
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 0.2036044691405631,
+          "error": [
+            2.5037492956236918e-05,
+            -0.00038148576730711106,
+            -0.00014741334311335792,
+            -0.0002035991113427428
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 0.39312847666023426,
+          "error": [
+            0.0007965026819172216,
+            -0.00031223721239133015,
+            -0.00011502038643108111,
+            -0.000187936876365858
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 1.0464761995586975,
+          "error": [
+            0.002339433059838747,
+            -0.0001737401025598169,
+            -5.023447306651968e-05,
+            -0.00015661240641204333
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 1.7286326594390724,
+          "error": [
+            0.003882363437759384,
+            -3.5242992728279354e-05,
+            1.4551440298053893e-05,
+            -0.00012528793645824599
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 1.2425965324570345,
+          "error": [
+            -0.002712862610358968,
+            -0.0005797158121662004,
+            -0.00021926101467014715,
+            -0.00023124545584898848
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 0.8485694367951621,
+          "error": [
+            -0.0018254105372244034,
+            -0.0004842125323158246,
+            -0.00016762667293044372,
+            -0.00020391568907163551
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.4614921706773845,
+          "error": [
+            -0.0009379584640871741,
+            -0.0003887092524653586,
+            -0.00011599233119073422,
+            -0.00017658592229425826
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.15086731282203458,
+          "error": [
+            -5.050639095038889e-05,
+            -0.0002932059726149308,
+            -6.435798945099956e-05,
+            -0.0001492561555168758
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 0.3865589948612231,
+          "error": [
+            0.0008369456821886168,
+            -0.00019770269276447525,
+            -1.2723647711272712e-05,
+            -0.00012192638873950723
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 0.770049189912083,
+          "error": [
+            0.0017243977553231815,
+            -0.00010219941291409601,
+            3.891069402844113e-05,
+            -9.459662196216814e-05
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 1.559074890914955,
+          "error": [
+            0.003499301901597196,
+            8.880714678677695e-05,
+            0.00014217937750788875,
+            -3.993708840742058e-05
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 2.35286574794803,
+          "error": [
+            0.005274206047869878,
+            0.00027981370648763604,
+            0.0002454480609873225,
+            1.4722445147326985e-05
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 0.9401119409145161,
+          "error": [
+            -0.002063055654666801,
+            -0.0004027760193216212,
+            -0.00015672173530745324,
+            -0.0001419354565214987
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 0.4440253616183343,
+          "error": [
+            -0.0009590012629638878,
+            -0.00024829280852298186,
+            -8.424096711350231e-05,
+            -8.483568996829442e-05
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.07803144912469545,
+          "error": [
+            0.00014505312873591691,
+            -9.380959772436331e-05,
+            -1.1760198919525365e-05,
+            -2.77359234150832e-05
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.5573164427198385,
+          "error": [
+            0.0012491075204392743,
+            6.0673613074203187e-05,
+            6.072056927441862e-05,
+            2.936384313814537e-05
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 1.0538959401091361,
+          "error": [
+            0.002353161912139079,
+            0.00021515682387287724,
+            0.00013320133746839297,
+            8.646360969133404e-05
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 1.5512491781834508,
+          "error": [
+            0.0034572163038419923,
+            0.0003696400346715062,
+            0.00020568210566233348,
+            0.00014356337624454873
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 2.5464633726448818,
+          "error": [
+            0.00566532508724249,
+            0.0006786064562687467,
+            0.00035064364205027003,
+            0.0002577629093509573
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 3.5418789792373717,
+          "error": [
+            0.007873433870647872,
+            0.0009875728778659873,
+            0.0004956051784381675,
+            0.0003719624424573572
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 0.8836750697637015,
+          "error": [
+            -0.0019471672034896415,
+            -0.00034614995226406667,
+            -0.00013116222722432073,
+            -0.00012195533056587153
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 0.36775200620266785,
+          "error": [
+            -0.0008044833280638208,
+            -0.00017279138577961164,
+            -5.0161623002649425e-05,
+            -5.8195522027452984e-05
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.1511439778091403,
+          "error": [
+            0.00033820054736333205,
+            5.671807048676647e-07,
+            3.083898121902795e-05,
+            5.56428651095342e-06
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.666100983942241,
+          "error": [
+            0.001480884422790929,
+            0.0001739257471893435,
+            0.00011183958544069231,
+            6.932409504936676e-05
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 1.1822772916741318,
+          "error": [
+            0.002623568298218082,
+            0.000347284313673802,
+            0.00019284018966236882,
+            0.00013308390358776796
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 1.6985616629434537,
+          "error": [
+            0.003766252173641682,
+            0.0005206428801582709,
+            0.00027384079388405747,
+            0.0001968437121262004
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 2.731209465440082,
+          "error": [
+            0.006051619924495544,
+            0.0008673600131272365,
+            0.000435842002327381,
+            0.0003243633292030323
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 3.7638903789390965,
+          "error": [
+            0.008336987675348961,
+            0.0012140771460961326,
+            0.0005978432107707262,
+            0.0004518829462798399
+          ]
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint12_full_sampleonly_scale0.75": {
+          "relative_error": 0.5886025396416659,
+          "norm_ratio": 0.43852011654334383
+        },
+        "checkpoint12_full_sampleonly_scale1": {
+          "relative_error": 0.46267758951133525,
+          "norm_ratio": 0.5846934887244583
+        },
+        "checkpoint12_full_sampleonly_scale1.25": {
+          "relative_error": 0.35273426750036324,
+          "norm_ratio": 0.730866860905573
+        },
+        "checkpoint12_full_sampleonly_scale1.5": {
+          "relative_error": 0.27839842774630263,
+          "norm_ratio": 0.8770402330866877
+        },
+        "checkpoint12_full_sampleonly_scale1.75": {
+          "relative_error": 0.27078259756455186,
+          "norm_ratio": 1.023213605267802
+        },
+        "checkpoint12_full_sampleonly_scale2": {
+          "relative_error": 0.33447579162862606,
+          "norm_ratio": 1.1693869774489165
+        },
+        "checkpoint12_full_sampleonly_scale2.5": {
+          "relative_error": 0.5631835079953674,
+          "norm_ratio": 1.461733721811146
+        },
+        "checkpoint12_full_sampleonly_scale3": {
+          "relative_error": 0.8327127416154559,
+          "norm_ratio": 1.7540804661733753
+        },
+        "checkpoint16_full_sampleonly_scale0.75": {
+          "relative_error": 0.5205576105472799,
+          "norm_ratio": 0.49904645908818945
+        },
+        "checkpoint16_full_sampleonly_scale1": {
+          "relative_error": 0.37237260074914846,
+          "norm_ratio": 0.6653952787842525
+        },
+        "checkpoint16_full_sampleonly_scale1.25": {
+          "relative_error": 0.24836735153240766,
+          "norm_ratio": 0.8317440984803158
+        },
+        "checkpoint16_full_sampleonly_scale1.5": {
+          "relative_error": 0.200137923578484,
+          "norm_ratio": 0.9980929181763789
+        },
+        "checkpoint16_full_sampleonly_scale1.75": {
+          "relative_error": 0.27160245807050104,
+          "norm_ratio": 1.164441737872442
+        },
+        "checkpoint16_full_sampleonly_scale2": {
+          "relative_error": 0.4035151318527177,
+          "norm_ratio": 1.330790557568505
+        },
+        "checkpoint16_full_sampleonly_scale2.5": {
+          "relative_error": 0.7120176776795024,
+          "norm_ratio": 1.6634881969606317
+        },
+        "checkpoint16_full_sampleonly_scale3": {
+          "relative_error": 1.0356106042023199,
+          "norm_ratio": 1.9961858363527578
+        },
+        "checkpoint24_full_sampleonly_scale0.75": {
+          "relative_error": 0.39399040636494936,
+          "norm_ratio": 0.6177113661413728
+        },
+        "checkpoint24_full_sampleonly_scale1": {
+          "relative_error": 0.20790238391353577,
+          "norm_ratio": 0.8236151548551638
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.12653498559541307,
+          "norm_ratio": 1.0295189435689547
+        },
+        "checkpoint24_full_sampleonly_scale1.5": {
+          "relative_error": 0.2712776148813582,
+          "norm_ratio": 1.2354227322827456
+        },
+        "checkpoint24_full_sampleonly_scale1.75": {
+          "relative_error": 0.46472005175717623,
+          "norm_ratio": 1.4413265209965367
+        },
+        "checkpoint24_full_sampleonly_scale2": {
+          "relative_error": 0.6656805908902959,
+          "norm_ratio": 1.6472303097103276
+        },
+        "checkpoint24_full_sampleonly_scale2.5": {
+          "relative_error": 1.073238424346583,
+          "norm_ratio": 2.0590378871379094
+        },
+        "checkpoint24_full_sampleonly_scale3": {
+          "relative_error": 1.4831458942239522,
+          "norm_ratio": 2.470845464565491
+        },
+        "checkpoint27_full_sampleonly_scale0.75": {
+          "relative_error": 0.3680618421719274,
+          "norm_ratio": 0.6387932947917195
+        },
+        "checkpoint27_full_sampleonly_scale1": {
+          "relative_error": 0.16926695872344413,
+          "norm_ratio": 0.8517243930556261
+        },
+        "checkpoint27_full_sampleonly_scale1.25": {
+          "relative_error": 0.111858804676799,
+          "norm_ratio": 1.0646554913195325
+        },
+        "checkpoint27_full_sampleonly_scale1.5": {
+          "relative_error": 0.29504709161031767,
+          "norm_ratio": 1.277586589583439
+        },
+        "checkpoint27_full_sampleonly_scale1.75": {
+          "relative_error": 0.5022673447153806,
+          "norm_ratio": 1.4905176878473452
+        },
+        "checkpoint27_full_sampleonly_scale2": {
+          "relative_error": 0.7128614802911696,
+          "norm_ratio": 1.7034487861112522
+        },
+        "checkpoint27_full_sampleonly_scale2.5": {
+          "relative_error": 1.1366650407050949,
+          "norm_ratio": 2.129310982639065
+        },
+        "checkpoint27_full_sampleonly_scale3": {
+          "relative_error": 1.5615891137883549,
+          "norm_ratio": 2.555173179166878
+        }
+      },
+      "transport_diagnostics": {
+        "12": {
+          "transport_norm": 7.5016874118000025,
+          "transport_condition": 2.4175648806051274e+25,
+          "factor_rank": 0
+        },
+        "16": {
+          "transport_norm": 8.959372414765253,
+          "transport_condition": 9.638275558271832e+24,
+          "factor_rank": 0
+        },
+        "24": {
+          "transport_norm": 13.42422724576414,
+          "transport_condition": 2.88210080767519e+24,
+          "factor_rank": 0
+        },
+        "27": {
+          "transport_norm": 14.086426557122483,
+          "transport_condition": 7.143239041401866e+17,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 2.6585467089898884
+    },
+    {
+      "index": 163,
+      "name": "scott-matthews",
+      "baseline_mse": 2.5893801088228656e-07,
+      "method_mses": {
+        "oracle_r2": 2.1616034584043983e-07,
+        "sample_r2": 2.5185594956739863e-07,
+        "checkpoint12_full_sampleonly_scale0.75_r2": 2.145450896863838e-06,
+        "checkpoint12_full_sampleonly_scale1_r2": 1.2433519505329769e-06,
+        "checkpoint12_full_sampleonly_scale1.25_r2": 6.698722237388182e-07,
+        "checkpoint12_full_sampleonly_scale1.5_r2": 3.8104412111820085e-07,
+        "checkpoint12_full_sampleonly_scale1.75_r2": 3.355224085358619e-07,
+        "checkpoint12_full_sampleonly_scale2_r2": 4.945966240057231e-07,
+        "checkpoint12_full_sampleonly_scale2.5_r2": 1.2849317165260384e-06,
+        "checkpoint12_full_sampleonly_scale3_r2": 2.4954642315450755e-06,
+        "checkpoint16_full_sampleonly_scale0.75_r2": 1.8282456927919672e-06,
+        "checkpoint16_full_sampleonly_scale1_r2": 9.618620179444318e-07,
+        "checkpoint16_full_sampleonly_scale1.25_r2": 4.60690948237587e-07,
+        "checkpoint16_full_sampleonly_scale1.5_r2": 2.6373094787735476e-07,
+        "checkpoint16_full_sampleonly_scale1.75_r2": 3.1491735394497886e-07,
+        "checkpoint16_full_sampleonly_scale2_r2": 5.631451964910896e-07,
+        "checkpoint16_full_sampleonly_scale2.5_r2": 1.4712210598207633e-06,
+        "checkpoint16_full_sampleonly_scale3_r2": 2.679002788780671e-06,
+        "checkpoint24_full_sampleonly_scale0.75_r2": 1.1833993902864673e-06,
+        "checkpoint24_full_sampleonly_scale1_r2": 4.79347127958021e-07,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 2.331205846180962e-07,
+        "checkpoint24_full_sampleonly_scale1.5_r2": 3.380387316196969e-07,
+        "checkpoint24_full_sampleonly_scale1.75_r2": 7.003817210325449e-07,
+        "checkpoint24_full_sampleonly_scale2_r2": 1.2394491615520616e-06,
+        "checkpoint24_full_sampleonly_scale2.5_r2": 2.590319403388786e-06,
+        "checkpoint24_full_sampleonly_scale3_r2": 4.0068987584361e-06,
+        "checkpoint27_full_sampleonly_scale0.75_r2": 1.0352310325810754e-06,
+        "checkpoint27_full_sampleonly_scale1_r2": 3.8800913177093764e-07,
+        "checkpoint27_full_sampleonly_scale1.25_r2": 2.1166780942985771e-07,
+        "checkpoint27_full_sampleonly_scale1.5_r2": 3.8318966153106543e-07,
+        "checkpoint27_full_sampleonly_scale1.75_r2": 7.976870345757091e-07,
+        "checkpoint27_full_sampleonly_scale2_r2": 1.3684767529049883e-06,
+        "checkpoint27_full_sampleonly_scale2.5_r2": 2.723533482959954e-06,
+        "checkpoint27_full_sampleonly_scale3_r2": 4.1205824322575605e-06
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.004983511315518996,
+            0.00037523681610281134,
+            0.00010851024573980961,
+            -4.310338457190824e-05
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 1.6858107808059755,
+          "error": [
+            -0.008201389164042894,
+            -0.0013267211254752997,
+            -0.0011855695350700551,
+            -0.0007690712003739567
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 1.0605636944518753,
+          "error": [
+            -0.0050426505245555475,
+            -0.0010559716143844905,
+            -0.0010701266253839506,
+            -0.0006479676382190984
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.46289894368541395,
+          "error": [
+            -0.0018839118850646486,
+            -0.0007852221032936535,
+            -0.0009546837156977073,
+            -0.0005268640760641777
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.3322622983592859,
+          "error": [
+            0.0012748267544262504,
+            -0.0005144725922028026,
+            -0.000839240806011568,
+            -0.0004057605139092882
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 0.901755930685895,
+          "error": [
+            0.004433565393917149,
+            -0.00024372308111189622,
+            -0.0007237978963256508,
+            -0.0002846569517544924
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 1.5239986886186747,
+          "error": [
+            0.0075923040334044956,
+            2.7026429978857514e-05,
+            -0.0006083549866392965,
+            -0.00016355338959956126
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 2.785913971031821,
+          "error": [
+            0.013909781312383629,
+            0.0005685254521605593,
+            -0.00037746916726712904,
+            7.865373471009976e-05
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 4.052978187474205,
+          "error": [
+            0.02022725859135921,
+            0.0011100244743422055,
+            -0.00014658334789481586,
+            0.00032086085901978506
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 1.7158047970920847,
+          "error": [
+            -0.008396292817038464,
+            -0.0011863990169439231,
+            -0.0010801444279999808,
+            -0.0007054752326966646
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 1.0966343518638393,
+          "error": [
+            -0.005302522061883863,
+            -0.0008688754696759282,
+            -0.000929559815956986,
+            -0.0005631730146493409
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.48862813697107926,
+          "error": [
+            -0.0022087513067274855,
+            -0.0005513519224079194,
+            -0.0007789752039144351,
+            -0.00042087079660212134
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.2289929374046985,
+          "error": [
+            0.0008850194484271157,
+            -0.00023382837513998,
+            -0.0006283905918714888,
+            -0.00027856857855488443
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 0.802276653726042,
+          "error": [
+            0.0039787902035897105,
+            8.369517212807043e-05,
+            -0.00047780597982862577,
+            -0.00013626636050751914
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 1.418586496282511,
+          "error": [
+            0.0070725609587452,
+            0.0004012187193960237,
+            -0.0003272213677858113,
+            6.035857539860023e-06
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 2.6612885127038752,
+          "error": [
+            0.01326010246906062,
+            0.001036265813931972,
+            -2.6052143700196206e-05,
+            0.0002906402936343512
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 3.9067434605586855,
+          "error": [
+            0.0194476439793716,
+            0.0016713129084679063,
+            0.0002751170803856409,
+            0.0005752447297290228
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 1.4184028323124718,
+          "error": [
+            -0.006980961698318744,
+            -0.0009279895081806405,
+            -0.000682101426526284,
+            -0.0004646838715921739
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 0.6974988792040803,
+          "error": [
+            -0.003415413903592679,
+            -0.0005243294579915236,
+            -0.000398835813992221,
+            -0.00024211786651001307
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.04510465534358828,
+          "error": [
+            0.00015013389113782694,
+            -0.00012066940780253166,
+            -0.00011557020145816499,
+            -1.955186142795634e-05
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.7472990198332397,
+          "error": [
+            0.0037156816858718855,
+            0.0002829906423865991,
+            0.0001676954110760298,
+            0.0002030141436542253
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 1.4682536810170166,
+          "error": [
+            0.007281229480602391,
+            0.0006866506925756327,
+            0.0004509610236100789,
+            0.000425580148736341
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 2.189514459934755,
+          "error": [
+            0.010846777275333785,
+            0.001090310742764805,
+            0.000734226636144128,
+            0.0006481461538184706
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 3.632224927251252,
+          "error": [
+            0.01797787286479302,
+            0.001897630843142914,
+            0.0013007578612123302,
+            0.0010932781639826847
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 5.07500826410071,
+          "error": [
+            0.025108968454252256,
+            0.002704950943521134,
+            0.0018672890862805533,
+            0.0015384101741469682
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 1.4500331512008224,
+          "error": [
+            -0.007166246554112021,
+            -0.0008230333147397906,
+            -0.0005718758729085643,
+            -0.00042893320407696306
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 0.739410151793811,
+          "error": [
+            -0.0036624603779786824,
+            -0.0003843878667370709,
+            -0.00025186840916861797,
+            -0.0001944503098231
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.03708418845857212,
+          "error": [
+            -0.00015867420184889625,
+            5.4257581265523824e-05,
+            6.813905457147412e-05,
+            4.003258443071797e-05
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.6830371387801708,
+          "error": [
+            0.00334511197428089,
+            0.0004929030292682574,
+            0.00038814651831141356,
+            0.00027451547868462267
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 1.3936358420817225,
+          "error": [
+            0.006848898150412452,
+            0.0009315484772709631,
+            0.0007081539820513391,
+            0.0005089983729384753
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 2.104380816102071,
+          "error": [
+            0.010352684326543127,
+            0.0013701939252736411,
+            0.0010281614457914243,
+            0.0007434812671923627
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 3.525955761386933,
+          "error": [
+            0.017360256678808916,
+            0.0022474848212789417,
+            0.0016681763732714766,
+            0.0012124470557000541
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 4.947562629131944,
+          "error": [
+            0.024367829031071153,
+            0.003124775717284367,
+            0.002308191300751432,
+            0.0016814128442077803
+          ]
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint12_full_sampleonly_scale0.75": {
+          "relative_error": 0.48368721922940733,
+          "norm_ratio": 0.5424095714096174
+        },
+        "checkpoint12_full_sampleonly_scale1": {
+          "relative_error": 0.3307016925632158,
+          "norm_ratio": 0.7232127618794899
+        },
+        "checkpoint12_full_sampleonly_scale1.25": {
+          "relative_error": 0.22394972706088423,
+          "norm_ratio": 0.9040159523493622
+        },
+        "checkpoint12_full_sampleonly_scale1.5": {
+          "relative_error": 0.23732454235768238,
+          "norm_ratio": 1.0848191428192349
+        },
+        "checkpoint12_full_sampleonly_scale1.75": {
+          "relative_error": 0.35759192374561843,
+          "norm_ratio": 1.2656223332891072
+        },
+        "checkpoint12_full_sampleonly_scale2": {
+          "relative_error": 0.514587812544245,
+          "norm_ratio": 1.4464255237589798
+        },
+        "checkpoint12_full_sampleonly_scale2.5": {
+          "relative_error": 0.8572028025534788,
+          "norm_ratio": 1.8080319046987243
+        },
+        "checkpoint12_full_sampleonly_scale3": {
+          "relative_error": 1.2109133008042672,
+          "norm_ratio": 2.1696382856384697
+        },
+        "checkpoint16_full_sampleonly_scale0.75": {
+          "relative_error": 0.4887235368876461,
+          "norm_ratio": 0.5299290330147194
+        },
+        "checkpoint16_full_sampleonly_scale1": {
+          "relative_error": 0.33157996625974234,
+          "norm_ratio": 0.7065720440196258
+        },
+        "checkpoint16_full_sampleonly_scale1.25": {
+          "relative_error": 0.20843550373056033,
+          "norm_ratio": 0.8832150550245322
+        },
+        "checkpoint16_full_sampleonly_scale1.5": {
+          "relative_error": 0.19837074149120876,
+          "norm_ratio": 1.0598580660294388
+        },
+        "checkpoint16_full_sampleonly_scale1.75": {
+          "relative_error": 0.31250927925085764,
+          "norm_ratio": 1.236501077034345
+        },
+        "checkpoint16_full_sampleonly_scale2": {
+          "relative_error": 0.4673100200399817,
+          "norm_ratio": 1.4131440880392516
+        },
+        "checkpoint16_full_sampleonly_scale2.5": {
+          "relative_error": 0.8043807464595358,
+          "norm_ratio": 1.7664301100490645
+        },
+        "checkpoint16_full_sampleonly_scale3": {
+          "relative_error": 1.1512168094737274,
+          "norm_ratio": 2.1197161320588775
+        },
+        "checkpoint24_full_sampleonly_scale0.75": {
+          "relative_error": 0.40377437346385947,
+          "norm_ratio": 0.6073870113337644
+        },
+        "checkpoint24_full_sampleonly_scale1": {
+          "relative_error": 0.21910952668102315,
+          "norm_ratio": 0.8098493484450191
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.12233650557268042,
+          "norm_ratio": 1.012311685556274
+        },
+        "checkpoint24_full_sampleonly_scale1.5": {
+          "relative_error": 0.25279527765800863,
+          "norm_ratio": 1.2147740226675288
+        },
+        "checkpoint24_full_sampleonly_scale1.75": {
+          "relative_error": 0.44139175356337107,
+          "norm_ratio": 1.4172363597787836
+        },
+        "checkpoint24_full_sampleonly_scale2": {
+          "relative_error": 0.6385373158386347,
+          "norm_ratio": 1.6196986968900382
+        },
+        "checkpoint24_full_sampleonly_scale2.5": {
+          "relative_error": 1.0389813947415216,
+          "norm_ratio": 2.024623371112548
+        },
+        "checkpoint24_full_sampleonly_scale3": {
+          "relative_error": 1.4419302192228578,
+          "norm_ratio": 2.4295480453350575
+        },
+        "checkpoint27_full_sampleonly_scale0.75": {
+          "relative_error": 0.40912693893281565,
+          "norm_ratio": 0.5969305989557668
+        },
+        "checkpoint27_full_sampleonly_scale1": {
+          "relative_error": 0.2195760525814318,
+          "norm_ratio": 0.7959074652743559
+        },
+        "checkpoint27_full_sampleonly_scale1.25": {
+          "relative_error": 0.09069741029314327,
+          "norm_ratio": 0.9948843315929448
+        },
+        "checkpoint27_full_sampleonly_scale1.5": {
+          "relative_error": 0.21776589324422008,
+          "norm_ratio": 1.1938611979115337
+        },
+        "checkpoint27_full_sampleonly_scale1.75": {
+          "relative_error": 0.40718734625102804,
+          "norm_ratio": 1.3928380642301226
+        },
+        "checkpoint27_full_sampleonly_scale2": {
+          "relative_error": 0.6027973725004011,
+          "norm_ratio": 1.5918149305487117
+        },
+        "checkpoint27_full_sampleonly_scale2.5": {
+          "relative_error": 0.9980188910867601,
+          "norm_ratio": 1.9897686631858895
+        },
+        "checkpoint27_full_sampleonly_scale3": {
+          "relative_error": 1.3947949986569461,
+          "norm_ratio": 2.3877223958230673
+        }
+      },
+      "transport_diagnostics": {
+        "12": {
+          "transport_norm": 8.925502192313045,
+          "transport_condition": 8.548724169491403e+24,
+          "factor_rank": 0
+        },
+        "16": {
+          "transport_norm": 10.888622604888653,
+          "transport_condition": 5.816788827348101e+24,
+          "factor_rank": 0
+        },
+        "24": {
+          "transport_norm": 14.335464763564284,
+          "transport_condition": 1.2290158341809058e+24,
+          "factor_rank": 0
+        },
+        "27": {
+          "transport_norm": 15.876126413519405,
+          "transport_condition": 1.5727699357184374e+18,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 2.4155712090432644
+    },
+    {
+      "index": 164,
+      "name": "benjamin-walsh",
+      "baseline_mse": 3.457466003272283e-07,
+      "method_mses": {
+        "oracle_r2": 1.320064604069214e-07,
+        "sample_r2": 3.4860456517037017e-07,
+        "checkpoint12_full_sampleonly_scale0.75_r2": 4.858506322780847e-06,
+        "checkpoint12_full_sampleonly_scale1_r2": 4.00100124414792e-06,
+        "checkpoint12_full_sampleonly_scale1.25_r2": 3.259007320265738e-06,
+        "checkpoint12_full_sampleonly_scale1.5_r2": 2.6259405710301976e-06,
+        "checkpoint12_full_sampleonly_scale1.75_r2": 2.0953714056691643e-06,
+        "checkpoint12_full_sampleonly_scale2_r2": 1.6610260326079865e-06,
+        "checkpoint12_full_sampleonly_scale2.5_r2": 1.0566986418318097e-06,
+        "checkpoint12_full_sampleonly_scale3_r2": 7.65934819980732e-07,
+        "checkpoint16_full_sampleonly_scale0.75_r2": 3.677510474046761e-06,
+        "checkpoint16_full_sampleonly_scale1_r2": 2.6710936390131883e-06,
+        "checkpoint16_full_sampleonly_scale1.25_r2": 1.8779912954578327e-06,
+        "checkpoint16_full_sampleonly_scale1.5_r2": 1.2779532351270816e-06,
+        "checkpoint16_full_sampleonly_scale1.75_r2": 8.516153042323759e-07,
+        "checkpoint16_full_sampleonly_scale2_r2": 5.805094402133245e-07,
+        "checkpoint16_full_sampleonly_scale2.5_r2": 4.346580680723685e-07,
+        "checkpoint16_full_sampleonly_scale3_r2": 7.109192228380376e-07,
+        "checkpoint24_full_sampleonly_scale0.75_r2": 1.5420194462679392e-06,
+        "checkpoint24_full_sampleonly_scale1_r2": 6.537545059979253e-07,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 2.2969761154297376e-07,
+        "checkpoint24_full_sampleonly_scale1.5_r2": 1.698642970883325e-07,
+        "checkpoint24_full_sampleonly_scale1.75_r2": 3.8790953321942027e-07,
+        "checkpoint24_full_sampleonly_scale2_r2": 8.112841473861294e-07,
+        "checkpoint24_full_sampleonly_scale2.5_r2": 2.0534877860520564e-06,
+        "checkpoint24_full_sampleonly_scale3_r2": 3.595642947556876e-06,
+        "checkpoint27_full_sampleonly_scale0.75_r2": 7.807281014443355e-07,
+        "checkpoint27_full_sampleonly_scale1_r2": 1.8963323484398592e-07,
+        "checkpoint27_full_sampleonly_scale1.25_r2": 1.6701926253672316e-07,
+        "checkpoint27_full_sampleonly_scale1.5_r2": 5.478490636768368e-07,
+        "checkpoint27_full_sampleonly_scale1.75_r2": 1.2063169464058406e-06,
+        "checkpoint27_full_sampleonly_scale2_r2": 2.056166331260197e-06,
+        "checkpoint27_full_sampleonly_scale2.5_r2": 4.183406941776146e-06,
+        "checkpoint27_full_sampleonly_scale3_r2": 7.0315258163263906e-06
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0010653864535347113,
+            3.0237986698988806e-06,
+            5.162166623324388e-05,
+            1.249296237965168e-05
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 1.7686344734167847,
+          "error": [
+            -0.0017895734837167776,
+            -0.0005009543505662128,
+            -0.000234397999682898,
+            -0.00022558740375305851
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 1.4607331694588175,
+          "error": [
+            -0.0014541304963193724,
+            -0.00046979706365645434,
+            -0.00021623168600886332,
+            -0.00021442277063958332
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 1.1574521239414404,
+          "error": [
+            -0.0011186875089220782,
+            -0.0004386397767466889,
+            -0.0001980653723348113,
+            -0.00020325813752612352
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.863672380672365,
+          "error": [
+            -0.0007832445215250061,
+            -0.00040748248983690956,
+            -0.00017989905866077661,
+            -0.00019209350441265005
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 0.5936708499798636,
+          "error": [
+            -0.000447801534127934,
+            -0.0003763252029271528,
+            -0.00016173274498673673,
+            -0.0001809288712991755
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 0.3990497589963208,
+          "error": [
+            -0.00011235854673019574,
+            -0.00034516791601736825,
+            -0.00014356643131269164,
+            -0.000169764238185717
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 0.6112884584332727,
+          "error": [
+            0.0005585274280637265,
+            -0.0002828533421978495,
+            -0.00010723380396461535,
+            -0.00014743497195877854
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 1.1786554156800275,
+          "error": [
+            0.0012294134028579817,
+            -0.0002205387683783134,
+            -7.090117661652691e-05,
+            -0.00012510570573184246
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 1.5715535538868248,
+          "error": [
+            -0.0015858474738731365,
+            -0.0004485764489905366,
+            -0.000224817933346836,
+            -0.00020888656785736782
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 1.199281447533266,
+          "error": [
+            -0.001182495816528184,
+            -0.0003999598615555388,
+            -0.00020345826422743345,
+            -0.00019215498944533701
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.8355701410949053,
+          "error": [
+            -0.0007791441591831205,
+            -0.00035134327412054966,
+            -0.00018209859510803783,
+            -0.00017542341103331163
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.49948471809470607,
+          "error": [
+            -0.000375792501837946,
+            -0.0003027266866855484,
+            -0.00016073892598864742,
+            -0.0001586918326212756
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 0.30364215642774883,
+          "error": [
+            2.755915550722854e-05,
+            -0.0002541100992505575,
+            -0.0001393792568692466,
+            -0.00014196025420924198
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 0.4757291113006007,
+          "error": [
+            0.000430910812851959,
+            -0.00020549351181556492,
+            -0.00011801958774985619,
+            -0.00012522867579721508
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 1.169946837075585,
+          "error": [
+            0.001237614127541975,
+            -0.00010826033694558493,
+            -7.530024951106495e-05,
+            -9.176551897315151e-05
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 1.9175132923517204,
+          "error": [
+            0.002044317442232657,
+            -1.1027162075594524e-05,
+            -3.2580911272278926e-05,
+            -5.830236214908837e-05
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 1.2056150295208194,
+          "error": [
+            -0.0012277006219972852,
+            -0.00030838806621148046,
+            -0.00015080190448004197,
+            -0.00016976907460122814
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 0.709589430988802,
+          "error": [
+            -0.0007049666806936417,
+            -0.00021304201785012772,
+            -0.00010477022573837994,
+            -0.00013999833177048707
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.23466715791337223,
+          "error": [
+            -0.00018223273938977602,
+            -0.00011769596948879926,
+            -5.873854699671964e-05,
+            -0.00011022758893975294
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.32888013424893375,
+          "error": [
+            0.0003405012019145337,
+            -2.234992112745693e-05,
+            -1.270686825506108e-05,
+            -8.045684610900905e-05
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 0.8141238011946312,
+          "error": [
+            0.0008632351432179552,
+            7.299612723390102e-05,
+            3.3324810486599216e-05,
+            -5.068610327826971e-05
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 1.3110968453582954,
+          "error": [
+            0.001385969084522043,
+            0.00016834217559524856,
+            7.935648922825951e-05,
+            -2.091536044752885e-05
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 2.3099687327286187,
+          "error": [
+            0.00243143696712933,
+            0.0003590342723179228,
+            0.00017141984671157316,
+            3.862612521396652e-05
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 3.310453740430443,
+          "error": [
+            0.0034769048497366173,
+            0.0005497263690406127,
+            0.0002634832041948972,
+            9.816761087544769e-05
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 1.0007691639465237,
+          "error": [
+            -0.0010273107899888556,
+            -0.0002240992913357196,
+            -0.00012408439168486857,
+            -0.00013654495424115956
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 0.4354119733545881,
+          "error": [
+            -0.00043778023801566146,
+            -0.00010065698468245468,
+            -6.91468753448183e-05,
+            -9.569950462372874e-05
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.15334886075336474,
+          "error": [
+            0.00015175031395775473,
+            2.2785321970811984e-05,
+            -1.4209359004764555e-05,
+            -5.4854055006296623e-05
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.7094616121873695,
+          "error": [
+            0.0007412808659307268,
+            0.0001462276286240717,
+            4.0728157335289186e-05,
+            -1.4008605388869493e-05
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 1.2763398077161652,
+          "error": [
+            0.001330811417904254,
+            0.0002696699352773453,
+            9.566567367533599e-05,
+            2.6836844228574227e-05
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 1.8440820073615252,
+          "error": [
+            0.0019203419698777813,
+            0.000393112241930612,
+            0.0001506031900153932,
+            6.768229384601079e-05
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 2.980183148509134,
+          "error": [
+            0.0030994030738240586,
+            0.000639996855237128,
+            0.00026047822269548507,
+            0.000149373193080867
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 4.116539229197382,
+          "error": [
+            0.004278464177770669,
+            0.0008868814685436665,
+            0.0003703532553755839,
+            0.00023106409231573655
+          ]
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint12_full_sampleonly_scale0.75": {
+          "relative_error": 0.6689621845995707,
+          "norm_ratio": 0.36880231261322444
+        },
+        "checkpoint12_full_sampleonly_scale1": {
+          "relative_error": 0.5690328477382783,
+          "norm_ratio": 0.4917364168176326
+        },
+        "checkpoint12_full_sampleonly_scale1.25": {
+          "relative_error": 0.479908269504829,
+          "norm_ratio": 0.6146705210220407
+        },
+        "checkpoint12_full_sampleonly_scale1.5": {
+          "relative_error": 0.4087188525455917,
+          "norm_ratio": 0.7376046252264489
+        },
+        "checkpoint12_full_sampleonly_scale1.75": {
+          "relative_error": 0.3660817417822572,
+          "norm_ratio": 0.860538729430857
+        },
+        "checkpoint12_full_sampleonly_scale2": {
+          "relative_error": 0.3622239236433148,
+          "norm_ratio": 0.9834728336352652
+        },
+        "checkpoint12_full_sampleonly_scale2.5": {
+          "relative_error": 0.465041496111103,
+          "norm_ratio": 1.2293410420440813
+        },
+        "checkpoint12_full_sampleonly_scale3": {
+          "relative_error": 0.6497871706668809,
+          "norm_ratio": 1.4752092504528977
+        },
+        "checkpoint16_full_sampleonly_scale0.75": {
+          "relative_error": 0.6010707764345881,
+          "norm_ratio": 0.4408193884813399
+        },
+        "checkpoint16_full_sampleonly_scale1": {
+          "relative_error": 0.48450660727617095,
+          "norm_ratio": 0.5877591846417866
+        },
+        "checkpoint16_full_sampleonly_scale1.25": {
+          "relative_error": 0.3890884656427125,
+          "norm_ratio": 0.7346989808022332
+        },
+        "checkpoint16_full_sampleonly_scale1.5": {
+          "relative_error": 0.33349006445392343,
+          "norm_ratio": 0.8816387769626798
+        },
+        "checkpoint16_full_sampleonly_scale1.75": {
+          "relative_error": 0.33797044171659585,
+          "norm_ratio": 1.0285785731231265
+        },
+        "checkpoint16_full_sampleonly_scale2": {
+          "relative_error": 0.4005184430835702,
+          "norm_ratio": 1.1755183692835731
+        },
+        "checkpoint16_full_sampleonly_scale2.5": {
+          "relative_error": 0.618340402186434,
+          "norm_ratio": 1.4693979616044663
+        },
+        "checkpoint16_full_sampleonly_scale3": {
+          "relative_error": 0.8814789346702868,
+          "norm_ratio": 1.7632775539253596
+        },
+        "checkpoint24_full_sampleonly_scale0.75": {
+          "relative_error": 0.4648764938793358,
+          "norm_ratio": 0.5663514345304993
+        },
+        "checkpoint24_full_sampleonly_scale1": {
+          "relative_error": 0.31204302486775176,
+          "norm_ratio": 0.7551352460406658
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.22340590670862012,
+          "norm_ratio": 0.9439190575508323
+        },
+        "checkpoint24_full_sampleonly_scale1.5": {
+          "relative_error": 0.27152937946490635,
+          "norm_ratio": 1.1327028690609986
+        },
+        "checkpoint24_full_sampleonly_scale1.75": {
+          "relative_error": 0.4108830291573329,
+          "norm_ratio": 1.3214866805711651
+        },
+        "checkpoint24_full_sampleonly_scale2": {
+          "relative_error": 0.5789647470813972,
+          "norm_ratio": 1.5102704920813317
+        },
+        "checkpoint24_full_sampleonly_scale2.5": {
+          "relative_error": 0.9390350220944391,
+          "norm_ratio": 1.8878381151016645
+        },
+        "checkpoint24_full_sampleonly_scale3": {
+          "relative_error": 1.3090026688220424,
+          "norm_ratio": 2.265405738121997
+        },
+        "checkpoint27_full_sampleonly_scale0.75": {
+          "relative_error": 0.3885023499778779,
+          "norm_ratio": 0.6370696369722589
+        },
+        "checkpoint27_full_sampleonly_scale1": {
+          "relative_error": 0.21975739165115327,
+          "norm_ratio": 0.8494261826296785
+        },
+        "checkpoint27_full_sampleonly_scale1.25": {
+          "relative_error": 0.18932287605940998,
+          "norm_ratio": 1.0617827282870982
+        },
+        "checkpoint27_full_sampleonly_scale1.5": {
+          "relative_error": 0.337021655951956,
+          "norm_ratio": 1.2741392739445179
+        },
+        "checkpoint27_full_sampleonly_scale1.75": {
+          "relative_error": 0.5305795385509074,
+          "norm_ratio": 1.4864958196019376
+        },
+        "checkpoint27_full_sampleonly_scale2": {
+          "relative_error": 0.734599415902499,
+          "norm_ratio": 1.698852365259357
+        },
+        "checkpoint27_full_sampleonly_scale2.5": {
+          "relative_error": 1.151716730353606,
+          "norm_ratio": 2.1235654565741964
+        },
+        "checkpoint27_full_sampleonly_scale3": {
+          "relative_error": 1.5729046290150346,
+          "norm_ratio": 2.5482785478890357
+        }
+      },
+      "transport_diagnostics": {
+        "12": {
+          "transport_norm": 5.365431334395117,
+          "transport_condition": 4.614231359022479e+23,
+          "factor_rank": 0
+        },
+        "16": {
+          "transport_norm": 6.808246446407534,
+          "transport_condition": 2.906220423735435e+24,
+          "factor_rank": 0
+        },
+        "24": {
+          "transport_norm": 11.621069901499105,
+          "transport_condition": 1.9185342055319157e+22,
+          "factor_rank": 0
+        },
+        "27": {
+          "transport_norm": 13.44900361345916,
+          "transport_condition": 294153569845779.9,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 2.266551624983549
+    },
+    {
+      "index": 165,
+      "name": "justin-crawford",
+      "baseline_mse": 3.0668500009183507e-07,
+      "method_mses": {
+        "oracle_r2": 1.4581550536809984e-07,
+        "sample_r2": 2.9661344282441717e-07,
+        "checkpoint12_full_sampleonly_scale0.75_r2": 4.038642838697331e-06,
+        "checkpoint12_full_sampleonly_scale1_r2": 3.123595704114057e-06,
+        "checkpoint12_full_sampleonly_scale1.25_r2": 2.3724686539891713e-06,
+        "checkpoint12_full_sampleonly_scale1.5_r2": 1.766086614105419e-06,
+        "checkpoint12_full_sampleonly_scale1.75_r2": 1.286400448609093e-06,
+        "checkpoint12_full_sampleonly_scale2_r2": 9.164952827934302e-07,
+        "checkpoint12_full_sampleonly_scale2.5_r2": 4.4408550513201035e-07,
+        "checkpoint12_full_sampleonly_scale3_r2": 2.3650195078656418e-07,
+        "checkpoint16_full_sampleonly_scale0.75_r2": 2.3954529615671446e-06,
+        "checkpoint16_full_sampleonly_scale1_r2": 1.4620898264094994e-06,
+        "checkpoint16_full_sampleonly_scale1.25_r2": 8.423362758700277e-07,
+        "checkpoint16_full_sampleonly_scale1.5_r2": 4.614585101374578e-07,
+        "checkpoint16_full_sampleonly_scale1.75_r2": 2.549537757207537e-07,
+        "checkpoint16_full_sampleonly_scale2_r2": 1.6863610656694056e-07,
+        "checkpoint16_full_sampleonly_scale2.5_r2": 1.918022741602991e-07,
+        "checkpoint16_full_sampleonly_scale3_r2": 3.0603234451141046e-07,
+        "checkpoint24_full_sampleonly_scale0.75_r2": 1.1450392516263146e-06,
+        "checkpoint24_full_sampleonly_scale1_r2": 4.801682664616905e-07,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 2.0284609957342487e-07,
+        "checkpoint24_full_sampleonly_scale1.5_r2": 1.428288766110121e-07,
+        "checkpoint24_full_sampleonly_scale1.75_r2": 1.8455045785270223e-07,
+        "checkpoint24_full_sampleonly_scale2_r2": 2.6742073426770033e-07,
+        "checkpoint24_full_sampleonly_scale2.5_r2": 5.89520201653916e-07,
+        "checkpoint24_full_sampleonly_scale3_r2": 1.7226961351946182e-06,
+        "checkpoint27_full_sampleonly_scale0.75_r2": 1.0234782456431494e-06,
+        "checkpoint27_full_sampleonly_scale1_r2": 4.064613416140561e-07,
+        "checkpoint27_full_sampleonly_scale1.25_r2": 1.7489445952605577e-07,
+        "checkpoint27_full_sampleonly_scale1.5_r2": 1.4705945656888568e-07,
+        "checkpoint27_full_sampleonly_scale1.75_r2": 2.0691325673072256e-07,
+        "checkpoint27_full_sampleonly_scale2_r2": 3.0439752467720593e-07,
+        "checkpoint27_full_sampleonly_scale2.5_r2": 7.419706979340156e-07,
+        "checkpoint27_full_sampleonly_scale3_r2": 2.3742741918722978e-06
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.002403729043152225,
+            2.2115785409223404e-05,
+            7.569412170414791e-05,
+            -1.1484535520250513e-05
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 1.4689183999690303,
+          "error": [
+            -0.00340765904439011,
+            -0.0007473728194641246,
+            -0.00043238983345073555,
+            -0.0003509444330264122
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 1.2681681809761784,
+          "error": [
+            -0.002926656607210365,
+            -0.0006839077831973014,
+            -0.00039313396058921445,
+            -0.00033903167200012184
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 1.0680598727811002,
+          "error": [
+            -0.0024456541700330625,
+            -0.0006204427469305041,
+            -0.0003538780877276838,
+            -0.00032711891097384014
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.8690370162299693,
+          "error": [
+            -0.0019646517328542057,
+            -0.0005569777106637034,
+            -0.00031462221486616444,
+            -0.0003152061499475541
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 0.6720646296597291,
+          "error": [
+            -0.0014836492956744607,
+            -0.000493512674396894,
+            -0.0002753663420046303,
+            -0.00030329338892127154
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 0.47967539485770394,
+          "error": [
+            -0.001002646858496492,
+            -0.0004300476381300881,
+            -0.0002361104691431101,
+            -0.0002913806278949933
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 0.18121805043649303,
+          "error": [
+            -4.0641984137224085e-05,
+            -0.00030311756559647796,
+            -0.00015759872342007222,
+            -0.0002675551058424269
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 0.40432638758202133,
+          "error": [
+            0.0009213628902215998,
+            -0.0001761874930628661,
+            -7.908697769703002e-05,
+            -0.0002437295837898557
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 1.1972401352929758,
+          "error": [
+            -0.0027664691298117106,
+            -0.0006110228770193904,
+            -0.00040263928023182103,
+            -0.0003197690068425705
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 0.9069247172180491,
+          "error": [
+            -0.0020717367211062765,
+            -0.0005021078599376748,
+            -0.00035346655629734085,
+            -0.0002974644370883476
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.6193831884864535,
+          "error": [
+            -0.0013770043124008424,
+            -0.0003931928428559956,
+            -0.0003042938323628416,
+            -0.00027515986733411737
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.34169169728333737,
+          "error": [
+            -0.0006822719036962965,
+            -0.00028427782577427826,
+            -0.00025512110842836055,
+            -0.00025285529757988843
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 0.1478698351205476,
+          "error": [
+            1.2460505009581624e-05,
+            -0.00017536280869256266,
+            -0.00020594838449385523,
+            -0.00023055072782566556
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 0.3145987136323509,
+          "error": [
+            0.000707192913716348,
+            -6.644779161085745e-05,
+            -0.00015677566055938286,
+            -0.00020824615807142881
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 0.8770232873649934,
+          "error": [
+            0.0020966577311252177,
+            0.00015138224255255295,
+            -5.843021269037567e-05,
+            -0.00016363701856297614
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 1.4585423215934918,
+          "error": [
+            0.003486122548537196,
+            0.0003692122767159547,
+            3.9915235178596825e-05,
+            -0.00011902787905451826
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 0.8378442059628439,
+          "error": [
+            -0.0019335440678671656,
+            -0.00044433354575263394,
+            -0.0002548545856873672,
+            -0.0002438823764171422
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 0.4291247256590691,
+          "error": [
+            -0.0009611699718470312,
+            -0.00027985541824867427,
+            -0.00015642029690471088,
+            -0.0001962822631877718
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.08201351316447937,
+          "error": [
+            1.1204124173769259e-05,
+            -0.00011537729074471807,
+            -5.798600812206671e-05,
+            -0.00014868214995840054
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.41196780453604687,
+          "error": [
+            0.0009835782201930154,
+            4.9100836759248534e-05,
+            4.0448280660587005e-05,
+            -0.00010108203672902754
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 0.8204400021146679,
+          "error": [
+            0.0019559523162129278,
+            0.00021357896426320647,
+            0.00013888256944322077,
+            -5.3481923499659745e-05
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 1.2316408533453453,
+          "error": [
+            0.002928326412233506,
+            0.0003780570917671696,
+            0.00023731685822587188,
+            -5.88181027029195e-06
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 2.055678279580578,
+          "error": [
+            0.004873074604275329,
+            0.0007070133467750993,
+            0.00043418543579117324,
+            8.931841618845145e-05
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 2.8803366929058756,
+          "error": [
+            0.006817822796315376,
+            0.0010359696017830308,
+            0.0006310540133564703,
+            0.00018451864264719398
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 0.781657160439562,
+          "error": [
+            -0.0018084162220497468,
+            -0.00042145092043087765,
+            -0.00022196007678820968,
+            -0.0001919869053222216
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 0.3532907405985685,
+          "error": [
+            -0.0007943328440895847,
+            -0.0002493452511529992,
+            -0.00011256095170584634,
+            -0.00012708830172787188
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.10025137268795874,
+          "error": [
+            0.00021975053386968924,
+            -7.723958187510517e-05,
+            -3.1618266234777898e-06,
+            -6.218969813353951e-05
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.5164260716360847,
+          "error": [
+            0.0012338339118294073,
+            9.486608740276459e-05,
+            0.00010623729845887775,
+            2.708905460807598e-06
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 0.9459127848864352,
+          "error": [
+            0.0022479172897889033,
+            0.0002669717566806569,
+            0.00021563642354125584,
+            6.760750905514777e-05
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 1.376305077068027,
+          "error": [
+            0.003262000667747511,
+            0.0004390774259585232,
+            0.00032503554862360704,
+            0.00013250611264949488
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 2.237716175141286,
+          "error": [
+            0.005290167423667391,
+            0.0007832887645142991,
+            0.0005438337987883615,
+            0.00026230331983818564
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 3.0993821857652635,
+          "error": [
+            0.007318334179586161,
+            0.0011275001030700803,
+            0.0007626320489530812,
+            0.00039210052702687726
+          ]
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint12_full_sampleonly_scale0.75": {
+          "relative_error": 0.7167571273614834,
+          "norm_ratio": 0.3080865552685551
+        },
+        "checkpoint12_full_sampleonly_scale1": {
+          "relative_error": 0.6275666106859634,
+          "norm_ratio": 0.4107820736914069
+        },
+        "checkpoint12_full_sampleonly_scale1.25": {
+          "relative_error": 0.5431681701651209,
+          "norm_ratio": 0.5134775921142585
+        },
+        "checkpoint12_full_sampleonly_scale1.5": {
+          "relative_error": 0.4661718677928352,
+          "norm_ratio": 0.6161731105371102
+        },
+        "checkpoint12_full_sampleonly_scale1.75": {
+          "relative_error": 0.4008659359070959,
+          "norm_ratio": 0.718868628959962
+        },
+        "checkpoint12_full_sampleonly_scale2": {
+          "relative_error": 0.3537845754525766,
+          "norm_ratio": 0.8215641473828138
+        },
+        "checkpoint12_full_sampleonly_scale2.5": {
+          "relative_error": 0.34261027037723985,
+          "norm_ratio": 1.026955184228517
+        },
+        "checkpoint12_full_sampleonly_scale3": {
+          "relative_error": 0.44042141744115615,
+          "norm_ratio": 1.2323462210742204
+        },
+        "checkpoint16_full_sampleonly_scale0.75": {
+          "relative_error": 0.59231594934162,
+          "norm_ratio": 0.4387236838601087
+        },
+        "checkpoint16_full_sampleonly_scale1": {
+          "relative_error": 0.4690382700866286,
+          "norm_ratio": 0.5849649118134783
+        },
+        "checkpoint16_full_sampleonly_scale1.25": {
+          "relative_error": 0.3632197781975377,
+          "norm_ratio": 0.7312061397668479
+        },
+        "checkpoint16_full_sampleonly_scale1.5": {
+          "relative_error": 0.29433536866727156,
+          "norm_ratio": 0.8774473677202174
+        },
+        "checkpoint16_full_sampleonly_scale1.75": {
+          "relative_error": 0.2900189730513293,
+          "norm_ratio": 1.023688595673587
+        },
+        "checkpoint16_full_sampleonly_scale2": {
+          "relative_error": 0.3526495338400654,
+          "norm_ratio": 1.1699298236269566
+        },
+        "checkpoint16_full_sampleonly_scale2.5": {
+          "relative_error": 0.5772192410282313,
+          "norm_ratio": 1.4624122795336958
+        },
+        "checkpoint16_full_sampleonly_scale3": {
+          "relative_error": 0.8444491605391496,
+          "norm_ratio": 1.7548947354404347
+        },
+        "checkpoint24_full_sampleonly_scale0.75": {
+          "relative_error": 0.4249861286927978,
+          "norm_ratio": 0.6060244567842449
+        },
+        "checkpoint24_full_sampleonly_scale1": {
+          "relative_error": 0.2659200138425197,
+          "norm_ratio": 0.8080326090456599
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.20598127367035676,
+          "norm_ratio": 1.0100407613070748
+        },
+        "checkpoint24_full_sampleonly_scale1.5": {
+          "relative_error": 0.3094474165409384,
+          "norm_ratio": 1.2120489135684898
+        },
+        "checkpoint24_full_sampleonly_scale1.75": {
+          "relative_error": 0.48031417766395534,
+          "norm_ratio": 1.4140570658299048
+        },
+        "checkpoint24_full_sampleonly_scale2": {
+          "relative_error": 0.6687752253831509,
+          "norm_ratio": 1.6160652180913198
+        },
+        "checkpoint24_full_sampleonly_scale2.5": {
+          "relative_error": 1.0607644645298389,
+          "norm_ratio": 2.0200815226141495
+        },
+        "checkpoint24_full_sampleonly_scale3": {
+          "relative_error": 1.4593287994735236,
+          "norm_ratio": 2.4240978271369795
+        },
+        "checkpoint27_full_sampleonly_scale0.75": {
+          "relative_error": 0.3921872386642134,
+          "norm_ratio": 0.6301919802408046
+        },
+        "checkpoint27_full_sampleonly_scale1": {
+          "relative_error": 0.21967088764079057,
+          "norm_ratio": 0.8402559736544062
+        },
+        "checkpoint27_full_sampleonly_scale1.25": {
+          "relative_error": 0.1759361538753881,
+          "norm_ratio": 1.0503199670680077
+        },
+        "checkpoint27_full_sampleonly_scale1.5": {
+          "relative_error": 0.31922644668287575,
+          "norm_ratio": 1.2603839604816092
+        },
+        "checkpoint27_full_sampleonly_scale1.75": {
+          "relative_error": 0.510990490068871,
+          "norm_ratio": 1.4704479538952107
+        },
+        "checkpoint27_full_sampleonly_scale2": {
+          "relative_error": 0.7131415008801647,
+          "norm_ratio": 1.6805119473088124
+        },
+        "checkpoint27_full_sampleonly_scale2.5": {
+          "relative_error": 1.1261665626915096,
+          "norm_ratio": 2.1006399341360154
+        },
+        "checkpoint27_full_sampleonly_scale3": {
+          "relative_error": 1.5430315953350286,
+          "norm_ratio": 2.5207679209632183
+        }
+      },
+      "transport_diagnostics": {
+        "12": {
+          "transport_norm": 5.929611674903394,
+          "transport_condition": 4.332066147037178e+24,
+          "factor_rank": 0
+        },
+        "16": {
+          "transport_norm": 7.619944140541719,
+          "transport_condition": 4.975827358453597e+24,
+          "factor_rank": 0
+        },
+        "24": {
+          "transport_norm": 11.3994384590859,
+          "transport_condition": 4.1613493861947465e+23,
+          "factor_rank": 0
+        },
+        "27": {
+          "transport_norm": 13.866606906696742,
+          "transport_condition": 4.133048255147737e+17,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 2.2383495420217514
+    },
+    {
+      "index": 166,
+      "name": "tara-harris",
+      "baseline_mse": 6.550635664715546e-07,
+      "method_mses": {
+        "oracle_r2": 2.875727910979081e-07,
+        "sample_r2": 6.187691871471576e-07,
+        "checkpoint12_full_sampleonly_scale0.75_r2": 2.4110328153966477e-06,
+        "checkpoint12_full_sampleonly_scale1_r2": 1.7247436792664259e-06,
+        "checkpoint12_full_sampleonly_scale1.25_r2": 1.1832852939117807e-06,
+        "checkpoint12_full_sampleonly_scale1.5_r2": 7.747800148943083e-07,
+        "checkpoint12_full_sampleonly_scale1.75_r2": 4.878821967008997e-07,
+        "checkpoint12_full_sampleonly_scale2_r2": 3.117799706808566e-07,
+        "checkpoint12_full_sampleonly_scale2.5_r2": 2.5139356513267373e-07,
+        "checkpoint12_full_sampleonly_scale3_r2": 5.178616722886382e-07,
+        "checkpoint16_full_sampleonly_scale0.75_r2": 1.7294883366404359e-06,
+        "checkpoint16_full_sampleonly_scale1_r2": 1.0404325607704309e-06,
+        "checkpoint16_full_sampleonly_scale1.25_r2": 5.793940690317285e-07,
+        "checkpoint16_full_sampleonly_scale1.5_r2": 3.193113009019375e-07,
+        "checkpoint16_full_sampleonly_scale1.75_r2": 2.351496652243797e-07,
+        "checkpoint16_full_sampleonly_scale2_r2": 3.0390892302253757e-07,
+        "checkpoint16_full_sampleonly_scale2.5_r2": 8.183992186449781e-07,
+        "checkpoint16_full_sampleonly_scale3_r2": 1.7196937790873187e-06,
+        "checkpoint24_full_sampleonly_scale0.75_r2": 9.332735570764943e-07,
+        "checkpoint24_full_sampleonly_scale1_r2": 4.239827816023611e-07,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 2.817251016267126e-07,
+        "checkpoint24_full_sampleonly_scale1.5_r2": 4.4117200377336267e-07,
+        "checkpoint24_full_sampleonly_scale1.75_r2": 8.469881193604387e-07,
+        "checkpoint24_full_sampleonly_scale2_r2": 1.453862905701665e-06,
+        "checkpoint24_full_sampleonly_scale2.5_r2": 3.1397950185574886e-06,
+        "checkpoint24_full_sampleonly_scale3_r2": 5.3375944384806386e-06,
+        "checkpoint27_full_sampleonly_scale0.75_r2": 8.194571942476662e-07,
+        "checkpoint27_full_sampleonly_scale1_r2": 3.7343787593104894e-07,
+        "checkpoint27_full_sampleonly_scale1.25_r2": 3.220682546864012e-07,
+        "checkpoint27_full_sampleonly_scale1.5_r2": 5.911931627273945e-07,
+        "checkpoint27_full_sampleonly_scale1.75_r2": 1.1199798180030713e-06,
+        "checkpoint27_full_sampleonly_scale2_r2": 1.8609558602973732e-06,
+        "checkpoint27_full_sampleonly_scale2.5_r2": 3.856516225569562e-06,
+        "checkpoint27_full_sampleonly_scale3_r2": 6.465842098619465e-06
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.007240007575721741,
+            6.019058085454665e-05,
+            -5.92222113235466e-05,
+            8.410162942722524e-05
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 1.5288366199069288,
+          "error": [
+            -0.010858863177052314,
+            -0.0019234977021066052,
+            -0.0007729475218189955,
+            -0.0005823062764563035
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 1.188928323967258,
+          "error": [
+            -0.00840606799684629,
+            -0.0016605274031836065,
+            -0.0006639780593505236,
+            -0.0005049382238823605
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.8500383320043304,
+          "error": [
+            -0.005953272816634048,
+            -0.00139755710426058,
+            -0.0005550085968819875,
+            -0.0004275701713081538
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.5141840423495826,
+          "error": [
+            -0.003500477636426247,
+            -0.0011345868053374564,
+            -0.0004460391344134479,
+            -0.000350202118734301
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 0.19751139238174495,
+          "error": [
+            -0.0010476824562095644,
+            -0.0008716165064145132,
+            -0.0003370696719450332,
+            -0.00027283406616004924
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 0.21550342925124347,
+          "error": [
+            0.0014051127239973482,
+            -0.0006086462074914867,
+            -0.00022810020947652832,
+            -0.00019546601358604032
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 0.8716192146617056,
+          "error": [
+            0.006310703084414726,
+            -8.27056096453227e-05,
+            -1.0161284539504656e-05,
+            -4.072990843797045e-05
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 1.5505548076260385,
+          "error": [
+            0.01121629344483388,
+            0.00044323498820074414,
+            0.00020777764039751553,
+            0.00011400619671012718
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 1.3076942068625044,
+          "error": [
+            -0.009295291596381539,
+            -0.0016102736851808103,
+            -0.000621986691074522,
+            -0.0005288094384931705
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 0.8940035202224831,
+          "error": [
+            -0.006321305889279039,
+            -0.001242895380615755,
+            -0.0004626969516911897,
+            -0.00043360910659822824
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.48193010072718906,
+          "error": [
+            -0.003347320182168545,
+            -0.0008755170760508107,
+            -0.00030340721230787474,
+            -0.000338408774703175
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.09543124286620311,
+          "error": [
+            -0.0003733344750740386,
+            -0.0005081387714857138,
+            -0.00014411747292455632,
+            -0.000243208442808035
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 0.3602690585535805,
+          "error": [
+            0.002600651232025797,
+            -0.0001407604669207696,
+            1.517226645876904e-05,
+            -0.00014800811091277705
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 0.7709193468169265,
+          "error": [
+            0.005574636939129185,
+            0.0002266178376442579,
+            0.00017446200584204583,
+            -5.2807779017720324e-05
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 1.5983963356171447,
+          "error": [
+            0.01152260835333152,
+            0.0009613744467742297,
+            0.0004930414846086896,
+            0.00013759288477235496
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 2.427090797924624,
+          "error": [
+            0.01747057976753741,
+            0.0016961310559042986,
+            0.0008116209633753022,
+            0.00032799354856268004
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 0.9859352871261736,
+          "error": [
+            -0.007032806109254608,
+            -0.001073574368132102,
+            -0.00045267138008381336,
+            -0.00038674301677999595
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 0.4645381121813544,
+          "error": [
+            -0.003304658573115127,
+            -0.0005272962912175466,
+            -0.00023694320370359206,
+            -0.0002441872109803893
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.06027391228231892,
+          "error": [
+            0.0004234889630261307,
+            1.8981785697008702e-05,
+            -2.1215027323225055e-05,
+            -0.00010163140518091099
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.579292888700426,
+          "error": [
+            0.0041516364991638355,
+            0.000565259862611564,
+            0.00019451314905698583,
+            4.092440061861241e-05
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 1.10074410144316,
+          "error": [
+            0.007879784035308646,
+            0.0011115379395262304,
+            0.00041024132543717243,
+            0.00018348020641815316
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 1.622283859991586,
+          "error": [
+            0.011607931571449903,
+            0.001657816016440744,
+            0.0006259695018174631,
+            0.0003260360122176974
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 2.6654211059674937,
+          "error": [
+            0.019064226643730642,
+            0.002750372170269841,
+            0.001057425854577937,
+            0.0006111476238167823
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 3.7085811977289187,
+          "error": [
+            0.02652052171601671,
+            0.0038429283240990347,
+            0.0014888822073384211,
+            0.0008962592354157389
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 0.9423120477935231,
+          "error": [
+            -0.006737221569516727,
+            -0.0009524948040610937,
+            -0.00038136579436572407,
+            -0.00033790684512102764
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 0.4063440807028749,
+          "error": [
+            -0.0029105458534672835,
+            -0.00036585687245614673,
+            -0.0001418690894129035,
+            -0.0001790723154351942
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.13086852858496964,
+          "error": [
+            0.0009161298625945946,
+            0.0002207810591488002,
+            9.762761553998994e-05,
+            -2.0237785749367687e-05
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.6663221255322095,
+          "error": [
+            0.004742805578648479,
+            0.0008074189907536361,
+            0.00033712432049295277,
+            0.00013859674393633392
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 1.2023690454771143,
+          "error": [
+            0.008569481294705028,
+            0.0013940569223584998,
+            0.0005766210254457872,
+            0.0002974312736222888
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 1.7384605291510073,
+          "error": [
+            0.012396157010758913,
+            0.001980694853963391,
+            0.0008161177303987119,
+            0.00045626580330807714
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 2.810675189567404,
+          "error": [
+            0.020049508442871122,
+            0.0031539707171732156,
+            0.001295111140304634,
+            0.0007739348626796747
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 3.8829029352373343,
+          "error": [
+            0.027702859874983332,
+            0.00432724658038304,
+            0.0017741045502102926,
+            0.0010916039220513728
+          ]
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint12_full_sampleonly_scale0.75": {
+          "relative_error": 0.6036443370747637,
+          "norm_ratio": 0.4079396285110826
+        },
+        "checkpoint12_full_sampleonly_scale1": {
+          "relative_error": 0.4758964395080804,
+          "norm_ratio": 0.5439195046814435
+        },
+        "checkpoint12_full_sampleonly_scale1.25": {
+          "relative_error": 0.3543295218255436,
+          "norm_ratio": 0.6798993808518043
+        },
+        "checkpoint12_full_sampleonly_scale1.5": {
+          "relative_error": 0.2481984133397756,
+          "norm_ratio": 0.8158792570221652
+        },
+        "checkpoint12_full_sampleonly_scale1.75": {
+          "relative_error": 0.18610896855944134,
+          "norm_ratio": 0.9518591331925261
+        },
+        "checkpoint12_full_sampleonly_scale2": {
+          "relative_error": 0.21130948255757362,
+          "norm_ratio": 1.087839009362887
+        },
+        "checkpoint12_full_sampleonly_scale2.5": {
+          "relative_error": 0.4190765517653909,
+          "norm_ratio": 1.3597987617036087
+        },
+        "checkpoint12_full_sampleonly_scale3": {
+          "relative_error": 0.6741830825872484,
+          "norm_ratio": 1.6317585140443305
+        },
+        "checkpoint16_full_sampleonly_scale0.75": {
+          "relative_error": 0.5196439550145195,
+          "norm_ratio": 0.49514483495173967
+        },
+        "checkpoint16_full_sampleonly_scale1": {
+          "relative_error": 0.3683343454156723,
+          "norm_ratio": 0.6601931132689862
+        },
+        "checkpoint16_full_sampleonly_scale1.25": {
+          "relative_error": 0.23620416675712153,
+          "norm_ratio": 0.8252413915862328
+        },
+        "checkpoint16_full_sampleonly_scale1.5": {
+          "relative_error": 0.17434590653363483,
+          "norm_ratio": 0.9902896699034793
+        },
+        "checkpoint16_full_sampleonly_scale1.75": {
+          "relative_error": 0.24389024213284627,
+          "norm_ratio": 1.1553379482207258
+        },
+        "checkpoint16_full_sampleonly_scale2": {
+          "relative_error": 0.37821987473052804,
+          "norm_ratio": 1.3203862265379724
+        },
+        "checkpoint16_full_sampleonly_scale2.5": {
+          "relative_error": 0.6882089258075749,
+          "norm_ratio": 1.6504827831724656
+        },
+        "checkpoint16_full_sampleonly_scale3": {
+          "relative_error": 1.0110095206698866,
+          "norm_ratio": 1.9805793398069587
+        },
+        "checkpoint24_full_sampleonly_scale0.75": {
+          "relative_error": 0.3938319936263364,
+          "norm_ratio": 0.6171089843794834
+        },
+        "checkpoint24_full_sampleonly_scale1": {
+          "relative_error": 0.2067036700345704,
+          "norm_ratio": 0.8228119791726445
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.12237899877665688,
+          "norm_ratio": 1.0285149739658055
+        },
+        "checkpoint24_full_sampleonly_scale1.5": {
+          "relative_error": 0.2680564783980121,
+          "norm_ratio": 1.2342179687589667
+        },
+        "checkpoint24_full_sampleonly_scale1.75": {
+          "relative_error": 0.4619084065206666,
+          "norm_ratio": 1.4399209635521275
+        },
+        "checkpoint24_full_sampleonly_scale2": {
+          "relative_error": 0.6629418681540105,
+          "norm_ratio": 1.645623958345289
+        },
+        "checkpoint24_full_sampleonly_scale2.5": {
+          "relative_error": 1.0703454311701979,
+          "norm_ratio": 2.057029947931611
+        },
+        "checkpoint24_full_sampleonly_scale3": {
+          "relative_error": 1.479965046897158,
+          "norm_ratio": 2.4684359375179334
+        },
+        "checkpoint27_full_sampleonly_scale0.75": {
+          "relative_error": 0.37434163175683055,
+          "norm_ratio": 0.6324729722591735
+        },
+        "checkpoint27_full_sampleonly_scale1": {
+          "relative_error": 0.17690805199619986,
+          "norm_ratio": 0.8432972963455647
+        },
+        "checkpoint27_full_sampleonly_scale1.25": {
+          "relative_error": 0.10656008496984774,
+          "norm_ratio": 1.054121620431956
+        },
+        "checkpoint27_full_sampleonly_scale1.5": {
+          "relative_error": 0.2833856662032143,
+          "norm_ratio": 1.264945944518347
+        },
+        "checkpoint27_full_sampleonly_scale1.75": {
+          "relative_error": 0.48800984740378495,
+          "norm_ratio": 1.4757702686047385
+        },
+        "checkpoint27_full_sampleonly_scale2": {
+          "relative_error": 0.6963430029587852,
+          "norm_ratio": 1.6865945926911294
+        },
+        "checkpoint27_full_sampleonly_scale2.5": {
+          "relative_error": 1.1158202743908838,
+          "norm_ratio": 2.108243240863912
+        },
+        "checkpoint27_full_sampleonly_scale3": {
+          "relative_error": 1.536486692661445,
+          "norm_ratio": 2.529891889036694
+        }
+      },
+      "transport_diagnostics": {
+        "12": {
+          "transport_norm": 8.537868588024605,
+          "transport_condition": 5.310908430387779e+24,
+          "factor_rank": 0
+        },
+        "16": {
+          "transport_norm": 10.955374059029658,
+          "transport_condition": 4.61098133420225e+24,
+          "factor_rank": 0
+        },
+        "24": {
+          "transport_norm": 13.959338734850705,
+          "transport_condition": 1.671315042989041e+24,
+          "factor_rank": 0
+        },
+        "27": {
+          "transport_norm": 15.001568662353156,
+          "transport_condition": 8.245754793429758e+16,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 2.1526357911061496
+    },
+    {
+      "index": 167,
+      "name": "kathy-wright",
+      "baseline_mse": 1.3442389485466154e-07,
+      "method_mses": {
+        "oracle_r2": 1.1924535108495643e-07,
+        "sample_r2": 1.2647344020295521e-07,
+        "checkpoint12_full_sampleonly_scale0.75_r2": 3.4595344112150063e-06,
+        "checkpoint12_full_sampleonly_scale1_r2": 1.9013144428911822e-06,
+        "checkpoint12_full_sampleonly_scale1.25_r2": 9.237852762374472e-07,
+        "checkpoint12_full_sampleonly_scale1.5_r2": 4.0482171254928304e-07,
+        "checkpoint12_full_sampleonly_scale1.75_r2": 2.3399340344036285e-07,
+        "checkpoint12_full_sampleonly_scale2_r2": 3.1267356038484985e-07,
+        "checkpoint12_full_sampleonly_scale2.5_r2": 8.83622628075989e-07,
+        "checkpoint12_full_sampleonly_scale3_r2": 1.5679576913878323e-06,
+        "checkpoint16_full_sampleonly_scale0.75_r2": 2.0802234824485974e-06,
+        "checkpoint16_full_sampleonly_scale1_r2": 8.43744198355762e-07,
+        "checkpoint16_full_sampleonly_scale1.25_r2": 2.927816006837115e-07,
+        "checkpoint16_full_sampleonly_scale1.5_r2": 1.8236763585061183e-07,
+        "checkpoint16_full_sampleonly_scale1.75_r2": 3.122336268703537e-07,
+        "checkpoint16_full_sampleonly_scale2_r2": 5.271760012574459e-07,
+        "checkpoint16_full_sampleonly_scale2.5_r2": 8.182564368900096e-07,
+        "checkpoint16_full_sampleonly_scale3_r2": 7.225149494097537e-07,
+        "checkpoint24_full_sampleonly_scale0.75_r2": 1.456819787222673e-06,
+        "checkpoint24_full_sampleonly_scale1_r2": 4.772913327238011e-07,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 1.6570527673276421e-07,
+        "checkpoint24_full_sampleonly_scale1.5_r2": 1.96103528892344e-07,
+        "checkpoint24_full_sampleonly_scale1.75_r2": 3.3386200506383454e-07,
+        "checkpoint24_full_sampleonly_scale2_r2": 4.362534729283381e-07,
+        "checkpoint24_full_sampleonly_scale2.5_r2": 4.2474167111107625e-07,
+        "checkpoint24_full_sampleonly_scale3_r2": 8.597559263098667e-07,
+        "checkpoint27_full_sampleonly_scale0.75_r2": 7.621061189029155e-07,
+        "checkpoint27_full_sampleonly_scale1_r2": 1.9046872378511466e-07,
+        "checkpoint27_full_sampleonly_scale1.25_r2": 1.2722682750041315e-07,
+        "checkpoint27_full_sampleonly_scale1.5_r2": 1.8862182821824272e-07,
+        "checkpoint27_full_sampleonly_scale1.75_r2": 2.3671492871466165e-07,
+        "checkpoint27_full_sampleonly_scale2_r2": 3.795062342167305e-07,
+        "checkpoint27_full_sampleonly_scale2.5_r2": 2.6022349795906905e-06,
+        "checkpoint27_full_sampleonly_scale3_r2": 1.2560257112849405e-05
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.0022050011699725758,
+            1.101729076940193e-05,
+            5.1412145689398725e-05,
+            -3.567457805396003e-05
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 3.1790180793114886,
+          "error": [
+            -0.006957123424270684,
+            -0.0006151657650386218,
+            -0.0005054053016436619,
+            -0.0003765719992364384
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 1.8963500399839135,
+          "error": [
+            -0.004110869105154791,
+            -0.0005246849455878728,
+            -0.00045770387144887514,
+            -0.0003391823811240936
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.648583820529837,
+          "error": [
+            -0.0012646147860326806,
+            -0.0004342041261371516,
+            -0.0004100024412541578,
+            -0.0003017927630117427
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.7613858699222265,
+          "error": [
+            0.001581639533076995,
+            -0.00034372330668642516,
+            -0.00036230101105928086,
+            -0.0002644031448994222
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 2.0182383125267385,
+          "error": [
+            0.004427893852204434,
+            -0.00025324248723571606,
+            -0.0003145995808644664,
+            -0.00022701352678704267
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 3.3017258065943484,
+          "error": [
+            0.007274148171321215,
+            -0.00016276166778499482,
+            -0.00026689815066966577,
+            -0.00018962390867471174
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 5.878877278119179,
+          "error": [
+            0.012966656809560995,
+            1.8199971116425115e-05,
+            -0.0001714952902801617,
+            -0.0001148446724500143
+          ]
+        },
+        "checkpoint12_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 8.459262538226996,
+          "error": [
+            0.018659165447796333,
+            0.00019916161001784158,
+            -7.609242989059517e-05,
+            -4.006543622534376e-05
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 2.8300561947632414,
+          "error": [
+            -0.006196859506032659,
+            -0.0005106732507140152,
+            -0.00044726186141457597,
+            -0.0003339117328207816
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 1.4310530752533501,
+          "error": [
+            -0.003097183880832688,
+            -0.00038536159315511603,
+            -0.0003801792844768531,
+            -0.0002823020259032109
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.21208729139174837,
+          "error": [
+            2.4917443575134257e-06,
+            -0.0002600499355962099,
+            -0.00031309670753904006,
+            -0.00023069231898566103
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 1.414362899130408,
+          "error": [
+            0.0031021673695557084,
+            -0.00013473827803735933,
+            -0.00024601413060123395,
+            -0.00017908261206807646
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 2.813225386989111,
+          "error": [
+            0.006201842994753015,
+            -9.426620478428932e-06,
+            -0.00017893155366346253,
+            -0.00012747290515053526
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 4.217395525897099,
+          "error": [
+            0.009301518619949434,
+            0.00011588503708048412,
+            -0.0001118489767256356,
+            -7.586319823293074e-05
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 7.0289345379299855,
+          "error": [
+            0.015500869870350265,
+            0.000366508352198279,
+            2.2316177149914185e-05,
+            2.7356215602171614e-05
+          ]
+        },
+        "checkpoint16_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 9.841692413414929,
+          "error": [
+            0.02170022112073955,
+            0.0006171316673160964,
+            0.00015648133102554723,
+            0.000130575629437313
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 2.690261453073728,
+          "error": [
+            -0.005907491603906578,
+            -0.0004395044688033003,
+            -0.00027221096313809895,
+            -0.0002290752762722512
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 1.239638356144608,
+          "error": [
+            -0.0027113600113288783,
+            -0.0002904698839408769,
+            -0.00014677808677470566,
+            -0.0001425200838385092
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.23052662853644287,
+          "error": [
+            0.0004847715812443809,
+            -0.00014143529907835288,
+            -2.13452104112985e-05,
+            -5.596489140475679e-05
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 1.669378478116731,
+          "error": [
+            0.0036809031738158637,
+            7.599285784073984e-06,
+            0.00010408766595206703,
+            3.059030102896005e-05
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 3.1205366820841562,
+          "error": [
+            0.006877034766389123,
+            0.0001566338706465737,
+            0.00022952054231536317,
+            0.00011714549346273934
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 4.57229882767528,
+          "error": [
+            0.010073166358961494,
+            0.0003056684555090561,
+            0.0003549534186787287,
+            0.0002037006858964588
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 7.476227621811696,
+          "error": [
+            0.016465429544111565,
+            0.0006037376252339965,
+            0.0006058191714054043,
+            0.00037681107076396013
+          ]
+        },
+        "checkpoint24_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 10.380318547805865,
+          "error": [
+            0.022857692729260748,
+            0.0009018067949589318,
+            0.0008566849241320174,
+            0.0005499214556314502
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale0.75": {
+          "relative_to_same_cloud": 2.461617350942483,
+          "error": [
+            -0.005413702596460013,
+            -0.00031737169378185347,
+            -0.00021438405091410428,
+            -0.0001771053961937127
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1": {
+          "relative_to_same_cloud": 0.9335892497102366,
+          "error": [
+            -0.002052974668073304,
+            -0.0001276261839121915,
+            -6.967553714282149e-05,
+            -7.322691040044342e-05
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.5946436874679486,
+          "error": [
+            0.0013077532603222863,
+            6.211932595744964e-05,
+            7.5032976628496e-05,
+            3.0651575392788566e-05
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 2.122639080502541,
+          "error": [
+            0.004668481188708995,
+            0.0002518648358270717,
+            0.00021974149039980656,
+            0.00013453006118604918
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale1.75": {
+          "relative_to_same_cloud": 3.6506952132789263,
+          "error": [
+            0.008029209117094815,
+            0.0004416103456966851,
+            0.0003644500041710408,
+            0.00023840854697928984
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale2": {
+          "relative_to_same_cloud": 5.178758320061441,
+          "error": [
+            0.011389937045484189,
+            0.0006313558555663661,
+            0.0005091585179423236,
+            0.0003422870327725331
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale2.5": {
+          "relative_to_same_cloud": 8.234889926513587,
+          "error": [
+            0.01811139290226471,
+            0.0010108468753055998,
+            0.0007985755454848961,
+            0.0005500440043590465
+          ]
+        },
+        "checkpoint27_full_sampleonly_scale3": {
+          "relative_to_same_cloud": 11.291023857852272,
+          "error": [
+            0.024832848759040793,
+            0.0013903378950448405,
+            0.0010879925730274617,
+            0.0007578009759455417
+          ]
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint12_full_sampleonly_scale0.75": {
+          "relative_error": 0.4577785795362906,
+          "norm_ratio": 0.5540212272717882
+        },
+        "checkpoint12_full_sampleonly_scale1": {
+          "relative_error": 0.2872267427308801,
+          "norm_ratio": 0.7386949696957176
+        },
+        "checkpoint12_full_sampleonly_scale1.25": {
+          "relative_error": 0.15377242236187255,
+          "norm_ratio": 0.923368712119647
+        },
+        "checkpoint12_full_sampleonly_scale1.5": {
+          "relative_error": 0.18166313962938288,
+          "norm_ratio": 1.1080424545435763
+        },
+        "checkpoint12_full_sampleonly_scale1.75": {
+          "relative_error": 0.3325143861589914,
+          "norm_ratio": 1.2927161969675058
+        },
+        "checkpoint12_full_sampleonly_scale2": {
+          "relative_error": 0.506299239567962,
+          "norm_ratio": 1.4773899393914351
+        },
+        "checkpoint12_full_sampleonly_scale2.5": {
+          "relative_error": 0.867474191432268,
+          "norm_ratio": 1.846737424239294
+        },
+        "checkpoint12_full_sampleonly_scale3": {
+          "relative_error": 1.2334987453345527,
+          "norm_ratio": 2.2160849090871526
+        },
+        "checkpoint16_full_sampleonly_scale0.75": {
+          "relative_error": 0.408018587011814,
+          "norm_ratio": 0.6029777129436356
+        },
+        "checkpoint16_full_sampleonly_scale1": {
+          "relative_error": 0.22412260964638606,
+          "norm_ratio": 0.8039702839248475
+        },
+        "checkpoint16_full_sampleonly_scale1.25": {
+          "relative_error": 0.12156787462800546,
+          "norm_ratio": 1.0049628549060594
+        },
+        "checkpoint16_full_sampleonly_scale1.5": {
+          "relative_error": 0.24519906057672725,
+          "norm_ratio": 1.2059554258872711
+        },
+        "checkpoint16_full_sampleonly_scale1.75": {
+          "relative_error": 0.4315813221782468,
+          "norm_ratio": 1.4069479968684833
+        },
+        "checkpoint16_full_sampleonly_scale2": {
+          "relative_error": 0.6270552792041646,
+          "norm_ratio": 1.607940567849695
+        },
+        "checkpoint16_full_sampleonly_scale2.5": {
+          "relative_error": 1.0244306593249815,
+          "norm_ratio": 2.009925709812119
+        },
+        "checkpoint16_full_sampleonly_scale3": {
+          "relative_error": 1.4243953584132878,
+          "norm_ratio": 2.4119108517745422
+        },
+        "checkpoint24_full_sampleonly_scale0.75": {
+          "relative_error": 0.38560084914829296,
+          "norm_ratio": 0.6204104061237414
+        },
+        "checkpoint24_full_sampleonly_scale1": {
+          "relative_error": 0.18970517080550697,
+          "norm_ratio": 0.8272138748316553
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.09393315780946969,
+          "norm_ratio": 1.0340173435395692
+        },
+        "checkpoint24_full_sampleonly_scale1.5": {
+          "relative_error": 0.2592183901289048,
+          "norm_ratio": 1.2408208122474829
+        },
+        "checkpoint24_full_sampleonly_scale1.75": {
+          "relative_error": 0.45945648190577704,
+          "norm_ratio": 1.4476242809553967
+        },
+        "checkpoint24_full_sampleonly_scale2": {
+          "relative_error": 0.6637331490054541,
+          "norm_ratio": 1.6544277496633106
+        },
+        "checkpoint24_full_sampleonly_scale2.5": {
+          "relative_error": 1.0751886391482064,
+          "norm_ratio": 2.0680346870791384
+        },
+        "checkpoint24_full_sampleonly_scale3": {
+          "relative_error": 1.4878376671448565,
+          "norm_ratio": 2.4816416244949657
+        },
+        "checkpoint27_full_sampleonly_scale0.75": {
+          "relative_error": 0.3514463455946541,
+          "norm_ratio": 0.6513328524517257
+        },
+        "checkpoint27_full_sampleonly_scale1": {
+          "relative_error": 0.14107222134371486,
+          "norm_ratio": 0.8684438032689676
+        },
+        "checkpoint27_full_sampleonly_scale1.25": {
+          "relative_error": 0.10277421547935449,
+          "norm_ratio": 1.0855547540862094
+        },
+        "checkpoint27_full_sampleonly_scale1.5": {
+          "relative_error": 0.30902756677920684,
+          "norm_ratio": 1.3026657049034513
+        },
+        "checkpoint27_full_sampleonly_scale1.75": {
+          "relative_error": 0.5241258099169427,
+          "norm_ratio": 1.5197766557206933
+        },
+        "checkpoint27_full_sampleonly_scale2": {
+          "relative_error": 0.7403999069031808,
+          "norm_ratio": 1.7368876065379353
+        },
+        "checkpoint27_full_sampleonly_scale2.5": {
+          "relative_error": 1.1738753455853543,
+          "norm_ratio": 2.1711095081724188
+        },
+        "checkpoint27_full_sampleonly_scale3": {
+          "relative_error": 1.6077536974058453,
+          "norm_ratio": 2.6053314098069027
+        }
+      },
+      "transport_diagnostics": {
+        "12": {
+          "transport_norm": 7.603313685888376,
+          "transport_condition": 1.7485189852175006e+24,
+          "factor_rank": 0
+        },
+        "16": {
+          "transport_norm": 9.424986506589589,
+          "transport_condition": 1.5808536169663857e+25,
+          "factor_rank": 0
+        },
+        "24": {
+          "transport_norm": 13.075521127530704,
+          "transport_condition": 6.39444321387735e+23,
+          "factor_rank": 0
+        },
+        "27": {
+          "transport_norm": 15.825654897075516,
+          "transport_condition": 3.1429344889338412e+16,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 2.253356291912496
+    }
+  ]
+}

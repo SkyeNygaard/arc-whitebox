@@ -1,0 +1,236 @@
+{
+  "protocol": {
+    "selection_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "holdout_loaded": false,
+    "rotation_seed": 3,
+    "gram_flops": 8657043456.0,
+    "base_flops": 268400000000.0
+  },
+  "summary": {
+    "baseline": {
+      "mean_final_mse": 1.806288535238944e-07,
+      "median_final_mse": 1.7220294865489442e-07,
+      "mean_vs_base": 1.0,
+      "median_vs_base": 1.0,
+      "cost_ratio": 1.0,
+      "score_ratio_mean": 1.0,
+      "score_ratio_median": 1.0,
+      "wins": 0
+    },
+    "full_1": {
+      "mean_final_mse": 1.6515991588329984e-07,
+      "median_final_mse": 1.705320620541852e-07,
+      "mean_vs_base": 0.9143606498141879,
+      "median_vs_base": 0.990296991928647,
+      "cost_ratio": 1.0322542602682563,
+      "score_ratio_mean": 0.9438526761923466,
+      "score_ratio_median": 1.0222382888491848,
+      "wins": 1
+    },
+    "full_1.25": {
+      "mean_final_mse": 1.6400665367738072e-07,
+      "median_final_mse": 1.614570572682034e-07,
+      "mean_vs_base": 0.9079759433654667,
+      "median_vs_base": 0.9375975180992605,
+      "cost_ratio": 1.0322542602682563,
+      "score_ratio_mean": 0.937262035760092,
+      "score_ratio_median": 0.9678390324749052,
+      "wins": 2
+    },
+    "full_1.5": {
+      "mean_final_mse": 1.6446181416691157e-07,
+      "median_final_mse": 1.594717753022731e-07,
+      "mean_vs_base": 0.9104958092708916,
+      "median_vs_base": 0.926068784233565,
+      "cost_ratio": 1.0322542602682563,
+      "score_ratio_mean": 0.9398631780762715,
+      "score_ratio_median": 0.955938447826542,
+      "wins": 2
+    },
+    "full_2": {
+      "mean_final_mse": 1.7215782643091986e-07,
+      "median_final_mse": 1.77981469820554e-07,
+      "mean_vs_base": 0.9531025806358564,
+      "median_vs_base": 1.0335564588806205,
+      "cost_ratio": 1.0322542602682563,
+      "score_ratio_mean": 0.983844199334032,
+      "score_ratio_median": 1.0668930579072935,
+      "wins": 2
+    },
+    "marginal_1": {
+      "mean_final_mse": 1.6119356097432236e-07,
+      "median_final_mse": 1.6551438799551902e-07,
+      "mean_vs_base": 0.8924020599676726,
+      "median_vs_base": 0.9611588494179638,
+      "cost_ratio": 1.0,
+      "score_ratio_mean": 0.8924020599676726,
+      "score_ratio_median": 0.9611588494179638,
+      "wins": 3
+    },
+    "marginal_1.25": {
+      "mean_final_mse": 1.5906597017965834e-07,
+      "median_final_mse": 1.5329489850178914e-07,
+      "mean_vs_base": 0.8806232618789023,
+      "median_vs_base": 0.8901990337517495,
+      "cost_ratio": 1.0,
+      "score_ratio_mean": 0.8806232618789023,
+      "score_ratio_median": 0.8901990337517495,
+      "wins": 3
+    },
+    "marginal_1.5": {
+      "mean_final_mse": 1.580363757105731e-07,
+      "median_final_mse": 1.4361434879444416e-07,
+      "mean_vs_base": 0.8749232064946221,
+      "median_vs_base": 0.833983099106255,
+      "cost_ratio": 1.0,
+      "score_ratio_mean": 0.8749232064946221,
+      "score_ratio_median": 0.833983099106255,
+      "wins": 3
+    },
+    "marginal_2": {
+      "mean_final_mse": 1.5927563005802227e-07,
+      "median_final_mse": 1.3191732841186826e-07,
+      "mean_vs_base": 0.8817839838470357,
+      "median_vs_base": 0.7660573145947629,
+      "cost_ratio": 1.0,
+      "score_ratio_mean": 0.8817839838470357,
+      "score_ratio_median": 0.7660573145947629,
+      "wins": 3
+    }
+  },
+  "records": [
+    {
+      "index": 0,
+      "name": "daniel-harrison",
+      "seconds": 3.7105337081011385,
+      "metadata": {
+        "mean_rel_rms": 0.008401813074944444,
+        "var_rel_rms": 0.0010182644198504372,
+        "offdiag_cov_rel_rms": 0.0006978265475403061
+      },
+      "final_mse": {
+        "baseline": 1.7326172944260587e-07,
+        "marginal_1": 1.5643295706635022e-07,
+        "full_1": 1.7524568588537802e-07,
+        "marginal_1.25": 1.525644287927138e-07,
+        "full_1.25": 1.8097788176683178e-07,
+        "marginal_1.5": 1.488322594182693e-07,
+        "full_1.5": 1.8904069553237607e-07,
+        "marginal_2": 1.417940797251994e-07,
+        "full_2": 2.1374936308269676e-07
+      }
+    },
+    {
+      "index": 1,
+      "name": "dustin-robinson",
+      "seconds": 3.6526399590075016,
+      "metadata": {
+        "mean_rel_rms": 0.029189416763304773,
+        "var_rel_rms": 0.0009561995826621194,
+        "offdiag_cov_rel_rms": 0.0007061604013358991
+      },
+      "final_mse": {
+        "baseline": 1.7114416786718297e-07,
+        "marginal_1": 1.9433268932786597e-07,
+        "full_1": 2.0849034761171102e-07,
+        "marginal_1.25": 2.0326467253826296e-07,
+        "full_1.25": 2.1535499470306714e-07,
+        "marginal_1.5": 2.13445949244058e-07,
+        "full_1.5": 2.2021155055605624e-07,
+        "marginal_2": 2.3753639933462805e-07,
+        "full_2": 2.225371586786072e-07
+      }
+    },
+    {
+      "index": 2,
+      "name": "cole-martin",
+      "seconds": 3.246519540902227,
+      "metadata": {
+        "mean_rel_rms": 0.010942884517452527,
+        "var_rel_rms": 0.0008999604347512585,
+        "offdiag_cov_rel_rms": 0.0007060135580224174
+      },
+      "final_mse": {
+        "baseline": 3.0606749570493026e-07,
+        "marginal_1": 1.7459581892468785e-07,
+        "full_1": 1.6581843822299237e-07,
+        "marginal_1.25": 1.5402536821086447e-07,
+        "full_1.25": 1.4193623276957504e-07,
+        "marginal_1.5": 1.3839643817061903e-07,
+        "full_1.5": 1.2641153933785463e-07,
+        "marginal_2": 1.220405770985371e-07,
+        "full_2": 1.2862840129034974e-07
+      }
+    },
+    {
+      "index": 3,
+      "name": "donna-clarke",
+      "seconds": 3.337077333126217,
+      "metadata": {
+        "mean_rel_rms": 0.010453394174249666,
+        "var_rel_rms": 0.0009543889574269252,
+        "offdiag_cov_rel_rms": 0.0006996316935352065
+      },
+      "final_mse": {
+        "baseline": 1.1497586219761351e-07,
+        "marginal_1": 1.1254038070248402e-07,
+        "full_1": 1.1965263897447734e-07,
+        "marginal_1.25": 1.1203937632700644e-07,
+        "full_1.25": 1.2400625698192255e-07,
+        "marginal_1.5": 1.1156725903130882e-07,
+        "full_1.5": 1.299028550721701e-07,
+        "marginal_2": 1.1072797731853432e-07,
+        "full_2": 1.4714644796597603e-07
+      }
+    },
+    {
+      "index": 4,
+      "name": "rebecca-walker",
+      "seconds": 3.1440641251392663,
+      "metadata": {
+        "mean_rel_rms": 0.007884351959202514,
+        "var_rel_rms": 0.0009735733975313752,
+        "offdiag_cov_rel_rms": 0.0007027635848306171
+      },
+      "final_mse": {
+        "baseline": 9.935342008759346e-08,
+        "marginal_1": 1.0537693965920251e-07,
+        "full_1": 1.0157564478224267e-07,
+        "marginal_1.25": 1.071780132288915e-07,
+        "full_1.25": 1.0327164716007511e-07,
+        "marginal_1.5": 1.0910398000227354e-07,
+        "full_1.5": 1.0543773028249709e-07,
+        "marginal_2": 1.1329832919163018e-07,
+        "full_2": 1.1206909589275748e-07
+      }
+    },
+    {
+      "index": 5,
+      "name": "monique-stevens",
+      "seconds": 3.298034166917205,
+      "metadata": {
+        "mean_rel_rms": 0.010743048560269532,
+        "var_rel_rms": 0.0010119365944915152,
+        "offdiag_cov_rel_rms": 0.0007061154858584892
+      },
+      "final_mse": {
+        "baseline": 2.1897044584344037e-07,
+        "marginal_1": 2.2388258016534354e-07,
+        "full_1": 2.2017673982299757e-07,
+        "marginal_1.25": 2.2532396198021088e-07,
+        "full_1.25": 2.1849290868281264e-07,
+        "marginal_1.5": 2.268723683969098e-07,
+        "full_1.5": 2.1576651422051535e-07,
+        "marginal_2": 2.3025641767960455e-07,
+        "full_2": 2.0881649167513197e-07
+      }
+    }
+  ]
+}

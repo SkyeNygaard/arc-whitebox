@@ -1,0 +1,84 @@
+{
+  "development": {
+    "depths": [
+      7,
+      15,
+      23,
+      27,
+      29,
+      30
+    ],
+    "eigenvalues": [
+      0.020101809247086315,
+      0.05161776346915788,
+      0.11801945647062836,
+      0.1669319977578327,
+      0.2521108482346918,
+      0.39121812482060314
+    ],
+    "effective_rank_of_pooled_increment_gram": 3.824459435153549,
+    "cumulative_energy_over_sum_increment_energy": 0.9372366772265706,
+    "cross_term_fraction": -0.06276332277342944,
+    "last_two_checkpoint_energy_fraction": 0.07250420508000006,
+    "max_abs_off_diagonal_cosine": 0.3017383219807858
+  },
+  "validation": {
+    "depths": [
+      7,
+      15,
+      23,
+      27,
+      29,
+      30
+    ],
+    "eigenvalues": [
+      0.028343991788006725,
+      0.053218356150169496,
+      0.11076837116881516,
+      0.1706140848803401,
+      0.23178644034086476,
+      0.40526875567180387
+    ],
+    "effective_rank_of_pooled_increment_gram": 3.802540294887972,
+    "cumulative_energy_over_sum_increment_energy": 0.9707128107052126,
+    "cross_term_fraction": -0.029287189294787352,
+    "last_two_checkpoint_energy_fraction": 0.08233478897714847,
+    "max_abs_off_diagonal_cosine": 0.1460528700210998
+  },
+  "confirmation": {
+    "depths": [
+      7,
+      15,
+      23,
+      27,
+      29,
+      30
+    ],
+    "eigenvalues": [
+      0.03156104668353441,
+      0.06472513187972288,
+      0.11214811792611812,
+      0.2079888563082162,
+      0.2604319409479666,
+      0.32314490625444126
+    ],
+    "effective_rank_of_pooled_increment_gram": 4.2868882799892685,
+    "cumulative_energy_over_sum_increment_energy": 1.078023089828132,
+    "cross_term_fraction": 0.078023089828132,
+    "last_two_checkpoint_energy_fraction": 0.09839063169495336,
+    "max_abs_off_diagonal_cosine": 0.18714374670546718
+  },
+  "counterexample": {
+    "pooled_increment_1": [
+      1.0,
+      1.0
+    ],
+    "pooled_increment_2": [
+      1.0,
+      -1.0
+    ],
+    "pooled_cosine": 0.0,
+    "within_each_case_output_dimension": 1,
+    "implication": "Low pooled cosine can be caused entirely by cross-case sign heterogeneity."
+  }
+}

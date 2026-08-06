@@ -1,0 +1,135 @@
+{
+  "title": "Independent pure-_pydecimal scalar theorem replay",
+  "scope": "Replays exact-fraction Delsarte bound, Kerdock multiplicity sum, spherical-mean subtraction, and one-sided ratio from certified interval inputs; does not recompute deep-kernel intervals.",
+  "precision": 100,
+  "implementation": {
+    "decimal_module_file": "decimal.py",
+    "decimal_implementation": "decimal",
+    "decimal_version": "1.70",
+    "libmpdec_version_attribute": "2.4.2",
+    "decimal_shim_sha256": "97ef3d395c7f17f1c095909ba4c67841313145b106b4793a5535dbdb96eb6c55",
+    "note": "Executed with a decimal.py shim that re-exports _pydecimal; no C decimal arithmetic is used by this process."
+  },
+  "input_sha256": {
+    "pointwise": "9449368da87077e4ad9501022f2678b990151998844e6af04740d7eadc1dbdc1",
+    "energy": "fd31336a679286723d03472393d6b1f06cb5bebf4b768e046305606a37a20e88",
+    "mean": "318df2cd8b866ad67f3637a64dbb2cb4906cc1b2bbb9acb273601d3d2bd74497",
+    "theorem": "d1c211e57815165fa924ae83251ab72e65cad643a716be2ea5c2dc795406317a"
+  },
+  "exact_checks": {
+    "higher_gegenbauer_coefficients_nonnegative": true,
+    "h1_exact": "9066372773250285785/9223372036854775808",
+    "c0_exact": "8779587105572243/9007199254740992",
+    "universal_bound_exact": "197930435402557054096653/203061758763394744188928",
+    "pointwise_global_upper_strictly_negative": true,
+    "coverage_exact": true,
+    "no_gaps_or_overlaps": true
+  },
+  "replayed": {
+    "energy": {
+      "lower": "0.9747302329077504666127808462108414633985481621607157811601376765058916374318677325581395348837209300",
+      "upper": "0.9747302329077504666127808462108414633985481621607157811601376765059431405053900193798449612403100781"
+    },
+    "bound": {
+      "lower": "0.9747302328509000564066126514960711073288701902848240637848543566326762354651162790697674418604651162",
+      "upper": "0.9747302328509000564066126514960711073288701902848240637848543566326762354651162790697674418604651163"
+    },
+    "gap": {
+      "lower": "5.68504102061681947147703560696779718758917173752833198732154019667514534883720930232558137E-11",
+      "upper": "5.68504102061681947147703560696779718758917173752833198732669050402737403100775193798449619E-11"
+    },
+    "kmse": {
+      "lower": "2.433660357543002938909133801740605466857327638263072497867159093881429089411187749237295877627340272E-7",
+      "upper": "2.433660357543005227609466502669764591481120637005559969510846422320188603585251664343381551654834664E-7"
+    },
+    "cert": {
+      "lower": "2.433091853440941256961986098179908687138568721089319664668426939861761574876304028307063319489340272E-7",
+      "upper": "2.433091853440943545662318799109067811762361719831807136312113753269785866182150889149583102036834664E-7"
+    },
+    "ratio": {
+      "lower": "1",
+      "upper": "1.000233655010294813770660200185981719050338763170397955080034409621193360702371343444711316050835668"
+    },
+    "percent": {
+      "lower": "0",
+      "upper": "0.023365501029481377066020018598171905033876317039795508003440962119336070237134344471131605083566800"
+    }
+  },
+  "shipped": {
+    "energy": {
+      "lower": "0.9747302329077504666127808462108414633985481621607157811601376765058907",
+      "upper": "0.9747302329077504666127808462108414633985481621607157811601376765059437"
+    },
+    "bound": {
+      "lower": "0.9747302328509000564066126514960711073288701902848240637848543566326762",
+      "upper": "0.9747302328509000564066126514960711073288701902848240637848543566326763"
+    },
+    "gap": {
+      "lower": "5.68504102061681947147703560696779718758917173752833198732144E-11",
+      "upper": "5.68504102061681947147703560696779718758917173752833198732675E-11"
+    },
+    "kmse": {
+      "lower": "2.4336603575430029389091338017406054668573276382630724978671590845071104120856063E-7",
+      "upper": "2.4336603575430052276094665026697645914811206370055599695108464279151347033914533E-7"
+    },
+    "cert": {
+      "lower": "2.4330918534409412569619860981799086871385687210893196646684269395071104120856063E-7",
+      "upper": "2.4330918534409435456623187991090678117623617198318071363121137539151347033914533E-7"
+    },
+    "ratio": {
+      "lower": "1",
+      "upper": "1.0002336550102948137706602001859817190503387631703979550800344120665100552627519"
+    },
+    "percent": {
+      "lower": "0",
+      "upper": "0.0233655010294813770660200185981719050338763170397955080034412066510055262751900"
+    }
+  },
+  "comparison": {
+    "energy": {
+      "byte_value_equal": false,
+      "replay_contains_shipped": false,
+      "shipped_contains_replay": true,
+      "overlap": true
+    },
+    "bound": {
+      "byte_value_equal": false,
+      "replay_contains_shipped": false,
+      "shipped_contains_replay": true,
+      "overlap": true
+    },
+    "gap": {
+      "byte_value_equal": false,
+      "replay_contains_shipped": false,
+      "shipped_contains_replay": true,
+      "overlap": true
+    },
+    "kmse": {
+      "byte_value_equal": false,
+      "replay_contains_shipped": false,
+      "shipped_contains_replay": true,
+      "overlap": true
+    },
+    "cert": {
+      "byte_value_equal": false,
+      "replay_contains_shipped": false,
+      "shipped_contains_replay": true,
+      "overlap": true
+    },
+    "ratio": {
+      "byte_value_equal": false,
+      "replay_contains_shipped": false,
+      "shipped_contains_replay": true,
+      "overlap": true
+    },
+    "percent": {
+      "byte_value_equal": false,
+      "replay_contains_shipped": false,
+      "shipped_contains_replay": true,
+      "overlap": true
+    }
+  },
+  "certified_ratio_upper": "1.000233655010294813770660200185981719050338763170397955080034409621193360702371343444711316050835668",
+  "certified_relative_excess_percent_upper": "0.023365501029481377066020018598171905033876317039795508003440962119336070237134344471131605083566800",
+  "passed": true
+}

@@ -1,0 +1,213 @@
+{
+  "protocol": {
+    "split": "official IDs 0--49 only",
+    "baseline_rotation_seed": 3,
+    "alternate_rotation_seeds": [
+      0,
+      1
+    ],
+    "candidate_seed": 2026072802,
+    "candidate_count_per_size": 20000,
+    "harmonic_filter": "intersection of best quartile quartic leakage and best quartile sixth-moment mismatch",
+    "formula": "F3 + alpha * ((P0_S-P3_S) + (P1_S-P3_S))/2"
+  },
+  "baseline_selection_mse": 1.7587467361245454e-07,
+  "records": [
+    {
+      "bases_per_alternate_rotation": 8,
+      "extra_rows": 8192,
+      "total_rows": 74240,
+      "subset": [
+        7,
+        27,
+        32,
+        42,
+        59,
+        72,
+        96,
+        121
+      ],
+      "candidate_index": 1293,
+      "admissible_candidates": 3459,
+      "quartic_rms": 1.828117084964918e-06,
+      "quartic_percentile": 0.07455,
+      "sixth_mismatch_rms": 1.0992001003435195e-07,
+      "sixth_mismatch_percentile": 0.0606,
+      "fitted_alpha": 0.05101099337348991,
+      "selection_mse": 1.5702284068190974e-07,
+      "selection_reduction_fraction": 0.10718901444607887,
+      "fivefold_refit_alpha_mse": 1.5786876081063676e-07,
+      "fivefold_alphas": [
+        0.05037051030009465,
+        0.0559236762421852,
+        0.04864790350987863,
+        0.045954109504013074,
+        0.05399052333368441
+      ],
+      "simple_alpha_mses": {
+        "0.03125": 1.5985190984856063e-07,
+        "0.046875": 1.5714677331844833e-07,
+        "0.0625": 1.5797913368955906e-07,
+        "0.078125": 1.6234899096189293e-07,
+        "0.09375": 1.702563451354498e-07,
+        "0.109375": 1.817011962102298e-07,
+        "0.125": 1.966835441862329e-07
+      },
+      "best_simple_alpha": 0.046875,
+      "best_simple_alpha_mse": 1.5714677331844833e-07
+    },
+    {
+      "bases_per_alternate_rotation": 12,
+      "extra_rows": 12288,
+      "total_rows": 78336,
+      "subset": [
+        6,
+        10,
+        14,
+        31,
+        32,
+        47,
+        50,
+        57,
+        83,
+        87,
+        101,
+        118
+      ],
+      "candidate_index": 2436,
+      "admissible_candidates": 3578,
+      "quartic_rms": 1.4522661835337331e-06,
+      "quartic_percentile": 0.03915,
+      "sixth_mismatch_rms": 9.013265756723833e-08,
+      "sixth_mismatch_percentile": 0.15485,
+      "fitted_alpha": 0.06473280456385608,
+      "selection_mse": 1.5398442055706948e-07,
+      "selection_reduction_fraction": 0.12446506711717309,
+      "fivefold_refit_alpha_mse": 1.5470775737035216e-07,
+      "fivefold_alphas": [
+        0.061061487730464666,
+        0.06764831670326757,
+        0.06111663814379771,
+        0.062395266370128655,
+        0.07079154275700084
+      ],
+      "simple_alpha_mses": {
+        "0.03125": 1.5984102093656303e-07,
+        "0.046875": 1.556503556124187e-07,
+        "0.0625": 1.5401046429747522e-07,
+        "0.078125": 1.549213469917327e-07,
+        "0.09375": 1.5838300369519108e-07,
+        "0.109375": 1.6439543440785038e-07,
+        "0.125": 1.7295863912971057e-07
+      },
+      "best_simple_alpha": 0.0625,
+      "best_simple_alpha_mse": 1.5401046429747522e-07
+    },
+    {
+      "bases_per_alternate_rotation": 16,
+      "extra_rows": 16384,
+      "total_rows": 82432,
+      "subset": [
+        13,
+        15,
+        18,
+        32,
+        38,
+        40,
+        43,
+        49,
+        57,
+        59,
+        84,
+        111,
+        112,
+        116,
+        118,
+        126
+      ],
+      "candidate_index": 12640,
+      "admissible_candidates": 3606,
+      "quartic_rms": 1.2585917715940818e-06,
+      "quartic_percentile": 0.11535,
+      "sixth_mismatch_rms": 7.65628197998544e-08,
+      "sixth_mismatch_percentile": 0.12905,
+      "fitted_alpha": 0.07908026578548331,
+      "selection_mse": 1.493419373303982e-07,
+      "selection_reduction_fraction": 0.15086160921908565,
+      "fivefold_refit_alpha_mse": 1.5109427365135725e-07,
+      "fivefold_alphas": [
+        0.07404980211749897,
+        0.09051684696187844,
+        0.07519433054039396,
+        0.0729646242401705,
+        0.08375297377880528
+      ],
+      "simple_alpha_mses": {
+        "0.03125": 1.5904818543436603e-07,
+        "0.046875": 1.5374241250466698e-07,
+        "0.0625": 1.5050828701453143e-07,
+        "0.078125": 1.4934580896395937e-07,
+        "0.09375": 1.5025497835295076e-07,
+        "0.109375": 1.5323579518150564e-07,
+        "0.125": 1.58288259449624e-07
+      },
+      "best_simple_alpha": 0.078125,
+      "best_simple_alpha_mse": 1.4934580896395937e-07
+    },
+    {
+      "bases_per_alternate_rotation": 20,
+      "extra_rows": 20480,
+      "total_rows": 86528,
+      "subset": [
+        1,
+        3,
+        15,
+        31,
+        32,
+        42,
+        44,
+        47,
+        53,
+        54,
+        57,
+        73,
+        79,
+        88,
+        90,
+        91,
+        115,
+        116,
+        124,
+        126
+      ],
+      "candidate_index": 1980,
+      "admissible_candidates": 3641,
+      "quartic_rms": 1.1030686583080493e-06,
+      "quartic_percentile": 0.0997,
+      "sixth_mismatch_rms": 6.661021137315814e-08,
+      "sixth_mismatch_percentile": 0.07215,
+      "fitted_alpha": 0.1020963818292498,
+      "selection_mse": 1.454819485788127e-07,
+      "selection_reduction_fraction": 0.17280899182001153,
+      "fivefold_refit_alpha_mse": 1.4679581947872147e-07,
+      "fivefold_alphas": [
+        0.09682452556436674,
+        0.11167794882103607,
+        0.0976622157386444,
+        0.09467204255319947,
+        0.10947213143676654
+      ],
+      "simple_alpha_mses": {
+        "0.03125": 1.6011666423906057e-07,
+        "0.046875": 1.54373212014207e-07,
+        "0.0625": 1.5005346143058245e-07,
+        "0.078125": 1.471574124881869e-07,
+        "0.09375": 1.4568506518702032e-07,
+        "0.109375": 1.456364195270827e-07,
+        "0.125": 1.4701147550837408e-07
+      },
+      "best_simple_alpha": 0.109375,
+      "best_simple_alpha_mse": 1.456364195270827e-07
+    }
+  ]
+}

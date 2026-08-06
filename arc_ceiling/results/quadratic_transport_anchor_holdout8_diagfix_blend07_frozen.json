@@ -1,0 +1,844 @@
+{
+  "protocol": {
+    "indices": [
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175
+    ],
+    "layer": 29,
+    "rotation_seed": 3,
+    "rank": 4,
+    "folds": 6,
+    "ridge": 0.1,
+    "blend_alphas": [
+      0.7
+    ],
+    "nodes": 8,
+    "chunk": 512,
+    "factorized_rho_limits": [
+      0.99
+    ],
+    "factorized_scales": [
+      1.0
+    ],
+    "factorized_dir": "arc_ceiling/results/factorized_k3_layer29_diagfix",
+    "out": "arc_ceiling/results/quadratic_transport_anchor_holdout8_diagfix_blend07_frozen.json"
+  },
+  "summary": {
+    "oracle_blend0.7": {
+      "mse_ratio": 0.8082851323574375,
+      "wins": 7,
+      "worst": 1.1537032546236639,
+      "mean_anchor_error_relative_to_same_cloud": 0.0
+    },
+    "sample_blend0.7": {
+      "mse_ratio": 1.034800692964012,
+      "wins": 2,
+      "worst": 1.0766838564752998,
+      "mean_anchor_error_relative_to_same_cloud": 1.0
+    },
+    "oracle_k3_raw_blend0.7": {
+      "mse_ratio": 1.6577593167930131,
+      "wins": 0,
+      "worst": 2.8132043397388364,
+      "mean_anchor_error_relative_to_same_cloud": 3.5990053653368794
+    },
+    "oracle_k3_covnorm_blend0.7": {
+      "mse_ratio": 0.7632184574007275,
+      "wins": 8,
+      "worst": 0.9809019577671891,
+      "mean_anchor_error_relative_to_same_cloud": 0.14901816018347624
+    },
+    "factorized_k3_scale1_rho0.99_raw_blend0.7": {
+      "mse_ratio": 0.8813755775709308,
+      "wins": 6,
+      "worst": 1.4276718920262461,
+      "mean_anchor_error_relative_to_same_cloud": 0.781986615224709
+    },
+    "factorized_k3_scale1_rho0.99_covnorm_blend0.7": {
+      "mse_ratio": 1.1123010909693982,
+      "wins": 3,
+      "worst": 2.489475687034929,
+      "mean_anchor_error_relative_to_same_cloud": 1.86546618614347
+    },
+    "adaptive_ls_edgeworth_blend0.7": {
+      "mse_ratio": 1.4702382874139153,
+      "wins": 2,
+      "worst": 3.915394561833255,
+      "mean_anchor_error_relative_to_same_cloud": 1.0941100617395483
+    },
+    "adaptive_norm_edgeworth_blend0.7": {
+      "mse_ratio": 1.5437176979337404,
+      "wins": 1,
+      "worst": 4.109388696614936,
+      "mean_anchor_error_relative_to_same_cloud": 1.0524234041950913
+    }
+  },
+  "records": [
+    {
+      "index": 168,
+      "name": "katie-rosario",
+      "baseline_mse": 2.7290469891222585e-07,
+      "method_mses": {
+        "oracle_blend0.7": 3.14851039337126e-07,
+        "sample_blend0.7": 2.7929425297552777e-07,
+        "oracle_k3_raw_blend0.7": 7.677366833149942e-07,
+        "oracle_k3_covnorm_blend0.7": 2.597737447188995e-07,
+        "factorized_k3_scale1_rho0.99_raw_blend0.7": 2.322641354132255e-07,
+        "factorized_k3_scale1_rho0.99_covnorm_blend0.7": 3.862508899080904e-07,
+        "adaptive_ls_edgeworth_blend0.7": 2.677530644640036e-07,
+        "adaptive_norm_edgeworth_blend0.7": 2.9836086174825364e-07
+      },
+      "method_anchor_labels": {
+        "oracle_blend0.7": "oracle",
+        "sample_blend0.7": "sample",
+        "oracle_k3_raw_blend0.7": "oracle_k3_raw",
+        "oracle_k3_covnorm_blend0.7": "oracle_k3_covnorm",
+        "factorized_k3_scale1_rho0.99_raw_blend0.7": "factorized_k3_scale1_rho0.99_raw",
+        "factorized_k3_scale1_rho0.99_covnorm_blend0.7": "factorized_k3_scale1_rho0.99_covnorm",
+        "adaptive_ls_edgeworth_blend0.7": "adaptive_ls_edgeworth",
+        "adaptive_norm_edgeworth_blend0.7": "adaptive_norm_edgeworth"
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.001984104818407717,
+            1.2873656899989316e-05,
+            1.6500802343285582e-05,
+            -5.642611934067801e-06
+          ]
+        },
+        "oracle_k3_raw": {
+          "relative_to_same_cloud": 2.120166073415084,
+          "error": [
+            0.004189825321180285,
+            0.0003502500340724288,
+            5.380935002615144e-05,
+            0.0001328747535021351
+          ]
+        },
+        "oracle_k3_covnorm": {
+          "relative_to_same_cloud": 0.10397052644297697,
+          "error": [
+            -0.00018723880912085988,
+            -7.578608123085667e-05,
+            -3.809094575580197e-05,
+            1.7526275570427935e-05
+          ]
+        },
+        "factorized_k3_scale1_rho0.99_raw": {
+          "relative_to_same_cloud": 0.16568559460804966,
+          "error": [
+            0.00031051586818442445,
+            -4.905032379449309e-05,
+            -3.354283587385116e-05,
+            9.01672803372399e-05
+          ]
+        },
+        "factorized_k3_scale1_rho0.99_covnorm": {
+          "relative_to_same_cloud": 1.3120388718449834,
+          "error": [
+            -0.002574522224284115,
+            -0.00037057983563868607,
+            -0.00010957421922632316,
+            -8.738472315225013e-06
+          ]
+        },
+        "adaptive_ls_edgeworth": {
+          "relative_to_same_cloud": 1.3527834644851593,
+          "error": [
+            -0.00267887165692704,
+            0.00010246056290805217,
+            7.995634153490014e-05,
+            0.00010870082407136474
+          ]
+        },
+        "adaptive_norm_edgeworth": {
+          "relative_to_same_cloud": 1.2424996096312098,
+          "error": [
+            -0.0024550795834008543,
+            0.00015548249650313567,
+            9.951655218014884e-05,
+            0.00012917488726433722
+          ]
+        }
+      },
+      "calibration_scales": {
+        "ls": 1.2974704319380173,
+        "norm": 1.337931127723428
+      },
+      "seconds": 4.136884415987879
+    },
+    {
+      "index": 169,
+      "name": "victor-lamb",
+      "baseline_mse": 4.3808960540774755e-07,
+      "method_mses": {
+        "oracle_blend0.7": 3.331274735699822e-07,
+        "sample_blend0.7": 4.472658611810707e-07,
+        "oracle_k3_raw_blend0.7": 7.007576746850463e-07,
+        "oracle_k3_covnorm_blend0.7": 3.1537031539521486e-07,
+        "factorized_k3_scale1_rho0.99_raw_blend0.7": 3.029050311381488e-07,
+        "factorized_k3_scale1_rho0.99_covnorm_blend0.7": 2.635841416595897e-07,
+        "adaptive_ls_edgeworth_blend0.7": 4.165630809547226e-07,
+        "adaptive_norm_edgeworth_blend0.7": 4.3341542889555836e-07
+      },
+      "method_anchor_labels": {
+        "oracle_blend0.7": "oracle",
+        "sample_blend0.7": "sample",
+        "oracle_k3_raw_blend0.7": "oracle_k3_raw",
+        "oracle_k3_covnorm_blend0.7": "oracle_k3_covnorm",
+        "factorized_k3_scale1_rho0.99_raw_blend0.7": "factorized_k3_scale1_rho0.99_raw",
+        "factorized_k3_scale1_rho0.99_covnorm_blend0.7": "factorized_k3_scale1_rho0.99_covnorm",
+        "adaptive_ls_edgeworth_blend0.7": "adaptive_ls_edgeworth",
+        "adaptive_norm_edgeworth_blend0.7": "adaptive_norm_edgeworth"
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.00040409062128521356,
+            -0.00016182773183176513,
+            1.8309786181135157e-05,
+            -0.0001601279117526208
+          ]
+        },
+        "oracle_k3_raw": {
+          "relative_to_same_cloud": 9.051641272459033,
+          "error": [
+            0.004190819709919413,
+            0.00026843658882469423,
+            0.00010360234488214146,
+            8.265254703822104e-05
+          ]
+        },
+        "oracle_k3_covnorm": {
+          "relative_to_same_cloud": 0.44927349144776807,
+          "error": [
+            -0.00015744661104033497,
+            0.0001354979557656455,
+            -1.841598050020786e-05,
+            5.660364924605504e-07
+          ]
+        },
+        "factorized_k3_scale1_rho0.99_raw": {
+          "relative_to_same_cloud": 1.6221171544539306,
+          "error": [
+            0.0007057300614432549,
+            0.00023507542154252437,
+            -9.211303121712047e-06,
+            0.00011625490203492558
+          ]
+        },
+        "factorized_k3_scale1_rho0.99_covnorm": {
+          "relative_to_same_cloud": 4.841404837280971,
+          "error": [
+            -0.0022429059061126466,
+            8.940606317572874e-05,
+            -0.00010409560384824941,
+            2.459513799487993e-05
+          ]
+        },
+        "adaptive_ls_edgeworth": {
+          "relative_to_same_cloud": 1.9562231896020226,
+          "error": [
+            -0.000896219728438119,
+            3.544772007588182e-05,
+            0.00011817239354518227,
+            7.790322820283926e-05
+          ]
+        },
+        "adaptive_norm_edgeworth": {
+          "relative_to_same_cloud": 1.5715948218441995,
+          "error": [
+            -0.0007072351749273231,
+            6.244411143610518e-05,
+            0.000135770315699682,
+            9.816682881038513e-05
+          ]
+        }
+      },
+      "calibration_scales": {
+        "ls": 1.3619806572477817,
+        "norm": 1.3990773032365549
+      },
+      "seconds": 4.242062208009884
+    },
+    {
+      "index": 170,
+      "name": "scott-watts",
+      "baseline_mse": 4.9921147032317104e-08,
+      "method_mses": {
+        "oracle_blend0.7": 4.79152731559803e-08,
+        "sample_blend0.7": 4.973322460905671e-08,
+        "oracle_k3_raw_blend0.7": 6.393296958164168e-08,
+        "oracle_k3_covnorm_blend0.7": 4.896775085798355e-08,
+        "factorized_k3_scale1_rho0.99_raw_blend0.7": 4.82674893008509e-08,
+        "factorized_k3_scale1_rho0.99_covnorm_blend0.7": 1.2427748180584932e-07,
+        "adaptive_ls_edgeworth_blend0.7": 5.326978917324527e-08,
+        "adaptive_norm_edgeworth_blend0.7": 5.500486574004739e-08
+      },
+      "method_anchor_labels": {
+        "oracle_blend0.7": "oracle",
+        "sample_blend0.7": "sample",
+        "oracle_k3_raw_blend0.7": "oracle_k3_raw",
+        "oracle_k3_covnorm_blend0.7": "oracle_k3_covnorm",
+        "factorized_k3_scale1_rho0.99_raw_blend0.7": "factorized_k3_scale1_rho0.99_raw",
+        "factorized_k3_scale1_rho0.99_covnorm_blend0.7": "factorized_k3_scale1_rho0.99_covnorm",
+        "adaptive_ls_edgeworth_blend0.7": "adaptive_ls_edgeworth",
+        "adaptive_norm_edgeworth_blend0.7": "adaptive_norm_edgeworth"
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0001798538404496064,
+            6.0211056669600554e-05,
+            7.119819704847277e-06,
+            -1.4046024142699539e-05
+          ]
+        },
+        "oracle_k3_raw": {
+          "relative_to_same_cloud": 4.49623429354506,
+          "error": [
+            0.000854238767369897,
+            3.752354790043447e-05,
+            2.681613785727988e-05,
+            1.980648341926472e-05
+          ]
+        },
+        "oracle_k3_covnorm": {
+          "relative_to_same_cloud": 0.16539827818941696,
+          "error": [
+            -2.831973394518128e-05,
+            -1.1139576744170071e-05,
+            -2.305262713968607e-06,
+            -7.711335929920038e-06
+          ]
+        },
+        "factorized_k3_scale1_rho0.99_raw": {
+          "relative_to_same_cloud": 1.3350351251769534,
+          "error": [
+            0.00024928834841914105,
+            -4.2104958514404406e-05,
+            -1.6412013014891402e-05,
+            1.923732991632979e-05
+          ]
+        },
+        "factorized_k3_scale1_rho0.99_covnorm": {
+          "relative_to_same_cloud": 2.0580967363823612,
+          "error": [
+            -0.0003836302643335232,
+            -7.09338770028059e-05,
+            -3.434664787339424e-05,
+            -6.247355934692117e-06
+          ]
+        },
+        "adaptive_ls_edgeworth": {
+          "relative_to_same_cloud": 0.5777029174952859,
+          "error": [
+            0.00010016510750121554,
+            4.101831476301457e-05,
+            2.5691366247161066e-06,
+            1.913604735442496e-05
+          ]
+        },
+        "adaptive_norm_edgeworth": {
+          "relative_to_same_cloud": 0.7350433162983516,
+          "error": [
+            0.0001303682574744225,
+            4.5239427322173176e-05,
+            5.324726714951581e-06,
+            2.2334374895219625e-05
+          ]
+        }
+      },
+      "calibration_scales": {
+        "ls": 1.2497037106975732,
+        "norm": 1.2724408450928024
+      },
+      "seconds": 4.1441359161399305
+    },
+    {
+      "index": 171,
+      "name": "aaron-proctor",
+      "baseline_mse": 1.9726656774878428e-07,
+      "method_mses": {
+        "oracle_blend0.7": 1.6677275753767957e-07,
+        "sample_blend0.7": 2.001980183934348e-07,
+        "oracle_k3_raw_blend0.7": 3.3096000287420105e-07,
+        "oracle_k3_covnorm_blend0.7": 1.5120944342699284e-07,
+        "factorized_k3_scale1_rho0.99_raw_blend0.7": 1.8282941964835792e-07,
+        "factorized_k3_scale1_rho0.99_covnorm_blend0.7": 3.198938648658989e-07,
+        "adaptive_ls_edgeworth_blend0.7": 7.723764465951013e-07,
+        "adaptive_norm_edgeworth_blend0.7": 8.106450037268787e-07
+      },
+      "method_anchor_labels": {
+        "oracle_blend0.7": "oracle",
+        "sample_blend0.7": "sample",
+        "oracle_k3_raw_blend0.7": "oracle_k3_raw",
+        "oracle_k3_covnorm_blend0.7": "oracle_k3_covnorm",
+        "factorized_k3_scale1_rho0.99_raw_blend0.7": "factorized_k3_scale1_rho0.99_raw",
+        "factorized_k3_scale1_rho0.99_covnorm_blend0.7": "factorized_k3_scale1_rho0.99_covnorm",
+        "adaptive_ls_edgeworth_blend0.7": "adaptive_ls_edgeworth",
+        "adaptive_norm_edgeworth_blend0.7": "adaptive_norm_edgeworth"
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0036419703535885972,
+            0.0001342262527352367,
+            -5.106780994162952e-06,
+            0.00017956158257475402
+          ]
+        },
+        "oracle_k3_raw": {
+          "relative_to_same_cloud": 2.6060425236497293,
+          "error": [
+            0.009504246065488609,
+            0.00022321599077755605,
+            0.00020553414261650048,
+            1.696113920662129e-05
+          ]
+        },
+        "oracle_k3_covnorm": {
+          "relative_to_same_cloud": 0.08132507649753261,
+          "error": [
+            -0.00027914204231560547,
+            -9.13638667457417e-05,
+            -2.100314392682566e-05,
+            -3.672168687424843e-05
+          ]
+        },
+        "factorized_k3_scale1_rho0.99_raw": {
+          "relative_to_same_cloud": 0.044515867585884876,
+          "error": [
+            0.0001504684466322459,
+            4.4246706342579434e-05,
+            1.9774542934067676e-05,
+            3.734647473645214e-05
+          ]
+        },
+        "factorized_k3_scale1_rho0.99_covnorm": {
+          "relative_to_same_cloud": 1.6176045823460865,
+          "error": [
+            -0.005895289216438115,
+            -0.00023805673158032448,
+            -0.00016447138142225426,
+            2.1433037874128702e-05
+          ]
+        },
+        "adaptive_ls_edgeworth": {
+          "relative_to_same_cloud": 0.8748402355444407,
+          "error": [
+            0.003042210750709984,
+            0.0006362875559020598,
+            0.0002954958549890845,
+            0.000665403425556467
+          ]
+        },
+        "adaptive_norm_edgeworth": {
+          "relative_to_same_cloud": 0.9365588269631234,
+          "error": [
+            0.0032667421010916797,
+            0.0006641125054937524,
+            0.0003141638996578301,
+            0.0006834695332614965
+          ]
+        }
+      },
+      "calibration_scales": {
+        "ls": 1.5405550535782506,
+        "norm": 1.563510307149164
+      },
+      "seconds": 4.201121999882162
+    },
+    {
+      "index": 172,
+      "name": "cody-blackwell",
+      "baseline_mse": 4.6676360572242697e-07,
+      "method_mses": {
+        "oracle_blend0.7": 3.057342131354575e-07,
+        "sample_blend0.7": 4.937782436932541e-07,
+        "oracle_k3_raw_blend0.7": 5.606790079884736e-07,
+        "oracle_k3_covnorm_blend0.7": 2.9207402814171496e-07,
+        "factorized_k3_scale1_rho0.99_raw_blend0.7": 3.3750706989253753e-07,
+        "factorized_k3_scale1_rho0.99_covnorm_blend0.7": 2.904283446778667e-07,
+        "adaptive_ls_edgeworth_blend0.7": 5.272262471226449e-07,
+        "adaptive_norm_edgeworth_blend0.7": 5.363447729052279e-07
+      },
+      "method_anchor_labels": {
+        "oracle_blend0.7": "oracle",
+        "sample_blend0.7": "sample",
+        "oracle_k3_raw_blend0.7": "oracle_k3_raw",
+        "oracle_k3_covnorm_blend0.7": "oracle_k3_covnorm",
+        "factorized_k3_scale1_rho0.99_raw_blend0.7": "factorized_k3_scale1_rho0.99_raw",
+        "factorized_k3_scale1_rho0.99_covnorm_blend0.7": "factorized_k3_scale1_rho0.99_covnorm",
+        "adaptive_ls_edgeworth_blend0.7": "adaptive_ls_edgeworth",
+        "adaptive_norm_edgeworth_blend0.7": "adaptive_norm_edgeworth"
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.004428309858694135,
+            -3.507412772399757e-05,
+            8.614557613942711e-05,
+            1.4591997949210678e-05
+          ]
+        },
+        "oracle_k3_raw": {
+          "relative_to_same_cloud": 1.7207326794604334,
+          "error": [
+            0.007615534817619896,
+            0.0002444804025372293,
+            0.00012156069942919137,
+            0.00013702277565767057
+          ]
+        },
+        "oracle_k3_covnorm": {
+          "relative_to_same_cloud": 0.04979829662635791,
+          "error": [
+            -0.00021841606543127057,
+            5.102907400612866e-06,
+            -1.4439186633886936e-05,
+            2.6682467390570785e-05
+          ]
+        },
+        "factorized_k3_scale1_rho0.99_raw": {
+          "relative_to_same_cloud": 0.3451046391856906,
+          "error": [
+            0.0015264726878063684,
+            7.854353835962287e-05,
+            1.5346035949815456e-05,
+            4.474466027092755e-06
+          ]
+        },
+        "factorized_k3_scale1_rho0.99_covnorm": {
+          "relative_to_same_cloud": 0.9109527434451201,
+          "error": [
+            -0.0040297367732948786,
+            -0.00014450140821839833,
+            -0.00012133921614014553,
+            -7.730658862479742e-05
+          ]
+        },
+        "adaptive_ls_edgeworth": {
+          "relative_to_same_cloud": 0.898715685174389,
+          "error": [
+            0.003972682806812955,
+            9.965960754341509e-05,
+            0.0001945780261616431,
+            0.00012609041637730647
+          ]
+        },
+        "adaptive_norm_edgeworth": {
+          "relative_to_same_cloud": 0.9401669865595432,
+          "error": [
+            0.004155395697429398,
+            0.00011373262728428361,
+            0.00020646841869387256,
+            0.000135818992720204
+          ]
+        }
+      },
+      "calibration_scales": {
+        "ls": 1.3446423632586333,
+        "norm": 1.361479332895262
+      },
+      "seconds": 4.143560457974672
+    },
+    {
+      "index": 173,
+      "name": "raymond-morris",
+      "baseline_mse": 2.1720115881579176e-07,
+      "method_mses": {
+        "oracle_blend0.7": 1.726567462481244e-07,
+        "sample_blend0.7": 2.3385698130469073e-07,
+        "oracle_k3_raw_blend0.7": 3.364433668465084e-07,
+        "oracle_k3_covnorm_blend0.7": 1.8964258176027323e-07,
+        "factorized_k3_scale1_rho0.99_raw_blend0.7": 2.7777290309057347e-07,
+        "factorized_k3_scale1_rho0.99_covnorm_blend0.7": 3.5440215932238206e-07,
+        "adaptive_ls_edgeworth_blend0.7": 3.8091153744884943e-07,
+        "adaptive_norm_edgeworth_blend0.7": 4.1278106165048346e-07
+      },
+      "method_anchor_labels": {
+        "oracle_blend0.7": "oracle",
+        "sample_blend0.7": "sample",
+        "oracle_k3_raw_blend0.7": "oracle_k3_raw",
+        "oracle_k3_covnorm_blend0.7": "oracle_k3_covnorm",
+        "factorized_k3_scale1_rho0.99_raw_blend0.7": "factorized_k3_scale1_rho0.99_raw",
+        "factorized_k3_scale1_rho0.99_covnorm_blend0.7": "factorized_k3_scale1_rho0.99_covnorm",
+        "adaptive_ls_edgeworth_blend0.7": "adaptive_ls_edgeworth",
+        "adaptive_norm_edgeworth_blend0.7": "adaptive_norm_edgeworth"
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0028602494207801143,
+            -0.00011571667342202135,
+            4.871847637820392e-05,
+            -3.2297932476233956e-05
+          ]
+        },
+        "oracle_k3_raw": {
+          "relative_to_same_cloud": 2.117149478719547,
+          "error": [
+            0.0060485129569296525,
+            0.00033190151612374347,
+            0.00020299815914207736,
+            9.723162508326263e-05
+          ]
+        },
+        "oracle_k3_covnorm": {
+          "relative_to_same_cloud": 0.06790474397153314,
+          "error": [
+            -0.00018716352331749064,
+            -2.082275338612799e-05,
+            -3.3130764713326655e-05,
+            -3.5202799145612335e-05
+          ]
+        },
+        "factorized_k3_scale1_rho0.99_raw": {
+          "relative_to_same_cloud": 0.20028124718228563,
+          "error": [
+            0.0005066655738827919,
+            0.00013903722744673663,
+            0.0002242444802124377,
+            -5.0092953434053775e-05
+          ]
+        },
+        "factorized_k3_scale1_rho0.99_covnorm": {
+          "relative_to_same_cloud": 1.3234871461509394,
+          "error": [
+            -0.0037804296582679697,
+            -0.00019155856713192615,
+            -4.066725646283825e-05,
+            -0.00017169184127981824
+          ]
+        },
+        "adaptive_ls_edgeworth": {
+          "relative_to_same_cloud": 0.77612216082572,
+          "error": [
+            0.002165576637444211,
+            0.0003053445253411585,
+            0.0003932351302925463,
+            2.240072033476287e-05
+          ]
+        },
+        "adaptive_norm_edgeworth": {
+          "relative_to_same_cloud": 0.8931153429081559,
+          "error": [
+            0.00249419793824579,
+            0.0003636802741777273,
+            0.0004289999429171257,
+            4.141927160208024e-05
+          ]
+        }
+      },
+      "calibration_scales": {
+        "ls": 1.3724004918185502,
+        "norm": 1.409041858963154
+      },
+      "seconds": 4.080051833996549
+    },
+    {
+      "index": 174,
+      "name": "gregory-simmons",
+      "baseline_mse": 1.4200694893517613e-07,
+      "method_mses": {
+        "oracle_blend0.7": 1.2953147482790834e-07,
+        "sample_blend0.7": 1.3800822862243957e-07,
+        "oracle_k3_raw_blend0.7": 1.8331646204976743e-07,
+        "oracle_k3_covnorm_blend0.7": 1.3255113853026537e-07,
+        "factorized_k3_scale1_rho0.99_raw_blend0.7": 2.027393294671574e-07,
+        "factorized_k3_scale1_rho0.99_covnorm_blend0.7": 3.3389416930972926e-07,
+        "adaptive_ls_edgeworth_blend0.7": 2.436095555939766e-07,
+        "adaptive_norm_edgeworth_blend0.7": 2.4721582779567e-07
+      },
+      "method_anchor_labels": {
+        "oracle_blend0.7": "oracle",
+        "sample_blend0.7": "sample",
+        "oracle_k3_raw_blend0.7": "oracle_k3_raw",
+        "oracle_k3_covnorm_blend0.7": "oracle_k3_covnorm",
+        "factorized_k3_scale1_rho0.99_raw_blend0.7": "factorized_k3_scale1_rho0.99_raw",
+        "factorized_k3_scale1_rho0.99_covnorm_blend0.7": "factorized_k3_scale1_rho0.99_covnorm",
+        "adaptive_ls_edgeworth_blend0.7": "adaptive_ls_edgeworth",
+        "adaptive_norm_edgeworth_blend0.7": "adaptive_norm_edgeworth"
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.00030750162914483514,
+            6.21366415353309e-06,
+            2.0248267466934505e-06,
+            2.9292898884171296e-06
+          ]
+        },
+        "oracle_k3_raw": {
+          "relative_to_same_cloud": 5.245340826566201,
+          "error": [
+            0.001609372076742388,
+            6.14707697970682e-05,
+            8.74533521548742e-05,
+            3.8940953371337066e-05
+          ]
+        },
+        "oracle_k3_covnorm": {
+          "relative_to_same_cloud": 0.22056774458206416,
+          "error": [
+            -5.330297787609073e-05,
+            -4.042856216140457e-05,
+            -1.0137159401865312e-05,
+            -4.927452012663466e-06
+          ]
+        },
+        "factorized_k3_scale1_rho0.99_raw": {
+          "relative_to_same_cloud": 2.2770511786445526,
+          "error": [
+            0.0006896098803992334,
+            1.2934705346725507e-05,
+            0.00011573871644657459,
+            -3.7645167674746696e-05
+          ]
+        },
+        "factorized_k3_scale1_rho0.99_covnorm": {
+          "relative_to_same_cloud": 2.149592074477547,
+          "error": [
+            -0.0006526440207755835,
+            -8.474528442369879e-05,
+            3.957293314397689e-06,
+            -6.340670257741488e-05
+          ]
+        },
+        "adaptive_ls_edgeworth": {
+          "relative_to_same_cloud": 1.5018135618631014,
+          "error": [
+            -0.00044209421318441855,
+            5.084095178867643e-05,
+            0.00012018756082287155,
+            -3.011844932685869e-05
+          ]
+        },
+        "adaptive_norm_edgeworth": {
+          "relative_to_same_cloud": 1.2300225296559613,
+          "error": [
+            -0.00034623177736603505,
+            6.608603840432738e-05,
+            0.0001352104687006913,
+            -2.4755364437578208e-05
+          ]
+        }
+      },
+      "calibration_scales": {
+        "ls": 1.2194088695425431,
+        "norm": 1.25509160054239
+      },
+      "seconds": 4.025335790822282
+    },
+    {
+      "index": 175,
+      "name": "dennis-jones",
+      "baseline_mse": 1.3388364296090055e-07,
+      "method_mses": {
+        "oracle_blend0.7": 7.973211613886071e-08,
+        "sample_blend0.7": 1.426515945554015e-07,
+        "oracle_k3_raw_blend0.7": 2.3581816191034678e-07,
+        "oracle_k3_covnorm_blend0.7": 7.429252416170097e-08,
+        "factorized_k3_scale1_rho0.99_raw_blend0.7": 1.0622592171426783e-07,
+        "factorized_k3_scale1_rho0.99_covnorm_blend0.7": 6.070401377866755e-08,
+        "adaptive_ls_edgeworth_blend0.7": 1.5826226485045993e-07,
+        "adaptive_norm_edgeworth_blend0.7": 1.6714041945021557e-07
+      },
+      "method_anchor_labels": {
+        "oracle_blend0.7": "oracle",
+        "sample_blend0.7": "sample",
+        "oracle_k3_raw_blend0.7": "oracle_k3_raw",
+        "oracle_k3_covnorm_blend0.7": "oracle_k3_covnorm",
+        "factorized_k3_scale1_rho0.99_raw_blend0.7": "factorized_k3_scale1_rho0.99_raw",
+        "factorized_k3_scale1_rho0.99_covnorm_blend0.7": "factorized_k3_scale1_rho0.99_covnorm",
+        "adaptive_ls_edgeworth_blend0.7": "adaptive_ls_edgeworth",
+        "adaptive_norm_edgeworth_blend0.7": "adaptive_norm_edgeworth"
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0004966669560849124,
+            2.0799303484409642e-06,
+            1.4468750134952971e-05,
+            -2.609520516586635e-06
+          ]
+        },
+        "oracle_k3_raw": {
+          "relative_to_same_cloud": 1.4347357748799487,
+          "error": [
+            0.0007097748611394894,
+            5.947975890729061e-05,
+            2.174581373027293e-05,
+            2.100880210785679e-05
+          ]
+        },
+        "oracle_k3_covnorm": {
+          "relative_to_same_cloud": 0.053907123710160286,
+          "error": [
+            -2.6114355132000888e-05,
+            -4.569317818049062e-06,
+            -2.904386299542889e-06,
+            -2.4915998288557208e-06
+          ]
+        },
+        "factorized_k3_scale1_rho0.99_raw": {
+          "relative_to_same_cloud": 0.26610211496032465,
+          "error": [
+            0.00013101377911323153,
+            1.4713054400497527e-05,
+            5.6952616324132226e-06,
+            8.333581747922529e-06
+          ]
+        },
+        "factorized_k3_scale1_rho0.99_covnorm": {
+          "relative_to_same_cloud": 0.7105524972197522,
+          "error": [
+            -0.00035034398929434385,
+            -3.975616422817463e-05,
+            -1.4803786907677339e-05,
+            -1.0710742269963089e-05
+          ]
+        },
+        "adaptive_ls_edgeworth": {
+          "relative_to_same_cloud": 0.814679278926267,
+          "error": [
+            0.00040267113518221986,
+            2.5636613063264105e-05,
+            2.8554188654897773e-05,
+            1.5827783024206614e-05
+          ]
+        },
+        "adaptive_norm_edgeworth": {
+          "relative_to_same_cloud": 0.8703857997001854,
+          "error": [
+            0.00042978655261344256,
+            3.1716703154010054e-05,
+            3.132995530977841e-05,
+            1.8419845719697386e-05
+          ]
+        }
+      },
+      "calibration_scales": {
+        "ls": 1.245891717059585,
+        "norm": 1.271512184769774
+      },
+      "seconds": 4.105536750052124
+    }
+  ]
+}

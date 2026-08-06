@@ -1,0 +1,90 @@
+{
+  "date": "2026-07-30",
+  "overall_verdict": "PROPOSED_OBSERVABILITY_GAP_THEOREM_INVALID_AS_FORMULATED",
+  "fatal_issue": "The actual output is post-ReLU, so the induced limiting field is not Gaussian; Gaussian Bayes-linearity and no-adaptation theorems do not apply.",
+  "surviving_headline": "Exact all-width optimality of uniform mass-one fixed linear weights on the complete Kerdock support, plus scoped T22/T27 boundaries and empirical falsification map.",
+  "tests": {
+    "TEST-0": {
+      "status": "PASS_ARCHITECTURE",
+      "width": 256,
+      "depth": 32,
+      "bias_free": true,
+      "final_relu": true,
+      "he_gaussian": true
+    },
+    "TEST-1a": {
+      "status": "PASS_EXHAUSTIVE",
+      "chirp_pairs_checked": 8128,
+      "violations": 0,
+      "row_profile": {
+        "self": 1,
+        "antipode": 1,
+        "orthogonal": 510,
+        "cross_abs_1_over_16": 65536
+      }
+    },
+    "TEST-1b_infinite": {
+      "status": "TRIVIAL_NONUNIT_ALPHA",
+      "alpha_star": 0.9999997503247287,
+      "relative_risk_reduction": 2.496752714529582e-07
+    },
+    "C3_C4_counterexample": {
+      "status": "PROOF_ROUTE_REFUTED",
+      "dimension": 16,
+      "trials": 10000,
+      "nonlinear_mse": 0.0,
+      "linear_mse": 0.0006355379830340274
+    },
+    "TEST-2": {
+      "status": "FEATURE_CLASS_CLOSED_BUT_GAMMA_UNBOUNDED",
+      "scope": "T4 exact-rotation development rows only; width256; 16 networks x 3 grouped rotations; no protected cohorts opened",
+      "best_grouped_oof_r2": -0.08506842084343602,
+      "arm_selection": {
+        "accuracy": 0.5625,
+        "mean_selected_ideal_cosine": 0.1585199932374092,
+        "mean_oracle_arm_cosine": 0.3624703136444962,
+        "mean_fixed_best_arm_cosine": 0.19682876645748829,
+        "fixed_best_arm": 0
+      }
+    },
+    "TEST-3": {
+      "status": "DIAGNOSTIC_NO_LARGE_AMPLIFICATION",
+      "scope": "12 fresh architecture-matched width-256 depth-32 synthetic networks; 192 Gaussian rows/network; diagnostic only",
+      "max_scale_relative_error": 2.2479803910672865e-07,
+      "max_mean_shift_gain": 1.0111806349271368,
+      "max_random_shift_gain": 1.1956302649297785,
+      "max_rank1_shape_gain": 0.14317852827036506,
+      "gate_any_tested_gain_over_1_5": false
+    },
+    "TEST-4": {
+      "status": "ARCHIVED_LADDER_RECONSTRUCTED_COHERENCE_MISSING",
+      "layer31_mse_removed_screen": 0.8269,
+      "monotone": false
+    },
+    "TEST-5": {
+      "status": "TESTED_BASIS_ECONOMICS_CLOSED",
+      "raw_ratios_96_64_32": [
+        1.3847,
+        2.2475,
+        4.2476
+      ]
+    },
+    "TEST-6": {
+      "status": "POOLED_ZERO_ALIGNMENT_GATE_REJECTED",
+      "reason": "Finite-width S2 families include replicated positive average alignment but fail tails/cost/completeness."
+    },
+    "TEST-7": {
+      "status": "CERTIFICATE_REPRODUCED_BOUND_WEAK",
+      "M": 0.017021894267861246,
+      "beta_for_1pct_improvement_approx": 6.9932e-08
+    }
+  },
+  "invalidated_claims": [
+    "C3",
+    "C4",
+    "C8",
+    "C9 upper-bound test",
+    "observability gap <= gamma"
+  ],
+  "protected_cohorts_opened": false
+}

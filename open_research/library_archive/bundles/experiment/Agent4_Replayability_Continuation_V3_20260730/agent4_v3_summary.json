@@ -1,0 +1,108 @@
+{
+  "agent": 4,
+  "date": "2026-07-30",
+  "finite_transcript_no_go": {
+    "asset": "/mnt/data/agent4_v3_work/prod/kerdock_mub5_seed3.npz",
+    "design_nodes_above_1e_13": 0,
+    "direct_output_pair": {
+      "arbitrary_amplification_note": "multiplying g by any positive scalar leaves the finite transcript unchanged and scales the target gap",
+      "gaussian_target_h": 0.3989422804014327,
+      "gaussian_target_h_plus_g": 0.3989422961707162,
+      "group_count": 129,
+      "group_mean_variance_for_ridge_h": 1.6328697466361867e-07,
+      "max_group_transcript_difference_h_vs_h_plus_g": 0.0,
+      "rank1_contraction_difference": 1.5769283489495322e-08
+    },
+    "exact_standard_gaussian_mean": 1.5769283489495322e-08,
+    "largest_angular_gap_radians": 0.0011246721418401995,
+    "max_value_on_design_nodes": 0.0,
+    "monte_carlo_mean_100k": 1.813100390577929e-08,
+    "monte_carlo_standard_error": 6.134614646736952e-09,
+    "network_formula_max_error": 4.0657581468206416e-20,
+    "network_width": 2,
+    "node_count": 66048,
+    "positive_pair_count": 33024,
+    "projection_min_norm": 0.0001514222364645891,
+    "protected_data_opened": false,
+    "relu_layers": 3,
+    "theorem_scope": "finite-node transcript no-go; does not exclude weight-aware identities or high-probability random-ensemble estimators",
+    "wedge_width_radians": 0.0005623360709200442
+  },
+  "fixed_source_options": {
+    "rank32": {
+      "aggregate_gate_pass": true,
+      "name": "direct_rank32",
+      "normalized_additive_risk_headroom": 0.14905234751284555,
+      "pooled": 0.08136239903093326,
+      "rank": 32,
+      "replay_cost_B": 0.0,
+      "root_allowance": 0.19477441165929288,
+      "shared_estimator_gamma_times_trace_ceiling": 0.037937071437223684,
+      "tail_gate_pass": true,
+      "worst": 0.21383922422216337,
+      "zero_noise_adjusted_ratio": 0.08136239903093326
+    },
+    "rank40": {
+      "aggregate_gate_pass": true,
+      "name": "direct_rank40",
+      "normalized_additive_risk_headroom": 0.16327897432935945,
+      "pooled": 0.06713577221441935,
+      "rank": 40,
+      "replay_cost_B": 0.0,
+      "root_allowance": 0.22090964444680722,
+      "shared_estimator_gamma_times_trace_ceiling": 0.04880107100961478,
+      "tail_gate_pass": true,
+      "worst": 0.1613,
+      "zero_noise_adjusted_ratio": 0.06713577221441935
+    }
+  },
+  "leading_source": {
+    "aggregate_gate_pass": true,
+    "name": "adaptive_direct",
+    "normalized_additive_risk_headroom": 0.1555147465437788,
+    "pooled": 0.0749,
+    "rank": 36.25,
+    "replay_cost_B": 0.0,
+    "root_allowance": 0.20633671706923917,
+    "shared_estimator_gamma_times_trace_ceiling": 0.04257484081091126,
+    "tail_gate_pass": true,
+    "worst": 0.183,
+    "zero_noise_adjusted_ratio": 0.0749
+  },
+  "primary_conclusion": "Replay is solved and cheap; direct-output adaptive PCA is the leading source; universal exact identities from the finite 129-group transcript are impossible; next gate is a weight-aware source-specific checkpoint-gauge SOCP.",
+  "protected_data_opened": false,
+  "rank_linear_replay": {
+    "20": {
+      "adjusted_ratio": 0.1289023187507163,
+      "cost_B": 1.694
+    },
+    "24": {
+      "adjusted_ratio": 0.11074524708309456,
+      "cost_B": 2.0328
+    },
+    "32": {
+      "adjusted_ratio": 0.08293548273237823,
+      "cost_B": 2.7104
+    }
+  },
+  "recommendation": {
+    "archive": [
+      "sorted stop-loss replay",
+      "hidden signed-mixture source"
+    ],
+    "leading": "Agent 8 adaptive direct-output basis PCA (~36 modes)",
+    "next_test": "Agent 2 source-specific checkpoint-gauge SOCP with primal/dual certificate",
+    "stop": [
+      "rank4/5 natural source search",
+      "generic coefficient predictors",
+      "universal transcript-only exact identity"
+    ]
+  },
+  "sorted_stoploss": {
+    "break_even_rank": 14.173411286894924,
+    "dominant_core_B": 1.200487936,
+    "max_local_error": 1.0723114785005095e-08,
+    "rank32_upper_B": 1.202077184,
+    "theorem": "exact"
+  }
+}

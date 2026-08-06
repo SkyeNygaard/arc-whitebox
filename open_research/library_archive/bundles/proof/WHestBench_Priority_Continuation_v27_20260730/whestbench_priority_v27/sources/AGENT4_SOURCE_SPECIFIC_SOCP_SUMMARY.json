@@ -1,0 +1,51 @@
+{
+  "status": "STOP",
+  "protected_data_opened": false,
+  "sample_design": "independent antithetic fixed-radius sphere pairs",
+  "covariance_fit_cost_counted": false,
+  "optimism_note": "covariance/control construction assigned zero deployment cost",
+  "n_train_pairs": 2048,
+  "n_valid_pairs": 2048,
+  "partition_frontier": [
+    {
+      "partition": "p01_l1_final",
+      "development_train_S": 1.162563361102855,
+      "development_valid_S": 1.331143406420026,
+      "validation_S": 1.5402229186647292,
+      "confirmation_S": 1.3150906207011221
+    },
+    {
+      "partition": "p02_l1_4_final",
+      "development_train_S": 1.1745866464826427,
+      "development_valid_S": 1.2993387520503494,
+      "validation_S": 1.4927727834915865,
+      "confirmation_S": 1.2742915331921774
+    },
+    {
+      "partition": "p03_l1_8_final",
+      "development_train_S": 1.1783336181115054,
+      "development_valid_S": 1.392482588041271,
+      "validation_S": 1.4784562278810813,
+      "confirmation_S": 1.2682303727546558
+    },
+    {
+      "partition": "p04_l1_16_final",
+      "development_train_S": 1.1893125629757924,
+      "development_valid_S": 1.3290394741175853,
+      "validation_S": 1.5197591277471327,
+      "confirmation_S": 1.2961727504555733
+    }
+  ],
+  "selected_partition": "p02_l1_4_final",
+  "confirmation_source_ratio": 0.07486071005928359,
+  "required_S_max": 0.20640850764463164,
+  "confirmation_selected_valid_S": 1.2742915331921774,
+  "confirmation_oracle_per_case_partition_valid_S": 1.2652693714284127,
+  "unconstrained_optimal_added_compute_ratio": 4.657381636418644,
+  "unconstrained_min_adjusted_ratio": 2.395989414263289,
+  "target_adjusted_ratio": 0.2304147465437788,
+  "case_count": 36,
+  "runtime_seconds": 271.17135286331177,
+  "max_source_reconstruction_error": 1.1102230246251565e-16,
+  "max_kkt_relative_balance": 8.472486485623818e-05
+}

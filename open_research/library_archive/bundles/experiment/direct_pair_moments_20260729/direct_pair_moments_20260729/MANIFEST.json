@@ -1,0 +1,109 @@
+{
+  "experiment": "Direct Estimation of the Selected Pair-Moment Defect",
+  "date": "2026-07-29",
+  "decision": "retain fused primary-cloud pair accumulator; close independent pair estimator",
+  "files": [
+    {
+      "path": "CONTRACTION_REGISTRY.json",
+      "bytes": 1195,
+      "sha256": "5dbcd71c11b5b8d0e89d9ee056421de6a080eb80abde49e81997bc7608bfc79a"
+    },
+    {
+      "path": "COSTED_SUBPROCESS_DESIGN.md",
+      "bytes": 1500,
+      "sha256": "278ff29a8e3c3057c71dbdd007ddd2942be2ae12495f13e839726582d6109ca4"
+    },
+    {
+      "path": "COST_MODEL.json",
+      "bytes": 1328,
+      "sha256": "d1d377792a35ed52ee7194763f04f34ca6142c95921198677155821dc8b51c4a"
+    },
+    {
+      "path": "DECISION.md",
+      "bytes": 1813,
+      "sha256": "d5886dd871fb5b9572e521e98a387814a3edc5abd80270051114cfcbf541f991"
+    },
+    {
+      "path": "EXPERIMENT_SPEC.md",
+      "bytes": 1606,
+      "sha256": "95a96fd43ad8a202a1b1fbda226c2c55a19c76caf4b4b0100e02b178681fefe8"
+    },
+    {
+      "path": "LEGAL_ESTIMATOR_RESULTS.json",
+      "bytes": 18316,
+      "sha256": "4645c82a377a8e071084d0483e9ea6135bc36cf6161737d79bfbb5436b128121"
+    },
+    {
+      "path": "NUMERICAL_CERTIFICATE.json",
+      "bytes": 443,
+      "sha256": "f88d20b5ab488ba9338678e58c8bad5f71d8dfeb4336ecca5062f68fcf2e40c8"
+    },
+    {
+      "path": "PAIR_TARGET_DERIVATION.md",
+      "bytes": 2062,
+      "sha256": "72df0152b25f56a24b271d08c127601c3fe486d00cb5db31e6ea378ea831b4d5"
+    },
+    {
+      "path": "RANK_AND_SHARING_AUDIT.md",
+      "bytes": 1668,
+      "sha256": "cc038b7a182ef55de1a65b30aebc74bec7b4c745c93184af8df91f149b13ef87"
+    },
+    {
+      "path": "README.md",
+      "bytes": 349,
+      "sha256": "a1848377491f8099d4ef09dcdcd19e76d76a4d90be0c39e8c060be3bd9f8d917"
+    },
+    {
+      "path": "ROWS.csv",
+      "bytes": 6808,
+      "sha256": "c37d55f64d54c07ddabec1f47baaab864181d9929052ad665e3e9666a30315f5"
+    },
+    {
+      "path": "RUN_LOG.md",
+      "bytes": 771,
+      "sha256": "417dc92d9be24311e55584d77c4594e85f13da3f570cf2458bbf56e14a3ef03c"
+    },
+    {
+      "path": "build_deliverables.py",
+      "bytes": 18461,
+      "sha256": "55b16ca31cd542e9a428e050547fb339af9dfa4726d0e789b99b56e599d6ccc8"
+    },
+    {
+      "path": "direct_pair_estimator.py",
+      "bytes": 5269,
+      "sha256": "83565fb2535d9b24d3e2457f5e15e597b2b563728b4005a2c632e9cc14413033"
+    },
+    {
+      "path": "raw/LOWER_STRUCTURE_RESULTS_HIGHREF8.json",
+      "bytes": 46154,
+      "sha256": "410ec95ed92deff929a5b7a5b7bb4a62b4b75733798882798134acd057643039"
+    },
+    {
+      "path": "raw/PAIR_COMPANION_ABLATION_24_COMBINED.json",
+      "bytes": 3578586,
+      "sha256": "cca95345acd3ed4566894ad815e3709e877f89042b419593c71f6980c644e2e9"
+    },
+    {
+      "path": "raw/PAIR_MOMENT_ABLATION_HIGHREF8.json",
+      "bytes": 11731,
+      "sha256": "e6ab941c2eab3125b19b3e27990bcb4fd5cf2cd6dc9d0ff69b7a2636d1499cd5"
+    },
+    {
+      "path": "run_pair_companion_ablation.py",
+      "bytes": 7689,
+      "sha256": "0c00a337242e4eb7dee26211a33ed4a43a943bb4574674bf87e654eed7b5af8a"
+    },
+    {
+      "path": "test_direct_pair_estimator.py",
+      "bytes": 1812,
+      "sha256": "223158686cf17e425ccda5b3e68a12650daade01b670649959309927f15c1a67"
+    }
+  ],
+  "source_cohorts": {
+    "highref_oracle": "exposed",
+    "highref_pair8": "exposed",
+    "companion_validation24": "already exposed before this extension"
+  },
+  "tests": "python test_direct_pair_estimator.py",
+  "numerical_certificate": "NUMERICAL_CERTIFICATE.json"
+}

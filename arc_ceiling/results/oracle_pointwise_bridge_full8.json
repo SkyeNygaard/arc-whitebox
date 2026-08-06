@@ -1,0 +1,909 @@
+{
+  "protocol": {
+    "indices": [
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "train_rotations": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "test_rotations": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "ridges": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "oracle_warning": "Coefficients use high-precision targets on training rotations. This is an expressivity ceiling only, not a deployable estimator."
+  },
+  "summary": {
+    "mean_field_no_fit": {
+      "ratio": 0.9863317769196128,
+      "ci95": [
+        0.9690523844047099,
+        1.0136779295956848
+      ],
+      "wins": 5,
+      "worst": 1.066916472866768
+    },
+    "mean_field_oracle_scalar": {
+      "ratio": 0.9942715946826828,
+      "ci95": [
+        0.9700904460522433,
+        1.0367467835952162
+      ],
+      "wins": 5,
+      "worst": 1.1345118722156056
+    },
+    "had4_linear_pair:ridge=0.01": {
+      "ratio": 5.761835095971961,
+      "ci95": [
+        4.435356161975533,
+        6.5807837605735395
+      ],
+      "wins": 0,
+      "worst": 7.080154600154637
+    },
+    "had4_linear_pair:ridge=0.1": {
+      "ratio": 2.8024759614506003,
+      "ci95": [
+        2.3742161174815557,
+        3.1040373383436974
+      ],
+      "wins": 0,
+      "worst": 3.8509569819231007
+    },
+    "had4_linear_pair:ridge=1": {
+      "ratio": 1.4297781088228017,
+      "ci95": [
+        1.2495897519166455,
+        1.5723669314332176
+      ],
+      "wins": 0,
+      "worst": 1.6878794695369557
+    },
+    "had8_linear_pair:ridge=0.01": {
+      "ratio": 1.8063812995998285,
+      "ci95": [
+        1.5667931850563295,
+        1.9871820550676027
+      ],
+      "wins": 0,
+      "worst": 2.1329255778834657
+    },
+    "had8_linear_pair:ridge=0.1": {
+      "ratio": 1.613002846317617,
+      "ci95": [
+        1.4054192907103602,
+        1.7833667748826973
+      ],
+      "wins": 0,
+      "worst": 1.9248522904095777
+    },
+    "had8_linear_pair:ridge=1": {
+      "ratio": 1.1764863601468947,
+      "ci95": [
+        1.071387372856125,
+        1.2649275601403487
+      ],
+      "wins": 1,
+      "worst": 1.3390429851619778
+    },
+    "had16_linear_diag:ridge=0.01": {
+      "ratio": 1.8705601558524712,
+      "ci95": [
+        1.6074076191653655,
+        2.058633143709505
+      ],
+      "wins": 0,
+      "worst": 2.417486094468955
+    },
+    "had16_linear_diag:ridge=0.1": {
+      "ratio": 1.6162017369009078,
+      "ci95": [
+        1.4059438828692559,
+        1.767726789877122
+      ],
+      "wins": 0,
+      "worst": 2.077436593085098
+    },
+    "had16_linear_diag:ridge=1": {
+      "ratio": 1.1719010934431942,
+      "ci95": [
+        1.0662118422463664,
+        1.2487385298030365
+      ],
+      "wins": 1,
+      "worst": 1.2945629461075119
+    },
+    "had32_linear_diag:ridge=0.01": {
+      "ratio": 1.376466713114212,
+      "ci95": [
+        1.313397676050452,
+        1.444116398840798
+      ],
+      "wins": 0,
+      "worst": 1.5991135406233785
+    },
+    "had32_linear_diag:ridge=0.1": {
+      "ratio": 1.3049821676883615,
+      "ci95": [
+        1.2507717838352126,
+        1.3573445477931123
+      ],
+      "wins": 0,
+      "worst": 1.4774071070384753
+    },
+    "had32_linear_diag:ridge=1": {
+      "ratio": 1.0923244985617795,
+      "ci95": [
+        1.0686247680722152,
+        1.1085037030808178
+      ],
+      "wins": 0,
+      "worst": 1.1246825107362162
+    },
+    "linear_full:ridge=0.01": {
+      "ratio": 1.0622330537048623,
+      "ci95": [
+        1.0372999022009914,
+        1.079600169435559
+      ],
+      "wins": 0,
+      "worst": 1.1003894536468124
+    },
+    "linear_full:ridge=0.1": {
+      "ratio": 1.0522495680254498,
+      "ci95": [
+        1.0296232921071427,
+        1.0678826819317833
+      ],
+      "wins": 0,
+      "worst": 1.0884071140501477
+    },
+    "linear_full:ridge=1": {
+      "ratio": 1.0166787722398984,
+      "ci95": [
+        1.0044388112394378,
+        1.0253769149152279
+      ],
+      "wins": 1,
+      "worst": 1.0391493482442722
+    }
+  },
+  "records": [
+    {
+      "index": 32,
+      "name": "jamie-taylor",
+      "baseline_mse": 2.3586378260583664e-07,
+      "method_mses": {
+        "mean_field_no_fit": 2.390510320695249e-07,
+        "mean_field_oracle_scalar": 2.390366656676078e-07,
+        "had4_linear_pair:ridge=0.01": 1.6233975746835982e-06,
+        "had4_linear_pair:ridge=0.1": 6.472990253923461e-07,
+        "had4_linear_pair:ridge=1": 3.2368186973809916e-07,
+        "had8_linear_pair:ridge=0.01": 4.160742662952095e-07,
+        "had8_linear_pair:ridge=0.1": 3.649325411170846e-07,
+        "had8_linear_pair:ridge=1": 2.676223975255929e-07,
+        "had16_linear_diag:ridge=0.01": 3.701517439081038e-07,
+        "had16_linear_diag:ridge=0.1": 3.2392192903833434e-07,
+        "had16_linear_diag:ridge=1": 2.5199930342609203e-07,
+        "had32_linear_diag:ridge=0.01": 3.0490701579171515e-07,
+        "had32_linear_diag:ridge=0.1": 2.9140651577435275e-07,
+        "had32_linear_diag:ridge=1": 2.5156777799179295e-07,
+        "linear_full:ridge=0.01": 2.4262143385756347e-07,
+        "linear_full:ridge=0.1": 2.41049128322674e-07,
+        "linear_full:ridge=1": 2.3596565463792973e-07
+      },
+      "diagnostics": {
+        "mean_field_oracle_scalar": 0.9980517166681748,
+        "had4_linear_pair:ridge=0.01": {
+          "kept": 14.0,
+          "condition": 310.38861125698116
+        },
+        "had4_linear_pair:ridge=0.1": {
+          "kept": 14.0,
+          "condition": 32.02175856766785
+        },
+        "had4_linear_pair:ridge=1": {
+          "kept": 14.0,
+          "condition": 4.103007275106571
+        },
+        "had8_linear_pair:ridge=0.01": {
+          "kept": 44.0,
+          "condition": 9.88899473345953
+        },
+        "had8_linear_pair:ridge=0.1": {
+          "kept": 44.0,
+          "condition": 7.574600121895614
+        },
+        "had8_linear_pair:ridge=1": {
+          "kept": 44.0,
+          "condition": 2.824421495779612
+        },
+        "had16_linear_diag:ridge=0.01": {
+          "kept": 32.0,
+          "condition": 10.944931664343237
+        },
+        "had16_linear_diag:ridge=0.1": {
+          "kept": 32.0,
+          "condition": 8.018554077925218
+        },
+        "had16_linear_diag:ridge=1": {
+          "kept": 32.0,
+          "condition": 2.7801923370385655
+        },
+        "had32_linear_diag:ridge=0.01": {
+          "kept": 64.0,
+          "condition": 4.893327704456367
+        },
+        "had32_linear_diag:ridge=0.1": {
+          "kept": 64.0,
+          "condition": 4.146796884798089
+        },
+        "had32_linear_diag:ridge=1": {
+          "kept": 64.0,
+          "condition": 2.078607642556844
+        },
+        "linear_full:ridge=0.01": {
+          "kept": 256.0,
+          "condition": 1.717771336989438
+        },
+        "linear_full:ridge=0.1": {
+          "kept": 256.0,
+          "condition": 1.6399985712966743
+        },
+        "linear_full:ridge=1": {
+          "kept": 256.0,
+          "condition": 1.3071701365627357
+        }
+      },
+      "seconds": 8.223217000020668
+    },
+    {
+      "index": 33,
+      "name": "larry-mendoza",
+      "baseline_mse": 1.5673703838137946e-07,
+      "method_mses": {
+        "mean_field_no_fit": 1.5521742565317658e-07,
+        "mean_field_oracle_scalar": 1.5536378944875974e-07,
+        "had4_linear_pair:ridge=0.01": 6.632062663270859e-07,
+        "had4_linear_pair:ridge=0.1": 3.2157682882208717e-07,
+        "had4_linear_pair:ridge=1": 1.7161596728748053e-07,
+        "had8_linear_pair:ridge=0.01": 2.1381255627657276e-07,
+        "had8_linear_pair:ridge=0.1": 1.9573937128945922e-07,
+        "had8_linear_pair:ridge=1": 1.5445921354543948e-07,
+        "had16_linear_diag:ridge=0.01": 2.0048701552548152e-07,
+        "had16_linear_diag:ridge=0.1": 1.7755053221075484e-07,
+        "had16_linear_diag:ridge=1": 1.4792662934463452e-07,
+        "had32_linear_diag:ridge=0.01": 1.9229142486364494e-07,
+        "had32_linear_diag:ridge=0.1": 1.8431921010797782e-07,
+        "had32_linear_diag:ridge=1": 1.6227918638855824e-07,
+        "linear_full:ridge=0.01": 1.6370144321059554e-07,
+        "linear_full:ridge=0.1": 1.624120926297318e-07,
+        "linear_full:ridge=1": 1.5806866699241714e-07
+      },
+      "diagnostics": {
+        "mean_field_oracle_scalar": 0.665782759220643,
+        "had4_linear_pair:ridge=0.01": {
+          "kept": 14.0,
+          "condition": 317.62865807981564
+        },
+        "had4_linear_pair:ridge=0.1": {
+          "kept": 14.0,
+          "condition": 33.28532219973857
+        },
+        "had4_linear_pair:ridge=1": {
+          "kept": 14.0,
+          "condition": 4.234891653762115
+        },
+        "had8_linear_pair:ridge=0.01": {
+          "kept": 44.0,
+          "condition": 5.746106038332237
+        },
+        "had8_linear_pair:ridge=0.1": {
+          "kept": 44.0,
+          "condition": 4.753050627815077
+        },
+        "had8_linear_pair:ridge=1": {
+          "kept": 44.0,
+          "condition": 2.2136532475832933
+        },
+        "had16_linear_diag:ridge=0.01": {
+          "kept": 32.0,
+          "condition": 7.9499851169625355
+        },
+        "had16_linear_diag:ridge=0.1": {
+          "kept": 32.0,
+          "condition": 6.186590948938512
+        },
+        "had16_linear_diag:ridge=1": {
+          "kept": 32.0,
+          "condition": 2.46627225993029
+        },
+        "had32_linear_diag:ridge=0.01": {
+          "kept": 64.0,
+          "condition": 3.7161117390110556
+        },
+        "had32_linear_diag:ridge=0.1": {
+          "kept": 64.0,
+          "condition": 3.300849266998609
+        },
+        "had32_linear_diag:ridge=1": {
+          "kept": 64.0,
+          "condition": 1.9098272645878211
+        },
+        "linear_full:ridge=0.01": {
+          "kept": 256.0,
+          "condition": 1.87694401279348
+        },
+        "linear_full:ridge=0.1": {
+          "kept": 256.0,
+          "condition": 1.7801498734406676
+        },
+        "linear_full:ridge=1": {
+          "kept": 256.0,
+          "condition": 1.3708348270581567
+        }
+      },
+      "seconds": 7.9338323750998825
+    },
+    {
+      "index": 34,
+      "name": "joyce-castaneda",
+      "baseline_mse": 1.6493802749544202e-07,
+      "method_mses": {
+        "mean_field_no_fit": 1.5901174264014654e-07,
+        "mean_field_oracle_scalar": 1.5802366599589201e-07,
+        "had4_linear_pair:ridge=0.01": 8.120267000074382e-07,
+        "had4_linear_pair:ridge=0.1": 5.052966613419411e-07,
+        "had4_linear_pair:ridge=1": 2.2591019068815068e-07,
+        "had8_linear_pair:ridge=0.01": 3.021242998136463e-07,
+        "had8_linear_pair:ridge=0.1": 2.5602923993320647e-07,
+        "had8_linear_pair:ridge=1": 1.8416258154207932e-07,
+        "had16_linear_diag:ridge=0.01": 3.07352162962037e-07,
+        "had16_linear_diag:ridge=0.1": 2.6539936212051653e-07,
+        "had16_linear_diag:ridge=1": 1.890164109896037e-07,
+        "had32_linear_diag:ridge=0.01": 2.390806171830178e-07,
+        "had32_linear_diag:ridge=0.1": 2.2382386357972778e-07,
+        "had32_linear_diag:ridge=1": 1.803098976536765e-07,
+        "linear_full:ridge=0.01": 1.8149606596129237e-07,
+        "linear_full:ridge=0.1": 1.7951972250343796e-07,
+        "linear_full:ridge=1": 1.7139524377258443e-07
+      },
+      "diagnostics": {
+        "mean_field_oracle_scalar": 1.3297305077185801,
+        "had4_linear_pair:ridge=0.01": {
+          "kept": 14.0,
+          "condition": 276.4872057294118
+        },
+        "had4_linear_pair:ridge=0.1": {
+          "kept": 14.0,
+          "condition": 29.699591759857622
+        },
+        "had4_linear_pair:ridge=1": {
+          "kept": 14.0,
+          "condition": 3.881998971329588
+        },
+        "had8_linear_pair:ridge=0.01": {
+          "kept": 44.0,
+          "condition": 17.439362659870675
+        },
+        "had8_linear_pair:ridge=0.1": {
+          "kept": 44.0,
+          "condition": 10.664178969709692
+        },
+        "had8_linear_pair:ridge=1": {
+          "kept": 44.0,
+          "condition": 2.8870492844912587
+        },
+        "had16_linear_diag:ridge=0.01": {
+          "kept": 32.0,
+          "condition": 11.949152207128938
+        },
+        "had16_linear_diag:ridge=0.1": {
+          "kept": 32.0,
+          "condition": 8.298495781981288
+        },
+        "had16_linear_diag:ridge=1": {
+          "kept": 32.0,
+          "condition": 2.6839349853606644
+        },
+        "had32_linear_diag:ridge=0.01": {
+          "kept": 64.0,
+          "condition": 5.006161584949001
+        },
+        "had32_linear_diag:ridge=0.1": {
+          "kept": 64.0,
+          "condition": 4.252362895487358
+        },
+        "had32_linear_diag:ridge=1": {
+          "kept": 64.0,
+          "condition": 2.12866629490073
+        },
+        "linear_full:ridge=0.01": {
+          "kept": 256.0,
+          "condition": 2.052006970390407
+        },
+        "linear_full:ridge=0.1": {
+          "kept": 256.0,
+          "condition": 1.9304734493261073
+        },
+        "linear_full:ridge=1": {
+          "kept": 256.0,
+          "condition": 1.4317233466755015
+        }
+      },
+      "seconds": 7.96715687494725
+    },
+    {
+      "index": 35,
+      "name": "jeremy-davis",
+      "baseline_mse": 1.2980318618642216e-07,
+      "method_mses": {
+        "mean_field_no_fit": 1.384891575728859e-07,
+        "mean_field_oracle_scalar": 1.4726325577990864e-07,
+        "had4_linear_pair:ridge=0.01": 8.437305609426711e-07,
+        "had4_linear_pair:ridge=0.1": 4.998664861204666e-07,
+        "had4_linear_pair:ridge=1": 1.8368634715638426e-07,
+        "had8_linear_pair:ridge=0.01": 2.1741934770236113e-07,
+        "had8_linear_pair:ridge=0.1": 1.9448992025672644e-07,
+        "had8_linear_pair:ridge=1": 1.4720899907033804e-07,
+        "had16_linear_diag:ridge=0.01": 2.321535314025279e-07,
+        "had16_linear_diag:ridge=0.1": 2.061952047262901e-07,
+        "had16_linear_diag:ridge=1": 1.4802597122953434e-07,
+        "had32_linear_diag:ridge=0.01": 1.827186660170253e-07,
+        "had32_linear_diag:ridge=0.1": 1.7259354562808028e-07,
+        "had32_linear_diag:ridge=1": 1.4261750860901312e-07,
+        "linear_full:ridge=0.01": 1.3383410088929184e-07,
+        "linear_full:ridge=0.1": 1.3289667737881687e-07,
+        "linear_full:ridge=1": 1.2998584687905305e-07
+      },
+      "diagnostics": {
+        "mean_field_oracle_scalar": 1.6308502081997265,
+        "had4_linear_pair:ridge=0.01": {
+          "kept": 14.0,
+          "condition": 313.25407576846254
+        },
+        "had4_linear_pair:ridge=0.1": {
+          "kept": 14.0,
+          "condition": 35.11012606374947
+        },
+        "had4_linear_pair:ridge=1": {
+          "kept": 14.0,
+          "condition": 4.4428186365879325
+        },
+        "had8_linear_pair:ridge=0.01": {
+          "kept": 44.0,
+          "condition": 8.682908734405352
+        },
+        "had8_linear_pair:ridge=0.1": {
+          "kept": 44.0,
+          "condition": 6.787718827709203
+        },
+        "had8_linear_pair:ridge=1": {
+          "kept": 44.0,
+          "condition": 2.6694888833178476
+        },
+        "had16_linear_diag:ridge=0.01": {
+          "kept": 32.0,
+          "condition": 9.794809019991053
+        },
+        "had16_linear_diag:ridge=0.1": {
+          "kept": 32.0,
+          "condition": 7.399412080605885
+        },
+        "had16_linear_diag:ridge=1": {
+          "kept": 32.0,
+          "condition": 2.7185864577276107
+        },
+        "had32_linear_diag:ridge=0.01": {
+          "kept": 64.0,
+          "condition": 3.8303821272908367
+        },
+        "had32_linear_diag:ridge=0.1": {
+          "kept": 64.0,
+          "condition": 3.361898604291793
+        },
+        "had32_linear_diag:ridge=1": {
+          "kept": 64.0,
+          "condition": 1.8895385560051283
+        },
+        "linear_full:ridge=0.01": {
+          "kept": 256.0,
+          "condition": 1.894460766166466
+        },
+        "linear_full:ridge=0.1": {
+          "kept": 256.0,
+          "condition": 1.7952883391034749
+        },
+        "linear_full:ridge=1": {
+          "kept": 256.0,
+          "condition": 1.3771391476659998
+        }
+      },
+      "seconds": 9.177665000082925
+    },
+    {
+      "index": 36,
+      "name": "donald-warner",
+      "baseline_mse": 1.3844963662049131e-07,
+      "method_mses": {
+        "mean_field_no_fit": 1.3515981950963855e-07,
+        "mean_field_oracle_scalar": 1.3557410106113724e-07,
+        "had4_linear_pair:ridge=0.01": 4.937468645179137e-07,
+        "had4_linear_pair:ridge=0.1": 3.110335301885291e-07,
+        "had4_linear_pair:ridge=1": 1.8196849235067332e-07,
+        "had8_linear_pair:ridge=0.01": 2.330687349438407e-07,
+        "had8_linear_pair:ridge=0.1": 2.089818711276666e-07,
+        "had8_linear_pair:ridge=1": 1.511962934332782e-07,
+        "had16_linear_diag:ridge=0.01": 3.3470007131431756e-07,
+        "had16_linear_diag:ridge=0.1": 2.876203414147433e-07,
+        "had16_linear_diag:ridge=1": 1.775775130682521e-07,
+        "had32_linear_diag:ridge=0.01": 2.2139668861421402e-07,
+        "had32_linear_diag:ridge=0.1": 2.045464771100082e-07,
+        "had32_linear_diag:ridge=1": 1.5571188492485096e-07,
+        "linear_full:ridge=0.01": 1.506623936180573e-07,
+        "linear_full:ridge=0.1": 1.4811920985804178e-07,
+        "linear_full:ridge=1": 1.4022654381787438e-07
+      },
+      "diagnostics": {
+        "mean_field_oracle_scalar": 1.3807499894579758,
+        "had4_linear_pair:ridge=0.01": {
+          "kept": 14.0,
+          "condition": 332.6056020863059
+        },
+        "had4_linear_pair:ridge=0.1": {
+          "kept": 14.0,
+          "condition": 35.06895344645363
+        },
+        "had4_linear_pair:ridge=1": {
+          "kept": 14.0,
+          "condition": 4.4162537565407085
+        },
+        "had8_linear_pair:ridge=0.01": {
+          "kept": 44.0,
+          "condition": 6.194805540026646
+        },
+        "had8_linear_pair:ridge=0.1": {
+          "kept": 44.0,
+          "condition": 5.054020052246862
+        },
+        "had8_linear_pair:ridge=1": {
+          "kept": 44.0,
+          "condition": 2.268462119732416
+        },
+        "had16_linear_diag:ridge=0.01": {
+          "kept": 32.0,
+          "condition": 7.608475561300759
+        },
+        "had16_linear_diag:ridge=0.1": {
+          "kept": 32.0,
+          "condition": 5.917140186419236
+        },
+        "had16_linear_diag:ridge=1": {
+          "kept": 32.0,
+          "condition": 2.3814742180560895
+        },
+        "had32_linear_diag:ridge=0.01": {
+          "kept": 64.0,
+          "condition": 3.7299702851709986
+        },
+        "had32_linear_diag:ridge=0.1": {
+          "kept": 64.0,
+          "condition": 3.287836483501049
+        },
+        "had32_linear_diag:ridge=1": {
+          "kept": 64.0,
+          "condition": 1.8733682500661226
+        },
+        "linear_full:ridge=0.01": {
+          "kept": 256.0,
+          "condition": 2.3080941022086856
+        },
+        "linear_full:ridge=0.1": {
+          "kept": 256.0,
+          "condition": 2.142854304978357
+        },
+        "linear_full:ridge=1": {
+          "kept": 256.0,
+          "condition": 1.5049704368056573
+        }
+      },
+      "seconds": 9.29947854182683
+    },
+    {
+      "index": 37,
+      "name": "crystal-taylor",
+      "baseline_mse": 1.1133633663585657e-07,
+      "method_mses": {
+        "mean_field_no_fit": 1.1137134431881308e-07,
+        "mean_field_oracle_scalar": 1.1577836564175722e-07,
+        "had4_linear_pair:ridge=0.01": 4.6603580609463385e-07,
+        "had4_linear_pair:ridge=0.1": 2.2619653958353473e-07,
+        "had4_linear_pair:ridge=1": 1.335378405643344e-07,
+        "had8_linear_pair:ridge=0.01": 1.708563524209036e-07,
+        "had8_linear_pair:ridge=0.1": 1.5344861917558756e-07,
+        "had8_linear_pair:ridge=1": 1.2141115911779809e-07,
+        "had16_linear_diag:ridge=0.01": 1.8314824589442305e-07,
+        "had16_linear_diag:ridge=0.1": 1.618282630060983e-07,
+        "had16_linear_diag:ridge=1": 1.2209136205566573e-07,
+        "had32_linear_diag:ridge=0.01": 1.424394308901767e-07,
+        "had32_linear_diag:ridge=0.1": 1.359860757352693e-07,
+        "had32_linear_diag:ridge=1": 1.1838291816000033e-07,
+        "linear_full:ridge=0.01": 1.1298012577938727e-07,
+        "linear_full:ridge=0.1": 1.1247094319171928e-07,
+        "linear_full:ridge=1": 1.109955405708261e-07
+      },
+      "diagnostics": {
+        "mean_field_oracle_scalar": 2.510346400313809,
+        "had4_linear_pair:ridge=0.01": {
+          "kept": 14.0,
+          "condition": 296.64205031819944
+        },
+        "had4_linear_pair:ridge=0.1": {
+          "kept": 14.0,
+          "condition": 30.606330060245234
+        },
+        "had4_linear_pair:ridge=1": {
+          "kept": 14.0,
+          "condition": 3.961054916650561
+        },
+        "had8_linear_pair:ridge=0.01": {
+          "kept": 44.0,
+          "condition": 9.227220698038309
+        },
+        "had8_linear_pair:ridge=0.1": {
+          "kept": 44.0,
+          "condition": 6.948403403029527
+        },
+        "had8_linear_pair:ridge=1": {
+          "kept": 44.0,
+          "condition": 2.577888327096657
+        },
+        "had16_linear_diag:ridge=0.01": {
+          "kept": 32.0,
+          "condition": 9.521282639425815
+        },
+        "had16_linear_diag:ridge=0.1": {
+          "kept": 32.0,
+          "condition": 7.045979574391702
+        },
+        "had16_linear_diag:ridge=1": {
+          "kept": 32.0,
+          "condition": 2.5483264924788447
+        },
+        "had32_linear_diag:ridge=0.01": {
+          "kept": 64.0,
+          "condition": 4.7943646185234154
+        },
+        "had32_linear_diag:ridge=0.1": {
+          "kept": 64.0,
+          "condition": 4.127491441406621
+        },
+        "had32_linear_diag:ridge=1": {
+          "kept": 64.0,
+          "condition": 2.134161669551254
+        },
+        "linear_full:ridge=0.01": {
+          "kept": 256.0,
+          "condition": 2.1574121478197803
+        },
+        "linear_full:ridge=0.1": {
+          "kept": 256.0,
+          "condition": 2.0166124149909703
+        },
+        "linear_full:ridge=1": {
+          "kept": 256.0,
+          "condition": 1.4586556531006882
+        }
+      },
+      "seconds": 10.194865500088781
+    },
+    {
+      "index": 38,
+      "name": "dawn-martin",
+      "baseline_mse": 5.016138755649506e-07,
+      "method_mses": {
+        "mean_field_no_fit": 4.819790972273589e-07,
+        "mean_field_oracle_scalar": 4.832208567757361e-07,
+        "had4_linear_pair:ridge=0.01": 3.5515037885825808e-06,
+        "had4_linear_pair:ridge=0.1": 1.5695309972425043e-06,
+        "had4_linear_pair:ridge=1": 8.466637622009453e-07,
+        "had8_linear_pair:ridge=0.01": 1.069905065413737e-06,
+        "had8_linear_pair:ridge=0.1": 9.6553261728242e-07,
+        "had8_linear_pair:ridge=1": 6.716825413351603e-07,
+        "had16_linear_diag:ridge=0.01": 1.049263096045179e-06,
+        "had16_linear_diag:ridge=0.1": 8.952633706121195e-07,
+        "had16_linear_diag:ridge=1": 6.493707365597693e-07,
+        "had32_linear_diag:ridge=0.01": 6.940204162178636e-07,
+        "had32_linear_diag:ridge=0.1": 6.608076223693542e-07,
+        "had32_linear_diag:ridge=1": 5.566723225986428e-07,
+        "linear_full:ridge=0.01": 5.439461420308233e-07,
+        "linear_full:ridge=0.1": 5.380788206824919e-07,
+        "linear_full:ridge=1": 5.159236197179897e-07
+      },
+      "diagnostics": {
+        "mean_field_oracle_scalar": 0.8836603241175446,
+        "had4_linear_pair:ridge=0.01": {
+          "kept": 14.0,
+          "condition": 315.5512999338977
+        },
+        "had4_linear_pair:ridge=0.1": {
+          "kept": 14.0,
+          "condition": 33.80613443593295
+        },
+        "had4_linear_pair:ridge=1": {
+          "kept": 14.0,
+          "condition": 4.29476452646379
+        },
+        "had8_linear_pair:ridge=0.01": {
+          "kept": 44.0,
+          "condition": 6.126753160377191
+        },
+        "had8_linear_pair:ridge=0.1": {
+          "kept": 44.0,
+          "condition": 5.061651615247114
+        },
+        "had8_linear_pair:ridge=1": {
+          "kept": 44.0,
+          "condition": 2.3197737758308272
+        },
+        "had16_linear_diag:ridge=0.01": {
+          "kept": 32.0,
+          "condition": 17.431195755803884
+        },
+        "had16_linear_diag:ridge=0.1": {
+          "kept": 32.0,
+          "condition": 10.838234062698977
+        },
+        "had16_linear_diag:ridge=1": {
+          "kept": 32.0,
+          "condition": 2.962753213597527
+        },
+        "had32_linear_diag:ridge=0.01": {
+          "kept": 64.0,
+          "condition": 4.790104805537743
+        },
+        "had32_linear_diag:ridge=0.1": {
+          "kept": 64.0,
+          "condition": 4.108101670143936
+        },
+        "had32_linear_diag:ridge=1": {
+          "kept": 64.0,
+          "condition": 2.110262007862337
+        },
+        "linear_full:ridge=0.01": {
+          "kept": 256.0,
+          "condition": 1.8800478882450962
+        },
+        "linear_full:ridge=0.1": {
+          "kept": 256.0,
+          "condition": 1.7843272255011413
+        },
+        "linear_full:ridge=1": {
+          "kept": 256.0,
+          "condition": 1.3756940111469544
+        }
+      },
+      "seconds": 9.164412333862856
+    },
+    {
+      "index": 39,
+      "name": "kristina-wilkinson",
+      "baseline_mse": 1.3228361093879513e-07,
+      "method_mses": {
+        "mean_field_no_fit": 1.2927274851479614e-07,
+        "mean_field_oracle_scalar": 1.2776532326244648e-07,
+        "had4_linear_pair:ridge=0.01": 5.983422693127943e-07,
+        "had4_linear_pair:ridge=0.1": 3.219611142723956e-07,
+        "had4_linear_pair:ridge=1": 1.7915339035128365e-07,
+        "had8_linear_pair:ridge=0.01": 2.1461045146516364e-07,
+        "had8_linear_pair:ridge=0.1": 1.9491441396964828e-07,
+        "had8_linear_pair:ridge=1": 1.5054688006926847e-07,
+        "had16_linear_diag:ridge=0.01": 2.6144182665557136e-07,
+        "had16_linear_diag:ridge=0.1": 2.2131512968318153e-07,
+        "had16_linear_diag:ridge=1": 1.5507856807513235e-07,
+        "had32_linear_diag:ridge=0.01": 1.8561003895789745e-07,
+        "had32_linear_diag:ridge=0.1": 1.7667694490909288e-07,
+        "had32_linear_diag:ridge=1": 1.4852813910358437e-07,
+        "linear_full:ridge=0.01": 1.395535030486815e-07,
+        "linear_full:ridge=0.1": 1.3856430330315342e-07,
+        "linear_full:ridge=1": 1.3466715444515748e-07
+      },
+      "diagnostics": {
+        "mean_field_oracle_scalar": 1.9993965074702658,
+        "had4_linear_pair:ridge=0.01": {
+          "kept": 14.0,
+          "condition": 307.63912969475297
+        },
+        "had4_linear_pair:ridge=0.1": {
+          "kept": 14.0,
+          "condition": 33.469424172087
+        },
+        "had4_linear_pair:ridge=1": {
+          "kept": 14.0,
+          "condition": 4.266173862012937
+        },
+        "had8_linear_pair:ridge=0.01": {
+          "kept": 44.0,
+          "condition": 8.903810839329381
+        },
+        "had8_linear_pair:ridge=0.1": {
+          "kept": 44.0,
+          "condition": 6.7894513173910465
+        },
+        "had8_linear_pair:ridge=1": {
+          "kept": 44.0,
+          "condition": 2.5753120255789645
+        },
+        "had16_linear_diag:ridge=0.01": {
+          "kept": 32.0,
+          "condition": 8.957161826313625
+        },
+        "had16_linear_diag:ridge=0.1": {
+          "kept": 32.0,
+          "condition": 6.57642059292229
+        },
+        "had16_linear_diag:ridge=1": {
+          "kept": 32.0,
+          "condition": 2.3969172338230202
+        },
+        "had32_linear_diag:ridge=0.01": {
+          "kept": 64.0,
+          "condition": 4.437661830266588
+        },
+        "had32_linear_diag:ridge=0.1": {
+          "kept": 64.0,
+          "condition": 3.823530483609492
+        },
+        "had32_linear_diag:ridge=1": {
+          "kept": 64.0,
+          "condition": 2.0132965864629617
+        },
+        "linear_full:ridge=0.01": {
+          "kept": 256.0,
+          "condition": 1.8803092635484808
+        },
+        "linear_full:ridge=0.1": {
+          "kept": 256.0,
+          "condition": 1.7827675220120838
+        },
+        "linear_full:ridge=1": {
+          "kept": 256.0,
+          "condition": 1.3713248877986512
+        }
+      },
+      "seconds": 7.922272166935727
+    }
+  ]
+}

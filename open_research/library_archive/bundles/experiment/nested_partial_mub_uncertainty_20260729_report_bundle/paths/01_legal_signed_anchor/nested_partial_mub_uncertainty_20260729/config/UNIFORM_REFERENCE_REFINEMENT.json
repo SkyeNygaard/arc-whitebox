@@ -1,0 +1,11 @@
+{
+  "decision_time": "after initial validation generation, before final analysis",
+  "scope": "all 18 base networks, outcome-independent",
+  "streams_per_network": 6,
+  "samples_per_stream": 65536,
+  "reference_halves": "streams 0-2 averaged versus streams 3-5 averaged",
+  "effective_samples_per_half": 196608,
+  "seed_formula": "92000000 + 100*network_id + stream_index",
+  "no_retuning": true,
+  "purpose": "uniform reference-noise reduction only; development rules and calibration selection remain frozen"
+}

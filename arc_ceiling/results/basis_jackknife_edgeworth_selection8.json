@@ -1,0 +1,522 @@
+{
+  "protocol": {
+    "indices": [
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167
+    ],
+    "layer": 29,
+    "rotation_seed": 3,
+    "partition_seed": 20260729,
+    "rank": 4,
+    "folds": [
+      2
+    ],
+    "ridge": 0.1,
+    "edgeworth_label": "third",
+    "skip_edgeworth": false,
+    "target_leakage": false
+  },
+  "summary": {
+    "cross_raw_folds2": {
+      "ratio": 1.032838872005826,
+      "ci95": [
+        0.9672246992831982,
+        1.1305153342294552
+      ],
+      "wins": 3,
+      "worst": 1.2653281660398004
+    },
+    "cross_edgeworth_third_folds2": {
+      "ratio": 1.0365621540704533,
+      "ci95": [
+        0.9667350822479204,
+        1.1364146358685578
+      ],
+      "wins": 3,
+      "worst": 1.274601841059623
+    },
+    "jackknife_edgeworth_third_folds2": {
+      "ratio": 0.9706092643072749,
+      "ci95": [
+        0.9166357501169594,
+        1.025681982580673
+      ],
+      "wins": 6,
+      "worst": 1.0929396556603885
+    },
+    "asymmetric_raw_pilot64": {
+      "ratio": 1.543284078182311,
+      "ci95": [
+        1.0332133934101901,
+        2.3238390802500564
+      ],
+      "wins": 1,
+      "worst": 3.1760690952588684
+    },
+    "full_plus_contrast_pilot64_scale0.2": {
+      "ratio": 0.780666538257635,
+      "ci95": [
+        0.6937246944922426,
+        0.8976179632825035
+      ],
+      "wins": 7,
+      "worst": 1.0255667264374106
+    }
+  },
+  "records": [
+    {
+      "index": 160,
+      "name": "amy-scott",
+      "baseline_mse": 2.1440298520066416e-07,
+      "method_mses": {
+        "cross_raw_folds2": 2.2559891280387366e-07,
+        "cross_edgeworth_third_folds2": 2.318158574790298e-07,
+        "jackknife_edgeworth_third_folds2": 2.0998803873151758e-07,
+        "asymmetric_raw_pilot64": 5.24696193477289e-07,
+        "full_plus_contrast_pilot64_scale0.2": 1.9853731101819518e-07
+      },
+      "diagnostics": {
+        "cross_raw_folds2": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 3.1807933958663392,
+              "anchor_norm": 1.4713657218349427,
+              "held_feature_gap_norm": 0.00028849165745983347
+            },
+            {
+              "kept": 4.0,
+              "condition": 3.107277734527341,
+              "anchor_norm": 1.4708548524283387,
+              "held_feature_gap_norm": 0.00024196162381775923
+            }
+          ]
+        },
+        "cross_edgeworth_third_folds2": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 3.1807929368953483,
+              "anchor_norm": 1.471348876231633,
+              "held_feature_gap_norm": 0.0002769700199205979
+            },
+            {
+              "kept": 4.0,
+              "condition": 3.107277295904017,
+              "anchor_norm": 1.470839496802495,
+              "held_feature_gap_norm": 0.000254538343796928
+            }
+          ]
+        },
+        "jackknife_edgeworth_third_folds2": {
+          "full_anchor_norm": 1.471282053635566,
+          "jackknife_delta_norm": 7.80449883631042e-07
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 3.160866734856564,
+          "gap_norm": 0.0011710144776794446
+        }
+      },
+      "seconds": 10.801375415874645
+    },
+    {
+      "index": 161,
+      "name": "dylan-brown",
+      "baseline_mse": 2.24091425569048e-07,
+      "method_mses": {
+        "cross_raw_folds2": 2.344706811384916e-07,
+        "cross_edgeworth_third_folds2": 2.347793519528097e-07,
+        "jackknife_edgeworth_third_folds2": 2.1480285784102037e-07,
+        "asymmetric_raw_pilot64": 3.7545981029944266e-07,
+        "full_plus_contrast_pilot64_scale0.2": 2.1912366602860454e-07
+      },
+      "diagnostics": {
+        "cross_raw_folds2": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 2.4530154128610073,
+              "anchor_norm": 3.5723055310101217,
+              "held_feature_gap_norm": 0.00026197663607905225
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.4823152895598595,
+              "anchor_norm": 3.575003133134067,
+              "held_feature_gap_norm": 0.0003243206592305399
+            }
+          ]
+        },
+        "cross_edgeworth_third_folds2": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 2.4530153251155102,
+              "anchor_norm": 3.5722927089442127,
+              "held_feature_gap_norm": 0.0002725246465003101
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.4823152648024682,
+              "anchor_norm": 3.5749900690400995,
+              "held_feature_gap_norm": 0.000312401010604667
+            }
+          ]
+        },
+        "jackknife_edgeworth_third_folds2": {
+          "full_anchor_norm": 3.5743056893021192,
+          "jackknife_delta_norm": 2.6132543052367146e-06
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 2.4631734696759096,
+          "gap_norm": 0.007718834046488774
+        }
+      },
+      "seconds": 9.641323999967426
+    },
+    {
+      "index": 162,
+      "name": "yolanda-hawkins",
+      "baseline_mse": 2.3177693298152411e-07,
+      "method_mses": {
+        "cross_raw_folds2": 2.2560798600666537e-07,
+        "cross_edgeworth_third_folds2": 2.239066267597849e-07,
+        "jackknife_edgeworth_third_folds2": 2.39086159924778e-07,
+        "asymmetric_raw_pilot64": 2.4258817978097165e-07,
+        "full_plus_contrast_pilot64_scale0.2": 2.0463322300374044e-07
+      },
+      "diagnostics": {
+        "cross_raw_folds2": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 2.7372968853993274,
+              "anchor_norm": 2.3394982398102027,
+              "held_feature_gap_norm": 0.002460536765331879
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.7901049023640763,
+              "anchor_norm": 2.334898521859557,
+              "held_feature_gap_norm": 0.0024552377012418036
+            }
+          ]
+        },
+        "cross_edgeworth_third_folds2": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 2.7372967385434714,
+              "anchor_norm": 2.3394897647247097,
+              "held_feature_gap_norm": 0.002452373374576556
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.7901048543178333,
+              "anchor_norm": 2.3348926588963215,
+              "held_feature_gap_norm": 0.0024607980018469984
+            }
+          ]
+        },
+        "jackknife_edgeworth_third_folds2": {
+          "full_anchor_norm": 2.3374770612147806,
+          "jackknife_delta_norm": 9.319413873704661e-06
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 2.716742454686363,
+          "gap_norm": 0.0027513537259428907
+        }
+      },
+      "seconds": 8.67616866598837
+    },
+    {
+      "index": 163,
+      "name": "scott-matthews",
+      "baseline_mse": 2.5893801088228656e-07,
+      "method_mses": {
+        "cross_raw_folds2": 2.737511719833403e-07,
+        "cross_edgeworth_third_folds2": 2.7918171550451386e-07,
+        "jackknife_edgeworth_third_folds2": 2.513001560192256e-07,
+        "asymmetric_raw_pilot64": 8.224050139510349e-07,
+        "full_plus_contrast_pilot64_scale0.2": 2.3270391297054633e-07
+      },
+      "diagnostics": {
+        "cross_raw_folds2": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 2.0979953538839493,
+              "anchor_norm": 7.576920773566477,
+              "held_feature_gap_norm": 0.0022093409435249723
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.064562195683078,
+              "anchor_norm": 7.581743835852466,
+              "held_feature_gap_norm": 0.002123644349028594
+            }
+          ]
+        },
+        "cross_edgeworth_third_folds2": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 2.0979953474847415,
+              "anchor_norm": 7.576897110748896,
+              "held_feature_gap_norm": 0.0022340347158298145
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.0645621879173977,
+              "anchor_norm": 7.581712623427542,
+              "held_feature_gap_norm": 0.00209357987027093
+            }
+          ]
+        },
+        "jackknife_edgeworth_third_folds2": {
+          "full_anchor_norm": 7.58045244203543,
+          "jackknife_delta_norm": 8.463332674335279e-06
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 2.1206823418345024,
+          "gap_norm": 0.014621572005763783
+        }
+      },
+      "seconds": 8.868279999820516
+    },
+    {
+      "index": 164,
+      "name": "benjamin-walsh",
+      "baseline_mse": 3.457466003272283e-07,
+      "method_mses": {
+        "cross_raw_folds2": 3.6127610023371053e-07,
+        "cross_edgeworth_third_folds2": 3.601018174584876e-07,
+        "jackknife_edgeworth_third_folds2": 3.778801703073909e-07,
+        "asymmetric_raw_pilot64": 4.579560957477731e-07,
+        "full_plus_contrast_pilot64_scale0.2": 2.0823019675957693e-07
+      },
+      "diagnostics": {
+        "cross_raw_folds2": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 3.0503567975124817,
+              "anchor_norm": 0.5018351041668959,
+              "held_feature_gap_norm": 0.002276738840178346
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.9439590943315155,
+              "anchor_norm": 0.5093006309745031,
+              "held_feature_gap_norm": 0.0023298694181416203
+            }
+          ]
+        },
+        "cross_edgeworth_third_folds2": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 3.0503555198531873,
+              "anchor_norm": 0.501822669705333,
+              "held_feature_gap_norm": 0.0022888510970215277
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.943958760299,
+              "anchor_norm": 0.5092881733159438,
+              "held_feature_gap_norm": 0.0023177076022077242
+            }
+          ]
+        },
+        "jackknife_edgeworth_third_folds2": {
+          "full_anchor_norm": 0.5057598754690392,
+          "jackknife_delta_norm": 8.828949973798531e-06
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 3.0998812812448944,
+          "gap_norm": 0.002195398905709277
+        }
+      },
+      "seconds": 10.093716125003994
+    },
+    {
+      "index": 165,
+      "name": "justin-crawford",
+      "baseline_mse": 3.0668500009183507e-07,
+      "method_mses": {
+        "cross_raw_folds2": 3.880571687181177e-07,
+        "cross_edgeworth_third_folds2": 3.909012657424236e-07,
+        "jackknife_edgeworth_third_folds2": 2.535087209832859e-07,
+        "asymmetric_raw_pilot64": 3.9096414530325934e-07,
+        "full_plus_contrast_pilot64_scale0.2": 1.8462732052263344e-07
+      },
+      "diagnostics": {
+        "cross_raw_folds2": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 2.470151525994103,
+              "anchor_norm": 1.5886404180398133,
+              "held_feature_gap_norm": 0.00562760223865386
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.384376734914636,
+              "anchor_norm": 1.6068281825831092,
+              "held_feature_gap_norm": 0.005765008359030309
+            }
+          ]
+        },
+        "cross_edgeworth_third_folds2": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 2.4701511662858504,
+              "anchor_norm": 1.5886439439468973,
+              "held_feature_gap_norm": 0.005624168411503303
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.3843766081193687,
+              "anchor_norm": 1.6068297961277576,
+              "held_feature_gap_norm": 0.0057666930796704706
+            }
+          ]
+        },
+        "jackknife_edgeworth_third_folds2": {
+          "full_anchor_norm": 1.5992455850286222,
+          "jackknife_delta_norm": 2.2033509125436418e-05
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 2.444911169105505,
+          "gap_norm": 0.006801465537192409
+        }
+      },
+      "seconds": 8.924099916126579
+    },
+    {
+      "index": 166,
+      "name": "tara-harris",
+      "baseline_mse": 6.550635664715546e-07,
+      "method_mses": {
+        "cross_raw_folds2": 6.078392957635048e-07,
+        "cross_edgeworth_third_folds2": 6.064459690202927e-07,
+        "jackknife_edgeworth_third_folds2": 6.269658158493464e-07,
+        "asymmetric_raw_pilot64": 4.326206973678502e-07,
+        "full_plus_contrast_pilot64_scale0.2": 4.653443084743888e-07
+      },
+      "diagnostics": {
+        "cross_raw_folds2": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 3.637394237628498,
+              "anchor_norm": 7.528395485260505,
+              "held_feature_gap_norm": 0.009583280885955394
+            },
+            {
+              "kept": 4.0,
+              "condition": 5.382077655972155,
+              "anchor_norm": 7.438157334688767,
+              "held_feature_gap_norm": 0.010439928001152378
+            }
+          ]
+        },
+        "cross_edgeworth_third_folds2": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 3.6373941654081112,
+              "anchor_norm": 7.5283295132312125,
+              "held_feature_gap_norm": 0.00965055869776741
+            },
+            {
+              "kept": 4.0,
+              "condition": 5.382076308646526,
+              "anchor_norm": 7.438091782890594,
+              "held_feature_gap_norm": 0.010370928171655022
+            }
+          ]
+        },
+        "jackknife_edgeworth_third_folds2": {
+          "full_anchor_norm": 7.488342358699328,
+          "jackknife_delta_norm": 3.854344684061182e-05
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 3.933006981986393,
+          "gap_norm": 0.015060505211743841
+        }
+      },
+      "seconds": 7.723128374898806
+    },
+    {
+      "index": 167,
+      "name": "kathy-wright",
+      "baseline_mse": 1.3442389485466154e-07,
+      "method_mses": {
+        "cross_raw_folds2": 1.323922823059385e-07,
+        "cross_edgeworth_third_folds2": 1.3068937494193165e-07,
+        "jackknife_edgeworth_third_folds2": 1.2790728814293852e-07,
+        "asymmetric_raw_pilot64": 4.126345963954222e-07,
+        "full_plus_contrast_pilot64_scale0.2": 1.3786067380106193e-07
+      },
+      "diagnostics": {
+        "cross_raw_folds2": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 2.3121257728684625,
+              "anchor_norm": 5.063107046764022,
+              "held_feature_gap_norm": 0.013314402309314998
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.40020788793923,
+              "anchor_norm": 5.075926930373648,
+              "held_feature_gap_norm": 0.013336040161969128
+            }
+          ]
+        },
+        "cross_edgeworth_third_folds2": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 2.3121255540696084,
+              "anchor_norm": 5.06308205087353,
+              "held_feature_gap_norm": 0.0133393664127174
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.4002076675964776,
+              "anchor_norm": 5.075898240470224,
+              "held_feature_gap_norm": 0.013307423335784819
+            }
+          ]
+        },
+        "jackknife_edgeworth_third_folds2": {
+          "full_anchor_norm": 5.070065072772001,
+          "jackknife_delta_norm": 5.10635624103658e-05
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 2.328974222242254,
+          "gap_norm": 0.0027244334477980366
+        }
+      },
+      "seconds": 8.650902499910444
+    }
+  ]
+}

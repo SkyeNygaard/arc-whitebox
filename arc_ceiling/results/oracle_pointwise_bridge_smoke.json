@@ -1,0 +1,128 @@
+{
+  "protocol": {
+    "indices": [
+      32
+    ],
+    "train_rotations": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "test_rotations": [
+      3,
+      5,
+      6,
+      7
+    ],
+    "ridges": [
+      0.1
+    ],
+    "oracle_warning": "Coefficients use high-precision targets on training rotations. This is an expressivity ceiling only, not a deployable estimator."
+  },
+  "summary": {
+    "mean_field_no_fit": {
+      "ratio": 0.9836474090874788,
+      "ci95": [
+        0.9836474090874788,
+        0.9836474090874788
+      ],
+      "wins": 1,
+      "worst": 0.9836474090874788
+    },
+    "mean_field_oracle_scalar": {
+      "ratio": 0.9838270370839336,
+      "ci95": [
+        0.9838270370839336,
+        0.9838270370839336
+      ],
+      "wins": 1,
+      "worst": 0.9838270370839336
+    },
+    "had4_linear_pair:ridge=0.1": {
+      "ratio": 2.3087825024828232,
+      "ci95": [
+        2.3087825024828232,
+        2.3087825024828232
+      ],
+      "wins": 0,
+      "worst": 2.3087825024828232
+    },
+    "had8_linear_pair:ridge=0.1": {
+      "ratio": 1.4525803907086978,
+      "ci95": [
+        1.4525803907086978,
+        1.4525803907086978
+      ],
+      "wins": 0,
+      "worst": 1.4525803907086978
+    },
+    "had16_linear_diag:ridge=0.1": {
+      "ratio": 1.2758450916800756,
+      "ci95": [
+        1.2758450916800756,
+        1.2758450916800756
+      ],
+      "wins": 0,
+      "worst": 1.2758450916800756
+    },
+    "had32_linear_diag:ridge=0.1": {
+      "ratio": 1.2132334960401527,
+      "ci95": [
+        1.2132334960401527,
+        1.2132334960401527
+      ],
+      "wins": 0,
+      "worst": 1.2132334960401527
+    },
+    "linear_full:ridge=0.1": {
+      "ratio": 1.0265614963960783,
+      "ci95": [
+        1.0265614963960783,
+        1.0265614963960783
+      ],
+      "wins": 0,
+      "worst": 1.0265614963960783
+    }
+  },
+  "records": [
+    {
+      "index": 32,
+      "name": "jamie-taylor",
+      "baseline_mse": 2.3515639169232117e-07,
+      "method_mses": {
+        "mean_field_no_fit": 2.3131097541851206e-07,
+        "mean_field_oracle_scalar": 2.3135321609000528e-07,
+        "had4_linear_pair:ridge=0.1": 5.429249624862283e-07,
+        "had8_linear_pair:ridge=0.1": 3.415835633220795e-07,
+        "had16_linear_diag:ridge=0.1": 3.000231281178453e-07,
+        "had32_linear_diag:ridge=0.1": 2.8529961120906235e-07,
+        "linear_full:ridge=0.1": 2.4140249734277156e-07
+      },
+      "diagnostics": {
+        "mean_field_oracle_scalar": 0.6931491144451595,
+        "had4_linear_pair:ridge=0.1": {
+          "kept": 14.0,
+          "condition": 5.620640624405681
+        },
+        "had8_linear_pair:ridge=0.1": {
+          "kept": 44.0,
+          "condition": 2.4735021827613157
+        },
+        "had16_linear_diag:ridge=0.1": {
+          "kept": 32.0,
+          "condition": 2.5092219642013553
+        },
+        "had32_linear_diag:ridge=0.1": {
+          "kept": 64.0,
+          "condition": 2.373399178957153
+        },
+        "linear_full:ridge=0.1": {
+          "kept": 256.0,
+          "condition": 1.1633852299434413
+        }
+      },
+      "seconds": 2.5136027080006897
+    }
+  ]
+}

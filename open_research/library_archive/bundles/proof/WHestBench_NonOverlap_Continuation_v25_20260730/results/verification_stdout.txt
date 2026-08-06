@@ -1,0 +1,73 @@
+{
+  "title": "Independent posterior-score decomposition reproduction",
+  "dimension": 256,
+  "bases": 129,
+  "gegenbauer_cutoff": 10,
+  "coefficients_c31": [
+    0.9734283554575063,
+    0.0030185371987823117,
+    0.0026308025735673696,
+    0.001969962931559245,
+    0.0016380780625194712,
+    0.0013410902913348604,
+    0.00115568286570892,
+    0.0009902549946629996,
+    0.0008739217578470514,
+    0.0007692480859761689,
+    0.0006902964121714107
+  ],
+  "D_values": [
+    0.9475627990125502,
+    0.9475627278256903,
+    0.94756276320788,
+    0.947562765433208,
+    0.9475627609842022
+  ],
+  "lambda_E": [
+    60921.648964868924,
+    2.672065719479855e-25,
+    3.3785844318275125e-17,
+    1.0827529409423712e-10,
+    1.9256591794740556e-21
+  ],
+  "lambda_H": [
+    0.0158114388177637,
+    2.2246061177099044e-25,
+    2.66957884076497e-17,
+    2.451698553542196e-12,
+    1.5777331438765196e-21
+  ],
+  "pap_frobenius_squared": 0.9475623053607874,
+  "trace_P_A2": 0.9475625521111364,
+  "A_frobenius_squared": 0.9475627990125502,
+  "B_frobenius_squared": 2.4675034893117953e-07,
+  "C_frobenius_squared": 1.510649383362761e-10,
+  "posterior_tensor_residual": 4.936517628006953e-07,
+  "reported_posterior_tensor_residual": 4.936517628522309e-07,
+  "cross_fraction": 0.9996939848092931,
+  "pure_hidden_fraction": 0.00030601519070694853,
+  "B_sector_contributions": [
+    2.45927794512456e-07,
+    1.4269133652408995e-21,
+    3.48826310961948e-11,
+    7.876693370044003e-10,
+    2.3518224682628604e-15
+  ],
+  "global_fraction_of_B": 0.9966664508387263,
+  "remaining_tensor_after_global_matched_query_upper_bound": 1.7961737757833057e-09,
+  "remaining_relu_second_chaos_risk_upper_bound": 2.858699350679468e-10,
+  "remaining_ratio_to_Kerdock_upper_bound": 0.0011746500869848483,
+  "naive_residual_sample_second_moment_estimate": 0.022452655155701946,
+  "global_score_variance": 2.45927794512456e-07,
+  "samples_for_0p5_percent_relative_mse": 18259550.69471803,
+  "checks": {
+    "C31_point_values_match": true,
+    "D_point_values_match": true,
+    "residual_matches_report": true,
+    "all_lambda_H_nonnegative_numerically": true,
+    "cross_dominates_99p9_percent": true,
+    "global_sector_dominates_99_percent_B": true,
+    "naive_sampling_exceeds_10_million_for_0p5pct": true
+  },
+  "passed": true
+}

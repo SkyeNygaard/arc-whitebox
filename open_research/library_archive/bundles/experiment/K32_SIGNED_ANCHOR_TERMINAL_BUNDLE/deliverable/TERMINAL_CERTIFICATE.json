@@ -1,0 +1,31 @@
+{
+  "terminal_state": "FAIL",
+  "production_decision": "PRESERVE_BASELINE",
+  "primary_learner": {
+    "raw_candidate_over_baseline_le_0_595": false,
+    "preferred_le_0_537": false,
+    "adjusted_bootstrap_upper_below_1": false,
+    "worst_le_1_15": false,
+    "screen_worst_le_1_25": false,
+    "added_flops_below_14B": true,
+    "overall_pass": false
+  },
+  "scalar_rescue": {
+    "raw_ratio_le_0_595": false,
+    "preferred_le_0_537": false,
+    "adjusted_upper_ci_below_1": false,
+    "worst_le_1_15": false,
+    "added_flops_below_14B": true,
+    "overall_pass": false
+  },
+  "closure_scope": [
+    "probe-set equivariant K32 anchor-vector learner v1",
+    "invariant scalar rank-template learner v1"
+  ],
+  "preserved": [
+    "K32 exact lower-order oracle mechanism",
+    "K128 oracle ceiling",
+    "exact direct-output crossfit infrastructure"
+  ],
+  "next_reopen_requirement": "qualitatively new rotation-conditioned/non-marginal signed information with frozen positive phase evidence before model training"
+}

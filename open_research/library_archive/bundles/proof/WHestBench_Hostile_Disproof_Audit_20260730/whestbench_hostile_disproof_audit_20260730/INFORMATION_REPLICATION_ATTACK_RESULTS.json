@@ -1,0 +1,32 @@
+{
+  "haar_orientation_counterexample": {
+    "dimension": 2,
+    "rule": "Q=delta_{e1}",
+    "random_rotation": "g is Haar on SO(2)",
+    "integrand": "f_g(x)=h(g^{-1}x), h(x)=x_1^2",
+    "runtime_sigma_field": "trivial, hence g is independent of it",
+    "Q_g_f_g": 1.0,
+    "I_f_g": 0.5,
+    "conditional_mean_error": 0.5,
+    "conclusion": "Independence of g from runtime features alone is insufficient when f may depend on g.",
+    "repair": "Require Law(g | f, runtime information)=Haar, e.g. g independent of sigma(f) joined with the runtime sigma-field."
+  },
+  "replication_counterexample": {
+    "replicas": 5,
+    "errors": "e_i=b deterministically; degenerate random variables are mutually independent",
+    "bias": 2.0,
+    "single_risk": 4.0,
+    "average_risk": 4.0,
+    "linear_compute_factor": 5,
+    "adjusted_ratio": 5.0,
+    "conclusion": "Independent errors need not have zero cross-inner-product. The score-neutral statement requires mean-zero or pairwise uncorrelated errors."
+  },
+  "observability_ratio_edge": {
+    "case": "dictionary has zero oracle capacity",
+    "runtime_value": 0,
+    "oracle_value": 0,
+    "ratio": "undefined 0/0",
+    "repair": "Assume positive oracle value or define a convention separately."
+  },
+  "pass": true
+}

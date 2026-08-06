@@ -1,0 +1,809 @@
+{
+  "protocol": {
+    "indices": [
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175
+    ],
+    "checkpoints": [
+      24
+    ],
+    "target_layer": 29,
+    "rotation_seed": 3,
+    "rank": 4,
+    "control_ranks": [
+      2
+    ],
+    "folds": 6,
+    "ridge": 0.1,
+    "transport_ridge": 1e-12,
+    "transport_source": "oracle_gates",
+    "cheap_basis_ids": {},
+    "defect_scales": [],
+    "sample_only_scales": [
+      1.25
+    ],
+    "skip_factorized_base": true,
+    "factor_root": "/Users/skyenygaard/Programming/AI-Safety/arc_ceiling/results/factorized_k3_checkpoint_factors_smoke2",
+    "compact_state_dir": null,
+    "oracle_target_marginals": true,
+    "uses_target_layer_state_for_correction": false,
+    "uses_final_targets_for_construction": false
+  },
+  "summary": {
+    "oracle_r2": {
+      "mse_ratio": 0.7426219078867623,
+      "wins": 12,
+      "worst": 1.2835848139576285,
+      "mean_anchor_error_relative_to_same_cloud": 0.0
+    },
+    "sample_r2": {
+      "mse_ratio": 0.9930925103592855,
+      "wins": 8,
+      "worst": 1.042246189599581,
+      "mean_anchor_error_relative_to_same_cloud": 1.0
+    },
+    "checkpoint24_full_sampleonly_scale1.25_r2": {
+      "mse_ratio": 1.1381093645554576,
+      "wins": 11,
+      "worst": 5.487689684194563,
+      "mean_anchor_error_relative_to_same_cloud": 0.24106373283085533
+    }
+  },
+  "method_to_anchor": {
+    "oracle_r2": "oracle",
+    "sample_r2": "sample",
+    "checkpoint24_full_sampleonly_scale1.25_r2": "checkpoint24_full_sampleonly_scale1.25"
+  },
+  "records": [
+    {
+      "index": 160,
+      "name": "amy-scott",
+      "baseline_mse": 2.1440298520066416e-07,
+      "method_mses": {
+        "oracle_r2": 1.9297414237113956e-07,
+        "sample_r2": 2.0991739926806349e-07,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 1.625409331524618e-07
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.0013787339988902136,
+            -3.333512224926172e-05,
+            8.541322933269466e-06,
+            6.8103768742556504e-06
+          ],
+          "shift_from_sample_z_rms": 0.0
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.07276040190540811,
+          "error": [
+            -5.790510157654971e-05,
+            -4.822701092091139e-05,
+            -6.59394462671041e-05,
+            -6.573232169823032e-06
+          ],
+          "shift_from_sample_z_rms": 1.0933684018337284
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.12791713315075381,
+          "norm_ratio": 0.9954065552657532
+        }
+      },
+      "transport_diagnostics": {
+        "24": {
+          "transport_norm": 14.212159556518957,
+          "transport_condition": 1.2873480096028952e+23,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 1.3658121670596302
+    },
+    {
+      "index": 161,
+      "name": "dylan-brown",
+      "baseline_mse": 2.24091425569048e-07,
+      "method_mses": {
+        "oracle_r2": 1.398825131100519e-07,
+        "sample_r2": 2.175395733956453e-07,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 2.0466495768317338e-07
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.0019386280368172137,
+            -0.00016614096429908368,
+            -0.0001518839501264361,
+            -3.38218140476243e-05
+          ],
+          "shift_from_sample_z_rms": 0.0
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.19152930365038204,
+          "error": [
+            -0.00019145403259424043,
+            -0.00020206162637151706,
+            -0.00020223858675881556,
+            -0.00014623096900976025
+          ],
+          "shift_from_sample_z_rms": 0.8581731923926135
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.14661374481246933,
+          "norm_ratio": 0.9895568705898777
+        }
+      },
+      "transport_diagnostics": {
+        "24": {
+          "transport_norm": 13.764202380214469,
+          "transport_condition": 2.882745507605722e+23,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 1.0650622500106692
+    },
+    {
+      "index": 162,
+      "name": "yolanda-hawkins",
+      "baseline_mse": 2.3177693298152411e-07,
+      "method_mses": {
+        "oracle_r2": 1.7848597750280272e-07,
+        "sample_r2": 2.3513252094252474e-07,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 1.5703643394215788e-07
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0022463663764593633,
+            -4.716260170228165e-05,
+            -1.3714283179976604e-05,
+            -3.6099509809392125e-05
+          ],
+          "shift_from_sample_z_rms": 0.0
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.07803144912469545,
+          "error": [
+            0.00014505312873591691,
+            -9.380959772436331e-05,
+            -1.1760198919525365e-05,
+            -2.77359234150832e-05
+          ],
+          "shift_from_sample_z_rms": 0.4713385518627939
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.12653498559541307,
+          "norm_ratio": 1.0295189435689547
+        }
+      },
+      "transport_diagnostics": {
+        "24": {
+          "transport_norm": 13.42422724576414,
+          "transport_condition": 2.88210080767519e+24,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 0.8076328330207616
+    },
+    {
+      "index": 163,
+      "name": "scott-matthews",
+      "baseline_mse": 2.5893801088228656e-07,
+      "method_mses": {
+        "oracle_r2": 2.1616034584043983e-07,
+        "sample_r2": 2.5185594956739863e-07,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 2.331205846180962e-07
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.004983511315518996,
+            0.00037523681610281134,
+            0.00010851024573980961,
+            -4.310338457190824e-05
+          ],
+          "shift_from_sample_z_rms": 0.0
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.04510465534358828,
+          "error": [
+            0.00015013389113782694,
+            -0.00012066940780253166,
+            -0.00011557020145816499,
+            -1.955186142795634e-05
+          ],
+          "shift_from_sample_z_rms": 0.9405504889045925
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.12233650557268042,
+          "norm_ratio": 1.012311685556274
+        }
+      },
+      "transport_diagnostics": {
+        "24": {
+          "transport_norm": 14.335464763564284,
+          "transport_condition": 1.2290158341809058e+24,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 1.0070030838251114
+    },
+    {
+      "index": 164,
+      "name": "benjamin-walsh",
+      "baseline_mse": 3.457466003272283e-07,
+      "method_mses": {
+        "oracle_r2": 1.320064604069214e-07,
+        "sample_r2": 3.4860456517037017e-07,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 2.2969761154297376e-07
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0010653864535347113,
+            3.0237986698988806e-06,
+            5.162166623324388e-05,
+            1.249296237965168e-05
+          ],
+          "shift_from_sample_z_rms": 0.0
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.23466715791337223,
+          "error": [
+            -0.00018223273938977602,
+            -0.00011769596948879926,
+            -5.873854699671964e-05,
+            -0.00011022758893975294
+          ],
+          "shift_from_sample_z_rms": 4.3797310838148515
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.22340590670862012,
+          "norm_ratio": 0.9439190575508323
+        }
+      },
+      "transport_diagnostics": {
+        "24": {
+          "transport_norm": 11.621069901499105,
+          "transport_condition": 1.9185342055319157e+22,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 0.87400908395648
+    },
+    {
+      "index": 165,
+      "name": "justin-crawford",
+      "baseline_mse": 3.0668500009183507e-07,
+      "method_mses": {
+        "oracle_r2": 1.4581550536809984e-07,
+        "sample_r2": 2.9661344282441717e-07,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 2.0284609957342487e-07
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.002403729043152225,
+            2.2115785409223404e-05,
+            7.569412170414791e-05,
+            -1.1484535520250513e-05
+          ],
+          "shift_from_sample_z_rms": 0.0
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.08201351316447937,
+          "error": [
+            1.1204124173769259e-05,
+            -0.00011537729074471807,
+            -5.798600812206671e-05,
+            -0.00014868214995840054
+          ],
+          "shift_from_sample_z_rms": 2.9107272684562973
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.20598127367035676,
+          "norm_ratio": 1.0100407613070748
+        }
+      },
+      "transport_diagnostics": {
+        "24": {
+          "transport_norm": 11.3994384590859,
+          "transport_condition": 4.1613493861947465e+23,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 0.7174088340252638
+    },
+    {
+      "index": 166,
+      "name": "tara-harris",
+      "baseline_mse": 6.550635664715546e-07,
+      "method_mses": {
+        "oracle_r2": 2.875727910979081e-07,
+        "sample_r2": 6.187691871471576e-07,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 2.817251016267126e-07
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.007240007575721741,
+            6.019058085454665e-05,
+            -5.92222113235466e-05,
+            8.410162942722524e-05
+          ],
+          "shift_from_sample_z_rms": 0.0
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.06027391228231892,
+          "error": [
+            0.0004234889630261307,
+            1.8981785697008702e-05,
+            -2.1215027323225055e-05,
+            -0.00010163140518091099
+          ],
+          "shift_from_sample_z_rms": 1.1833500965909063
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.12237899877665688,
+          "norm_ratio": 1.0285149739658055
+        }
+      },
+      "transport_diagnostics": {
+        "24": {
+          "transport_norm": 13.959338734850705,
+          "transport_condition": 1.671315042989041e+24,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 0.7087719589471817
+    },
+    {
+      "index": 167,
+      "name": "kathy-wright",
+      "baseline_mse": 1.3442389485466154e-07,
+      "method_mses": {
+        "oracle_r2": 1.1924535108495643e-07,
+        "sample_r2": 1.2647344020295521e-07,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 1.6570527673276421e-07
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.0022050011699725758,
+            1.101729076940193e-05,
+            5.1412145689398725e-05,
+            -3.567457805396003e-05
+          ],
+          "shift_from_sample_z_rms": 0.0
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.23052662853644287,
+          "error": [
+            0.0004847715812443809,
+            -0.00014143529907835288,
+            -2.13452104112985e-05,
+            -5.596489140475679e-05
+          ],
+          "shift_from_sample_z_rms": 1.2006893620645198
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.09393315780946969,
+          "norm_ratio": 1.0340173435395692
+        }
+      },
+      "transport_diagnostics": {
+        "24": {
+          "transport_norm": 13.075521127530704,
+          "transport_condition": 6.39444321387735e+23,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 0.694139915984124
+    },
+    {
+      "index": 168,
+      "name": "katie-rosario",
+      "baseline_mse": 2.7290469891222585e-07,
+      "method_mses": {
+        "oracle_r2": 3.5029632718141203e-07,
+        "sample_r2": 2.754532614650264e-07,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 1.1335252714408223e-06
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.001984104818407717,
+            1.2873656899989316e-05,
+            1.6500802343285582e-05,
+            -5.642611934067801e-06
+          ],
+          "shift_from_sample_z_rms": 0.0
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.4088909954322892,
+          "error": [
+            -0.00033381648594987823,
+            -0.0006734872227427968,
+            -0.0002058373461591538,
+            -0.000225544903895176
+          ],
+          "shift_from_sample_z_rms": 4.099451390084426
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.22246288890751512,
+          "norm_ratio": 0.9587691910760381
+        }
+      },
+      "transport_diagnostics": {
+        "24": {
+          "transport_norm": 12.221481848548645,
+          "transport_condition": 2.1360199299677374e+22,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 0.7037959999870509
+    },
+    {
+      "index": 169,
+      "name": "victor-lamb",
+      "baseline_mse": 4.3808960540774755e-07,
+      "method_mses": {
+        "oracle_r2": 4.740245987988373e-07,
+        "sample_r2": 4.4683195907524516e-07,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 4.6206303440656813e-07
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.00040409062128521356,
+            -0.00016182773183176513,
+            1.8309786181135157e-05,
+            -0.0001601279117526208
+          ],
+          "shift_from_sample_z_rms": 0.0
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.37071821358235435,
+          "error": [
+            -7.458770571444617e-05,
+            -9.341397477524715e-05,
+            -0.00011024887619034279,
+            -5.626644024092978e-05
+          ],
+          "shift_from_sample_z_rms": 1.6576719953410666
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.16678328955564814,
+          "norm_ratio": 0.9996653906850206
+        }
+      },
+      "transport_diagnostics": {
+        "24": {
+          "transport_norm": 14.044752014853062,
+          "transport_condition": 1.5846477500408336e+23,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 0.7407469172030687
+    },
+    {
+      "index": 170,
+      "name": "scott-watts",
+      "baseline_mse": 4.9921147032317104e-08,
+      "method_mses": {
+        "oracle_r2": 5.666809424364382e-08,
+        "sample_r2": 4.980519913735244e-08,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 6.747461855612866e-08
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0001798538404496064,
+            6.0211056669600554e-05,
+            7.119819704847277e-06,
+            -1.4046024142699539e-05
+          ],
+          "shift_from_sample_z_rms": 0.0
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.4186337250219215,
+          "error": [
+            1.3825674140877098e-05,
+            -4.727573067721952e-05,
+            -4.685127555902665e-05,
+            -4.155302390585489e-05
+          ],
+          "shift_from_sample_z_rms": 3.118441119911363
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.2651083578720625,
+          "norm_ratio": 1.0298881628240197
+        }
+      },
+      "transport_diagnostics": {
+        "24": {
+          "transport_norm": 10.56253593467007,
+          "transport_condition": 5.196171129274775e+21,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 0.716846666065976
+    },
+    {
+      "index": 171,
+      "name": "aaron-proctor",
+      "baseline_mse": 1.9726656774878428e-07,
+      "method_mses": {
+        "oracle_r2": 2.0844726873077437e-07,
+        "sample_r2": 1.9904248343708324e-07,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 1.8037291998807576e-07
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0036419703535885972,
+            0.0001342262527352367,
+            -5.106780994162952e-06,
+            0.00017956158257475402
+          ],
+          "shift_from_sample_z_rms": 0.0
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.20075963841124775,
+          "error": [
+            0.0006603586894362579,
+            -0.0002807664149492156,
+            -9.855894272132147e-05,
+            -0.00010956900964366467
+          ],
+          "shift_from_sample_z_rms": 1.4170875467076904
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.10945308358207592,
+          "norm_ratio": 1.044347575160172
+        }
+      },
+      "transport_diagnostics": {
+        "24": {
+          "transport_norm": 13.315438747624414,
+          "transport_condition": 1.8258157909339999e+24,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 0.7364923749119043
+    },
+    {
+      "index": 172,
+      "name": "cody-blackwell",
+      "baseline_mse": 4.6676360572242697e-07,
+      "method_mses": {
+        "oracle_r2": 2.8937087338644337e-07,
+        "sample_r2": 4.864825895079606e-07,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 3.3612905419440464e-07
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.004428309858694135,
+            -3.507412772399757e-05,
+            8.614557613942711e-05,
+            1.4591997949210678e-05
+          ],
+          "shift_from_sample_z_rms": 0.0
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.10820745427141046,
+          "error": [
+            0.0004625445954440366,
+            -7.409160211178413e-05,
+            -4.3431527939032794e-05,
+            -9.159799846085795e-05
+          ],
+          "shift_from_sample_z_rms": 1.0261530989241354
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.10575126135601777,
+          "norm_ratio": 1.033785136145643
+        }
+      },
+      "transport_diagnostics": {
+        "24": {
+          "transport_norm": 15.054243331048157,
+          "transport_condition": 1.63918262466239e+24,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 0.7431526670698076
+    },
+    {
+      "index": 173,
+      "name": "raymond-morris",
+      "baseline_mse": 2.1720115881579176e-07,
+      "method_mses": {
+        "oracle_r2": 2.1181605647782218e-07,
+        "sample_r2": 2.2144222809034447e-07,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 2.0037615165940283e-07
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0028602494207801143,
+            -0.00011571667342202135,
+            4.871847637820392e-05,
+            -3.2297932476233956e-05
+          ],
+          "shift_from_sample_z_rms": 0.0
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.23225220031920568,
+          "error": [
+            0.0006117525347866248,
+            -0.00021417120258161726,
+            -3.686529439850261e-05,
+            -0.000143980989617723
+          ],
+          "shift_from_sample_z_rms": 1.001640999020131
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.15472027907760805,
+          "norm_ratio": 1.0519619139576208
+        }
+      },
+      "transport_diagnostics": {
+        "24": {
+          "transport_norm": 12.518647146222232,
+          "transport_condition": 2.8666144785837955e+22,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 0.8357212499249727
+    },
+    {
+      "index": 174,
+      "name": "gregory-simmons",
+      "baseline_mse": 1.4200694893517613e-07,
+      "method_mses": {
+        "oracle_r2": 1.2279268756153034e-07,
+        "sample_r2": 1.3820993313036535e-07,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 7.7929006875551e-07
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.00030750162914483514,
+            6.21366415353309e-06,
+            2.0248267466934505e-06,
+            2.9292898884171296e-06
+          ],
+          "shift_from_sample_z_rms": 0.0
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.9603104316054027,
+          "error": [
+            -6.451500235704621e-05,
+            -0.00023355643670092997,
+            -0.00015290892522135634,
+            -7.18031820897613e-05
+          ],
+          "shift_from_sample_z_rms": 4.876920964155695
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.2390219319878981,
+          "norm_ratio": 0.9826807949477148
+        }
+      },
+      "transport_diagnostics": {
+        "24": {
+          "transport_norm": 11.553218256924053,
+          "transport_condition": 1.381571302529258e+22,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 0.8094781669788063
+    },
+    {
+      "index": 175,
+      "name": "dennis-jones",
+      "baseline_mse": 1.3388364296090055e-07,
+      "method_mses": {
+        "oracle_r2": 5.966949047115515e-08,
+        "sample_r2": 1.3736469127730782e-07,
+        "checkpoint24_full_sampleonly_scale1.25_r2": 8.497163603576815e-08
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0004966669560849124,
+            2.0799303484409642e-06,
+            1.4468750134952971e-05,
+            -2.609520516586635e-06
+          ],
+          "shift_from_sample_z_rms": 0.0
+        },
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_to_same_cloud": 0.16234004472916644,
+          "error": [
+            4.366008460821025e-06,
+            -6.592930786155152e-05,
+            -1.4508522951458061e-05,
+            -4.393862766575952e-05
+          ],
+          "shift_from_sample_z_rms": 3.3712766099009777
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint24_full_sampleonly_scale1.25": {
+          "relative_error": 0.251534970503394,
+          "norm_ratio": 1.0155275230578125
+        }
+      },
+      "transport_diagnostics": {
+        "24": {
+          "transport_norm": 11.982656929748709,
+          "transport_condition": 1.2310304511885293e+24,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 0.9497127498034388
+    }
+  ]
+}

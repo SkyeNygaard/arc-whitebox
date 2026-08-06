@@ -1,0 +1,20 @@
+{
+  "convention": "one scalar multiply or add = one FLOP; excludes transcendental/division distinctions and Python overhead",
+  "added_companion_trajectories_for_nested_prefixes": 0,
+  "already_existing_companion_rows": 8704,
+  "already_existing_companion_dense_propagation_standard_gemm_flops_approx": 33084669952,
+  "one_additional_prefix_anchor_and_output_map_flops": 197632,
+  "four_extra_prefixes_beyond_c17_flops": 790528,
+  "seventeen_leave_one_basis_recombinations_flops": 3359744,
+  "rule_A_upper_bound_extra_scalar_flops": 4170272,
+  "stored_block_means_bytes_float64": 34816,
+  "stored_five_output_corrections_bytes_float64": 10240,
+  "official_flopscope_available": false,
+  "official_flopscope_claim": null,
+  "measured_research_harness": {
+    "mean_per_record_seconds": 4.33,
+    "peak_rss_mib": 1413.1,
+    "warning": "Includes full research materialization and computes full 129-basis design before subsetting; not a deployable package timing."
+  },
+  "interpretation": "Nested prefixes add zero propagation. The most expensive explored nested rule is about 4.16M scalar operations, negligible relative to companion propagation, but it failed statistically."
+}

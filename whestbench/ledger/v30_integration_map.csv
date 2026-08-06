@@ -1,0 +1,17 @@
+WHestBench V30 Integration Map — local hybrid and mixture audit,,,,,,,,
+,,,,,,,,
+Branch,Measured fact,Scope,Status,Feeds,Next gate,Kill/reopen rule,IDs,Role
+Compact joint modulation,r64 latent passes; K32 full covariance fails,Oracle representation only,PRIMARY,Legal rollout,M192->M188,Kill if tied/shared-low-rank cannot pass<=3e-3 under budget,"M192,M201,M202",Candidate state
+Sign–magnitude attribution,Covariance modulation helps3-4x; exact remaining defect unknown,Mechanism,FOLDED,M192 family choice,Finish M187 attribution,No separate estimator,M187,Model selection
+Sampled-moment hybrid,"Accurate fourth-order marginal, same/worse variance economics",Same-row moments,CLOSED,None,None,New cheaper information source only,"M197,M199",Negative result
+Smoothed anchor residual,Blockwise residual shrinks25x atalpha0.2,Residual side only,MECHANISM PASS,Future anchors,T104 Gate A,Anchor mean must be analytic/cheap,"T104,M198",Design-aware gate
+Smoothed analytic anchor,Useful-residual and tractable-closure regimes disjoint,Gaussian smoothed family,CLOSED,None,None,"New anchor class, not retuning alpha",M200,Negative family
+Compositional chaos,Degree6-10 exact removal≤1.58x zero-cost,Standalone low-band,ENGINE/PROOF,M192/M188 compression,M190 ranks/orientation only if coupled,No standalone score claim,"T105,M190",Internal engine
+Kerdock QTT,Untouched by local runs,Stored-array falsifier,BOUNDED,Direct compute,M189,Rank>16/shared pivots fail,M189,Cheap hedge
+Boundary fan,Covariance rank warning only,Output-weighted facet normals unmeasured,BOUNDED,Boundary identity,M193,Normal span/current test fails,M193,Geometry hedge
+Cubic boundary phase,Static LORO is not this class,One algebraic kernel unrun,ONE SHOT,Direct-output source,M194,No grouped positive covariance,M194,Identity hedge
+Full-weight learning,29-feature dictionary fails,Not full quotient class,DEFERRED,Later residual,M195 only after anchor,No more handcrafted features,"M195,M203",Low-prior hedge
+Static/sampling/linear gauge,Earlier closures unchanged,Declared classes,CLOSED,Proof lanes,None,N/A,"T74,T86-T88",Box exited
+Protected evaluation,No full legal candidate,Governance,SEALED,Candidate only,Immutable package,Any oracle/cost leak,M204,Governance
+Protected evaluation,No full legal candidate.,Score/tails/cost after M188.,SEALED,Candidate only,Immutable package,Any oracle/refit/cost leak,M196,Governance
+Protected evaluation,No full legal candidate.,Score/tails/cost after M188.,SEALED,Candidate only,Immutable package,Any oracle/refit/cost leak,M196,Governance

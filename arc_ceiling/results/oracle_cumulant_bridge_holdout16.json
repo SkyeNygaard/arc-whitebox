@@ -1,0 +1,1388 @@
+{
+  "protocol": {
+    "indices": [
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123
+    ],
+    "layers": [
+      29
+    ],
+    "ranks": [
+      4,
+      16
+    ],
+    "train_rotations": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "test_rotations": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "ridges": [
+      1.0
+    ],
+    "anchor": "(u^T h^2)(v^T h)/||x||^2 - u^T E[h^2 h^T]v/(d+1)",
+    "oracle_warning": "Both direction state and training coefficients use oracle higher-moment/target data. This is an expressivity ceiling, not a deployable estimator."
+  },
+  "summary": {
+    "layer29_c21_rank4:ridge=1": {
+      "ratio": 0.7691544094803051,
+      "ci95": [
+        0.6881674279563591,
+        0.8654437194452053
+      ],
+      "wins": 14,
+      "worst": 1.1308352956941583
+    },
+    "layer29_c21_rank16:ridge=1": {
+      "ratio": 0.8237767934199187,
+      "ci95": [
+        0.7636003498373551,
+        0.8911960278839034
+      ],
+      "wins": 14,
+      "worst": 1.133926178378608
+    },
+    "layer29_x1_rank4:ridge=1": {
+      "ratio": 1.0024026959241317,
+      "ci95": [
+        1.0,
+        1.008289505373398
+      ],
+      "wins": 0,
+      "worst": 1.0432592555801181
+    },
+    "layer29_x1_rank16:ridge=1": {
+      "ratio": 3.1667865016415204,
+      "ci95": [
+        1.2501432947147988,
+        6.703696461788314
+      ],
+      "wins": 2,
+      "worst": 17.122713944672064
+    },
+    "layer29_x1a_rank4:ridge=1": {
+      "ratio": 0.797246154947052,
+      "ci95": [
+        0.6932058370768717,
+        0.9157523460005909
+      ],
+      "wins": 11,
+      "worst": 1.10358036194147
+    },
+    "layer29_x1a_rank16:ridge=1": {
+      "ratio": 0.6900990385577006,
+      "ci95": [
+        0.6207081560810188,
+        0.7602459635198054
+      ],
+      "wins": 16,
+      "worst": 0.9871215856826923
+    },
+    "layer29_x1+x1a_rank4:ridge=1": {
+      "ratio": 0.7972810039373142,
+      "ci95": [
+        0.6932542510617196,
+        0.9158009284887934
+      ],
+      "wins": 11,
+      "worst": 1.10358036194147
+    },
+    "layer29_x1+x1a_rank16:ridge=1": {
+      "ratio": 1.3327883412468537,
+      "ci95": [
+        0.7193669477511118,
+        2.455448478060254
+      ],
+      "wins": 13,
+      "worst": 5.674721312396834
+    },
+    "all_layers_x1+x1a_rank4:ridge=1": {
+      "ratio": 0.7972810039373142,
+      "ci95": [
+        0.6932542510617196,
+        0.9158009284887934
+      ],
+      "wins": 11,
+      "worst": 1.10358036194147
+    },
+    "all_layers_x1+x1a_rank16:ridge=1": {
+      "ratio": 1.3327883412468537,
+      "ci95": [
+        0.7193669477511118,
+        2.455448478060254
+      ],
+      "wins": 13,
+      "worst": 5.674721312396834
+    }
+  },
+  "records": [
+    {
+      "index": 108,
+      "name": "abigail-singleton",
+      "moment_path": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/data/higher_fresh/mlp_00108.npz",
+      "baseline_mse": 1.0945416288411608e-07,
+      "method_mses": {
+        "layer29_c21_rank4:ridge=1": 9.881068662263855e-08,
+        "layer29_c21_rank16:ridge=1": 9.549303622040698e-08,
+        "layer29_x1_rank4:ridge=1": 1.0945416288411608e-07,
+        "layer29_x1_rank16:ridge=1": 1.2397143179977118e-07,
+        "layer29_x1a_rank4:ridge=1": 1.0945416288411608e-07,
+        "layer29_x1a_rank16:ridge=1": 9.03616394469185e-08,
+        "layer29_x1+x1a_rank4:ridge=1": 1.0945416288411608e-07,
+        "layer29_x1+x1a_rank16:ridge=1": 9.572744620831899e-08,
+        "all_layers_x1+x1a_rank4:ridge=1": 1.0945416288411608e-07,
+        "all_layers_x1+x1a_rank16:ridge=1": 9.572744620831899e-08
+      },
+      "diagnostics": {
+        "layer29_c21_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 6.5344891030075924,
+          "anchor_mean_norm": 0.0001689754571078835,
+          "feature_rms": 0.0003642075913979754
+        },
+        "layer29_c21_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 3.418207650272407,
+          "anchor_mean_norm": 0.0001690079256764502,
+          "feature_rms": 0.00018221712373364573
+        },
+        "layer29_x1_rank4:ridge=1": {
+          "kept": 0.0,
+          "condition": 1.0,
+          "anchor_mean_norm": 8.493350493349649e-14,
+          "feature_rms": 4.4557207032348055e-14
+        },
+        "layer29_x1_rank16:ridge=1": {
+          "kept": 7.0,
+          "condition": 6.252537445356914,
+          "anchor_mean_norm": 6.169879110791586e-12,
+          "feature_rms": 1.1262670560572569e-11
+        },
+        "layer29_x1a_rank4:ridge=1": {
+          "kept": 0.0,
+          "condition": 1.0,
+          "anchor_mean_norm": 4.904540417799957e-13,
+          "feature_rms": 2.5771543914699347e-13
+        },
+        "layer29_x1a_rank16:ridge=1": {
+          "kept": 12.0,
+          "condition": 6.6925283067999635,
+          "anchor_mean_norm": 6.152100830708142e-05,
+          "feature_rms": 6.598499187790801e-05
+        },
+        "layer29_x1+x1a_rank4:ridge=1": {
+          "kept": 0.0,
+          "condition": 1.0,
+          "anchor_mean_norm": 4.977538220432083e-13,
+          "feature_rms": 1.8493592440795705e-13
+        },
+        "layer29_x1+x1a_rank16:ridge=1": {
+          "kept": 19.0,
+          "condition": 5.131027233580301,
+          "anchor_mean_norm": 6.152100830708172e-05,
+          "feature_rms": 4.6658435213408693e-05
+        },
+        "all_layers_x1+x1a_rank4:ridge=1": {
+          "kept": 0.0,
+          "condition": 1.0
+        },
+        "all_layers_x1+x1a_rank16:ridge=1": {
+          "kept": 19.0,
+          "condition": 5.131027233580301
+        }
+      },
+      "seconds": 6.306136624887586
+    },
+    {
+      "index": 109,
+      "name": "brent-harris",
+      "moment_path": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/data/higher_fresh/mlp_00109.npz",
+      "baseline_mse": 3.2030575590962587e-07,
+      "method_mses": {
+        "layer29_c21_rank4:ridge=1": 2.3173039676797235e-07,
+        "layer29_c21_rank16:ridge=1": 2.297195340102139e-07,
+        "layer29_x1_rank4:ridge=1": 3.2030575590962587e-07,
+        "layer29_x1_rank16:ridge=1": 3.7342085669174936e-07,
+        "layer29_x1a_rank4:ridge=1": 3.53483142038681e-07,
+        "layer29_x1a_rank16:ridge=1": 2.469284169137452e-07,
+        "layer29_x1+x1a_rank4:ridge=1": 3.53483142038681e-07,
+        "layer29_x1+x1a_rank16:ridge=1": 2.645062153084257e-07,
+        "all_layers_x1+x1a_rank4:ridge=1": 3.53483142038681e-07,
+        "all_layers_x1+x1a_rank16:ridge=1": 2.645062153084257e-07
+      },
+      "diagnostics": {
+        "layer29_c21_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 5.5756123953873375,
+          "anchor_mean_norm": 0.00012157377344649313,
+          "feature_rms": 0.0016780592859665844
+        },
+        "layer29_c21_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 3.283772831404697,
+          "anchor_mean_norm": 0.00012175095959467474,
+          "feature_rms": 0.0008393189245179716
+        },
+        "layer29_x1_rank4:ridge=1": {
+          "kept": 0.0,
+          "condition": 1.0,
+          "anchor_mean_norm": 4.174658549192964e-14,
+          "feature_rms": 2.0845823988355995e-14
+        },
+        "layer29_x1_rank16:ridge=1": {
+          "kept": 5.0,
+          "condition": 10.463584548595675,
+          "anchor_mean_norm": 6.070187725213615e-12,
+          "feature_rms": 1.1796821875872233e-11
+        },
+        "layer29_x1a_rank4:ridge=1": {
+          "kept": 2.0,
+          "condition": 12.99158855794275,
+          "anchor_mean_norm": 1.611373937133664e-12,
+          "feature_rms": 1.0130557284471089e-12
+        },
+        "layer29_x1a_rank16:ridge=1": {
+          "kept": 14.0,
+          "condition": 6.030056629361389,
+          "anchor_mean_norm": 7.377031257434247e-05,
+          "feature_rms": 0.00030101057998873244
+        },
+        "layer29_x1+x1a_rank4:ridge=1": {
+          "kept": 2.0,
+          "condition": 12.99158855794275,
+          "anchor_mean_norm": 1.6119146201563779e-12,
+          "feature_rms": 7.164902153265095e-13
+        },
+        "layer29_x1+x1a_rank16:ridge=1": {
+          "kept": 19.0,
+          "condition": 5.8003446199193895,
+          "anchor_mean_norm": 7.377031257434272e-05,
+          "feature_rms": 0.00021284662231892855
+        },
+        "all_layers_x1+x1a_rank4:ridge=1": {
+          "kept": 2.0,
+          "condition": 12.99158855794275
+        },
+        "all_layers_x1+x1a_rank16:ridge=1": {
+          "kept": 19.0,
+          "condition": 5.8003446199193895
+        }
+      },
+      "seconds": 6.246287791989744
+    },
+    {
+      "index": 110,
+      "name": "veronica-gonzalez",
+      "moment_path": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/data/higher_fresh/mlp_00110.npz",
+      "baseline_mse": 5.072919923306595e-07,
+      "method_mses": {
+        "layer29_c21_rank4:ridge=1": 3.8894538821774353e-07,
+        "layer29_c21_rank16:ridge=1": 4.11802767308014e-07,
+        "layer29_x1_rank4:ridge=1": 5.072919923306595e-07,
+        "layer29_x1_rank16:ridge=1": 8.218255683410908e-07,
+        "layer29_x1a_rank4:ridge=1": 4.1559027179416905e-07,
+        "layer29_x1a_rank16:ridge=1": 3.5687126688239285e-07,
+        "layer29_x1+x1a_rank4:ridge=1": 4.1559027179416905e-07,
+        "layer29_x1+x1a_rank16:ridge=1": 3.634103577758489e-07,
+        "all_layers_x1+x1a_rank4:ridge=1": 4.1559027179416905e-07,
+        "all_layers_x1+x1a_rank16:ridge=1": 3.634103577758489e-07
+      },
+      "diagnostics": {
+        "layer29_c21_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 8.37252109924409,
+          "anchor_mean_norm": 0.0017806963390070007,
+          "feature_rms": 0.001848453429623671
+        },
+        "layer29_c21_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 4.626158834732614,
+          "anchor_mean_norm": 0.0017807178463637972,
+          "feature_rms": 0.000924501480697829
+        },
+        "layer29_x1_rank4:ridge=1": {
+          "kept": 0.0,
+          "condition": 1.0,
+          "anchor_mean_norm": 2.6422622835585843e-13,
+          "feature_rms": 1.321131141734567e-13
+        },
+        "layer29_x1_rank16:ridge=1": {
+          "kept": 6.0,
+          "condition": 8.144598890832357,
+          "anchor_mean_norm": 1.7046031806940267e-11,
+          "feature_rms": 2.959631271094145e-11
+        },
+        "layer29_x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 12.062928911861464,
+          "anchor_mean_norm": 0.0004835451116130831,
+          "feature_rms": 0.0005544824104686031
+        },
+        "layer29_x1a_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 8.298078717455798,
+          "anchor_mean_norm": 0.0005014198308427649,
+          "feature_rms": 0.0002879208941610124
+        },
+        "layer29_x1+x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 12.062928911861464,
+          "anchor_mean_norm": 0.0004835451116130831,
+          "feature_rms": 0.000392078272491012
+        },
+        "layer29_x1+x1a_rank16:ridge=1": {
+          "kept": 22.0,
+          "condition": 7.53488712041563,
+          "anchor_mean_norm": 0.0005014198308427653,
+          "feature_rms": 0.0002035908167065472
+        },
+        "all_layers_x1+x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 12.062928911861464
+        },
+        "all_layers_x1+x1a_rank16:ridge=1": {
+          "kept": 22.0,
+          "condition": 7.53488712041563
+        }
+      },
+      "seconds": 6.253853500122204
+    },
+    {
+      "index": 111,
+      "name": "martha-kline",
+      "moment_path": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/data/higher_fresh/mlp_00111.npz",
+      "baseline_mse": 4.854655039953601e-07,
+      "method_mses": {
+        "layer29_c21_rank4:ridge=1": 3.342475453217957e-07,
+        "layer29_c21_rank16:ridge=1": 3.8873349573792376e-07,
+        "layer29_x1_rank4:ridge=1": 4.854655039953601e-07,
+        "layer29_x1_rank16:ridge=1": 8.312486954918604e-06,
+        "layer29_x1a_rank4:ridge=1": 2.9314400312677744e-07,
+        "layer29_x1a_rank16:ridge=1": 2.851848421583034e-07,
+        "layer29_x1+x1a_rank4:ridge=1": 2.9314400312677744e-07,
+        "layer29_x1+x1a_rank16:ridge=1": 2.75488144195594e-06,
+        "all_layers_x1+x1a_rank4:ridge=1": 2.9314400312677744e-07,
+        "all_layers_x1+x1a_rank16:ridge=1": 2.75488144195594e-06
+      },
+      "diagnostics": {
+        "layer29_c21_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 5.795039647757137,
+          "anchor_mean_norm": 0.00033918537443150635,
+          "feature_rms": 0.0026858177377772404
+        },
+        "layer29_c21_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 3.704060516873597,
+          "anchor_mean_norm": 0.0003397222507592576,
+          "feature_rms": 0.001343217741445561
+        },
+        "layer29_x1_rank4:ridge=1": {
+          "kept": 0.0,
+          "condition": 1.0,
+          "anchor_mean_norm": 1.2265279060127847e-13,
+          "feature_rms": 6.132639531326818e-14
+        },
+        "layer29_x1_rank16:ridge=1": {
+          "kept": 7.0,
+          "condition": 9.658679924575617,
+          "anchor_mean_norm": 1.61266335240675e-11,
+          "feature_rms": 1.782048709467879e-11
+        },
+        "layer29_x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 7.401400363270181,
+          "anchor_mean_norm": 0.00011714505140919955,
+          "feature_rms": 0.0007284038696701688
+        },
+        "layer29_x1a_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 6.65937867829063,
+          "anchor_mean_norm": 0.00012640498615954106,
+          "feature_rms": 0.0003787929417059423
+        },
+        "layer29_x1+x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 7.401400363270181,
+          "anchor_mean_norm": 0.00011714505140919955,
+          "feature_rms": 0.0005150593156862985
+        },
+        "layer29_x1+x1a_rank16:ridge=1": {
+          "kept": 23.0,
+          "condition": 5.173554721409324,
+          "anchor_mean_norm": 0.0001264049861595421,
+          "feature_rms": 0.00026784705774587274
+        },
+        "all_layers_x1+x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 7.401400363270181
+        },
+        "all_layers_x1+x1a_rank16:ridge=1": {
+          "kept": 23.0,
+          "condition": 5.173554721409324
+        }
+      },
+      "seconds": 6.189038624987006
+    },
+    {
+      "index": 112,
+      "name": "holly-rich",
+      "moment_path": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/data/higher_fresh/mlp_00112.npz",
+      "baseline_mse": 2.6884990026324713e-07,
+      "method_mses": {
+        "layer29_c21_rank4:ridge=1": 1.7434000760061278e-07,
+        "layer29_c21_rank16:ridge=1": 2.132622221025788e-07,
+        "layer29_x1_rank4:ridge=1": 2.6884990026324713e-07,
+        "layer29_x1_rank16:ridge=1": 3.0144461180391625e-07,
+        "layer29_x1a_rank4:ridge=1": 2.6884990026324713e-07,
+        "layer29_x1a_rank16:ridge=1": 1.856175215261129e-07,
+        "layer29_x1+x1a_rank4:ridge=1": 2.6884990026324713e-07,
+        "layer29_x1+x1a_rank16:ridge=1": 1.945473175643751e-07,
+        "all_layers_x1+x1a_rank4:ridge=1": 2.6884990026324713e-07,
+        "all_layers_x1+x1a_rank16:ridge=1": 1.945473175643751e-07
+      },
+      "diagnostics": {
+        "layer29_c21_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 6.830605850025231,
+          "anchor_mean_norm": 0.00010120153110198167,
+          "feature_rms": 0.000534249867232811
+        },
+        "layer29_c21_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 2.960064262162893,
+          "anchor_mean_norm": 0.00010145922704722059,
+          "feature_rms": 0.00026725556139114916
+        },
+        "layer29_x1_rank4:ridge=1": {
+          "kept": 0.0,
+          "condition": 1.0,
+          "anchor_mean_norm": 2.0494090422852725e-14,
+          "feature_rms": 1.024704519234358e-14
+        },
+        "layer29_x1_rank16:ridge=1": {
+          "kept": 3.0,
+          "condition": 9.399408371353607,
+          "anchor_mean_norm": 3.152604914171785e-12,
+          "feature_rms": 1.539940739717082e-12
+        },
+        "layer29_x1a_rank4:ridge=1": {
+          "kept": 0.0,
+          "condition": 1.0,
+          "anchor_mean_norm": 3.639465359688298e-13,
+          "feature_rms": 6.568918997776827e-13
+        },
+        "layer29_x1a_rank16:ridge=1": {
+          "kept": 10.0,
+          "condition": 10.027969501727533,
+          "anchor_mean_norm": 2.894771087542244e-05,
+          "feature_rms": 8.379139962245584e-05
+        },
+        "layer29_x1+x1a_rank4:ridge=1": {
+          "kept": 0.0,
+          "condition": 1.0,
+          "anchor_mean_norm": 3.645230977400072e-13,
+          "feature_rms": 4.645492277082738e-13
+        },
+        "layer29_x1+x1a_rank16:ridge=1": {
+          "kept": 13.0,
+          "condition": 8.06581293097107,
+          "anchor_mean_norm": 2.894771087542261e-05,
+          "feature_rms": 5.924946687815045e-05
+        },
+        "all_layers_x1+x1a_rank4:ridge=1": {
+          "kept": 0.0,
+          "condition": 1.0
+        },
+        "all_layers_x1+x1a_rank16:ridge=1": {
+          "kept": 13.0,
+          "condition": 8.06581293097107
+        }
+      },
+      "seconds": 6.274249417008832
+    },
+    {
+      "index": 113,
+      "name": "kelly-brown",
+      "moment_path": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/data/higher_fresh/mlp_00113.npz",
+      "baseline_mse": 2.1863575022496488e-07,
+      "method_mses": {
+        "layer29_c21_rank4:ridge=1": 1.8100188420606752e-07,
+        "layer29_c21_rank16:ridge=1": 1.9362502709899929e-07,
+        "layer29_x1_rank4:ridge=1": 2.1863575022496488e-07,
+        "layer29_x1_rank16:ridge=1": 5.540544177482657e-07,
+        "layer29_x1a_rank4:ridge=1": 1.7489730831572355e-07,
+        "layer29_x1a_rank16:ridge=1": 1.703129208522718e-07,
+        "layer29_x1+x1a_rank4:ridge=1": 1.7489730831572355e-07,
+        "layer29_x1+x1a_rank16:ridge=1": 2.643331298966583e-07,
+        "all_layers_x1+x1a_rank4:ridge=1": 1.7489730831572355e-07,
+        "all_layers_x1+x1a_rank16:ridge=1": 2.643331298966583e-07
+      },
+      "diagnostics": {
+        "layer29_c21_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 5.7029899199269645,
+          "anchor_mean_norm": 0.00022505968875768224,
+          "feature_rms": 0.0004891731016670417
+        },
+        "layer29_c21_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 3.280462335681296,
+          "anchor_mean_norm": 0.00022522586837606576,
+          "feature_rms": 0.00024479422411709424
+        },
+        "layer29_x1_rank4:ridge=1": {
+          "kept": 0.0,
+          "condition": 1.0,
+          "anchor_mean_norm": 3.476314842626092e-14,
+          "feature_rms": 1.7381574216925826e-14
+        },
+        "layer29_x1_rank16:ridge=1": {
+          "kept": 11.0,
+          "condition": 5.268533154437126,
+          "anchor_mean_norm": 9.993512593508204e-11,
+          "feature_rms": 5.969970614578668e-11
+        },
+        "layer29_x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 8.700977212205188,
+          "anchor_mean_norm": 5.21168326504749e-05,
+          "feature_rms": 0.00013629155623025798
+        },
+        "layer29_x1a_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 5.192441003645422,
+          "anchor_mean_norm": 5.334501718342956e-05,
+          "feature_rms": 7.050966806530739e-05
+        },
+        "layer29_x1+x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 8.700977212205188,
+          "anchor_mean_norm": 5.21168326504749e-05,
+          "feature_rms": 9.637268362888307e-05
+        },
+        "layer29_x1+x1a_rank16:ridge=1": {
+          "kept": 27.0,
+          "condition": 4.395152265594704,
+          "anchor_mean_norm": 5.3345017183523164e-05,
+          "feature_rms": 4.985786442820929e-05
+        },
+        "all_layers_x1+x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 8.700977212205188
+        },
+        "all_layers_x1+x1a_rank16:ridge=1": {
+          "kept": 27.0,
+          "condition": 4.395152265594704
+        }
+      },
+      "seconds": 6.317830916959792
+    },
+    {
+      "index": 114,
+      "name": "christian-nelson",
+      "moment_path": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/data/higher_fresh/mlp_00114.npz",
+      "baseline_mse": 2.3810243201251973e-07,
+      "method_mses": {
+        "layer29_c21_rank4:ridge=1": 2.16667719724472e-07,
+        "layer29_c21_rank16:ridge=1": 2.32326801515563e-07,
+        "layer29_x1_rank4:ridge=1": 2.3810243201251973e-07,
+        "layer29_x1_rank16:ridge=1": 2.987828767295002e-07,
+        "layer29_x1a_rank4:ridge=1": 2.246895158782131e-07,
+        "layer29_x1a_rank16:ridge=1": 1.8798747914229118e-07,
+        "layer29_x1+x1a_rank4:ridge=1": 2.246895158782131e-07,
+        "layer29_x1+x1a_rank16:ridge=1": 2.1270892703037873e-07,
+        "all_layers_x1+x1a_rank4:ridge=1": 2.246895158782131e-07,
+        "all_layers_x1+x1a_rank16:ridge=1": 2.1270892703037873e-07
+      },
+      "diagnostics": {
+        "layer29_c21_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 5.248771884967496,
+          "anchor_mean_norm": 6.161617884212423e-05,
+          "feature_rms": 0.0007469001502029071
+        },
+        "layer29_c21_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 3.6713666337986792,
+          "anchor_mean_norm": 6.19062259200132e-05,
+          "feature_rms": 0.00037354653724614833
+        },
+        "layer29_x1_rank4:ridge=1": {
+          "kept": 0.0,
+          "condition": 1.0,
+          "anchor_mean_norm": 1.344598301906981e-13,
+          "feature_rms": 6.72319858132948e-14
+        },
+        "layer29_x1_rank16:ridge=1": {
+          "kept": 11.0,
+          "condition": 6.095961441842366,
+          "anchor_mean_norm": 2.6834222140540468e-11,
+          "feature_rms": 4.389452456763603e-11
+        },
+        "layer29_x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 10.44866357261965,
+          "anchor_mean_norm": 6.6409216761323824e-06,
+          "feature_rms": 0.00019668155886775785
+        },
+        "layer29_x1a_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 7.967544799039525,
+          "anchor_mean_norm": 1.4993495801499727e-05,
+          "feature_rms": 0.00010349797028125488
+        },
+        "layer29_x1+x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 10.44866357261965,
+          "anchor_mean_norm": 6.640921676132384e-06,
+          "feature_rms": 0.0001390748640097327
+        },
+        "layer29_x1+x1a_rank16:ridge=1": {
+          "kept": 27.0,
+          "condition": 5.314580526118463,
+          "anchor_mean_norm": 1.499349580152374e-05,
+          "feature_rms": 7.318411662492568e-05
+        },
+        "all_layers_x1+x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 10.44866357261965
+        },
+        "all_layers_x1+x1a_rank16:ridge=1": {
+          "kept": 27.0,
+          "condition": 5.314580526118463
+        }
+      },
+      "seconds": 6.1562561669852585
+    },
+    {
+      "index": 115,
+      "name": "douglas-kirk",
+      "moment_path": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/data/higher_fresh/mlp_00115.npz",
+      "baseline_mse": 6.090523671139603e-07,
+      "method_mses": {
+        "layer29_c21_rank4:ridge=1": 3.15626266943612e-07,
+        "layer29_c21_rank16:ridge=1": 3.893538944048304e-07,
+        "layer29_x1_rank4:ridge=1": 6.090523671139603e-07,
+        "layer29_x1_rank16:ridge=1": 9.003765802074194e-07,
+        "layer29_x1a_rank4:ridge=1": 2.9964554274267016e-07,
+        "layer29_x1a_rank16:ridge=1": 2.817785778450646e-07,
+        "layer29_x1+x1a_rank4:ridge=1": 2.9964554274267016e-07,
+        "layer29_x1+x1a_rank16:ridge=1": 3.215354990434525e-07,
+        "all_layers_x1+x1a_rank4:ridge=1": 2.9964554274267016e-07,
+        "all_layers_x1+x1a_rank16:ridge=1": 3.215354990434525e-07
+      },
+      "diagnostics": {
+        "layer29_c21_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 6.884153987696186,
+          "anchor_mean_norm": 0.0038393846800439772,
+          "feature_rms": 0.005527715922474119
+        },
+        "layer29_c21_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 3.8541247747227776,
+          "anchor_mean_norm": 0.0038395697556913647,
+          "feature_rms": 0.002764344897139287
+        },
+        "layer29_x1_rank4:ridge=1": {
+          "kept": 0.0,
+          "condition": 1.0,
+          "anchor_mean_norm": 2.773668056988127e-12,
+          "feature_rms": 2.0197791919839157e-13
+        },
+        "layer29_x1_rank16:ridge=1": {
+          "kept": 9.0,
+          "condition": 4.917859717439707,
+          "anchor_mean_norm": 7.67175551634729e-11,
+          "feature_rms": 1.9328689294601276e-10
+        },
+        "layer29_x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 7.784011352947647,
+          "anchor_mean_norm": 0.0008168405852151618,
+          "feature_rms": 0.0013106051379202551
+        },
+        "layer29_x1a_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 7.094527759746293,
+          "anchor_mean_norm": 0.0008381870509308161,
+          "feature_rms": 0.0006787647913622524
+        },
+        "layer29_x1+x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 7.784011352947647,
+          "anchor_mean_norm": 0.0008168405852151618,
+          "feature_rms": 0.0009267377804813427
+        },
+        "layer29_x1+x1a_rank16:ridge=1": {
+          "kept": 25.0,
+          "condition": 5.227570081635878,
+          "anchor_mean_norm": 0.0008381870509308196,
+          "feature_rms": 0.0004799591868029403
+        },
+        "all_layers_x1+x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 7.784011352947647
+        },
+        "all_layers_x1+x1a_rank16:ridge=1": {
+          "kept": 25.0,
+          "condition": 5.227570081635878
+        }
+      },
+      "seconds": 6.297821042127907
+    },
+    {
+      "index": 116,
+      "name": "howard-martinez",
+      "moment_path": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/data/higher_fresh/mlp_00116.npz",
+      "baseline_mse": 2.418946702456424e-07,
+      "method_mses": {
+        "layer29_c21_rank4:ridge=1": 2.1330364863003966e-07,
+        "layer29_c21_rank16:ridge=1": 2.4315763208621266e-07,
+        "layer29_x1_rank4:ridge=1": 2.523588536092671e-07,
+        "layer29_x1_rank16:ridge=1": 6.204083820539937e-07,
+        "layer29_x1a_rank4:ridge=1": 2.0626964476896662e-07,
+        "layer29_x1a_rank16:ridge=1": 1.6681785845911033e-07,
+        "layer29_x1+x1a_rank4:ridge=1": 2.0642141854128534e-07,
+        "layer29_x1+x1a_rank16:ridge=1": 2.584570959585217e-07,
+        "all_layers_x1+x1a_rank4:ridge=1": 2.0642141854128534e-07,
+        "all_layers_x1+x1a_rank16:ridge=1": 2.584570959585217e-07
+      },
+      "diagnostics": {
+        "layer29_c21_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 5.607247787166586,
+          "anchor_mean_norm": 5.63729515993915e-05,
+          "feature_rms": 0.0008690322169666135
+        },
+        "layer29_c21_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 3.758152104371524,
+          "anchor_mean_norm": 5.738243426775663e-05,
+          "feature_rms": 0.0004346197562969016
+        },
+        "layer29_x1_rank4:ridge=1": {
+          "kept": 1.0,
+          "condition": 13.000000000000004,
+          "anchor_mean_norm": 3.5206937808051075e-13,
+          "feature_rms": 8.488660537789743e-13
+        },
+        "layer29_x1_rank16:ridge=1": {
+          "kept": 11.0,
+          "condition": 5.409033973286875,
+          "anchor_mean_norm": 9.312786927561353e-11,
+          "feature_rms": 5.4485280653261746e-11
+        },
+        "layer29_x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 9.832284529426065,
+          "anchor_mean_norm": 1.689846379385821e-05,
+          "feature_rms": 0.00030456062428258716
+        },
+        "layer29_x1a_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 6.789602931370592,
+          "anchor_mean_norm": 2.0380633219295315e-05,
+          "feature_rms": 0.00015277179738899737
+        },
+        "layer29_x1+x1a_rank4:ridge=1": {
+          "kept": 5.0,
+          "condition": 8.272483372740126,
+          "anchor_mean_norm": 1.6898463793858218e-05,
+          "feature_rms": 0.00021535688271262572
+        },
+        "layer29_x1+x1a_rank16:ridge=1": {
+          "kept": 27.0,
+          "condition": 4.363951729974605,
+          "anchor_mean_norm": 2.0380633219508086e-05,
+          "feature_rms": 0.0001080259739078242
+        },
+        "all_layers_x1+x1a_rank4:ridge=1": {
+          "kept": 5.0,
+          "condition": 8.272483372740126
+        },
+        "all_layers_x1+x1a_rank16:ridge=1": {
+          "kept": 27.0,
+          "condition": 4.363951729974605
+        }
+      },
+      "seconds": 6.2607137081213295
+    },
+    {
+      "index": 117,
+      "name": "shelly-sanchez",
+      "moment_path": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/data/higher_fresh/mlp_00117.npz",
+      "baseline_mse": 1.7071943605246144e-07,
+      "method_mses": {
+        "layer29_c21_rank4:ridge=1": 1.4112333075032245e-07,
+        "layer29_c21_rank16:ridge=1": 1.348839851610492e-07,
+        "layer29_x1_rank4:ridge=1": 1.7071943605246144e-07,
+        "layer29_x1_rank16:ridge=1": 1.6952398887044694e-07,
+        "layer29_x1a_rank4:ridge=1": 1.7147293258878801e-07,
+        "layer29_x1a_rank16:ridge=1": 1.3065189631289153e-07,
+        "layer29_x1+x1a_rank4:ridge=1": 1.7147293258878801e-07,
+        "layer29_x1+x1a_rank16:ridge=1": 1.3083128300612117e-07,
+        "all_layers_x1+x1a_rank4:ridge=1": 1.7147293258878801e-07,
+        "all_layers_x1+x1a_rank16:ridge=1": 1.3083128300612117e-07
+      },
+      "diagnostics": {
+        "layer29_c21_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 6.139971718487558,
+          "anchor_mean_norm": 0.00012555169515399842,
+          "feature_rms": 0.00025609908393059894
+        },
+        "layer29_c21_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 3.4514228291268294,
+          "anchor_mean_norm": 0.00012558828437404432,
+          "feature_rms": 0.00012813800673690587
+        },
+        "layer29_x1_rank4:ridge=1": {
+          "kept": 0.0,
+          "condition": 1.0,
+          "anchor_mean_norm": 3.768809530067758e-14,
+          "feature_rms": 1.8844047650337794e-14
+        },
+        "layer29_x1_rank16:ridge=1": {
+          "kept": 1.0,
+          "condition": 13.000000000000002,
+          "anchor_mean_norm": 1.477340824672075e-12,
+          "feature_rms": 5.609677488594895e-13
+        },
+        "layer29_x1a_rank4:ridge=1": {
+          "kept": 2.0,
+          "condition": 12.999797277411737,
+          "anchor_mean_norm": 8.340096234590983e-13,
+          "feature_rms": 1.2350408882940795e-12
+        },
+        "layer29_x1a_rank16:ridge=1": {
+          "kept": 14.0,
+          "condition": 7.386839224857619,
+          "anchor_mean_norm": 3.494264082301318e-05,
+          "feature_rms": 3.646582291786018e-05
+        },
+        "layer29_x1+x1a_rank4:ridge=1": {
+          "kept": 2.0,
+          "condition": 12.999797277411737,
+          "anchor_mean_norm": 8.348607336255431e-13,
+          "feature_rms": 8.734074346746989e-13
+        },
+        "layer29_x1+x1a_rank16:ridge=1": {
+          "kept": 15.0,
+          "condition": 6.974574883128031,
+          "anchor_mean_norm": 3.494264082301321e-05,
+          "feature_rms": 2.5785230666766756e-05
+        },
+        "all_layers_x1+x1a_rank4:ridge=1": {
+          "kept": 2.0,
+          "condition": 12.999797277411737
+        },
+        "all_layers_x1+x1a_rank16:ridge=1": {
+          "kept": 15.0,
+          "condition": 6.974574883128031
+        }
+      },
+      "seconds": 6.151028334163129
+    },
+    {
+      "index": 118,
+      "name": "kirsten-clements",
+      "moment_path": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/data/higher_fresh/mlp_00118.npz",
+      "baseline_mse": 2.5588306663524696e-07,
+      "method_mses": {
+        "layer29_c21_rank4:ridge=1": 2.8472839636874207e-07,
+        "layer29_c21_rank16:ridge=1": 2.4516004660911184e-07,
+        "layer29_x1_rank4:ridge=1": 2.5588306663524696e-07,
+        "layer29_x1_rank16:ridge=1": 3.556068027342489e-07,
+        "layer29_x1a_rank4:ridge=1": 2.109565792195641e-07,
+        "layer29_x1a_rank16:ridge=1": 1.8581915631946265e-07,
+        "layer29_x1+x1a_rank4:ridge=1": 2.109565792195641e-07,
+        "layer29_x1+x1a_rank16:ridge=1": 2.0896941996859433e-07,
+        "all_layers_x1+x1a_rank4:ridge=1": 2.109565792195641e-07,
+        "all_layers_x1+x1a_rank16:ridge=1": 2.0896941996859433e-07
+      },
+      "diagnostics": {
+        "layer29_c21_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 6.019042648840471,
+          "anchor_mean_norm": 0.0005580919019566846,
+          "feature_rms": 0.0015683964896488413
+        },
+        "layer29_c21_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 4.052010132840885,
+          "anchor_mean_norm": 0.0005581336305392839,
+          "feature_rms": 0.0007843456364890847
+        },
+        "layer29_x1_rank4:ridge=1": {
+          "kept": 0.0,
+          "condition": 1.0,
+          "anchor_mean_norm": 2.4284049588822578e-14,
+          "feature_rms": 1.2188380627315398e-14
+        },
+        "layer29_x1_rank16:ridge=1": {
+          "kept": 11.0,
+          "condition": 6.369245155822635,
+          "anchor_mean_norm": 2.300015003552144e-11,
+          "feature_rms": 5.5737095011604184e-11
+        },
+        "layer29_x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 11.795392636916041,
+          "anchor_mean_norm": 0.0002077656339964437,
+          "feature_rms": 0.0005384111118868449
+        },
+        "layer29_x1a_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 9.336349414744559,
+          "anchor_mean_norm": 0.00020994956441574368,
+          "feature_rms": 0.00027902507307329207
+        },
+        "layer29_x1+x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 11.795392636916041,
+          "anchor_mean_norm": 0.0002077656339964437,
+          "feature_rms": 0.00038071414828137696
+        },
+        "layer29_x1+x1a_rank16:ridge=1": {
+          "kept": 27.0,
+          "condition": 6.548007960765458,
+          "anchor_mean_norm": 0.00020994956441574495,
+          "feature_rms": 0.0001973005212912007
+        },
+        "all_layers_x1+x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 11.795392636916041
+        },
+        "all_layers_x1+x1a_rank16:ridge=1": {
+          "kept": 27.0,
+          "condition": 6.548007960765458
+        }
+      },
+      "seconds": 6.2331569590605795
+    },
+    {
+      "index": 119,
+      "name": "james-james",
+      "moment_path": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/data/higher_fresh/mlp_00119.npz",
+      "baseline_mse": 9.771791948104508e-08,
+      "method_mses": {
+        "layer29_c21_rank4:ridge=1": 9.15917604032973e-08,
+        "layer29_c21_rank16:ridge=1": 1.1080490699624999e-07,
+        "layer29_x1_rank4:ridge=1": 9.771791948104508e-08,
+        "layer29_x1_rank16:ridge=1": 1.0446660043503072e-07,
+        "layer29_x1a_rank4:ridge=1": 1.0447720914274515e-07,
+        "layer29_x1a_rank16:ridge=1": 9.645946762774287e-08,
+        "layer29_x1+x1a_rank4:ridge=1": 1.0447720914274515e-07,
+        "layer29_x1+x1a_rank16:ridge=1": 9.480804098973546e-08,
+        "all_layers_x1+x1a_rank4:ridge=1": 1.0447720914274515e-07,
+        "all_layers_x1+x1a_rank16:ridge=1": 9.480804098973546e-08
+      },
+      "diagnostics": {
+        "layer29_c21_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 6.3679908369652845,
+          "anchor_mean_norm": 6.849574390660628e-05,
+          "feature_rms": 0.0003757228134861362
+        },
+        "layer29_c21_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 3.6284308495898476,
+          "anchor_mean_norm": 6.85908929994064e-05,
+          "feature_rms": 0.00018797922893850155
+        },
+        "layer29_x1_rank4:ridge=1": {
+          "kept": 0.0,
+          "condition": 1.0,
+          "anchor_mean_norm": 2.580725996136144e-14,
+          "feature_rms": 1.2903629892970634e-14
+        },
+        "layer29_x1_rank16:ridge=1": {
+          "kept": 3.0,
+          "condition": 8.683369237734777,
+          "anchor_mean_norm": 5.3093255982314715e-12,
+          "feature_rms": 1.0691290372380993e-12
+        },
+        "layer29_x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 8.588010489788385,
+          "anchor_mean_norm": 1.0598146048415834e-09,
+          "feature_rms": 4.300179919874574e-09
+        },
+        "layer29_x1a_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 7.926123879263983,
+          "anchor_mean_norm": 1.811619661329158e-05,
+          "feature_rms": 5.048386836248187e-05
+        },
+        "layer29_x1+x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 8.588010489788385,
+          "anchor_mean_norm": 1.059814605155796e-09,
+          "feature_rms": 3.0406863816792252e-09
+        },
+        "layer29_x1+x1a_rank16:ridge=1": {
+          "kept": 19.0,
+          "condition": 6.800427793280008,
+          "anchor_mean_norm": 1.8116196613292356e-05,
+          "feature_rms": 3.5697485659639946e-05
+        },
+        "all_layers_x1+x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 8.588010489788385
+        },
+        "all_layers_x1+x1a_rank16:ridge=1": {
+          "kept": 19.0,
+          "condition": 6.800427793280008
+        }
+      },
+      "seconds": 6.287237582961097
+    },
+    {
+      "index": 120,
+      "name": "kevin-brennan",
+      "moment_path": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/data/higher_fresh/mlp_00120.npz",
+      "baseline_mse": 3.472578541210549e-07,
+      "method_mses": {
+        "layer29_c21_rank4:ridge=1": 2.7390498804661357e-07,
+        "layer29_c21_rank16:ridge=1": 3.05625516792577e-07,
+        "layer29_x1_rank4:ridge=1": 3.472578541210549e-07,
+        "layer29_x1_rank16:ridge=1": 3.593423758605944e-07,
+        "layer29_x1a_rank4:ridge=1": 2.50419094799065e-07,
+        "layer29_x1a_rank16:ridge=1": 2.5199503322748395e-07,
+        "layer29_x1+x1a_rank4:ridge=1": 2.50419094799065e-07,
+        "layer29_x1+x1a_rank16:ridge=1": 2.6687855806577637e-07,
+        "all_layers_x1+x1a_rank4:ridge=1": 2.50419094799065e-07,
+        "all_layers_x1+x1a_rank16:ridge=1": 2.6687855806577637e-07
+      },
+      "diagnostics": {
+        "layer29_c21_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 5.50071499532051,
+          "anchor_mean_norm": 0.0007671493262826365,
+          "feature_rms": 0.0009109968779891603
+        },
+        "layer29_c21_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 3.4855391583060564,
+          "anchor_mean_norm": 0.0007672412128993026,
+          "feature_rms": 0.00045582984278898567
+        },
+        "layer29_x1_rank4:ridge=1": {
+          "kept": 0.0,
+          "condition": 1.0,
+          "anchor_mean_norm": 1.1058346711215822e-13,
+          "feature_rms": 5.529173355649918e-14
+        },
+        "layer29_x1_rank16:ridge=1": {
+          "kept": 6.0,
+          "condition": 9.451428044658114,
+          "anchor_mean_norm": 2.668345168779072e-11,
+          "feature_rms": 6.8007031481950706e-12
+        },
+        "layer29_x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 8.816730818386823,
+          "anchor_mean_norm": 0.00023451639053983757,
+          "feature_rms": 0.00032347455789541533
+        },
+        "layer29_x1a_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 4.571206473024147,
+          "anchor_mean_norm": 0.00023678672800835147,
+          "feature_rms": 0.0001635122736778965
+        },
+        "layer29_x1+x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 8.816730818386823,
+          "anchor_mean_norm": 0.00023451639053983757,
+          "feature_rms": 0.00022873105342916867
+        },
+        "layer29_x1+x1a_rank16:ridge=1": {
+          "kept": 22.0,
+          "condition": 4.489078587466045,
+          "anchor_mean_norm": 0.000236786728008353,
+          "feature_rms": 0.00011562063752487134
+        },
+        "all_layers_x1+x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 8.816730818386823
+        },
+        "all_layers_x1+x1a_rank16:ridge=1": {
+          "kept": 22.0,
+          "condition": 4.489078587466045
+        }
+      },
+      "seconds": 6.288897166959941
+    },
+    {
+      "index": 121,
+      "name": "melinda-kennedy",
+      "moment_path": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/data/higher_fresh/mlp_00121.npz",
+      "baseline_mse": 2.165020212369255e-07,
+      "method_mses": {
+        "layer29_c21_rank4:ridge=1": 1.489043418416417e-07,
+        "layer29_c21_rank16:ridge=1": 1.6502263622277735e-07,
+        "layer29_x1_rank4:ridge=1": 2.165020212369255e-07,
+        "layer29_x1_rank16:ridge=1": 2.2799610156159957e-07,
+        "layer29_x1a_rank4:ridge=1": 1.358094805502878e-07,
+        "layer29_x1a_rank16:ridge=1": 1.460228617396764e-07,
+        "layer29_x1+x1a_rank4:ridge=1": 1.358094805502878e-07,
+        "layer29_x1+x1a_rank16:ridge=1": 1.512023116308903e-07,
+        "all_layers_x1+x1a_rank4:ridge=1": 1.358094805502878e-07,
+        "all_layers_x1+x1a_rank16:ridge=1": 1.512023116308903e-07
+      },
+      "diagnostics": {
+        "layer29_c21_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 5.965996825369196,
+          "anchor_mean_norm": 0.00019488037791498872,
+          "feature_rms": 0.0004507996439674527
+        },
+        "layer29_c21_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 3.959779791486767,
+          "anchor_mean_norm": 0.00019505387680629672,
+          "feature_rms": 0.00022554526994113047
+        },
+        "layer29_x1_rank4:ridge=1": {
+          "kept": 0.0,
+          "condition": 1.0,
+          "anchor_mean_norm": 4.544878326044507e-14,
+          "feature_rms": 2.2626385752242353e-14
+        },
+        "layer29_x1_rank16:ridge=1": {
+          "kept": 9.0,
+          "condition": 4.193485718743177,
+          "anchor_mean_norm": 2.3785637127609687e-11,
+          "feature_rms": 3.945900406850376e-11
+        },
+        "layer29_x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 7.471529272864653,
+          "anchor_mean_norm": 3.935059172463153e-05,
+          "feature_rms": 9.17110044342574e-05
+        },
+        "layer29_x1a_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 6.694167467227313,
+          "anchor_mean_norm": 4.136495811440286e-05,
+          "feature_rms": 5.000452533108544e-05
+        },
+        "layer29_x1+x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 7.471529272864653,
+          "anchor_mean_norm": 3.935059172463153e-05,
+          "feature_rms": 6.484947314489294e-05
+        },
+        "layer29_x1+x1a_rank16:ridge=1": {
+          "kept": 25.0,
+          "condition": 4.453054918519091,
+          "anchor_mean_norm": 4.13649581144097e-05,
+          "feature_rms": 3.5358538951636015e-05
+        },
+        "all_layers_x1+x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 7.471529272864653
+        },
+        "all_layers_x1+x1a_rank16:ridge=1": {
+          "kept": 25.0,
+          "condition": 4.453054918519091
+        }
+      },
+      "seconds": 6.225208374904469
+    },
+    {
+      "index": 122,
+      "name": "kirk-west",
+      "moment_path": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/data/higher_fresh/mlp_00122.npz",
+      "baseline_mse": 1.2955197137461585e-07,
+      "method_mses": {
+        "layer29_c21_rank4:ridge=1": 1.4650194185717486e-07,
+        "layer29_c21_rank16:ridge=1": 1.1693814538862342e-07,
+        "layer29_x1_rank4:ridge=1": 1.2955197137461585e-07,
+        "layer29_x1_rank16:ridge=1": 1.297519869237391e-07,
+        "layer29_x1a_rank4:ridge=1": 1.2381227555083303e-07,
+        "layer29_x1a_rank16:ridge=1": 1.0278657330060514e-07,
+        "layer29_x1+x1a_rank4:ridge=1": 1.2381227555083303e-07,
+        "layer29_x1+x1a_rank16:ridge=1": 1.0335761277752908e-07,
+        "all_layers_x1+x1a_rank4:ridge=1": 1.2381227555083303e-07,
+        "all_layers_x1+x1a_rank16:ridge=1": 1.0335761277752908e-07
+      },
+      "diagnostics": {
+        "layer29_c21_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 5.125503657916506,
+          "anchor_mean_norm": 6.503567345081076e-05,
+          "feature_rms": 0.0001846173031410315
+        },
+        "layer29_c21_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 3.730128735123097,
+          "anchor_mean_norm": 6.547584883872047e-05,
+          "feature_rms": 9.255729705000391e-05
+        },
+        "layer29_x1_rank4:ridge=1": {
+          "kept": 0.0,
+          "condition": 1.0,
+          "anchor_mean_norm": 3.560670320794035e-15,
+          "feature_rms": 1.7803351639964716e-15
+        },
+        "layer29_x1_rank16:ridge=1": {
+          "kept": 3.0,
+          "condition": 5.336389077912479,
+          "anchor_mean_norm": 1.1214977445489722e-12,
+          "feature_rms": 3.634071300766469e-12
+        },
+        "layer29_x1a_rank4:ridge=1": {
+          "kept": 3.0,
+          "condition": 8.909562211321933,
+          "anchor_mean_norm": 1.0987674211256043e-05,
+          "feature_rms": 4.875060297939477e-05
+        },
+        "layer29_x1a_rank16:ridge=1": {
+          "kept": 15.0,
+          "condition": 6.358728511308533,
+          "anchor_mean_norm": 1.3630429898866033e-05,
+          "feature_rms": 2.9820527958905716e-05
+        },
+        "layer29_x1+x1a_rank4:ridge=1": {
+          "kept": 3.0,
+          "condition": 8.909562211321933,
+          "anchor_mean_norm": 1.0987674211256043e-05,
+          "feature_rms": 3.4471881953663146e-05
+        },
+        "layer29_x1+x1a_rank16:ridge=1": {
+          "kept": 18.0,
+          "condition": 5.724295031485063,
+          "anchor_mean_norm": 1.3630429898866078e-05,
+          "feature_rms": 2.1086297538305423e-05
+        },
+        "all_layers_x1+x1a_rank4:ridge=1": {
+          "kept": 3.0,
+          "condition": 8.909562211321933
+        },
+        "all_layers_x1+x1a_rank16:ridge=1": {
+          "kept": 18.0,
+          "condition": 5.724295031485063
+        }
+      },
+      "seconds": 6.18369804113172
+    },
+    {
+      "index": 123,
+      "name": "angela-johnson",
+      "moment_path": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/data/higher_fresh/mlp_00123.npz",
+      "baseline_mse": 1.384994117018903e-07,
+      "method_mses": {
+        "layer29_c21_rank4:ridge=1": 1.0838084021220037e-07,
+        "layer29_c21_rank16:ridge=1": 1.1179004021115213e-07,
+        "layer29_x1_rank4:ridge=1": 1.384994117018903e-07,
+        "layer29_x1_rank16:ridge=1": 1.384790493915518e-07,
+        "layer29_x1a_rank4:ridge=1": 1.2918280629605997e-07,
+        "layer29_x1a_rank16:ridge=1": 1.199129281616602e-07,
+        "layer29_x1+x1a_rank4:ridge=1": 1.2918280629605997e-07,
+        "layer29_x1+x1a_rank16:ridge=1": 1.1838408933122668e-07,
+        "all_layers_x1+x1a_rank4:ridge=1": 1.2918280629605997e-07,
+        "all_layers_x1+x1a_rank16:ridge=1": 1.1838408933122668e-07
+      },
+      "diagnostics": {
+        "layer29_c21_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 6.303369003624219,
+          "anchor_mean_norm": 8.928377396624761e-05,
+          "feature_rms": 0.00041819128559822654
+        },
+        "layer29_c21_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 3.608281253675554,
+          "anchor_mean_norm": 8.951016052245232e-05,
+          "feature_rms": 0.00020925116551657154
+        },
+        "layer29_x1_rank4:ridge=1": {
+          "kept": 0.0,
+          "condition": 1.0,
+          "anchor_mean_norm": 4.085699808816065e-14,
+          "feature_rms": 2.0428499087363313e-14
+        },
+        "layer29_x1_rank16:ridge=1": {
+          "kept": 1.0,
+          "condition": 13.0,
+          "anchor_mean_norm": 8.518393104745246e-12,
+          "feature_rms": 1.4562711873697027e-11
+        },
+        "layer29_x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 8.233894549521098,
+          "anchor_mean_norm": 2.2900956382373382e-05,
+          "feature_rms": 9.449550603841817e-05
+        },
+        "layer29_x1a_rank16:ridge=1": {
+          "kept": 16.0,
+          "condition": 6.6866865196049385,
+          "anchor_mean_norm": 2.9034871046906404e-05,
+          "feature_rms": 5.434121926736966e-05
+        },
+        "layer29_x1+x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 8.233894549521098,
+          "anchor_mean_norm": 2.2900956382373382e-05,
+          "feature_rms": 6.681841311141984e-05
+        },
+        "layer29_x1+x1a_rank16:ridge=1": {
+          "kept": 17.0,
+          "condition": 6.321457778794095,
+          "anchor_mean_norm": 2.9034871046907654e-05,
+          "feature_rms": 3.842504464190354e-05
+        },
+        "all_layers_x1+x1a_rank4:ridge=1": {
+          "kept": 4.0,
+          "condition": 8.233894549521098
+        },
+        "all_layers_x1+x1a_rank16:ridge=1": {
+          "kept": 17.0,
+          "condition": 6.321457778794095
+        }
+      },
+      "seconds": 6.231309833936393
+    }
+  ]
+}

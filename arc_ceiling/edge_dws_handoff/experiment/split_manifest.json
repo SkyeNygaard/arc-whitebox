@@ -1,0 +1,19 @@
+{
+  "status": "BLOCKED_MISSING_CANONICAL_SPLIT_REGISTRY",
+  "required_schema": {
+    "version": 1,
+    "splits": {
+      "train": ["base-network IDs"],
+      "calibration": ["base-network IDs"],
+      "validation": ["base-network IDs"],
+      "test": ["base-network IDs"]
+    },
+    "splits_sha256": "sha256 of canonical JSON serialization of splits",
+    "disallowed_base_network_ids": ["all exposed IDs, including global 0-199"]
+  },
+  "rules": [
+    "Every rotation of one base network must occur in exactly one split.",
+    "Test base IDs remain unopened until architecture, epoch rule, and calibration are frozen.",
+    "Do not auto-generate replacements for the canonical registry."
+  ]
+}

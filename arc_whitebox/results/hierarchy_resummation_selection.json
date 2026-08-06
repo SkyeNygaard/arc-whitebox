@@ -1,0 +1,109 @@
+{
+  "ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "methods": {
+    "augment_baseline": 7.3509583030173e-06,
+    "richardson": 5.55346065971559e-06,
+    "simplex_hierarchy": 4.495880502435875e-06,
+    "best_stabilized_shanks": 0.0001305117783007434
+  },
+  "baseline": 7.3509583030173e-06,
+  "best_ratio": 0.6116046802483535,
+  "richardson_alpha": -0.19111421258662953,
+  "simplex_weights": {
+    "k1": 0.007852155256940621,
+    "k2": 0.09775222209944316,
+    "k3": 0.18602887641017782,
+    "augment": 0.7083667462334384
+  },
+  "best_shanks": {
+    "floor_fraction": 1.0,
+    "clip_multiple": 1.0,
+    "mean_mse": 0.0001305117783007434
+  },
+  "shanks_grid": [
+    {
+      "floor_fraction": 0.1,
+      "clip_multiple": 1.0,
+      "mean_mse": 0.00013075036416227326
+    },
+    {
+      "floor_fraction": 0.1,
+      "clip_multiple": 2.0,
+      "mean_mse": 0.00021693735781174898
+    },
+    {
+      "floor_fraction": 0.1,
+      "clip_multiple": 4.0,
+      "mean_mse": 0.000454802616518614
+    },
+    {
+      "floor_fraction": 0.25,
+      "clip_multiple": 1.0,
+      "mean_mse": 0.00013075481231096157
+    },
+    {
+      "floor_fraction": 0.25,
+      "clip_multiple": 2.0,
+      "mean_mse": 0.00021688943584400466
+    },
+    {
+      "floor_fraction": 0.25,
+      "clip_multiple": 4.0,
+      "mean_mse": 0.0004537337599592684
+    },
+    {
+      "floor_fraction": 0.5,
+      "clip_multiple": 1.0,
+      "mean_mse": 0.0001307601411188339
+    },
+    {
+      "floor_fraction": 0.5,
+      "clip_multiple": 2.0,
+      "mean_mse": 0.00021632676135971665
+    },
+    {
+      "floor_fraction": 0.5,
+      "clip_multiple": 4.0,
+      "mean_mse": 0.00043845434021036494
+    },
+    {
+      "floor_fraction": 1.0,
+      "clip_multiple": 1.0,
+      "mean_mse": 0.0001305117783007434
+    },
+    {
+      "floor_fraction": 1.0,
+      "clip_multiple": 2.0,
+      "mean_mse": 0.00020981571527376044
+    },
+    {
+      "floor_fraction": 1.0,
+      "clip_multiple": 4.0,
+      "mean_mse": 0.0003686856685499628
+    }
+  ],
+  "holdout_gate_passed": true,
+  "per_id_baseline_mse": {
+    "0": 8.877659832801707e-06,
+    "1": 5.507183512738759e-06,
+    "2": 2.3112777514890584e-05,
+    "3": 2.9326864600264273e-06,
+    "4": 2.5793600761475966e-06,
+    "5": 5.62852362379404e-06,
+    "6": 3.4823402851179743e-06,
+    "7": 7.641752309318149e-06,
+    "8": 7.288094066345176e-06,
+    "9": 6.459205348992585e-06
+  }
+}

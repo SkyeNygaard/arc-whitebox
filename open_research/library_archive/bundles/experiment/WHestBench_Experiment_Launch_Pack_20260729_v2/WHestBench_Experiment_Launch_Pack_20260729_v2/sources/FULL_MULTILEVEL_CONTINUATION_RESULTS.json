@@ -1,0 +1,157 @@
+{
+  "date": "2026-07-29",
+  "status": "architecture-matched synthetic; not official Mini-100 or FlopScope",
+  "fixed_candidate": {
+    "description": "blockwise sparse Hermite-cubic control at layer 31",
+    "selector": "gaussian_gap_sens",
+    "features": 8,
+    "feature": "standardized H3",
+    "pilot_bases": 2,
+    "block_ridge": 1.0,
+    "correction_shrink": 0.25,
+    "cost_ratio": 0.015021346798238827
+  },
+  "postpilot_gate_12": {
+    "gate": "block_variance_ratio < 1 and fold_correction_rel_sd < 1",
+    "n": 12,
+    "applied": 4,
+    "raw_gain": 1.1884501325794206,
+    "adjusted_gain": 1.170862205340057,
+    "noise_corrected_gain": 1.2084366210086281,
+    "wins": 3,
+    "worst_ratio": 1.24924891826903,
+    "best_ratio": 0.5333769197782459,
+    "half1_gain": 1.1948605672853534,
+    "half2_gain": 1.1506271204270475,
+    "baseline_sum": 4.007243751601666e-06,
+    "candidate_sum": 3.3718232189551912e-06,
+    "bootstrap": {
+      "raw_ci": [
+        0.9727359135983206,
+        1.1788936275753743,
+        1.472017204894965
+      ],
+      "adjusted_ci": [
+        0.9583403508376426,
+        1.1614471274855949,
+        1.4502327557329349
+      ],
+      "p_adj_gt1": 0.867675
+    },
+    "per_network_seeds": [
+      1313612590,
+      1245061180,
+      1763129857,
+      55683017,
+      1123961422,
+      1534629201,
+      667677273,
+      1467303472,
+      2107942419,
+      570322926,
+      176687031,
+      1853497945
+    ]
+  },
+  "safety_margin_099_fresh_12": {
+    "gate": "block_variance_ratio < 0.99 and fold_correction_rel_sd < 1",
+    "n": 12,
+    "applied": 0,
+    "raw_gain": 1.0,
+    "adjusted_gain": 0.9852009547921118,
+    "noise_corrected_gain": 1.0,
+    "wins": 0,
+    "worst_ratio": 1.0,
+    "best_ratio": 1.0,
+    "half1_gain": 1.0,
+    "half2_gain": 1.0,
+    "baseline_sum": 2.9921826536238597e-06,
+    "candidate_sum": 2.9921826536238597e-06,
+    "bootstrap": {
+      "raw_ci": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "adjusted_ci": [
+        0.9852009547921118,
+        0.9852009547921118,
+        0.9852009547921118
+      ],
+      "p_adj_gt1": 0.0
+    },
+    "per_network_seeds": [
+      1949022022,
+      2101413079,
+      992148826,
+      2000207224,
+      214560592,
+      1460182500,
+      1529301148,
+      165677410,
+      737539133,
+      1564720847,
+      1497526678,
+      363756186
+    ]
+  },
+  "pilot_agreement_fresh_12": {
+    "gate": "block_variance_ratio < 1, fold_correction_rel_sd < 1, and two-pilot correction cosine > 0.5",
+    "n": 12,
+    "applied": 2,
+    "raw_gain": 0.9639221369644388,
+    "adjusted_gain": 0.9496570096826179,
+    "noise_corrected_gain": 0.9594934749182547,
+    "wins": 1,
+    "worst_ratio": 1.738146976893509,
+    "best_ratio": 0.8959765504311645,
+    "half1_gain": 0.9643057713514479,
+    "half2_gain": 0.9708662062629339,
+    "baseline_sum": 2.9921826536238597e-06,
+    "candidate_sum": 3.1041746411663205e-06,
+    "bootstrap": {
+      "raw_ci": [
+        0.8649641082769544,
+        0.9657086302972921,
+        1.0166675301465726
+      ],
+      "adjusted_ci": [
+        0.8521634653353629,
+        0.9514170646198746,
+        1.0016218214065415
+      ],
+      "p_adj_gt1": 0.03455
+    },
+    "per_network_seeds": [
+      1949022022,
+      2101413079,
+      992148826,
+      2000207224,
+      214560592,
+      1460182500,
+      1529301148,
+      165677410,
+      737539133,
+      1564720847,
+      1497526678,
+      363756186
+    ],
+    "applied_outcomes": [
+      {
+        "seed": 992148826,
+        "candidate_over_baseline": 1.738146976893509,
+        "pilot_correction_cosine": 0.7327320190942458
+      },
+      {
+        "seed": 1529301148,
+        "candidate_over_baseline": 0.8959765504311645,
+        "pilot_correction_cosine": 0.5203233465552853
+      }
+    ]
+  },
+  "decision": {
+    "submission_ready": false,
+    "verdict": "Close as a deployable multilevel estimator. Preserve blockwise fitting as a mechanistic result.",
+    "reason": "Central aggregate gains are driven by rare large wins; observable gates cannot prevent material phase reversals. A conservative margin becomes inert."
+  }
+}

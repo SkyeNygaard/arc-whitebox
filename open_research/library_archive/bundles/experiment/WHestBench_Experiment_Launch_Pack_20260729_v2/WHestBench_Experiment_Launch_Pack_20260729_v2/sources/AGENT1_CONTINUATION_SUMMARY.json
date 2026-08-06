@@ -1,0 +1,121 @@
+{
+  "decision": "STOP sampled partial-MUB pilot; CONTINUE analytic or learned zero/low-extra-trajectory estimation of layer-31 PCA coefficients",
+  "frozen_fresh_screen": {
+    "n_networks": 8,
+    "baseline_observed_mean_mse": 5.256911942998088e-07,
+    "candidate_observed_mean_mse": 3.88521620786911e-07,
+    "observed_raw_ratio": 1.353055187083475,
+    "observed_raw_ratio_ci95": [
+      0.8127237282176558,
+      1.74616956195494
+    ],
+    "reference_noise_fraction": 0.057043766211867644,
+    "baseline_effective_compute": 175500000000.0,
+    "candidate_effective_compute_estimate": 196965266316.57913,
+    "compute_ratio": 1.1223092097810776,
+    "adjusted_score_ratio_baseline_over_candidate": 1.2055992905443658,
+    "adjusted_score_ratio_ci95": [
+      0.7241531310040565,
+      1.5558720776207078
+    ],
+    "adjusted_score_improvement_fraction": 0.17053700359389834,
+    "wins": 4,
+    "worst_candidate_over_baseline": 1.5863586089101318,
+    "gate": {
+      "adjusted_gain_pass": true,
+      "ci_pass": false,
+      "tail_pass": false,
+      "noise_pass": true,
+      "overall_pass": false
+    }
+  },
+  "rank12_layer31_true_coefficient_oracle": {
+    "raw_ratio": 7.225809103377504,
+    "bootstrap_ci95": [
+      2.712740431468795,
+      15.194283634584377
+    ],
+    "wins": 8,
+    "worst_candidate_over_baseline": 0.6284803344556265,
+    "linear_raw_ratio": 7.226263625787142,
+    "maximum_linear_vs_exact_candidate_over_baseline_difference": 7.944469972115398e-05
+  },
+  "pilot_error": {
+    "mean_current_pilot_coefficient_cosine_to_true": 0.2641423844048425,
+    "conclusion": "Pilot coefficient error, not final-layer linearization, causes failure."
+  },
+  "scaling_diagnostics": {
+    "64_basis_posthoc": {
+      "basis_count": 64,
+      "rows": 32768,
+      "rank": 24,
+      "z_threshold": 0.5,
+      "shrink": 0.3,
+      "observed_ratio": 1.4885062282324686,
+      "observed_ci95": [
+        1.1721242249302855,
+        1.6256726000255752
+      ],
+      "noise_corrected_ratio": 1.5338340807135415,
+      "noise_corrected_ci95": [
+        1.185240849947941,
+        1.6929742722567316
+      ],
+      "compute_estimate": 260161065266.3166,
+      "compute_ratio": 1.4823992322867041,
+      "adjusted_ratio": 1.004119670202705,
+      "adjusted_gain": 0.004102768151004743,
+      "wins": 8,
+      "worst": 0.9370873909995215,
+      "mean_active_modes": 17.125,
+      "per_network": [
+        0.4869484922662603,
+        0.7975196379599716,
+        0.7385239274399342,
+        0.9136184747567349,
+        0.5991510981105495,
+        0.9370873909995215,
+        0.9138905194806618,
+        0.7047037018336292
+      ]
+    },
+    "128_basis_posthoc_all_wins": {
+      "basis_count": 128,
+      "rows": 65536,
+      "rank": 24,
+      "z_threshold": 1.0,
+      "shrink": 0.3,
+      "observed_ratio": 1.5977950971540116,
+      "observed_ci95": [
+        1.232308750155263,
+        1.7460186336054664
+      ],
+      "noise_corrected_ratio": 1.657744748975367,
+      "noise_corrected_ci95": [
+        1.2527345118568076,
+        1.829639695239413
+      ],
+      "compute_estimate": 344422130532.6332,
+      "compute_ratio": 1.9625192622942063,
+      "adjusted_ratio": 0.8141551157496267,
+      "adjusted_gain": -0.22826717004567132,
+      "wins": 8,
+      "worst": 0.9761000025846157,
+      "mean_active_modes": 10.625,
+      "per_network": [
+        0.5391150269241265,
+        0.7278410672547342,
+        0.6347781690248194,
+        0.867867709098883,
+        0.5572162206610473,
+        0.870883464487672,
+        0.9761000025846157,
+        0.5509222521903275
+      ]
+    }
+  },
+  "stage_integrity": {
+    "validation_opened": false,
+    "holdout_opened": false
+  }
+}

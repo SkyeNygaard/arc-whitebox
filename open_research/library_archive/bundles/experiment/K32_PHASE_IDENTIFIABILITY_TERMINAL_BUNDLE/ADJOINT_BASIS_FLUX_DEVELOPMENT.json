@@ -1,0 +1,74 @@
+{
+  "feature_correlations": [
+    {
+      "name": "cov_zw",
+      "train": 0.5752567972880707,
+      "validation": 0.3966917928548208
+    },
+    {
+      "name": "z2w",
+      "train": -0.054093842776958896,
+      "validation": 0.16649465678704523
+    },
+    {
+      "name": "zw2",
+      "train": -0.0810628736525333,
+      "validation": 0.12047944410108258
+    },
+    {
+      "name": "z3w",
+      "train": 0.09567098733063904,
+      "validation": -0.04099782864454077
+    },
+    {
+      "name": "zw3",
+      "train": 0.10683992403651368,
+      "validation": -0.029048944620279973
+    },
+    {
+      "name": "corr_zw",
+      "train": 0.22444356925360345,
+      "validation": -0.06595883024300835
+    },
+    {
+      "name": "std_z",
+      "train": 0.5705748855816566,
+      "validation": 0.27864267471168486
+    },
+    {
+      "name": "std_w",
+      "train": 0.35191290248448387,
+      "validation": 0.37026379426495915
+    },
+    {
+      "name": "skew_z",
+      "train": -0.009262524235371876,
+      "validation": 0.1817482753644064
+    },
+    {
+      "name": "skew_w",
+      "train": -0.09749416470915769,
+      "validation": 0.09163795660439224
+    }
+  ],
+  "primary": {
+    "statistic": "corr_zw = Corr_b((X_b-q)\u00b7template, (Y_b-Ybar)\u00b7normalized(template\u00b7beta))",
+    "linear_coef": 0.012456782236478002,
+    "intercept": -0.010926562782971634,
+    "oof_replay_shrink": 0.08895675816793981,
+    "validation": {
+      "ratio": 0.9915526906885053,
+      "bootstrap95": [
+        0.9736988103800498,
+        1.0050998696901237
+      ],
+      "wins": 30,
+      "median": 0.9907673190647563,
+      "worst": 1.1456688935172068,
+      "scale_corr": -0.06595883024300861,
+      "sign": 0.6458333333333334,
+      "positive_fraction": 0.9375
+    }
+  },
+  "incremental_ops_estimate": 38184
+}

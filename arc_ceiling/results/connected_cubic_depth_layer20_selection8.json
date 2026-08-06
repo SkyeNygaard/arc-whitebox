@@ -1,0 +1,3937 @@
+{
+  "protocol": {
+    "indices": [
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167
+    ],
+    "layer": 20,
+    "rotation_seed": 3,
+    "rank": 4,
+    "folds": 6,
+    "ridge": 0.1,
+    "scales": [
+      1.2,
+      1.25,
+      1.3,
+      1.33,
+      1.35,
+      1.4,
+      1.45,
+      1.5
+    ],
+    "target_leakage": false,
+    "anchor_identity_validated": true
+  },
+  "summary": {
+    "legacy_dirs_oracle_mean_oracle_exact_anchor": {
+      "ratio": 0.5743296025989728,
+      "wins": 8,
+      "worst": 0.9304672223440027
+    },
+    "legacy_dirs_oracle_mean_factorized_c21_scale1.2": {
+      "ratio": 10.475390201908645,
+      "wins": 0,
+      "worst": 28.67920039410458
+    },
+    "legacy_dirs_oracle_mean_factorized_c21_scale1.25": {
+      "ratio": 6.118576874318066,
+      "wins": 0,
+      "worst": 16.31676368314953
+    },
+    "legacy_dirs_oracle_mean_factorized_c21_scale1.3": {
+      "ratio": 3.7752901810034007,
+      "wins": 1,
+      "worst": 8.725592245222515
+    },
+    "legacy_dirs_oracle_mean_factorized_c21_scale1.33": {
+      "ratio": 3.108806651286098,
+      "wins": 0,
+      "worst": 5.825451010547273
+    },
+    "legacy_dirs_oracle_mean_factorized_c21_scale1.35": {
+      "ratio": 2.963686918436251,
+      "wins": 0,
+      "worst": 5.51281452807991
+    },
+    "legacy_dirs_oracle_mean_factorized_c21_scale1.4": {
+      "ratio": 3.8401521471151883,
+      "wins": 0,
+      "worst": 10.1822858933304
+    },
+    "legacy_dirs_oracle_mean_factorized_c21_scale1.45": {
+      "ratio": 7.196533266285017,
+      "wins": 0,
+      "worst": 19.54492368330819
+    },
+    "legacy_dirs_oracle_mean_factorized_c21_scale1.5": {
+      "ratio": 14.45206437837297,
+      "wins": 1,
+      "worst": 35.867486595985476
+    },
+    "legacy_dirs_sample_mean_oracle_exact_anchor": {
+      "ratio": 0.5744105691897851,
+      "wins": 8,
+      "worst": 0.9297010460405978
+    },
+    "legacy_dirs_sample_mean_factorized_c21_scale1.2": {
+      "ratio": 12.293993323973762,
+      "wins": 0,
+      "worst": 33.852775201658666
+    },
+    "legacy_dirs_sample_mean_factorized_c21_scale1.25": {
+      "ratio": 7.618333518705894,
+      "wins": 1,
+      "worst": 20.47023321873487
+    },
+    "legacy_dirs_sample_mean_factorized_c21_scale1.3": {
+      "ratio": 4.998139056950668,
+      "wins": 1,
+      "worst": 11.949439684949473
+    },
+    "legacy_dirs_sample_mean_factorized_c21_scale1.33": {
+      "ratio": 4.189516634689264,
+      "wins": 0,
+      "worst": 8.554406550580522
+    },
+    "legacy_dirs_sample_mean_factorized_c21_scale1.35": {
+      "ratio": 3.9610584125506105,
+      "wins": 0,
+      "worst": 8.028205695771618
+    },
+    "legacy_dirs_sample_mean_factorized_c21_scale1.4": {
+      "ratio": 4.674715106799562,
+      "wins": 0,
+      "worst": 11.09773385230146
+    },
+    "legacy_dirs_sample_mean_factorized_c21_scale1.45": {
+      "ratio": 7.943869169856682,
+      "wins": 0,
+      "worst": 19.323775610165374
+    },
+    "legacy_dirs_sample_mean_factorized_c21_scale1.5": {
+      "ratio": 15.202235063567079,
+      "wins": 0,
+      "worst": 36.194697146394304
+    },
+    "legacy_dirs_factorized_mean_oracle_exact_anchor": {
+      "ratio": 0.5739575835727098,
+      "wins": 8,
+      "worst": 0.9315510488115939
+    },
+    "legacy_dirs_factorized_mean_factorized_c21_scale1.2": {
+      "ratio": 20.04513383317795,
+      "wins": 0,
+      "worst": 50.63102427093448
+    },
+    "legacy_dirs_factorized_mean_factorized_c21_scale1.25": {
+      "ratio": 13.490887511152048,
+      "wins": 0,
+      "worst": 31.926253475948418
+    },
+    "legacy_dirs_factorized_mean_factorized_c21_scale1.3": {
+      "ratio": 9.457726562423117,
+      "wins": 0,
+      "worst": 19.519884577004905
+    },
+    "legacy_dirs_factorized_mean_factorized_c21_scale1.33": {
+      "ratio": 7.96840916710587,
+      "wins": 0,
+      "worst": 14.372004850744913
+    },
+    "legacy_dirs_factorized_mean_factorized_c21_scale1.35": {
+      "ratio": 7.33705907846311,
+      "wins": 0,
+      "worst": 12.708105459264289
+    },
+    "legacy_dirs_factorized_mean_factorized_c21_scale1.4": {
+      "ratio": 7.154140999941045,
+      "wins": 0,
+      "worst": 18.571110055436876
+    },
+    "legacy_dirs_factorized_mean_factorized_c21_scale1.45": {
+      "ratio": 9.565987480289873,
+      "wins": 0,
+      "worst": 30.329280181496593
+    },
+    "legacy_dirs_factorized_mean_factorized_c21_scale1.5": {
+      "ratio": 15.854004559192791,
+      "wins": 0,
+      "worst": 50.55427611065986
+    },
+    "radial_corrected_dirs_oracle_mean_oracle_exact_anchor": {
+      "ratio": 0.5762846088630891,
+      "wins": 8,
+      "worst": 0.943905027186164
+    },
+    "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.2": {
+      "ratio": 13.21298736089641,
+      "wins": 0,
+      "worst": 37.07686297538027
+    },
+    "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.25": {
+      "ratio": 7.442117023533456,
+      "wins": 0,
+      "worst": 20.428121119141533
+    },
+    "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.3": {
+      "ratio": 4.314785430560434,
+      "wins": 1,
+      "worst": 10.427939855777826
+    },
+    "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.33": {
+      "ratio": 3.3696647992577917,
+      "wins": 1,
+      "worst": 6.707393899945455
+    },
+    "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.35": {
+      "ratio": 3.0902152493411363,
+      "wins": 0,
+      "worst": 6.222318118434061
+    },
+    "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.4": {
+      "ratio": 3.7359652504607244,
+      "wins": 0,
+      "worst": 9.286357031396069
+    },
+    "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.45": {
+      "ratio": 6.926471098446705,
+      "wins": 0,
+      "worst": 18.059725796334465
+    },
+    "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.5": {
+      "ratio": 14.03586410120107,
+      "wins": 1,
+      "worst": 33.73789691752366
+    },
+    "radial_corrected_dirs_sample_mean_oracle_exact_anchor": {
+      "ratio": 0.5763663909387625,
+      "wins": 8,
+      "worst": 0.943132569178624
+    },
+    "radial_corrected_dirs_sample_mean_factorized_c21_scale1.2": {
+      "ratio": 15.187458611048074,
+      "wins": 0,
+      "worst": 42.56621859973795
+    },
+    "radial_corrected_dirs_sample_mean_factorized_c21_scale1.25": {
+      "ratio": 9.068523670915113,
+      "wins": 1,
+      "worst": 24.862115236454674
+    },
+    "radial_corrected_dirs_sample_mean_factorized_c21_scale1.3": {
+      "ratio": 5.626262564169742,
+      "wins": 1,
+      "worst": 13.857132105879984
+    },
+    "radial_corrected_dirs_sample_mean_factorized_c21_scale1.33": {
+      "ratio": 4.515240080804509,
+      "wins": 0,
+      "worst": 9.590366830387234
+    },
+    "radial_corrected_dirs_sample_mean_factorized_c21_scale1.35": {
+      "ratio": 4.137252549459002,
+      "wins": 0,
+      "worst": 9.449677963198223
+    },
+    "radial_corrected_dirs_sample_mean_factorized_c21_scale1.4": {
+      "ratio": 4.5880227714749315,
+      "wins": 0,
+      "worst": 11.881509585081005
+    },
+    "radial_corrected_dirs_sample_mean_factorized_c21_scale1.45": {
+      "ratio": 7.6734719839140615,
+      "wins": 0,
+      "worst": 19.288425924148783
+    },
+    "radial_corrected_dirs_sample_mean_factorized_c21_scale1.5": {
+      "ratio": 14.789532426035768,
+      "wins": 0,
+      "worst": 34.66955521108815
+    },
+    "radial_corrected_dirs_factorized_mean_oracle_exact_anchor": {
+      "ratio": 0.5759870076990765,
+      "wins": 8,
+      "worst": 0.9450966727473546
+    },
+    "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.2": {
+      "ratio": 23.677794931482318,
+      "wins": 1,
+      "worst": 61.67914563156078
+    },
+    "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.25": {
+      "ratio": 15.299552434843335,
+      "wins": 0,
+      "worst": 37.43211481980495
+    },
+    "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.3": {
+      "ratio": 10.202117924610306,
+      "wins": 0,
+      "worst": 21.751229537501448
+    },
+    "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.33": {
+      "ratio": 8.315963987134806,
+      "wins": 0,
+      "worst": 15.424560201966809
+    },
+    "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.35": {
+      "ratio": 7.488179557216357,
+      "wins": 0,
+      "worst": 14.125485534729616
+    },
+    "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.4": {
+      "ratio": 6.9628149314807,
+      "wins": 0,
+      "worst": 18.85446768745341
+    },
+    "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.45": {
+      "ratio": 9.132923842850627,
+      "wins": 0,
+      "worst": 30.426261371529975
+    },
+    "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.5": {
+      "ratio": 15.200977818341695,
+      "wins": 0,
+      "worst": 50.35578598679715
+    }
+  },
+  "records": [
+    {
+      "index": 160,
+      "name": "amy-scott",
+      "baseline_mse": 2.1440298520066416e-07,
+      "method_mses": {
+        "legacy_dirs_oracle_mean_oracle_exact_anchor": 1.4151887688080697e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.2": 4.193106632878067e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.25": 3.093522092773159e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.3": 3.1474863872136313e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.33": 3.6079090275924363e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.35": 4.242615609558765e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.4": 8.162129955536706e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.45": 1.8575939864915832e-06,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.5": 4.102034919519709e-06,
+        "legacy_dirs_sample_mean_oracle_exact_anchor": 1.4153632274475513e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.2": 5.765621329409884e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.25": 3.407980004882719e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.3": 2.871756424610084e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.33": 3.1895571072804165e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.35": 3.782640399397792e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.4": 7.665367308089338e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.45": 1.7936348858375846e-06,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.5": 3.98848723607909e-06,
+        "legacy_dirs_factorized_mean_oracle_exact_anchor": 1.4166804108061846e-07,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.2": 1.5364774975896247e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.25": 1.585994242926514e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.3": 1.909713258325223e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.33": 2.270583170909348e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.35": 2.610786202353292e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.4": 3.981701434375738e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.45": 6.502688209900211e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.5": 1.0838987712784097e-05,
+        "radial_corrected_dirs_oracle_mean_oracle_exact_anchor": 1.449361536649386e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.2": 4.47990894499088e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.25": 3.0141982649273226e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.3": 3.091860341482896e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.33": 3.602662458762632e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.35": 4.2478391108588673e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.4": 8.015085663118204e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.45": 1.7916715067586952e-06,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.5": 3.9445826886020755e-06,
+        "radial_corrected_dirs_sample_mean_oracle_exact_anchor": 1.4494888966384537e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.2": 6.468051922467836e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.25": 3.5612652165055686e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.3": 2.8883454651140646e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.33": 3.1679520676757443e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.35": 3.7144949715036945e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.4": 7.305094903626713e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.45": 1.6919500128384457e-06,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.5": 3.779245877544241e-06,
+        "radial_corrected_dirs_factorized_mean_oracle_exact_anchor": 1.4514517445286803e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.2": 1.6814470808112064e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.25": 1.6774102562695659e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.3": 1.989452986748888e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.33": 2.3491818999084483e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.35": 2.6876186410340923e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.4": 4.0424541565594746e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.45": 6.523481266551681e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.5": 1.079643083769508e-05
+      },
+      "diagnostics": {
+        "legacy_dirs_oracle_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06311281434536166,
+          "condition_ridge_0.1": 2.225502175133213,
+          "feature_mean_norm": 0.00017915315118220476
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.0631144815651482,
+          "condition_ridge_0.1": 2.2247389218460887,
+          "feature_mean_norm": 0.0009348210700191801
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06311390035924272,
+          "condition_ridge_0.1": 2.225298698805223,
+          "feature_mean_norm": 0.0007618606886361257
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06311344127077323,
+          "condition_ridge_0.1": 2.2255659666949197,
+          "feature_mean_norm": 0.0005904520645904176
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06311322443519887,
+          "condition_ridge_0.1": 2.2255857669214496,
+          "feature_mean_norm": 0.0004890316087478012
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06311310430240459,
+          "condition_ridge_0.1": 2.225540395273619,
+          "feature_mean_norm": 0.0004224881395041852
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06311288945609288,
+          "condition_ridge_0.1": 2.225222105581339,
+          "feature_mean_norm": 0.000264611925689307
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06311279673308524,
+          "condition_ridge_0.1": 2.224611669504464,
+          "feature_mean_norm": 0.00015232652482382052
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06311282613391997,
+          "condition_ridge_0.1": 2.2237101082891906,
+          "feature_mean_norm": 0.00019505877284914635
+        },
+        "legacy_dirs_sample_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06307273248202186,
+          "condition_ridge_0.1": 2.2316598304318154,
+          "feature_mean_norm": 0.0001783189517440572
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06307371808089256,
+          "condition_ridge_0.1": 2.2308852447916525,
+          "feature_mean_norm": 0.0007274041829828216
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06307327669971804,
+          "condition_ridge_0.1": 2.2314323845024266,
+          "feature_mean_norm": 0.0005535351936046745
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06307295751662846,
+          "condition_ridge_0.1": 2.231685391259909,
+          "feature_mean_norm": 0.0003812430083945111
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06307282466265676,
+          "condition_ridge_0.1": 2.2316958318011775,
+          "feature_mean_norm": 0.00027983988054866576
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06307276053347896,
+          "condition_ridge_0.1": 2.231643878342019,
+          "feature_mean_norm": 0.0002143639617405341
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06307268575141445,
+          "condition_ridge_0.1": 2.2313079114290515,
+          "feature_mean_norm": 9.065451168657456e-05
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06307273317086962,
+          "condition_ridge_0.1": 2.230678008233409,
+          "feature_mean_norm": 0.00017929090506152895
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06307290279156882,
+          "condition_ridge_0.1": 2.2297551370587865,
+          "feature_mean_norm": 0.00034312224139369926
+        },
+        "legacy_dirs_factorized_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06339168552289925,
+          "condition_ridge_0.1": 2.1909002112584965,
+          "feature_mean_norm": 0.00018097232692553236
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06340069131327154,
+          "condition_ridge_0.1": 2.1912296253712267,
+          "feature_mean_norm": 0.002144810772416381
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06339930347767123,
+          "condition_ridge_0.1": 2.191902321255536,
+          "feature_mean_norm": 0.001973905535203829
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06339803718626391,
+          "condition_ridge_0.1": 2.192288712149085,
+          "feature_mean_norm": 0.0018038995343688231
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06339733575569102,
+          "condition_ridge_0.1": 2.1923829537792368,
+          "feature_mean_norm": 0.0017024396981304318
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06339689244633277,
+          "condition_ridge_0.1": 2.1923884435904935,
+          "feature_mean_norm": 0.0016350732870536592
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.0633958692644624,
+          "condition_ridge_0.1": 2.1922016190193894,
+          "feature_mean_norm": 0.0014678339258000792
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06339496764653857,
+          "condition_ridge_0.1": 2.191728798900245,
+          "feature_mean_norm": 0.0013027927191903764
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06339418759774802,
+          "condition_ridge_0.1": 2.190970998904788,
+          "feature_mean_norm": 0.0011409040101489365
+        },
+        "radial_corrected_dirs_oracle_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06396189483727034,
+          "condition_ridge_0.1": 2.4037131815098736,
+          "feature_mean_norm": 0.00018175554677801444
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06396357821455492,
+          "condition_ridge_0.1": 2.4028163023832945,
+          "feature_mean_norm": 0.0009457390869569197
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06396299854555128,
+          "condition_ridge_0.1": 2.4034503532335374,
+          "feature_mean_norm": 0.0007731766521584653
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06396253890423935,
+          "condition_ridge_0.1": 2.403762102475106,
+          "feature_mean_norm": 0.0006021650006392028
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06396232073384878,
+          "condition_ridge_0.1": 2.40379427187521,
+          "feature_mean_norm": 0.0005009640921518825
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06396219929320675,
+          "condition_ridge_0.1": 2.403751176108844,
+          "feature_mean_norm": 0.00043453892605163646
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06396197971436539,
+          "condition_ridge_0.1": 2.4034176758674746,
+          "feature_mean_norm": 0.0002765254169521526
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06396188016895148,
+          "condition_ridge_0.1": 2.402762178800097,
+          "feature_mean_norm": 0.00015977913472783105
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06396190065752545,
+          "condition_ridge_0.1": 2.4017857355167047,
+          "feature_mean_norm": 0.0001897716398079607
+        },
+        "radial_corrected_dirs_sample_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06392175396967995,
+          "condition_ridge_0.1": 2.40910691901543,
+          "feature_mean_norm": 0.000180929951157745
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06392275313865385,
+          "condition_ridge_0.1": 2.408196567383557,
+          "feature_mean_norm": 0.0007373524985922515
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06392231161448984,
+          "condition_ridge_0.1": 2.408818982683541,
+          "feature_mean_norm": 0.0005638279576479083
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06392199019636381,
+          "condition_ridge_0.1": 2.409117815443675,
+          "feature_mean_norm": 0.0003918367800215243
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06392185499716829,
+          "condition_ridge_0.1": 2.409141599195067,
+          "feature_mean_norm": 0.0002905142373250792
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06392178888608756,
+          "condition_ridge_0.1": 2.4090926415499987,
+          "feature_mean_norm": 0.00022492442338986716
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06392170768479584,
+          "condition_ridge_0.1": 2.4087435142175977,
+          "feature_mean_norm": 9.521957784040116e-05
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06392174659294642,
+          "condition_ridge_0.1": 2.408070963684346,
+          "feature_mean_norm": 0.00017018630226379338
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06392190561031995,
+          "condition_ridge_0.1": 2.407075995554085,
+          "feature_mean_norm": 0.0003320855682795855
+        },
+        "radial_corrected_dirs_factorized_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06424811715707371,
+          "condition_ridge_0.1": 2.369856828012226,
+          "feature_mean_norm": 0.00018357185387644047
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06425698499117896,
+          "condition_ridge_0.1": 2.3698271804827615,
+          "feature_mean_norm": 0.002142882716262051
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06425562074969139,
+          "condition_ridge_0.1": 2.370551244052739,
+          "feature_mean_norm": 0.001972474948369104
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06425437596700453,
+          "condition_ridge_0.1": 2.370957731913344,
+          "feature_mean_norm": 0.001802994549614402
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06425368644053268,
+          "condition_ridge_0.1": 2.371049021164662,
+          "feature_mean_norm": 0.0017018667698843841
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06425325065006124,
+          "condition_ridge_0.1": 2.3710462901511296,
+          "feature_mean_norm": 0.0016347299800403628
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06425224480513851,
+          "condition_ridge_0.1": 2.3708170430272744,
+          "feature_mean_norm": 0.0014680993519012662
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06425135843784727,
+          "condition_ridge_0.1": 2.3702705920662903,
+          "feature_mean_norm": 0.0013037293216657476
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.06425059155313229,
+          "condition_ridge_0.1": 2.369408013835831,
+          "feature_mean_norm": 0.001142595912383775
+        }
+      },
+      "anchor_diagnostics": {
+        "directions": {
+          "legacy_dirs": {
+            "factorized_c21_relative_error": 0.2940831589935612
+          },
+          "radial_corrected_dirs": {
+            "factorized_c21_relative_error": 0.2955882907268162
+          }
+        },
+        "sample_mean_relative_error": 0.0008161858119246074,
+        "factorized_mean_relative_error": 0.005654115684459685
+      },
+      "seconds": 5.608244708972052
+    },
+    {
+      "index": 161,
+      "name": "dylan-brown",
+      "baseline_mse": 2.24091425569048e-07,
+      "method_mses": {
+        "legacy_dirs_oracle_mean_oracle_exact_anchor": 1.6067956349324908e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.2": 6.020040704000086e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.25": 3.6353215949956274e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.3": 2.504390987257138e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.33": 2.3764836022873648e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.35": 2.6331640423824584e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.4": 5.316419366853576e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.45": 1.3134427564073389e-06,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.5": 2.994363212104342e-06,
+        "legacy_dirs_sample_mean_oracle_exact_anchor": 1.6074107506120578e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.2": 5.464490710908714e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.25": 3.1548457514609136e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.3": 2.357000436824504e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.33": 2.625097609231191e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.35": 3.2511017050029256e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.4": 7.310070997251703e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.45": 1.729539010830685e-06,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.5": 3.7246914320683906e-06,
+        "legacy_dirs_factorized_mean_oracle_exact_anchor": 1.6075482887046076e-07,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.2": 1.9615749226997706e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.25": 1.5213547787995208e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.3": 1.4253742078733734e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.33": 1.5277302892726884e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.35": 1.6731933997307468e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.4": 2.3871340751107644e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.45": 3.811994593000888e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.5": 6.314210828492694e-06,
+        "radial_corrected_dirs_oracle_mean_oracle_exact_anchor": 1.5891087073633621e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.2": 6.570676676561075e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.25": 3.528823310134478e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.3": 2.3774510490169516e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.33": 2.2621972575658548e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.35": 2.4969867844818614e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.4": 5.049758943683673e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.45": 1.297681254670811e-06,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.5": 3.0985034774299856e-06,
+        "radial_corrected_dirs_sample_mean_oracle_exact_anchor": 1.5896628424140235e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.2": 6.40573836236665e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.25": 3.314404969672498e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.3": 2.363029830824381e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.33": 2.5778886210965385e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.35": 3.149803524701897e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.4": 7.059870551463187e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.45": 1.726090535873596e-06,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.5": 3.868896186518795e-06,
+        "radial_corrected_dirs_factorized_mean_oracle_exact_anchor": 1.5900553891648118e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.2": 2.443679065576605e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.25": 1.6989321809423358e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.3": 1.4422371541687538e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.33": 1.475750284618392e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.35": 1.5781963145146307e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.4": 2.1809498205732537e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.45": 3.4941111141326915e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.5": 5.929799643348316e-06
+      },
+      "diagnostics": {
+        "legacy_dirs_oracle_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14575646429930345,
+          "condition_ridge_0.1": 3.063970828018204,
+          "feature_mean_norm": 0.00025104434998642083
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1457576014868532,
+          "condition_ridge_0.1": 3.0631157400213818,
+          "feature_mean_norm": 0.0011785787756658866
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14575710190643512,
+          "condition_ridge_0.1": 3.063630780679495,
+          "feature_mean_norm": 0.000898057782564884
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1457567391107178,
+          "condition_ridge_0.1": 3.0639111880075283,
+          "feature_mean_norm": 0.0006192478409961307
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1457565870903847,
+          "condition_ridge_0.1": 3.063966646444614,
+          "feature_mean_norm": 0.00045409699048948576
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14575651310072263,
+          "condition_ridge_0.1": 3.0639566059633023,
+          "feature_mean_norm": 0.0003463065891794117
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14575642387708598,
+          "condition_ridge_0.1": 3.063767011472006,
+          "feature_mean_norm": 0.00012605108574497676
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.145756471440059,
+          "condition_ridge_0.1": 3.063342714431012,
+          "feature_mean_norm": 0.00026711375124390717
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14575665578950775,
+          "condition_ridge_0.1": 3.062684356934415,
+          "feature_mean_norm": 0.000535080268153673
+        },
+        "legacy_dirs_sample_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14567171088586792,
+          "condition_ridge_0.1": 3.0604916608380983,
+          "feature_mean_norm": 0.0002504662109668971
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14567235678116788,
+          "condition_ridge_0.1": 3.0597911959916853,
+          "feature_mean_norm": 0.0009030195893568364
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14567198923184174,
+          "condition_ridge_0.1": 3.060245359945645,
+          "feature_mean_norm": 0.0006221822133080729
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14567175854779854,
+          "condition_ridge_0.1": 3.0604645841992175,
+          "feature_mean_norm": 0.00034391465762509936
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14567168583299492,
+          "condition_ridge_0.1": 3.0604832032921916,
+          "feature_mean_norm": 0.00018313210088404748
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14567166472968843,
+          "condition_ridge_0.1": 3.0604485549104137,
+          "feature_mean_norm": 9.457343326505708e-05
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1456717077777759,
+          "condition_ridge_0.1": 3.060197291123435,
+          "feature_mean_norm": 0.00024312802020210099
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1456718876919396,
+          "condition_ridge_0.1": 3.059711144743258,
+          "feature_mean_norm": 0.0005184386092035859
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1456722044716724,
+          "condition_ridge_0.1": 3.05899079972828,
+          "feature_mean_norm": 0.0007987153474149656
+        },
+        "legacy_dirs_factorized_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14571944774967155,
+          "condition_ridge_0.1": 3.0520591068387994,
+          "feature_mean_norm": 0.00025039202268525965
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.145721530669556,
+          "condition_ridge_0.1": 3.0518166263656026,
+          "feature_mean_norm": 0.0015782550495456798
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1457208559537565,
+          "condition_ridge_0.1": 3.05204642350586,
+          "feature_mean_norm": 0.0013054983224102964
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14572031805543417,
+          "condition_ridge_0.1": 3.05204909045285,
+          "feature_mean_norm": 0.0010379128073173887
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14572006098947612,
+          "condition_ridge_0.1": 3.051941604561493,
+          "feature_mean_norm": 0.0008818080259338817
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14571991697610412,
+          "condition_ridge_0.1": 3.0518245066471916,
+          "feature_mean_norm": 0.0007808331311800712
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14571965271689613,
+          "condition_ridge_0.1": 3.0513728740130324,
+          "feature_mean_norm": 0.0005492158221329963
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14571952527855453,
+          "condition_ridge_0.1": 3.0506947167708716,
+          "feature_mean_norm": 0.0003912491753239587
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14571953466143828,
+          "condition_ridge_0.1": 3.0497908805148284,
+          "feature_mean_norm": 0.0004049865090096547
+        },
+        "radial_corrected_dirs_oracle_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14712243174284786,
+          "condition_ridge_0.1": 3.2253976821249917,
+          "feature_mean_norm": 0.00024793024516339934
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14712357708166096,
+          "condition_ridge_0.1": 3.224200307593246,
+          "feature_mean_norm": 0.001187229929058431
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14712307839703861,
+          "condition_ridge_0.1": 3.2249178450614147,
+          "feature_mean_norm": 0.0009069563249863452
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14712271486784134,
+          "condition_ridge_0.1": 3.225312340182504,
+          "feature_mean_norm": 0.0006282531554433202
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14712256162535928,
+          "condition_ridge_0.1": 3.225393737757753,
+          "feature_mean_norm": 0.00046296708446432
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.147122486495071,
+          "condition_ridge_0.1": 3.225383265539285,
+          "feature_mean_norm": 0.0003548403304703784
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14712239327935694,
+          "condition_ridge_0.1": 3.2251305690132615,
+          "feature_mean_norm": 0.00012727401087177603
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14712243522095614,
+          "condition_ridge_0.1": 3.2245546738765585,
+          "feature_mean_norm": 0.0002560528626477735
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14712261231975293,
+          "condition_ridge_0.1": 3.2236564775733654,
+          "feature_mean_norm": 0.000523454720112983
+        },
+        "radial_corrected_dirs_sample_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1470365687815149,
+          "condition_ridge_0.1": 3.22206798558073,
+          "feature_mean_norm": 0.0002473555084655214
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14703722662389854,
+          "condition_ridge_0.1": 3.2210605734957816,
+          "feature_mean_norm": 0.0009137842052215124
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14703685759231921,
+          "condition_ridge_0.1": 3.221702390191312,
+          "feature_mean_norm": 0.0006331753933735168
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14703662379606466,
+          "condition_ridge_0.1": 3.222020759759558,
+          "feature_mean_norm": 0.00035482103199550597
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14703654843155173,
+          "condition_ridge_0.1": 3.222056312723466,
+          "feature_mean_norm": 0.00019299543820433757
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14703652523578004,
+          "condition_ridge_0.1": 3.2220152149637626,
+          "feature_mean_norm": 9.981097951049245e-05
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14703656191173717,
+          "condition_ridge_0.1": 3.22168576432688,
+          "feature_mean_norm": 0.00023044278992149635
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14703673382383498,
+          "condition_ridge_0.1": 3.221032892133464,
+          "feature_mean_norm": 0.0005052948724599115
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1470370409715991,
+          "condition_ridge_0.1": 3.2200575571182166,
+          "feature_mean_norm": 0.0007852511176392021
+        },
+        "radial_corrected_dirs_factorized_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14708562324317753,
+          "condition_ridge_0.1": 3.2069500187007782,
+          "feature_mean_norm": 0.00024727268676248834
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14708776413099622,
+          "condition_ridge_0.1": 3.2063364025869387,
+          "feature_mean_norm": 0.0016063351667902378
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14708708100269835,
+          "condition_ridge_0.1": 3.2068049807229757,
+          "feature_mean_norm": 0.001332845085948084
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14708653306159045,
+          "condition_ridge_0.1": 3.2069618344838546,
+          "feature_mean_norm": 0.0010638217703712127
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14708626918742093,
+          "condition_ridge_0.1": 3.206906150412653,
+          "feature_mean_norm": 0.0009062109818037117
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1470861203091834,
+          "condition_ridge_0.1": 3.2068066040376286,
+          "feature_mean_norm": 0.0008037629476456075
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1470858427466152,
+          "condition_ridge_0.1": 3.206339384939061,
+          "feature_mean_norm": 0.0005651817175131045
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1470857003746513,
+          "condition_ridge_0.1": 3.2055607282001852,
+          "feature_mean_norm": 0.00038974767802525337
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.14708569319368422,
+          "condition_ridge_0.1": 3.2044716391364916,
+          "feature_mean_norm": 0.0003787525737900392
+        }
+      },
+      "anchor_diagnostics": {
+        "directions": {
+          "legacy_dirs": {
+            "factorized_c21_relative_error": 0.2677639629443411
+          },
+          "radial_corrected_dirs": {
+            "factorized_c21_relative_error": 0.26899748666221984
+          }
+        },
+        "sample_mean_relative_error": 0.0005851429049525666,
+        "factorized_mean_relative_error": 0.0038015036491689065
+      },
+      "seconds": 2.936107417102903
+    },
+    {
+      "index": 162,
+      "name": "yolanda-hawkins",
+      "baseline_mse": 2.3177693298152411e-07,
+      "method_mses": {
+        "legacy_dirs_oracle_mean_oracle_exact_anchor": 1.4149028656658527e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.2": 7.710546478890132e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.25": 7.624577271290876e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.3": 8.549977053211276e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.33": 1.0501756724125217e-06,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.35": 1.2777432434143498e-06,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.4": 2.3600189950971587e-06,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.45": 4.530062466675126e-06,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.5": 8.31325603697344e-06,
+        "legacy_dirs_sample_mean_oracle_exact_anchor": 1.4152986597366036e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.2": 9.395797459608153e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.25": 9.11410531750128e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.3": 9.39317145949403e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.33": 1.0688995816964556e-06,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.35": 1.239895746126497e-06,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.4": 2.1299571840607522e-06,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.45": 4.025239297203715e-06,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.5": 7.438694487418461e-06,
+        "legacy_dirs_factorized_mean_oracle_exact_anchor": 1.4106694551346488e-07,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.2": 2.0028494687846227e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.25": 1.7697409394810573e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.3": 1.526877750005389e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.33": 1.476587163119145e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.35": 1.5250181074339273e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.4": 2.1156667318809406e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.45": 3.749632072944345e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.5": 6.9751568224692995e-06,
+        "radial_corrected_dirs_oracle_mean_oracle_exact_anchor": 1.4141224348827445e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.2": 7.610598400912703e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.25": 7.574970382575249e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.3": 8.220798063597376e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.33": 9.814066305656754e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.35": 1.1768950627188675e-06,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.4": 2.1523633513083916e-06,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.45": 4.1858278555617156e-06,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.5": 7.819666272790451e-06,
+        "radial_corrected_dirs_sample_mean_oracle_exact_anchor": 1.414587844772608e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.2": 9.225143931081032e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.25": 9.087260771839069e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.3": 9.177539680105432e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.33": 1.0158713036036027e-06,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.35": 1.1569695082263008e-06,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.4": 1.942020506784254e-06,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.45": 3.6954879552769523e-06,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.5": 6.945065877366979e-06,
+        "radial_corrected_dirs_factorized_mean_oracle_exact_anchor": 1.4098000701970718e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.2": 2.0510829927539265e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.25": 1.8330804334075873e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.3": 1.5588021510502639e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.33": 1.4652583494275602e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.35": 1.474846040512552e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.4": 1.9367921734683128e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.45": 3.4076736704018434e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.5": 6.455967661104879e-06
+      },
+      "diagnostics": {
+        "legacy_dirs_oracle_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17128029503218328,
+          "condition_ridge_0.1": 2.47017815512384,
+          "feature_mean_norm": 0.00018248755662302545
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1712808913520304,
+          "condition_ridge_0.1": 2.4701635004083986,
+          "feature_mean_norm": 0.0009221745200934261
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1712806016284698,
+          "condition_ridge_0.1": 2.470177634738231,
+          "feature_mean_norm": 0.0006733597134060587
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17128040732565342,
+          "condition_ridge_0.1": 2.470037332769812,
+          "feature_mean_norm": 0.00043263267137186654
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1712803365460625,
+          "condition_ridge_0.1": 2.4698791151955817,
+          "feature_mean_norm": 0.00030030949221221956
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17128030844390596,
+          "condition_ridge_0.1": 2.46974283568156,
+          "feature_mean_norm": 0.00022733019951132652
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17128030498339272,
+          "condition_ridge_0.1": 2.469294559958795,
+          "feature_mean_norm": 0.00021665012682387945
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17128039694411948,
+          "condition_ridge_0.1": 2.4686930966274776,
+          "feature_mean_norm": 0.0004158675292290738
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1712805843259325,
+          "condition_ridge_0.1": 2.4679392101780007,
+          "feature_mean_norm": 0.0006555185678932043
+        },
+        "legacy_dirs_sample_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17132850509710512,
+          "condition_ridge_0.1": 2.473260795077463,
+          "feature_mean_norm": 0.00018323517161710195
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17132950720780749,
+          "condition_ridge_0.1": 2.4732354352283172,
+          "feature_mean_norm": 0.0011862125330890897
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17132912133292436,
+          "condition_ridge_0.1": 2.473275853645866,
+          "feature_mean_norm": 0.000937126854114182
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17132883085143702,
+          "condition_ridge_0.1": 2.47316172190452,
+          "feature_mean_norm": 0.0006928662023201953
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1713287023515831,
+          "condition_ridge_0.1": 2.473019140569265,
+          "feature_mean_norm": 0.0005513055436338574
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17132863576383073,
+          "condition_ridge_0.1": 2.4728932541109216,
+          "feature_mean_norm": 0.00046116230820037764
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17132853607043125,
+          "condition_ridge_0.1": 2.4724708392612045,
+          "feature_mean_norm": 0.00027573182852774373
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17132853177140517,
+          "condition_ridge_0.1": 2.471895040503791,
+          "feature_mean_norm": 0.00026483140786767766
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17132862286675968,
+          "condition_ridge_0.1": 2.4711665940926872,
+          "feature_mean_norm": 0.0004415807678040907
+        },
+        "legacy_dirs_factorized_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17173722112657855,
+          "condition_ridge_0.1": 2.4610261759574463,
+          "feature_mean_norm": 0.0001832133256968488
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17174451742935617,
+          "condition_ridge_0.1": 2.460982896016236,
+          "feature_mean_norm": 0.0031714593131637768
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17174341550493052,
+          "condition_ridge_0.1": 2.461154608159638,
+          "feature_mean_norm": 0.002923040061682426
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17174240873797783,
+          "condition_ridge_0.1": 2.4611726245472436,
+          "feature_mean_norm": 0.002675990002955631
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17174185035409595,
+          "condition_ridge_0.1": 2.4611097542151574,
+          "feature_mean_norm": 0.002528584228398197
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17174149713017153,
+          "condition_ridge_0.1": 2.461037188282889,
+          "feature_mean_norm": 0.002430726651889926
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17174068068302695,
+          "condition_ridge_0.1": 2.460748718560014,
+          "feature_mean_norm": 0.002187850973688378
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1717399593979013,
+          "condition_ridge_0.1": 2.460307809871237,
+          "feature_mean_norm": 0.0019482561372934715
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17173933327599356,
+          "condition_ridge_0.1": 2.459715230906746,
+          "feature_mean_norm": 0.0017133190994399494
+        },
+        "radial_corrected_dirs_oracle_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1728586257596597,
+          "condition_ridge_0.1": 2.6372426695113207,
+          "feature_mean_norm": 0.00018621199438485604
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1728592269710565,
+          "condition_ridge_0.1": 2.6372104449691314,
+          "feature_mean_norm": 0.0009306304096344271
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17285893673240982,
+          "condition_ridge_0.1": 2.637230481891761,
+          "feature_mean_norm": 0.0006816963191211554
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17285874070831966,
+          "condition_ridge_0.1": 2.637072430120536,
+          "feature_mean_norm": 0.00044003851970663945
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17285866831699245,
+          "condition_ridge_0.1": 2.6368922108413995,
+          "feature_mean_norm": 0.0003058204219691929
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17285863889910655,
+          "condition_ridge_0.1": 2.6367365357344608,
+          "feature_mean_norm": 0.00022988049352494266
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17285863130493692,
+          "condition_ridge_0.1": 2.6362232372158005,
+          "feature_mean_norm": 0.00020577487440619286
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17285871792582322,
+          "condition_ridge_0.1": 2.6355331645965094,
+          "feature_mean_norm": 0.00040265204795951313
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1728588987616238,
+          "condition_ridge_0.1": 2.6346671382433833,
+          "feature_mean_norm": 0.0006420289399016728
+        },
+        "radial_corrected_dirs_sample_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17290606898888086,
+          "condition_ridge_0.1": 2.6404724547650034,
+          "feature_mean_norm": 0.00018695790575967242
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1729070828641157,
+          "condition_ridge_0.1": 2.640427374417211,
+          "feature_mean_norm": 0.0011989156854108531
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17290669607883494,
+          "condition_ridge_0.1": 2.640482337124317,
+          "feature_mean_norm": 0.0009499347884971509
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17290640348176178,
+          "condition_ridge_0.1": 2.6403590022904386,
+          "feature_mean_norm": 0.0007054363892126041
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17290627313406284,
+          "condition_ridge_0.1": 2.6401994987309982,
+          "feature_mean_norm": 0.0005633266837248928
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1729062050733744,
+          "condition_ridge_0.1": 2.6400575818445993,
+          "feature_mean_norm": 0.00047243201755240366
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17290610085399702,
+          "condition_ridge_0.1": 2.6395784798843227,
+          "feature_mean_norm": 0.0002811238843432397
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17290609082379996,
+          "condition_ridge_0.1": 2.638922291868498,
+          "feature_mean_norm": 0.00025525747911326853
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17290617498279962,
+          "condition_ridge_0.1": 2.638089803449117,
+          "feature_mean_norm": 0.000426109420330208
+        },
+        "radial_corrected_dirs_factorized_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17331984091133112,
+          "condition_ridge_0.1": 2.627646098533194,
+          "feature_mean_norm": 0.00018693946549090782
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17332720733054358,
+          "condition_ridge_0.1": 2.627592075838613,
+          "feature_mean_norm": 0.0032014272236273057
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17332610504669763,
+          "condition_ridge_0.1": 2.6277940270464115,
+          "feature_mean_norm": 0.00295308226818029
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17332509671738613,
+          "condition_ridge_0.1": 2.627818824310359,
+          "feature_mean_norm": 0.002706019329615733
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1733245368186643,
+          "condition_ridge_0.1": 2.627748755955365,
+          "feature_mean_norm": 0.002558551517029734
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17332418234424893,
+          "condition_ridge_0.1": 2.627666696503237,
+          "feature_mean_norm": 0.002460624607090831
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17332336192877298,
+          "condition_ridge_0.1": 2.6273380653646505,
+          "feature_mean_norm": 0.002217452010066106
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17332263547229254,
+          "condition_ridge_0.1": 2.6268335446565745,
+          "feature_mean_norm": 0.0019773215449254357
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.17332200297598907,
+          "condition_ridge_0.1": 2.6261539389566857,
+          "feature_mean_norm": 0.0017414920850410602
+        }
+      },
+      "anchor_diagnostics": {
+        "directions": {
+          "legacy_dirs": {
+            "factorized_c21_relative_error": 0.29253446655652293
+          },
+          "radial_corrected_dirs": {
+            "factorized_c21_relative_error": 0.2940952666958815
+          }
+        },
+        "sample_mean_relative_error": 0.0005633865457963756,
+        "factorized_mean_relative_error": 0.003026064762764735
+      },
+      "seconds": 2.2236527090426534
+    },
+    {
+      "index": 163,
+      "name": "scott-matthews",
+      "baseline_mse": 2.5893801088228656e-07,
+      "method_mses": {
+        "legacy_dirs_oracle_mean_oracle_exact_anchor": 1.9232950501207213e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.2": 4.604393492562664e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.25": 2.9621144228879283e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.3": 2.2004397793737807e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.33": 2.728154568804393e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.35": 3.724783927303466e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.4": 9.48375428052867e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.45": 2.19665289643731e-06,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.5": 4.419928238724211e-06,
+        "legacy_dirs_sample_mean_oracle_exact_anchor": 1.923489510133189e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.2": 3.526175454597001e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.25": 2.2430951073691384e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.3": 2.0913541633669615e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.33": 3.1239968849473024e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.35": 4.5210431611104545e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.4": 1.1524713492886224e-06,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.45": 2.563468504940705e-06,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.5": 4.9919403642147736e-06,
+        "legacy_dirs_factorized_mean_oracle_exact_anchor": 1.9249780867410625e-07,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.2": 1.4349557127386713e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.25": 1.2588984172891995e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.3": 1.012493186677709e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.33": 8.501651629583786e-07,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.35": 7.474990783026472e-07,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.4": 5.697342860865642e-07,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.45": 6.389708887294904e-07,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.5": 1.1687349264527634e-06,
+        "radial_corrected_dirs_oracle_mean_oracle_exact_anchor": 1.9229360701803488e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.2": 4.591501362124674e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.25": 3.037785103802708e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.3": 2.164000177351895e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.33": 2.542606550173189e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.35": 3.4233123418814534e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.4": 8.941387221978624e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.45": 2.151323126675115e-06,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.5": 4.459872255471533e-06,
+        "radial_corrected_dirs_sample_mean_oracle_exact_anchor": 1.9231099026744244e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.2": 3.5638362940644627e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.25": 2.290344858071949e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.3": 1.936027378548837e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.33": 2.7547134939992527e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.35": 3.986566910073993e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.4": 1.059927516951011e-06,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.45": 2.4599881015915527e-06,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.5": 4.947801120374372e-06,
+        "radial_corrected_dirs_factorized_mean_oracle_exact_anchor": 1.9247492579418474e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.2": 1.3795602066599934e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.25": 1.2405459171161547e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.3": 1.0218211492605173e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.33": 8.668895395271854e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.35": 7.650865848467989e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.4": 5.789299976231491e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.45": 6.387140110249748e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.5": 1.1863336559050424e-06
+      },
+      "diagnostics": {
+        "legacy_dirs_oracle_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3671471938421407,
+          "condition_ridge_0.1": 2.2659061746733733,
+          "feature_mean_norm": 0.00012812858785495333
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.36714895517162044,
+          "condition_ridge_0.1": 2.2656102267703933,
+          "feature_mean_norm": 0.0022781059570327754
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3671481917414426,
+          "condition_ridge_0.1": 2.265725491908657,
+          "feature_mean_norm": 0.0017168076029832413
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3671476532629327,
+          "condition_ridge_0.1": 2.2658158536000967,
+          "feature_mean_norm": 0.0011686822560669707
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.36714743815305617,
+          "condition_ridge_0.1": 2.2658580999077698,
+          "feature_mean_norm": 0.0008567389976025621
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.36714733973708025,
+          "condition_ridge_0.1": 2.265881274237778,
+          "feature_mean_norm": 0.0006670355023656734
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.36714725116446184,
+          "condition_ridge_0.1": 2.2659217500677333,
+          "feature_mean_norm": 0.0004298636795234078
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3671473875452402,
+          "condition_ridge_0.1": 2.2659373111741243,
+          "feature_mean_norm": 0.000765086583543328
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3671477488791645,
+          "condition_ridge_0.1": 2.2659280214174977,
+          "feature_mean_norm": 0.0012832226827207876
+        },
+        "legacy_dirs_sample_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3670227572733518,
+          "condition_ridge_0.1": 2.2677714435864766,
+          "feature_mean_norm": 0.0001273410766908777
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.36702381164397435,
+          "condition_ridge_0.1": 2.267602183170016,
+          "feature_mean_norm": 0.001764098722079029
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.36702324269379377,
+          "condition_ridge_0.1": 2.2676895542017386,
+          "feature_mean_norm": 0.0012006246226972201
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.36702289877245015,
+          "condition_ridge_0.1": 2.267752097921385,
+          "feature_mean_norm": 0.0006570258319147971
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3670228004337662,
+          "condition_ridge_0.1": 2.2677776947859507,
+          "feature_mean_norm": 0.0003780774942867946
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3670227798805763,
+          "condition_ridge_0.1": 2.267789788231097,
+          "feature_mean_norm": 0.0002873928996441553
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3670228860183908,
+          "condition_ridge_0.1": 2.2678026327025247,
+          "feature_mean_norm": 0.000627881110971667
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3670232171856983,
+          "condition_ridge_0.1": 2.2677906725518846,
+          "feature_mean_norm": 0.001169017953691293
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3670237733818899,
+          "condition_ridge_0.1": 2.267753982568015,
+          "feature_mean_norm": 0.0017319640695972421
+        },
+        "legacy_dirs_factorized_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.36744224850394414,
+          "condition_ridge_0.1": 2.2702548131693225,
+          "feature_mean_norm": 0.0001282458365747564
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.36744964433092353,
+          "condition_ridge_0.1": 2.2696016643419403,
+          "feature_mean_norm": 0.004664437816751856
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3674479711996768,
+          "condition_ridge_0.1": 2.2697851012288814,
+          "feature_mean_norm": 0.004103493571524254
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3674465228310968,
+          "condition_ridge_0.1": 2.2699441620600367,
+          "feature_mean_norm": 0.0035469799988916387
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3674457616971517,
+          "condition_ridge_0.1": 2.2700278568923102,
+          "feature_mean_norm": 0.0032161562862380055
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.36744529922784147,
+          "condition_ridge_0.1": 2.2700787511916523,
+          "feature_mean_norm": 0.0029973660119041183
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.36744430039215614,
+          "condition_ridge_0.1": 2.270188805984509,
+          "feature_mean_norm": 0.002459281842710511
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3674435263258739,
+          "condition_ridge_0.1": 2.2702742968831946,
+          "feature_mean_norm": 0.0019423335527751079
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3674429770304152,
+          "condition_ridge_0.1": 2.2703352274485535,
+          "feature_mean_norm": 0.0014690065875882004
+        },
+        "radial_corrected_dirs_oracle_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3713493636453964,
+          "condition_ridge_0.1": 2.2196257898632177,
+          "feature_mean_norm": 0.0001188305163200519
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3713511317528245,
+          "condition_ridge_0.1": 2.219293152148465,
+          "feature_mean_norm": 0.0022949548454516736
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.371350369168092,
+          "condition_ridge_0.1": 2.2194289487560748,
+          "feature_mean_norm": 0.0017324336758089871
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.37134982846606773,
+          "condition_ridge_0.1": 2.2195341941244795,
+          "feature_mean_norm": 0.0011811047538837014
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3713496105489727,
+          "condition_ridge_0.1": 2.219582654285276,
+          "feature_mean_norm": 0.0008646506941333288
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3713495096477207,
+          "condition_ridge_0.1": 2.2196088388633477,
+          "feature_mean_norm": 0.0006692262236171286
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.37134941271362243,
+          "condition_ridge_0.1": 2.2196528797139496,
+          "feature_mean_norm": 0.00039986539893333765
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3713495376639468,
+          "condition_ridge_0.1": 2.2196663595357586,
+          "feature_mean_norm": 0.0007287621260121536
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.37134988449846984,
+          "condition_ridge_0.1": 2.2196493672543705,
+          "feature_mean_norm": 0.0012495877062108504
+        },
+        "radial_corrected_dirs_sample_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.37122454259146026,
+          "condition_ridge_0.1": 2.2207907113058014,
+          "feature_mean_norm": 0.00011805591011392511
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.37122561119882164,
+          "condition_ridge_0.1": 2.2205843232236884,
+          "feature_mean_norm": 0.0017853537456387397
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.37122503923788747,
+          "condition_ridge_0.1": 2.220690538708652,
+          "feature_mean_norm": 0.0012201954460313534
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.37122468923514296,
+          "condition_ridge_0.1": 2.220766219238978,
+          "feature_mean_norm": 0.0006704022345732999
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3712245857737051,
+          "condition_ridge_0.1": 2.220796953096628,
+          "feature_mean_norm": 0.0003770672061589515
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.37122456119121605,
+          "condition_ridge_0.1": 2.2208113269099794,
+          "feature_mean_norm": 0.0002630108094461507
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.37122465510633634,
+          "condition_ridge_0.1": 2.220825869824816,
+          "feature_mean_norm": 0.0005899860301806135
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.37122497098033547,
+          "condition_ridge_0.1": 2.2208099020750507,
+          "feature_mean_norm": 0.001134092432691616
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3712255088126467,
+          "condition_ridge_0.1": 2.220763523682536,
+          "feature_mean_norm": 0.0016980639199178614
+        },
+        "radial_corrected_dirs_factorized_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3716550193365026,
+          "condition_ridge_0.1": 2.2212820398964017,
+          "feature_mean_norm": 0.0001189424599561319
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3716624121299894,
+          "condition_ridge_0.1": 2.2205062059550826,
+          "feature_mean_norm": 0.0046898738120239114
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3716607466623292,
+          "condition_ridge_0.1": 2.2207182705989683,
+          "feature_mean_norm": 0.004128316078548018
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3716593028867204,
+          "condition_ridge_0.1": 2.220900196565379,
+          "feature_mean_norm": 0.003570748411220699
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3716585430346312,
+          "condition_ridge_0.1": 2.2209948307121157,
+          "feature_mean_norm": 0.0032389809729938086
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.37165808080574675,
+          "condition_ridge_0.1": 2.2210518564894604,
+          "feature_mean_norm": 0.003019382070596532
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3716570804215951,
+          "condition_ridge_0.1": 2.221173168321163,
+          "feature_mean_norm": 0.002478359388869204
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.37165630173605574,
+          "condition_ridge_0.1": 2.221264095391395,
+          "feature_mean_norm": 0.0019562810975714716
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.37165574475052204,
+          "condition_ridge_0.1": 2.2213246464400034,
+          "feature_mean_norm": 0.0014734244144818125
+        }
+      },
+      "anchor_diagnostics": {
+        "directions": {
+          "legacy_dirs": {
+            "factorized_c21_relative_error": 0.2790618385594913
+          },
+          "radial_corrected_dirs": {
+            "factorized_c21_relative_error": 0.280468835501195
+          }
+        },
+        "sample_mean_relative_error": 0.0004362340360006076,
+        "factorized_mean_relative_error": 0.00254664652292727
+      },
+      "seconds": 2.144365333020687
+    },
+    {
+      "index": 164,
+      "name": "benjamin-walsh",
+      "baseline_mse": 3.457466003272283e-07,
+      "method_mses": {
+        "legacy_dirs_oracle_mean_oracle_exact_anchor": 1.5718819742879025e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.2": 6.74516685724593e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.25": 4.072832680021688e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.3": 4.3385850935712385e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.33": 4.975076256886462e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.35": 5.83569568844417e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.4": 1.221219292209863e-06,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.45": 3.2397053587512897e-06,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.5": 8.044717998864974e-06,
+        "legacy_dirs_sample_mean_oracle_exact_anchor": 1.571910292056092e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.2": 4.484617910308224e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.25": 4.229620873149344e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.3": 5.065330535266729e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.33": 5.17714122485203e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.35": 5.337478025899507e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.4": 8.787867545737225e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.45": 2.4478799975990916e-06,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.5": 6.6637513635889855e-06,
+        "legacy_dirs_factorized_mean_oracle_exact_anchor": 1.5657913963785662e-07,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.2": 3.766914049705804e-07,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.25": 7.788928738886086e-07,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.3": 1.0059168729492192e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.33": 9.441157877737923e-07,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.35": 8.375482243568512e-07,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.4": 5.891761229729536e-07,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.45": 1.105181919523786e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.5": 3.7444190272579077e-06,
+        "radial_corrected_dirs_oracle_mean_oracle_exact_anchor": 1.5843540680006983e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.2": 7.469907016426685e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.25": 4.0485447678034166e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.3": 4.084017216763875e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.33": 4.7145676894613357e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.35": 5.579430651147141e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.4": 1.1799761694906883e-06,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.45": 3.1205109644249314e-06,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.5": 7.730664817110968e-06,
+        "radial_corrected_dirs_sample_mean_oracle_exact_anchor": 1.584348174099918e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.2": 4.662707647985401e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.25": 3.746224251995793e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.3": 4.460519742044276e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.33": 4.641038520057727e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.35": 4.858840790160354e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.4": 8.296236868838814e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.45": 2.3361140045804043e-06,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.5": 6.372890831841956e-06,
+        "radial_corrected_dirs_factorized_mean_oracle_exact_anchor": 1.5788541668097708e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.2": 3.242603776914198e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.25": 6.590207494235704e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.3": 8.937111141658355e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.33": 8.563089345570985e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.35": 7.681545325416775e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.4": 5.49061917202962e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.45": 1.0242656861609476e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.5": 3.4892200667178826e-06
+      },
+      "diagnostics": {
+        "legacy_dirs_oracle_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10096429931053881,
+          "condition_ridge_0.1": 3.552193449367008,
+          "feature_mean_norm": 0.0006049503835627707
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10096410079520146,
+          "condition_ridge_0.1": 3.551342227159464,
+          "feature_mean_norm": 0.00045345499083490723
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10096391771222389,
+          "condition_ridge_0.1": 3.5518905952053874,
+          "feature_mean_norm": 0.0002402979341905916
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10096390067543527,
+          "condition_ridge_0.1": 3.5514605851316894,
+          "feature_mean_norm": 0.0002097195530968013
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10096397015560186,
+          "condition_ridge_0.1": 3.5507331246442124,
+          "feature_mean_norm": 0.00031638934774363964
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10096404968491969,
+          "condition_ridge_0.1": 3.550052915462141,
+          "feature_mean_norm": 0.00040538748135295825
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10096436473994194,
+          "condition_ridge_0.1": 3.547671468273636,
+          "feature_mean_norm": 0.0006471578280727579
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10096484583894762,
+          "condition_ridge_0.1": 3.5443232585677062,
+          "feature_mean_norm": 0.0008985571902478459
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10096549297956314,
+          "condition_ridge_0.1": 3.540018380555275,
+          "feature_mean_norm": 0.0011533058220470778
+        },
+        "legacy_dirs_sample_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10113459958734784,
+          "condition_ridge_0.1": 3.5558237425537005,
+          "feature_mean_norm": 0.000606603978847857
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10113542452231897,
+          "condition_ridge_0.1": 3.554687974309987,
+          "feature_mean_norm": 0.0010175494352341892
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10113487171576295,
+          "condition_ridge_0.1": 3.5554802420103244,
+          "feature_mean_norm": 0.0007669038204006409
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10113448467263432,
+          "condition_ridge_0.1": 3.555290169758867,
+          "feature_mean_norm": 0.0005243983330027418
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10113433201402791,
+          "condition_ridge_0.1": 3.554704646213723,
+          "feature_mean_norm": 0.00038920599809420803
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10113426339483624,
+          "condition_ridge_0.1": 3.554118180145287,
+          "feature_mean_norm": 0.00030977940357465567
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10113420788345674,
+          "condition_ridge_0.1": 3.551967882753795,
+          "feature_mean_norm": 0.00022594351376774074
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10113431813876883,
+          "condition_ridge_0.1": 3.5488460444825525,
+          "feature_mean_norm": 0.00037450659441470006
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10113459416023034,
+          "condition_ridge_0.1": 3.544762536529068,
+          "feature_mean_norm": 0.0006029738239908297
+        },
+        "legacy_dirs_factorized_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10138186971146568,
+          "condition_ridge_0.1": 3.5264517694253605,
+          "feature_mean_norm": 0.0006084396308121755
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10138564801056507,
+          "condition_ridge_0.1": 3.5248486520889566,
+          "feature_mean_norm": 0.0018532846793515509
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1013845805925904,
+          "condition_ridge_0.1": 3.5260984160869766,
+          "feature_mean_norm": 0.001602779384618093
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1013836785223837,
+          "condition_ridge_0.1": 3.5263815357372135,
+          "feature_mean_norm": 0.001355454512001378
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.101383216649058,
+          "condition_ridge_0.1": 3.5260871352103558,
+          "feature_mean_norm": 0.0012093992117014833
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10138294180435858,
+          "condition_ridge_0.1": 3.5256976438677814,
+          "feature_mean_norm": 0.0011134314697212838
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10138237044211977,
+          "condition_ridge_0.1": 3.524049500965321,
+          "feature_mean_norm": 0.0008810901581213184
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.101381964438463,
+          "condition_ridge_0.1": 3.521442970833156,
+          "feature_mean_norm": 0.0006686012421629738
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10138172379537483,
+          "condition_ridge_0.1": 3.51788697340095,
+          "feature_mean_norm": 0.0005018494800412571
+        },
+        "radial_corrected_dirs_oracle_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10208038187862918,
+          "condition_ridge_0.1": 3.7624453140657304,
+          "feature_mean_norm": 0.0006131579594359724
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10208017711229661,
+          "condition_ridge_0.1": 3.761336187706204,
+          "feature_mean_norm": 0.00045688275032790385
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10207999541852235,
+          "condition_ridge_0.1": 3.762077290790946,
+          "feature_mean_norm": 0.0002456894754408179
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10207997763915753,
+          "condition_ridge_0.1": 3.7617636006247603,
+          "feature_mean_norm": 0.00021411207293798882
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10208004565052367,
+          "condition_ridge_0.1": 3.7610691712531454,
+          "feature_mean_norm": 0.0003184097802304643
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10208012377428782,
+          "condition_ridge_0.1": 3.7603956553456066,
+          "feature_mean_norm": 0.00040642813860937356
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10208043382320924,
+          "condition_ridge_0.1": 3.7579773138596755,
+          "feature_mean_norm": 0.0006468252272210978
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10208090778442823,
+          "condition_ridge_0.1": 3.7545157260730777,
+          "feature_mean_norm": 0.0008974637084171265
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10208154565566167,
+          "condition_ridge_0.1": 3.7500212789574574,
+          "feature_mean_norm": 0.0011516764006971405
+        },
+        "radial_corrected_dirs_sample_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10225182826422546,
+          "condition_ridge_0.1": 3.766358217051144,
+          "feature_mean_norm": 0.000614818549881148
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10225265160909518,
+          "condition_ridge_0.1": 3.764920680690112,
+          "feature_mean_norm": 0.0010254329361910337
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10225210011489097,
+          "condition_ridge_0.1": 3.76591516743557,
+          "feature_mean_norm": 0.0007748418970250414
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10225171225714529,
+          "condition_ridge_0.1": 3.7658506175896784,
+          "feature_mean_norm": 0.0005320774518669345
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10225155808880529,
+          "condition_ridge_0.1": 3.765303505484651,
+          "feature_mean_norm": 0.000396225561937419
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10225148803772025,
+          "condition_ridge_0.1": 3.7647272588606193,
+          "feature_mean_norm": 0.0003157404865164781
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10225142745769232,
+          "condition_ridge_0.1": 3.762548663676799,
+          "feature_mean_norm": 0.00022391267384021146
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10225153051735239,
+          "condition_ridge_0.1": 3.759321720434056,
+          "feature_mean_norm": 0.0003666618426114102
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10225179721620561,
+          "condition_ridge_0.1": 3.755056580322493,
+          "feature_mean_norm": 0.0005938047817158033
+        },
+        "radial_corrected_dirs_factorized_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10250721130956506,
+          "condition_ridge_0.1": 3.7392127633629,
+          "feature_mean_norm": 0.0006167124546989101
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10251096602430786,
+          "condition_ridge_0.1": 3.7372191226239764,
+          "feature_mean_norm": 0.0018599659522922519
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10250990623294193,
+          "condition_ridge_0.1": 3.7386943944696953,
+          "feature_mean_norm": 0.0016094582761508964
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10250900965931703,
+          "condition_ridge_0.1": 3.7391258136974677,
+          "feature_mean_norm": 0.001362019725368917
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1025085500614718,
+          "condition_ridge_0.1": 3.738883206620578,
+          "feature_mean_norm": 0.0012158105187799054
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10250827630771585,
+          "condition_ridge_0.1": 3.7385127255428463,
+          "feature_mean_norm": 0.0011196868814801208
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1025077061816415,
+          "condition_ridge_0.1": 3.7368577642145753,
+          "feature_mean_norm": 0.0008866560119137955
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.10250729928381748,
+          "condition_ridge_0.1": 3.7341668300195456,
+          "feature_mean_norm": 0.0006726650318010998
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.1025070556161876,
+          "condition_ridge_0.1": 3.7304490425087202,
+          "feature_mean_norm": 0.0005026497758807462
+        }
+      },
+      "anchor_diagnostics": {
+        "directions": {
+          "legacy_dirs": {
+            "factorized_c21_relative_error": 0.2826321440999273
+          },
+          "radial_corrected_dirs": {
+            "factorized_c21_relative_error": 0.2835998064115158
+          }
+        },
+        "sample_mean_relative_error": 0.0008662927256079422,
+        "factorized_mean_relative_error": 0.006167035758298706
+      },
+      "seconds": 2.6698488749098033
+    },
+    {
+      "index": 165,
+      "name": "justin-crawford",
+      "baseline_mse": 3.0668500009183507e-07,
+      "method_mses": {
+        "legacy_dirs_oracle_mean_oracle_exact_anchor": 1.6210938585179137e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.2": 4.4766327702917605e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.25": 3.9990782682317276e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.3": 4.1811228740003933e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.33": 4.679683521524365e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.35": 5.218239552482287e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.4": 7.512233567189031e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.45": 1.1670462577176122e-06,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.5": 1.8504614511864548e-06,
+        "legacy_dirs_sample_mean_oracle_exact_anchor": 1.6218154764252456e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.2": 5.959126405153323e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.25": 5.808888427931367e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.3": 6.748503995503259e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.33": 7.932429155175861e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.35": 9.031949472938225e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.4": 1.312040109999385e-06,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.45": 1.9681323490024684e-06,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.5": 2.9587112916795175e-06,
+        "legacy_dirs_factorized_mean_oracle_exact_anchor": 1.6214553296300973e-07,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.2": 5.697118014149091e-07,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.25": 5.16577714719669e-07,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.3": 5.31323713478475e-07,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.33": 5.804458933270077e-07,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.35": 6.344991842840976e-07,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.4": 8.672226087595276e-07,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.45": 1.2911011591533497e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.5": 1.9881062959523714e-06,
+        "radial_corrected_dirs_oracle_mean_oracle_exact_anchor": 1.6296551630898208e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.2": 4.860701336788047e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.25": 4.16421075548683e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.3": 4.18632159802124e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.33": 4.605412783400497e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.35": 5.101640914515811e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.4": 7.36677510590422e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.45": 1.1719242740380533e-06,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.5": 1.917568144796437e-06,
+        "radial_corrected_dirs_sample_mean_oracle_exact_anchor": 1.6304726625001906e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.2": 6.683205594495444e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.25": 6.207758153696622e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.3": 6.947577462299187e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.33": 8.069727921999725e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.35": 9.159200424667563e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.4": 1.3382257034333259e-06,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.45": 2.0438168286086655e-06,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.5": 3.1428133875351374e-06,
+        "radial_corrected_dirs_factorized_mean_oracle_exact_anchor": 1.630240784340552e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.2": 5.894707423149755e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.25": 5.097867538772086e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.3": 5.035969360695872e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.33": 5.410968767075775e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.35": 5.879870999931099e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.4": 8.081713991231753e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.45": 1.2373843605123578e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.5": 1.9767026104013352e-06
+      },
+      "diagnostics": {
+        "legacy_dirs_oracle_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3083981440232189,
+          "condition_ridge_0.1": 3.6258187207835224,
+          "feature_mean_norm": 0.001888450948191141
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.30840038010352344,
+          "condition_ridge_0.1": 3.62545477387999,
+          "feature_mean_norm": 0.0030138167015346207
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3083992887324437,
+          "condition_ridge_0.1": 3.6252416324863175,
+          "feature_mean_norm": 0.0025279362785049237
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.30839839274667324,
+          "condition_ridge_0.1": 3.6250250482932893,
+          "feature_mean_norm": 0.0020444789176681417
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.30839794894088335,
+          "condition_ridge_0.1": 3.6248934557898975,
+          "feature_mean_norm": 0.0017564005506194365
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.30839769214791507,
+          "condition_ridge_0.1": 3.624805049267056,
+          "feature_mean_norm": 0.001565690825251003
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.30839718693750073,
+          "condition_ridge_0.1": 3.6245816892662837,
+          "feature_mean_norm": 0.0010976989453557419
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3083968771163906,
+          "condition_ridge_0.1": 3.624355047977357,
+          "feature_mean_norm": 0.000663746704602764
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.30839676268517335,
+          "condition_ridge_0.1": 3.6241252308356313,
+          "feature_mean_norm": 0.00039779127690622813
+        },
+        "legacy_dirs_sample_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.307991732229261,
+          "condition_ridge_0.1": 3.614296016820612,
+          "feature_mean_norm": 0.0018849746060086952
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.30799075901146306,
+          "condition_ridge_0.1": 3.614026789192701,
+          "feature_mean_norm": 0.0010747970834116985
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.307990435417764,
+          "condition_ridge_0.1": 3.61389469973275,
+          "feature_mean_norm": 0.0005982292516617867
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3079903074717861,
+          "condition_ridge_0.1": 3.613759371818222,
+          "feature_mean_norm": 0.00020646840788177752
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.30799032461522247,
+          "condition_ridge_0.1": 3.6136766308586106,
+          "feature_mean_norm": 0.000291323364080511
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.30799037517377315,
+          "condition_ridge_0.1": 3.6136208326719728,
+          "feature_mean_norm": 0.0004576479741441815
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.30799063852359615,
+          "condition_ridge_0.1": 3.613479135401222,
+          "feature_mean_norm": 0.0009264532540280592
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.30799109752075315,
+          "condition_ridge_0.1": 3.6133343589389924,
+          "feature_mean_norm": 0.001410408130448782
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3079917521643696,
+          "condition_ridge_0.1": 3.613186607970897,
+          "feature_mean_norm": 0.0018979589183775864
+        },
+        "legacy_dirs_factorized_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.308464489240505,
+          "condition_ridge_0.1": 3.6326628136683836,
+          "feature_mean_norm": 0.0018890308088202676
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3084683171315892,
+          "condition_ridge_0.1": 3.6320056940979306,
+          "feature_mean_norm": 0.0036075814270470313
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.308466992553299,
+          "condition_ridge_0.1": 3.6317149219083333,
+          "feature_mean_norm": 0.0031218467743137474
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.30846586331575515,
+          "condition_ridge_0.1": 3.6314211204171314,
+          "feature_mean_norm": 0.002638043273088506
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.30846527953769487,
+          "condition_ridge_0.1": 3.6312433989984503,
+          "feature_mean_norm": 0.002349184719681747
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3084649294211028,
+          "condition_ridge_0.1": 3.631124324750772,
+          "feature_mean_norm": 0.0021574704720944997
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3084641908711163,
+          "condition_ridge_0.1": 3.6308245957800365,
+          "feature_mean_norm": 0.0016828983522797453
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.30846364766719875,
+          "condition_ridge_0.1": 3.630522020043397,
+          "feature_mean_norm": 0.0012213420442808555
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3084632998103822,
+          "condition_ridge_0.1": 3.6302167096562803,
+          "feature_mean_norm": 0.0007957810082090408
+        },
+        "radial_corrected_dirs_oracle_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.31292727602687215,
+          "condition_ridge_0.1": 3.416496293259623,
+          "feature_mean_norm": 0.001912434232160597
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3129295477468431,
+          "condition_ridge_0.1": 3.4161438551424155,
+          "feature_mean_norm": 0.0030568759337966326
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3129284558614046,
+          "condition_ridge_0.1": 3.415930017299463,
+          "feature_mean_norm": 0.0025711922354473434
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.31292755631099917,
+          "condition_ridge_0.1": 3.4157109964095884,
+          "feature_mean_norm": 0.0020878394080186256
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3129271089022766,
+          "condition_ridge_0.1": 3.4155771093525975,
+          "feature_mean_norm": 0.001799728326313727
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3129268490972855,
+          "condition_ridge_0.1": 3.415486827533551,
+          "feature_mean_norm": 0.0016089195507505275
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3129263342215678,
+          "condition_ridge_0.1": 3.4152575756569292,
+          "feature_mean_norm": 0.0011400331981799656
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.31292601168479534,
+          "condition_ridge_0.1": 3.415023335601432,
+          "feature_mean_norm": 0.0007015939781477139
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3129258814875629,
+          "condition_ridge_0.1": 3.414784231918014,
+          "feature_mean_norm": 0.00040779574844550373
+        },
+        "radial_corrected_dirs_sample_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3125145022136098,
+          "condition_ridge_0.1": 3.4044168585133723,
+          "feature_mean_norm": 0.001908904758681372
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3125135187170003,
+          "condition_ridge_0.1": 3.4041408559546973,
+          "feature_mean_norm": 0.0010886071926605673
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3125131942014937,
+          "condition_ridge_0.1": 3.404000998632353,
+          "feature_mean_norm": 0.0006113445660643842
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.31251306227959724,
+          "condition_ridge_0.1": 3.4038562221998165,
+          "feature_mean_norm": 0.0002095795363490801
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3125130755715085,
+          "condition_ridge_0.1": 3.4037670085699108,
+          "feature_mean_norm": 0.00027776743841392214
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.31251312295155476,
+          "condition_ridge_0.1": 3.4037065618612274,
+          "feature_mean_norm": 0.0004422780016142261
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3125133762172541,
+          "condition_ridge_0.1": 3.403552082666129,
+          "feature_mean_norm": 0.0009103850418493327
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.312513822076227,
+          "condition_ridge_0.1": 3.403392879429107,
+          "feature_mean_norm": 0.0013940935632845643
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.31251446052764925,
+          "condition_ridge_0.1": 3.403229076631577,
+          "feature_mean_norm": 0.0018814084211072023
+        },
+        "radial_corrected_dirs_factorized_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3130078209013938,
+          "condition_ridge_0.1": 3.422204977351254,
+          "feature_mean_norm": 0.0019131054722151073
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3130116068731291,
+          "condition_ridge_0.1": 3.4216732805976457,
+          "feature_mean_norm": 0.003624960687378213
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3130102950662339,
+          "condition_ridge_0.1": 3.4213873624850826,
+          "feature_mean_norm": 0.0031393407898811167
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3130091755425303,
+          "condition_ridge_0.1": 3.4210966488885037,
+          "feature_mean_norm": 0.00265557640636353
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.31300859612511317,
+          "condition_ridge_0.1": 3.420919935061426,
+          "feature_mean_norm": 0.0023666819914555186
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3130082483040816,
+          "condition_ridge_0.1": 3.4208011816395216,
+          "feature_mean_norm": 0.002174906055470148
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.31300751335259647,
+          "condition_ridge_0.1": 3.4205010323206215,
+          "feature_mean_norm": 0.0016999563215741036
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.31300697068942956,
+          "condition_ridge_0.1": 3.4201963021629,
+          "feature_mean_norm": 0.0012373324070165247
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3130066203155809,
+          "condition_ridge_0.1": 3.41988712192618,
+          "feature_mean_norm": 0.0008084777799695858
+        }
+      },
+      "anchor_diagnostics": {
+        "directions": {
+          "legacy_dirs": {
+            "factorized_c21_relative_error": 0.23999112877375614
+          },
+          "radial_corrected_dirs": {
+            "factorized_c21_relative_error": 0.24118488491292653
+          }
+        },
+        "sample_mean_relative_error": 0.0006676584630980254,
+        "factorized_mean_relative_error": 0.0024535102644535813
+      },
+      "seconds": 3.193559791892767
+    },
+    {
+      "index": 166,
+      "name": "tara-harris",
+      "baseline_mse": 6.550635664715546e-07,
+      "method_mses": {
+        "legacy_dirs_oracle_mean_oracle_exact_anchor": 2.814163977945949e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.2": 1.878669929371456e-05,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.25": 1.0688517411557472e-05,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.3": 5.715817575732001e-06,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.33": 3.816040715274419e-06,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.35": 2.8879393627894662e-06,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.4": 1.427882092352445e-06,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.45": 7.652972040802545e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.5": 5.386612947772538e-07,
+        "legacy_dirs_sample_mean_oracle_exact_anchor": 2.814983959739173e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.2": 2.217571965855833e-05,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.25": 1.3409303978768955e-05,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.3": 7.827642577359732e-06,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.33": 5.603680064070906e-06,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.35": 4.480678460053677e-06,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.4": 2.621749991264333e-06,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.45": 1.7104626984124692e-06,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.5": 1.4147432131416668e-06,
+        "legacy_dirs_factorized_mean_oracle_exact_anchor": 2.8099211922864716e-07,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.2": 3.3166539333026184e-05,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.25": 2.0913725466029638e-05,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.3": 1.2786765208125928e-05,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.33": 9.414576754875446e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.35": 7.660292045074292e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.4": 4.608815732909701e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.45": 2.9102932425061566e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.5": 2.0488975968733076e-06,
+        "radial_corrected_dirs_oracle_mean_oracle_exact_anchor": 2.806076238531185e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.2": 2.428770209422974e-05,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.25": 1.3381717876617739e-05,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.3": 6.830963472876692e-06,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.33": 4.393769369827819e-06,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.35": 3.229052910927857e-06,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.4": 1.4643440317883864e-06,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.45": 7.250487855423306e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.5": 5.029104614721015e-07,
+        "radial_corrected_dirs_sample_mean_oracle_exact_anchor": 2.8069214217735763e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.2": 2.7883578967152165e-05,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.25": 1.6286265876818777e-05,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.3": 9.077302378345227e-06,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.33": 6.280036233855982e-06,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.35": 4.895834398485465e-06,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.4": 2.6753384136961924e-06,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.45": 1.6485146962359354e-06,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.5": 1.3507506747944547e-06,
+        "radial_corrected_dirs_factorized_mean_oracle_exact_anchor": 2.80180444357122e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.2": 4.040376111432861e-05,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.25": 2.4520414634434164e-05,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.3": 1.4248437995977123e-05,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.33": 1.0104067417155582e-05,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.35": 7.994743339328147e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.4": 4.454561096932741e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.45": 2.6174532433861414e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.5": 1.771929673499029e-06
+      },
+      "diagnostics": {
+        "legacy_dirs_oracle_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26542603090531086,
+          "condition_ridge_0.1": 2.327462711145251,
+          "feature_mean_norm": 0.0014634538732831545
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26542784355564925,
+          "condition_ridge_0.1": 2.3287664518271325,
+          "feature_mean_norm": 0.002447592094260077
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26542708298469386,
+          "condition_ridge_0.1": 2.3282765438819424,
+          "feature_mean_norm": 0.002091816365101983
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2654264418823763,
+          "condition_ridge_0.1": 2.3278892477060253,
+          "feature_mean_norm": 0.0017361941150146525
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2654261145662988,
+          "condition_ridge_0.1": 2.327705924490571,
+          "feature_mean_norm": 0.0015229391645391705
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26542592024956224,
+          "condition_ridge_0.1": 2.3276040957518465,
+          "feature_mean_norm": 0.0013808439299905495
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2654255180869561,
+          "condition_ridge_0.1": 2.3274207323352547,
+          "feature_mean_norm": 0.001026048520903833
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2654252353951008,
+          "condition_ridge_0.1": 2.3273389131709163,
+          "feature_mean_norm": 0.0006726862788726938
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2654250721743782,
+          "condition_ridge_0.1": 2.327358505006876,
+          "feature_mean_norm": 0.0003254592856181688
+        },
+        "legacy_dirs_sample_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26514773741525866,
+          "condition_ridge_0.1": 2.324195738374569,
+          "feature_mean_norm": 0.0014614705806221494
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26514733418512,
+          "condition_ridge_0.1": 2.325565720709845,
+          "feature_mean_norm": 0.0011316238054538113
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2651470246542229,
+          "condition_ridge_0.1": 2.325053337888154,
+          "feature_mean_norm": 0.0007899382777304421
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26514683471976813,
+          "condition_ridge_0.1": 2.324643453953109,
+          "feature_mean_norm": 0.00047023205171010024
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26514677816550125,
+          "condition_ridge_0.1": 2.324446526862534,
+          "feature_mean_norm": 0.00031805143673247876
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26514676438201273,
+          "condition_ridge_0.1": 2.3243356084603173,
+          "feature_mean_norm": 0.00026817818062700597
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2651468136410518,
+          "condition_ridge_0.1": 2.3241294526325835,
+          "feature_mean_norm": 0.0004200077915355946
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2651469824968188,
+          "condition_ridge_0.1": 2.3240247489768775,
+          "feature_mean_norm": 0.0007311492375800548
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2651472709490852,
+          "condition_ridge_0.1": 2.324021370999861,
+          "feature_mean_norm": 0.0010707182283658813
+        },
+        "legacy_dirs_factorized_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26517445871951806,
+          "condition_ridge_0.1": 2.34502882674068,
+          "feature_mean_norm": 0.001463331845247792
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26517631617555426,
+          "condition_ridge_0.1": 2.346776890917789,
+          "feature_mean_norm": 0.0024661210598944435
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2651755501298901,
+          "condition_ridge_0.1": 2.346236543186772,
+          "feature_mean_norm": 0.0021110798400939767
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2651749036661571,
+          "condition_ridge_0.1": 2.345797646870571,
+          "feature_mean_norm": 0.0017564876187228
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26517457318761495,
+          "condition_ridge_0.1": 2.3455827621314636,
+          "feature_mean_norm": 0.0015440765093950183
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26517437678523004,
+          "condition_ridge_0.1": 2.3454596275020467,
+          "feature_mean_norm": 0.0014026849512555652
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2651739694878216,
+          "condition_ridge_0.1": 2.345222022232401,
+          "feature_mean_norm": 0.0010504699160415714
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2651736817744829,
+          "condition_ridge_0.1": 2.3450844792858017,
+          "feature_mean_norm": 0.0007022354810284039
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26517351364560315,
+          "condition_ridge_0.1": 2.345046757520985,
+          "feature_mean_norm": 0.0003694156891618221
+        },
+        "radial_corrected_dirs_oracle_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.269406093789519,
+          "condition_ridge_0.1": 2.405524273405102,
+          "feature_mean_norm": 0.0014847093369867027
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2694079825364712,
+          "condition_ridge_0.1": 2.406994827162893,
+          "feature_mean_norm": 0.002505014090404379
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2694072167225867,
+          "condition_ridge_0.1": 2.4064488279918868,
+          "feature_mean_norm": 0.002150480632356408
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26940656777144883,
+          "condition_ridge_0.1": 2.406017565132444,
+          "feature_mean_norm": 0.0017960823132202022
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2694062344952421,
+          "condition_ridge_0.1": 2.4058136995277812,
+          "feature_mean_norm": 0.001583545935005182
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.269406035683902,
+          "condition_ridge_0.1": 2.4057006150575675,
+          "feature_mean_norm": 0.0014419187807527072
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26940562046063854,
+          "condition_ridge_0.1": 2.405497677676543,
+          "feature_mean_norm": 0.0010882192947260037
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.269405322102199,
+          "condition_ridge_0.1": 2.4054085765931292,
+          "feature_mean_norm": 0.000735653495366548
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2694051406089715,
+          "condition_ridge_0.1": 2.4054332592290946,
+          "feature_mean_norm": 0.0003873296603404184
+        },
+        "radial_corrected_dirs_sample_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26912531002172,
+          "condition_ridge_0.1": 2.402253302991765,
+          "feature_mean_norm": 0.001482733805596425
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26912491975159514,
+          "condition_ridge_0.1": 2.40385679298094,
+          "feature_mean_norm": 0.0011654388017894627
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26912460332025623,
+          "condition_ridge_0.1": 2.403272052340041,
+          "feature_mean_norm": 0.000822782797337516
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2691244038759959,
+          "condition_ridge_0.1": 2.402802010318237,
+          "feature_mean_norm": 0.0004975628916799246
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26912434036335203,
+          "condition_ridge_0.1": 2.402574867129255,
+          "feature_mean_norm": 0.0003329060346458929
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2691243214190743,
+          "condition_ridge_0.1": 2.4024462626007126,
+          "feature_mean_norm": 0.00026464976754618356
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.269124355949599,
+          "condition_ridge_0.1": 2.4022045279866773,
+          "feature_mean_norm": 0.0003799783368181714
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.269124507467525,
+          "condition_ridge_0.1": 2.402076648631319,
+          "feature_mean_norm": 0.0006860036021358916
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2691247759726545,
+          "condition_ridge_0.1": 2.4020625901539385,
+          "feature_mean_norm": 0.0010240565006579313
+        },
+        "radial_corrected_dirs_factorized_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26915776598467095,
+          "condition_ridge_0.1": 2.4168006189802917,
+          "feature_mean_norm": 0.0014845964372405863
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26915972930878784,
+          "condition_ridge_0.1": 2.4183781332716587,
+          "feature_mean_norm": 0.002536058647908349
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2691589536300613,
+          "condition_ridge_0.1": 2.417830110263736,
+          "feature_mean_norm": 0.0021820504265077706
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2691582949218196,
+          "condition_ridge_0.1": 2.4173947532692805,
+          "feature_mean_norm": 0.0018283785250110417
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2691579558430709,
+          "condition_ridge_0.1": 2.417187377251368,
+          "feature_mean_norm": 0.0016164286646296446
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26915775318492147,
+          "condition_ridge_0.1": 2.4170714939948073,
+          "feature_mean_norm": 0.0014752848424365048
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2691573284200733,
+          "condition_ridge_0.1": 2.4168598868410966,
+          "feature_mean_norm": 0.0011233147691657873
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.2691570206278288,
+          "condition_ridge_0.1": 2.41675960940867,
+          "feature_mean_norm": 0.0007740026767611983
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.26915682980858924,
+          "condition_ridge_0.1": 2.416770462877131,
+          "feature_mean_norm": 0.0004338174562466796
+        }
+      },
+      "anchor_diagnostics": {
+        "directions": {
+          "legacy_dirs": {
+            "factorized_c21_relative_error": 0.2561033952890078
+          },
+          "radial_corrected_dirs": {
+            "factorized_c21_relative_error": 0.2591439742534303
+          }
+        },
+        "sample_mean_relative_error": 0.0006035238265823446,
+        "factorized_mean_relative_error": 0.0029917634088356907
+      },
+      "seconds": 3.3677480001933873
+    },
+    {
+      "index": 167,
+      "name": "kathy-wright",
+      "baseline_mse": 1.3442389485466154e-07,
+      "method_mses": {
+        "legacy_dirs_oracle_mean_oracle_exact_anchor": 1.250770280620792e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.2": 2.676807393100242e-06,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.25": 1.2806694499161846e-06,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.3": 7.43680035058288e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.33": 6.684327064954498e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.35": 6.961497813333903e-07,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.4": 1.0489197825726284e-06,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.45": 1.9941036005432455e-06,
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.5": 4.0042773707456116e-06,
+        "legacy_dirs_sample_mean_oracle_exact_anchor": 1.2497403565923016e-07,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.2": 3.515334335688617e-06,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.25": 1.8588895646562214e-06,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.3": 1.1708752680821895e-06,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.33": 1.0564800994873632e-06,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.35": 1.079182678319999e-06,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.4": 1.4918006084867893e-06,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.45": 2.597577180815943e-06,
+        "legacy_dirs_sample_mean_factorized_c21_scale1.5": 4.865432163503226e-06,
+        "legacy_dirs_factorized_mean_oracle_exact_anchor": 1.2522272023719937e-07,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.2": 6.480786300740015e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.25": 3.6434423067283108e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.3": 2.227020009066742e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.33": 1.829917187222264e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.35": 1.708273032058093e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.4": 1.8439360276446806e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.45": 2.6723226594809482e-06,
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.5": 4.513367513418671e-06,
+        "radial_corrected_dirs_oracle_mean_oracle_exact_anchor": 1.2688339012725934e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.2": 3.4836583286652866e-06,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.25": 1.7276440174258669e-06,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.3": 9.875020274789746e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.33": 8.419872848616769e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.35": 8.364282365046356e-07,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.4": 1.124469121915235e-06,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.45": 1.979564679081827e-06,
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.5": 3.8070681011154224e-06,
+        "radial_corrected_dirs_sample_mean_oracle_exact_anchor": 1.2677955331327415e-07,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.2": 4.426967342834776e-06,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.25": 2.3956424717137053e-06,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.3": 1.4859847096722949e-06,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.33": 1.2891744624256071e-06,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.35": 1.2702625169353701e-06,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.4": 1.5971587951795823e-06,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.45": 2.5928253383397036e-06,
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.5": 4.660416644353197e-06,
+        "radial_corrected_dirs_factorized_mean_oracle_exact_anchor": 1.2704357576488087e-07,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.2": 7.269830819090954e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.25": 4.138012610663942e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.3": 2.532472230850058e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.33": 2.0596652175762597e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.35": 1.8988027822915365e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.4": 1.9588077805374425e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.45": 2.712251896235974e-06,
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.5": 4.437086313142271e-06
+      },
+      "diagnostics": {
+        "legacy_dirs_oracle_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3441725682019637,
+          "condition_ridge_0.1": 2.9800790984530416,
+          "feature_mean_norm": 0.0008975739823477179
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34417713546138995,
+          "condition_ridge_0.1": 2.979001004766888,
+          "feature_mean_norm": 0.0036580221082391814
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34417581999690944,
+          "condition_ridge_0.1": 2.9795660771849883,
+          "feature_mean_norm": 0.0031239574728943098
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34417471789311466,
+          "condition_ridge_0.1": 2.9798813558540367,
+          "feature_mean_norm": 0.002593178615659683
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3441741590448361,
+          "condition_ridge_0.1": 2.979950344431049,
+          "feature_mean_norm": 0.0022772450445920334
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34417382915205535,
+          "condition_ridge_0.1": 2.9799462116738624,
+          "feature_mean_norm": 0.0020682168322376845
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3441731537753843,
+          "condition_ridge_0.1": 2.979760398352481,
+          "feature_mean_norm": 0.0015549748839654885
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3441726917643576,
+          "condition_ridge_0.1": 2.9793240526009765,
+          "feature_mean_norm": 0.0010704454243694837
+        },
+        "legacy_dirs_oracle_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3441724431198346,
+          "condition_ridge_0.1": 2.978637693606771,
+          "feature_mean_norm": 0.000679146829128518
+        },
+        "legacy_dirs_sample_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34398736306539307,
+          "condition_ridge_0.1": 2.9833993916073,
+          "feature_mean_norm": 0.0008958366368292088
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34398971817922397,
+          "condition_ridge_0.1": 2.9824170197950486,
+          "feature_mean_norm": 0.00269881096734578
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34398877430296493,
+          "condition_ridge_0.1": 2.9829321370896156,
+          "feature_mean_norm": 0.0021647434892593507
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34398804390561805,
+          "condition_ridge_0.1": 2.983197005635177,
+          "feature_mean_norm": 0.0016358877110891018
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34398770813767,
+          "condition_ridge_0.1": 2.9832355328969933,
+          "feature_mean_norm": 0.0013236796353114887
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3439875269885432,
+          "condition_ridge_0.1": 2.983211003946899,
+          "feature_mean_norm": 0.0011196532161647872
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34398722355270267,
+          "condition_ridge_0.1": 2.9829738935562515,
+          "feature_mean_norm": 0.000646991914802294
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3439871335986615,
+          "condition_ridge_0.1": 2.9824858191654635,
+          "feature_mean_norm": 0.0004135870444613504
+        },
+        "legacy_dirs_sample_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34398725712658723,
+          "condition_ridge_0.1": 2.9817473080788597,
+          "feature_mean_norm": 0.0007148359539415166
+        },
+        "legacy_dirs_factorized_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3441634190298961,
+          "condition_ridge_0.1": 2.978533565515228,
+          "feature_mean_norm": 0.0008975109385528243
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34416394853978893,
+          "condition_ridge_0.1": 2.9774981080831244,
+          "feature_mean_norm": 0.0015044701682934705
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3441634704411162,
+          "condition_ridge_0.1": 2.9780526109461363,
+          "feature_mean_norm": 0.0009731787018676958
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34416320571463,
+          "condition_ridge_0.1": 2.9783599867954758,
+          "feature_mean_norm": 0.0004671226567281191
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3441631492976091,
+          "condition_ridge_0.1": 2.9784254598181104,
+          "feature_mean_norm": 0.00025073948047415524
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3441631543608227,
+          "condition_ridge_0.1": 2.9784194772081496,
+          "feature_mean_norm": 0.0002771477210140433
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3441633163797897,
+          "condition_ridge_0.1": 2.9782307090036277,
+          "feature_mean_norm": 0.0007231173032595425
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3441636917712297,
+          "condition_ridge_0.1": 2.9777936947853894,
+          "feature_mean_norm": 0.0012475844265845766
+        },
+        "legacy_dirs_factorized_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34416428053444453,
+          "condition_ridge_0.1": 2.977108832761712,
+          "feature_mean_norm": 0.0017825587397940666
+        },
+        "radial_corrected_dirs_oracle_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3461622246414594,
+          "condition_ridge_0.1": 3.1385349624788987,
+          "feature_mean_norm": 0.0009057200233860349
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3461668104854952,
+          "condition_ridge_0.1": 3.1370953359508498,
+          "feature_mean_norm": 0.0036769526332321384
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3461654956046508,
+          "condition_ridge_0.1": 3.1378166898519537,
+          "feature_mean_norm": 0.0031430308172463012
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34616439259483467,
+          "condition_ridge_0.1": 3.1382527965462406,
+          "feature_mean_norm": 0.0026122894302431834
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3461638324878972,
+          "condition_ridge_0.1": 3.1383772251625826,
+          "feature_mean_norm": 0.0022962893328040044
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34616350145807206,
+          "condition_ridge_0.1": 3.138402933651754,
+          "feature_mean_norm": 0.002087156130868225
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34616282219599925,
+          "condition_ridge_0.1": 3.1382667691328097,
+          "feature_mean_norm": 0.0015732567050395112
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34616235480986346,
+          "condition_ridge_0.1": 3.1378443616836282,
+          "feature_mean_norm": 0.0010866480126266757
+        },
+        "radial_corrected_dirs_oracle_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34616209930052305,
+          "condition_ridge_0.1": 3.137136160278995,
+          "feature_mean_norm": 0.0006879116547977987
+        },
+        "radial_corrected_dirs_sample_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3459762900567716,
+          "condition_ridge_0.1": 3.1418755672888383,
+          "feature_mean_norm": 0.0009039811102701761
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3459786474881514,
+          "condition_ridge_0.1": 3.1405497777727924,
+          "feature_mean_norm": 0.002709635949772935
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3459777049637789,
+          "condition_ridge_0.1": 3.1412193340808248,
+          "feature_mean_norm": 0.0021756341771442082
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34597697442763625,
+          "condition_ridge_0.1": 3.141603176776367,
+          "feature_mean_norm": 0.001646630639604586
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3459766378608758,
+          "condition_ridge_0.1": 3.141696028988048,
+          "feature_mean_norm": 0.0013341057381896979
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3459764558810663,
+          "condition_ridge_0.1": 3.141700597615522,
+          "feature_mean_norm": 0.0011296690452846038
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3459761493250222,
+          "condition_ridge_0.1": 3.1415112789756323,
+          "feature_mean_norm": 0.0006539595847844499
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34597605476006754,
+          "condition_ridge_0.1": 3.141035294180364,
+          "feature_mean_norm": 0.00040733944475540107
+        },
+        "radial_corrected_dirs_sample_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34597617218637605,
+          "condition_ridge_0.1": 3.1402731069915544,
+          "feature_mean_norm": 0.0007006703975777702
+        },
+        "radial_corrected_dirs_factorized_mean_oracle_exact_anchor": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34615404139502837,
+          "condition_ridge_0.1": 3.136295673366689,
+          "feature_mean_norm": 0.0009056646714923768
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.2": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34615459040233837,
+          "condition_ridge_0.1": 3.1349249718094443,
+          "feature_mean_norm": 0.0015298883932098604
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.25": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3461541051042641,
+          "condition_ridge_0.1": 3.135625285640526,
+          "feature_mean_norm": 0.0009983256927235309
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.3": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34615383168799635,
+          "condition_ridge_0.1": 3.1360428603451913,
+          "feature_mean_norm": 0.0004893885776080085
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.33": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34615376934172787,
+          "condition_ridge_0.1": 3.136157331413324,
+          "feature_mean_norm": 0.00025855366493096436
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.35": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34615377015403714,
+          "condition_ridge_0.1": 3.1361768722235985,
+          "feature_mean_norm": 0.00026286777874020856
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.4": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3461539205024996,
+          "condition_ridge_0.1": 3.1360268900487114,
+          "feature_mean_norm": 0.0006967417429522878
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.45": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.34615428273310755,
+          "condition_ridge_0.1": 3.135592875769604,
+          "feature_mean_norm": 0.0012200614499734018
+        },
+        "radial_corrected_dirs_factorized_mean_factorized_c21_scale1.5": {
+          "features": 4.0,
+          "kept": 4.0,
+          "feature_rms": 0.3461548568451958,
+          "condition_ridge_0.1": 3.134875184388567,
+          "feature_mean_norm": 0.0017545375815621724
+        }
+      },
+      "anchor_diagnostics": {
+        "directions": {
+          "legacy_dirs": {
+            "factorized_c21_relative_error": 0.31238230685279833
+          },
+          "radial_corrected_dirs": {
+            "factorized_c21_relative_error": 0.31296312193043563
+          }
+        },
+        "sample_mean_relative_error": 0.0005577670637118922,
+        "factorized_mean_relative_error": 0.0024989053776442232
+      },
+      "seconds": 4.299075458897278
+    }
+  ]
+}

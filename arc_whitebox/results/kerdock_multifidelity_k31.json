@@ -1,0 +1,83 @@
+{
+  "protocol": {
+    "split": "official IDs 0--49 only",
+    "baseline_rotation_seed": 3,
+    "alternate_rotation_seeds": [
+      0,
+      1
+    ],
+    "candidate_seed": 2026072802,
+    "candidate_count_per_size": 20000,
+    "harmonic_filter": "intersection of best quartile quartic leakage and best quartile sixth-moment mismatch",
+    "formula": "F3 + alpha * ((P0_S-P3_S) + (P1_S-P3_S))/2"
+  },
+  "baseline_selection_mse": 1.7587467361245454e-07,
+  "records": [
+    {
+      "bases_per_alternate_rotation": 31,
+      "extra_rows": 31744,
+      "total_rows": 97792,
+      "subset": [
+        11,
+        13,
+        14,
+        15,
+        16,
+        32,
+        34,
+        35,
+        36,
+        37,
+        38,
+        40,
+        45,
+        53,
+        61,
+        65,
+        67,
+        68,
+        72,
+        75,
+        77,
+        78,
+        90,
+        91,
+        95,
+        96,
+        101,
+        112,
+        116,
+        119,
+        123
+      ],
+      "candidate_index": 1937,
+      "admissible_candidates": 3703,
+      "quartic_rms": 8.388362025602859e-07,
+      "quartic_percentile": 0.0935,
+      "sixth_mismatch_rms": 5.18102163206335e-08,
+      "sixth_mismatch_percentile": 0.1966,
+      "fitted_alpha": 0.14309829179544864,
+      "selection_mse": 1.3811473886169794e-07,
+      "selection_reduction_fraction": 0.21469796631413696,
+      "fivefold_refit_alpha_mse": 1.3938030307112703e-07,
+      "fivefold_alphas": [
+        0.1370469288937535,
+        0.15637827289026868,
+        0.14563917697089182,
+        0.13054667368652226,
+        0.14492473920460525
+      ],
+      "simple_alpha_mses": {
+        "0.03125": 1.6118332871562724e-07,
+        "0.046875": 1.5518824661900246e-07,
+        "0.0625": 1.500935580902369e-07,
+        "0.078125": 1.4589926312933053e-07,
+        "0.09375": 1.4260536173628337e-07,
+        "0.109375": 1.4021185391109543e-07,
+        "0.125": 1.3871873965376673e-07
+      },
+      "best_simple_alpha": 0.125,
+      "best_simple_alpha_mse": 1.3871873965376673e-07
+    }
+  ]
+}

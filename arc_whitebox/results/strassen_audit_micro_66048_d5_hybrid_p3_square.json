@@ -1,0 +1,79 @@
+{
+  "method": "Strassen/Winograd on rectangular or 258-square-block Kerdock activations",
+  "selection_only": true,
+  "indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "width": 256,
+  "depth": 32,
+  "points": 66048,
+  "square_blocks": 258,
+  "micro_rows": 66048,
+  "budget": 272000000000,
+  "lambda_flops_per_second": 100000000000.0,
+  "microbenchmark": [
+    {
+      "layout": "square_batch",
+      "schedule": "hybrid_p3",
+      "variant": "winograd",
+      "recursion_depth": 5,
+      "leaf_size": 8,
+      "leaf_products": 16807,
+      "tracked_flops": 5639804672,
+      "tracked_flop_ratio_to_blas": 0.6527449585381301,
+      "wall_time_s_median": 1.4062101249583066,
+      "residual_wall_time_s_median": 0.002055960241705179,
+      "max_abs_difference": 0.00010824203491210938,
+      "rms_difference": 8.839121794059916e-06,
+      "operation_breakdown": {
+        "asarray": {
+          "flop_cost": 0,
+          "calls": 2,
+          "flopscope_backend_time_s": 1.2908130884170532e-06,
+          "flopscope_overhead_time_s": 2.6625115424394608e-05
+        },
+        "add": {
+          "flop_cost": 608087424,
+          "calls": 77,
+          "flopscope_backend_time_s": 0.2610365867149085,
+          "flopscope_overhead_time_s": 0.0043794880621135235
+        },
+        "subtract": {
+          "flop_cost": 348825344,
+          "calls": 88,
+          "flopscope_backend_time_s": 0.33891041739843786,
+          "flopscope_overhead_time_s": 0.003935292595997453
+        },
+        "stack": {
+          "flop_cost": 172655616,
+          "calls": 6,
+          "flopscope_backend_time_s": 0.04844791907817125,
+          "flopscope_overhead_time_s": 0.00024391361512243748
+        },
+        "matmul": {
+          "flop_cost": 4162757760,
+          "calls": 49,
+          "flopscope_backend_time_s": 0.5083957475144416,
+          "flopscope_overhead_time_s": 0.005068256054073572
+        },
+        "block": {
+          "flop_cost": 347478528,
+          "calls": 11,
+          "flopscope_backend_time_s": 0.23306949925608933,
+          "flopscope_overhead_time_s": 0.000655625481158495
+        }
+      }
+    }
+  ],
+  "selection": [],
+  "summaries": []
+}

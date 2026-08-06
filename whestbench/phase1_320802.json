@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "record_type": "phase1_prize_submission_binding",
+  "generated_at_utc": "2026-08-03",
+  "challenge": {
+    "name": "ARC White-Box Estimation Challenge 2026",
+    "organizer": "Alignment Research Center",
+    "phase": "Phase 1",
+    "url": "https://www.aicrowd.com/challenges/arc-white-box-estimation-challenge-2026"
+  },
+  "submission": {
+    "id": 320802,
+    "url": "https://www.aicrowd.com/challenges/arc-white-box-estimation-challenge-2026/submissions/320802",
+    "participant": "skye_nygaard",
+    "status": "GRADED",
+    "grading_message": "Graded successfully",
+    "submitted_local": "2026-07-29 13:03",
+    "read_from_aicrowd_on": "2026-08-03",
+    "public_split": {
+      "mlps_scored": 50,
+      "mlps_total": 50,
+      "failures": 0,
+      "adjusted_score": 1.55e-07,
+      "final_layer_mse": 2.416e-07,
+      "all_layers_mse_mean": 0.7437,
+      "best_mlp_adjusted": 3.62e-08,
+      "best_mlp_name": "dylan-meyer",
+      "worst_mlp_adjusted": 5.11e-07,
+      "worst_mlp_name": "angela-walker",
+      "iqr_p25": 9.81e-08,
+      "iqr_p75": 1.94e-07,
+      "mean_effective_compute": 1.75e11,
+      "compute_utilization": 0.6419,
+      "monte_carlo_reference": 6.47e-07,
+      "ratio_vs_monte_carlo": 4.2
+    },
+    "private_split": {
+      "mlps": 50,
+      "status": "sealed until Phase 2 close"
+    }
+  },
+  "archive": {
+    "path": "arc_whitebox/submissions/production_baseline_320802/submission.tar.gz",
+    "sha256": "77be0e8865b2aeee6c6c16314cac4d38496efefed6b2b758f75bc3033bb6b7bc",
+    "bytes": 255400,
+    "whest_validate_package": "pass",
+    "members": {
+      "estimator.py": "f1e32ce44fe43b53eba3f70f9cf6383da588ec1bbb3d82c047edbc916a98d8df",
+      "fast_matmul.py": "fb1b93cb625b66ce5f26220ea3b6b685dbb9887d50f8756cafa9426577d45085",
+      "kerdock_mub5_seed3.npz": "58eac1b69707b204d00f6d50cf4e1996b1fcd566154ec93a7ecb5668c1acbfad"
+    },
+    "provenance": "frozen re-package cut 2026-07-30 as production_baseline.tar.gz in the T0 grader-instrumentation bundle",
+    "identification_basis": "recorded operating point, not a byte comparison with the uploaded tarball",
+    "identification_evidence": "T0 RESULTS.json current_position adjusted_score 1.55e-07, raw_mse 2.416e-07, effective_compute 1.745e11, compute_multiplier 0.6415441176470589",
+    "authoritative_copy": "AIcrowd holds the tarball actually uploaded on 2026-07-29; that upload is the object of record",
+    "known_packaging_defect": "the earlier kerdock_mub5_winograd_tree archive declared estimator.py 7c3fcc2ac542bda41ab568e62428ec75b7edec6f146d61a036c0710d9ee49694 in its manifest but archived different bytes; recorded in the T0 manifest_actual.json"
+  },
+  "method": {
+    "family": "static network-independent spherical cubature",
+    "design": "Kerdock / maximal-real-MUB spherical 5-design",
+    "dimension": 256,
+    "depth": 32,
+    "bases_including_coordinates": 129,
+    "design_rows": 66048,
+    "antipodal": true,
+    "asset_seed": 3,
+    "layer0": "closed form half-normal mean ||w_j||/sqrt(2*pi)",
+    "first_propagation": "Walsh-Hadamard transform over chirp structure, 8 butterfly stages",
+    "hidden_propagation": "tracked depth-5 Strassen-Winograd, 7^5 = 16807 products vs 32^3 = 32768",
+    "winograd_charged_reduction": 1.9497,
+    "final_layer": "2048-row chunks, immediate float64 reduction",
+    "layers_1_to_30": "returned as zeros; only layer 0 and layer 31 carry estimates",
+    "deterministic": true,
+    "budget_argument_used": false
+  },
+  "cost": {
+    "tracked_flops_per_network": 170906815488,
+    "flop_budget": 272000000000,
+    "effective_compute_model": "tracked_flops + 1e11 * residual_wall_seconds",
+    "official_row0_wall_s": 24.28,
+    "official_row0_charged_residual_s": 0.0547,
+    "predict_guard_s": 30.0
+  },
+  "environment": {
+    "python": "3.12.13",
+    "whestbench": "0.13.0",
+    "flopscope": "0.9.1",
+    "numpy": "2.4.6",
+    "host": "macOS arm64, 12 logical cores"
+  },
+  "development_evidence": {
+    "cohort": "exposed Mini split official_phase1_mini",
+    "cohort_sha256": "5b00938b6bd809fe80acef08772c5654edf467863225ca9e304b76c779ecf433",
+    "cohort_note": "different network set from the graded AIcrowd cohort; do not chain numbers across the two",
+    "arms": [
+      {
+        "arm": "two-nearfull RQMC blend",
+        "adjusted_score": 3.460699463e-07,
+        "raw_final_layer_mse": 3.568094755e-07
+      },
+      {
+        "arm": "Kerdock/MUB 5-design, dense propagation",
+        "adjusted_score": 2.2565645893879035e-07,
+        "raw_final_layer_mse": 2.28259132946107e-07,
+        "effective_compute": 268898960581.762,
+        "failures": 0,
+        "networks": 100
+      },
+      {
+        "arm": "Kerdock/MUB 5-design, Winograd propagation, fused final reduction",
+        "adjusted_score": 1.4641716001994096e-07,
+        "raw_final_layer_mse": 2.2819432476950396e-07,
+        "effective_compute": 174816531041.05118,
+        "tracked_flops_per_network": 170872998912,
+        "failures": 0,
+        "networks": 100,
+        "note": "later build than the graded archive; 33816576 fewer tracked ops from the fused reduction"
+      }
+    ],
+    "dense_to_winograd_adjusted_gain": 1.5412,
+    "rqmc_to_kerdock_adjusted_gain": 1.5336
+  },
+  "ablations": {
+    "basis_count_curve": {
+      "note": "literal prefix of the original basis order, no statistical correction; archived exposed-split projection, official arms never run",
+      "arms": [
+        {"bases": 129, "rows": 66048, "raw_mse": 1.75875e-07, "adjusted_ratio_vs_129": 1.0, "local_wall_s": 24.77, "peak_rss_mib": 407.4},
+        {"bases": 96, "rows": 49152, "raw_mse": 3.21805e-07, "adjusted_ratio_vs_129": 1.3743, "local_wall_s": 18.72, "peak_rss_mib": 335.8},
+        {"bases": 64, "rows": 32768, "raw_mse": 4.86473e-07, "adjusted_ratio_vs_129": 1.4096, "local_wall_s": 11.80, "peak_rss_mib": 319.7},
+        {"bases": 32, "rows": 16384, "raw_mse": 1.04775e-06, "adjusted_ratio_vs_129": 1.5579, "local_wall_s": 6.21, "peak_rss_mib": 303.3}
+      ],
+      "mse_scaling_exponent_in_basis_count": {"greedy": 1.2438, "greedy_swaps": 1.2142},
+      "conclusion": "exponent above 1 means the adjusted-score curve favors the full 129 bases; no partial arm was competitive"
+    },
+    "arithmetic_variants": {
+      "A42_vs_A43_bit_identical": true,
+      "A43_tracked_saving": 524123904,
+      "A43_break_even_extra_residual_seconds": 0.00524123904,
+      "A43_memory_reduction_vs_production": 0.8274,
+      "outcome": "A43 was NOT promoted: it saved the projected tracked FLOPs but paid ~2.2 s extra charged residual wall time per network, a net loss under the effective-compute model and a breach of the 30 s predict guard"
+    },
+    "final_reduction_form": {
+      "astype_then_sum": {"tracked": 170908912640, "residual_ms_mean": 54.5, "residual_ms_sd": 3.3, "peak_rss_gib": 3.883},
+      "sum_dtype_float64": {"tracked": 170875096064, "residual_ms_mean": 56.0, "residual_ms_sd": 4.1, "peak_rss_gib": 3.880},
+      "outputs_bit_identical": true,
+      "chosen": "sum_dtype_float64",
+      "reason": "33816576 fewer tracked operations deterministically; the 1.5 ms residual difference sits inside the per-network standard deviation"
+    }
+  },
+  "negative_results": [
+    "shared-reference first- and second-order Taylor evaluation of a heteroscedastic mixture state: recentering on the pooled-within covariance shrank covariance offsets but did not reduce approximation error; the error is mean-offset dominated",
+    "low-rank Hermite / direct-diagonal extraction: the accuracy gate needed rank 128, at which 2*n^2*r is approximately n^3 and the low-rank route costs the same as the dense one",
+    "layer-31 independent anchor corrections: propagated centre sits near 0.65% error where roughly 0.45% is break-even, so no candidate cleared the downstream-weighted replacement threshold",
+    "partial-MUB and companion-basis hosted controls: measured hurdle at 96 bases was 1.2841x raw gain at +5B, against a 1.0670x published projection; nothing available cleared even the published bar",
+    "learned sign/scale models and handcrafted weight features: no demonstrated complete-score value after actual compute cost"
+  ],
+  "limitations": [
+    "public-split numbers only; the 50-MLP private split is sealed",
+    "layers 1 to 30 are returned as zeros, so this is a final-layer estimator and not a full activation-profile estimator",
+    "the estimator is specialized to width 256 and depth 32 and returns zeros otherwise",
+    "residual wall time is hardware-dependent; local timings come from one macOS arm64 machine with BLAS pinned",
+    "the basis-count ablation is an archived exposed-split projection, not an official four-arm measurement",
+    "the static-cubature optimality claims circulated in the external-review materials are scoped to the limiting kernel and a fixed node budget, and are not verified in this repository"
+  ],
+  "llm_disclosure": {
+    "used": true,
+    "extent": "multiple LLM agents assisted with ideation, proof attempts, code review, synthesis, drafting, and much of the implementation and experiment scaffolding",
+    "not_evidence": "LLM assistance is not independent verification of any claim in this record",
+    "human_verified": "archive hashes, whest validate-package results, the graded AIcrowd page fields, and the recorded operating-point match"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "evidence_class": "independent high-precision numerical sanity check; not a proof and not directed interval arithmetic",
+  "dimension": 256,
+  "depth": 32,
+  "bases": 129,
+  "node_count": 66048,
+  "per_node_pair_counts": {
+    "t=1": 1,
+    "t=-1": 1,
+    "t=0": 510,
+    "t=+1/sqrt(d)": 32768,
+    "t=-1/sqrt(d)": 32768
+  },
+  "kernel_energy": "0.97473023290775046661278084621084146339854816216071578116013767651",
+  "uniform_kernel_mean": "0.97472998954171471231225812084613060955034085053404245936390395621",
+  "kerdock_risk": "0.00000024336603575430052272536471085384820731162667332179623372029254341",
+  "certified_interval": [
+    "0.00000024336603575430029389091338017406054668573276382630724978671590845",
+    "0.00000024336603575430052276094665026697645914811206370055599695108464279"
+  ],
+  "distance_to_certified_interval": "0.0",
+  "conclusion": "Direct pair-spectrum evaluation and independent one-dimensional integration agree with the certified Kerdock-risk interval to much better than 1e-18 absolute."
+}

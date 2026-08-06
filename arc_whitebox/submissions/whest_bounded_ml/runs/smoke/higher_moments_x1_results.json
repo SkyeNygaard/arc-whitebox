@@ -1,0 +1,73 @@
+{
+  "config": {
+    "data_dir": "data/higher",
+    "out_dir": "runs/smoke",
+    "train_files": 3,
+    "valid_files": 1,
+    "test_files": 2,
+    "pairs_per_layer": 32,
+    "layers": "8,16,24,30",
+    "hidden": 32,
+    "epochs": 3,
+    "seed": 20260812,
+    "device": "mps"
+  },
+  "parameters": 1314,
+  "train_ids": [
+    0,
+    2,
+    5
+  ],
+  "valid_ids": [
+    3
+  ],
+  "test_ids": [
+    4,
+    1
+  ],
+  "history": [
+    {
+      "epoch": 0,
+      "train_loss": 0.02065582200884819,
+      "valid": {
+        "rows": 1024,
+        "base_mse": 0.00016625150344379825,
+        "model_mse": 0.008939821610924579,
+        "gain": 0.018596736118384815,
+        "r2": -52.772876790535065
+      }
+    },
+    {
+      "epoch": 1,
+      "train_loss": 0.012264651246368885,
+      "valid": {
+        "rows": 1024,
+        "base_mse": 0.00016625150344379825,
+        "model_mse": 0.005389519791160874,
+        "gain": 0.030847183030380625,
+        "r2": -31.417870993767075
+      }
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.006561101879924536,
+      "valid": {
+        "rows": 1024,
+        "base_mse": 0.00016625150344379825,
+        "model_mse": 0.0030982598287252706,
+        "gain": 0.053659638840619694,
+        "r2": -17.635980815491664
+      }
+    }
+  ],
+  "test": {
+    "rows": 2048,
+    "base_mse": 0.00017957466590613286,
+    "model_mse": 0.003365689521129458,
+    "gain": 0.05335449535044195,
+    "r2": -17.74256317920017
+  },
+  "seconds": 1.874669075012207,
+  "checkpoint": "runs/smoke/higher_moments_x1_coefnet.pt",
+  "numpy_model": "runs/smoke/higher_moments_x1_coefnet.npz"
+}

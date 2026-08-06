@@ -1,0 +1,22 @@
+{
+  "status": "analytical_estimate_not_exact_flopscope",
+  "frozen_architecture": {
+    "depth": 32,
+    "width": 256,
+    "edge_channels": 8,
+    "node_channels": 8,
+    "token_channels": 48,
+    "message_passing_passes": 1,
+    "label_dim_assumed": 1,
+    "parameters": 116587
+  },
+  "inference_flops": 13329116736,
+  "inference_effective_compute_B": 13.329116736,
+  "baseline_effective_compute_B": 175.5,
+  "frozen_v80_anchor_extra_compute_B": 2.636246,
+  "candidate_effective_compute_B": 191.465362736,
+  "candidate_over_baseline_compute": 1.090970727840456,
+  "raw_gain_needed_to_repay_cost": 1.090970727840456,
+  "adjusted_gain_if_raw_gain_is_1_15": 1.0541071090664282,
+  "qualification": "Dense linear-operation accounting only. Exact FlopScope and residual wall-time accounting remain mandatory in the real environment. A g31 or joint-anchor label requiring a true final replay must add that replay cost and recheck feasibility before training."
+}

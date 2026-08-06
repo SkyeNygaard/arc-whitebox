@@ -1,0 +1,106 @@
+{
+  "protocol": {
+    "indices": [
+      160
+    ],
+    "target_layer": 29,
+    "direction_family": "sample",
+    "caps": [
+      768
+    ],
+    "closure": "retain cap-width CP columns by product of leg norms; repair (3,) and (2,1) slices exactly",
+    "dtype": "float64",
+    "profile_flops": true
+  },
+  "summary": {
+    "cap768": {
+      "relative_error_vs_full": 0.23935698874414416,
+      "optimal_scale_to_full": 1.298720862944504,
+      "scaled_relative_error_vs_full": 0.06805483951682528,
+      "relative_error_vs_oracle": 0.5990792807622218,
+      "optimal_scale_to_oracle": 2.4941878121708965,
+      "scaled_relative_error_vs_oracle": 0.004615280194260127,
+      "cosine_vs_oracle": 0.999989349537648
+    }
+  },
+  "records": [
+    {
+      "index": 160,
+      "full_truth": [
+        0.7329791273865353,
+        0.14856936972797696
+      ],
+      "oracle_truth": [
+        1.4214061298290737,
+        0.18187155547056816
+      ],
+      "variants": {
+        "cap768": {
+          "estimate": [
+            0.5695386957411848,
+            0.0755467564348551
+          ],
+          "relative_error_vs_full": 0.23935698874414416,
+          "relative_error_vs_oracle": 0.5990792807622218,
+          "ranks": [
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768,
+            768
+          ],
+          "seconds": 3.5145729170180857,
+          "vendor_flops": 65113687371,
+          "vendor_flop_breakdown": {
+            "is_symmetric": 0,
+            "symmetrize": 0,
+            "DSTensor constructor": 84224,
+            "coerce_input": 0,
+            "contract_W_basic": 1515847680,
+            "harmonic contract_W": 3003842560,
+            "setup": 0,
+            "eval_part": 240295936,
+            "get_wick_coef": 3101440,
+            "nonlin_sum": 389863424,
+            "zero_repeated": 0,
+            "harmonic diagslice": 42103808,
+            "nonlin_sum 111 factored": 11912779521,
+            "DSTower.from_slices": 0,
+            "pK_to_K": 130291200,
+            "FactoredTensor3.get_dslice": 39005477376,
+            "FactoredTensor3.from_dstensor": 11796480,
+            "DSTensor.to_tensor": 3962880,
+            "DS_harmonic_proj": 1974090,
+            "FactoredTensor3.contract_W": 8757706752,
+            "resid": 94560000
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,410 @@
+{
+  "features": [
+    "feature_cos_c17_p2",
+    "feature_cos_c17_p4",
+    "feature_cos_p2_p4",
+    "feature_norm_p2_c17",
+    "feature_norm_p4_c17",
+    "feature_min_nested_cos",
+    "feature_max_loo_angle_sin",
+    "feature_cos_p32_p128",
+    "feature_norm_p32_p128"
+  ],
+  "hyperparameter_choices": {
+    "extratrees_clip_0_2": [
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      }
+    ],
+    "extratrees_clip_m2_2": [
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      },
+      {
+        "depth": 4,
+        "leaf": 3
+      }
+    ],
+    "global_constant_clip_0_2": [
+      0.20404783773759283,
+      0.24177392572812229,
+      0.21115690216253882,
+      0.26225171315423573,
+      0.24610516303468405,
+      0.2868890855706775,
+      0.25722536249217864,
+      0.24763371398377934,
+      0.232911123771192,
+      0.25987653555351936,
+      0.2739298045727894,
+      0.2576673274564419,
+      0.12865375421206168,
+      0.2152188729677055,
+      0.21907854592581047,
+      0.31476654665947945
+    ],
+    "global_constant_clip_m2_2": [
+      0.20404783773759283,
+      0.24177392572812229,
+      0.21115690216253882,
+      0.26225171315423573,
+      0.24610516303468405,
+      0.2868890855706775,
+      0.25722536249217864,
+      0.24763371398377934,
+      0.232911123771192,
+      0.25987653555351936,
+      0.2739298045727894,
+      0.2576673274564419,
+      0.12865375421206168,
+      0.2152188729677055,
+      0.21907854592581047,
+      0.31476654665947945
+    ],
+    "ridge_clip_0_2": [
+      10,
+      10,
+      10,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      10,
+      10,
+      100
+    ],
+    "ridge_clip_m2_2": [
+      10,
+      10,
+      10,
+      10,
+      100,
+      10,
+      100,
+      100,
+      100,
+      100,
+      10,
+      100,
+      100,
+      10,
+      10,
+      100
+    ]
+  },
+  "protocol": "leave-one-network-out outer CV; inner grouped CV for hyperparameters; unbiased MSE reconstructed exactly from baseline+2a inner+a^2 norm_sq",
+  "results": {
+    "extratrees_clip_0_2": {
+      "alphas": {
+        "max": 0.6818080792303998,
+        "mean": 0.23781027658059295,
+        "median": 0.19269096807317004,
+        "min": 0.0
+      },
+      "candidate_over_base": 0.966450459296144,
+      "gain_base_over_candidate": 1.0347141856896522,
+      "median_network_ratio": 0.9951549186994004,
+      "network_wins": 9,
+      "networks": 16,
+      "row_wins": 18,
+      "rows": 48,
+      "worst_network_ratio": 1.0843742678128445,
+      "worst_row_ratio": 1.3682928749642922
+    },
+    "extratrees_clip_m2_2": {
+      "alphas": {
+        "max": 0.6818080792303998,
+        "mean": 0.23323624784186858,
+        "median": 0.19269096807317004,
+        "min": -0.10823453390458461
+      },
+      "candidate_over_base": 0.9665488895753119,
+      "gain_base_over_candidate": 1.034608813672515,
+      "median_network_ratio": 0.9993347425007839,
+      "network_wins": 8,
+      "networks": 16,
+      "row_wins": 22,
+      "rows": 48,
+      "worst_network_ratio": 1.0843742678128445,
+      "worst_row_ratio": 1.3682928749642922
+    },
+    "global_constant_clip_0_2": {
+      "alphas": {
+        "max": 0.31476654665947945,
+        "mean": 0.24119913843642557,
+        "median": 0.2468694385092317,
+        "min": 0.12865375421206168
+      },
+      "candidate_over_base": 0.9973090168436164,
+      "gain_base_over_candidate": 1.0026982440857701,
+      "median_network_ratio": 1.003192861819202,
+      "network_wins": 8,
+      "networks": 16,
+      "row_wins": 23,
+      "rows": 48,
+      "worst_network_ratio": 1.2007956120221521,
+      "worst_row_ratio": 1.3032657719757268
+    },
+    "global_constant_clip_m2_2": {
+      "alphas": {
+        "max": 0.31476654665947945,
+        "mean": 0.24119913843642557,
+        "median": 0.2468694385092317,
+        "min": 0.12865375421206168
+      },
+      "candidate_over_base": 0.9973090168436164,
+      "gain_base_over_candidate": 1.0026982440857701,
+      "median_network_ratio": 1.003192861819202,
+      "network_wins": 8,
+      "networks": 16,
+      "row_wins": 23,
+      "rows": 48,
+      "worst_network_ratio": 1.2007956120221521,
+      "worst_row_ratio": 1.3032657719757268
+    },
+    "none": {
+      "alphas": {
+        "max": 0.0,
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0
+      },
+      "candidate_over_base": 1.0,
+      "gain_base_over_candidate": 1.0,
+      "median_network_ratio": 1.0,
+      "network_wins": 0,
+      "networks": 16,
+      "row_wins": 0,
+      "rows": 48,
+      "worst_network_ratio": 1.0,
+      "worst_row_ratio": 1.0
+    },
+    "oracle_clip_0_2": {
+      "alphas": {
+        "max": 2.0,
+        "mean": 0.4313047184806161,
+        "median": 0.07975475721716328,
+        "min": 0.0
+      },
+      "candidate_over_base": 0.8595064609565034,
+      "gain_base_over_candidate": 1.1634583862082295,
+      "median_network_ratio": 0.9108670507703063,
+      "network_wins": 15,
+      "networks": 16,
+      "row_wins": 26,
+      "rows": 48,
+      "worst_network_ratio": 1.0,
+      "worst_row_ratio": 1.0
+    },
+    "oracle_clip_m2_2": {
+      "alphas": {
+        "max": 2.0,
+        "mean": 0.256433513992236,
+        "median": 0.07975475721716328,
+        "min": -1.1614203034863504
+      },
+      "candidate_over_base": 0.8230320217366102,
+      "gain_base_over_candidate": 1.2150195540265671,
+      "median_network_ratio": 0.8281849501211558,
+      "network_wins": 16,
+      "networks": 16,
+      "row_wins": 48,
+      "rows": 48,
+      "worst_network_ratio": 0.981147438544029,
+      "worst_row_ratio": 0.9999919170693826
+    },
+    "oracle_unclipped": {
+      "alphas": {
+        "max": 2.0357329316037043,
+        "mean": 0.2571779500673132,
+        "median": 0.07975475721716328,
+        "min": -1.1614203034863504
+      },
+      "candidate_over_base": 0.8230227896057775,
+      "gain_base_over_candidate": 1.2150331833204686,
+      "median_network_ratio": 0.8281849501211558,
+      "network_wins": 16,
+      "networks": 16,
+      "row_wins": 48,
+      "rows": 48,
+      "worst_network_ratio": 0.981147438544029,
+      "worst_row_ratio": 0.9999919170693826
+    },
+    "original_alpha1": {
+      "alphas": {
+        "max": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "min": 1.0
+      },
+      "candidate_over_base": 1.145173500571044,
+      "gain_base_over_candidate": 0.8732301258292715,
+      "median_network_ratio": 1.2357496937149555,
+      "network_wins": 6,
+      "networks": 16,
+      "row_wins": 17,
+      "rows": 48,
+      "worst_network_ratio": 1.953860889589848,
+      "worst_row_ratio": 2.9616034209649023
+    },
+    "ridge_clip_0_2": {
+      "alphas": {
+        "max": 0.6502507577536475,
+        "mean": 0.2582252015017393,
+        "median": 0.2685672852628479,
+        "min": 0.0
+      },
+      "candidate_over_base": 0.987515948860394,
+      "gain_base_over_candidate": 1.0126418729277362,
+      "median_network_ratio": 1.0014562771288473,
+      "network_wins": 7,
+      "networks": 16,
+      "row_wins": 19,
+      "rows": 48,
+      "worst_network_ratio": 1.0842790220692875,
+      "worst_row_ratio": 1.310443470798788
+    },
+    "ridge_clip_m2_2": {
+      "alphas": {
+        "max": 0.9374361139466445,
+        "mean": 0.2614978145975828,
+        "median": 0.2770887510750828,
+        "min": -0.18495562167170831
+      },
+      "candidate_over_base": 0.9966451979315446,
+      "gain_base_over_candidate": 1.003366094649749,
+      "median_network_ratio": 1.0046982311031978,
+      "network_wins": 7,
+      "networks": 16,
+      "row_wins": 19,
+      "rows": 48,
+      "worst_network_ratio": 1.1357953781812518,
+      "worst_row_ratio": 1.3742717125597608
+    }
+  },
+  "source": "/mnt/data/work/T4_legal_layer31_anchor_hedge_20260729_review/T4_legal_layer31_anchor_hedge_20260729/T41_EXACT_ROTATIONS/ROWS.csv"
+}

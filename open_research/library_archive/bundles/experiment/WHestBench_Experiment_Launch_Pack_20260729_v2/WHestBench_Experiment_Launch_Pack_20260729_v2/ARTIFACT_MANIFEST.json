@@ -1,0 +1,172 @@
+{
+  "version": "2026-07-29-v2-sparse-anchor",
+  "created_local_time": "2026-07-29T13:17:00-04:00",
+  "canonical_ratio": "candidate_mse / baseline_mse",
+  "primary_reconciliation": {
+    "m86": "closed as connected-only deployable path; tensor-free contraction retained",
+    "m104": "full-depth source localization; short-suffix default rejected",
+    "m105": "sparse radial-Hermite exact-anchor ceiling 0.109280 on exposed N=8",
+    "m106": "complete 0.223995; lower-only 0.633203; connected-only 1.580440",
+    "m107": "one-basis lower pilot holdout 1.049361 on N=16",
+    "m111": "open sparse radial-Hermite layer31 residual-control formulation"
+  },
+  "library_artifacts": [
+    {
+      "name": "whestbench_canonical_research_ledger_20260729_merged_v2.xlsx",
+      "library_path": "/WHestBench/Canonical/whestbench_canonical_research_ledger_20260729_merged_v2.xlsx",
+      "required_for": [
+        "GLOBAL"
+      ]
+    },
+    {
+      "name": "WHestBench_Experiment_Prompt_Pack_20260729_v2.md",
+      "library_path": "/WHestBench/Canonical/WHestBench_Experiment_Prompt_Pack_20260729_v2.md",
+      "required_for": [
+        "GLOBAL"
+      ]
+    },
+    {
+      "name": "arc_code.zip",
+      "file_id": "file_00000000111081f5a79d98e19461e7f8",
+      "required_for": [
+        "GLOBAL",
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P8"
+      ]
+    },
+    {
+      "name": "adjoint_c21_prototype.py",
+      "file_id": "file_000000000fbc822faa65d4ff42a7d22d",
+      "required_for": [
+        "P2",
+        "P3"
+      ]
+    },
+    {
+      "name": "adjoint_source_localization.py",
+      "file_id": "file_00000000f90c81f5abbc5c376b0128dc",
+      "required_for": [
+        "P3"
+      ]
+    },
+    {
+      "name": "adjoint_source_full8_merged.json",
+      "file_id": "file_000000001d38822fbf1bd9b1a60c8b17",
+      "required_for": [
+        "P3"
+      ]
+    },
+    {
+      "name": "sparse_radial_cubic_control.py",
+      "file_id": "file_000000000920822f8d33deead109d167",
+      "required_for": [
+        "P2",
+        "P4",
+        "P6"
+      ]
+    },
+    {
+      "name": "sparse_radial_highref8_merged.json",
+      "file_id": "file_000000000774822f9c5a2f8488020739",
+      "required_for": [
+        "P2",
+        "P4",
+        "P6"
+      ]
+    },
+    {
+      "name": "lowerpilot_screen8_merged.json",
+      "file_id": "file_000000000a28820c8777db95e9668613",
+      "required_for": [
+        "P2",
+        "P4"
+      ]
+    },
+    {
+      "name": "lowerpilot_frozen_holdout16.json",
+      "file_id": "file_000000005544820ca96e64b7ce5c4591",
+      "required_for": [
+        "P4"
+      ]
+    },
+    {
+      "name": "crossfit_lower_fast_screen8.json",
+      "file_id": "file_000000008b14822f996b94d7b121488e",
+      "required_for": [
+        "P4"
+      ]
+    },
+    {
+      "name": "sparse_joint_adjoint_pilot.py",
+      "file_id": "file_000000001074822fa010b71a103bd34e",
+      "required_for": [
+        "P3",
+        "P4"
+      ]
+    },
+    {
+      "name": "joint_adjoint_pilot_screen8.json",
+      "file_id": "file_00000000fb7081f5b7412dc7309d093e",
+      "required_for": [
+        "P3",
+        "P4"
+      ]
+    }
+  ],
+  "missing_standalone_dependencies": [
+    "sparse_adjoint_control.py",
+    "sparse_crossfit_lower_fast.py",
+    "sparse_lower_moment_pilot.py"
+  ],
+  "exposed_network_blocks": [
+    "global IDs 0-199",
+    "sparse/adjoint development networks 0-7",
+    "one-basis lower-pilot holdout networks 8-23"
+  ],
+  "local_checksums": {
+    "README.md": "e4a872b76c20e5bdead61867f8ac488f12ac205ba9fb41130ecc84a2aab2398b",
+    "WHestBench_Experiment_Prompt_Pack_20260729_v2.md": "1e1cbf9e43ad6dcb87141982d91d8bdada7de8f944ff4698f608f31a1adb16f3",
+    "sources/AGENT1_CONTINUATION_SUMMARY.json": "ba59d593e579402459e29b854e9ae9d39b8d5d7e285389892144e2a8c6e7d163",
+    "sources/AGENT2_EXACT_SPARSE_ADJOINT_REPORT.md": "8eabe75b771f1ac6c3ca2216665c98ad18b50b3880bfa41a7f05bb3510b07cd6",
+    "sources/ARC_ACTIVATION_REGION_CONTINUATION_REPORT.md": "6693c148bc9d750985422781bce8f40ccdbe7dc4ceb17f6d33dd51f8e077e4ae",
+    "sources/BLOCKWISE_CUBIC_FROZEN_ROWS.csv": "0c6c8ff1a9f1d5f23277fe31e4998419f3a75cd30d2a85220b45ec2c8fd94a29",
+    "sources/EQUIVARIANT_WEIGHT_MODEL_RESEARCH_20260729.md": "9238adb00d986f7bbe80784d7b5877cab7447d4fd99f7e1206044068a7e3fc54",
+    "sources/FRESH_SCREEN_SUMMARY.json": "e5ceec1b410b08896d9f101cc0d87d0a5067c3489497d5b465254f1aa5f8d168",
+    "sources/FULL_MULTILEVEL_CONTINUATION_BUNDLE.zip": "b17fc4f0f698c8961f8452e2881d9cf3728053b9b1fbd614f2f201c8d32ece06",
+    "sources/FULL_MULTILEVEL_CONTINUATION_REPORT.md": "05a683c5379beaa3b3e9095a23d35e87996a472c2cdc2bcf81f4e047364786e8",
+    "sources/FULL_MULTILEVEL_CONTINUATION_RESULTS.json": "ee2046ba78621309508f5e943f65fd1e44d6e550a69400d6090fc272dfcbf0d5",
+    "sources/FULL_MULTILEVEL_CONTINUATION_SHA256SUMS.txt": "bcf23a448b69d63dceb604daa7dbc1e6a6bc248bef7453afb340f4d14cb5c3ed",
+    "sources/FULL_MULTILEVEL_PREFIX_SUFFIX_REPORT.md": "b6836906e9a7fd6ffdc93dcf2736d8d3009510343d6284b9d4b22dd0d6135d6b",
+    "sources/Independent_Short_Suffix_Micro_Cubature_20260729.txt": "8d3548debb3aa75a6f65ac41a17071843658811278f68baa57b9462198ec2b24",
+    "sources/NETWORK_SPECIFIC_KERNEL_CORESET_EXACT_KERDOCK_REPORT.md": "14b97308a888ca6144ce50fd70595c4835b505b68cc72fb848967df59ae68e75",
+    "sources/NONK3_CONTINUATION_BUNDLE_20260728.zip": "1d957c893bdfdbab136526d8b78102fbea604a3a71c366033ca7e4e4ea27627e",
+    "sources/NONK3_CONTINUATION_REPORT.md": "03fe5e94bb9de07a1a85c3c4076f3554bcb01c3bb17e82c2566ab6636b16e744",
+    "sources/Pasted text (5)(1).txt": "8d3548debb3aa75a6f65ac41a17071843658811278f68baa57b9462198ec2b24",
+    "sources/WHestBench_Canonical_Research_State_2026-07-29_reconciled.docx": "9de2252f9a20e71af176aa5eaab431a9e02852777ed8ad9536c2a99eaaf35389",
+    "sources/WHestBench_Canonical_Research_State_2026-07-29_reconciled.pdf": "412b4f4bc229a1af04a5ca8d2e646d9b3c17daa6281ca0cf0d85e7aeadd83ca0",
+    "sources/activation_region_continuation_bundle.zip": "ae41b4d4c0fd17cb1f847a13ce58a7b649c902f1137c66cfbb501f2099da4475",
+    "sources/adjoint_c21_prototype.py": "94dcfc8bf3969f04c929a02f15f27dfae5667d78bf3fd89cadcdd8b58688d543",
+    "sources/adjoint_source_full8_merged.json": "ff35287dbfede8665ed01b5a80c3cccc6bba9d8287aa3dc5971a70907b42a258",
+    "sources/adjoint_source_localization.py": "d68fa37b6ab8118e9daee8935d135e1aea73b66867c141865f5806377eb8b21a",
+    "sources/agent1_layer31_deployability_round.zip": "9e80a98368c4f3c32b40beff3010a1dc87a4bbb591c3186bbd759008756eeb6a",
+    "sources/agent2_agent1_terminal_test.json": "34867be618b86f33e44fc7ccf4456930590762751cf07cd7a2db4bc47534c98a",
+    "sources/agent2_sparse_adjoint_results.json": "6ff1e74e7d7abdfbf555cdaea24737ff35a7d342c9f010e5d2cea6db71ee6a0b",
+    "sources/arc_code.zip": "e17834ecc66445806b9c78b50acc9a7679f8035960e4723d0976c792a75351ff",
+    "sources/arc_code_deep_audit_20260729.md": "f2b5bd2590e38a73987c8d3cf0d9ef1d4bbef5178c02af98936ab7935cef0262",
+    "sources/crossfit_lower_fast_screen8.json": "fafb909210e68a6630b454ef3acb5f8cf620bd8cead4fda766b5f06c95db7a3c",
+    "sources/equivariant_weight_model_repro_20260729.zip": "245cc22dd8a2002309e3c46030618df573713dbd85154f212f284213adc37e00",
+    "sources/joint_adjoint_pilot_screen8.json": "4886f89dec3765369c2ee280c1c1f279a7a60db16e87130b97721625d4031feb",
+    "sources/lowerpilot_frozen_holdout16.json": "6f27e965aa0d8b4a8bfbe4d2fcfd7067a02845234ce965af49d0a1a84dc70606",
+    "sources/lowerpilot_screen8_merged.json": "64511195fcd18825825704795cfe09b3fbb16bae302c9748361fa43776a1319b",
+    "sources/sparse_cubic_center_and_channel_report.md": "1f6a1fd9edd17983f04e25dd5455b9632430bbd895e5166edab035804853faeb",
+    "sources/sparse_joint_adjoint_pilot.py": "77269fd46751d97e0952393ff6e281f616e357f7696d005e8e43829557dd617e",
+    "sources/sparse_radial_cubic_control.py": "edb12045da41412966defa9d40ad4a7daaafb464df24b6d9795faf774e9fedd8",
+    "sources/sparse_radial_highref8_merged.json": "04f3bb109a6120c713b59ab6e4bdbe6391c1cf47314db7262004b7e4af037237",
+    "whestbench_canonical_research_ledger_20260729_merged_v2.xlsx": "a458f09ca8d205d03066a6b7cd8547747c84f6bd517fea2efb045bbe5934aa53"
+  }
+}

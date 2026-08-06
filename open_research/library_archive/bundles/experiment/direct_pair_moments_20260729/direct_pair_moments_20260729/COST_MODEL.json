@@ -1,0 +1,43 @@
+{
+  "dimensions": {
+    "rows": 66048,
+    "dimension": 256,
+    "probes": 128,
+    "companion_16_rows": 8192
+  },
+  "primary_same_cloud_fused": {
+    "incremental_flops": 33816576,
+    "incremental_billions": 0.033816576,
+    "assumption": "H@V.T and selected H[:,i] already exist for frozen radial features; count two multiply-reductions (s and t)",
+    "extra_propagation_flops": 0
+  },
+  "standalone_direct_without_projection_reuse": {
+    "flops": 4353883904,
+    "billions": 4.353883904
+  },
+  "full_second_matrix_internal_diagnostic": {
+    "flops": 8656977920,
+    "billions": 8.65697792,
+    "not_recommended": true
+  },
+  "companion_16_pair_accumulation_after_projection": {
+    "incremental_flops": 4194304,
+    "billions": 0.004194304
+  },
+  "memory_streaming": {
+    "recommended_block_rows": 512,
+    "projection_buffer_bytes_float64": 524288,
+    "selected_buffer_bytes_float64": 524288,
+    "total_megabytes": 1.048576
+  },
+  "assets": {
+    "new_static_assets_bytes": 0,
+    "runtime_outputs_float64_bytes": 2048
+  },
+  "companion_context": {
+    "full_companion_heavy_cost_ratio": 1.935484870967742,
+    "full_companion_adjusted_proxy_32probe": 1.4958027457088725,
+    "companion_16_heavy_cost_ratio": 1.116029,
+    "note": "These costs belong to the center estimator, not the retained pair accumulator."
+  }
+}

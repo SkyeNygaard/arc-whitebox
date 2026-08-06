@@ -1,0 +1,12 @@
+Canonical evidence policy,Definition,Implication for status
+E5 — Official/protected full-width,Official suite or >=50 genuinely untouched width-256 networks with high-precision post-ReLU targets and exact implementation/cost accounting.,May support submission-readiness or high-confidence closure when the effect is large and mechanism-specific.
+E4 — Local full-width frozen,"Local full repository, exact Kerdock/assets, >=24 fresh width-256 networks, reliable targets, frozen specification.",Can support strong continuation/closure decisions; protected holdout should remain separate.
+E3 — Exact-geometry synthetic / small full-width,"Exact 66,048-row geometry or full-width networks, generally 8–23 networks, but sandboxed, synthetic, noisy, or incomplete runtime fidelity.",Useful evidence and falsification challenge; normally pause or close only the exact tested form.
+E2 — Scaled synthetic / wrong width,"Reduced width, reduced bases, surrogate Kerdock, or small synthetic sets.",Mechanism exploration only. Must not close a broad avenue.
+E1 — Analytic/prototype,"Theorem, algebra identity, numerical exactness test, or toy simulation without challenge-scale performance.","Can prove algebra or impossibility, but not empirical MSE transfer."
+Closure confidence — High,Theorem-level impossibility or E4/E5 repeated decisive failure with strong margins and rescue attempts.,Mark Closed with explicit scope and reopen condition.
+Closure confidence — Moderate,E3 decisive failure or E4 marginal failure; implementation quality credible but environment incomplete.,Close tested form or pause; do not generalize to the entire theoretical class.
+Closure confidence — Low,"E1/E2 evidence, N<12, synthetic-only, or unclear implementation provenance.",Record warning only; keep avenue open pending stronger local test.
+Status vocabulary,Shipping; Leading/active; Open/bounded experiment; Paused/awaiting local validation; Closed tested form; Closed high confidence; Oracle mechanism only; Infrastructure.,Every row must use one of these and include a next action or reopen condition.
+Ratio convention,"Canonical ratio is candidate MSE / baseline MSE, so lower is better. Inverse 'gain' reports must be converted or explicitly labeled.",Prevents 0.989x and 1.011x from being confused.
+Sandbox rule,"A small or synthetic sandbox failure cannot by itself overrule stronger local work. Record environment, width, N, reference quality, and exact-geometry status.","Especially important for coresets, equivariant learning, micro-cubature, and sparse controls."

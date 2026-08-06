@@ -1,0 +1,87 @@
+{
+  "break_even_rank_vs_0.0847B_per_shift": 14.173411286894924,
+  "ceil_log2_N": 17,
+  "dominant_core_B": 1.200487936,
+  "dominant_core_flops": 1200487936,
+  "flopscope_version": "0.9.1",
+  "formula_sources": {
+    "cache_Z": "N*M sequential fp32 writes",
+    "cumsum": "2 * (N*M-M), float64 accumulator",
+    "query_upper": "192 * rank * M conservative envelope",
+    "sort": "4 * M * N * ceil(log2 N), fp32"
+  },
+  "rows": [
+    {
+      "cache_z_write_flops": 16908288,
+      "cumsum_flops": 33816064,
+      "output_write_flops": 6144,
+      "query_upper_flops": 589824,
+      "rank": 12,
+      "rstar": 0.220745271,
+      "serialized_translation_B": 1.0164,
+      "sort_flops": 1149763584,
+      "sorted_c0_upper": 1.0068830023151862,
+      "sorted_cost_ratio_vs_serialized": 1.1817039590712317,
+      "sorted_replay_adjusted_ratio_upper": 0.2222646612113594,
+      "sorted_saving_B_vs_serialized": -0.18468390400000012,
+      "sorted_total_upper_B": 1.201083904,
+      "sorted_total_upper_flops": 1201083904,
+      "sorted_zero_noise_win": true
+    },
+    {
+      "cache_z_write_flops": 16908288,
+      "cumsum_flops": 33816064,
+      "output_write_flops": 10240,
+      "query_upper_flops": 983040,
+      "rank": 20,
+      "rstar": 0.127663,
+      "serialized_translation_B": 1.694,
+      "sort_flops": 1149763584,
+      "sorted_c0_upper": 1.006885279174785,
+      "sorted_cost_ratio_vs_serialized": 0.7092569161747344,
+      "sorted_replay_adjusted_ratio_upper": 0.1285419953952906,
+      "sorted_saving_B_vs_serialized": 0.49251878400000004,
+      "sorted_total_upper_B": 1.201481216,
+      "sorted_total_upper_flops": 1201481216,
+      "sorted_zero_noise_win": true
+    },
+    {
+      "cache_z_write_flops": 16908288,
+      "cumsum_flops": 33816064,
+      "output_write_flops": 12288,
+      "query_upper_flops": 1179648,
+      "rank": 24,
+      "rstar": 0.10947,
+      "serialized_translation_B": 2.0328,
+      "sort_flops": 1149763584,
+      "sorted_c0_upper": 1.0068864176045844,
+      "sorted_cost_ratio_vs_serialized": 0.59114515545061,
+      "sorted_replay_adjusted_ratio_upper": 0.11022385613517385,
+      "sorted_saving_B_vs_serialized": 0.831120128,
+      "sorted_total_upper_B": 1.201679872,
+      "sorted_total_upper_flops": 1201679872,
+      "sorted_zero_noise_win": true
+    },
+    {
+      "cache_z_write_flops": 16908288,
+      "cumsum_flops": 33816064,
+      "output_write_flops": 16384,
+      "query_upper_flops": 1572864,
+      "rank": 32,
+      "rstar": 0.081667,
+      "serialized_translation_B": 2.7104,
+      "sort_flops": 1149763584,
+      "sorted_c0_upper": 1.0068886944641833,
+      "sorted_cost_ratio_vs_serialized": 0.44350545454545454,
+      "sorted_replay_adjusted_ratio_upper": 0.08222957901080646,
+      "sorted_saving_B_vs_serialized": 1.508322816,
+      "sorted_total_upper_B": 1.202077184,
+      "sorted_total_upper_flops": 1202077184,
+      "sorted_zero_noise_win": true
+    }
+  ],
+  "shape": [
+    66048,
+    256
+  ]
+}

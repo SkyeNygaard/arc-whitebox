@@ -1,0 +1,1890 @@
+{
+  "protocol": {
+    "split": "official IDs 0--49 only",
+    "full_rotation_seed": 3,
+    "pilot_rotation_seeds": [
+      0,
+      1
+    ],
+    "pilot_bases": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      13,
+      15,
+      16,
+      29,
+      35,
+      57,
+      59,
+      66,
+      72,
+      84,
+      85,
+      87,
+      95,
+      96,
+      101,
+      108,
+      118,
+      120,
+      124
+    ],
+    "alpha": 0.125,
+    "formula": "F3 + (P0_S + P1_S - 2*P3_S)/16",
+    "full_rows": 66048,
+    "pilot_rows_per_alternate_rotation": 12288,
+    "total_rows": 90624
+  },
+  "quadrature_weight_audit": {
+    "sum": 0.9999999999999999,
+    "minimum": 4.967977834302326e-06,
+    "maximum": 1.5140503875968992e-05,
+    "selected_full_weight": 4.967977834302326e-06,
+    "unselected_full_weight": 1.5140503875968992e-05,
+    "alternate_pilot_weight": 5.086263020833333e-06,
+    "negative_weights": 0.0
+  },
+  "summaries": [
+    {
+      "strength": 0.0,
+      "networks": 50,
+      "mean_final_mse": 1.3554747735188472e-07,
+      "median_final_mse": 1.1856722159999667e-07
+    },
+    {
+      "strength": 0.5,
+      "networks": 50,
+      "mean_final_mse": 1.352900634183704e-07,
+      "median_final_mse": 1.1620792581633601e-07
+    },
+    {
+      "strength": 0.75,
+      "networks": 50,
+      "mean_final_mse": 1.3631537528124614e-07,
+      "median_final_mse": 1.1653313281898765e-07
+    },
+    {
+      "strength": 1.0,
+      "networks": 50,
+      "mean_final_mse": 1.3811466944324584e-07,
+      "median_final_mse": 1.2063120637429345e-07
+    },
+    {
+      "strength": 1.25,
+      "networks": 50,
+      "mean_final_mse": 1.40688183602799e-07,
+      "median_final_mse": 1.2471525119781337e-07
+    },
+    {
+      "strength": 1.5,
+      "networks": 50,
+      "mean_final_mse": 1.440377490405439e-07,
+      "median_final_mse": 1.2700889984522715e-07
+    }
+  ],
+  "records": [
+    {
+      "index": 0,
+      "name": "daniel-harrison",
+      "strength": 0.0,
+      "final_mse": 6.249952403475025e-08
+    },
+    {
+      "index": 0,
+      "name": "daniel-harrison",
+      "strength": 0.5,
+      "final_mse": 6.309967123378439e-08
+    },
+    {
+      "index": 0,
+      "name": "daniel-harrison",
+      "strength": 0.75,
+      "final_mse": 6.377049611932947e-08
+    },
+    {
+      "index": 0,
+      "name": "daniel-harrison",
+      "strength": 1.0,
+      "final_mse": 6.468997422337346e-08
+    },
+    {
+      "index": 0,
+      "name": "daniel-harrison",
+      "strength": 1.25,
+      "final_mse": 6.585566694404381e-08
+    },
+    {
+      "index": 0,
+      "name": "daniel-harrison",
+      "strength": 1.5,
+      "final_mse": 6.726031207126493e-08
+    },
+    {
+      "index": 1,
+      "name": "dustin-robinson",
+      "strength": 0.0,
+      "final_mse": 1.335691461306862e-07
+    },
+    {
+      "index": 1,
+      "name": "dustin-robinson",
+      "strength": 0.5,
+      "final_mse": 1.4782154636485598e-07
+    },
+    {
+      "index": 1,
+      "name": "dustin-robinson",
+      "strength": 0.75,
+      "final_mse": 1.5783993824272613e-07
+    },
+    {
+      "index": 1,
+      "name": "dustin-robinson",
+      "strength": 1.0,
+      "final_mse": 1.697732997785449e-07
+    },
+    {
+      "index": 1,
+      "name": "dustin-robinson",
+      "strength": 1.25,
+      "final_mse": 1.83622083836796e-07
+    },
+    {
+      "index": 1,
+      "name": "dustin-robinson",
+      "strength": 1.5,
+      "final_mse": 1.9938381876979086e-07
+    },
+    {
+      "index": 2,
+      "name": "cole-martin",
+      "strength": 0.0,
+      "final_mse": 1.639308404932349e-07
+    },
+    {
+      "index": 2,
+      "name": "cole-martin",
+      "strength": 0.5,
+      "final_mse": 1.478664116980744e-07
+    },
+    {
+      "index": 2,
+      "name": "cole-martin",
+      "strength": 0.75,
+      "final_mse": 1.4198736857226914e-07
+    },
+    {
+      "index": 2,
+      "name": "cole-martin",
+      "strength": 1.0,
+      "final_mse": 1.375567854421867e-07
+    },
+    {
+      "index": 2,
+      "name": "cole-martin",
+      "strength": 1.25,
+      "final_mse": 1.3457995110526318e-07
+    },
+    {
+      "index": 2,
+      "name": "cole-martin",
+      "strength": 1.5,
+      "final_mse": 1.3307430481396254e-07
+    },
+    {
+      "index": 3,
+      "name": "donna-clarke",
+      "strength": 0.0,
+      "final_mse": 6.828124277358297e-08
+    },
+    {
+      "index": 3,
+      "name": "donna-clarke",
+      "strength": 0.5,
+      "final_mse": 6.695237294081739e-08
+    },
+    {
+      "index": 3,
+      "name": "donna-clarke",
+      "strength": 0.75,
+      "final_mse": 6.641014544202374e-08
+    },
+    {
+      "index": 3,
+      "name": "donna-clarke",
+      "strength": 1.0,
+      "final_mse": 6.595508769519919e-08
+    },
+    {
+      "index": 3,
+      "name": "donna-clarke",
+      "strength": 1.25,
+      "final_mse": 6.558223180478063e-08
+    },
+    {
+      "index": 3,
+      "name": "donna-clarke",
+      "strength": 1.5,
+      "final_mse": 6.529184272748109e-08
+    },
+    {
+      "index": 4,
+      "name": "rebecca-walker",
+      "strength": 0.0,
+      "final_mse": 7.84574894883233e-08
+    },
+    {
+      "index": 4,
+      "name": "rebecca-walker",
+      "strength": 0.5,
+      "final_mse": 8.041029452559477e-08
+    },
+    {
+      "index": 4,
+      "name": "rebecca-walker",
+      "strength": 0.75,
+      "final_mse": 8.155834926362576e-08
+    },
+    {
+      "index": 4,
+      "name": "rebecca-walker",
+      "strength": 1.0,
+      "final_mse": 8.281909838991151e-08
+    },
+    {
+      "index": 4,
+      "name": "rebecca-walker",
+      "strength": 1.25,
+      "final_mse": 8.419221789849001e-08
+    },
+    {
+      "index": 4,
+      "name": "rebecca-walker",
+      "strength": 1.5,
+      "final_mse": 8.567961332295116e-08
+    },
+    {
+      "index": 5,
+      "name": "monique-stevens",
+      "strength": 0.0,
+      "final_mse": 1.413436407940758e-07
+    },
+    {
+      "index": 5,
+      "name": "monique-stevens",
+      "strength": 0.5,
+      "final_mse": 1.46132628048378e-07
+    },
+    {
+      "index": 5,
+      "name": "monique-stevens",
+      "strength": 0.75,
+      "final_mse": 1.4883694055321023e-07
+    },
+    {
+      "index": 5,
+      "name": "monique-stevens",
+      "strength": 1.0,
+      "final_mse": 1.517573619220388e-07
+    },
+    {
+      "index": 5,
+      "name": "monique-stevens",
+      "strength": 1.25,
+      "final_mse": 1.548765876547395e-07
+    },
+    {
+      "index": 5,
+      "name": "monique-stevens",
+      "strength": 1.5,
+      "final_mse": 1.5820753865860663e-07
+    },
+    {
+      "index": 6,
+      "name": "keith-brock",
+      "strength": 0.0,
+      "final_mse": 6.21485512616668e-08
+    },
+    {
+      "index": 6,
+      "name": "keith-brock",
+      "strength": 0.5,
+      "final_mse": 5.807009081037762e-08
+    },
+    {
+      "index": 6,
+      "name": "keith-brock",
+      "strength": 0.75,
+      "final_mse": 5.705079375578802e-08
+    },
+    {
+      "index": 6,
+      "name": "keith-brock",
+      "strength": 1.0,
+      "final_mse": 5.671436782127687e-08
+    },
+    {
+      "index": 6,
+      "name": "keith-brock",
+      "strength": 1.25,
+      "final_mse": 5.706347128695067e-08
+    },
+    {
+      "index": 6,
+      "name": "keith-brock",
+      "strength": 1.5,
+      "final_mse": 5.81023054922883e-08
+    },
+    {
+      "index": 7,
+      "name": "robert-huff",
+      "strength": 0.0,
+      "final_mse": 9.370395610452784e-08
+    },
+    {
+      "index": 7,
+      "name": "robert-huff",
+      "strength": 0.5,
+      "final_mse": 9.27159569747197e-08
+    },
+    {
+      "index": 7,
+      "name": "robert-huff",
+      "strength": 0.75,
+      "final_mse": 9.234843464717387e-08
+    },
+    {
+      "index": 7,
+      "name": "robert-huff",
+      "strength": 1.0,
+      "final_mse": 9.20598699473552e-08
+    },
+    {
+      "index": 7,
+      "name": "robert-huff",
+      "strength": 1.25,
+      "final_mse": 9.185517554202101e-08
+    },
+    {
+      "index": 7,
+      "name": "robert-huff",
+      "strength": 1.5,
+      "final_mse": 9.173902781870809e-08
+    },
+    {
+      "index": 8,
+      "name": "kimberly-caldwell",
+      "strength": 0.0,
+      "final_mse": 2.501737216470026e-07
+    },
+    {
+      "index": 8,
+      "name": "kimberly-caldwell",
+      "strength": 0.5,
+      "final_mse": 2.415140496239434e-07
+    },
+    {
+      "index": 8,
+      "name": "kimberly-caldwell",
+      "strength": 0.75,
+      "final_mse": 2.3729685449880085e-07
+    },
+    {
+      "index": 8,
+      "name": "kimberly-caldwell",
+      "strength": 1.0,
+      "final_mse": 2.331516780783552e-07
+    },
+    {
+      "index": 8,
+      "name": "kimberly-caldwell",
+      "strength": 1.25,
+      "final_mse": 2.2907300303410828e-07
+    },
+    {
+      "index": 8,
+      "name": "kimberly-caldwell",
+      "strength": 1.5,
+      "final_mse": 2.2505897699934366e-07
+    },
+    {
+      "index": 9,
+      "name": "annette-hansen",
+      "strength": 0.0,
+      "final_mse": 9.216223180708427e-08
+    },
+    {
+      "index": 9,
+      "name": "annette-hansen",
+      "strength": 0.5,
+      "final_mse": 9.79436160442358e-08
+    },
+    {
+      "index": 9,
+      "name": "annette-hansen",
+      "strength": 0.75,
+      "final_mse": 1.0280598303417744e-07
+    },
+    {
+      "index": 9,
+      "name": "annette-hansen",
+      "strength": 1.0,
+      "final_mse": 1.089925397151882e-07
+    },
+    {
+      "index": 9,
+      "name": "annette-hansen",
+      "strength": 1.25,
+      "final_mse": 1.1651481377815542e-07
+    },
+    {
+      "index": 9,
+      "name": "annette-hansen",
+      "strength": 1.5,
+      "final_mse": 1.2536848774326086e-07
+    },
+    {
+      "index": 10,
+      "name": "emma-potter",
+      "strength": 0.0,
+      "final_mse": 4.9092704466336107e-08
+    },
+    {
+      "index": 10,
+      "name": "emma-potter",
+      "strength": 0.5,
+      "final_mse": 4.918991564957618e-08
+    },
+    {
+      "index": 10,
+      "name": "emma-potter",
+      "strength": 0.75,
+      "final_mse": 4.931715502323863e-08
+    },
+    {
+      "index": 10,
+      "name": "emma-potter",
+      "strength": 1.0,
+      "final_mse": 4.949413646207071e-08
+    },
+    {
+      "index": 10,
+      "name": "emma-potter",
+      "strength": 1.25,
+      "final_mse": 4.972263309014562e-08
+    },
+    {
+      "index": 10,
+      "name": "emma-potter",
+      "strength": 1.5,
+      "final_mse": 5.000105507216955e-08
+    },
+    {
+      "index": 11,
+      "name": "alan-campbell",
+      "strength": 0.0,
+      "final_mse": 2.0244439508266585e-07
+    },
+    {
+      "index": 11,
+      "name": "alan-campbell",
+      "strength": 0.5,
+      "final_mse": 1.8946740141406683e-07
+    },
+    {
+      "index": 11,
+      "name": "alan-campbell",
+      "strength": 0.75,
+      "final_mse": 1.953689995566126e-07
+    },
+    {
+      "index": 11,
+      "name": "alan-campbell",
+      "strength": 1.0,
+      "final_mse": 2.0958184715262917e-07
+    },
+    {
+      "index": 11,
+      "name": "alan-campbell",
+      "strength": 1.25,
+      "final_mse": 2.3209556187414765e-07
+    },
+    {
+      "index": 11,
+      "name": "alan-campbell",
+      "strength": 1.5,
+      "final_mse": 2.6295979125168584e-07
+    },
+    {
+      "index": 12,
+      "name": "steven-williams",
+      "strength": 0.0,
+      "final_mse": 1.211583624045333e-07
+    },
+    {
+      "index": 12,
+      "name": "steven-williams",
+      "strength": 0.5,
+      "final_mse": 1.177009809491873e-07
+    },
+    {
+      "index": 12,
+      "name": "steven-williams",
+      "strength": 0.75,
+      "final_mse": 1.1640082397954128e-07
+    },
+    {
+      "index": 12,
+      "name": "steven-williams",
+      "strength": 1.0,
+      "final_mse": 1.1538544390053113e-07
+    },
+    {
+      "index": 12,
+      "name": "steven-williams",
+      "strength": 1.25,
+      "final_mse": 1.1464962979159751e-07
+    },
+    {
+      "index": 12,
+      "name": "steven-williams",
+      "strength": 1.5,
+      "final_mse": 1.141806716863515e-07
+    },
+    {
+      "index": 13,
+      "name": "hannah-best",
+      "strength": 0.0,
+      "final_mse": 7.088130185828856e-08
+    },
+    {
+      "index": 13,
+      "name": "hannah-best",
+      "strength": 0.5,
+      "final_mse": 7.296837026867804e-08
+    },
+    {
+      "index": 13,
+      "name": "hannah-best",
+      "strength": 0.75,
+      "final_mse": 7.509801939471229e-08
+    },
+    {
+      "index": 13,
+      "name": "hannah-best",
+      "strength": 1.0,
+      "final_mse": 7.794797081742626e-08
+    },
+    {
+      "index": 13,
+      "name": "hannah-best",
+      "strength": 1.25,
+      "final_mse": 8.151968264827456e-08
+    },
+    {
+      "index": 13,
+      "name": "hannah-best",
+      "strength": 1.5,
+      "final_mse": 8.581317201217969e-08
+    },
+    {
+      "index": 14,
+      "name": "thomas-parsons",
+      "strength": 0.0,
+      "final_mse": 2.8172525287392074e-07
+    },
+    {
+      "index": 14,
+      "name": "thomas-parsons",
+      "strength": 0.5,
+      "final_mse": 2.8117214530303426e-07
+    },
+    {
+      "index": 14,
+      "name": "thomas-parsons",
+      "strength": 0.75,
+      "final_mse": 2.811858667496171e-07
+    },
+    {
+      "index": 14,
+      "name": "thomas-parsons",
+      "strength": 1.0,
+      "final_mse": 2.813594288436519e-07
+    },
+    {
+      "index": 14,
+      "name": "thomas-parsons",
+      "strength": 1.25,
+      "final_mse": 2.817378429020448e-07
+    },
+    {
+      "index": 14,
+      "name": "thomas-parsons",
+      "strength": 1.5,
+      "final_mse": 2.8232785539785155e-07
+    },
+    {
+      "index": 15,
+      "name": "kenneth-frost",
+      "strength": 0.0,
+      "final_mse": 9.886699837300192e-08
+    },
+    {
+      "index": 15,
+      "name": "kenneth-frost",
+      "strength": 0.5,
+      "final_mse": 8.591136646215532e-08
+    },
+    {
+      "index": 15,
+      "name": "kenneth-frost",
+      "strength": 0.75,
+      "final_mse": 8.0354300393259e-08
+    },
+    {
+      "index": 15,
+      "name": "kenneth-frost",
+      "strength": 1.0,
+      "final_mse": 7.541805132139291e-08
+    },
+    {
+      "index": 15,
+      "name": "kenneth-frost",
+      "strength": 1.25,
+      "final_mse": 7.109728796776783e-08
+    },
+    {
+      "index": 15,
+      "name": "kenneth-frost",
+      "strength": 1.5,
+      "final_mse": 6.738283716122452e-08
+    },
+    {
+      "index": 16,
+      "name": "joseph-shaffer",
+      "strength": 0.0,
+      "final_mse": 1.2305368582453134e-07
+    },
+    {
+      "index": 16,
+      "name": "joseph-shaffer",
+      "strength": 0.5,
+      "final_mse": 1.2343179874818918e-07
+    },
+    {
+      "index": 16,
+      "name": "joseph-shaffer",
+      "strength": 0.75,
+      "final_mse": 1.239450359964047e-07
+    },
+    {
+      "index": 16,
+      "name": "joseph-shaffer",
+      "strength": 1.0,
+      "final_mse": 1.246757678384252e-07
+    },
+    {
+      "index": 16,
+      "name": "joseph-shaffer",
+      "strength": 1.25,
+      "final_mse": 1.256237161202452e-07
+    },
+    {
+      "index": 16,
+      "name": "joseph-shaffer",
+      "strength": 1.5,
+      "final_mse": 1.267880091117885e-07
+    },
+    {
+      "index": 17,
+      "name": "natasha-richardson",
+      "strength": 0.0,
+      "final_mse": 1.78092206007349e-07
+    },
+    {
+      "index": 17,
+      "name": "natasha-richardson",
+      "strength": 0.5,
+      "final_mse": 1.7259176777883426e-07
+    },
+    {
+      "index": 17,
+      "name": "natasha-richardson",
+      "strength": 0.75,
+      "final_mse": 1.7020285280746073e-07
+    },
+    {
+      "index": 17,
+      "name": "natasha-richardson",
+      "strength": 1.0,
+      "final_mse": 1.6805970195722085e-07
+    },
+    {
+      "index": 17,
+      "name": "natasha-richardson",
+      "strength": 1.25,
+      "final_mse": 1.6615943037126137e-07
+    },
+    {
+      "index": 17,
+      "name": "natasha-richardson",
+      "strength": 1.5,
+      "final_mse": 1.6450702891389286e-07
+    },
+    {
+      "index": 18,
+      "name": "anne-clayton",
+      "strength": 0.0,
+      "final_mse": 1.2904992152409897e-07
+    },
+    {
+      "index": 18,
+      "name": "anne-clayton",
+      "strength": 0.5,
+      "final_mse": 1.2831421662108994e-07
+    },
+    {
+      "index": 18,
+      "name": "anne-clayton",
+      "strength": 0.75,
+      "final_mse": 1.2799290920785356e-07
+    },
+    {
+      "index": 18,
+      "name": "anne-clayton",
+      "strength": 1.0,
+      "final_mse": 1.2771289518992968e-07
+    },
+    {
+      "index": 18,
+      "name": "anne-clayton",
+      "strength": 1.25,
+      "final_mse": 1.2745349461618821e-07
+    },
+    {
+      "index": 18,
+      "name": "anne-clayton",
+      "strength": 1.5,
+      "final_mse": 1.272297905786658e-07
+    },
+    {
+      "index": 19,
+      "name": "jessica-benson",
+      "strength": 0.0,
+      "final_mse": 1.3421577053259973e-07
+    },
+    {
+      "index": 19,
+      "name": "jessica-benson",
+      "strength": 0.5,
+      "final_mse": 1.4875290310590096e-07
+    },
+    {
+      "index": 19,
+      "name": "jessica-benson",
+      "strength": 0.75,
+      "final_mse": 1.6135405947302415e-07
+    },
+    {
+      "index": 19,
+      "name": "jessica-benson",
+      "strength": 1.0,
+      "final_mse": 1.7754623100486873e-07
+    },
+    {
+      "index": 19,
+      "name": "jessica-benson",
+      "strength": 1.25,
+      "final_mse": 1.9735100020702378e-07
+    },
+    {
+      "index": 19,
+      "name": "jessica-benson",
+      "strength": 1.5,
+      "final_mse": 2.2077497386981763e-07
+    },
+    {
+      "index": 20,
+      "name": "alexandra-adkins",
+      "strength": 0.0,
+      "final_mse": 1.4865706271528475e-07
+    },
+    {
+      "index": 20,
+      "name": "alexandra-adkins",
+      "strength": 0.5,
+      "final_mse": 1.5083344045389506e-07
+    },
+    {
+      "index": 20,
+      "name": "alexandra-adkins",
+      "strength": 0.75,
+      "final_mse": 1.5268950537419534e-07
+    },
+    {
+      "index": 20,
+      "name": "alexandra-adkins",
+      "strength": 1.0,
+      "final_mse": 1.550653084533577e-07
+    },
+    {
+      "index": 20,
+      "name": "alexandra-adkins",
+      "strength": 1.25,
+      "final_mse": 1.5795614571340144e-07
+    },
+    {
+      "index": 20,
+      "name": "alexandra-adkins",
+      "strength": 1.5,
+      "final_mse": 1.6133264055422803e-07
+    },
+    {
+      "index": 21,
+      "name": "olivia-hodge",
+      "strength": 0.0,
+      "final_mse": 9.298053015436565e-08
+    },
+    {
+      "index": 21,
+      "name": "olivia-hodge",
+      "strength": 0.5,
+      "final_mse": 9.08361138527074e-08
+    },
+    {
+      "index": 21,
+      "name": "olivia-hodge",
+      "strength": 0.75,
+      "final_mse": 9.177533636523763e-08
+    },
+    {
+      "index": 21,
+      "name": "olivia-hodge",
+      "strength": 1.0,
+      "final_mse": 9.406617340536342e-08
+    },
+    {
+      "index": 21,
+      "name": "olivia-hodge",
+      "strength": 1.25,
+      "final_mse": 9.77090080834263e-08
+    },
+    {
+      "index": 21,
+      "name": "olivia-hodge",
+      "strength": 1.5,
+      "final_mse": 1.0269649279253336e-07
+    },
+    {
+      "index": 22,
+      "name": "mary-clay",
+      "strength": 0.0,
+      "final_mse": 1.9117682781930064e-07
+    },
+    {
+      "index": 22,
+      "name": "mary-clay",
+      "strength": 0.5,
+      "final_mse": 1.9700563029245874e-07
+    },
+    {
+      "index": 22,
+      "name": "mary-clay",
+      "strength": 0.75,
+      "final_mse": 2.0035927599237702e-07
+    },
+    {
+      "index": 22,
+      "name": "mary-clay",
+      "strength": 1.0,
+      "final_mse": 2.0399426867180048e-07
+    },
+    {
+      "index": 22,
+      "name": "mary-clay",
+      "strength": 1.25,
+      "final_mse": 2.07932363795682e-07
+    },
+    {
+      "index": 22,
+      "name": "mary-clay",
+      "strength": 1.5,
+      "final_mse": 2.1214705910284767e-07
+    },
+    {
+      "index": 23,
+      "name": "emily-ho",
+      "strength": 0.0,
+      "final_mse": 9.747357366701889e-08
+    },
+    {
+      "index": 23,
+      "name": "emily-ho",
+      "strength": 0.5,
+      "final_mse": 1.0712073162052726e-07
+    },
+    {
+      "index": 23,
+      "name": "emily-ho",
+      "strength": 0.75,
+      "final_mse": 1.1325328169086948e-07
+    },
+    {
+      "index": 23,
+      "name": "emily-ho",
+      "strength": 1.0,
+      "final_mse": 1.2027258411403526e-07
+    },
+    {
+      "index": 23,
+      "name": "emily-ho",
+      "strength": 1.25,
+      "final_mse": 1.2817868750617914e-07
+    },
+    {
+      "index": 23,
+      "name": "emily-ho",
+      "strength": 1.5,
+      "final_mse": 1.3697085375431888e-07
+    },
+    {
+      "index": 24,
+      "name": "michael-poole",
+      "strength": 0.0,
+      "final_mse": 9.209113184268895e-08
+    },
+    {
+      "index": 24,
+      "name": "michael-poole",
+      "strength": 0.5,
+      "final_mse": 8.960817583000345e-08
+    },
+    {
+      "index": 24,
+      "name": "michael-poole",
+      "strength": 0.75,
+      "final_mse": 8.866247555001225e-08
+    },
+    {
+      "index": 24,
+      "name": "michael-poole",
+      "strength": 1.0,
+      "final_mse": 8.790851854563567e-08
+    },
+    {
+      "index": 24,
+      "name": "michael-poole",
+      "strength": 1.25,
+      "final_mse": 8.735161322646011e-08
+    },
+    {
+      "index": 24,
+      "name": "michael-poole",
+      "strength": 1.5,
+      "final_mse": 8.698467367154047e-08
+    },
+    {
+      "index": 25,
+      "name": "courtney-roth",
+      "strength": 0.0,
+      "final_mse": 6.032001072498669e-08
+    },
+    {
+      "index": 25,
+      "name": "courtney-roth",
+      "strength": 0.5,
+      "final_mse": 6.477933055543098e-08
+    },
+    {
+      "index": 25,
+      "name": "courtney-roth",
+      "strength": 0.75,
+      "final_mse": 6.748807884775344e-08
+    },
+    {
+      "index": 25,
+      "name": "courtney-roth",
+      "strength": 1.0,
+      "final_mse": 7.0521639750473e-08
+    },
+    {
+      "index": 25,
+      "name": "courtney-roth",
+      "strength": 1.25,
+      "final_mse": 7.387067353397382e-08
+    },
+    {
+      "index": 25,
+      "name": "courtney-roth",
+      "strength": 1.5,
+      "final_mse": 7.753421047875242e-08
+    },
+    {
+      "index": 26,
+      "name": "randy-hernandez",
+      "strength": 0.0,
+      "final_mse": 2.2130428520414675e-07
+    },
+    {
+      "index": 26,
+      "name": "randy-hernandez",
+      "strength": 0.5,
+      "final_mse": 2.2590005961124182e-07
+    },
+    {
+      "index": 26,
+      "name": "randy-hernandez",
+      "strength": 0.75,
+      "final_mse": 2.285825778248794e-07
+    },
+    {
+      "index": 26,
+      "name": "randy-hernandez",
+      "strength": 1.0,
+      "final_mse": 2.3152040016044153e-07
+    },
+    {
+      "index": 26,
+      "name": "randy-hernandez",
+      "strength": 1.25,
+      "final_mse": 2.3472551220159046e-07
+    },
+    {
+      "index": 26,
+      "name": "randy-hernandez",
+      "strength": 1.5,
+      "final_mse": 2.3819751189412176e-07
+    },
+    {
+      "index": 27,
+      "name": "robert-williams",
+      "strength": 0.0,
+      "final_mse": 9.374901468618138e-08
+    },
+    {
+      "index": 27,
+      "name": "robert-williams",
+      "strength": 0.5,
+      "final_mse": 8.205059514787848e-08
+    },
+    {
+      "index": 27,
+      "name": "robert-williams",
+      "strength": 0.75,
+      "final_mse": 7.734885169221356e-08
+    },
+    {
+      "index": 27,
+      "name": "robert-williams",
+      "strength": 1.0,
+      "final_mse": 7.341315326408835e-08
+    },
+    {
+      "index": 27,
+      "name": "robert-williams",
+      "strength": 1.25,
+      "final_mse": 7.024871623137319e-08
+    },
+    {
+      "index": 27,
+      "name": "robert-williams",
+      "strength": 1.5,
+      "final_mse": 6.78565224972386e-08
+    },
+    {
+      "index": 28,
+      "name": "todd-jenkins",
+      "strength": 0.0,
+      "final_mse": 4.699765559908567e-07
+    },
+    {
+      "index": 28,
+      "name": "todd-jenkins",
+      "strength": 0.5,
+      "final_mse": 4.661509376103221e-07
+    },
+    {
+      "index": 28,
+      "name": "todd-jenkins",
+      "strength": 0.75,
+      "final_mse": 4.6545047408371253e-07
+    },
+    {
+      "index": 28,
+      "name": "todd-jenkins",
+      "strength": 1.0,
+      "final_mse": 4.655885303511675e-07
+    },
+    {
+      "index": 28,
+      "name": "todd-jenkins",
+      "strength": 1.25,
+      "final_mse": 4.6653867214339293e-07
+    },
+    {
+      "index": 28,
+      "name": "todd-jenkins",
+      "strength": 1.5,
+      "final_mse": 4.6829850416523676e-07
+    },
+    {
+      "index": 29,
+      "name": "elizabeth-jackson",
+      "strength": 0.0,
+      "final_mse": 7.916653250069555e-08
+    },
+    {
+      "index": 29,
+      "name": "elizabeth-jackson",
+      "strength": 0.5,
+      "final_mse": 7.802951886598064e-08
+    },
+    {
+      "index": 29,
+      "name": "elizabeth-jackson",
+      "strength": 0.75,
+      "final_mse": 7.854681805313522e-08
+    },
+    {
+      "index": 29,
+      "name": "elizabeth-jackson",
+      "strength": 1.0,
+      "final_mse": 7.978996338864249e-08
+    },
+    {
+      "index": 29,
+      "name": "elizabeth-jackson",
+      "strength": 1.25,
+      "final_mse": 8.17651063848905e-08
+    },
+    {
+      "index": 29,
+      "name": "elizabeth-jackson",
+      "strength": 1.5,
+      "final_mse": 8.448123316247169e-08
+    },
+    {
+      "index": 30,
+      "name": "megan-ashley",
+      "strength": 0.0,
+      "final_mse": 1.7071431968255886e-07
+    },
+    {
+      "index": 30,
+      "name": "megan-ashley",
+      "strength": 0.5,
+      "final_mse": 1.71109126604506e-07
+    },
+    {
+      "index": 30,
+      "name": "megan-ashley",
+      "strength": 0.75,
+      "final_mse": 1.7197375532927608e-07
+    },
+    {
+      "index": 30,
+      "name": "megan-ashley",
+      "strength": 1.0,
+      "final_mse": 1.7328983548432303e-07
+    },
+    {
+      "index": 30,
+      "name": "megan-ashley",
+      "strength": 1.25,
+      "final_mse": 1.7506285688826187e-07
+    },
+    {
+      "index": 30,
+      "name": "megan-ashley",
+      "strength": 1.5,
+      "final_mse": 1.7728198554969554e-07
+    },
+    {
+      "index": 31,
+      "name": "martin-hill",
+      "strength": 0.0,
+      "final_mse": 1.620348879669737e-07
+    },
+    {
+      "index": 31,
+      "name": "martin-hill",
+      "strength": 0.5,
+      "final_mse": 1.6285826047901466e-07
+    },
+    {
+      "index": 31,
+      "name": "martin-hill",
+      "strength": 0.75,
+      "final_mse": 1.6374830745008021e-07
+    },
+    {
+      "index": 31,
+      "name": "martin-hill",
+      "strength": 1.0,
+      "final_mse": 1.6496041045900193e-07
+    },
+    {
+      "index": 31,
+      "name": "martin-hill",
+      "strength": 1.25,
+      "final_mse": 1.664994277625859e-07
+    },
+    {
+      "index": 31,
+      "name": "martin-hill",
+      "strength": 1.5,
+      "final_mse": 1.6836382011570848e-07
+    },
+    {
+      "index": 32,
+      "name": "lauren-johnson",
+      "strength": 0.0,
+      "final_mse": 1.2803254060235596e-07
+    },
+    {
+      "index": 32,
+      "name": "lauren-johnson",
+      "strength": 0.5,
+      "final_mse": 1.2400494756306822e-07
+    },
+    {
+      "index": 32,
+      "name": "lauren-johnson",
+      "strength": 0.75,
+      "final_mse": 1.2237314042896415e-07
+    },
+    {
+      "index": 32,
+      "name": "lauren-johnson",
+      "strength": 1.0,
+      "final_mse": 1.2098982863455165e-07
+    },
+    {
+      "index": 32,
+      "name": "lauren-johnson",
+      "strength": 1.25,
+      "final_mse": 1.1984864020658127e-07
+    },
+    {
+      "index": 32,
+      "name": "lauren-johnson",
+      "strength": 1.5,
+      "final_mse": 1.1895295606853525e-07
+    },
+    {
+      "index": 33,
+      "name": "michele-wright",
+      "strength": 0.0,
+      "final_mse": 1.500199024976354e-07
+    },
+    {
+      "index": 33,
+      "name": "michele-wright",
+      "strength": 0.5,
+      "final_mse": 1.4710968241906623e-07
+    },
+    {
+      "index": 33,
+      "name": "michele-wright",
+      "strength": 0.75,
+      "final_mse": 1.460382077047304e-07
+    },
+    {
+      "index": 33,
+      "name": "michele-wright",
+      "strength": 1.0,
+      "final_mse": 1.4521565023472275e-07
+    },
+    {
+      "index": 33,
+      "name": "michele-wright",
+      "strength": 1.25,
+      "final_mse": 1.446459593704602e-07
+    },
+    {
+      "index": 33,
+      "name": "michele-wright",
+      "strength": 1.5,
+      "final_mse": 1.443370189717797e-07
+    },
+    {
+      "index": 34,
+      "name": "kevin-newman",
+      "strength": 0.0,
+      "final_mse": 8.062040155600036e-08
+    },
+    {
+      "index": 34,
+      "name": "kevin-newman",
+      "strength": 0.5,
+      "final_mse": 6.530054470725962e-08
+    },
+    {
+      "index": 34,
+      "name": "kevin-newman",
+      "strength": 0.75,
+      "final_mse": 6.028873980217735e-08
+    },
+    {
+      "index": 34,
+      "name": "kevin-newman",
+      "strength": 1.0,
+      "final_mse": 5.704442337650194e-08
+    },
+    {
+      "index": 34,
+      "name": "kevin-newman",
+      "strength": 1.25,
+      "final_mse": 5.557253572950793e-08
+    },
+    {
+      "index": 34,
+      "name": "kevin-newman",
+      "strength": 1.5,
+      "final_mse": 5.588436390956908e-08
+    },
+    {
+      "index": 35,
+      "name": "bobby-vasquez",
+      "strength": 0.0,
+      "final_mse": 1.6448788869466234e-07
+    },
+    {
+      "index": 35,
+      "name": "bobby-vasquez",
+      "strength": 0.5,
+      "final_mse": 1.7161339646994396e-07
+    },
+    {
+      "index": 35,
+      "name": "bobby-vasquez",
+      "strength": 0.75,
+      "final_mse": 1.755113497916957e-07
+    },
+    {
+      "index": 35,
+      "name": "bobby-vasquez",
+      "strength": 1.0,
+      "final_mse": 1.7963925479113571e-07
+    },
+    {
+      "index": 35,
+      "name": "bobby-vasquez",
+      "strength": 1.25,
+      "final_mse": 1.8401681395225234e-07
+    },
+    {
+      "index": 35,
+      "name": "bobby-vasquez",
+      "strength": 1.5,
+      "final_mse": 1.886280919170844e-07
+    },
+    {
+      "index": 36,
+      "name": "paul-beasley",
+      "strength": 0.0,
+      "final_mse": 1.1494297766841651e-07
+    },
+    {
+      "index": 36,
+      "name": "paul-beasley",
+      "strength": 0.5,
+      "final_mse": 1.1471487068348471e-07
+    },
+    {
+      "index": 36,
+      "name": "paul-beasley",
+      "strength": 0.75,
+      "final_mse": 1.1473424392190749e-07
+    },
+    {
+      "index": 36,
+      "name": "paul-beasley",
+      "strength": 1.0,
+      "final_mse": 1.1483294329976886e-07
+    },
+    {
+      "index": 36,
+      "name": "paul-beasley",
+      "strength": 1.25,
+      "final_mse": 1.150116833871879e-07
+    },
+    {
+      "index": 36,
+      "name": "paul-beasley",
+      "strength": 1.5,
+      "final_mse": 1.1526652349741609e-07
+    },
+    {
+      "index": 37,
+      "name": "kyle-braun",
+      "strength": 0.0,
+      "final_mse": 1.9868488800656241e-07
+    },
+    {
+      "index": 37,
+      "name": "kyle-braun",
+      "strength": 0.5,
+      "final_mse": 2.3822133943140668e-07
+    },
+    {
+      "index": 37,
+      "name": "kyle-braun",
+      "strength": 0.75,
+      "final_mse": 2.612995049283038e-07
+    },
+    {
+      "index": 37,
+      "name": "kyle-braun",
+      "strength": 1.0,
+      "final_mse": 2.866184172535652e-07
+    },
+    {
+      "index": 37,
+      "name": "kyle-braun",
+      "strength": 1.25,
+      "final_mse": 3.1415394544257006e-07
+    },
+    {
+      "index": 37,
+      "name": "kyle-braun",
+      "strength": 1.5,
+      "final_mse": 3.439414982348604e-07
+    },
+    {
+      "index": 38,
+      "name": "leonard-brown",
+      "strength": 0.0,
+      "final_mse": 2.941670304921586e-07
+    },
+    {
+      "index": 38,
+      "name": "leonard-brown",
+      "strength": 0.5,
+      "final_mse": 2.6866753843458216e-07
+    },
+    {
+      "index": 38,
+      "name": "leonard-brown",
+      "strength": 0.75,
+      "final_mse": 2.570018586674421e-07
+    },
+    {
+      "index": 38,
+      "name": "leonard-brown",
+      "strength": 1.0,
+      "final_mse": 2.460416843047892e-07
+    },
+    {
+      "index": 38,
+      "name": "leonard-brown",
+      "strength": 1.25,
+      "final_mse": 2.357735872891861e-07
+    },
+    {
+      "index": 38,
+      "name": "leonard-brown",
+      "strength": 1.5,
+      "final_mse": 2.2622863729040568e-07
+    },
+    {
+      "index": 39,
+      "name": "kara-garrett",
+      "strength": 0.0,
+      "final_mse": 9.682574929459071e-08
+    },
+    {
+      "index": 39,
+      "name": "kara-garrett",
+      "strength": 0.5,
+      "final_mse": 1.0967979918957378e-07
+    },
+    {
+      "index": 39,
+      "name": "kara-garrett",
+      "strength": 0.75,
+      "final_mse": 1.1666544165843402e-07
+    },
+    {
+      "index": 39,
+      "name": "kara-garrett",
+      "strength": 1.0,
+      "final_mse": 1.2403477241704578e-07
+    },
+    {
+      "index": 39,
+      "name": "kara-garrett",
+      "strength": 1.25,
+      "final_mse": 1.317977142580904e-07
+    },
+    {
+      "index": 39,
+      "name": "kara-garrett",
+      "strength": 1.5,
+      "final_mse": 1.399386243675708e-07
+    },
+    {
+      "index": 40,
+      "name": "alejandro-smith",
+      "strength": 0.0,
+      "final_mse": 8.579202298149046e-08
+    },
+    {
+      "index": 40,
+      "name": "alejandro-smith",
+      "strength": 0.5,
+      "final_mse": 8.329827951825622e-08
+    },
+    {
+      "index": 40,
+      "name": "alejandro-smith",
+      "strength": 0.75,
+      "final_mse": 8.242748694353696e-08
+    },
+    {
+      "index": 40,
+      "name": "alejandro-smith",
+      "strength": 1.0,
+      "final_mse": 8.18038014669622e-08
+    },
+    {
+      "index": 40,
+      "name": "alejandro-smith",
+      "strength": 1.25,
+      "final_mse": 8.144013006305574e-08
+    },
+    {
+      "index": 40,
+      "name": "alejandro-smith",
+      "strength": 1.5,
+      "final_mse": 8.132809150463716e-08
+    },
+    {
+      "index": 41,
+      "name": "tammy-hopkins",
+      "strength": 0.0,
+      "final_mse": 7.80947247491892e-08
+    },
+    {
+      "index": 41,
+      "name": "tammy-hopkins",
+      "strength": 0.5,
+      "final_mse": 7.197384452456499e-08
+    },
+    {
+      "index": 41,
+      "name": "tammy-hopkins",
+      "strength": 0.75,
+      "final_mse": 7.071173062257663e-08
+    },
+    {
+      "index": 41,
+      "name": "tammy-hopkins",
+      "strength": 1.0,
+      "final_mse": 7.066118090362596e-08
+    },
+    {
+      "index": 41,
+      "name": "tammy-hopkins",
+      "strength": 1.25,
+      "final_mse": 7.182215869086379e-08
+    },
+    {
+      "index": 41,
+      "name": "tammy-hopkins",
+      "strength": 1.5,
+      "final_mse": 7.420195737015092e-08
+    },
+    {
+      "index": 42,
+      "name": "jonathan-cross",
+      "strength": 0.0,
+      "final_mse": 1.4982474651736972e-07
+    },
+    {
+      "index": 42,
+      "name": "jonathan-cross",
+      "strength": 0.5,
+      "final_mse": 1.4351766103865127e-07
+    },
+    {
+      "index": 42,
+      "name": "jonathan-cross",
+      "strength": 0.75,
+      "final_mse": 1.4065201830302402e-07
+    },
+    {
+      "index": 42,
+      "name": "jonathan-cross",
+      "strength": 1.0,
+      "final_mse": 1.3799010211414593e-07
+    },
+    {
+      "index": 42,
+      "name": "jonathan-cross",
+      "strength": 1.25,
+      "final_mse": 1.355193657620023e-07
+    },
+    {
+      "index": 42,
+      "name": "jonathan-cross",
+      "strength": 1.5,
+      "final_mse": 1.3324132052949167e-07
+    },
+    {
+      "index": 43,
+      "name": "christy-johnson",
+      "strength": 0.0,
+      "final_mse": 1.466501826312003e-07
+    },
+    {
+      "index": 43,
+      "name": "christy-johnson",
+      "strength": 0.5,
+      "final_mse": 1.486097037395218e-07
+    },
+    {
+      "index": 43,
+      "name": "christy-johnson",
+      "strength": 0.75,
+      "final_mse": 1.4969487495728147e-07
+    },
+    {
+      "index": 43,
+      "name": "christy-johnson",
+      "strength": 1.0,
+      "final_mse": 1.5085675378138963e-07
+    },
+    {
+      "index": 43,
+      "name": "christy-johnson",
+      "strength": 1.25,
+      "final_mse": 1.520912422575917e-07
+    },
+    {
+      "index": 43,
+      "name": "christy-johnson",
+      "strength": 1.5,
+      "final_mse": 1.534003625101813e-07
+    },
+    {
+      "index": 44,
+      "name": "edward-adams",
+      "strength": 0.0,
+      "final_mse": 8.495290372158733e-08
+    },
+    {
+      "index": 44,
+      "name": "edward-adams",
+      "strength": 0.5,
+      "final_mse": 9.60106418255249e-08
+    },
+    {
+      "index": 44,
+      "name": "edward-adams",
+      "strength": 0.75,
+      "final_mse": 1.0377154662557598e-07
+    },
+    {
+      "index": 44,
+      "name": "edward-adams",
+      "strength": 1.0,
+      "final_mse": 1.1303394337256069e-07
+    },
+    {
+      "index": 44,
+      "name": "edward-adams",
+      "strength": 1.25,
+      "final_mse": 1.238067862753815e-07
+    },
+    {
+      "index": 44,
+      "name": "edward-adams",
+      "strength": 1.5,
+      "final_mse": 1.3609643661647862e-07
+    },
+    {
+      "index": 45,
+      "name": "ryan-harvey",
+      "strength": 0.0,
+      "final_mse": 7.815894466289554e-08
+    },
+    {
+      "index": 45,
+      "name": "ryan-harvey",
+      "strength": 0.5,
+      "final_mse": 7.235484720380882e-08
+    },
+    {
+      "index": 45,
+      "name": "ryan-harvey",
+      "strength": 0.75,
+      "final_mse": 7.020112168094815e-08
+    },
+    {
+      "index": 45,
+      "name": "ryan-harvey",
+      "strength": 1.0,
+      "final_mse": 6.854397572397049e-08
+    },
+    {
+      "index": 45,
+      "name": "ryan-harvey",
+      "strength": 1.25,
+      "final_mse": 6.737767213186208e-08
+    },
+    {
+      "index": 45,
+      "name": "ryan-harvey",
+      "strength": 1.5,
+      "final_mse": 6.669883092897997e-08
+    },
+    {
+      "index": 46,
+      "name": "allison-tyler",
+      "strength": 0.0,
+      "final_mse": 1.0111965461990811e-07
+    },
+    {
+      "index": 46,
+      "name": "allison-tyler",
+      "strength": 0.5,
+      "final_mse": 9.923313111406881e-08
+    },
+    {
+      "index": 46,
+      "name": "allison-tyler",
+      "strength": 0.75,
+      "final_mse": 9.871105807949005e-08
+    },
+    {
+      "index": 46,
+      "name": "allison-tyler",
+      "strength": 1.0,
+      "final_mse": 9.846655236755771e-08
+    },
+    {
+      "index": 46,
+      "name": "allison-tyler",
+      "strength": 1.25,
+      "final_mse": 9.84997987737333e-08
+    },
+    {
+      "index": 46,
+      "name": "allison-tyler",
+      "strength": 1.5,
+      "final_mse": 9.881242608079725e-08
+    },
+    {
+      "index": 47,
+      "name": "debbie-anderson",
+      "strength": 0.0,
+      "final_mse": 1.1597608079546005e-07
+    },
+    {
+      "index": 47,
+      "name": "debbie-anderson",
+      "strength": 0.5,
+      "final_mse": 1.1368797637437093e-07
+    },
+    {
+      "index": 47,
+      "name": "debbie-anderson",
+      "strength": 0.75,
+      "final_mse": 1.1266166853001937e-07
+    },
+    {
+      "index": 47,
+      "name": "debbie-anderson",
+      "strength": 1.0,
+      "final_mse": 1.1172735483545138e-07
+    },
+    {
+      "index": 47,
+      "name": "debbie-anderson",
+      "strength": 1.25,
+      "final_mse": 1.1087506300007047e-07
+    },
+    {
+      "index": 47,
+      "name": "debbie-anderson",
+      "strength": 1.5,
+      "final_mse": 1.1010875134979656e-07
+    },
+    {
+      "index": 48,
+      "name": "andrew-nguyen",
+      "strength": 0.0,
+      "final_mse": 1.1354059834714202e-07
+    },
+    {
+      "index": 48,
+      "name": "andrew-nguyen",
+      "strength": 0.5,
+      "final_mse": 1.0774466072633576e-07
+    },
+    {
+      "index": 48,
+      "name": "andrew-nguyen",
+      "strength": 0.75,
+      "final_mse": 1.0588179324314476e-07
+    },
+    {
+      "index": 48,
+      "name": "andrew-nguyen",
+      "strength": 1.0,
+      "final_mse": 1.0471265127088558e-07
+    },
+    {
+      "index": 48,
+      "name": "andrew-nguyen",
+      "strength": 1.25,
+      "final_mse": 1.0423514456664266e-07
+    },
+    {
+      "index": 48,
+      "name": "andrew-nguyen",
+      "strength": 1.5,
+      "final_mse": 1.0445551012964524e-07
+    },
+    {
+      "index": 49,
+      "name": "mark-cole",
+      "strength": 0.0,
+      "final_mse": 1.8098695331829115e-07
+    },
+    {
+      "index": 49,
+      "name": "mark-cole",
+      "strength": 0.5,
+      "final_mse": 1.9045088046557248e-07
+    },
+    {
+      "index": 49,
+      "name": "mark-cole",
+      "strength": 0.75,
+      "final_mse": 1.961389132084639e-07
+    },
+    {
+      "index": 49,
+      "name": "mark-cole",
+      "strength": 1.0,
+      "final_mse": 2.0247785846375282e-07
+    },
+    {
+      "index": 49,
+      "name": "mark-cole",
+      "strength": 1.25,
+      "final_mse": 2.0945667303764725e-07
+    },
+    {
+      "index": 49,
+      "name": "mark-cole",
+      "strength": 1.5,
+      "final_mse": 2.170891295378354e-07
+    }
+  ]
+}

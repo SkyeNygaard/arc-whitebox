@@ -1,0 +1,8 @@
+arm,evidence,main_bases,companion_bases,paired_bases,tracked_or_projected_flops,control_cost_status,wall_s,peak_rss_mib,numerical_parity,statistical_status
+production_partial_tree,archived full subprocess record,129,0,0,170906815488,none,63.995,,reference,production baseline
+A42,archived full local + local panel,129,0,0,170906815488,none,28.011,374.7,max abs 3.418e-12 vs baseline,same estimator
+A43,archived full local + local panel,129,0,0,170382691584,none,25.702,374.8,bit-identical to A42; max abs 3.418e-12 vs baseline,same estimator
+A43+companion16,exact local panels; propagation projection,129,16,0,190194632465.86047,add 2.238B inherited or 19.675B literal count,13.890627019000021,292.8125,main output bit-identical,exploratory raw .848861; immutable validation pending
+A43+112+17 partial-MUB,exact local panels; propagation projection,112,17,0,168979345771.53488,add 2.238B inherited or 17.082B literal count,14.30211101000009,292.890625,main output bit-identical,"validation raw .9427, worst 1.482; unsafe"
+A43+partial-MUB+pair2,exact local panels; propagation projection,112,17,2,171455838381.76743,add 2.238B inherited or 17.082B literal count,15.149662836000061,292.8984375,main output bit-identical,implementation only; no new rule selected
+A43+partial-MUB+pair4,exact local panels; propagation projection,112,17,4,173932330992.0,add 2.238B inherited or 17.082B literal count,12.386095422999915,292.46484375,main output bit-identical,implementation only; no new rule selected

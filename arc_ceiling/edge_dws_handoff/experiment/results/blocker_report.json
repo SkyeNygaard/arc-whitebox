@@ -1,0 +1,57 @@
+{
+  "terminal_status": "EXTERNALLY_BLOCKED",
+  "gate_evaluated": false,
+  "model_trained": false,
+  "validation_opened": false,
+  "test_opened": false,
+  "scientific_verdict": "No pass/fail claim for the width-256 edge-state DWS model class.",
+  "missing_required_assets": [
+    {
+      "name": "frozen_low_dimensional_label_bundle.npz",
+      "required_arrays": [
+        "weights [N,32,256,256]",
+        "base_network_id [N]",
+        "rotation_id [N]",
+        "baseline_error [N,256]",
+        "replay_jacobian [N,256,D]",
+        "anchor_coeffs [N,D]",
+        "target_coeffs [N,D]",
+        "optional node_observables/layer_observables/target_confidence"
+      ],
+      "constraint": "D must be 1-16 and label_kind must be joint_anchor_residual, g31_residual, or v80_scale."
+    },
+    {
+      "name": "frozen_label_manifest.json",
+      "requirements": [
+        "data SHA-256",
+        "source hashes",
+        "frozen status",
+        "verified exact-linear replay proof or direct replay numerical test"
+      ]
+    },
+    {
+      "name": "canonical_split_registry.json",
+      "requirements": [
+        "train/calibration/validation/test base-network IDs",
+        "all rotations grouped by base network",
+        "disallowed/exposed ID registry",
+        "canonical split hash"
+      ]
+    },
+    {
+      "name": "exact cost environment",
+      "requirements": [
+        "FlopScope accounting for the model and any replay",
+        "residual subprocess wall time",
+        "GPU memory and inference timing"
+      ]
+    }
+  ],
+  "observed_asset_gap": {
+    "equivariant_repro_zip": "reduced-width code and summary JSON only; no actual-width corpus",
+    "v80_bundle": "scripts and aggregate/per-network MSE diagnostics only; no frozen correction vectors or matching weight tensors",
+    "canonical_v2_ledger": "g31 residual control remains not yet tested",
+    "library_search": "no canonical split registry located"
+  },
+  "runtime_blocker": "Current container reports torch 2.10.0+cpu and cuda_available=false."
+}

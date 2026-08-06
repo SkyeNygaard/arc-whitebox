@@ -1,0 +1,28 @@
+{
+  "split": {
+    "train": "official full rows 0:800",
+    "validation": "official full rows 800:1000",
+    "external": "all 100 official mini rows (disjoint seeds)"
+  },
+  "baseline": "K2 simple cumulant propagation",
+  "ridge": {
+    "train_mse": 2.576463840857061e-05,
+    "validation_mse": 2.616072367439088e-05,
+    "external_mse": 2.5696006102088252e-05,
+    "external_baseline_mse": 8.366277324967086e-05,
+    "external_gain": 3.2558668034746376
+  },
+  "neural": {
+    "train_mse": 2.7097710699308664e-05,
+    "validation_mse": 2.6009824068751186e-05,
+    "external_mse": 2.579121064627543e-05,
+    "external_baseline_mse": 8.366277324967086e-05,
+    "external_gain": 3.2438483238220215
+  },
+  "score_estimate": {
+    "compute_multiplier": 0.1,
+    "ridge_adjusted_score": 2.5696006102088253e-06,
+    "linked_submission_adjusted_score": 1.235e-08,
+    "remaining_adjusted_gap": 208.0648267375567
+  }
+}

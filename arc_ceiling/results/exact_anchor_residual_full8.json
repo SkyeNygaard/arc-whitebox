@@ -1,0 +1,827 @@
+{
+  "protocol": {
+    "split": "full",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "rotation_seed": 3,
+    "folds": 4,
+    "ridges": [
+      0.001,
+      0.01,
+      0.1
+    ],
+    "configs": [
+      "linear_full",
+      "had16_linear_pair",
+      "had32_linear_diag",
+      "had64_linear_diag"
+    ],
+    "anti_leakage": "Coefficients use pointwise final outputs from training basis blocks only; each correction is evaluated on held-out whole basis blocks. No ground-truth means enter fitting."
+  },
+  "summary": {
+    "mean_field_linear": {
+      "mean_mse": 1.9311326087093757e-07,
+      "ratio": 0.9383978198851607,
+      "ci95": [
+        0.9054303737929112,
+        0.9734038340599009
+      ],
+      "wins": 7,
+      "worst_ratio": 1.0097372619323888
+    },
+    "linear_full:ridge=0.001": {
+      "mean_mse": 2.6688606641395427e-07,
+      "ratio": 1.2968829885170845,
+      "ci95": [
+        0.9684980425231171,
+        1.5192721667749443
+      ],
+      "wins": 2,
+      "worst_ratio": 1.671655774859268
+    },
+    "linear_full:ridge=0.01": {
+      "mean_mse": 2.6448808207333234e-07,
+      "ratio": 1.2852304315294922,
+      "ci95": [
+        0.9599279492407155,
+        1.50479475952255
+      ],
+      "wins": 2,
+      "worst_ratio": 1.653453450096295
+    },
+    "linear_full:ridge=0.1": {
+      "mean_mse": 2.4727621079201534e-07,
+      "ratio": 1.2015925580158429,
+      "ci95": [
+        0.9056323998661382,
+        1.3942068880977017
+      ],
+      "wins": 2,
+      "worst_ratio": 1.518118215713062
+    },
+    "had16_linear_pair:ridge=0.001": {
+      "mean_mse": 2.916963385167033e-07,
+      "ratio": 1.4174438715293454,
+      "ci95": [
+        1.0300097009115818,
+        1.6590017492106874
+      ],
+      "wins": 2,
+      "worst_ratio": 1.7995351970240432
+    },
+    "had16_linear_pair:ridge=0.01": {
+      "mean_mse": 2.823220570583432e-07,
+      "ratio": 1.3718913017894863,
+      "ci95": [
+        0.9984591510333756,
+        1.606334462856511
+      ],
+      "wins": 2,
+      "worst_ratio": 1.7511099583906025
+    },
+    "had16_linear_pair:ridge=0.1": {
+      "mean_mse": 2.685402105463297e-07,
+      "ratio": 1.3049209929534258,
+      "ci95": [
+        0.9582268898514508,
+        1.522297126231617
+      ],
+      "wins": 2,
+      "worst_ratio": 1.6476890251550973
+    },
+    "had32_linear_diag:ridge=0.001": {
+      "mean_mse": 2.2085817850099742e-07,
+      "ratio": 1.0732190646796436,
+      "ci95": [
+        0.8768423706549628,
+        1.211482299032102
+      ],
+      "wins": 2,
+      "worst_ratio": 1.300463872918986
+    },
+    "had32_linear_diag:ridge=0.01": {
+      "mean_mse": 2.2043548030036026e-07,
+      "ratio": 1.0711650417287681,
+      "ci95": [
+        0.8779450262891456,
+        1.2097668807244526
+      ],
+      "wins": 2,
+      "worst_ratio": 1.2989194480035926
+    },
+    "had32_linear_diag:ridge=0.1": {
+      "mean_mse": 2.1888336203008842e-07,
+      "ratio": 1.0636228129120717,
+      "ci95": [
+        0.8840015013876714,
+        1.1932966887198795
+      ],
+      "wins": 2,
+      "worst_ratio": 1.2772552997533537
+    },
+    "had64_linear_diag:ridge=0.001": {
+      "mean_mse": 2.5035517116493815e-07,
+      "ratio": 1.2165541908339772,
+      "ci95": [
+        0.8816684157410333,
+        1.4522264713007016
+      ],
+      "wins": 2,
+      "worst_ratio": 1.6214872784446785
+    },
+    "had64_linear_diag:ridge=0.01": {
+      "mean_mse": 2.4926090996698744e-07,
+      "ratio": 1.211236832937835,
+      "ci95": [
+        0.8801441332996358,
+        1.4464203026796658
+      ],
+      "wins": 2,
+      "worst_ratio": 1.6158358103137929
+    },
+    "had64_linear_diag:ridge=0.1": {
+      "mean_mse": 2.4335272188399253e-07,
+      "ratio": 1.1825270965295245,
+      "ci95": [
+        0.8736285450701018,
+        1.400988794293383
+      ],
+      "wins": 2,
+      "worst_ratio": 1.5552270321546586
+    }
+  },
+  "records": [
+    {
+      "index": 0,
+      "name": "dominic-nelson",
+      "baseline_mse": 2.2366903182437187e-07,
+      "mse": {
+        "mean_field_linear": 1.9807119906429148e-07,
+        "linear_full:ridge=0.001": 1.4254022572772764e-07,
+        "linear_full:ridge=0.01": 1.409783757294651e-07,
+        "linear_full:ridge=0.1": 1.3202873602635762e-07,
+        "had16_linear_pair:ridge=0.001": 1.3509616864569518e-07,
+        "had16_linear_pair:ridge=0.01": 1.2975209440039235e-07,
+        "had16_linear_pair:ridge=0.1": 1.2504148014762163e-07,
+        "had32_linear_diag:ridge=0.001": 1.4425436792934327e-07,
+        "had32_linear_diag:ridge=0.01": 1.453769741983564e-07,
+        "had32_linear_diag:ridge=0.1": 1.5026635507532272e-07,
+        "had64_linear_diag:ridge=0.001": 1.2366028107366823e-07,
+        "had64_linear_diag:ridge=0.01": 1.237400894601612e-07,
+        "had64_linear_diag:ridge=0.1": 1.2533242437123207e-07
+      },
+      "diagnostics": {
+        "linear_full:ridge=0.001": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 12.483350902115006
+        },
+        "linear_full:ridge=0.01": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 12.08492142599379
+        },
+        "linear_full:ridge=0.1": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 9.229568043368205
+        },
+        "had16_linear_pair:ridge=0.001": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 971.6420383285616
+        },
+        "had16_linear_pair:ridge=0.01": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 243.64939480495391
+        },
+        "had16_linear_pair:ridge=0.1": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 29.555948336092943
+        },
+        "had32_linear_diag:ridge=0.001": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 770.0266908627376
+        },
+        "had32_linear_diag:ridge=0.01": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 201.6492278948934
+        },
+        "had32_linear_diag:ridge=0.1": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 24.912809969985968
+        },
+        "had64_linear_diag:ridge=0.001": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 914.555436207683
+        },
+        "had64_linear_diag:ridge=0.01": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 239.07505921414366
+        },
+        "had64_linear_diag:ridge=0.1": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 29.362620832406666
+        }
+      },
+      "seconds": 1.474572208011523
+    },
+    {
+      "index": 1,
+      "name": "jimmy-brady",
+      "baseline_mse": 8.420462634440483e-08,
+      "mse": {
+        "mean_field_linear": 6.709921178629737e-08,
+        "linear_full:ridge=0.001": 1.2136670447385486e-07,
+        "linear_full:ridge=0.01": 1.2014391675692016e-07,
+        "linear_full:ridge=0.1": 1.112227747956223e-07,
+        "had16_linear_pair:ridge=0.001": 1.5152918885901447e-07,
+        "had16_linear_pair:ridge=0.01": 1.4745155973424697e-07,
+        "had16_linear_pair:ridge=0.1": 1.3874303869496162e-07,
+        "had32_linear_diag:ridge=0.001": 9.241311542089044e-08,
+        "had32_linear_diag:ridge=0.01": 9.270223136496305e-08,
+        "had32_linear_diag:ridge=0.1": 9.240024886654558e-08,
+        "had64_linear_diag:ridge=0.001": 1.1756060055633556e-07,
+        "had64_linear_diag:ridge=0.01": 1.1755868834161107e-07,
+        "had64_linear_diag:ridge=0.1": 1.1439842742947874e-07
+      },
+      "diagnostics": {
+        "linear_full:ridge=0.001": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 12.759353029093946
+        },
+        "linear_full:ridge=0.01": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 12.351006089202478
+        },
+        "linear_full:ridge=0.1": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 9.425297224965925
+        },
+        "had16_linear_pair:ridge=0.001": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 1074.0288910621155
+        },
+        "had16_linear_pair:ridge=0.01": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 247.78678397169804
+        },
+        "had16_linear_pair:ridge=0.1": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 29.405645548408618
+        },
+        "had32_linear_diag:ridge=0.001": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 813.8711866386884
+        },
+        "had32_linear_diag:ridge=0.01": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 200.63275548959558
+        },
+        "had32_linear_diag:ridge=0.1": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 24.38663560970034
+        },
+        "had64_linear_diag:ridge=0.001": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 931.0768946361671
+        },
+        "had64_linear_diag:ridge=0.01": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 229.12891188877117
+        },
+        "had64_linear_diag:ridge=0.1": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 27.717925660613815
+        }
+      },
+      "seconds": 1.3128302081022412
+    },
+    {
+      "index": 2,
+      "name": "denise-dominguez",
+      "baseline_mse": 3.711311897326206e-07,
+      "mse": {
+        "mean_field_linear": 3.5788389860445375e-07,
+        "linear_full:ridge=0.001": 4.90796189305038e-07,
+        "linear_full:ridge=0.01": 4.867883038134747e-07,
+        "linear_full:ridge=0.1": 4.576580429530321e-07,
+        "had16_linear_pair:ridge=0.001": 5.691037647335865e-07,
+        "had16_linear_pair:ridge=0.01": 5.48593123073008e-07,
+        "had16_linear_pair:ridge=0.1": 5.189708240658731e-07,
+        "had32_linear_diag:ridge=0.001": 3.977140609718709e-07,
+        "had32_linear_diag:ridge=0.01": 3.9525389121328494e-07,
+        "had32_linear_diag:ridge=0.1": 3.9166173704188705e-07,
+        "had64_linear_diag:ridge=0.001": 4.5936726063946597e-07,
+        "had64_linear_diag:ridge=0.01": 4.554245222416075e-07,
+        "had64_linear_diag:ridge=0.1": 4.4467689105127237e-07
+      },
+      "diagnostics": {
+        "linear_full:ridge=0.001": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 12.217168696064135
+        },
+        "linear_full:ridge=0.01": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 11.827142619407956
+        },
+        "linear_full:ridge=0.1": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 9.033765631815887
+        },
+        "had16_linear_pair:ridge=0.001": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 1044.0038600050907
+        },
+        "had16_linear_pair:ridge=0.01": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 247.4890993064123
+        },
+        "had16_linear_pair:ridge=0.1": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 29.539604708889893
+        },
+        "had32_linear_diag:ridge=0.001": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 791.0871627407345
+        },
+        "had32_linear_diag:ridge=0.01": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 200.82029772841213
+        },
+        "had32_linear_diag:ridge=0.1": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 24.611163230655283
+        },
+        "had64_linear_diag:ridge=0.001": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 894.5825995175265
+        },
+        "had64_linear_diag:ridge=0.01": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 226.74429153985866
+        },
+        "had64_linear_diag:ridge=0.1": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 27.688939331394398
+        }
+      },
+      "seconds": 1.282703832956031
+    },
+    {
+      "index": 3,
+      "name": "melinda-young",
+      "baseline_mse": 1.0272620709557905e-07,
+      "mse": {
+        "mean_field_linear": 1.0004652909851907e-07,
+        "linear_full:ridge=0.001": 9.352456634663583e-08,
+        "linear_full:ridge=0.01": 9.315197335551269e-08,
+        "linear_full:ridge=0.1": 9.109032224208803e-08,
+        "had16_linear_pair:ridge=0.001": 8.62913019376823e-08,
+        "had16_linear_pair:ridge=0.01": 8.668832192002634e-08,
+        "had16_linear_pair:ridge=0.1": 8.761300110384441e-08,
+        "had32_linear_diag:ridge=0.001": 9.886622633942813e-08,
+        "had32_linear_diag:ridge=0.01": 9.90505704802163e-08,
+        "had32_linear_diag:ridge=0.1": 9.950710445698206e-08,
+        "had64_linear_diag:ridge=0.001": 8.602864421341457e-08,
+        "had64_linear_diag:ridge=0.01": 8.617860381825645e-08,
+        "had64_linear_diag:ridge=0.1": 8.724749478358119e-08
+      },
+      "diagnostics": {
+        "linear_full:ridge=0.001": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 12.424104177311962
+        },
+        "linear_full:ridge=0.01": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 12.028798347554167
+        },
+        "linear_full:ridge=0.1": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 9.193588477638144
+        },
+        "had16_linear_pair:ridge=0.001": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 1167.7593738126689
+        },
+        "had16_linear_pair:ridge=0.01": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 258.12810329167695
+        },
+        "had16_linear_pair:ridge=0.1": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 30.23472495579098
+        },
+        "had32_linear_diag:ridge=0.001": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 839.8923413374561
+        },
+        "had32_linear_diag:ridge=0.01": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 202.28708042399668
+        },
+        "had32_linear_diag:ridge=0.1": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 24.423342069215423
+        },
+        "had64_linear_diag:ridge=0.001": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 933.5231798062662
+        },
+        "had64_linear_diag:ridge=0.01": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 224.9549847999657
+        },
+        "had64_linear_diag:ridge=0.1": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 27.05703717989878
+        }
+      },
+      "seconds": 1.2791767911985517
+    },
+    {
+      "index": 4,
+      "name": "laura-quinn",
+      "baseline_mse": 9.38286145867494e-08,
+      "mse": {
+        "mean_field_linear": 9.373593695316228e-08,
+        "linear_full:ridge=0.001": 1.133254940423489e-07,
+        "linear_full:ridge=0.01": 1.1253965239444613e-07,
+        "linear_full:ridge=0.1": 1.0703736389547282e-07,
+        "had16_linear_pair:ridge=0.001": 1.2600699522538555e-07,
+        "had16_linear_pair:ridge=0.01": 1.2278387441717608e-07,
+        "had16_linear_pair:ridge=0.1": 1.1753480276252508e-07,
+        "had32_linear_diag:ridge=0.001": 1.0153518301619494e-07,
+        "had32_linear_diag:ridge=0.01": 1.0125228223293952e-07,
+        "had32_linear_diag:ridge=0.1": 1.002500258861003e-07,
+        "had64_linear_diag:ridge=0.001": 1.060390931763447e-07,
+        "had64_linear_diag:ridge=0.01": 1.056752631634282e-07,
+        "had64_linear_diag:ridge=0.1": 1.0406462568266648e-07
+      },
+      "diagnostics": {
+        "linear_full:ridge=0.001": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 12.813309685607578
+        },
+        "linear_full:ridge=0.01": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 12.406487192239906
+        },
+        "linear_full:ridge=0.1": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 9.484593514232946
+        },
+        "had16_linear_pair:ridge=0.001": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 1152.1730680187004
+        },
+        "had16_linear_pair:ridge=0.01": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 255.25915867478994
+        },
+        "had16_linear_pair:ridge=0.1": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 29.929403102106324
+        },
+        "had32_linear_diag:ridge=0.001": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 837.2836029528833
+        },
+        "had32_linear_diag:ridge=0.01": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 206.790631084908
+        },
+        "had32_linear_diag:ridge=0.1": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 25.144348394865506
+        },
+        "had64_linear_diag:ridge=0.001": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 932.2518245106628
+        },
+        "had64_linear_diag:ridge=0.01": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 230.29125291877244
+        },
+        "had64_linear_diag:ridge=0.1": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 27.896026520255592
+        }
+      },
+      "seconds": 1.2977220420725644
+    },
+    {
+      "index": 5,
+      "name": "rachel-myers",
+      "baseline_mse": 4.5804582101623506e-07,
+      "mse": {
+        "mean_field_linear": 4.1738815693138244e-07,
+        "linear_full:ridge=0.001": 7.65694941851944e-07,
+        "linear_full:ridge=0.01": 7.573574430614838e-07,
+        "linear_full:ridge=0.1": 6.953677045159913e-07,
+        "had16_linear_pair:ridge=0.001": 8.151946806797334e-07,
+        "had16_linear_pair:ridge=0.01": 7.878461826800101e-07,
+        "had16_linear_pair:ridge=0.1": 7.47248861180368e-07,
+        "had32_linear_diag:ridge=0.001": 5.956720423731296e-07,
+        "had32_linear_diag:ridge=0.01": 5.949646249947604e-07,
+        "had32_linear_diag:ridge=0.1": 5.850414524228623e-07,
+        "had64_linear_diag:ridge=0.001": 7.427154717225733e-07,
+        "had64_linear_diag:ridge=0.01": 7.401268403626147e-07,
+        "had64_linear_diag:ridge=0.1": 7.123652428099232e-07
+      },
+      "diagnostics": {
+        "linear_full:ridge=0.001": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 12.730572697730482
+        },
+        "linear_full:ridge=0.01": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 12.323601560138657
+        },
+        "linear_full:ridge=0.1": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 9.40695842442961
+        },
+        "had16_linear_pair:ridge=0.001": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 972.0295823983413
+        },
+        "had16_linear_pair:ridge=0.01": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 242.70688202010584
+        },
+        "had16_linear_pair:ridge=0.1": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 29.40108345031893
+        },
+        "had32_linear_diag:ridge=0.001": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 762.4534759273722
+        },
+        "had32_linear_diag:ridge=0.01": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 198.60682290143953
+        },
+        "had32_linear_diag:ridge=0.1": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 24.535965385140095
+        },
+        "had64_linear_diag:ridge=0.001": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 867.9358222594998
+        },
+        "had64_linear_diag:ridge=0.01": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 225.72333847788857
+        },
+        "had64_linear_diag:ridge=0.1": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 27.727821499870625
+        }
+      },
+      "seconds": 1.3212951661553234
+    },
+    {
+      "index": 6,
+      "name": "joshua-keller",
+      "baseline_mse": 1.0114222637879428e-07,
+      "mse": {
+        "mean_field_linear": 1.0212707472946957e-07,
+        "linear_full:ridge=0.001": 1.2095627393419274e-07,
+        "linear_full:ridge=0.01": 1.1990186127506821e-07,
+        "linear_full:ridge=0.1": 1.1277404454101404e-07,
+        "had16_linear_pair:ridge=0.001": 1.6319031866748235e-07,
+        "had16_linear_pair:ridge=0.01": 1.5763333793904468e-07,
+        "had16_linear_pair:ridge=0.1": 1.4735552991435428e-07,
+        "had32_linear_diag:ridge=0.001": 1.118524846208432e-07,
+        "had32_linear_diag:ridge=0.01": 1.1138629793255148e-07,
+        "had32_linear_diag:ridge=0.1": 1.1008154084552766e-07,
+        "had64_linear_diag:ridge=0.001": 1.1471049048092792e-07,
+        "had64_linear_diag:ridge=0.01": 1.140856407195507e-07,
+        "had64_linear_diag:ridge=0.1": 1.118022573023795e-07
+      },
+      "diagnostics": {
+        "linear_full:ridge=0.001": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 12.338854246588255
+        },
+        "linear_full:ridge=0.01": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 11.944655805962679
+        },
+        "linear_full:ridge=0.1": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 9.121272646236003
+        },
+        "had16_linear_pair:ridge=0.001": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 1021.8387382231633
+        },
+        "had16_linear_pair:ridge=0.01": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 246.6115145516397
+        },
+        "had16_linear_pair:ridge=0.1": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 29.624149287576955
+        },
+        "had32_linear_diag:ridge=0.001": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 776.3883249156671
+        },
+        "had32_linear_diag:ridge=0.01": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 200.26545256317726
+        },
+        "had32_linear_diag:ridge=0.1": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 24.647551392283685
+        },
+        "had64_linear_diag:ridge=0.001": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 892.1899868784186
+        },
+        "had64_linear_diag:ridge=0.01": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 229.66789932426525
+        },
+        "had64_linear_diag:ridge=0.1": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 28.12782387104438
+        }
+      },
+      "seconds": 1.2738665000069886
+    },
+    {
+      "index": 7,
+      "name": "michelle-jimenez",
+      "baseline_mse": 2.1157546731483512e-07,
+      "mse": {
+        "mean_field_linear": 2.0855407979992455e-07,
+        "linear_full:ridge=0.001": 2.8688413562989214e-07,
+        "linear_full:ridge=0.01": 2.850431302002879e-07,
+        "linear_full:ridge=0.1": 2.710306973665446e-07,
+        "had16_linear_pair:ridge=0.001": 2.8715828938504643e-07,
+        "had16_linear_pair:ridge=0.01": 2.7782796230284097e-07,
+        "had16_linear_pair:ridge=0.1": 2.6581414650108947e-07,
+        "had32_linear_diag:ridge=0.001": 2.245579473362787e-07,
+        "had32_linear_diag:ridge=0.01": 2.2349696998581e-07,
+        "had32_linear_diag:ridge=0.1": 2.2185843164547966e-07,
+        "had64_linear_diag:ridge=0.001": 2.527595274567751e-07,
+        "had64_linear_diag:ridge=0.01": 2.512976316286699e-07,
+        "had64_linear_diag:ridge=0.1": 2.469344116414065e-07
+      },
+      "diagnostics": {
+        "linear_full:ridge=0.001": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 12.446123276616785
+        },
+        "linear_full:ridge=0.01": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 12.048788006258157
+        },
+        "linear_full:ridge=0.1": {
+          "features": 256.0,
+          "features_kept": 256.0,
+          "max_condition": 9.201691791549983
+        },
+        "had16_linear_pair:ridge=0.001": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 972.8818508085859
+        },
+        "had16_linear_pair:ridge=0.01": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 235.3909811438458
+        },
+        "had16_linear_pair:ridge=0.1": {
+          "features": 152.0,
+          "features_kept": 152.0,
+          "max_condition": 28.355808985261366
+        },
+        "had32_linear_diag:ridge=0.001": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 777.6032340101251
+        },
+        "had32_linear_diag:ridge=0.01": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 198.9536577410821
+        },
+        "had32_linear_diag:ridge=0.1": {
+          "features": 64.0,
+          "features_kept": 64.0,
+          "max_condition": 24.423606875827833
+        },
+        "had64_linear_diag:ridge=0.001": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 893.5910366547955
+        },
+        "had64_linear_diag:ridge=0.01": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 228.3656192911615
+        },
+        "had64_linear_diag:ridge=0.1": {
+          "features": 128.0,
+          "features_kept": 128.0,
+          "max_condition": 27.977500865422286
+        }
+      },
+      "seconds": 1.3020735001191497
+    }
+  ]
+}

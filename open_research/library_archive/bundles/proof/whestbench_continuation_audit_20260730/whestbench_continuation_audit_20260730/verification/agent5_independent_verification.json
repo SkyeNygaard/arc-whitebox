@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "checks": {
+    "stein_validation": {
+      "n": 16,
+      "primary": {
+        "label": "stein_tanh_k8_stable",
+        "mode": "full",
+        "alpha": 2.0,
+        "candidate_over_base": 1.0107204113104977,
+        "gain_base_over_candidate": 0.9893932969092831,
+        "bootstrap_gain_ci95": [
+          0.9711274719249386,
+          1.0052756299441317
+        ],
+        "wins": 9,
+        "networks": 16,
+        "median_ratio": 0.9957582663555102,
+        "worst_ratio": 1.1301987130896345,
+        "ratios": [
+          0.990371496317817,
+          1.0307497839329731,
+          0.9739655785704595,
+          0.9837505686227135,
+          0.9915683972628561,
+          1.0375905316810787,
+          0.9999481354481645,
+          1.0059435228179197,
+          1.1301987130896345,
+          0.9735091667035839,
+          1.0565424300222086,
+          0.9480697484548407,
+          1.0281054797489877,
+          1.0042318955580252,
+          0.9891911649090288,
+          0.9881398680631737
+        ]
+      },
+      "recomputed_all_methods": true
+    },
+    "anchor_fresh": {
+      "n_rows": 24,
+      "frozen": {
+        "candidate_over_base": 1.0000971160040377,
+        "gain": 0.9999028934265647,
+        "row_wins": 5,
+        "network_wins": 3,
+        "median_network_ratio": 1.0,
+        "worst_network_ratio": 1.06802090327476,
+        "network_bootstrap_gain_ci95": [
+          0.9782139433983899,
+          1.0265175607318693
+        ]
+      },
+      "oracle": {
+        "candidate_over_base": 0.8564692816838451,
+        "gain": 1.1675841987397015,
+        "row_wins": 15,
+        "network_wins": 7,
+        "median_network_ratio": 0.8754065018657666,
+        "worst_network_ratio": 1.0,
+        "network_bootstrap_gain_ci95": [
+          1.0880350246196004,
+          1.2664567804568607
+        ]
+      },
+      "raw_vectors_in_bundle": false
+    },
+    "signed_weight_audit": {
+      "keys": [
+        {
+          "candidate": "primary_tanh_k8_alpha2",
+          "networks": 16,
+          "negative_mass_median": 0.0,
+          "negative_mass_max": 5.220315373405831e-06,
+          "signed_networks": 1,
+          "min_weight_min": -2.6101576867029967e-06,
+          "ess_median": 66024.01433244853,
+          "control_residual_median": 0.0058103866802418705
+        },
+        {
+          "candidate": "primary_tanh_k8_alpha1",
+          "networks": 16,
+          "negative_mass_median": 0.0,
+          "negative_mass_max": 0.0,
+          "signed_networks": 0,
+          "min_weight_min": 6.265173094632998e-06,
+          "ess_median": 66042.00194630446,
+          "control_residual_median": 0.00881004627218771
+        },
+        {
+          "candidate": "harmonic_d68_alpha1",
+          "networks": 16,
+          "negative_mass_median": 0.0,
+          "negative_mass_max": 1.1291054353756214e-05,
+          "signed_networks": 6,
+          "min_weight_min": -3.2022193407094755e-06,
+          "ess_median": 66004.89467936219,
+          "control_residual_median": 3.562663380695935e-10
+        }
+      ],
+      "source": "saved per-network weight audit; full network rows not included"
+    }
+  },
+  "reproducibility_note": "Stein and anchor aggregate headlines recomputed from saved row-level outputs. Compact bundle omits fresh-anchor vector NPZs and upstream T4/ARC dependencies, so generation/evaluation is not fully self-contained."
+}

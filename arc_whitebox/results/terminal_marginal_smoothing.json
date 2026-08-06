@@ -1,0 +1,355 @@
+{
+  "protocol": {
+    "samples": 32768,
+    "design": "scrambled_sobol_antithetic_sphere",
+    "seed": 0,
+    "reuse_inputs": true,
+    "exact_radial_moments": true,
+    "train_ids": [
+      0,
+      49
+    ],
+    "test_ids": [
+      50,
+      99
+    ],
+    "selection": "five-fold whole-MLP CV within train IDs only"
+  },
+  "baseline_reproduction": {
+    "max_abs_vector_difference": 0.0,
+    "mse_between_vectors": 0.0
+  },
+  "feature_quantiles_min_p01_median_p99_max": {
+    "train": {
+      "t": [
+        -6.233704614624011,
+        -5.402244322779876,
+        -0.0701438050319407,
+        5.357101482901441,
+        6.278668813499471
+      ],
+      "skew": [
+        -1.0539698903721986,
+        -0.7104339585253403,
+        -0.021710605717516332,
+        0.7122971619553453,
+        1.1961849756034237
+      ],
+      "kurtosis": [
+        -0.4021874877614452,
+        -0.013401054457873464,
+        0.39180609482298234,
+        1.0816789152072313,
+        2.661534844131637
+      ]
+    },
+    "test": {
+      "t": [
+        -5.933853647051286,
+        -5.44155368741697,
+        0.03513549410452452,
+        5.40884410739854,
+        5.8856384404431825
+      ],
+      "skew": [
+        -1.0496227341475621,
+        -0.7190439369942075,
+        0.0052112225366129404,
+        0.7130373347087055,
+        1.1833827494023446
+      ],
+      "kurtosis": [
+        -0.3254196168544543,
+        -0.02882006130898277,
+        0.38073965614544686,
+        1.1430015395380095,
+        2.6421529545459617
+      ]
+    }
+  },
+  "base_estimators": {
+    "train": {
+      "direct": {
+        "mse": 6.732177875695521e-07,
+        "median_mlp_mse": 5.122664009780008e-07,
+        "p90_mlp_mse": 1.405332841269839e-06,
+        "max_mlp_mse": 2.816862679927258e-06,
+        "max_mlp_id": 19
+      },
+      "gaussian": {
+        "mse": 1.613386970556192e-06,
+        "median_mlp_mse": 1.3049416973239697e-06,
+        "p90_mlp_mse": 2.6041381459507957e-06,
+        "max_mlp_mse": 4.257174809028792e-06,
+        "max_mlp_id": 19,
+        "gain_over_direct": 0.41726987998264914,
+        "fraction_mlps_improved": 0.0,
+        "median_per_mlp_gain": 0.36208368950442604
+      },
+      "edgeworth3": {
+        "mse": 8.098196713958583e-07,
+        "median_mlp_mse": 6.292121573306515e-07,
+        "p90_mlp_mse": 1.59177105459569e-06,
+        "max_mlp_mse": 3.158011973219868e-06,
+        "max_mlp_id": 19,
+        "gain_over_direct": 0.8313181456918054,
+        "fraction_mlps_improved": 0.0,
+        "median_per_mlp_gain": 0.7910291940188767
+      },
+      "edgeworth4": {
+        "mse": 6.903992894176911e-07,
+        "median_mlp_mse": 5.157806788185917e-07,
+        "p90_mlp_mse": 1.4164952267648934e-06,
+        "max_mlp_mse": 2.866305862632036e-06,
+        "max_mlp_id": 19,
+        "gain_over_direct": 0.9751136739108892,
+        "fraction_mlps_improved": 0.04,
+        "median_per_mlp_gain": 0.976871832210183
+      }
+    },
+    "test": {
+      "direct": {
+        "mse": 9.219901105321096e-07,
+        "median_mlp_mse": 5.237779612095912e-07,
+        "p90_mlp_mse": 1.4357861127555255e-06,
+        "max_mlp_mse": 1.0601709684200203e-05,
+        "max_mlp_id": 80
+      },
+      "gaussian": {
+        "mse": 2.0284694843650043e-06,
+        "median_mlp_mse": 1.5342604341220842e-06,
+        "p90_mlp_mse": 3.436302977452404e-06,
+        "max_mlp_mse": 1.1110229503777243e-05,
+        "max_mlp_id": 80,
+        "gain_over_direct": 0.45452500894817804,
+        "fraction_mlps_improved": 0.0,
+        "median_per_mlp_gain": 0.362244276596206
+      },
+      "edgeworth3": {
+        "mse": 1.071226458703071e-06,
+        "median_mlp_mse": 6.819488750238377e-07,
+        "p90_mlp_mse": 1.5702173764565784e-06,
+        "max_mlp_mse": 1.0588004987743716e-05,
+        "max_mlp_id": 80,
+        "gain_over_direct": 0.8606864618041257,
+        "fraction_mlps_improved": 0.02,
+        "median_per_mlp_gain": 0.8045309623296969
+      },
+      "edgeworth4": {
+        "mse": 9.484024591247677e-07,
+        "median_mlp_mse": 5.360882187606829e-07,
+        "p90_mlp_mse": 1.5155572882515345e-06,
+        "max_mlp_mse": 1.0612738339526048e-05,
+        "max_mlp_id": 80,
+        "gain_over_direct": 0.9721506957952928,
+        "fraction_mlps_improved": 0.08,
+        "median_per_mlp_gain": 0.9665994530615727
+      }
+    }
+  },
+  "learned_models": {
+    "global_ridge": {
+      "kind": "global",
+      "marginal": null,
+      "ridge": 1.0,
+      "whole_mlp_cv_mse": 6.734157431547186e-07,
+      "coef": [
+        -0.0015689137271225802,
+        0.002948931801269841,
+        -0.0021101446930471813
+      ],
+      "train": {
+        "mse": 6.731754766187289e-07,
+        "median_mlp_mse": 5.131785076479864e-07,
+        "p90_mlp_mse": 1.4059342546274652e-06,
+        "max_mlp_mse": 2.8174853144081204e-06,
+        "max_mlp_id": 19,
+        "gain_over_direct": 1.0000628527810247,
+        "fraction_mlps_improved": 0.48,
+        "median_per_mlp_gain": 0.999885678421433
+      },
+      "test": {
+        "mse": 9.2201235334028e-07,
+        "median_mlp_mse": 5.238851515338888e-07,
+        "p90_mlp_mse": 1.433142776766735e-06,
+        "max_mlp_mse": 1.0600962123898764e-05,
+        "max_mlp_id": 80,
+        "gain_over_direct": 0.999975875802434,
+        "fraction_mlps_improved": 0.38,
+        "median_per_mlp_gain": 0.9997574446712494
+      }
+    },
+    "gated_gaussian": {
+      "kind": "gated",
+      "marginal": "gaussian",
+      "ridge": 1.0,
+      "whole_mlp_cv_mse": 6.732659878673009e-07,
+      "coef": [
+        -0.0010781794303637506,
+        -0.0035002317009144874,
+        -0.0027748230022768866,
+        -0.004024778235715916,
+        -0.004913287877328502,
+        0.0015346465693220964,
+        -0.0010237117649504598,
+        0.0003448189837507381,
+        -0.01953412210616485
+      ],
+      "train": {
+        "mse": 6.732182320687986e-07,
+        "median_mlp_mse": 5.122739857719944e-07,
+        "p90_mlp_mse": 1.4053448639683686e-06,
+        "max_mlp_mse": 2.816849254322424e-06,
+        "max_mlp_id": 19,
+        "gain_over_direct": 0.9999993397397376,
+        "fraction_mlps_improved": 0.48,
+        "median_per_mlp_gain": 0.9999999090700136
+      },
+      "test": {
+        "mse": 9.219918655267977e-07,
+        "median_mlp_mse": 5.238038104240802e-07,
+        "p90_mlp_mse": 1.4358002936131614e-06,
+        "max_mlp_mse": 1.0601707473463082e-05,
+        "max_mlp_id": 80,
+        "gain_over_direct": 0.9999980965182518,
+        "fraction_mlps_improved": 0.48,
+        "median_per_mlp_gain": 1.0
+      }
+    },
+    "gated_edgeworth3": {
+      "kind": "gated",
+      "marginal": "edgeworth3",
+      "ridge": 1.0,
+      "whole_mlp_cv_mse": 6.736280951764287e-07,
+      "coef": [
+        0.002580409392741813,
+        0.0009818242639996883,
+        0.0016409713467855054,
+        -0.008506670646264706,
+        0.00340499308424029,
+        -0.0007504716228101568,
+        -0.014464885183473707,
+        0.03416840235592299,
+        0.06672459570015522
+      ],
+      "train": {
+        "mse": 6.730593888317242e-07,
+        "median_mlp_mse": 5.134754118733243e-07,
+        "p90_mlp_mse": 1.410750622214541e-06,
+        "max_mlp_mse": 2.821261811189601e-06,
+        "max_mlp_id": 19,
+        "gain_over_direct": 1.0002353413984801,
+        "fraction_mlps_improved": 0.5,
+        "median_per_mlp_gain": 0.9999145318339816
+      },
+      "test": {
+        "mse": 9.219051793737361e-07,
+        "median_mlp_mse": 5.237217634212867e-07,
+        "p90_mlp_mse": 1.428245217084794e-06,
+        "max_mlp_mse": 1.059941405736237e-05,
+        "max_mlp_id": 80,
+        "gain_over_direct": 1.0000921256982538,
+        "fraction_mlps_improved": 0.44,
+        "median_per_mlp_gain": 0.9995602373490856
+      }
+    },
+    "gated_edgeworth4": {
+      "kind": "gated",
+      "marginal": "edgeworth4",
+      "ridge": 1.0,
+      "whole_mlp_cv_mse": 6.732903330049227e-07,
+      "coef": [
+        0.01592298837032075,
+        0.004506398841173824,
+        0.0005862299734061191,
+        -0.006374436155059434,
+        -0.01129350126848256,
+        0.1005840744041255,
+        0.05902670710063157,
+        -0.13193388916073048,
+        0.16476573807117975
+      ],
+      "train": {
+        "mse": 6.73115139974611e-07,
+        "median_mlp_mse": 5.120285476697523e-07,
+        "p90_mlp_mse": 1.4044581425491194e-06,
+        "max_mlp_mse": 2.8162648234701884e-06,
+        "max_mlp_id": 19,
+        "gain_over_direct": 1.000152496339549,
+        "fraction_mlps_improved": 0.52,
+        "median_per_mlp_gain": 1.0000178581930026
+      },
+      "test": {
+        "mse": 9.220810615802427e-07,
+        "median_mlp_mse": 5.237050538890674e-07,
+        "p90_mlp_mse": 1.4361417585298216e-06,
+        "max_mlp_mse": 1.0601744775630642e-05,
+        "max_mlp_id": 80,
+        "gain_over_direct": 0.9999013632836389,
+        "fraction_mlps_improved": 0.42,
+        "median_per_mlp_gain": 0.999933628806754
+      }
+    }
+  },
+  "selected_model": "gated_gaussian",
+  "selected_test_gain": 0.9999980965182518,
+  "selected_test_outliers_by_direct_mse": [
+    {
+      "id": 80,
+      "name": "matthew-herrera",
+      "direct_mse": 1.0601709684200203e-05,
+      "model_mse": 1.0601707473463082e-05,
+      "gain": 1.0000002085265158
+    },
+    {
+      "id": 95,
+      "name": "cathy-butler",
+      "direct_mse": 5.95446155553175e-06,
+      "model_mse": 5.95446327300091e-06,
+      "gain": 0.9999997115660839
+    },
+    {
+      "id": 50,
+      "name": "joshua-collins",
+      "direct_mse": 1.930873447167972e-06,
+      "model_mse": 1.930873447167972e-06,
+      "gain": 1.0
+    },
+    {
+      "id": 71,
+      "name": "savannah-hayes",
+      "direct_mse": 1.6331575023575916e-06,
+      "model_mse": 1.633146266057103e-06,
+      "gain": 1.0000068801556372
+    },
+    {
+      "id": 75,
+      "name": "charles-johnson",
+      "direct_mse": 1.5606350434947415e-06,
+      "model_mse": 1.560648926972849e-06,
+      "gain": 0.9999911040350795
+    },
+    {
+      "id": 63,
+      "name": "frederick-vargas",
+      "direct_mse": 1.4219140093400568e-06,
+      "model_mse": 1.4219282232398625e-06,
+      "gain": 0.9999900037853013
+    },
+    {
+      "id": 96,
+      "name": "lindsey-chase",
+      "direct_mse": 1.3240450408674247e-06,
+      "model_mse": 1.3240553940426286e-06,
+      "gain": 0.9999921807084127
+    },
+    {
+      "id": 91,
+      "name": "jimmy-barr",
+      "direct_mse": 1.1181072393716197e-06,
+      "model_mse": 1.1181068581127236e-06,
+      "gain": 1.0000003409860991
+    }
+  ],
+  "full_validation": null
+}

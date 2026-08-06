@@ -1,0 +1,1 @@
+arc_whitebox/.venv/bin/whest run --estimator /Users/skyenygaard/Programming/AI-Safety/T0_unblocked_execution_bundle_20260729/T0_official_grader_instrumentation_20260729/packages/A42/estimator.py --dataset arc_whitebox/data/official_phase1_mini --split mini --runner subprocess --max-threads 4 --profile 

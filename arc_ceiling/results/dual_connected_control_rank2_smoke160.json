@@ -1,0 +1,379 @@
+{
+  "protocol": {
+    "indices": [
+      160
+    ],
+    "weights_dir": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/data/official_weights_fresh",
+    "layer": 29,
+    "rotation_seed": 3,
+    "directions": "sample radial-corrected connected-c21 SVD",
+    "direction_rank": 2,
+    "center": "same Kerdock activation sample mean",
+    "folds": 6,
+    "ridge": 0.1,
+    "scales": [
+      1.9,
+      1.95,
+      2.0
+    ],
+    "probe_rank": 32,
+    "dtype": "float64",
+    "target_leakage_in_coefficients": false,
+    "deployable_anchor_requires_target_mean_covariance": false,
+    "deployable_anchor_reconstructs_raw_m21": false,
+    "scope": "selection IDs only; no new holdout"
+  },
+  "summary": {
+    "oracle_arbitrary_center": {
+      "baseline_mean_mse": 2.1440298520066416e-07,
+      "method_mean_mse": 1.3733890845874e-07,
+      "raw_mse_ratio": 0.6405643481605523,
+      "ci95": [
+        0.6405643481605523,
+        0.6405643481605523
+      ],
+      "wins": 1,
+      "worst_per_network_ratio": 0.6405643481605523
+    },
+    "oracle_connected_approx": {
+      "baseline_mean_mse": 2.1440298520066416e-07,
+      "method_mean_mse": 1.8692604427328726e-07,
+      "raw_mse_ratio": 0.8718444106472647,
+      "ci95": [
+        0.8718444106472647,
+        0.8718444106472647
+      ],
+      "wins": 1,
+      "worst_per_network_ratio": 0.8718444106472647
+    },
+    "cheap_dual_scale1.9": {
+      "baseline_mean_mse": 2.1440298520066416e-07,
+      "method_mean_mse": 1.227361950267524e-06,
+      "raw_mse_ratio": 5.72455625614919,
+      "ci95": [
+        5.72455625614919,
+        5.72455625614919
+      ],
+      "wins": 0,
+      "worst_per_network_ratio": 5.72455625614919
+    },
+    "cheap_dual_probe32_scale1.9": {
+      "baseline_mean_mse": 2.1440298520066416e-07,
+      "method_mean_mse": 2.693803152575929e-06,
+      "raw_mse_ratio": 12.564205437973465,
+      "ci95": [
+        12.564205437973465,
+        12.564205437973465
+      ],
+      "wins": 0,
+      "worst_per_network_ratio": 12.564205437973465
+    },
+    "cheap_dual_scale1.95": {
+      "baseline_mean_mse": 2.1440298520066416e-07,
+      "method_mean_mse": 2.062401964998804e-06,
+      "raw_mse_ratio": 9.619278216059165,
+      "ci95": [
+        9.619278216059165,
+        9.619278216059165
+      ],
+      "wins": 0,
+      "worst_per_network_ratio": 9.619278216059165
+    },
+    "cheap_dual_probe32_scale1.95": {
+      "baseline_mean_mse": 2.1440298520066416e-07,
+      "method_mean_mse": 2.5648873760899174e-06,
+      "raw_mse_ratio": 11.96292753894908,
+      "ci95": [
+        11.96292753894908,
+        11.96292753894908
+      ],
+      "wins": 0,
+      "worst_per_network_ratio": 11.96292753894908
+    },
+    "cheap_dual_scale2": {
+      "baseline_mean_mse": 2.1440298520066416e-07,
+      "method_mean_mse": 3.5776253423338043e-06,
+      "raw_mse_ratio": 16.686453031357896,
+      "ci95": [
+        16.686453031357896,
+        16.686453031357896
+      ],
+      "wins": 0,
+      "worst_per_network_ratio": 16.686453031357896
+    },
+    "cheap_dual_probe32_scale2": {
+      "baseline_mean_mse": 2.1440298520066416e-07,
+      "method_mean_mse": 2.352464806022766e-06,
+      "raw_mse_ratio": 10.972164421223175,
+      "ci95": [
+        10.972164421223175,
+        10.972164421223175
+      ],
+      "wins": 0,
+      "worst_per_network_ratio": 10.972164421223175
+    }
+  },
+  "pooled_anchor_metrics": {
+    "oracle_arbitrary_center": {
+      "relative_to_exact_anchor": 0.0,
+      "relative_to_quadrature_discrepancy": 0.0,
+      "rmse": 0.0,
+      "mean_absolute_error": 0.0,
+      "cosine_with_exact": 1.0
+    },
+    "oracle_connected_approx": {
+      "relative_to_exact_anchor": 0.04145460636211242,
+      "relative_to_quadrature_discrepancy": 1.0313252466659075,
+      "rmse": 0.00015704672093130206,
+      "mean_absolute_error": 0.00011631714596214987,
+      "cosine_with_exact": 0.999973659762714
+    },
+    "cheap_dual_scale1.9": {
+      "relative_to_exact_anchor": 0.2910671264655646,
+      "relative_to_quadrature_discrepancy": 7.241291193945344,
+      "rmse": 0.0011026793351508308,
+      "mean_absolute_error": 0.0008518945343799207,
+      "cosine_with_exact": 0.9956660381590063
+    },
+    "cheap_dual_probe32_scale1.9": {
+      "relative_to_exact_anchor": 0.4677770842076617,
+      "relative_to_quadrature_discrepancy": 11.637556331883166,
+      "rmse": 0.0017721277235130243,
+      "mean_absolute_error": 0.0012567435182224344,
+      "cosine_with_exact": 0.9935051758530733
+    },
+    "cheap_dual_scale1.95": {
+      "relative_to_exact_anchor": 0.27318360798636887,
+      "relative_to_quadrature_discrepancy": 6.796377450326551,
+      "rmse": 0.0010349293748366758,
+      "mean_absolute_error": 0.000813916072535289,
+      "cosine_with_exact": 0.9956660381590061
+    },
+    "cheap_dual_probe32_scale1.95": {
+      "relative_to_exact_anchor": 0.45401219529423825,
+      "relative_to_quadrature_discrepancy": 11.295107598201794,
+      "rmse": 0.0017199807884063748,
+      "mean_absolute_error": 0.0012218953669321836,
+      "cosine_with_exact": 0.9935051758530736
+    },
+    "cheap_dual_scale2": {
+      "relative_to_exact_anchor": 0.2554529594467487,
+      "relative_to_quadrature_discrepancy": 6.355266869781203,
+      "rmse": 0.0009677585473341943,
+      "mean_absolute_error": 0.0007759376106906575,
+      "cosine_with_exact": 0.9956660381590063
+    },
+    "cheap_dual_probe32_scale2": {
+      "relative_to_exact_anchor": 0.4402752471273619,
+      "relative_to_quadrature_discrepancy": 10.953353986241584,
+      "rmse": 0.0016679397040847324,
+      "mean_absolute_error": 0.0011943779126361903,
+      "cosine_with_exact": 0.9935051758530736
+    },
+    "sample_quadrature_anchor": {
+      "relative_to_exact_anchor": 0.04019547324777305,
+      "relative_to_quadrature_discrepancy": 1.0,
+      "rmse": 0.0001522766183015556,
+      "mean_absolute_error": 0.00011665632673918229,
+      "cosine_with_exact": 0.9999637599921545
+    }
+  },
+  "records": [
+    {
+      "index": 160,
+      "name": "amy-scott",
+      "baseline_mse": 2.1440298520066416e-07,
+      "method_mses": {
+        "oracle_arbitrary_center": 1.3733890845874e-07,
+        "oracle_connected_approx": 1.8692604427328726e-07,
+        "cheap_dual_scale1.9": 1.227361950267524e-06,
+        "cheap_dual_probe32_scale1.9": 2.693803152575929e-06,
+        "cheap_dual_scale1.95": 2.062401964998804e-06,
+        "cheap_dual_probe32_scale1.95": 2.5648873760899174e-06,
+        "cheap_dual_scale2": 3.5776253423338043e-06,
+        "cheap_dual_probe32_scale2": 2.352464806022766e-06
+      },
+      "fit_diagnostics": {
+        "oracle_arbitrary_center": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.1480919228977392,
+          "condition_ridge_0.1": 1.6439908078397296,
+          "feature_mean_norm": 0.00021535165883441806
+        },
+        "oracle_connected_approx": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.14809184480555163,
+          "condition_ridge_0.1": 1.643984768088916,
+          "feature_mean_norm": 1.0819439482834764e-05
+        },
+        "cheap_dual_scale1.9": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.1480971618111504,
+          "condition_ridge_0.1": 1.6443368559997618,
+          "feature_mean_norm": 0.0017747659770331026
+        },
+        "cheap_dual_probe32_scale1.9": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.1481043401625885,
+          "condition_ridge_0.1": 1.643966374324782,
+          "feature_mean_norm": 0.0027207115298291387
+        },
+        "cheap_dual_scale1.95": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.14809660270557842,
+          "condition_ridge_0.1": 1.6442057728003447,
+          "feature_mean_norm": 0.0016788648262988214
+        },
+        "cheap_dual_probe32_scale1.95": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.14810367314671308,
+          "condition_ridge_0.1": 1.644144620318545,
+          "feature_mean_norm": 0.0026470965856836867
+        },
+        "cheap_dual_scale2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.14809607837498642,
+          "condition_ridge_0.1": 1.6440287193684402,
+          "feature_mean_norm": 0.0015836607393465096
+        },
+        "cheap_dual_probe32_scale2": {
+          "features": 2.0,
+          "kept": 2.0,
+          "feature_rms": 0.14810302568077752,
+          "condition_ridge_0.1": 1.6442930412894672,
+          "feature_mean_norm": 0.002573626398527211
+        }
+      },
+      "anchor_diagnostics": {
+        "oracle_arbitrary_center": {
+          "relative_to_exact_anchor": 0.0,
+          "relative_to_quadrature_discrepancy": 0.0,
+          "rmse": 0.0,
+          "mean_absolute_error": 0.0,
+          "cosine_with_exact": 1.0,
+          "anchor": [
+            0.005309145892996746,
+            0.0007189937240449093
+          ]
+        },
+        "oracle_connected_approx": {
+          "relative_to_exact_anchor": 0.04145460636211242,
+          "relative_to_quadrature_discrepancy": 1.0313252466659075,
+          "rmse": 0.00015704672093130206,
+          "mean_absolute_error": 0.00011631714596214987,
+          "cosine_with_exact": 0.999973659762714,
+          "anchor": [
+            0.005530980782066367,
+            0.0007081943211902302
+          ]
+        },
+        "cheap_dual_scale1.9": {
+          "relative_to_exact_anchor": 0.2910671264655646,
+          "relative_to_quadrature_discrepancy": 7.241291193945344,
+          "rmse": 0.0011026793351508308,
+          "mean_absolute_error": 0.0008518945343799207,
+          "cosine_with_exact": 0.9956660381590063,
+          "anchor": [
+            0.0037571246426130037,
+            0.0008707615424210081
+          ]
+        },
+        "cheap_dual_probe32_scale1.9": {
+          "relative_to_exact_anchor": 0.4677770842076617,
+          "relative_to_quadrature_discrepancy": 11.637556331883166,
+          "rmse": 0.0017721277235130243,
+          "mean_absolute_error": 0.0012567435182224344,
+          "cosine_with_exact": 0.9935051758530733,
+          "anchor": [
+            0.0028029895535461352,
+            0.0007116630270506516
+          ]
+        },
+        "cheap_dual_scale1.95": {
+          "relative_to_exact_anchor": 0.27318360798636887,
+          "relative_to_quadrature_discrepancy": 6.796377450326551,
+          "rmse": 0.0010349293748366758,
+          "mean_absolute_error": 0.000813916072535289,
+          "cosine_with_exact": 0.9956660381590061,
+          "anchor": [
+            0.003855996343734399,
+            0.00089367631985314
+          ]
+        },
+        "cheap_dual_probe32_scale1.95": {
+          "relative_to_exact_anchor": 0.45401219529423825,
+          "relative_to_quadrature_discrepancy": 11.295107598201794,
+          "rmse": 0.0017199807884063748,
+          "mean_absolute_error": 0.0012218953669321836,
+          "cosine_with_exact": 0.9935051758530736,
+          "anchor": [
+            0.0028767524365341914,
+            0.0007303910014467215
+          ]
+        },
+        "cheap_dual_scale2": {
+          "relative_to_exact_anchor": 0.2554529594467487,
+          "relative_to_quadrature_discrepancy": 6.355266869781203,
+          "rmse": 0.0009677585473341943,
+          "mean_absolute_error": 0.0007759376106906575,
+          "cosine_with_exact": 0.9956660381590063,
+          "anchor": [
+            0.003954868044855794,
+            0.0009165910972852718
+          ]
+        },
+        "cheap_dual_probe32_scale2": {
+          "relative_to_exact_anchor": 0.4402752471273619,
+          "relative_to_quadrature_discrepancy": 10.953353986241584,
+          "rmse": 0.0016679397040847324,
+          "mean_absolute_error": 0.0011943779126361903,
+          "cosine_with_exact": 0.9935051758530736,
+          "anchor": [
+            0.0029505153195222475,
+            0.0007491189758427912
+          ]
+        },
+        "sample_quadrature_anchor": {
+          "relative_to_exact_anchor": 0.04019547324777305,
+          "relative_to_quadrature_discrepancy": 1.0,
+          "rmse": 0.0001522766183015556,
+          "mean_absolute_error": 0.00011665632673918229,
+          "cosine_with_exact": 0.9999637599921545,
+          "anchor": [
+            0.005523676986213703,
+            0.0007002121637835011
+          ]
+        }
+      },
+      "exact_arbitrary_anchor": [
+        0.005309145892996746,
+        0.0007189937240449093
+      ],
+      "oracle_connected_anchor": [
+        0.005530980782066367,
+        0.0007081943211902302
+      ],
+      "sample_quadrature_anchor": [
+        0.005523676986213703,
+        0.0007002121637835011
+      ],
+      "cheap_q": [
+        0.5082005437639695,
+        0.11778195600115743
+      ],
+      "cheap_probe32_q": [
+        0.37914121855860883,
+        0.09626178839579867
+      ],
+      "sample_mean_relative_error": 0.000528402867872241,
+      "seconds": 1.7255268751177937
+    }
+  ]
+}

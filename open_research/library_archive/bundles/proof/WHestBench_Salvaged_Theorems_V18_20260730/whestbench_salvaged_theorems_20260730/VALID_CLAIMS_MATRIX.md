@@ -1,0 +1,15 @@
+# Valid-claims replacement matrix
+
+| Disproved wording | Maximal valid replacement | Strong application-specific recovery | Status |
+|---|---|---|---|
+| Every free-mass symmetric-Gram minimizer is scaled-uniform | Minimizers are `alpha_* u + (ker G intersect 1-perp)`; uniqueness iff the transverse nullspace vanishes | K32 is strictly positive definite on every finite distinct support, so its complete-Kerdock optimum is uniquely scaled-uniform; the full line universe also has a certified zero-sum spectral gap | Analytic proof |
+| Nonconstant even square-integrable output implies strict T38 signs | Strictness is equivalent to positive even Hermite mass at degree at least four | For finite nonconstant piecewise-affine ReLU even output, the high-even condition is automatic | Analytic proof |
+| Pure-quadratic T38 case should behave like the strict case | It is an exactly classifiable boundary: block-uniform complete-basis mixtures form the minimizer set | One complete basis exactly captures the quadratic component; above `d` lines no further gain exists | Analytic proof |
+| Rotation independent of runtime features is enough for conditional Haar unbiasedness | The conditional relative orientation must be Haar after conditioning on the integrand, selected rule, and runtime information | Independent post-selection Haar randomization makes every orientation-blind additive correction exactly useless | Analytic proof |
+| A small deviation from Haar gives no theorem | Correction capacity is bounded by conditional chi-square divergence from Haar times orientation risk; a TV bound is also available | Enables a measurable approximate-symmetry certificate instead of an all-or-nothing claim | Analytic proof |
+| Independent replication has zero raw cross-error moment | Independent centered errors are uncorrelated; common bias remains | Exact adjusted ratio is `1+(m-1) beta` under linear cost; sublinear shared compute and antithetic covariance have explicit win thresholds | Analytic proof |
+| Local density near zero implies a global `2L|t|^3` ReLU bound | Conditional density must be controlled on the crossing interval | Exact triangular integration gives the sharper `L|t|^3/3` bound, plus vector/downstream forms | Analytic proof |
+| Surrogate-kernel optimizer transfers from a pointwise candidate bound | The total-variation bound must hold uniformly over the complete comparison class | `eta`-suboptimality transfers with additive loss `eta+2 epsilon(1+B)^2`; rankings survive margins above twice the radius | Analytic proof |
+
+| `V_runtime/V_oracle` used when both vanish | Report oracle capacity, transferred value, and unobserved value always; define the fraction only when oracle capacity is positive | Cleanly distinguishes zero capacity from failed transfer | Analytic projection argument |
+| T16 endpoint equality inferred from continuity | Evaluate both endpoint residuals explicitly | Directed certification proves positive residuals at `+1` and `-1`, so equality is exactly at the three interior contacts | Directed-decimal certificate |

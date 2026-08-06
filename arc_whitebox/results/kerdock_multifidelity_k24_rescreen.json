@@ -1,0 +1,76 @@
+{
+  "protocol": {
+    "split": "official IDs 0--49 only",
+    "baseline_rotation_seed": 3,
+    "alternate_rotation_seeds": [
+      0,
+      1
+    ],
+    "candidate_seed": 2026072802,
+    "candidate_count_per_size": 20000,
+    "harmonic_filter": "intersection of best quartile quartic leakage and best quartile sixth-moment mismatch",
+    "formula": "F3 + alpha * ((P0_S-P3_S) + (P1_S-P3_S))/2"
+  },
+  "baseline_selection_mse": 1.7587467361245454e-07,
+  "records": [
+    {
+      "bases_per_alternate_rotation": 24,
+      "extra_rows": 24576,
+      "total_rows": 90624,
+      "subset": [
+        3,
+        13,
+        14,
+        15,
+        29,
+        34,
+        35,
+        42,
+        43,
+        58,
+        59,
+        62,
+        73,
+        75,
+        76,
+        77,
+        83,
+        87,
+        94,
+        98,
+        99,
+        101,
+        118,
+        128
+      ],
+      "candidate_index": 1480,
+      "admissible_candidates": 3703,
+      "quartic_rms": 9.780658374920025e-07,
+      "quartic_percentile": 0.056,
+      "sixth_mismatch_rms": 5.981141439245603e-08,
+      "sixth_mismatch_percentile": 0.0839,
+      "fitted_alpha": 0.11646209297552047,
+      "selection_mse": 1.4502241861214745e-07,
+      "selection_reduction_fraction": 0.17542181808559332,
+      "fivefold_refit_alpha_mse": 1.4545487020098573e-07,
+      "fivefold_alphas": [
+        0.11273292062979423,
+        0.11841975379271691,
+        0.12172902137323259,
+        0.10973300692454355,
+        0.12042980289706194
+      ],
+      "simple_alpha_mses": {
+        "0.03125": 1.6153900130253312e-07,
+        "0.046875": 1.5603718064766895e-07,
+        "0.0625": 1.5164603699286913e-07,
+        "0.078125": 1.4836557033813367e-07,
+        "0.09375": 1.4619578068346254e-07,
+        "0.109375": 1.4513666802885574e-07,
+        "0.125": 1.4518823237431332e-07
+      },
+      "best_simple_alpha": 0.109375,
+      "best_simple_alpha_mse": 1.4513666802885574e-07
+    }
+  ]
+}

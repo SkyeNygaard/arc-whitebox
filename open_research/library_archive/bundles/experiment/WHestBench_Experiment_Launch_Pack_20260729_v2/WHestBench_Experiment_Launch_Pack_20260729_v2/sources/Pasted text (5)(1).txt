@@ -1,0 +1,637 @@
+Independent Short-Suffix Micro-Cubature for Sparse Late-Layer Anchors
+Executive decision
+
+CONTINUE one tightly scoped experiment. Do not model the full 256-dimensional activation distribution.
+
+The best candidate is:
+
+Externally Centered Adjoint-Span Quadratic Transport, initialized at a late preactivation checkpoint, using an independent 1,024-row pilot for the absolute center, protected Kerdock particles only for centered shape, and a fresh 2,048–4,096-point suffix cloud.
+
+There should be two frozen configurations:
+
+Target	Checkpoint	Nonlinear suffix	Fresh cloud	Recommended target
+Primary sparse-control test	preactivation (h_{24})	8 ReLU stages	2,048	128 frozen sparse-probe anchors
+Conservative layer-31 test	preactivation (h_{28})	4 ReLU stages	4,096	8 frozen layer-31 coordinates
+
+The method is not yet submission-ready. In the synthetic experiments, the unshrunk micro-cubature estimate was not accurate enough to replace the protected center outright. Its signed error direction was nevertheless informative, and a frozen shrinkage of roughly (0.25)–(0.40) produced substantial held-out gains.
+
+The practical verdict is therefore:
+
+GO for a frozen oracle-to-deployable experiment; STOP if it does not reach approximately (0.60\times) baseline raw MSE on the sparse-anchor harness or reproduce the M83 center tolerance.
+
+1. What the evidence actually requires
+
+The layer-31 post-ReLU mean defect is the dominant repairable channel: oracle correction removed about (78.13%) of noise-corrected final MSE on 64 untouched networks, with 64/64 wins. The first two final-error PCA modes contain (54.25%) of the error energy, while roughly 8.5 modes contain 90%; layer-31 and final-error geometry have linear CKA (0.9828).
+The channel is also coordinate-sparse when support is selected correctly. On the eight-network sparse oracle, 12 corrected layer-31 coordinates captured (55.23%) of the complete layer-31 oracle benefit, while 32 captured (81.39%).
+
+The newer sparse cubic decomposition is potentially stronger still: an agent log reports that 128 exactly anchored coordinate probes reached (0.190\times) raw MSE on all eight tested networks. This is an encouraging ceiling, not yet a frozen validation result. The same experiment attributed most remaining error to lower-order sample-center terms rather than the cubic contraction itself.
+
+The center-accuracy requirement is severe. In M83, layer-29 mean perturbations gave:
+
+Relative mean error	Complete-control MSE ratio
+0.1%	0.649
+0.2%	0.690
+0.3%	0.772
+about 0.45%	break-even
+0.65%	1.450
+
+Current propagation is around (0.65%), so another ordinary propagated mean is not useful.
+
+Finally, the failure mode is now clear:
+
+Same-design cross-fitting, delete-fold jackknifing, and disjoint same-basis Edgeworth constructions landed around (1.025)–(1.030\times), after an apparent pilot gain disappeared.
+Same-cloud Edgeworth anchoring was actively destructive, reaching (12.996\times) MSE.
+Conditional Gaussian activation-region integration produced corrections essentially orthogonal to the signed Kerdock defect on frozen validation.
+
+Therefore, the target cannot be “a plausible late activation distribution.” It must be an absolute, independently centered scalar or low-dimensional expectation whose signed error correlates with the protected Kerdock defect.
+
+2. Legally and cheaply available checkpoint information
+From analytic propagation
+
+Cheap analytic state may supply:
+
+a prior checkpoint mean (\mu_0);
+diagonal variances;
+approximate expected gates for the short suffix;
+a low-rank or implicit covariance operator;
+the exact first-layer post-ReLU mean
+[
+\mu_{1,j}=\frac{\lVert w_{1,j}\rVert}{\sqrt{2\pi}}.
+]
+
+The exact first-layer formula follows directly from Gaussianity.
+
+This exact mean can also serve as a pilot control variate. Earlier width-256 experiments found that an exact-layer-1 low-rank control improved net efficiency by about (1.17\times) with 1,024 trajectories and (1.23\times) at the 2,048-trajectory optimum.
+
+Analytic propagation should be treated as a prior, not as the final center.
+
+From the protected Kerdock cloud
+
+The protected cloud can legally supply only centered shape:
+
+exact empirical diagonal variances;
+covariance in 4–16 specified directions;
+low-rank cross-loadings;
+centered marginal third moments;
+centered factor scores.
+
+Its empirical mean must not become the absolute anchor.
+
+For (N_K=66{,}048), width 256, and rank (r=8), a two-pass adjoint-oriented covariance sketch costs approximately:
+
+[
+2N_Kwr + 2N_Kwr + O(N_Kw)
+\approx 0.58\text{B FLOPs}.
+]
+
+This avoids the roughly 8.7B cost of forming a complete empirical (256\times256) covariance by a dense cross-product.
+
+From an independent mini-design
+
+A 1,024-row independent pilot can supply:
+
+absolute means in 4–16 pulled-back directions;
+uncertainty from two independent 512-row halves;
+diagonal skew estimates;
+the (r^3) third moments within an (r\leq8) adjoint subspace;
+selected bivariate contractions;
+exact-layer-1 control-variate corrections.
+
+The preferred pilot is two independently randomized antipodal orthogonal bases, or two independently scrambled 512-point Sobol-normal blocks. It must share no rotations or rows with the protected Kerdock rule.
+
+From the adjoint
+
+For frozen layer-31 coordinates (S), or frozen sparse probes (P), pull the target directions backward through a soft-gated suffix Jacobian:
+
+W_{k+1}D_{k+1}\cdots W_{31}D_{31}.
+]
+
+Use the leading left singular directions of either
+
+[
+J_{k\rightarrow31}[:,S]
+]
+
+or the probe-composed map. Only these directions require accurate center and mixed-skew estimation.
+
+This is the key dimensional reduction: the full covariance or cubic tensor may be high-dimensional, while the functional relevant to the scored output is not.
+
+3. Three concrete algorithms
+Algorithm A — Externally Centered Low-Rank Gaussian Cubature
+Select a preactivation checkpoint (h_k).
+Obtain an absolute center from the analytic prior plus independent pilot corrections in an (r)-dimensional adjoint span.
+Estimate rank-(r) covariance loadings and exact diagonal residual variance from the centered protected cloud.
+\widehat\mu_k + Lz_n + D^{1/2}\epsilon_n.
+]
+Propagate only through the final suffix.
+Return absolute means or probe expectations.
+
+Advantages: cheapest, cleanest Gaussian ablation, low pilot variance.
+
+Principal bias: all skew and mixed nonlinear structure is omitted. This should be retained as the mandatory null model, not expected to win.
+
+Independence: the protected cloud affects only (L,D). The center and integration nodes are independent, so the estimator does not algebraically reproduce the protected sample mean.
+
+Algorithm B — Externally Centered Diagonal-Skew Mixture
+
+Use the same center and covariance shape as Algorithm A, but replace each independent residual normal coordinate by a moment-matched quadratic-normal or two-normal mixture.
+
+A convenient map is
+
+\frac{z_i+b_i(z_i^2-1)}
+{\sqrt{1+2b_i^2}},
+]
+
+where (b_i) is chosen to match the independently estimated standardized marginal skew.
+
+The fresh cloud is
+
+\widehat\mu_k + Lz_n + D^{1/2}y_n.
+]
+
+Advantages: captures the large marginal (K_{iii}) terms that proved essential in the connected-cubic branch; almost no additional forward cost.
+
+Principal bias: ignores mixed third moments and nonlinear dependence between important factors.
+
+Expected use: strongest candidate for 8–16 individual layer-31 coordinates at suffix depth 3–4.
+
+Algorithm C — Externally Centered Adjoint-Span Quadratic Transport
+
+This is the recommended algorithm.
+
+Let (U\in\mathbb R^{256\times r}), (r\leq8), be the whitened checkpoint directions with greatest downstream sensitivity to the frozen coordinates or probes. From the independent pilot, estimate the standardized selected third cumulant
+
+\frac1{N_p}\sum_n s_{n,a}s_{n,b}s_{n,c}.
+]
+
+Generate fresh standard-normal selected factors (z), then apply the near-identity quadratic transport
+
+z_i+
+\frac16
+\sum_{a,b}
+\widehat\kappa_{iab}
+(z_az_b-\delta_{ab}).
+]
+
+To first order in (\kappa_3), this produces exactly the specified third cumulant. Recenter and rewhiten the generated factors to preserve the externally supplied mean and modeled covariance exactly.
+
+Combine this with the diagonal-skew residual from Algorithm B:
+
+\widehat\mu_k
++
+L_U s
++
+D^{1/2}y.
+]
+
+Then propagate the fresh cloud through the true ReLU suffix and compute only the requested anchors.
+
+Advantages:
+
+includes adjoint-selected bivariate and trivariate skew;
+never forms a full third-order tensor;
+automatically includes nonlinear interactions across the exact suffix;
+targets the scalar/probe functionals rather than generic state reconstruction.
+
+Principal bias:
+
+fourth-order and higher discrepancies;
+third moments outside the selected span;
+finite-pilot error in (\widehat\kappa);
+near-identity transport becomes inaccurate for very large skew.
+
+Expected use: strongest candidate for the 128 sparse-probe center terms and for suffix depths 6–8.
+
+4. Full pseudocode for Algorithm C
+INPUT
+    weights W1...W32
+    protected Kerdock checkpoint preactivations Hk_K
+    protected layer-31 particles A31_K
+    protected final preactivations Z32_K
+    frozen target:
+        coordinate set S, or
+        sparse probes P
+    analytic prior mean mu0 at checkpoint
+    parameters:
+        pilot rows Np = 1024
+        fresh suffix rows Ns = 2048 or 4096
+        adjoint rank r = 8
+        shrink alpha = 0.30
+
+1. BUILD INDEPENDENT PILOT
+    Construct two independent 512-row antipodal orthogonal/Sobol blocks.
+    Propagate them from the input to checkpoint preactivation hk.
+    Retain exact layer-1 activations for control variates.
+
+2. CONSTRUCT TARGET ADJOINT SPAN
+    Estimate expected gates in the short suffix from analytic state or pilot.
+    Pull frozen coordinates/probes backward to checkpoint:
+        B = soft_adjoint(checkpoint -> layer31, S or P)
+    Weight B by checkpoint diagonal scale.
+    U = leading r left singular vectors of B.
+    Freeze U using weights and the frozen target only.
+
+3. ESTIMATE ABSOLUTE CENTER
+    Cross-fit a linear control from exact layer-1 activations to pilot scores hk @ U.
+    Use exact E[a1] to estimate:
+        t_hat = E[U^T hk]
+    Set:
+        mu_ext = mu0 + U (t_hat - U^T mu0)
+    Do not insert mean(Hk_K) here.
+
+4. ESTIMATE CENTERED SHAPE FROM PROTECTED CLOUD
+    mK = sample_mean(Hk_K)                 # centering only
+    X  = Hk_K - mK
+    Y  = X @ U
+    Cq = mean(Y^T Y)
+    G  = mean(X^T Y)
+    L  = G @ inverse_sqrt(Cq)
+    D  = clip(diag_cov(X) - row_norms(L)^2, 0, infinity)
+
+5. ESTIMATE SELECTED NON-GAUSSIAN MOMENTS
+    Whiten independent pilot factor scores:
+        s_pilot = whiten((Hk_pilot - mu_ext) @ U)
+    kappa[a,b,c] = mean(s_a s_b s_c)
+
+    residual_pilot =
+        Hk_pilot - mu_ext - projected_factor_reconstruction
+    gamma_i =
+        standardized_third_moment(residual_pilot_i)
+
+    Optionally retain only the 16–32 kappa entries with largest
+    adjoint-weighted predicted contribution.
+
+6. GENERATE FRESH MICRO-CUBATURE
+    Generate 2–4 independent scrambled Sobol-normal blocks.
+
+    For each fresh factor vector z:
+        s_i = z_i
+              + (1/6) sum_ab kappa[i,a,b]
+                * (z_a z_b - indicator[a=b])
+
+    Recenter and rewhiten all s nodes.
+
+    For each diagonal residual coordinate:
+        y_i = moment_matched_skew_transform(epsilon_i, gamma_i)
+
+    Construct:
+        h_node = mu_ext + s @ L^T + y * sqrt(D)
+
+7. TRUE SHORT-SUFFIX PROPAGATION
+    Starting at preactivation h_node:
+        a = ReLU(h_node)
+        propagate through the remaining true layers to layer 31
+
+    Compute only:
+        anchor_j = mean(a31_j), j in S
+    or:
+        anchor_r = mean(phi_r(a31)), r = 1...128
+
+8. UNCERTAINTY CHECK
+    Compute anchors separately for the independent Sobol blocks and pilot halves.
+
+    Disable the correction when:
+        pilot-half corrections have negative dot product, or
+        block disagreement exceeds a frozen threshold, or
+        estimated signal-to-noise is below a frozen minimum.
+
+    Disagreement is only a fallback diagnostic.
+    It is never used as the absolute anchor.
+
+9. APPLY CORRECTION
+    delta = anchor - protected_sample_anchor
+
+    Use:
+        corrected_anchor =
+            protected_sample_anchor + alpha * delta
+
+    For K corrected coordinates:
+        update retained final preactivations by the rank-K product
+            DeltaA31[:, S] @ W32[S, :]
+        apply the true final ReLU and average.
+
+    For sparse cubic probes:
+        insert the absolute anchor terms directly into the frozen control.
+
+OUTPUT
+    corrected final prediction
+    absolute anchor estimates
+    pilot-half and cloud-block uncertainty diagnostics
+5. Why this does not recreate same-cloud degeneracy
+
+The degeneracy occurs when the same empirical cloud defines both:
+
+the centered feature (\phi(a;\widehat\mu,\widehat\Sigma)); and
+its supposed expectation.
+
+Then the “estimated expectation minus cloud average” either vanishes identically or becomes a noisy re-expression of the same sample center.
+
+The proposed construction breaks every part of that identity:
+
+(\widehat\mu_k) comes from an independent pilot and an analytic prior;
+the protected Kerdock cloud contributes only centered covariance shape;
+third moments used in the transport come from the independent pilot;
+integration nodes are newly generated;
+the suffix expectation is evaluated on the new cloud;
+the protected sample anchor appears only afterward, when applying the signed correction.
+
+Symbolically, the anchor is
+
+Q_{\mathrm{fresh}}
+\left[
+F_{\mathrm{suffix}}
+\left(
+\widehat\mu_{\mathrm{ind}}
++
+T_{\widehat C_K,\widehat\kappa_{\mathrm{ind}}}(z)
+\right)
+\right],
+]
+
+not (Q_K[F]) or (Q_K[\phi]).
+
+There remains statistical dependence through the centered protected shape (\widehat C_K), but there is no algebraic equality forcing (\widehat A) to reproduce the sample anchor.
+
+A strict-independence ablation should replace (\widehat C_K) with analytic/pilot covariance. If only the hybrid version works, that suggests the centered protected shape carries useful phase-aware information; it still does not imply same-cloud degeneracy.
+
+6. Bias and variance analysis
+
+For a selected scalar anchor (A=E[F(h_k)]), write the fitted-state errors as
+
+[
+\delta\mu,\qquad
+\delta C,\qquad
+\delta\kappa_3.
+]
+
+The leading anchor bias is approximately
+
+[
+\widehat A-A
+\approx
+J^\top\delta\mu
++
+\frac12\langle H,\delta C\rangle
++
+\frac16\langle T,\delta\kappa_3\rangle
++
+R_4.
+]
+
+Here (J,H,T) are derivatives of the exact suffix functional in the selected direction, and (R_4) contains fourth-order and nonlinear transport errors.
+
+Center error
+
+This is the binding term according to M83. Restricting estimation to an adjoint span changes the objective from full-vector relative error to
+
+\frac{
+\lVert B^\top(\widehat\mu-\mu)\rVert^2
+}{
+\lVert B^\top\mu\rVert^2
+}.
+]
+
+Both this weighted error and complete-control MSE should be reported. The latter is authoritative.
+
+Pilot variance
+
+Direct pilot error scales approximately as (N_p^{-1/2}), but only (r\leq8) directional means are estimated. Scrambling, antipodal pairing, exact input moments, and the exact-layer-1 control should materially reduce the constant.
+
+The (r^3) selected third moments have variance roughly (O(r^3/N_p)). With (r=8), only 512 entries are required.
+
+Fresh-cloud variance
+
+Randomized QMC reduces integration error under the fitted state, but it cannot reduce model bias. Increasing (N_s) may therefore converge more accurately to the wrong expectation. This occurred in the synthetic cloud-size sweep.
+
+Shrinkage
+
+Use
+
+A_K+\alpha(\widehat A-A_K).
+]
+
+The shrinkage is not what supplies the signed anchor; (\widehat A) is already absolute. Shrinkage protects against model bias and pilot noise when applying it to the stronger protected estimator.
+
+The synthetic optima were generally between (0.20) and (0.50). Freeze (\alpha=0.30) for the first real experiment, with (\alpha=0) as the uncertainty fallback.
+
+7. Added compute at width 256
+
+One dense row-layer product costs
+
+[
+2(256)^2=131{,}072\text{ FLOPs}.
+]
+
+The following estimates charge only added work; the protected Kerdock forward already exists.
+
+Configuration	Pilot prefix	Fresh suffix	Rank-8 shape sketch	Application	Total
+(h_{28}), 4 stages, (N_p=1024), (N_s=4096), (K=8)	3.758B	1.611B	0.575B	0.271B	6.22B
+Same, (K=16)	3.758B	1.611B	0.575B	0.541B	6.49B
+(h_{24}), 8 stages, (N_p=1024), (N_s=2048), probe anchors	3.221B	1.879B	0.575B	(<0.1)B	about 5.75B
+Same, (K=16) coordinate update	3.221B	1.879B	0.575B	0.541B	6.22B
+(h_{24}), (N_s=4096), probe anchors	3.221B	3.758B	0.575B	(<0.1)B	about 7.65B
+
+The coordinate application is a rank-(K) update of retained final preactivations:
+
+[
+2N_KK(256),
+]
+
+not another full (256\times256) final-layer replay.
+
+All moment fitting and quadratic-transport operations are small relative to these forwards. The project’s existing guidance places approximately 14B as the upper limit for a meaningful additive branch.
+
+8. Synthetic prototype
+Setup
+
+The sandbox experiment used:
+
+width 64;
+random He-initialized ReLU suffixes;
+checkpoint states generated from low-rank Gaussian factors, coordinatewise quadratic skew, six mixed pair interactions, and a ReLU;
+32,768-point independent scrambled-Sobol references;
+a 4,096-point protected checkpoint cloud;
+a 1,024-point independent center/moment pilot;
+a 4,096-point fresh suffix cloud;
+16 weight-only sensitivity-selected coordinates;
+32 frozen four-sparse probe directions;
+ten random suffixes per depth;
+five suffixes for selecting one global shrinkage and five untouched suffixes for testing it.
+
+These are mechanism tests, not width-256 or official challenge results.
+
+Held-out MSE ratios
+
+Lower is better. The ratios compare the shrunken center correction with the protected-cloud center error on the selected target.
+
+Suffix depth	Target	Gaussian	Diagonal skew	Adjoint quadratic
+2	coordinates	0.868	0.766	0.864
+2	sparse probes	0.973	0.835	0.902
+3	coordinates	0.937	0.891	0.834
+3	sparse probes	0.826	0.689	0.852
+4	coordinates	0.683	0.493	0.571
+4	sparse probes	0.761	0.676	0.570
+6	coordinates	1.664	1.115	1.172
+6	sparse probes	0.865	0.819	0.678
+8	coordinates	0.885	0.571	0.531
+8	sparse probes	0.717	0.394	0.339
+
+Interpretation:
+
+Gaussian clouds contain some signed information but are consistently weaker.
+Marginal skew is sufficient for many coordinate targets.
+Adjoint-selected mixed skew is strongest for sparse probes and deep suffixes.
+Depth 6 produced a severe coordinate-target reversal despite reasonable probe performance. Suffix depth cannot be chosen by smooth interpolation.
+The best probe result, (0.339\times), captures about (66%) of the synthetic baseline error, but this is a small synthetic holdout.
+Coordinate-count sweep
+
+For Algorithm C:
+
+Suffix	Coordinates	Held-out center-MSE ratio
+4	8	0.425
+4	16	0.571
+4	32	0.658
+8	8	0.559
+8	16	0.531
+8	32	0.482
+
+A four-stage suffix favored only eight coordinates. The eight-stage suffix handled broader targets more successfully.
+
+Cloud-size sweep
+
+In a separate six-network width-40 prototype, median held-out ratios across pilot sizes were:
+
+Method and suffix	1,024 nodes	2,048 nodes	4,096 nodes
+Diagonal skew, depth 4	0.804	0.713	0.585
+Adjoint quadratic, depth 8	0.583	0.778	1.144
+
+The nonmonotonic depth-8 result is important. More nodes reduced integration noise but exposed fitted-state bias more precisely. Cloud size must therefore be frozen from complete-control validation, not assumed to be “larger is better.”
+
+Uncertainty experiment
+
+Two independent 2,048-node micro-clouds frequently disagreed by order one relative to the estimated correction. A hard disagreement threshold often disabled every test network. Consequently:
+
+two-cloud disagreement is not yet a useful continuous shrinkage estimator;
+pilot-half and cloud-block disagreement should be used only as a catastrophic fallback;
+the deployed shrink must be frozen globally rather than estimated separately for every network.
+9. Oracle and deployable experiment protocol
+Stage A — Algebra and independence tests
+
+Require all of the following:
+
+Replacing the independent center with the protected-cloud center reproduces the expected algebraic collapse.
+Production mode rejects any shared row, rotation, or scramble between pilot and protected design.
+On an exactly Gaussian checkpoint, Algorithm A matches the analytic suffix expectation within randomized-QMC error.
+Algorithms B and C reduce to Algorithm A when supplied zero skew.
+Moment convention tests cover preactivation versus post-ReLU state, connected versus raw moments, and tensor orientation.
+Stage B — Oracle-state suffix ceiling
+
+For each frozen network and target:
+
+use true independent checkpoint mean;
+separately add true covariance;
+separately add selected true (\kappa_3);
+run depths (2,3,4,6,8);
+run (K=8,16,32);
+run the complete 128 sparse-probe set;
+compare Gaussian, diagonal-skew, and adjoint-quadratic clouds;
+test (N_s=1024,2048,4096).
+
+Continue only if selected covariance/skew materially improves over the true-center Gaussian cloud. Otherwise the center alone is the only useful object, and micro-cubature is unnecessary.
+
+Stage C — Independent-pilot center
+
+Replace true center information with:
+
+analytic prior only;
+independent pilot mean;
+pilot plus exact-layer-1 cross-fitted control;
+pilot correction restricted to the adjoint span;
+full pilot mean as an ablation.
+
+Record:
+
+absolute weighted center error;
+signed cosine with the true protected-design defect;
+complete sparse-control MSE;
+pilot-half disagreement;
+worst network.
+Stage D — Hybrid versus strict independence
+
+Compare:
+
+analytic/pilot covariance only;
+centered protected Kerdock shape;
+protected diagonal variance plus pilot factor covariance;
+protected rank-8 shape plus independent skew.
+
+This identifies whether protected centered shape is helpful without allowing it to define the absolute center.
+
+Stage E — Frozen validation
+
+Freeze before opening validation:
+
+checkpoint;
+suffix depth;
+pilot construction;
+(N_p,N_s);
+rank;
+target set;
+quadratic terms retained;
+shrinkage;
+uncertainty fallback.
+
+Use at least 24 untouched networks, followed by the 64-network holdout only after validation passes.
+
+10. Stop/go gates
+GO
+
+Proceed toward integration only when all are true:
+
+Complete-control result: raw MSE ratio at most approximately (0.60).
+The reported exact sparse-probe ceiling is (0.190); retaining half its benefit requires
+[
+1-\tfrac12(1-0.190)=0.595.
+]
+Center precision: adjoint-weighted center error is at most (0.3%), or the independently reproduced complete-control tolerance is at least as strong as M83’s (0.772\times) result at (0.3%).
+Signed prediction: frozen-validation correction cosine is positive and preferably above (0.5).
+Robustness: at least 80% of networks improve, with worst candidate/baseline no worse than (1.10).
+Compute: anchor plus sparse application stays below 8B additional FLOPs; composed control stays below 14B.
+Independence: no anchor mean or lower-order center term is computed from the protected cloud.
+STOP
+
+Close the branch when any of the following occurs:
+
+complete-control ratio is at or above 1 on frozen validation;
+the best frozen shrink is below (0.10), meaning validation learns to turn the correction off;
+mean error remains above roughly (0.45%);
+a depth-6-like reversal produces a material harmful tail;
+increasing cloud size changes the estimate systematically more than randomized integration uncertainty, indicating dominant model bias;
+pilot halves disagree in signed target space on more than 20% of networks;
+the only gain comes from selecting target coordinates using true defects;
+exact added compute exceeds 8B before composing with the sparse control.
+11. Final recommendation
+
+Do not estimate the complete layer-31 mean.
+
+The priority order should be:
+
+128 frozen sparse-probe center terms, using (h_{24}), an eight-stage suffix, (N_p=1024), (N_s=2048), rank 8, and Algorithm C.
+Eight frozen layer-31 coordinates, using (h_{28}), a four-stage suffix, (N_p=1024), (N_s=4096), rank 8, and Algorithm C with diagonal-skew residuals.
+Eight final-error modes as a diagnostic and compression basis.
+Never promote a full 256-dimensional mean unless the sparse targets unexpectedly fail while the full oracle remains strong.
+
+The 128-probe target is preferred because:
+
+its exact-anchor ceiling is strongest;
+no full mean vector is required;
+no full final-layer replay is required;
+selected cubic and lower-order center terms are produced directly;
+the estimated added cost is about 5.7B;
+synthetic probe anchors benefited most from adjoint-selected mixed skew.
+
+The four-stage, eight-coordinate configuration is the conservative fallback because it had the cleanest coordinate-level synthetic result and remains near 6.2B added compute.
+
+The research claim at this point should be narrow:
+
+Independent short-suffix clouds can recover useful signed late-layer center information when their absolute center comes from a separate pilot and their non-Gaussian state is restricted to downstream-sensitive directions. The mechanism is promising for sparse probes, but it has not yet demonstrated the (0.3%) real-network center accuracy required by the existing tolerance curve.

@@ -1,0 +1,21 @@
+{
+  "python": "3.12.13 (main, Mar 10 2026, 18:18:07) [Clang 21.1.4 ]",
+  "torch": "2.8.0",
+  "mlp_kprop_file": [
+    "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/vendor/mlp_cumulant_propagation/src/mlp_kprop"
+  ],
+  "linear_kprop_signature": "(K: HTower, W: jaxtyping.Float[Tensor, 'out_dim in_dim'], k_max: int, d_max: Optional[int] = None, *, set_metric: Optional[torch.Tensor] = None, bias: Optional[jaxtyping.Float[Tensor, 'out_dim']] = None) -> HTower",
+  "nonlin_kprop_signature": "(K_in: HTower, nonlin_wick_coef: Callable[[float, float, int, int], float], k_max: int, kind: mlp_kprop.kprop_harmonic.Kind = <Kind.SIMPLE: 2>, use_pK: bool = True, factor: bool = False) -> HTower",
+  "factor_k3_file": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/vendor/mlp_cumulant_propagation/src/mlp_kprop/factor_k3.py",
+  "status": "ok",
+  "dslice_shape": [
+    8,
+    8
+  ],
+  "kpost_types": {
+    "3": "FactoredTensor",
+    "1": "HTensor",
+    "2": "HTensor",
+    "4": "HTensor"
+  }
+}

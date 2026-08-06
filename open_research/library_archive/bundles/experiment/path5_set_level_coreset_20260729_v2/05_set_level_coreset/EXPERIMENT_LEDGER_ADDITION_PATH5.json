@@ -1,0 +1,15 @@
+{
+  "suggested_id": "C65",
+  "branch": "Coreset",
+  "experiment": "Fixed 128-support portfolio plus direct-sketch set-level ranker",
+  "environment": "Sandbox exact Kerdock geometry",
+  "population_geometry": "Width-256 depth-32 He-ReLU; 66,048 rows; 129 bases; 8,192 retained rows",
+  "screen": "1 smoke + 8 development networks",
+  "training": "32 new grouped networks",
+  "protected_holdout_opened": false,
+  "canonical_result": "Full fixed portfolio contained a <=1.1e-8 support on all 41 fully resolved networks. Frozen top8 covered 30/32 new training networks. Best direct selector passed 6/8 development with 5.64e-8 worst; learned ranker passed 6/8 with 3.33e-7 worst. No new untouched test opened.",
+  "compute_status": "Top8 q32 selector approximately 2.49B ops versus 8.66B dense final layer; statistical gate failed before deployment work.",
+  "status": "Pause tested selector families; retain support library and labels",
+  "closure_confidence": "High against tested final-coordinate sketch and nearby ranker family; low against all possible earlier-layer set predictors",
+  "next_action": "Reopen only with a qualitatively new pre-layer29 support-error predictor, >=128 grouped training networks, frozen exact-geometry holdout, abstention, and at least two tail layers saved."
+}

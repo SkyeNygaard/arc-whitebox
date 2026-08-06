@@ -1,0 +1,387 @@
+{
+  "protocol": {
+    "indices": [
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167
+    ],
+    "layer": 29,
+    "rotation_seed": 3,
+    "rank": 2,
+    "folds": 6,
+    "ridge": 0.1,
+    "scales": [
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5
+    ],
+    "factorized_dir": "/Users/skyenygaard/Programming/AI-Safety/arc_ceiling/results/factorized_k3_layer29_diagfix",
+    "deployable_variants_use_target_k2": false,
+    "oracle_used_for_diagnostics_and_ceiling_only": true
+  },
+  "summary": {
+    "same_cloud": {
+      "mse_ratio": 0.972071382805405,
+      "wins": 6,
+      "worst": 1.0144776614214155
+    },
+    "oracle_c21_delta_scale0.25": {
+      "mse_ratio": 0.9731506988187827,
+      "wins": 6,
+      "worst": 1.0159970249268606
+    },
+    "factorized_c21_delta_scale0.25": {
+      "mse_ratio": 1.0416644374557893,
+      "wins": 2,
+      "worst": 1.2154948668385905
+    },
+    "oracle_c21_delta_scale0.5": {
+      "mse_ratio": 0.9743547157804318,
+      "wins": 6,
+      "worst": 1.023767711464896
+    },
+    "factorized_c21_delta_scale0.5": {
+      "mse_ratio": 1.167143437487482,
+      "wins": 2,
+      "worst": 1.6373632178089896
+    },
+    "oracle_c21_delta_scale0.75": {
+      "mse_ratio": 0.9756831629596057,
+      "wins": 6,
+      "worst": 1.0315780915455495
+    },
+    "factorized_c21_delta_scale0.75": {
+      "mse_ratio": 1.3512111728085003,
+      "wins": 2,
+      "worst": 2.2571321620491616
+    },
+    "oracle_c21_delta_scale1": {
+      "mse_ratio": 0.9771357716752481,
+      "wins": 6,
+      "worst": 1.0394281293014511
+    },
+    "factorized_c21_delta_scale1": {
+      "mse_ratio": 1.5966339036474837,
+      "wins": 2,
+      "worst": 3.087562323923229
+    },
+    "oracle_c21_delta_scale1.25": {
+      "mse_ratio": 0.9787122752952512,
+      "wins": 7,
+      "worst": 1.0473177888746004
+    },
+    "factorized_c21_delta_scale1.25": {
+      "mse_ratio": 1.9062411947065951,
+      "wins": 2,
+      "worst": 4.141725527258575
+    },
+    "oracle_c21_delta_scale1.5": {
+      "mse_ratio": 0.9804124092371923,
+      "wins": 6,
+      "worst": 1.0552470344173548
+    },
+    "factorized_c21_delta_scale1.5": {
+      "mse_ratio": 2.282925743002278,
+      "wins": 2,
+      "worst": 5.4330037268389235
+    }
+  },
+  "records": [
+    {
+      "index": 160,
+      "name": "amy-scott",
+      "baseline_mse": 2.1440298520066416e-07,
+      "method_mses": {
+        "same_cloud": 2.0991739926806349e-07,
+        "oracle_c21_delta_scale0.25": 2.1059740434992093e-07,
+        "factorized_c21_delta_scale0.25": 2.606057279462776e-07,
+        "oracle_c21_delta_scale0.5": 2.1130951857433697e-07,
+        "factorized_c21_delta_scale0.5": 3.5105556175601265e-07,
+        "oracle_c21_delta_scale0.75": 2.1205364632330235e-07,
+        "factorized_c21_delta_scale0.75": 4.839358735357695e-07,
+        "oracle_c21_delta_scale1": 2.1282969295816777e-07,
+        "factorized_c21_delta_scale1": 6.619825792422403e-07,
+        "oracle_c21_delta_scale1.25": 2.1363756481967093e-07,
+        "factorized_c21_delta_scale1.25": 8.879983169260332e-07,
+        "oracle_c21_delta_scale1.5": 2.1447716922793127e-07,
+        "factorized_c21_delta_scale1.5": 1.164852217640599e-06
+      },
+      "anchor_diagnostics": {
+        "sample_c21": [
+          0.005522723984695464,
+          0.0007002913899625358
+        ],
+        "oracle_c21": [
+          0.00553076315108589,
+          0.0007076714220644676
+        ],
+        "factorized_c21": [
+          0.002852058861426207,
+          0.0005780909327936847
+        ],
+        "factorized_delta_relative_error": 245.74748095009085
+      },
+      "seconds": 1.4742020829580724
+    },
+    {
+      "index": 161,
+      "name": "dylan-brown",
+      "baseline_mse": 2.24091425569048e-07,
+      "method_mses": {
+        "same_cloud": 2.175395733956453e-07,
+        "oracle_c21_delta_scale0.25": 2.1758929959746666e-07,
+        "factorized_c21_delta_scale0.25": 2.5716353256076695e-07,
+        "oracle_c21_delta_scale0.5": 2.1764225554476893e-07,
+        "factorized_c21_delta_scale0.5": 3.098042850122677e-07,
+        "oracle_c21_delta_scale0.75": 2.1769843520012052e-07,
+        "factorized_c21_delta_scale0.75": 3.7567512510006893e-07,
+        "oracle_c21_delta_scale1": 2.177578325386152e-07,
+        "factorized_c21_delta_scale1": 4.549904608443091e-07,
+        "oracle_c21_delta_scale1.25": 2.178204415475541e-07,
+        "factorized_c21_delta_scale1.25": 5.479658118206009e-07,
+        "oracle_c21_delta_scale1.5": 2.1788625622665469e-07,
+        "factorized_c21_delta_scale1.5": 6.548178070282373e-07
+      },
+      "anchor_diagnostics": {
+        "sample_c21": [
+          0.011322571378399909,
+          0.0012011325144422765
+        ],
+        "oracle_c21": [
+          0.011371496268538384,
+          0.0011982846239765844
+        ],
+        "factorized_c21": [
+          0.007295034098294231,
+          0.0011787813902128606
+        ],
+        "factorized_delta_relative_error": 83.18097430805898
+      },
+      "seconds": 1.2536860001273453
+    },
+    {
+      "index": 162,
+      "name": "yolanda-hawkins",
+      "baseline_mse": 2.3177693298152411e-07,
+      "method_mses": {
+        "same_cloud": 2.3513252094252474e-07,
+        "oracle_c21_delta_scale0.25": 2.3432913767026284e-07,
+        "factorized_c21_delta_scale0.25": 2.035713159167332e-07,
+        "oracle_c21_delta_scale0.5": 2.3354964824383375e-07,
+        "factorized_c21_delta_scale0.5": 1.798727597595319e-07,
+        "oracle_c21_delta_scale0.75": 2.32794172642025e-07,
+        "factorized_c21_delta_scale0.75": 1.6422337644289165e-07,
+        "oracle_c21_delta_scale1": 2.3206283139236633e-07,
+        "factorized_c21_delta_scale1": 1.5681112177291127e-07,
+        "oracle_c21_delta_scale1.25": 2.3135574557092818e-07,
+        "factorized_c21_delta_scale1.25": 1.5782538129408092e-07,
+        "oracle_c21_delta_scale1.5": 2.3067303680240592e-07,
+        "factorized_c21_delta_scale1.5": 1.6745696816972526e-07
+      },
+      "anchor_diagnostics": {
+        "sample_c21": [
+          0.005482670408779915,
+          0.0008573662069904286
+        ],
+        "oracle_c21": [
+          0.005375218829767285,
+          0.0008662256517174685
+        ],
+        "factorized_c21": [
+          0.003518442358382673,
+          0.0007938372515135011
+        ],
+        "factorized_delta_relative_error": 17.23476727928523
+      },
+      "seconds": 1.0990605840925127
+    },
+    {
+      "index": 163,
+      "name": "scott-matthews",
+      "baseline_mse": 2.5893801088228656e-07,
+      "method_mses": {
+        "same_cloud": 2.5185594956739863e-07,
+        "oracle_c21_delta_scale0.25": 2.4829834094557293e-07,
+        "factorized_c21_delta_scale0.25": 2.685020021419642e-07,
+        "oracle_c21_delta_scale0.5": 2.4490907734103127e-07,
+        "factorized_c21_delta_scale0.5": 2.971586070091771e-07,
+        "oracle_c21_delta_scale0.75": 2.4168756819974695e-07,
+        "factorized_c21_delta_scale0.75": 3.382651232670373e-07,
+        "oracle_c21_delta_scale1": 2.3863322378618915e-07,
+        "factorized_c21_delta_scale1": 3.922672900569939e-07,
+        "oracle_c21_delta_scale1.25": 2.3574545518289274e-07,
+        "factorized_c21_delta_scale1.25": 4.5961722066955044e-07,
+        "oracle_c21_delta_scale1.5": 2.3302367429089072e-07,
+        "factorized_c21_delta_scale1.5": 5.407733965207025e-07
+      },
+      "anchor_diagnostics": {
+        "sample_c21": [
+          0.017085527212225303,
+          0.0021556732333711834
+        ],
+        "oracle_c21": [
+          0.017677605082507906,
+          0.0021389696587478355
+        ],
+        "factorized_c21": [
+          0.013389681925270647,
+          0.0019188595836977056
+        ],
+        "factorized_delta_relative_error": 7.248812100269726
+      },
+      "seconds": 1.1347306671086699
+    },
+    {
+      "index": 164,
+      "name": "benjamin-walsh",
+      "baseline_mse": 3.457466003272283e-07,
+      "method_mses": {
+        "same_cloud": 3.4860456517037017e-07,
+        "oracle_c21_delta_scale0.25": 3.512775173110403e-07,
+        "factorized_c21_delta_scale0.25": 2.844455257602815e-07,
+        "oracle_c21_delta_scale0.5": 3.5396420576377457e-07,
+        "factorized_c21_delta_scale0.5": 2.3761506228201688e-07,
+        "oracle_c21_delta_scale0.75": 3.56664618123924e-07,
+        "factorized_c21_delta_scale0.75": 2.0928935678437166e-07,
+        "oracle_c21_delta_scale1": 3.593787419904674e-07,
+        "factorized_c21_delta_scale1": 2.0067767419648682e-07,
+        "oracle_c21_delta_scale1.25": 3.6210656496562294e-07,
+        "factorized_c21_delta_scale1.25": 2.1302225841415977e-07,
+        "oracle_c21_delta_scale1.5": 3.648480746551901e-07,
+        "factorized_c21_delta_scale1.5": 2.475982241506921e-07
+      },
+      "anchor_diagnostics": {
+        "sample_c21": [
+          0.002761481218039015,
+          0.0005939822706279104
+        ],
+        "oracle_c21": [
+          0.0027959024459085773,
+          0.0005944262112955124
+        ],
+        "factorized_c21": [
+          0.002012415930776421,
+          0.0005099031644107125
+        ],
+        "factorized_delta_relative_error": 22.89189096374946
+      },
+      "seconds": 1.060719083994627
+    },
+    {
+      "index": 165,
+      "name": "justin-crawford",
+      "baseline_mse": 3.0668500009183507e-07,
+      "method_mses": {
+        "same_cloud": 2.9661344282441717e-07,
+        "oracle_c21_delta_scale0.25": 2.964095023529309e-07,
+        "factorized_c21_delta_scale0.25": 3.45617483860353e-07,
+        "oracle_c21_delta_scale0.5": 2.962367911662251e-07,
+        "factorized_c21_delta_scale0.5": 4.03474682447205e-07,
+        "oracle_c21_delta_scale0.75": 2.96095223101786e-07,
+        "factorized_c21_delta_scale0.75": 4.7084519853418684e-07,
+        "oracle_c21_delta_scale1": 2.959847144641102e-07,
+        "factorized_c21_delta_scale1": 5.484139698761537e-07,
+        "oracle_c21_delta_scale1.25": 2.959051840249885e-07,
+        "factorized_c21_delta_scale1.25": 6.368906766809711e-07,
+        "oracle_c21_delta_scale1.5": 2.9585655302333903e-07,
+        "factorized_c21_delta_scale1.5": 7.37009704348143e-07
+      },
+      "anchor_diagnostics": {
+        "sample_c21": [
+          0.004825470378474842,
+          0.0009467282754781445
+        ],
+        "oracle_c21": [
+          0.004850666355928052,
+          0.000937767928264538
+        ],
+        "factorized_c21": [
+          0.0035172024954935287,
+          0.0008487872663082429
+        ],
+        "factorized_delta_relative_error": 49.975252334008
+      },
+      "seconds": 1.0714055828284472
+    },
+    {
+      "index": 166,
+      "name": "tara-harris",
+      "baseline_mse": 6.550635664715546e-07,
+      "method_mses": {
+        "same_cloud": 6.187691871471576e-07,
+        "oracle_c21_delta_scale0.25": 6.222482096662475e-07,
+        "factorized_c21_delta_scale0.25": 7.016903971057627e-07,
+        "oracle_c21_delta_scale0.5": 6.257484340518814e-07,
+        "factorized_c21_delta_scale0.5": 8.072191340257823e-07,
+        "oracle_c21_delta_scale0.75": 6.292698861795503e-07,
+        "factorized_c21_delta_scale0.75": 9.362247629989439e-07,
+        "oracle_c21_delta_scale1": 6.328125919531862e-07,
+        "factorized_c21_delta_scale1": 1.0895923026216755e-06,
+        "oracle_c21_delta_scale1.25": 6.363765773045945e-07,
+        "factorized_c21_delta_scale1.25": 1.268222403634052e-06,
+        "oracle_c21_delta_scale1.5": 6.39961868194129e-07,
+        "factorized_c21_delta_scale1.5": 1.473031326986112e-06
+      },
+      "anchor_diagnostics": {
+        "sample_c21": [
+          0.018380436283637665,
+          0.0026992855020245067
+        ],
+        "oracle_c21": [
+          0.01821724871767975,
+          0.002712408598875805
+        ],
+        "factorized_c21": [
+          0.012575231959716094,
+          0.002272950765233269
+        ],
+        "factorized_delta_relative_error": 34.56694335259358
+      },
+      "seconds": 1.1938051669858396
+    },
+    {
+      "index": 167,
+      "name": "kathy-wright",
+      "baseline_mse": 1.3442389485466154e-07,
+      "method_mses": {
+        "same_cloud": 1.2647344020295521e-07,
+        "oracle_c21_delta_scale0.25": 1.2671586349466278e-07,
+        "factorized_c21_delta_scale0.25": 1.483241626905224e-07,
+        "oracle_c21_delta_scale0.5": 1.2696022353382108e-07,
+        "factorized_c21_delta_scale0.5": 1.8124687832461187e-07,
+        "oracle_c21_delta_scale0.75": 1.2720652330541562e-07,
+        "factorized_c21_delta_scale0.75": 2.2543639171149356e-07,
+        "oracle_c21_delta_scale1": 1.2745476579630766e-07,
+        "factorized_c21_delta_scale1": 2.810886208815925e-07,
+        "oracle_c21_delta_scale1.25": 1.277049539950713e-07,
+        "factorized_c21_delta_scale1.25": 3.484005958012374e-07,
+        "oracle_c21_delta_scale1.5": 1.2795709089216937e-07,
+        "factorized_c21_delta_scale1.5": 4.2757045687118135e-07
+      },
+      "anchor_diagnostics": {
+        "sample_c21": [
+          0.015546124458324697,
+          0.00088787699493296
+        ],
+        "oracle_c21": [
+          0.015495886381626939,
+          0.0008866082233907514
+        ],
+        "factorized_c21": [
+          0.011243027100915886,
+          0.0008600479794810922
+        ],
+        "factorized_delta_relative_error": 84.62876828632353
+      },
+      "seconds": 1.129025625064969
+    }
+  ]
+}

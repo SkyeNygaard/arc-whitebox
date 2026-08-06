@@ -1,0 +1,53 @@
+{
+  "title": "Legal signed-anchor continuation \u2014 analytic, pilot, adjoint-source, and abstention experiments",
+  "date": "2026-07-29",
+  "environment": "architecture-matched synthetic width-256, depth-32; full 129-basis Kerdock; direct final-output scoring",
+  "canonical_ratio": "candidate MSE / baseline MSE; lower is better",
+  "terminal_verdict": "NO PROMOTION. No tested candidate met <=0.595 with safe tails and projected added compute <14B.",
+  "best_repeatable_candidate": {
+    "name": "transport-only internally centered covariance-defect anchor",
+    "path": "04_weak_anchor_ensemble",
+    "validation_n": 8,
+    "candidate_over_base": 0.9386844970638556,
+    "wins": 5,
+    "worst": 1.1019004184263632,
+    "status": "legal weak signal; below development gate"
+  },
+  "notable_false_leads": [
+    {
+      "name": "pilot-phased q128 source",
+      "tuning": 0.7055288214670806,
+      "validation": 1.1956237216539105,
+      "validation_n": 12,
+      "worst": 3.1979724699628544
+    },
+    {
+      "name": "direct-output quadratic-benefit gate",
+      "tuning": 0.4564027713672434,
+      "validation": 1.1413417513174366,
+      "validation_n": 12,
+      "worst": 2.7911842468428536
+    },
+    {
+      "name": "cross-scale confirmation rescue",
+      "development": 0.6514013818989018,
+      "first_holdout": 0.8119364710120897,
+      "first_holdout_n": 12,
+      "expanded_holdout": 1.1361686487634015,
+      "expanded_holdout_n": 24,
+      "expanded_worst": 2.50337732558586
+    },
+    {
+      "name": "whole-basis fold stability",
+      "fold_min_cosine_range": [
+        0.9971533929851211,
+        0.998427899887541
+      ],
+      "full_source_ratio_range": [
+        51.43550289341591,
+        181.76117287718625
+      ]
+    }
+  ],
+  "tests": "5 passed"
+}

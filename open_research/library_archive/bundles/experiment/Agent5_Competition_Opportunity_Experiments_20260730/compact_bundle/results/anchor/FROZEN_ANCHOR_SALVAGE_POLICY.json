@@ -1,0 +1,79 @@
+{
+  "frozen_at": "2026-07-30T11:20:00-04:00",
+  "development_networks": [
+    6000,
+    6001,
+    6002,
+    6003,
+    6004,
+    6005,
+    6006,
+    6007,
+    6008,
+    6009,
+    6010,
+    6011,
+    6012,
+    6013,
+    6014,
+    6015
+  ],
+  "excluded_pre_freeze_networks": [
+    7400
+  ],
+  "fresh_validation_networks": [
+    7401,
+    7402,
+    7403,
+    7404,
+    7405,
+    7406,
+    7407,
+    7408
+  ],
+  "features": [
+    "feature_cos_c17_p2",
+    "feature_cos_c17_p4",
+    "feature_cos_p2_p4",
+    "feature_norm_p2_c17",
+    "feature_norm_p4_c17",
+    "feature_min_nested_cos",
+    "feature_max_loo_angle_sin",
+    "feature_cos_p32_p128",
+    "feature_norm_p32_p128"
+  ],
+  "action_policy": {
+    "t_abs": -0.5,
+    "t_pair": -0.5,
+    "norm_lo": 0.4,
+    "norm_hi": 1.0,
+    "beta": 0.5
+  },
+  "classifier": {
+    "type": "RandomForestClassifier",
+    "n_estimators": 2000,
+    "max_depth": 3,
+    "min_samples_leaf": 3,
+    "max_features": 0.8,
+    "class_weight": "balanced",
+    "random_state": 20260730,
+    "sha256": "1a057ef82bb52dd5629ac040bb5948c073b69703631abed89da0eb0f8fe6483e"
+  },
+  "global_optimal_scale": 0.24201636110668007,
+  "frozen_multiplier": 1.0,
+  "active_scale": 0.24201636110668007,
+  "probability_threshold": 0.5,
+  "oob_development": {
+    "candidate_over_base": 0.9700058034906224,
+    "gain": 1.030921667067807,
+    "worst_network_ratio": 1.09952270361009,
+    "active_rows": 30
+  },
+  "validation_gate": {
+    "candidate_over_base_max": 0.98,
+    "bootstrap_gain_lower_min": 1.0,
+    "network_wins_min": 5,
+    "worst_network_ratio_max": 1.1
+  },
+  "governance": "Fresh synthetic IDs only. Sealed 6016-6031 cohorts remain unopened."
+}

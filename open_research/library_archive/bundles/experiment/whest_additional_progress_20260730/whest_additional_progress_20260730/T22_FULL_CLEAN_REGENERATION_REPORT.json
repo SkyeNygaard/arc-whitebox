@@ -1,0 +1,21 @@
+{
+  "title": "T22 v5.1 complete local clean-regeneration record",
+  "date_utc": "2026-07-30",
+  "procedure": [
+    "Extracted the canonical v5.1 archive into a fresh working directory.",
+    "Deleted generated theorem outputs and deterministic curvature outputs.",
+    "Regenerated the base artifacts and all 1,079 source curvature intervals in bounded deterministic chunks.",
+    "Reassembled all downstream theorem artifacts.",
+    "Ran verify_theorem_package.py and verify_manifest.py on the regenerated tree."
+  ],
+  "result": {
+    "passed": true,
+    "formal_pointwise_subintervals": 1421,
+    "global_pointwise_upper": "-1.004586240658455604403124565024659239239177837259174401E-13",
+    "kernel_mean_width": "2.288700332700929159124623793E-22",
+    "one_sided_logic_verified": true,
+    "manifest_output": "manifest verified: 59 files"
+  },
+  "qualification": "This is a complete local regeneration under the current Linux/Python environment. The separate direct-C GMP/MPFR audit supplies implementation diversity; public release still needs an external digest and named human sign-off.",
+  "record_sha256": "bf088ae321a9ce28dad9664934158641acf0b7cb89497fdbc621b4a41b4a5646"
+}

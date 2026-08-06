@@ -1,0 +1,4909 @@
+{
+  "candidate": "fixed_three",
+  "indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99
+  ],
+  "process_wall_time_s": 1530.791201457847,
+  "peak_rss_kib": 4206313472,
+  "rows": [
+    {
+      "index": 0,
+      "name": "daniel-harrison",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.7511634941509277e-07,
+      "tracked_flops": 174765608494,
+      "residual_wall_time_s": 0.03619401156902313,
+      "effective_compute": 178385009650.9023,
+      "adjusted_score": 1.1484607235456657e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9437103271484375,
+      "fallback": false,
+      "kink_counts": [
+        68,
+        80,
+        72
+      ],
+      "stable_on_counts": [
+        92,
+        83,
+        97
+      ],
+      "stable_off_counts": [
+        96,
+        93,
+        87
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.54319362482056,
+        "pilot_pack_s": 0.00038625020533800125,
+        "pilot_rollout_s": 0.0038735410198569298,
+        "classification_selection_s": 0.0026503331027925014,
+        "selected_anchor_extension_s": 6.670597940683365e-07,
+        "symbolic_composition_s": 0.05833250004798174
+      },
+      "approximation_mse_vs_baseline": 9.317692264883334e-10,
+      "approximation_max_abs_vs_baseline": 0.00021560107647964068
+    },
+    {
+      "index": 1,
+      "name": "dustin-robinson",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.70405256101048e-07,
+      "tracked_flops": 174828531450,
+      "residual_wall_time_s": 0.03566340962424874,
+      "effective_compute": 178394872412.42487,
+      "adjusted_score": 1.1176258794320973e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.94390869140625,
+      "fallback": false,
+      "kink_counts": [
+        76,
+        77,
+        68
+      ],
+      "stable_on_counts": [
+        93,
+        99,
+        81
+      ],
+      "stable_off_counts": [
+        87,
+        80,
+        107
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.116979042068124,
+        "pilot_pack_s": 0.00035600014962255955,
+        "pilot_rollout_s": 0.0015468329656869173,
+        "classification_selection_s": 0.0016238330863416195,
+        "selected_anchor_extension_s": 7.080379873514175e-07,
+        "symbolic_composition_s": 0.04831274994648993
+      },
+      "approximation_mse_vs_baseline": 1.279454774734565e-09,
+      "approximation_max_abs_vs_baseline": 0.00028413582103914425
+    },
+    {
+      "index": 2,
+      "name": "cole-martin",
+      "candidate": "fixed_three",
+      "raw_final_mse": 3.060888929064588e-07,
+      "tracked_flops": 173374129148,
+      "residual_wall_time_s": 0.033965830923989415,
+      "effective_compute": 176770712240.39896,
+      "adjusted_score": 1.9892482208805115e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9412460327148438,
+      "fallback": false,
+      "kink_counts": [
+        66,
+        66,
+        75
+      ],
+      "stable_on_counts": [
+        96,
+        101,
+        92
+      ],
+      "stable_off_counts": [
+        94,
+        89,
+        89
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.18917770893313,
+        "pilot_pack_s": 0.0002524589654058218,
+        "pilot_rollout_s": 0.0013667920138686895,
+        "classification_selection_s": 0.0017035410273820162,
+        "selected_anchor_extension_s": 5.830079317092896e-07,
+        "symbolic_composition_s": 0.04398491606116295
+      },
+      "approximation_mse_vs_baseline": 2.527960677932579e-09,
+      "approximation_max_abs_vs_baseline": 0.00021048689796776543
+    },
+    {
+      "index": 3,
+      "name": "donna-clarke",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.1553050516333066e-07,
+      "tracked_flops": 184448190146,
+      "residual_wall_time_s": 0.03817940317094326,
+      "effective_compute": 188266130463.09433,
+      "adjusted_score": 7.996500425568677e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9611825942993164,
+      "fallback": false,
+      "kink_counts": [
+        108,
+        99,
+        98
+      ],
+      "stable_on_counts": [
+        79,
+        84,
+        81
+      ],
+      "stable_off_counts": [
+        69,
+        73,
+        77
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.657287249807268,
+        "pilot_pack_s": 0.0003814590163528919,
+        "pilot_rollout_s": 0.0019688329193741083,
+        "classification_selection_s": 0.0018745828419923782,
+        "selected_anchor_extension_s": 7.080379873514175e-07,
+        "symbolic_composition_s": 0.12963083386421204
+      },
+      "approximation_mse_vs_baseline": 4.3684791464505867e-10,
+      "approximation_max_abs_vs_baseline": 8.725858582792068e-05
+    },
+    {
+      "index": 4,
+      "name": "rebecca-walker",
+      "candidate": "fixed_three",
+      "raw_final_mse": 9.704043971528062e-08,
+      "tracked_flops": 185974627704,
+      "residual_wall_time_s": 0.04106998210772872,
+      "effective_compute": 190081625914.77286,
+      "adjusted_score": 6.781472264913617e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9640440940856934,
+      "fallback": false,
+      "kink_counts": [
+        98,
+        113,
+        107
+      ],
+      "stable_on_counts": [
+        72,
+        71,
+        66
+      ],
+      "stable_off_counts": [
+        86,
+        72,
+        83
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.564719041110948,
+        "pilot_pack_s": 0.0004337499849498272,
+        "pilot_rollout_s": 0.0017712919507175684,
+        "classification_selection_s": 0.0017266669310629368,
+        "selected_anchor_extension_s": 6.658956408500671e-07,
+        "symbolic_composition_s": 0.06216458394192159
+      },
+      "approximation_mse_vs_baseline": 1.0579296779963952e-09,
+      "approximation_max_abs_vs_baseline": 0.0002044850750012689
+    },
+    {
+      "index": 5,
+      "name": "monique-stevens",
+      "candidate": "fixed_three",
+      "raw_final_mse": 2.2226421158009968e-07,
+      "tracked_flops": 182525255726,
+      "residual_wall_time_s": 0.03518029977567494,
+      "effective_compute": 186043285703.5675,
+      "adjusted_score": 1.5202486844365684e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9577169418334961,
+      "fallback": false,
+      "kink_counts": [
+        94,
+        92,
+        103
+      ],
+      "stable_on_counts": [
+        76,
+        84,
+        85
+      ],
+      "stable_off_counts": [
+        86,
+        80,
+        68
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.687594042159617,
+        "pilot_pack_s": 0.00038558291271328926,
+        "pilot_rollout_s": 0.002420540899038315,
+        "classification_selection_s": 0.002065791981294751,
+        "selected_anchor_extension_s": 6.658956408500671e-07,
+        "symbolic_composition_s": 0.05559320794418454
+      },
+      "approximation_mse_vs_baseline": 1.6298166831576155e-09,
+      "approximation_max_abs_vs_baseline": 0.00019882465423943921
+    },
+    {
+      "index": 6,
+      "name": "keith-brock",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.264015487366224e-07,
+      "tracked_flops": 178891404482,
+      "residual_wall_time_s": 0.038512890227138996,
+      "effective_compute": 182742693504.7139,
+      "adjusted_score": 8.4922645144477e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.951235294342041,
+      "fallback": false,
+      "kink_counts": [
+        91,
+        88,
+        79
+      ],
+      "stable_on_counts": [
+        80,
+        81,
+        77
+      ],
+      "stable_off_counts": [
+        85,
+        87,
+        100
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.964573666919023,
+        "pilot_pack_s": 0.0003986670635640621,
+        "pilot_rollout_s": 0.0017786251846700907,
+        "classification_selection_s": 0.0017287919763475657,
+        "selected_anchor_extension_s": 6.2515027821064e-07,
+        "symbolic_composition_s": 0.04803862515836954
+      },
+      "approximation_mse_vs_baseline": 6.133531454130464e-10,
+      "approximation_max_abs_vs_baseline": 0.0001709295531459043
+    },
+    {
+      "index": 7,
+      "name": "robert-huff",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.3067979589930107e-07,
+      "tracked_flops": 183839055712,
+      "residual_wall_time_s": 0.04492047964595258,
+      "effective_compute": 188331103676.59525,
+      "adjusted_score": 9.048187569833668e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9600982666015625,
+      "fallback": false,
+      "kink_counts": [
+        100,
+        104,
+        96
+      ],
+      "stable_on_counts": [
+        72,
+        84,
+        80
+      ],
+      "stable_off_counts": [
+        84,
+        68,
+        80
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.51568258390762,
+        "pilot_pack_s": 0.0003913328982889652,
+        "pilot_rollout_s": 0.0019706659950315952,
+        "classification_selection_s": 0.0017765001393854618,
+        "selected_anchor_extension_s": 5.83939254283905e-07,
+        "symbolic_composition_s": 0.0732025420293212
+      },
+      "approximation_mse_vs_baseline": 8.979535993114666e-10,
+      "approximation_max_abs_vs_baseline": 0.0001493386890405457
+    },
+    {
+      "index": 8,
+      "name": "kimberly-caldwell",
+      "candidate": "fixed_three",
+      "raw_final_mse": 2.7700590955962434e-07,
+      "tracked_flops": 175097361576,
+      "residual_wall_time_s": 0.049554176861420274,
+      "effective_compute": 180052779262.14203,
+      "adjusted_score": 1.8336648488326442e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9442501068115234,
+      "fallback": false,
+      "kink_counts": [
+        82,
+        79,
+        62
+      ],
+      "stable_on_counts": [
+        80,
+        81,
+        104
+      ],
+      "stable_off_counts": [
+        94,
+        96,
+        90
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.90710591711104,
+        "pilot_pack_s": 0.0004180420655757189,
+        "pilot_rollout_s": 0.0021183749195188284,
+        "classification_selection_s": 0.0017349158879369497,
+        "selected_anchor_extension_s": 5.830079317092896e-07,
+        "symbolic_composition_s": 0.053866124944761395
+      },
+      "approximation_mse_vs_baseline": 1.0224415240523468e-09,
+      "approximation_max_abs_vs_baseline": 0.00024026023469947422
+    },
+    {
+      "index": 9,
+      "name": "annette-hansen",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.0926187543329179e-07,
+      "tracked_flops": 182862811012,
+      "residual_wall_time_s": 0.04086193861439824,
+      "effective_compute": 186949004873.43982,
+      "adjusted_score": 7.509705471639574e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9583497047424316,
+      "fallback": false,
+      "kink_counts": [
+        90,
+        105,
+        97
+      ],
+      "stable_on_counts": [
+        88,
+        75,
+        80
+      ],
+      "stable_off_counts": [
+        78,
+        76,
+        79
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.640476083150133,
+        "pilot_pack_s": 0.0003743330016732216,
+        "pilot_rollout_s": 0.0018848339095711708,
+        "classification_selection_s": 0.001734584104269743,
+        "selected_anchor_extension_s": 5.420297384262085e-07,
+        "symbolic_composition_s": 0.05282112513668835
+      },
+      "approximation_mse_vs_baseline": 3.316932181767165e-10,
+      "approximation_max_abs_vs_baseline": 0.00012524191613760838
+    },
+    {
+      "index": 10,
+      "name": "emma-potter",
+      "candidate": "fixed_three",
+      "raw_final_mse": 6.634374773323241e-08,
+      "tracked_flops": 180960214768,
+      "residual_wall_time_s": 0.043754878686740994,
+      "effective_compute": 185335702636.6741,
+      "adjusted_score": 4.5205386403267957e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9549541473388672,
+      "fallback": false,
+      "kink_counts": [
+        90,
+        100,
+        86
+      ],
+      "stable_on_counts": [
+        84,
+        81,
+        76
+      ],
+      "stable_off_counts": [
+        82,
+        75,
+        94
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.543920291122049,
+        "pilot_pack_s": 0.0003548329696059227,
+        "pilot_rollout_s": 0.0018322919495403767,
+        "classification_selection_s": 0.0016069170087575912,
+        "selected_anchor_extension_s": 8.330680429935455e-07,
+        "symbolic_composition_s": 0.05573570798151195
+      },
+      "approximation_mse_vs_baseline": 5.581745654714294e-10,
+      "approximation_max_abs_vs_baseline": 0.00013024530931715628
+    },
+    {
+      "index": 11,
+      "name": "alan-campbell",
+      "candidate": "fixed_three",
+      "raw_final_mse": 2.4607234774944503e-07,
+      "tracked_flops": 168977629190,
+      "residual_wall_time_s": 0.0365608767606318,
+      "effective_compute": 172633716866.06317,
+      "adjusted_score": 1.5617788238950416e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9332981109619141,
+      "fallback": false,
+      "kink_counts": [
+        56,
+        55,
+        52
+      ],
+      "stable_on_counts": [
+        97,
+        99,
+        103
+      ],
+      "stable_off_counts": [
+        103,
+        102,
+        101
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.505420790985227,
+        "pilot_pack_s": 0.00036225002259016037,
+        "pilot_rollout_s": 0.002097624819725752,
+        "classification_selection_s": 0.001962499925866723,
+        "selected_anchor_extension_s": 8.330680429935455e-07,
+        "symbolic_composition_s": 0.038441916927695274
+      },
+      "approximation_mse_vs_baseline": 1.5401774766145165e-09,
+      "approximation_max_abs_vs_baseline": 0.00027049912365040285
+    },
+    {
+      "index": 12,
+      "name": "steven-williams",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.5459997791136927e-07,
+      "tracked_flops": 176468206908,
+      "residual_wall_time_s": 0.036379200872033834,
+      "effective_compute": 180106126995.20337,
+      "adjusted_score": 1.0236912961456143e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9468021392822266,
+      "fallback": false,
+      "kink_counts": [
+        78,
+        88,
+        70
+      ],
+      "stable_on_counts": [
+        74,
+        83,
+        90
+      ],
+      "stable_off_counts": [
+        104,
+        85,
+        96
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.54919541720301,
+        "pilot_pack_s": 0.00046829204075038433,
+        "pilot_rollout_s": 0.001954833045601845,
+        "classification_selection_s": 0.0021703748498111963,
+        "selected_anchor_extension_s": 7.080379873514175e-07,
+        "symbolic_composition_s": 0.054000332951545715
+      },
+      "approximation_mse_vs_baseline": 1.037030014951166e-09,
+      "approximation_max_abs_vs_baseline": 0.00019037494113893771
+    },
+    {
+      "index": 13,
+      "name": "hannah-best",
+      "candidate": "fixed_three",
+      "raw_final_mse": 8.458139102582487e-08,
+      "tracked_flops": 182240501448,
+      "residual_wall_time_s": 0.04181260499171913,
+      "effective_compute": 186421761947.1719,
+      "adjusted_score": 5.79698968491801e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9572896957397461,
+      "fallback": false,
+      "kink_counts": [
+        98,
+        100,
+        89
+      ],
+      "stable_on_counts": [
+        83,
+        88,
+        70
+      ],
+      "stable_off_counts": [
+        75,
+        68,
+        97
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.718874332960695,
+        "pilot_pack_s": 0.00036079203709959984,
+        "pilot_rollout_s": 0.0017438328359276056,
+        "classification_selection_s": 0.001748667098581791,
+        "selected_anchor_extension_s": 4.169996827840805e-07,
+        "symbolic_composition_s": 0.0533500830642879
+      },
+      "approximation_mse_vs_baseline": 8.209301454823795e-10,
+      "approximation_max_abs_vs_baseline": 0.0001971265285315584
+    },
+    {
+      "index": 14,
+      "name": "thomas-parsons",
+      "candidate": "fixed_three",
+      "raw_final_mse": 4.1144657200996857e-07,
+      "tracked_flops": 174347617590,
+      "residual_wall_time_s": 0.04478664789348841,
+      "effective_compute": 178826282379.34885,
+      "adjusted_score": 2.705053708465799e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9429583549499512,
+      "fallback": false,
+      "kink_counts": [
+        75,
+        72,
+        69
+      ],
+      "stable_on_counts": [
+        77,
+        105,
+        96
+      ],
+      "stable_off_counts": [
+        104,
+        79,
+        91
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.539088916964829,
+        "pilot_pack_s": 0.0004220418632030487,
+        "pilot_rollout_s": 0.0019976249895989895,
+        "classification_selection_s": 0.0017592080403119326,
+        "selected_anchor_extension_s": 6.249174475669861e-07,
+        "symbolic_composition_s": 0.050116709200665355
+      },
+      "approximation_mse_vs_baseline": 3.358380179283631e-09,
+      "approximation_max_abs_vs_baseline": 0.0005526252934006104
+    },
+    {
+      "index": 15,
+      "name": "kenneth-frost",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.7219923683993082e-07,
+      "tracked_flops": 188044446454,
+      "residual_wall_time_s": 0.04442829522304237,
+      "effective_compute": 192487275976.30423,
+      "adjusted_score": 1.2186088979601743e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9676604270935059,
+      "fallback": false,
+      "kink_counts": [
+        119,
+        106,
+        109
+      ],
+      "stable_on_counts": [
+        63,
+        71,
+        80
+      ],
+      "stable_off_counts": [
+        74,
+        79,
+        67
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.417826750082895,
+        "pilot_pack_s": 0.00038199988193809986,
+        "pilot_rollout_s": 0.0017597079277038574,
+        "classification_selection_s": 0.0016260829288512468,
+        "selected_anchor_extension_s": 5.41098415851593e-07,
+        "symbolic_composition_s": 0.09672225010581315
+      },
+      "approximation_mse_vs_baseline": 1.3605311988629522e-09,
+      "approximation_max_abs_vs_baseline": 0.00020543815558654588
+    },
+    {
+      "index": 16,
+      "name": "joseph-shaffer",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.2613630790268832e-07,
+      "tracked_flops": 184557887834,
+      "residual_wall_time_s": 0.038680467288941145,
+      "effective_compute": 188425934562.8941,
+      "adjusted_score": 8.737996948116548e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9614043235778809,
+      "fallback": false,
+      "kink_counts": [
+        107,
+        102,
+        97
+      ],
+      "stable_on_counts": [
+        82,
+        74,
+        78
+      ],
+      "stable_off_counts": [
+        67,
+        80,
+        81
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.66667312500067,
+        "pilot_pack_s": 0.0003839589189738035,
+        "pilot_rollout_s": 0.0017738330643624067,
+        "classification_selection_s": 0.0016301670111715794,
+        "selected_anchor_extension_s": 5.830079317092896e-07,
+        "symbolic_composition_s": 0.07101500011049211
+      },
+      "approximation_mse_vs_baseline": 1.5470840437891297e-09,
+      "approximation_max_abs_vs_baseline": 0.00019830449023416907
+    },
+    {
+      "index": 17,
+      "name": "natasha-richardson",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.9251327432074264e-07,
+      "tracked_flops": 176457323376,
+      "residual_wall_time_s": 0.03874818980693817,
+      "effective_compute": 180332142356.69382,
+      "adjusted_score": 1.276335705527993e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9468207359313965,
+      "fallback": false,
+      "kink_counts": [
+        85,
+        79,
+        72
+      ],
+      "stable_on_counts": [
+        85,
+        83,
+        84
+      ],
+      "stable_off_counts": [
+        86,
+        94,
+        100
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.743234665831551,
+        "pilot_pack_s": 0.00045616691932082176,
+        "pilot_rollout_s": 0.001924209063872695,
+        "classification_selection_s": 0.0017477499786764383,
+        "selected_anchor_extension_s": 5.841720849275589e-07,
+        "symbolic_composition_s": 0.06526891607791185
+      },
+      "approximation_mse_vs_baseline": 1.6720268266689116e-09,
+      "approximation_max_abs_vs_baseline": 0.00021104711368824525
+    },
+    {
+      "index": 18,
+      "name": "anne-clayton",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.394968564928813e-07,
+      "tracked_flops": 188033640130,
+      "residual_wall_time_s": 0.035456191981211305,
+      "effective_compute": 191579259328.12112,
+      "adjusted_score": 9.825258987318898e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.967628002166748,
+      "fallback": false,
+      "kink_counts": [
+        117,
+        118,
+        99
+      ],
+      "stable_on_counts": [
+        66,
+        72,
+        80
+      ],
+      "stable_off_counts": [
+        73,
+        66,
+        77
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.532076665898785,
+        "pilot_pack_s": 0.00037770788185298443,
+        "pilot_rollout_s": 0.0018436668906360865,
+        "classification_selection_s": 0.0016494581941515207,
+        "selected_anchor_extension_s": 5.830079317092896e-07,
+        "symbolic_composition_s": 0.07463124999776483
+      },
+      "approximation_mse_vs_baseline": 6.404086283026797e-10,
+      "approximation_max_abs_vs_baseline": 0.00013794191407162648
+    },
+    {
+      "index": 19,
+      "name": "jessica-benson",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.4507773900598538e-07,
+      "tracked_flops": 167611125514,
+      "residual_wall_time_s": 0.03707042499445379,
+      "effective_compute": 171318168013.44537,
+      "adjusted_score": 9.137666347808154e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9308962821960449,
+      "fallback": false,
+      "kink_counts": [
+        51,
+        49,
+        49
+      ],
+      "stable_on_counts": [
+        99,
+        114,
+        94
+      ],
+      "stable_off_counts": [
+        106,
+        93,
+        113
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.74207879183814,
+        "pilot_pack_s": 0.00037683313712477684,
+        "pilot_rollout_s": 0.0016996250487864017,
+        "classification_selection_s": 0.0016610829625278711,
+        "selected_anchor_extension_s": 6.249174475669861e-07,
+        "symbolic_composition_s": 0.03488612500950694
+      },
+      "approximation_mse_vs_baseline": 1.2639360598480094e-09,
+      "approximation_max_abs_vs_baseline": 0.00013556859292209058
+    },
+    {
+      "index": 20,
+      "name": "alexandra-adkins",
+      "candidate": "fixed_three",
+      "raw_final_mse": 4.100614592888224e-07,
+      "tracked_flops": 172678207426,
+      "residual_wall_time_s": 0.03576976712793112,
+      "effective_compute": 176255184138.79312,
+      "adjusted_score": 2.6571859564402066e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.939903736114502,
+      "fallback": false,
+      "kink_counts": [
+        66,
+        77,
+        57
+      ],
+      "stable_on_counts": [
+        96,
+        92,
+        105
+      ],
+      "stable_off_counts": [
+        94,
+        87,
+        94
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.114432875066996,
+        "pilot_pack_s": 0.0003767500165849924,
+        "pilot_rollout_s": 0.0017839581705629826,
+        "classification_selection_s": 0.001709250034764409,
+        "selected_anchor_extension_s": 6.2515027821064e-07,
+        "symbolic_composition_s": 0.04868629202246666
+      },
+      "approximation_mse_vs_baseline": 2.968438617911326e-09,
+      "approximation_max_abs_vs_baseline": 0.0004867800447814208
+    },
+    {
+      "index": 21,
+      "name": "olivia-hodge",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.1856921989749435e-07,
+      "tracked_flops": 178379515526,
+      "residual_wall_time_s": 0.03367125825025141,
+      "effective_compute": 181746641351.02515,
+      "adjusted_score": 7.922631427934096e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9502367973327637,
+      "fallback": false,
+      "kink_counts": [
+        83,
+        85,
+        85
+      ],
+      "stable_on_counts": [
+        85,
+        85,
+        90
+      ],
+      "stable_off_counts": [
+        88,
+        86,
+        81
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.512637958861887,
+        "pilot_pack_s": 0.0003821661230176687,
+        "pilot_rollout_s": 0.00179854198358953,
+        "classification_selection_s": 0.001659291097894311,
+        "selected_anchor_extension_s": 6.670597940683365e-07,
+        "symbolic_composition_s": 0.05234716599807143
+      },
+      "approximation_mse_vs_baseline": 1.1620179638782887e-09,
+      "approximation_max_abs_vs_baseline": 0.0002463625642143974
+    },
+    {
+      "index": 22,
+      "name": "mary-clay",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.9153636307999678e-07,
+      "tracked_flops": 180966314472,
+      "residual_wall_time_s": 0.04277801560238004,
+      "effective_compute": 185244116032.238,
+      "adjusted_score": 1.304447950984698e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9549746513366699,
+      "fallback": false,
+      "kink_counts": [
+        95,
+        89,
+        92
+      ],
+      "stable_on_counts": [
+        84,
+        88,
+        75
+      ],
+      "stable_off_counts": [
+        77,
+        79,
+        89
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.547306291060522,
+        "pilot_pack_s": 0.00038645812310278416,
+        "pilot_rollout_s": 0.001745833083987236,
+        "classification_selection_s": 0.001648375065997243,
+        "selected_anchor_extension_s": 5.830079317092896e-07,
+        "symbolic_composition_s": 0.05270883301272988
+      },
+      "approximation_mse_vs_baseline": 7.287197398565586e-10,
+      "approximation_max_abs_vs_baseline": 0.00012348947567619728
+    },
+    {
+      "index": 23,
+      "name": "emily-ho",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.2409585879372778e-07,
+      "tracked_flops": 175592768268,
+      "residual_wall_time_s": 0.03702366538345814,
+      "effective_compute": 179295134806.34583,
+      "adjusted_score": 8.180067548283338e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9452643394470215,
+      "fallback": false,
+      "kink_counts": [
+        75,
+        81,
+        72
+      ],
+      "stable_on_counts": [
+        86,
+        87,
+        85
+      ],
+      "stable_off_counts": [
+        95,
+        88,
+        99
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.593156541930512,
+        "pilot_pack_s": 0.0004219161346554756,
+        "pilot_rollout_s": 0.0016858750022947788,
+        "classification_selection_s": 0.0017714158166199923,
+        "selected_anchor_extension_s": 6.658956408500671e-07,
+        "symbolic_composition_s": 0.06150841689668596
+      },
+      "approximation_mse_vs_baseline": 8.096239621786471e-10,
+      "approximation_max_abs_vs_baseline": 0.00010059835926423677
+    },
+    {
+      "index": 24,
+      "name": "michael-poole",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.782709074043502e-07,
+      "tracked_flops": 172509425294,
+      "residual_wall_time_s": 0.036872883792966604,
+      "effective_compute": 176196713673.29666,
+      "adjusted_score": 1.1548069128015838e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9396896362304688,
+      "fallback": false,
+      "kink_counts": [
+        80,
+        55,
+        64
+      ],
+      "stable_on_counts": [
+        94,
+        107,
+        91
+      ],
+      "stable_off_counts": [
+        82,
+        94,
+        101
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.559025791939348,
+        "pilot_pack_s": 0.0004365411587059498,
+        "pilot_rollout_s": 0.001759916078299284,
+        "classification_selection_s": 0.0018596670124679804,
+        "selected_anchor_extension_s": 7.078051567077637e-07,
+        "symbolic_composition_s": 0.04880091594532132
+      },
+      "approximation_mse_vs_baseline": 1.0598373596342498e-09,
+      "approximation_max_abs_vs_baseline": 0.00016154437233394285
+    },
+    {
+      "index": 25,
+      "name": "courtney-roth",
+      "candidate": "fixed_three",
+      "raw_final_mse": 5.6190238275855746e-08,
+      "tracked_flops": 176083938590,
+      "residual_wall_time_s": 0.049990678671747446,
+      "effective_compute": 181083006457.17474,
+      "adjusted_score": 3.740844588432711e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9461855888366699,
+      "fallback": false,
+      "kink_counts": [
+        73,
+        69,
+        91
+      ],
+      "stable_on_counts": [
+        95,
+        90,
+        81
+      ],
+      "stable_off_counts": [
+        88,
+        97,
+        84
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.74840912502259,
+        "pilot_pack_s": 0.0004130830056965351,
+        "pilot_rollout_s": 0.0018003329169005156,
+        "classification_selection_s": 0.001643375027924776,
+        "selected_anchor_extension_s": 5.827751010656357e-07,
+        "symbolic_composition_s": 0.05117300013080239
+      },
+      "approximation_mse_vs_baseline": 3.9725973434644697e-10,
+      "approximation_max_abs_vs_baseline": 0.0001393538287636831
+    },
+    {
+      "index": 26,
+      "name": "randy-hernandez",
+      "candidate": "fixed_three",
+      "raw_final_mse": 2.5032450957744484e-07,
+      "tracked_flops": 174120668026,
+      "residual_wall_time_s": 0.036241068271920085,
+      "effective_compute": 177744774853.19202,
+      "adjusted_score": 1.6358041762896558e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9425773620605469,
+      "fallback": false,
+      "kink_counts": [
+        74,
+        68,
+        72
+      ],
+      "stable_on_counts": [
+        96,
+        90,
+        93
+      ],
+      "stable_off_counts": [
+        86,
+        98,
+        91
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.672908874927089,
+        "pilot_pack_s": 0.0003720419481396675,
+        "pilot_rollout_s": 0.0017813339363783598,
+        "classification_selection_s": 0.0017031659372150898,
+        "selected_anchor_extension_s": 5.841720849275589e-07,
+        "symbolic_composition_s": 0.0574417500756681
+      },
+      "approximation_mse_vs_baseline": 2.3122981427537235e-09,
+      "approximation_max_abs_vs_baseline": 0.0003277697094872142
+    },
+    {
+      "index": 27,
+      "name": "robert-williams",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.5686959574050184e-07,
+      "tracked_flops": 177900809180,
+      "residual_wall_time_s": 0.036314752884209156,
+      "effective_compute": 181532284468.42093,
+      "adjusted_score": 1.0469447087651093e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9494209289550781,
+      "fallback": false,
+      "kink_counts": [
+        85,
+        86,
+        78
+      ],
+      "stable_on_counts": [
+        92,
+        74,
+        83
+      ],
+      "stable_off_counts": [
+        79,
+        96,
+        95
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.60420662490651,
+        "pilot_pack_s": 0.00038729188963770866,
+        "pilot_rollout_s": 0.0017390421126037836,
+        "classification_selection_s": 0.0016827909275889397,
+        "selected_anchor_extension_s": 4.5890919864177704e-07,
+        "symbolic_composition_s": 0.056051708990707994
+      },
+      "approximation_mse_vs_baseline": 1.4312221958523185e-09,
+      "approximation_max_abs_vs_baseline": 0.00015047024685055623
+    },
+    {
+      "index": 28,
+      "name": "todd-jenkins",
+      "candidate": "fixed_three",
+      "raw_final_mse": 5.117279694739224e-07,
+      "tracked_flops": 177335549452,
+      "residual_wall_time_s": 0.04460300714708865,
+      "effective_compute": 181795850166.70886,
+      "adjusted_score": 3.4202213700218885e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9484100341796875,
+      "fallback": false,
+      "kink_counts": [
+        76,
+        88,
+        80
+      ],
+      "stable_on_counts": [
+        90,
+        88,
+        82
+      ],
+      "stable_off_counts": [
+        90,
+        80,
+        94
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.077504332875833,
+        "pilot_pack_s": 0.00036874995566904545,
+        "pilot_rollout_s": 0.001992500154301524,
+        "classification_selection_s": 0.0017700840253382921,
+        "selected_anchor_extension_s": 5.417969077825546e-07,
+        "symbolic_composition_s": 0.050637499894946814
+      },
+      "approximation_mse_vs_baseline": 2.179094695979867e-09,
+      "approximation_max_abs_vs_baseline": 0.00015820341331862497
+    },
+    {
+      "index": 29,
+      "name": "elizabeth-jackson",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.2114312154545028e-07,
+      "tracked_flops": 174831811548,
+      "residual_wall_time_s": 0.04342156741768122,
+      "effective_compute": 179173968289.76813,
+      "adjusted_score": 7.980034492025013e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.943913459777832,
+      "fallback": false,
+      "kink_counts": [
+        78,
+        71,
+        72
+      ],
+      "stable_on_counts": [
+        106,
+        91,
+        82
+      ],
+      "stable_off_counts": [
+        72,
+        94,
+        102
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.543075125198811,
+        "pilot_pack_s": 0.00040391599759459496,
+        "pilot_rollout_s": 0.001774708041921258,
+        "classification_selection_s": 0.0016344578471034765,
+        "selected_anchor_extension_s": 4.998873919248581e-07,
+        "symbolic_composition_s": 0.04626612504944205
+      },
+      "approximation_mse_vs_baseline": 6.815958393990764e-10,
+      "approximation_max_abs_vs_baseline": 0.00013947780565864987
+    },
+    {
+      "index": 30,
+      "name": "megan-ashley",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.9380389421418588e-07,
+      "tracked_flops": 175825376614,
+      "residual_wall_time_s": 0.03921592119149864,
+      "effective_compute": 179746968733.14987,
+      "adjusted_score": 1.2807228865323511e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9456181526184082,
+      "fallback": false,
+      "kink_counts": [
+        88,
+        71,
+        71
+      ],
+      "stable_on_counts": [
+        80,
+        87,
+        95
+      ],
+      "stable_off_counts": [
+        88,
+        98,
+        90
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.542266541859135,
+        "pilot_pack_s": 0.0005034590139985085,
+        "pilot_rollout_s": 0.0017103340942412615,
+        "classification_selection_s": 0.001674541039392352,
+        "selected_anchor_extension_s": 6.66128471493721e-07,
+        "symbolic_composition_s": 0.04783395817503333
+      },
+      "approximation_mse_vs_baseline": 1.0429398667908163e-09,
+      "approximation_max_abs_vs_baseline": 0.00018272523793571018
+    },
+    {
+      "index": 31,
+      "name": "martin-hill",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.4649099851262853e-07,
+      "tracked_flops": 184603741284,
+      "residual_wall_time_s": 0.034780978225171566,
+      "effective_compute": 188081839106.51715,
+      "adjusted_score": 1.0129520740001927e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9614100456237793,
+      "fallback": false,
+      "kink_counts": [
+        105,
+        103,
+        98
+      ],
+      "stable_on_counts": [
+        76,
+        77,
+        89
+      ],
+      "stable_off_counts": [
+        75,
+        76,
+        69
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.557070084149018,
+        "pilot_pack_s": 0.00041624996811151505,
+        "pilot_rollout_s": 0.0018159169703722,
+        "classification_selection_s": 0.001663832925260067,
+        "selected_anchor_extension_s": 5.420297384262085e-07,
+        "symbolic_composition_s": 0.07006545807234943
+      },
+      "approximation_mse_vs_baseline": 1.490319396779582e-09,
+      "approximation_max_abs_vs_baseline": 0.00019376270210919033
+    },
+    {
+      "index": 32,
+      "name": "lauren-johnson",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.4581001236546263e-07,
+      "tracked_flops": 173656943280,
+      "residual_wall_time_s": 0.03732526022940874,
+      "effective_compute": 177389469302.9409,
+      "adjusted_score": 9.509250261972302e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9417605400085449,
+      "fallback": false,
+      "kink_counts": [
+        82,
+        59,
+        69
+      ],
+      "stable_on_counts": [
+        84,
+        100,
+        90
+      ],
+      "stable_off_counts": [
+        90,
+        97,
+        97
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.55084295803681,
+        "pilot_pack_s": 0.00035912496969103813,
+        "pilot_rollout_s": 0.0020385419484227896,
+        "classification_selection_s": 0.002105334075167775,
+        "selected_anchor_extension_s": 4.998873919248581e-07,
+        "symbolic_composition_s": 0.058356499997898936
+      },
+      "approximation_mse_vs_baseline": 1.417956292286468e-09,
+      "approximation_max_abs_vs_baseline": 0.00020207173082326113
+    },
+    {
+      "index": 33,
+      "name": "michele-wright",
+      "candidate": "fixed_three",
+      "raw_final_mse": 2.0016608556167833e-07,
+      "tracked_flops": 172159776752,
+      "residual_wall_time_s": 0.05208880617283285,
+      "effective_compute": 177368657369.2833,
+      "adjusted_score": 1.305264332608087e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.939021110534668,
+      "fallback": false,
+      "kink_counts": [
+        69,
+        64,
+        62
+      ],
+      "stable_on_counts": [
+        101,
+        91,
+        99
+      ],
+      "stable_off_counts": [
+        86,
+        101,
+        95
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.775274708867073,
+        "pilot_pack_s": 0.0003680828958749771,
+        "pilot_rollout_s": 0.0017553751822561026,
+        "classification_selection_s": 0.0017670830711722374,
+        "selected_anchor_extension_s": 5.420297384262085e-07,
+        "symbolic_composition_s": 0.04844108410179615
+      },
+      "approximation_mse_vs_baseline": 7.951559206152516e-10,
+      "approximation_max_abs_vs_baseline": 0.00012525106864691438
+    },
+    {
+      "index": 34,
+      "name": "kevin-newman",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.4985093818848415e-07,
+      "tracked_flops": 177137338406,
+      "residual_wall_time_s": 0.03700173203833401,
+      "effective_compute": 180837511609.8334,
+      "adjusted_score": 9.962746608236922e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9480147361755371,
+      "fallback": false,
+      "kink_counts": [
+        87,
+        78,
+        77
+      ],
+      "stable_on_counts": [
+        89,
+        87,
+        88
+      ],
+      "stable_off_counts": [
+        80,
+        91,
+        91
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.018696791958064,
+        "pilot_pack_s": 0.0003817921970039606,
+        "pilot_rollout_s": 0.0017853339668363333,
+        "classification_selection_s": 0.001920541049912572,
+        "selected_anchor_extension_s": 5.00120222568512e-07,
+        "symbolic_composition_s": 0.0652195829898119
+      },
+      "approximation_mse_vs_baseline": 5.681996627342227e-10,
+      "approximation_max_abs_vs_baseline": 0.00017782981624669958
+    },
+    {
+      "index": 35,
+      "name": "bobby-vasquez",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.6633491924345578e-07,
+      "tracked_flops": 174521056696,
+      "residual_wall_time_s": 0.038615799276158214,
+      "effective_compute": 178382636623.6158,
+      "adjusted_score": 1.0908552006332299e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9432950019836426,
+      "fallback": false,
+      "kink_counts": [
+        77,
+        61,
+        80
+      ],
+      "stable_on_counts": [
+        81,
+        102,
+        94
+      ],
+      "stable_off_counts": [
+        98,
+        93,
+        82
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.443927332991734,
+        "pilot_pack_s": 0.00038058310747146606,
+        "pilot_rollout_s": 0.0017734579741954803,
+        "classification_selection_s": 0.0016630419995635748,
+        "selected_anchor_extension_s": 4.5890919864177704e-07,
+        "symbolic_composition_s": 0.04436512500979006
+      },
+      "approximation_mse_vs_baseline": 9.92475925880831e-10,
+      "approximation_max_abs_vs_baseline": 0.00014541845666826703
+    },
+    {
+      "index": 36,
+      "name": "paul-beasley",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.2279994663061672e-07,
+      "tracked_flops": 188925931092,
+      "residual_wall_time_s": 0.03642255789600313,
+      "effective_compute": 192568186881.6003,
+      "adjusted_score": 8.69388348228498e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9692869186401367,
+      "fallback": false,
+      "kink_counts": [
+        112,
+        115,
+        114
+      ],
+      "stable_on_counts": [
+        74,
+        70,
+        74
+      ],
+      "stable_off_counts": [
+        70,
+        71,
+        68
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.587748667225242,
+        "pilot_pack_s": 0.00035829097032546997,
+        "pilot_rollout_s": 0.0019077500328421593,
+        "classification_selection_s": 0.0016422499902546406,
+        "selected_anchor_extension_s": 6.249174475669861e-07,
+        "symbolic_composition_s": 0.07777199987322092
+      },
+      "approximation_mse_vs_baseline": 1.3119375578945795e-09,
+      "approximation_max_abs_vs_baseline": 0.00021698421480760428
+    },
+    {
+      "index": 37,
+      "name": "kyle-braun",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.3206398241764412e-07,
+      "tracked_flops": 171417914378,
+      "residual_wall_time_s": 0.04387681116349995,
+      "effective_compute": 175805595494.35,
+      "adjusted_score": 8.535877600106358e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9377102851867676,
+      "fallback": false,
+      "kink_counts": [
+        70,
+        65,
+        53
+      ],
+      "stable_on_counts": [
+        98,
+        109,
+        93
+      ],
+      "stable_off_counts": [
+        88,
+        82,
+        110
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.839390916982666,
+        "pilot_pack_s": 0.0004271250218153,
+        "pilot_rollout_s": 0.001792083028703928,
+        "classification_selection_s": 0.0016167501453310251,
+        "selected_anchor_extension_s": 5.830079317092896e-07,
+        "symbolic_composition_s": 0.044873459031805396
+      },
+      "approximation_mse_vs_baseline": 1.3934134821333404e-09,
+      "approximation_max_abs_vs_baseline": 0.0002298005695261653
+    },
+    {
+      "index": 38,
+      "name": "leonard-brown",
+      "candidate": "fixed_three",
+      "raw_final_mse": 4.1958881598749785e-07,
+      "tracked_flops": 178219430586,
+      "residual_wall_time_s": 0.037563360994681716,
+      "effective_compute": 181975766685.46817,
+      "adjusted_score": 2.8071689883078216e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9500002861022949,
+      "fallback": false,
+      "kink_counts": [
+        93,
+        76,
+        83
+      ],
+      "stable_on_counts": [
+        81,
+        98,
+        81
+      ],
+      "stable_off_counts": [
+        82,
+        82,
+        92
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.76821391703561,
+        "pilot_pack_s": 0.00038412492722272873,
+        "pilot_rollout_s": 0.0019377500284463167,
+        "classification_selection_s": 0.003015416907146573,
+        "selected_anchor_extension_s": 5.420297384262085e-07,
+        "symbolic_composition_s": 0.08165066712535918
+      },
+      "approximation_mse_vs_baseline": 1.7232237923254846e-09,
+      "approximation_max_abs_vs_baseline": 0.00019439789453587247
+    },
+    {
+      "index": 39,
+      "name": "kara-garrett",
+      "candidate": "fixed_three",
+      "raw_final_mse": 9.622694212974065e-08,
+      "tracked_flops": 176889693410,
+      "residual_wall_time_s": 0.04279434774070978,
+      "effective_compute": 181169128184.07098,
+      "adjusted_score": 6.409320299067708e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9475569725036621,
+      "fallback": false,
+      "kink_counts": [
+        81,
+        92,
+        67
+      ],
+      "stable_on_counts": [
+        86,
+        79,
+        89
+      ],
+      "stable_off_counts": [
+        89,
+        85,
+        100
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.560855540912598,
+        "pilot_pack_s": 0.0003807500470429659,
+        "pilot_rollout_s": 0.0018273750320076942,
+        "classification_selection_s": 0.0016816670540720224,
+        "selected_anchor_extension_s": 5.00120222568512e-07,
+        "symbolic_composition_s": 0.05364133417606354
+      },
+      "approximation_mse_vs_baseline": 2.582426822770536e-10,
+      "approximation_max_abs_vs_baseline": 9.849142741078923e-05
+    },
+    {
+      "index": 40,
+      "name": "alejandro-smith",
+      "candidate": "fixed_three",
+      "raw_final_mse": 7.441300639569917e-08,
+      "tracked_flops": 193199880326,
+      "residual_wall_time_s": 0.04120008205063641,
+      "effective_compute": 197319888531.06363,
+      "adjusted_score": 5.3982228409046636e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9769902229309082,
+      "fallback": false,
+      "kink_counts": [
+        139,
+        120,
+        115
+      ],
+      "stable_on_counts": [
+        62,
+        68,
+        70
+      ],
+      "stable_off_counts": [
+        55,
+        68,
+        71
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.720193041022867,
+        "pilot_pack_s": 0.0003868748899549246,
+        "pilot_rollout_s": 0.002222459064796567,
+        "classification_selection_s": 0.0016357090789824724,
+        "selected_anchor_extension_s": 6.2515027821064e-07,
+        "symbolic_composition_s": 0.0847331671975553
+      },
+      "approximation_mse_vs_baseline": 8.434415851326633e-10,
+      "approximation_max_abs_vs_baseline": 0.00021114737832207074
+    },
+    {
+      "index": 41,
+      "name": "tammy-hopkins",
+      "candidate": "fixed_three",
+      "raw_final_mse": 8.008578767809065e-08,
+      "tracked_flops": 175370272936,
+      "residual_wall_time_s": 0.04321857984177768,
+      "effective_compute": 179692130920.17776,
+      "adjusted_score": 5.290730089815083e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9448356628417969,
+      "fallback": false,
+      "kink_counts": [
+        78,
+        64,
+        84
+      ],
+      "stable_on_counts": [
+        82,
+        93,
+        92
+      ],
+      "stable_off_counts": [
+        96,
+        99,
+        80
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.603782207937911,
+        "pilot_pack_s": 0.0004060410428792238,
+        "pilot_rollout_s": 0.0017927498556673527,
+        "classification_selection_s": 0.0016929588746279478,
+        "selected_anchor_extension_s": 5.830079317092896e-07,
+        "symbolic_composition_s": 0.05409529199823737
+      },
+      "approximation_mse_vs_baseline": 6.939260193105422e-10,
+      "approximation_max_abs_vs_baseline": 0.00011576604886476272
+    },
+    {
+      "index": 42,
+      "name": "jonathan-cross",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.535955405313328e-07,
+      "tracked_flops": 183085071504,
+      "residual_wall_time_s": 0.040850885678082705,
+      "effective_compute": 187170160071.80826,
+      "adjusted_score": 1.0569302171899071e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9588055610656738,
+      "fallback": false,
+      "kink_counts": [
+        97,
+        97,
+        100
+      ],
+      "stable_on_counts": [
+        72,
+        86,
+        72
+      ],
+      "stable_off_counts": [
+        87,
+        73,
+        84
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.635089791147038,
+        "pilot_pack_s": 0.00039950013160705566,
+        "pilot_rollout_s": 0.001634333049878478,
+        "classification_selection_s": 0.001626292010769248,
+        "selected_anchor_extension_s": 6.249174475669861e-07,
+        "symbolic_composition_s": 0.060566124971956015
+      },
+      "approximation_mse_vs_baseline": 9.91598277589578e-10,
+      "approximation_max_abs_vs_baseline": 0.00019032282709602333
+    },
+    {
+      "index": 43,
+      "name": "christy-johnson",
+      "candidate": "fixed_three",
+      "raw_final_mse": 2.1036496595207273e-07,
+      "tracked_flops": 188127446844,
+      "residual_wall_time_s": 0.04630862013436854,
+      "effective_compute": 192758308857.43686,
+      "adjusted_score": 1.4907939367563906e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9678192138671875,
+      "fallback": false,
+      "kink_counts": [
+        100,
+        127,
+        108
+      ],
+      "stable_on_counts": [
+        84,
+        63,
+        78
+      ],
+      "stable_off_counts": [
+        72,
+        66,
+        70
+      ],
+      "timings": {
+        "prefix_propagation_s": 16.056846874998882,
+        "pilot_pack_s": 0.0003807919565588236,
+        "pilot_rollout_s": 0.0020325002260506153,
+        "classification_selection_s": 0.002566083101555705,
+        "selected_anchor_extension_s": 5.830079317092896e-07,
+        "symbolic_composition_s": 0.09253924991935492
+      },
+      "approximation_mse_vs_baseline": 1.2482841477576797e-09,
+      "approximation_max_abs_vs_baseline": 0.0001347128719685342
+    },
+    {
+      "index": 44,
+      "name": "edward-adams",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.209579913612097e-07,
+      "tracked_flops": 172536098390,
+      "residual_wall_time_s": 0.039830392925068736,
+      "effective_compute": 176519137682.50687,
+      "adjusted_score": 7.849779533415019e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9397616386413574,
+      "fallback": false,
+      "kink_counts": [
+        69,
+        63,
+        67
+      ],
+      "stable_on_counts": [
+        89,
+        94,
+        89
+      ],
+      "stable_off_counts": [
+        98,
+        99,
+        100
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.632074082968757,
+        "pilot_pack_s": 0.0003935410641133785,
+        "pilot_rollout_s": 0.0016014170832931995,
+        "classification_selection_s": 0.0016778330318629742,
+        "selected_anchor_extension_s": 5.83939254283905e-07,
+        "symbolic_composition_s": 0.04661220801062882
+      },
+      "approximation_mse_vs_baseline": 3.541645507951503e-10,
+      "approximation_max_abs_vs_baseline": 9.694450581693159e-05
+    },
+    {
+      "index": 45,
+      "name": "ryan-harvey",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.3352140825747887e-07,
+      "tracked_flops": 181241341238,
+      "residual_wall_time_s": 0.04302851692773402,
+      "effective_compute": 185544192930.7734,
+      "adjusted_score": 9.108133064012581e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9553909301757812,
+      "fallback": false,
+      "kink_counts": [
+        94,
+        96,
+        88
+      ],
+      "stable_on_counts": [
+        84,
+        72,
+        87
+      ],
+      "stable_off_counts": [
+        78,
+        88,
+        81
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.84650995885022,
+        "pilot_pack_s": 0.00038783298805356026,
+        "pilot_rollout_s": 0.0022518751211464405,
+        "classification_selection_s": 0.0019908330868929625,
+        "selected_anchor_extension_s": 5.830079317092896e-07,
+        "symbolic_composition_s": 0.05259020812809467
+      },
+      "approximation_mse_vs_baseline": 1.1225710516445874e-09,
+      "approximation_max_abs_vs_baseline": 0.00013708722531113882
+    },
+    {
+      "index": 46,
+      "name": "allison-tyler",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.7534915039238407e-07,
+      "tracked_flops": 187517654160,
+      "residual_wall_time_s": 0.054356730775907636,
+      "effective_compute": 192953327237.59076,
+      "adjusted_score": 1.243904485165265e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9667701721191406,
+      "fallback": false,
+      "kink_counts": [
+        112,
+        110,
+        108
+      ],
+      "stable_on_counts": [
+        70,
+        72,
+        72
+      ],
+      "stable_off_counts": [
+        74,
+        74,
+        76
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.603433333104476,
+        "pilot_pack_s": 0.0003792908973991871,
+        "pilot_rollout_s": 0.0018257908523082733,
+        "classification_selection_s": 0.0016319998539984226,
+        "selected_anchor_extension_s": 4.998873919248581e-07,
+        "symbolic_composition_s": 0.07841537497006357
+      },
+      "approximation_mse_vs_baseline": 1.0704304252556765e-09,
+      "approximation_max_abs_vs_baseline": 0.0002262160533134665
+    },
+    {
+      "index": 47,
+      "name": "debbie-anderson",
+      "candidate": "fixed_three",
+      "raw_final_mse": 2.559419390194327e-07,
+      "tracked_flops": 176607367170,
+      "residual_wall_time_s": 0.042510778876021504,
+      "effective_compute": 180858445057.60214,
+      "adjusted_score": 1.7018110704441991e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9470324516296387,
+      "fallback": false,
+      "kink_counts": [
+        77,
+        83,
+        77
+      ],
+      "stable_on_counts": [
+        93,
+        88,
+        93
+      ],
+      "stable_off_counts": [
+        86,
+        85,
+        86
+      ],
+      "timings": {
+        "prefix_propagation_s": 16.23197912517935,
+        "pilot_pack_s": 0.0003803749568760395,
+        "pilot_rollout_s": 0.0023172919172793627,
+        "classification_selection_s": 0.0020119999535381794,
+        "selected_anchor_extension_s": 6.249174475669861e-07,
+        "symbolic_composition_s": 0.06009541708044708
+      },
+      "approximation_mse_vs_baseline": 1.0300975240226257e-09,
+      "approximation_max_abs_vs_baseline": 0.0003098213146445197
+    },
+    {
+      "index": 48,
+      "name": "andrew-nguyen",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.4769859499987953e-07,
+      "tracked_flops": 179815275258,
+      "residual_wall_time_s": 0.03575258073396981,
+      "effective_compute": 183390533331.39697,
+      "adjusted_score": 9.958280922546291e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9528508186340332,
+      "fallback": false,
+      "kink_counts": [
+        83,
+        100,
+        83
+      ],
+      "stable_on_counts": [
+        87,
+        82,
+        83
+      ],
+      "stable_off_counts": [
+        86,
+        74,
+        90
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.35302854096517,
+        "pilot_pack_s": 0.0003856250550597906,
+        "pilot_rollout_s": 0.0017788750119507313,
+        "classification_selection_s": 0.0017920839600265026,
+        "selected_anchor_extension_s": 6.249174475669861e-07,
+        "symbolic_composition_s": 0.05592666589654982
+      },
+      "approximation_mse_vs_baseline": 1.260468837771578e-09,
+      "approximation_max_abs_vs_baseline": 0.0001336510811846825
+    },
+    {
+      "index": 49,
+      "name": "mark-cole",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.7825019780252192e-07,
+      "tracked_flops": 180301825624,
+      "residual_wall_time_s": 0.03505116491578519,
+      "effective_compute": 183806942115.57852,
+      "adjusted_score": 1.204544992263918e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9537181854248047,
+      "fallback": false,
+      "kink_counts": [
+        90,
+        94,
+        86
+      ],
+      "stable_on_counts": [
+        93,
+        81,
+        84
+      ],
+      "stable_off_counts": [
+        73,
+        81,
+        86
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.838991208001971,
+        "pilot_pack_s": 0.0003989168908447027,
+        "pilot_rollout_s": 0.001956040970981121,
+        "classification_selection_s": 0.001726167043671012,
+        "selected_anchor_extension_s": 5.41098415851593e-07,
+        "symbolic_composition_s": 0.0510922078974545
+      },
+      "approximation_mse_vs_baseline": 9.468628709489781e-10,
+      "approximation_max_abs_vs_baseline": 0.00019200408470458413
+    },
+    {
+      "index": 50,
+      "name": "joshua-collins",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.3411964514918846e-06,
+      "tracked_flops": 172151988622,
+      "residual_wall_time_s": 0.037439455976709723,
+      "effective_compute": 175895934219.67096,
+      "adjusted_score": 8.673198632620318e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9390182495117188,
+      "fallback": false,
+      "kink_counts": [
+        62,
+        70,
+        63
+      ],
+      "stable_on_counts": [
+        101,
+        94,
+        97
+      ],
+      "stable_off_counts": [
+        93,
+        92,
+        96
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.541086290962994,
+        "pilot_pack_s": 0.00044741714373230934,
+        "pilot_rollout_s": 0.001709542004391551,
+        "classification_selection_s": 0.0019094161689281464,
+        "selected_anchor_extension_s": 5.830079317092896e-07,
+        "symbolic_composition_s": 0.04470166703686118
+      },
+      "approximation_mse_vs_baseline": 2.6500357316676307e-09,
+      "approximation_max_abs_vs_baseline": 0.0002804399113084388
+    },
+    {
+      "index": 51,
+      "name": "brittney-massey",
+      "candidate": "fixed_three",
+      "raw_final_mse": 2.915297633651109e-07,
+      "tracked_flops": 179717085982,
+      "residual_wall_time_s": 0.04035156383179128,
+      "effective_compute": 183752242365.17914,
+      "adjusted_score": 1.9694576372988669e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9526820182800293,
+      "fallback": false,
+      "kink_counts": [
+        93,
+        85,
+        87
+      ],
+      "stable_on_counts": [
+        79,
+        84,
+        83
+      ],
+      "stable_off_counts": [
+        84,
+        87,
+        86
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.455461458070204,
+        "pilot_pack_s": 0.00038645905442535877,
+        "pilot_rollout_s": 0.0018710419535636902,
+        "classification_selection_s": 0.0016853332053869963,
+        "selected_anchor_extension_s": 5.830079317092896e-07,
+        "symbolic_composition_s": 0.05706708296202123
+      },
+      "approximation_mse_vs_baseline": 1.1602921732740945e-09,
+      "approximation_max_abs_vs_baseline": 0.00019276035987680906
+    },
+    {
+      "index": 52,
+      "name": "elaine-lopez",
+      "candidate": "fixed_three",
+      "raw_final_mse": 2.795747563298955e-07,
+      "tracked_flops": 177708473760,
+      "residual_wall_time_s": 0.03329370100982487,
+      "effective_compute": 181037843860.98248,
+      "adjusted_score": 1.8607945251442593e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9490165710449219,
+      "fallback": false,
+      "kink_counts": [
+        79,
+        88,
+        80
+      ],
+      "stable_on_counts": [
+        79,
+        77,
+        93
+      ],
+      "stable_off_counts": [
+        98,
+        91,
+        83
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.035822582896799,
+        "pilot_pack_s": 0.00035666697658598423,
+        "pilot_rollout_s": 0.0016560000367462635,
+        "classification_selection_s": 0.0016280841082334518,
+        "selected_anchor_extension_s": 5.420297384262085e-07,
+        "symbolic_composition_s": 0.05435995804145932
+      },
+      "approximation_mse_vs_baseline": 8.507131827057154e-10,
+      "approximation_max_abs_vs_baseline": 0.00014656530234780085
+    },
+    {
+      "index": 53,
+      "name": "alexandra-reid",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.0046065524296254e-06,
+      "tracked_flops": 175298841878,
+      "residual_wall_time_s": 0.03319912194274366,
+      "effective_compute": 178618754072.27435,
+      "adjusted_score": 6.597116570875833e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9446673393249512,
+      "fallback": false,
+      "kink_counts": [
+        67,
+        81,
+        77
+      ],
+      "stable_on_counts": [
+        99,
+        95,
+        96
+      ],
+      "stable_off_counts": [
+        90,
+        80,
+        83
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.017776499968022,
+        "pilot_pack_s": 0.0002427501603960991,
+        "pilot_rollout_s": 0.001431124983355403,
+        "classification_selection_s": 0.0016034170985221863,
+        "selected_anchor_extension_s": 6.249174475669861e-07,
+        "symbolic_composition_s": 0.04593858285807073
+      },
+      "approximation_mse_vs_baseline": 1.6076216355812977e-09,
+      "approximation_max_abs_vs_baseline": 0.00022160717013031128
+    },
+    {
+      "index": 54,
+      "name": "desiree-maynard",
+      "candidate": "fixed_three",
+      "raw_final_mse": 4.6275605385902553e-07,
+      "tracked_flops": 173791345920,
+      "residual_wall_time_s": 0.032969565130770206,
+      "effective_compute": 177088302433.07703,
+      "adjusted_score": 3.0128192653869263e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9419784545898438,
+      "fallback": false,
+      "kink_counts": [
+        70,
+        79,
+        62
+      ],
+      "stable_on_counts": [
+        84,
+        102,
+        92
+      ],
+      "stable_off_counts": [
+        102,
+        75,
+        102
+      ],
+      "timings": {
+        "prefix_propagation_s": 13.994637500029057,
+        "pilot_pack_s": 0.00025349995121359825,
+        "pilot_rollout_s": 0.0014711671974509954,
+        "classification_selection_s": 0.0016550410073250532,
+        "selected_anchor_extension_s": 5.830079317092896e-07,
+        "symbolic_composition_s": 0.0403845829423517
+      },
+      "approximation_mse_vs_baseline": 1.0154337544247444e-09,
+      "approximation_max_abs_vs_baseline": 0.00025209377890356155
+    },
+    {
+      "index": 55,
+      "name": "tyler-garcia",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.4179980732992833e-07,
+      "tracked_flops": 178263903334,
+      "residual_wall_time_s": 0.03322025598026812,
+      "effective_compute": 181585928932.02682,
+      "adjusted_score": 9.466488873671862e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9500102996826172,
+      "fallback": false,
+      "kink_counts": [
+        86,
+        90,
+        76
+      ],
+      "stable_on_counts": [
+        86,
+        87,
+        91
+      ],
+      "stable_off_counts": [
+        84,
+        79,
+        89
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.292647790862247,
+        "pilot_pack_s": 0.0002524589654058218,
+        "pilot_rollout_s": 0.0014903750270605087,
+        "classification_selection_s": 0.0016526661347597837,
+        "selected_anchor_extension_s": 5.420297384262085e-07,
+        "symbolic_composition_s": 0.04877620795741677
+      },
+      "approximation_mse_vs_baseline": 8.677061312078762e-10,
+      "approximation_max_abs_vs_baseline": 0.0001358840721270571
+    },
+    {
+      "index": 56,
+      "name": "thomas-smith",
+      "candidate": "fixed_three",
+      "raw_final_mse": 2.0923920819551662e-07,
+      "tracked_flops": 175844201220,
+      "residual_wall_time_s": 0.033697318052873015,
+      "effective_compute": 179213933025.2873,
+      "adjusted_score": 1.3786243177873331e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9456634521484375,
+      "fallback": false,
+      "kink_counts": [
+        76,
+        76,
+        78
+      ],
+      "stable_on_counts": [
+        91,
+        88,
+        94
+      ],
+      "stable_off_counts": [
+        89,
+        92,
+        84
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.059830707963556,
+        "pilot_pack_s": 0.00025762501172721386,
+        "pilot_rollout_s": 0.0014277088921517134,
+        "classification_selection_s": 0.00160483387298882,
+        "selected_anchor_extension_s": 6.2515027821064e-07,
+        "symbolic_composition_s": 0.045455000130459666
+      },
+      "approximation_mse_vs_baseline": 5.610709534691347e-10,
+      "approximation_max_abs_vs_baseline": 0.00016374036587529783
+    },
+    {
+      "index": 57,
+      "name": "ashley-smith",
+      "candidate": "fixed_three",
+      "raw_final_mse": 2.3168136208574134e-07,
+      "tracked_flops": 179465715168,
+      "residual_wall_time_s": 0.032687390223145485,
+      "effective_compute": 182734454190.31454,
+      "adjusted_score": 1.5564767370149476e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9522619247436523,
+      "fallback": false,
+      "kink_counts": [
+        81,
+        92,
+        90
+      ],
+      "stable_on_counts": [
+        85,
+        79,
+        79
+      ],
+      "stable_off_counts": [
+        90,
+        85,
+        87
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.05695354193449,
+        "pilot_pack_s": 0.0002507090102881193,
+        "pilot_rollout_s": 0.0015193340368568897,
+        "classification_selection_s": 0.001600916963070631,
+        "selected_anchor_extension_s": 6.249174475669861e-07,
+        "symbolic_composition_s": 0.05060658301226795
+      },
+      "approximation_mse_vs_baseline": 7.008521005570397e-10,
+      "approximation_max_abs_vs_baseline": 0.00011386570027513185
+    },
+    {
+      "index": 58,
+      "name": "tommy-arias",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.5987510116694542e-07,
+      "tracked_flops": 187267769058,
+      "residual_wall_time_s": 0.03357609547674656,
+      "effective_compute": 190625378605.67465,
+      "adjusted_score": 1.1204504297635848e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9663119316101074,
+      "fallback": false,
+      "kink_counts": [
+        112,
+        111,
+        105
+      ],
+      "stable_on_counts": [
+        73,
+        70,
+        73
+      ],
+      "stable_off_counts": [
+        71,
+        75,
+        78
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.0115219168365,
+        "pilot_pack_s": 0.00025029201060533524,
+        "pilot_rollout_s": 0.0013606671709567308,
+        "classification_selection_s": 0.0016161669045686722,
+        "selected_anchor_extension_s": 5.830079317092896e-07,
+        "symbolic_composition_s": 0.0732697919011116
+      },
+      "approximation_mse_vs_baseline": 1.1189947394511515e-09,
+      "approximation_max_abs_vs_baseline": 0.000133956250754481
+    },
+    {
+      "index": 59,
+      "name": "shane-long",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.3668256935469005e-07,
+      "tracked_flops": 173571840160,
+      "residual_wall_time_s": 0.0370065844617784,
+      "effective_compute": 177272498606.17783,
+      "adjusted_score": 8.908110509344888e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9416131973266602,
+      "fallback": false,
+      "kink_counts": [
+        75,
+        62,
+        72
+      ],
+      "stable_on_counts": [
+        79,
+        101,
+        90
+      ],
+      "stable_off_counts": [
+        102,
+        93,
+        94
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.057458582799882,
+        "pilot_pack_s": 0.00024891598150134087,
+        "pilot_rollout_s": 0.0018199170008301735,
+        "classification_selection_s": 0.001798165962100029,
+        "selected_anchor_extension_s": 5.830079317092896e-07,
+        "symbolic_composition_s": 0.0460190421435982
+      },
+      "approximation_mse_vs_baseline": 8.271424707575218e-10,
+      "approximation_max_abs_vs_baseline": 0.0001629867549000178
+    },
+    {
+      "index": 60,
+      "name": "david-tyler",
+      "candidate": "fixed_three",
+      "raw_final_mse": 3.686860673015021e-07,
+      "tracked_flops": 174581231798,
+      "residual_wall_time_s": 0.043877673568204045,
+      "effective_compute": 178968999154.8204,
+      "adjusted_score": 2.425859428943992e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9433436393737793,
+      "fallback": false,
+      "kink_counts": [
+        73,
+        74,
+        71
+      ],
+      "stable_on_counts": [
+        95,
+        91,
+        102
+      ],
+      "stable_off_counts": [
+        88,
+        91,
+        83
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.654943458037451,
+        "pilot_pack_s": 0.0005426248535513878,
+        "pilot_rollout_s": 0.0015673749148845673,
+        "classification_selection_s": 0.0016989170107990503,
+        "selected_anchor_extension_s": 5.83939254283905e-07,
+        "symbolic_composition_s": 0.04844699986279011
+      },
+      "approximation_mse_vs_baseline": 3.679977260802834e-09,
+      "approximation_max_abs_vs_baseline": 0.00030867808679833485
+    },
+    {
+      "index": 61,
+      "name": "nathan-martinez",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.4069161555144678e-07,
+      "tracked_flops": 194552481812,
+      "residual_wall_time_s": 0.041300713550299406,
+      "effective_compute": 198682553167.02994,
+      "adjusted_score": 1.0276826980498404e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9794735908508301,
+      "fallback": false,
+      "kink_counts": [
+        121,
+        133,
+        130
+      ],
+      "stable_on_counts": [
+        62,
+        63,
+        65
+      ],
+      "stable_off_counts": [
+        73,
+        60,
+        61
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.451054667122662,
+        "pilot_pack_s": 0.000282500172033906,
+        "pilot_rollout_s": 0.001735958969220519,
+        "classification_selection_s": 0.001955917105078697,
+        "selected_anchor_extension_s": 5.830079317092896e-07,
+        "symbolic_composition_s": 0.08103391714394093
+      },
+      "approximation_mse_vs_baseline": 2.116200536310505e-09,
+      "approximation_max_abs_vs_baseline": 0.0001730868091294191
+    },
+    {
+      "index": 62,
+      "name": "anthony-park",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.0516243893553135e-07,
+      "tracked_flops": 180717734574,
+      "residual_wall_time_s": 0.04303172277286649,
+      "effective_compute": 185020906851.28665,
+      "adjusted_score": 7.153400668582744e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9545235633850098,
+      "fallback": false,
+      "kink_counts": [
+        101,
+        84,
+        89
+      ],
+      "stable_on_counts": [
+        82,
+        82,
+        76
+      ],
+      "stable_off_counts": [
+        73,
+        90,
+        91
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.362639667000622,
+        "pilot_pack_s": 0.00025654188357293606,
+        "pilot_rollout_s": 0.0017817500047385693,
+        "classification_selection_s": 0.0016856249421834946,
+        "selected_anchor_extension_s": 6.670597940683365e-07,
+        "symbolic_composition_s": 0.053422041004523635
+      },
+      "approximation_mse_vs_baseline": 3.997688942612874e-10,
+      "approximation_max_abs_vs_baseline": 8.995561655646898e-05
+    },
+    {
+      "index": 63,
+      "name": "frederick-vargas",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.9191717754947455e-07,
+      "tracked_flops": 169147875278,
+      "residual_wall_time_s": 0.047672054497525096,
+      "effective_compute": 173915080727.7525,
+      "adjusted_score": 1.2271063024470321e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9336423873901367,
+      "fallback": false,
+      "kink_counts": [
+        52,
+        59,
+        54
+      ],
+      "stable_on_counts": [
+        107,
+        107,
+        95
+      ],
+      "stable_off_counts": [
+        97,
+        90,
+        107
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.637769459048286,
+        "pilot_pack_s": 0.0002894999925047159,
+        "pilot_rollout_s": 0.0019282500725239515,
+        "classification_selection_s": 0.002013999968767166,
+        "selected_anchor_extension_s": 5.841720849275589e-07,
+        "symbolic_composition_s": 0.04641695902682841
+      },
+      "approximation_mse_vs_baseline": 9.86649636958737e-10,
+      "approximation_max_abs_vs_baseline": 0.00013957615229642784
+    },
+    {
+      "index": 64,
+      "name": "kenneth-curry",
+      "candidate": "fixed_three",
+      "raw_final_mse": 2.988551546112849e-07,
+      "tracked_flops": 183267704590,
+      "residual_wall_time_s": 0.050036821980029345,
+      "effective_compute": 188271386788.00293,
+      "adjusted_score": 2.068598323801825e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9589991569519043,
+      "fallback": false,
+      "kink_counts": [
+        105,
+        99,
+        91
+      ],
+      "stable_on_counts": [
+        88,
+        75,
+        90
+      ],
+      "stable_off_counts": [
+        63,
+        82,
+        75
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.294684084132314,
+        "pilot_pack_s": 0.000557666877284646,
+        "pilot_rollout_s": 0.0019833340775221586,
+        "classification_selection_s": 0.0020607919432222843,
+        "selected_anchor_extension_s": 6.66128471493721e-07,
+        "symbolic_composition_s": 0.061879541957750916
+      },
+      "approximation_mse_vs_baseline": 9.500111060639875e-10,
+      "approximation_max_abs_vs_baseline": 0.00016424566397027496
+    },
+    {
+      "index": 65,
+      "name": "daniel-petersen",
+      "candidate": "fixed_three",
+      "raw_final_mse": 2.7971966369538675e-07,
+      "tracked_flops": 181198932854,
+      "residual_wall_time_s": 0.0437111787032336,
+      "effective_compute": 185570050724.32336,
+      "adjusted_score": 1.9083673595788084e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9553933143615723,
+      "fallback": false,
+      "kink_counts": [
+        96,
+        93,
+        89
+      ],
+      "stable_on_counts": [
+        81,
+        81,
+        75
+      ],
+      "stable_off_counts": [
+        79,
+        82,
+        92
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.708262250060216,
+        "pilot_pack_s": 0.00026204180903732777,
+        "pilot_rollout_s": 0.0018292500171810389,
+        "classification_selection_s": 0.001648083096370101,
+        "selected_anchor_extension_s": 5.417969077825546e-07,
+        "symbolic_composition_s": 0.052427791990339756
+      },
+      "approximation_mse_vs_baseline": 7.272727451167651e-10,
+      "approximation_max_abs_vs_baseline": 0.0001116938937575328
+    },
+    {
+      "index": 66,
+      "name": "david-wilson",
+      "candidate": "fixed_three",
+      "raw_final_mse": 3.6747942960604964e-07,
+      "tracked_flops": 179837088568,
+      "residual_wall_time_s": 0.047818590654060245,
+      "effective_compute": 184618947633.40604,
+      "adjusted_score": 2.494252410690926e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9528803825378418,
+      "fallback": false,
+      "kink_counts": [
+        82,
+        91,
+        93
+      ],
+      "stable_on_counts": [
+        95,
+        81,
+        86
+      ],
+      "stable_off_counts": [
+        79,
+        84,
+        77
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.821328334044665,
+        "pilot_pack_s": 0.00042466609738767147,
+        "pilot_rollout_s": 0.0017676251009106636,
+        "classification_selection_s": 0.0017794170416891575,
+        "selected_anchor_extension_s": 7.080379873514175e-07,
+        "symbolic_composition_s": 0.05922762514092028
+      },
+      "approximation_mse_vs_baseline": 1.877003964404692e-09,
+      "approximation_max_abs_vs_baseline": 0.0002780308863321814
+    },
+    {
+      "index": 67,
+      "name": "kimberly-mayo",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.5896638492636802e-07,
+      "tracked_flops": 176187959816,
+      "residual_wall_time_s": 0.04664320359006524,
+      "effective_compute": 180852280175.00653,
+      "adjusted_score": 1.0569644553349797e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9462413787841797,
+      "fallback": false,
+      "kink_counts": [
+        78,
+        82,
+        73
+      ],
+      "stable_on_counts": [
+        100,
+        91,
+        98
+      ],
+      "stable_off_counts": [
+        78,
+        83,
+        85
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.701204292010516,
+        "pilot_pack_s": 0.0002557078842073679,
+        "pilot_rollout_s": 0.0019101251382380724,
+        "classification_selection_s": 0.001748416107147932,
+        "selected_anchor_extension_s": 6.668269634246826e-07,
+        "symbolic_composition_s": 0.055314125027507544
+      },
+      "approximation_mse_vs_baseline": 8.631444019915664e-10,
+      "approximation_max_abs_vs_baseline": 9.540012313861602e-05
+    },
+    {
+      "index": 68,
+      "name": "mary-nichols",
+      "candidate": "fixed_three",
+      "raw_final_mse": 2.1819522770169277e-07,
+      "tracked_flops": 179732529256,
+      "residual_wall_time_s": 0.06587406480684876,
+      "effective_compute": 186319935736.68488,
+      "adjusted_score": 1.4946367942437764e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9526557922363281,
+      "fallback": false,
+      "kink_counts": [
+        97,
+        80,
+        88
+      ],
+      "stable_on_counts": [
+        90,
+        82,
+        91
+      ],
+      "stable_off_counts": [
+        69,
+        94,
+        77
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.514421292115003,
+        "pilot_pack_s": 0.00047275004908442497,
+        "pilot_rollout_s": 0.0019368750508874655,
+        "classification_selection_s": 0.0019097919575870037,
+        "selected_anchor_extension_s": 6.249174475669861e-07,
+        "symbolic_composition_s": 0.06353262509219348
+      },
+      "approximation_mse_vs_baseline": 3.164541021283605e-09,
+      "approximation_max_abs_vs_baseline": 0.0005044966814619879
+    },
+    {
+      "index": 69,
+      "name": "theodore-anderson",
+      "candidate": "fixed_three",
+      "raw_final_mse": 3.2430386415596465e-07,
+      "tracked_flops": 180402614062,
+      "residual_wall_time_s": 0.05276099150069058,
+      "effective_compute": 185678713212.06906,
+      "adjusted_score": 2.2138354480213663e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9538302421569824,
+      "fallback": false,
+      "kink_counts": [
+        107,
+        85,
+        79
+      ],
+      "stable_on_counts": [
+        78,
+        87,
+        93
+      ],
+      "stable_off_counts": [
+        71,
+        84,
+        84
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.60501587507315,
+        "pilot_pack_s": 0.00044579198583960533,
+        "pilot_rollout_s": 0.001800208818167448,
+        "classification_selection_s": 0.001932790968567133,
+        "selected_anchor_extension_s": 7.080379873514175e-07,
+        "symbolic_composition_s": 0.05204866686835885
+      },
+      "approximation_mse_vs_baseline": 8.159067967507605e-10,
+      "approximation_max_abs_vs_baseline": 0.00011421031536928972
+    },
+    {
+      "index": 70,
+      "name": "michael-cooper",
+      "candidate": "fixed_three",
+      "raw_final_mse": 3.1685101236954613e-07,
+      "tracked_flops": 169519556566,
+      "residual_wall_time_s": 0.04419076256453991,
+      "effective_compute": 173938632822.45398,
+      "adjusted_score": 2.026199702204754e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9343481063842773,
+      "fallback": false,
+      "kink_counts": [
+        58,
+        56,
+        55
+      ],
+      "stable_on_counts": [
+        99,
+        100,
+        89
+      ],
+      "stable_off_counts": [
+        99,
+        100,
+        112
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.479030375136063,
+        "pilot_pack_s": 0.00037866714410483837,
+        "pilot_rollout_s": 0.002457458060234785,
+        "classification_selection_s": 0.0018265829421579838,
+        "selected_anchor_extension_s": 7.080379873514175e-07,
+        "symbolic_composition_s": 0.037481792038306594
+      },
+      "approximation_mse_vs_baseline": 5.839150582616257e-10,
+      "approximation_max_abs_vs_baseline": 0.00014199702881053023
+    },
+    {
+      "index": 71,
+      "name": "savannah-hayes",
+      "candidate": "fixed_three",
+      "raw_final_mse": 4.3155749051756353e-07,
+      "tracked_flops": 178817967948,
+      "residual_wall_time_s": 0.04973699967376888,
+      "effective_compute": 183791667915.3769,
+      "adjusted_score": 2.916054080279318e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9510383605957031,
+      "fallback": false,
+      "kink_counts": [
+        89,
+        88,
+        80
+      ],
+      "stable_on_counts": [
+        85,
+        79,
+        87
+      ],
+      "stable_off_counts": [
+        82,
+        89,
+        89
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.507990791928023,
+        "pilot_pack_s": 0.00047683296725153923,
+        "pilot_rollout_s": 0.0019622500985860825,
+        "classification_selection_s": 0.0021552909165620804,
+        "selected_anchor_extension_s": 8.749775588512421e-07,
+        "symbolic_composition_s": 0.06407933286391199
+      },
+      "approximation_mse_vs_baseline": 6.212151454325097e-09,
+      "approximation_max_abs_vs_baseline": 0.0008175461530319783
+    },
+    {
+      "index": 72,
+      "name": "terri-butler",
+      "candidate": "fixed_three",
+      "raw_final_mse": 2.014331400831217e-07,
+      "tracked_flops": 179908420004,
+      "residual_wall_time_s": 0.05494919791817665,
+      "effective_compute": 185403339795.81766,
+      "adjusted_score": 1.3730285631238806e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9530715942382812,
+      "fallback": false,
+      "kink_counts": [
+        98,
+        82,
+        87
+      ],
+      "stable_on_counts": [
+        69,
+        89,
+        76
+      ],
+      "stable_off_counts": [
+        89,
+        85,
+        93
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.542748082894832,
+        "pilot_pack_s": 0.00037216697819530964,
+        "pilot_rollout_s": 0.0017230419907718897,
+        "classification_selection_s": 0.001694750040769577,
+        "selected_anchor_extension_s": 5.420297384262085e-07,
+        "symbolic_composition_s": 0.054629124933853745
+      },
+      "approximation_mse_vs_baseline": 1.732771576369298e-09,
+      "approximation_max_abs_vs_baseline": 0.0003003897589421335
+    },
+    {
+      "index": 73,
+      "name": "david-anderson",
+      "candidate": "fixed_three",
+      "raw_final_mse": 2.598305977462372e-07,
+      "tracked_flops": 182935776812,
+      "residual_wall_time_s": 0.047152192797511816,
+      "effective_compute": 187650996091.7512,
+      "adjusted_score": 1.7925540618454608e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9585161209106445,
+      "fallback": false,
+      "kink_counts": [
+        111,
+        96,
+        86
+      ],
+      "stable_on_counts": [
+        72,
+        75,
+        74
+      ],
+      "stable_off_counts": [
+        73,
+        85,
+        96
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.461918749846518,
+        "pilot_pack_s": 0.000393416965380311,
+        "pilot_rollout_s": 0.0025615838821977377,
+        "classification_selection_s": 0.0018883331213146448,
+        "selected_anchor_extension_s": 5.417969077825546e-07,
+        "symbolic_composition_s": 0.05514158308506012
+      },
+      "approximation_mse_vs_baseline": 1.1194670631862176e-09,
+      "approximation_max_abs_vs_baseline": 0.0001689989660567659
+    },
+    {
+      "index": 74,
+      "name": "heidi-willis",
+      "candidate": "fixed_three",
+      "raw_final_mse": 3.357034173570314e-07,
+      "tracked_flops": 179386433874,
+      "residual_wall_time_s": 0.050128275994211435,
+      "effective_compute": 184399261473.42114,
+      "adjusted_score": 2.2758625821595684e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9520039558410645,
+      "fallback": false,
+      "kink_counts": [
+        99,
+        88,
+        75
+      ],
+      "stable_on_counts": [
+        78,
+        92,
+        93
+      ],
+      "stable_off_counts": [
+        79,
+        76,
+        88
+      ],
+      "timings": {
+        "prefix_propagation_s": 16.006126707885414,
+        "pilot_pack_s": 0.00040204194374382496,
+        "pilot_rollout_s": 0.0032233328092843294,
+        "classification_selection_s": 0.004978999961167574,
+        "selected_anchor_extension_s": 1.2079253792762756e-06,
+        "symbolic_composition_s": 0.05586841609328985
+      },
+      "approximation_mse_vs_baseline": 2.029124582163113e-09,
+      "approximation_max_abs_vs_baseline": 0.0003136179055399646
+    },
+    {
+      "index": 75,
+      "name": "charles-johnson",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.6343397588205156e-07,
+      "tracked_flops": 182965360968,
+      "residual_wall_time_s": 0.04836507816798985,
+      "effective_compute": 187801868784.79898,
+      "adjusted_score": 1.1284266946168767e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9585371017456055,
+      "fallback": false,
+      "kink_counts": [
+        107,
+        86,
+        100
+      ],
+      "stable_on_counts": [
+        76,
+        82,
+        80
+      ],
+      "stable_off_counts": [
+        73,
+        88,
+        76
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.757022624835372,
+        "pilot_pack_s": 0.0005092909559607506,
+        "pilot_rollout_s": 0.0017767089884728193,
+        "classification_selection_s": 0.001854750094935298,
+        "selected_anchor_extension_s": 7.909256964921951e-07,
+        "symbolic_composition_s": 0.06692641694098711
+      },
+      "approximation_mse_vs_baseline": 1.2148234114945977e-09,
+      "approximation_max_abs_vs_baseline": 0.000223846137119732
+    },
+    {
+      "index": 76,
+      "name": "jerry-thomas",
+      "candidate": "fixed_three",
+      "raw_final_mse": 2.0448018639308316e-07,
+      "tracked_flops": 192322360526,
+      "residual_wall_time_s": 0.050156571669504046,
+      "effective_compute": 197338017692.9504,
+      "adjusted_score": 1.4835189205991192e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9753832817077637,
+      "fallback": false,
+      "kink_counts": [
+        123,
+        125,
+        119
+      ],
+      "stable_on_counts": [
+        57,
+        68,
+        75
+      ],
+      "stable_off_counts": [
+        76,
+        63,
+        62
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.873223332921043,
+        "pilot_pack_s": 0.00044475006870925426,
+        "pilot_rollout_s": 0.00276741711422801,
+        "classification_selection_s": 0.0022185409907251596,
+        "selected_anchor_extension_s": 7.499475032091141e-07,
+        "symbolic_composition_s": 0.09068187489174306
+      },
+      "approximation_mse_vs_baseline": 1.0174539254862323e-09,
+      "approximation_max_abs_vs_baseline": 0.00015854961566913461
+    },
+    {
+      "index": 77,
+      "name": "ricky-vincent",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.2922002441254265e-07,
+      "tracked_flops": 185028975492,
+      "residual_wall_time_s": 0.05743431090377271,
+      "effective_compute": 190772406582.37726,
+      "adjusted_score": 9.063093763167022e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9622883796691895,
+      "fallback": false,
+      "kink_counts": [
+        107,
+        99,
+        104
+      ],
+      "stable_on_counts": [
+        82,
+        79,
+        73
+      ],
+      "stable_off_counts": [
+        67,
+        78,
+        79
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.58066749991849,
+        "pilot_pack_s": 0.00044041709043085575,
+        "pilot_rollout_s": 0.002065416192635894,
+        "classification_selection_s": 0.0017209998331964016,
+        "selected_anchor_extension_s": 1.084059476852417e-06,
+        "symbolic_composition_s": 0.0794276250526309
+      },
+      "approximation_mse_vs_baseline": 5.329619153699203e-10,
+      "approximation_max_abs_vs_baseline": 9.065795519674902e-05
+    },
+    {
+      "index": 78,
+      "name": "dan-weeks",
+      "candidate": "fixed_three",
+      "raw_final_mse": 4.920874198308196e-07,
+      "tracked_flops": 174039306172,
+      "residual_wall_time_s": 0.05590268434025347,
+      "effective_compute": 179629574606.02536,
+      "adjusted_score": 3.249759334308336e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9423484802246094,
+      "fallback": false,
+      "kink_counts": [
+        82,
+        66,
+        65
+      ],
+      "stable_on_counts": [
+        90,
+        104,
+        104
+      ],
+      "stable_off_counts": [
+        84,
+        86,
+        87
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.65456425002776,
+        "pilot_pack_s": 0.00038116704672574997,
+        "pilot_rollout_s": 0.0018301669042557478,
+        "classification_selection_s": 0.0016723750159144402,
+        "selected_anchor_extension_s": 5.830079317092896e-07,
+        "symbolic_composition_s": 0.05642120796255767
+      },
+      "approximation_mse_vs_baseline": 1.0799781578990703e-09,
+      "approximation_max_abs_vs_baseline": 0.00019565094188467302
+    },
+    {
+      "index": 79,
+      "name": "allen-davis",
+      "candidate": "fixed_three",
+      "raw_final_mse": 2.4515611460880916e-07,
+      "tracked_flops": 182351745626,
+      "residual_wall_time_s": 0.05507231061346829,
+      "effective_compute": 187858976687.34683,
+      "adjusted_score": 1.6931903242300295e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9574704170227051,
+      "fallback": false,
+      "kink_counts": [
+        94,
+        87,
+        107
+      ],
+      "stable_on_counts": [
+        73,
+        75,
+        77
+      ],
+      "stable_off_counts": [
+        89,
+        94,
+        72
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.65969158289954,
+        "pilot_pack_s": 0.000363500090315938,
+        "pilot_rollout_s": 0.0017366660758852959,
+        "classification_selection_s": 0.0017393329180777073,
+        "selected_anchor_extension_s": 6.670597940683365e-07,
+        "symbolic_composition_s": 0.05681170895695686
+      },
+      "approximation_mse_vs_baseline": 8.859356738652352e-10,
+      "approximation_max_abs_vs_baseline": 0.00013211760920092962
+    },
+    {
+      "index": 80,
+      "name": "matthew-herrera",
+      "candidate": "fixed_three",
+      "raw_final_mse": 2.461040314197907e-07,
+      "tracked_flops": 167097006600,
+      "residual_wall_time_s": 0.053110233740881085,
+      "effective_compute": 172408029974.0881,
+      "adjusted_score": 1.5599379127120293e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9298744201660156,
+      "fallback": false,
+      "kink_counts": [
+        50,
+        51,
+        42
+      ],
+      "stable_on_counts": [
+        107,
+        101,
+        112
+      ],
+      "stable_off_counts": [
+        99,
+        104,
+        102
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.540201999945566,
+        "pilot_pack_s": 0.0004273329395800829,
+        "pilot_rollout_s": 0.002176624955609441,
+        "classification_selection_s": 0.0022863750346004963,
+        "selected_anchor_extension_s": 7.920898497104645e-07,
+        "symbolic_composition_s": 0.03828995791263878
+      },
+      "approximation_mse_vs_baseline": 3.7646670918664997e-10,
+      "approximation_max_abs_vs_baseline": 8.177336077563879e-05
+    },
+    {
+      "index": 81,
+      "name": "nicole-strickland",
+      "candidate": "fixed_three",
+      "raw_final_mse": 2.0241736169622486e-07,
+      "tracked_flops": 185156052252,
+      "residual_wall_time_s": 0.05135042848996818,
+      "effective_compute": 190291095100.99683,
+      "adjusted_score": 1.416111081787838e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9624814987182617,
+      "fallback": false,
+      "kink_counts": [
+        113,
+        96,
+        102
+      ],
+      "stable_on_counts": [
+        70,
+        81,
+        78
+      ],
+      "stable_off_counts": [
+        73,
+        79,
+        76
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.977093666093424,
+        "pilot_pack_s": 0.0010548331774771214,
+        "pilot_rollout_s": 0.004666291177272797,
+        "classification_selection_s": 0.003050082828849554,
+        "selected_anchor_extension_s": 8.749775588512421e-07,
+        "symbolic_composition_s": 0.08178274985402822
+      },
+      "approximation_mse_vs_baseline": 4.1902177220683473e-10,
+      "approximation_max_abs_vs_baseline": 7.159653597587156e-05
+    },
+    {
+      "index": 82,
+      "name": "william-brown",
+      "candidate": "fixed_three",
+      "raw_final_mse": 4.1864664831314805e-07,
+      "tracked_flops": 179034963624,
+      "residual_wall_time_s": 0.046998263569548726,
+      "effective_compute": 183734789980.95486,
+      "adjusted_score": 2.8279394854429017e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9514036178588867,
+      "fallback": false,
+      "kink_counts": [
+        77,
+        98,
+        84
+      ],
+      "stable_on_counts": [
+        89,
+        67,
+        92
+      ],
+      "stable_off_counts": [
+        90,
+        91,
+        80
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.207295250147581,
+        "pilot_pack_s": 0.000410707900300622,
+        "pilot_rollout_s": 0.0021180410403758287,
+        "classification_selection_s": 0.001923625124618411,
+        "selected_anchor_extension_s": 7.909256964921951e-07,
+        "symbolic_composition_s": 0.06342320796102285
+      },
+      "approximation_mse_vs_baseline": 9.041547952813486e-10,
+      "approximation_max_abs_vs_baseline": 0.0001959194805776221
+    },
+    {
+      "index": 83,
+      "name": "brandon-king",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.2009858923743147e-07,
+      "tracked_flops": 171345777676,
+      "residual_wall_time_s": 0.049040545243769884,
+      "effective_compute": 176249832200.37698,
+      "adjusted_score": 7.78211625022033e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9375638961791992,
+      "fallback": false,
+      "kink_counts": [
+        61,
+        64,
+        62
+      ],
+      "stable_on_counts": [
+        87,
+        93,
+        100
+      ],
+      "stable_off_counts": [
+        108,
+        99,
+        94
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.996056000003591,
+        "pilot_pack_s": 0.00040091597475111485,
+        "pilot_rollout_s": 0.001767332898452878,
+        "classification_selection_s": 0.0016841250471770763,
+        "selected_anchor_extension_s": 5.830079317092896e-07,
+        "symbolic_composition_s": 0.0574603748973459
+      },
+      "approximation_mse_vs_baseline": 8.079681047901859e-10,
+      "approximation_max_abs_vs_baseline": 0.00023568618734115532
+    },
+    {
+      "index": 84,
+      "name": "jessica-henderson",
+      "candidate": "fixed_three",
+      "raw_final_mse": 3.8964065406071207e-07,
+      "tracked_flops": 172477921872,
+      "residual_wall_time_s": 0.04534625913947821,
+      "effective_compute": 177012547785.9478,
+      "adjusted_score": 2.535709003539329e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9397201538085938,
+      "fallback": false,
+      "kink_counts": [
+        55,
+        72,
+        72
+      ],
+      "stable_on_counts": [
+        98,
+        91,
+        79
+      ],
+      "stable_off_counts": [
+        103,
+        93,
+        105
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.638090874999762,
+        "pilot_pack_s": 0.000383750069886446,
+        "pilot_rollout_s": 0.0018484171014279127,
+        "classification_selection_s": 0.0025918749161064625,
+        "selected_anchor_extension_s": 7.078051567077637e-07,
+        "symbolic_composition_s": 0.04100558301433921
+      },
+      "approximation_mse_vs_baseline": 1.369535164442029e-09,
+      "approximation_max_abs_vs_baseline": 0.00022092947023755194
+    },
+    {
+      "index": 85,
+      "name": "dominique-perkins",
+      "candidate": "fixed_three",
+      "raw_final_mse": 3.282370324194103e-07,
+      "tracked_flops": 176459837388,
+      "residual_wall_time_s": 0.045114561682567,
+      "effective_compute": 180971293556.2567,
+      "adjusted_score": 2.183877954044399e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9467911720275879,
+      "fallback": false,
+      "kink_counts": [
+        86,
+        83,
+        67
+      ],
+      "stable_on_counts": [
+        73,
+        94,
+        88
+      ],
+      "stable_off_counts": [
+        97,
+        79,
+        101
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.458400457864627,
+        "pilot_pack_s": 0.00040975003503262997,
+        "pilot_rollout_s": 0.0019427500665187836,
+        "classification_selection_s": 0.0021846669260412455,
+        "selected_anchor_extension_s": 7.499475032091141e-07,
+        "symbolic_composition_s": 0.054864083183929324
+      },
+      "approximation_mse_vs_baseline": 1.9363311805081238e-09,
+      "approximation_max_abs_vs_baseline": 0.0002344026335605598
+    },
+    {
+      "index": 86,
+      "name": "johnathan-peterson",
+      "candidate": "fixed_three",
+      "raw_final_mse": 4.0077654293241246e-07,
+      "tracked_flops": 169225725118,
+      "residual_wall_time_s": 0.04695684602484107,
+      "effective_compute": 173921409720.4841,
+      "adjusted_score": 2.562633137121592e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9337821006774902,
+      "fallback": false,
+      "kink_counts": [
+        66,
+        49,
+        51
+      ],
+      "stable_on_counts": [
+        108,
+        99,
+        95
+      ],
+      "stable_off_counts": [
+        82,
+        108,
+        110
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.63762683281675,
+        "pilot_pack_s": 0.0003998749889433384,
+        "pilot_rollout_s": 0.002205916913226247,
+        "classification_selection_s": 0.0023587921168655157,
+        "selected_anchor_extension_s": 7.080379873514175e-07,
+        "symbolic_composition_s": 0.03992820787243545
+      },
+      "approximation_mse_vs_baseline": 7.95038908151975e-10,
+      "approximation_max_abs_vs_baseline": 0.0001420039207992223
+    },
+    {
+      "index": 87,
+      "name": "katie-lee",
+      "candidate": "fixed_three",
+      "raw_final_mse": 2.4393921058924963e-07,
+      "tracked_flops": 190683933334,
+      "residual_wall_time_s": 0.041855644434690475,
+      "effective_compute": 194869497777.46906,
+      "adjusted_score": 1.7476585094029167e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.972541332244873,
+      "fallback": false,
+      "kink_counts": [
+        115,
+        121,
+        119
+      ],
+      "stable_on_counts": [
+        72,
+        72,
+        61
+      ],
+      "stable_off_counts": [
+        69,
+        63,
+        76
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.007558791898191,
+        "pilot_pack_s": 0.0003743749111890793,
+        "pilot_rollout_s": 0.0018499591387808323,
+        "classification_selection_s": 0.001699916087090969,
+        "selected_anchor_extension_s": 6.670597940683365e-07,
+        "symbolic_composition_s": 0.06790062505751848
+      },
+      "approximation_mse_vs_baseline": 9.154515784181216e-10,
+      "approximation_max_abs_vs_baseline": 0.00012123404234354318
+    },
+    {
+      "index": 88,
+      "name": "robert-barrera",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.9460690879844605e-07,
+      "tracked_flops": 170365134120,
+      "residual_wall_time_s": 0.04279033211059868,
+      "effective_compute": 174644167331.05988,
+      "adjusted_score": 1.2495206449991221e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9357481002807617,
+      "fallback": false,
+      "kink_counts": [
+        63,
+        62,
+        52
+      ],
+      "stable_on_counts": [
+        80,
+        104,
+        108
+      ],
+      "stable_off_counts": [
+        113,
+        90,
+        96
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.412581915967166,
+        "pilot_pack_s": 0.0004098750650882721,
+        "pilot_rollout_s": 0.0019365418702363968,
+        "classification_selection_s": 0.001820458797737956,
+        "selected_anchor_extension_s": 7.08969309926033e-07,
+        "symbolic_composition_s": 0.05362995807081461
+      },
+      "approximation_mse_vs_baseline": 1.5674362726851282e-09,
+      "approximation_max_abs_vs_baseline": 0.00014572632898746107
+    },
+    {
+      "index": 89,
+      "name": "melissa-bennett",
+      "candidate": "fixed_three",
+      "raw_final_mse": 9.953931203670424e-08,
+      "tracked_flops": 173860447326,
+      "residual_wall_time_s": 0.0430457117035985,
+      "effective_compute": 178165018496.35986,
+      "adjusted_score": 6.520008591961157e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9421138763427734,
+      "fallback": false,
+      "kink_counts": [
+        66,
+        86,
+        60
+      ],
+      "stable_on_counts": [
+        88,
+        82,
+        91
+      ],
+      "stable_off_counts": [
+        102,
+        88,
+        105
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.939397542038932,
+        "pilot_pack_s": 0.0004416671581566334,
+        "pilot_rollout_s": 0.00203399988822639,
+        "classification_selection_s": 0.002239250112324953,
+        "selected_anchor_extension_s": 6.658956408500671e-07,
+        "symbolic_composition_s": 0.05459345900453627
+      },
+      "approximation_mse_vs_baseline": 2.1850846774443032e-10,
+      "approximation_max_abs_vs_baseline": 7.55095472498418e-05
+    },
+    {
+      "index": 90,
+      "name": "william-rodriguez",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.693691508862722e-07,
+      "tracked_flops": 192557307514,
+      "residual_wall_time_s": 0.05091566336341202,
+      "effective_compute": 197648873850.3412,
+      "adjusted_score": 1.2307213947669196e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9758338928222656,
+      "fallback": false,
+      "kink_counts": [
+        130,
+        125,
+        114
+      ],
+      "stable_on_counts": [
+        67,
+        57,
+        71
+      ],
+      "stable_off_counts": [
+        59,
+        74,
+        71
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.373988292180002,
+        "pilot_pack_s": 0.00041516683995723724,
+        "pilot_rollout_s": 0.002034915843978524,
+        "classification_selection_s": 0.00222454103641212,
+        "selected_anchor_extension_s": 7.080379873514175e-07,
+        "symbolic_composition_s": 0.06938366615213454
+      },
+      "approximation_mse_vs_baseline": 4.925721854816375e-10,
+      "approximation_max_abs_vs_baseline": 9.690524304306614e-05
+    },
+    {
+      "index": 91,
+      "name": "jimmy-barr",
+      "candidate": "fixed_three",
+      "raw_final_mse": 8.101693676066606e-08,
+      "tracked_flops": 176424310922,
+      "residual_wall_time_s": 0.04720041994005442,
+      "effective_compute": 181144352916.00543,
+      "adjusted_score": 5.395500214980804e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9467997550964355,
+      "fallback": false,
+      "kink_counts": [
+        76,
+        89,
+        71
+      ],
+      "stable_on_counts": [
+        92,
+        88,
+        77
+      ],
+      "stable_off_counts": [
+        88,
+        79,
+        108
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.267628333065659,
+        "pilot_pack_s": 0.00041791703552007675,
+        "pilot_rollout_s": 0.0020607919432222843,
+        "classification_selection_s": 0.004386542132124305,
+        "selected_anchor_extension_s": 7.920898497104645e-07,
+        "symbolic_composition_s": 0.06643579085357487
+      },
+      "approximation_mse_vs_baseline": 9.039075045016154e-10,
+      "approximation_max_abs_vs_baseline": 0.00023610352759217967
+    },
+    {
+      "index": 92,
+      "name": "erika-taylor",
+      "candidate": "fixed_three",
+      "raw_final_mse": 3.5647652870178716e-07,
+      "tracked_flops": 173724807720,
+      "residual_wall_time_s": 0.04951173532754183,
+      "effective_compute": 178675981252.75418,
+      "adjusted_score": 2.341683586741449e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9417862892150879,
+      "fallback": false,
+      "kink_counts": [
+        73,
+        77,
+        60
+      ],
+      "stable_on_counts": [
+        80,
+        97,
+        104
+      ],
+      "stable_off_counts": [
+        103,
+        82,
+        92
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.543999917106703,
+        "pilot_pack_s": 0.0004036249592900276,
+        "pilot_rollout_s": 0.0018443749286234379,
+        "classification_selection_s": 0.002034874865785241,
+        "selected_anchor_extension_s": 6.2515027821064e-07,
+        "symbolic_composition_s": 0.05053083412349224
+      },
+      "approximation_mse_vs_baseline": 2.239553126211617e-09,
+      "approximation_max_abs_vs_baseline": 0.0003073543583211226
+    },
+    {
+      "index": 93,
+      "name": "benjamin-dean",
+      "candidate": "fixed_three",
+      "raw_final_mse": 5.377633257999904e-08,
+      "tracked_flops": 182255452604,
+      "residual_wall_time_s": 0.0614601019769907,
+      "effective_compute": 188401462801.69907,
+      "adjusted_score": 3.72483078021415e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9572849273681641,
+      "fallback": false,
+      "kink_counts": [
+        103,
+        90,
+        94
+      ],
+      "stable_on_counts": [
+        81,
+        93,
+        75
+      ],
+      "stable_off_counts": [
+        72,
+        73,
+        87
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.244816750055179,
+        "pilot_pack_s": 0.0004297918640077114,
+        "pilot_rollout_s": 0.00237658410333097,
+        "classification_selection_s": 0.001761249965056777,
+        "selected_anchor_extension_s": 7.08969309926033e-07,
+        "symbolic_composition_s": 0.05831220815889537
+      },
+      "approximation_mse_vs_baseline": 7.676097960294385e-10,
+      "approximation_max_abs_vs_baseline": 0.00012898973452812879
+    },
+    {
+      "index": 94,
+      "name": "michele-galvan",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.3061086992869016e-07,
+      "tracked_flops": 185492008410,
+      "residual_wall_time_s": 0.06710267532616854,
+      "effective_compute": 192202275942.61685,
+      "adjusted_score": 9.229303846742405e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9631638526916504,
+      "fallback": false,
+      "kink_counts": [
+        99,
+        104,
+        111
+      ],
+      "stable_on_counts": [
+        81,
+        85,
+        67
+      ],
+      "stable_off_counts": [
+        76,
+        67,
+        78
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.345326457871124,
+        "pilot_pack_s": 0.0004387921653687954,
+        "pilot_rollout_s": 0.001795083051547408,
+        "classification_selection_s": 0.0018635829910635948,
+        "selected_anchor_extension_s": 5.417969077825546e-07,
+        "symbolic_composition_s": 0.20926308305934072
+      },
+      "approximation_mse_vs_baseline": 1.4256122686837925e-09,
+      "approximation_max_abs_vs_baseline": 0.00018448961050032686
+    },
+    {
+      "index": 95,
+      "name": "cathy-butler",
+      "candidate": "fixed_three",
+      "raw_final_mse": 2.922752877513839e-07,
+      "tracked_flops": 169713290412,
+      "residual_wall_time_s": 0.04645279375836253,
+      "effective_compute": 174358569787.83624,
+      "adjusted_score": 1.8735551895830732e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.934666633605957,
+      "fallback": false,
+      "kink_counts": [
+        58,
+        48,
+        65
+      ],
+      "stable_on_counts": [
+        103,
+        100,
+        96
+      ],
+      "stable_off_counts": [
+        95,
+        108,
+        95
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.38687974982895,
+        "pilot_pack_s": 0.0003701669629663229,
+        "pilot_rollout_s": 0.0019162909593433142,
+        "classification_selection_s": 0.00183029193431139,
+        "selected_anchor_extension_s": 4.998873919248581e-07,
+        "symbolic_composition_s": 0.03896279097534716
+      },
+      "approximation_mse_vs_baseline": 2.7737288316760723e-09,
+      "approximation_max_abs_vs_baseline": 0.0002684543517890159
+    },
+    {
+      "index": 96,
+      "name": "lindsey-chase",
+      "candidate": "fixed_three",
+      "raw_final_mse": 2.1345441484985634e-07,
+      "tracked_flops": 182643162792,
+      "residual_wall_time_s": 0.040232323575764894,
+      "effective_compute": 186666395149.57648,
+      "adjusted_score": 1.4648811084112098e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9579329490661621,
+      "fallback": false,
+      "kink_counts": [
+        102,
+        91,
+        97
+      ],
+      "stable_on_counts": [
+        72,
+        101,
+        82
+      ],
+      "stable_off_counts": [
+        82,
+        64,
+        77
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.303805167088285,
+        "pilot_pack_s": 0.0005087908357381821,
+        "pilot_rollout_s": 0.0018645001109689474,
+        "classification_selection_s": 0.002105749910697341,
+        "selected_anchor_extension_s": 7.920898497104645e-07,
+        "symbolic_composition_s": 0.05155945895239711
+      },
+      "approximation_mse_vs_baseline": 2.974185655880921e-09,
+      "approximation_max_abs_vs_baseline": 0.00020706480411480932
+    },
+    {
+      "index": 97,
+      "name": "kenneth-hernandez",
+      "candidate": "fixed_three",
+      "raw_final_mse": 3.4815544651617877e-07,
+      "tracked_flops": 174350918062,
+      "residual_wall_time_s": 0.041951148537918925,
+      "effective_compute": 178546032915.7919,
+      "adjusted_score": 2.2853593313783044e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9429378509521484,
+      "fallback": false,
+      "kink_counts": [
+        64,
+        78,
+        74
+      ],
+      "stable_on_counts": [
+        95,
+        98,
+        101
+      ],
+      "stable_off_counts": [
+        97,
+        80,
+        81
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.953402915969491,
+        "pilot_pack_s": 0.00040829088538885117,
+        "pilot_rollout_s": 0.0018638339824974537,
+        "classification_selection_s": 0.001744291977956891,
+        "selected_anchor_extension_s": 6.249174475669861e-07,
+        "symbolic_composition_s": 0.04865087498910725
+      },
+      "approximation_mse_vs_baseline": 7.046647467639955e-10,
+      "approximation_max_abs_vs_baseline": 0.00011295986444181949
+    },
+    {
+      "index": 98,
+      "name": "lauren-flowers",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.720748390131871e-07,
+      "tracked_flops": 182897142204,
+      "residual_wall_time_s": 0.043866373831406236,
+      "effective_compute": 187283779587.14062,
+      "adjusted_score": 1.1848097875822955e-07,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9583621025085449,
+      "fallback": false,
+      "kink_counts": [
+        103,
+        97,
+        92
+      ],
+      "stable_on_counts": [
+        71,
+        77,
+        87
+      ],
+      "stable_off_counts": [
+        82,
+        82,
+        77
+      ],
+      "timings": {
+        "prefix_propagation_s": 15.44816912501119,
+        "pilot_pack_s": 0.0004688331391662359,
+        "pilot_rollout_s": 0.0025231658946722746,
+        "classification_selection_s": 0.0038590419571846724,
+        "selected_anchor_extension_s": 7.920898497104645e-07,
+        "symbolic_composition_s": 0.05517137493006885
+      },
+      "approximation_mse_vs_baseline": 1.8285619621040034e-09,
+      "approximation_max_abs_vs_baseline": 0.00016654474596597413
+    },
+    {
+      "index": 99,
+      "name": "kristi-johnson",
+      "candidate": "fixed_three",
+      "raw_final_mse": 1.309779601628536e-07,
+      "tracked_flops": 169581259216,
+      "residual_wall_time_s": 0.04833633289672434,
+      "effective_compute": 174414892505.67242,
+      "adjusted_score": 8.398715750888367e-08,
+      "spec": {
+        "name": "fixed_three",
+        "depths": [
+          3
+        ],
+        "pilot_cols": 8,
+        "rare_threshold": 8,
+        "final_correction_alpha": 0.875,
+        "guard_ratio": 0.995
+      },
+      "selected_depth": 3,
+      "predicted_cost_ratio": 0.9343223571777344,
+      "fallback": false,
+      "kink_counts": [
+        64,
+        56,
+        49
+      ],
+      "stable_on_counts": [
+        96,
+        94,
+        112
+      ],
+      "stable_off_counts": [
+        96,
+        106,
+        95
+      ],
+      "timings": {
+        "prefix_propagation_s": 14.80112695787102,
+        "pilot_pack_s": 0.0004069581627845764,
+        "pilot_rollout_s": 0.0017962080892175436,
+        "classification_selection_s": 0.001854750094935298,
+        "selected_anchor_extension_s": 7.092021405696869e-07,
+        "symbolic_composition_s": 0.0384660828858614
+      },
+      "approximation_mse_vs_baseline": 5.398309122598763e-10,
+      "approximation_max_abs_vs_baseline": 8.490489416326172e-05
+    }
+  ]
+}

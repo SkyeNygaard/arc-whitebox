@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "conditional_exact_equivalence_theorem": {
+    "statement": "For p distinct selected coordinates I, if the p x (d-p) matrix V_{I^c} is invertible, then U=[V;E_I] is invertible. The exact A51 contractions (Vd,E_Id) are then a bijective linear encoding of the entire center defect d.",
+    "reconstruction": "d_I=E_Id; d_{I^c}=V_{I^c}^{-1}(Vd-V_I d_I).",
+    "consequence": "Under this generic condition, exact recovery of the natural full-128 A51 interface is not lower-dimensional than exact recovery of the full 256-dimensional center defect.",
+    "toy_check": {
+      "rank_U": 16,
+      "dimension": 16,
+      "reconstruction_error": 1.0801742954534686e-15
+    },
+    "actual_probe_status": "The archived high-reference sample-row supports use 128 distinct coordinates in every exposed record, but the corresponding frozen V arrays were not retained in a directly materializable artifact, so det(V_{I^c}) remains an explicit unresolved audit item.",
+    "all_exposed_sample_row_indices_distinct": true
+  },
+  "empirical_rotation_of_local_subspaces": {
+    "local_rank2": {
+      "pooled_ratio": 0.8899462774536139,
+      "wins": 4,
+      "median": 0.968734459558574,
+      "worst": 1.9214213966267002,
+      "per_network": [
+        0.4809623128676079,
+        0.8522329913243454,
+        0.2688812492271137,
+        1.0852359277928025,
+        1.9214213966267002,
+        0.7118430777641037,
+        1.4156093941303876,
+        1.7813317445618295
+      ],
+      "median_anchor_rel_error": 0.002619825991297459
+    },
+    "local_rank4": {
+      "pooled_ratio": 0.8895523016452087,
+      "wins": 4,
+      "median": 0.9673195869345723,
+      "worst": 1.9209227616992195,
+      "per_network": [
+        0.48257941753767236,
+        0.8500036623655322,
+        0.2690884359601693,
+        1.0846355115036126,
+        1.9209227616992195,
+        0.711607379430902,
+        1.4144196204968071,
+        1.7783083616598196
+      ],
+      "median_anchor_rel_error": 0.0008434518112366102
+    },
+    "universal_rank128": {
+      "pooled_ratio": 0.7791045371732956,
+      "wins": 6,
+      "median": 0.8025629656089878,
+      "worst": 1.293687416579905,
+      "per_network": [
+        0.6540087594638373,
+        0.7040392489509311,
+        0.4309968857194446,
+        0.9010866822670445,
+        1.293687416579905,
+        0.6456266109887289,
+        0.9617296955498559,
+        1.2906528162021758
+      ],
+      "median_anchor_rel_error": 0.4067396198637611
+    },
+    "universal_spectrum_r90": 29,
+    "universal_spectrum_r95": 36,
+    "universal_spectrum_r99": 44,
+    "center_energy_median_pca24": 0.10836512221310468,
+    "center_energy_median_cheap8": 0.27431565638685734,
+    "interpretation": "Per-network oracle anchor matrices are locally compressible, but their useful singular directions rotate across networks. A universal low-rank basis is not a substitute for a covariant identity."
+  },
+  "same_cloud_noop_theorem": {
+    "statement": "If an anchor is replaced by its value under the same cubature functional Q, then Q(f-beta g)+beta Q(g)=Q(f) pathwise for any data-dependent beta. Cross-fitting beta does not create an absolute anchor.",
+    "escape_classes": [
+      "independent absolute anchor",
+      "analytic exact expectation",
+      "white-box identity for the missing contractions",
+      "different evaluations included in the information protocol"
+    ]
+  },
+  "best_next_A51_question": "Derive directly the contracted crossing quantities needed by the final-output rank-4/5 source, rather than estimate the full natural interface. Any proposed contraction must be non-circular and must pass the exact Gaussian-row dependence condition."
+}

@@ -1,0 +1,97 @@
+{
+  "status": "PASS",
+  "scope": "symbolic identities and representative numerical checks; analytic proofs are in the Markdown theorem files",
+  "t29": {
+    "kappa_base_coefficients_positive": true,
+    "kappa_base_odd_above_one_zero": true,
+    "kappa_composed_first_61_coefficients_positive": true,
+    "base_series_max_error_on_test_points": "2.0786343968596664875e-11",
+    "composed_series_max_error_on_test_points": "4.6220290818991115856e-11",
+    "sample_K32_gram_min_eigenvalue": 0.019953580410305483,
+    "constant_field_uniform_risk": 0.0,
+    "constant_field_nonuniform_mass_one_risk": 0.0
+  },
+  "t38": {
+    "symbolic_global_eigenvalue_identity": true,
+    "strict_example_spectrum_max_error": 1.7763568394002505e-15,
+    "pure_quadratic_between_basis_zero_multiplicity": 3,
+    "pure_quadratic_expected_zero_multiplicity": 3,
+    "block_uniform_nonconstant_risk": -1.496198998029996e-17,
+    "block_uniform_full_quadratic_form": 0.4600000000000001,
+    "pure_quadratic_budget_partition_checks": {
+      "1": {
+        "best_partition": [
+          1
+        ],
+        "one_basis_is_best": true,
+        "best_H": 0.5434782608695653
+      },
+      "2": {
+        "best_partition": [
+          2
+        ],
+        "one_basis_is_best": true,
+        "best_H": 1.4492753623188408
+      },
+      "3": {
+        "best_partition": [
+          3
+        ],
+        "one_basis_is_best": true,
+        "best_H": 3.2608695652173916
+      },
+      "4": {
+        "best_partition": [
+          4
+        ],
+        "one_basis_is_best": true,
+        "best_H": 8.695652173913045
+      }
+    }
+  },
+  "replication": {
+    "independent_biased_average_empirical_mse": 0.4423400362865789,
+    "independent_biased_average_theoretical_mse": 0.4416666666666667,
+    "absolute_error": 0.0006733696199122119,
+    "linear_cost_ratio_direct": 1.4324324324324325,
+    "linear_cost_ratio_formula": 1.4324324324324325
+  },
+  "relu": {
+    "normal_cases": [
+      {
+        "t": "0.5",
+        "exact": "0.01641845957323344049452492",
+        "bound": "0.01662259501672636158083109",
+        "ratio": "0.98771939981167132285"
+      },
+      {
+        "t": "0.1",
+        "exact": "0.0001329143172139122431224268",
+        "bound": "0.0001329807601338108926466487",
+        "ratio": "0.99950035689499900712"
+      },
+      {
+        "t": "0.02",
+        "exact": "0.000001063824804756760891740454",
+        "bound": "0.000001063846081070487141173189",
+        "ratio": "0.99998000057141269882"
+      },
+      {
+        "t": "-0.1",
+        "exact": "0.0001329143172139122431224268",
+        "bound": "0.0001329807601338108926466487",
+        "ratio": "0.99950035689499900712"
+      }
+    ],
+    "small_t_ratio_to_t_cubed": "0.1329807600673205126272364",
+    "normal_density_at_zero_over_3": "0.1329807601338108926466487"
+  },
+  "haar": {
+    "conditional_mean": 0.4,
+    "chi_square": 0.12000000000000001,
+    "orientation_risk": 1.875,
+    "mean_squared": 0.16000000000000003,
+    "chi_square_times_risk": 0.225,
+    "bound_holds": true
+  }
+}

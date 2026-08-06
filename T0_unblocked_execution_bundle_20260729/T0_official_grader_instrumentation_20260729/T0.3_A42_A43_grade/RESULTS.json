@@ -1,0 +1,57 @@
+{
+  "arms": [
+    {
+      "archived_local_full_wall_s": 63.995,
+      "archived_peak_rss_mib": 2172.0,
+      "arm": "production_baseline",
+      "new_k8_digest": "a2d7de5f2366fb43c3397d3e08b964cc1890aac0d1a3f45672f768e8ccea804d",
+      "new_k8_seed": 51002,
+      "new_k8_wall_s": 2.9363693769998918,
+      "numerical_drift_rms_vs_production": 0.0,
+      "official_status": "PENDING",
+      "package": "production_baseline.tar.gz",
+      "package_sha256": "77be0e8865b2aeee6c6c16314cac4d38496efefed6b2b758f75bc3033bb6b7bc",
+      "tracked_flops": 170906815488
+    },
+    {
+      "archived_local_full_wall_s": 28.011,
+      "archived_peak_rss_mib": 374.7,
+      "arm": "A42",
+      "new_k8_digest": "0399c774b48755b9446c8ddcb53fd10b755a41b86ff9d69642a3c352e087bcef",
+      "new_k8_seed": 51002,
+      "new_k8_wall_s": 1.982759931999908,
+      "numerical_drift_rms_vs_production": 3.418e-12,
+      "official_status": "PENDING",
+      "package": "A42.tar.gz",
+      "package_sha256": "499a513e5d3e21afe01477b4cf5734d92d1bf2713b2ba3523354f635548fc616",
+      "tracked_flops": 170906815488
+    },
+    {
+      "archived_local_full_wall_s": 25.702,
+      "archived_peak_rss_mib": 374.8,
+      "arm": "A43",
+      "new_k8_digest": "0399c774b48755b9446c8ddcb53fd10b755a41b86ff9d69642a3c352e087bcef",
+      "new_k8_seed": 51002,
+      "new_k8_wall_s": 1.728226088999918,
+      "numerical_drift_rms_vs_production": 3.418e-12,
+      "official_status": "PENDING",
+      "package": "A43.tar.gz",
+      "package_sha256": "2b3fbf988194cecc49a9cabda79b57e9813e13aca4a99d2d8176d42cc527ceed",
+      "tracked_flops": 170382691584
+    }
+  ],
+  "exact_relations": {
+    "A42_vs_A43_local_bit_identical": true,
+    "A43_break_even_extra_residual_seconds": 0.00524123904,
+    "A43_tracked_saving": 524123904,
+    "memory_reduction_fraction_vs_production": 0.8274401473296501
+  },
+  "promotion_gate": [
+    "measured official adjusted score improves",
+    "raw MSE and tails parity",
+    "no numerical failure",
+    "effective compute improves"
+  ],
+  "retention_rule": "Preserve A42/A43 streaming memory reduction even if adjusted score is neutral.",
+  "status": "BLOCKED_OFFICIAL_DEPENDENCY"
+}

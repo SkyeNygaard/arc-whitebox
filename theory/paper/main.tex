@@ -1,0 +1,783 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{booktabs,array}
+\usepackage{microtype}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\UseMicrotypeSet[protrusion]{basicmath}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{3}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{plainnat}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Limits of Static Cubature for Deep ReLU Gaussian Expectations},
+  pdfauthor={Skye Nygaard},
+  hidelinks}
+
+\title{Limits of Static Cubature for Deep ReLU Gaussian Expectations}
+\author{Skye Nygaard\\\small Independent Researcher}
+\date{}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+\setlength{\emergencystretch}{3em}
+\begin{document}
+\maketitle
+\begin{abstract}
+We study static, network-independent linear cubature for Gaussian
+expectations of a bias-free ReLU network in the infinite-width limit.
+Positive homogeneity reduces the problem to integration on
+\(\mathbb{S}^{255}\), and ensemble mean-squared error becomes discrepancy
+for the normalized depth-32 ReLU kernel.
+
+A complete Kerdock system of 129 real mutually unbiased bases gives an
+equal-weight rule with 66,048 antipodal nodes. Among all nonnegative
+mass-one rules on arbitrary spherical nodes with at most this budget, its
+risk is at most 0.0233242\% above the infimum. Even with arbitrary signed
+mass-one weights, no static rule can reduce Kerdock risk by more than
+6.2940\%.
+
+The nonnegative bound uses an all-degree Delsarte certificate. Its auxiliary
+optimum is a degree-five Hermite minorant. The signed bound uses harmonic
+comparison profiles, matrix inertia, and an exact-rational coefficient
+allocation. Together, the bounds limit what fixed node geometry can achieve.
+\end{abstract}
+
+\section{Introduction}\label{introduction}
+
+Consider the Gaussian expectation
+\[
+\mu(f)=\mathbb{E}_{X\sim\mathcal{N}(0,I_d)}[f(X)].
+\]
+When \(f\) is a deep network, each evaluation may be expensive. Monte
+Carlo applies broadly. Deterministic cubature instead evaluates \(f\) at
+fixed inputs and returns a weighted average.
+
+This paper asks how far that strategy can be improved when the rule is
+chosen without access to the realized network. The nodes and weights are
+fixed in advance. The estimator is linear in the observed outputs. The
+budget is the number of full network evaluations.
+
+The reference design comes from a maximal system of real mutually unbiased
+bases in dimension 256. The Kerdock construction contains 129 bases.
+Including every basis vector and its antipode gives 66,048 spherical nodes.
+Its pairwise inner products take only five values, so its kernel risk can
+be evaluated directly.
+
+The bounds apply to arbitrary spherical nodes. They do not assume a
+Kerdock structure, antipodal symmetry, equal weights, or any other special
+geometry. Among nonnegative mass-one rules, Kerdock is at most
+0.0233242\% above the infimum. Allowing arbitrary real weights that sum to
+one enlarges the class, but no such static rule can reduce Kerdock risk by
+more than 6.2940\%.
+
+The nonnegative theorem nearly determines the best achievable risk over
+probability rules for this kernel and budget. The signed theorem limits the
+benefit of cancellation to 6.2940\%. Any larger gain must leave the class.
+It could use the realized network, adaptive evaluations, nonlinear
+processing, or a different evaluation-cost model.
+
+An all-degree Delsarte program gives the nonnegative lower bound. Harmonic
+moment matrices and an inertia inequality give the signed lower bound.
+Both certificates combine directed interval arithmetic with exact integer
+and rational replay.
+
+\section{Problem setting}\label{problem-setting}
+
+\subsection{From Gaussian input to spherical integration}
+\label{from-gaussian-input-to-spherical-integration}
+
+Let \(f:\mathbb{R}^d\to\mathbb{R}\) be positively homogeneous of degree
+one:
+\[
+f(rx)=r f(x), \qquad r\geq 0.
+\]
+Write a standard Gaussian vector as \(X=RU\). Here \(U\) is uniform on
+\(\mathbb{S}^{d-1}\), and \(R=\lVert X\rVert_2\) is independent of \(U\).
+If \(\sigma\) is normalized surface measure, then
+\[
+\mathbb{E}[f(X)]
+=\mathbb{E}[R]\int_{\mathbb{S}^{d-1}} f(u)\,d\sigma(u).
+\]
+Bias-free ReLU networks satisfy this homogeneity exactly. The radial
+factor is known, so the numerical problem is spherical integration. We
+report risk in the spherical normalization. For the original Gaussian
+expectation, ensemble mean-squared error is multiplied by
+\(\mathbb{E}[R]^2\). All risk ratios are unchanged.
+
+\subsection{The deep ReLU kernel}\label{the-deep-relu-kernel}
+
+Let \(K_{32}\) be the normalized depth-32 ReLU correlation kernel. It is
+the Gaussian-process kernel of a fully connected, bias-free, infinite-width
+network. The activation is \(\phi(z)=\sqrt{2}\max\{0,z\}\), or equivalently
+ordinary ReLU with He variance scaling. We use a centered Gaussian readout.
+Depth 32 means 32 applications of the covariance map. For unit vectors,
+\[
+\mathbb{E}[F(u)F(v)] = K_{32}(u^\top v),
+\]
+where
+\[
+K_0(t)=t, \qquad K_{\ell+1}(t)=\kappa(K_\ell(t)),
+\]
+and
+\[
+\kappa(t)=\frac{\sqrt{1-t^2}+(\pi-\arccos t)t}{\pi}.
+\]
+This is the standard compositional ReLU kernel
+\citep{cho2009,daniely2016,lee2018,matthews2018}.
+
+The kernel is positive definite on the sphere. It therefore has a
+normalized Gegenbauer expansion
+\[
+K_{32}(t)=\sum_{\ell\geq 0} a_\ell G_\ell(t),
+\qquad a_\ell\geq 0,
+\qquad G_\ell(1)=1.
+\]
+The coefficient \(a_\ell\) is the total kernel weight assigned to
+spherical harmonic degree \(\ell\).
+
+\subsection{Static linear cubature}\label{static-linear-cubature}
+
+A rule with at most \(N\) consolidated nodes is
+\[
+Q(f)=\sum_{i=1}^{n} w_i f(u_i),
+\qquad n\leq N,
+\qquad u_i\in\mathbb{S}^{255},
+\qquad \sum_{i=1}^{n}w_i=1.
+\]
+The nodes and weights are independent of the realized network and of all
+observed function values. We consider
+\[
+\mathcal{C}_{+}=\{Q:w_i\geq0\},
+\qquad
+\mathcal{C}_{\pm}=\{Q:w_i\in\mathbb{R}\}.
+\]
+
+Define the ensemble mean-squared integration error
+\[
+\mathcal{R}(Q)
+=\mathbb{E}\left[
+\left(Q(F)-\int F\,d\sigma\right)^2
+\right].
+\]
+Because \(Q\) is fixed before the Gaussian field is drawn,
+\[
+\mathcal{R}(Q)
+=\iint K_{32}(u^\top v)\,d(\sigma-Q)(u)\,d(\sigma-Q)(v).
+\]
+Thus the integration error is exactly a spherical kernel discrepancy.
+
+\subsection{The complete Kerdock rule}\label{the-complete-kerdock-rule}
+
+A real mutually unbiased system in dimension \(d\) has at most
+\(d/2+1\) bases. Kerdock constructions attain this bound in dimension
+\(d=256\), giving
+\[
+B=d/2+1=129
+\]
+orthonormal bases \citep{calderbank1997,boykin2005}. Vectors from
+different bases have inner-product magnitude \(1/16\).
+
+The complete Kerdock rule \(Q_{\mathrm K}\) uses every basis vector and
+its antipode with equal weight. It has
+\[
+N=2Bd=66{,}048
+\]
+nodes. Among ordered pairs, \(N\) have inner product \(1\), \(N\) have
+inner product \(-1\), and \(4Bd(d-1)\) have inner product \(0\). The
+values \(1/16\) and \(-1/16\) each occur \(2B(B-1)d^2\) times. This
+spectrum reduces \(\mathcal{R}(Q_{\mathrm K})\) to five kernel evaluations
+and the constant Gegenbauer coefficient.
+
+\subsection{Related work}\label{related-work}
+
+Delsarte linear programming, positive-definite zonal kernels, and spherical
+designs provide the framework for the nonnegative bound
+\citep{schoenberg1942,delsarte1977,cohn2007}. Weighted spherical energy
+bounds give a nearby general theory \citep{borodachov2024weighted}. Our
+result fixes both the potential and the budget: the depth-32 ReLU kernel
+and 66,048 nodes.
+
+Kerdock codes and real mutually unbiased bases are linked to extremal line
+sets and association schemes
+\citep{calderbank1997,boykin2005,abdukhalikov2009}. Exact semidefinite
+programming also proves packing optimality for the 66,048-point,
+dimension-256 antipodal Kerdock arrangement \citep{cohn2024sdp}. Packing
+and kernel discrepancy are different objectives.
+
+Kernel quadrature studies integration through reproducing-kernel
+discrepancy and Gaussian-process uncertainty
+\citep{briol2019}. Here the goal is a finite-budget lower
+bound that holds for every rule in a fixed estimator class.
+
+\section{Main results}\label{main-results}
+
+Let \(P_N\) be the infimum of \(\mathcal{R}(Q)\) over
+\(\mathcal{C}_{+}\) with at most \(N\) consolidated nonzero-weight nodes.
+Let \(S_N\) be the corresponding infimum over \(\mathcal{C}_{\pm}\).
+
+\textbf{Theorem 1 (Nonnegative near-optimality).}
+\emph{For the dimension-256, depth-32 kernel and \(N=66{,}048\),}
+\[
+1\leq
+\frac{\mathcal{R}(Q_{\mathrm K})}{P_N}
+\leq 1.0002332417295004.
+\]
+\emph{Thus Kerdock risk is at most 0.023324172950039\% above the
+infimum. The statement is one-sided. Kerdock may attain the infimum, and
+no optimizer is assumed to exist.}
+
+\textbf{Theorem 2 (Signed bound).}
+\emph{For the same kernel and node budget,}
+\[
+S_N
+\geq 0.9370601683665084\,\mathcal{R}(Q_{\mathrm K}).
+\]
+\emph{Equivalently,}
+\[
+\frac{\mathcal{R}(Q_{\mathrm K})}{S_N}
+\leq 1.0671673322143325.
+\]
+\emph{A static signed mass-one rule can therefore reduce Kerdock risk by
+at most 6.29398316334916\%.}
+
+Both results allow arbitrary spherical node locations. The first allows
+arbitrary nonnegative weights. The second allows arbitrary real weights
+that sum to one. Neither theorem assumes symmetry or equal weights.
+
+The signed certificate strengthens as the number of negative support
+entries grows. With at least 1,072 such entries, the Kerdock-to-rule risk
+factor is below 1.05. With at least 4,160, the rule's certified lower bound
+exceeds the certified Kerdock upper bound. These count support entries, not
+total negative mass. Appendix~\ref{app:signed} derives the hierarchy and
+lists representative values.
+
+\section{The nonnegative bound}\label{the-nonnegative-bound}
+
+The proof of Theorem~1 uses a Delsarte minorant and a dual quadrature rule.
+The certificate controls every harmonic degree.
+
+\subsection{Auxiliary minorants}\label{auxiliary-minorants}
+
+Let
+\[
+h(t)=\sum_{\ell=0}^{L}c_\ell G_\ell(t)
+\]
+be a polynomial such that
+\[
+h(t)\leq K_{32}(t) \quad (-1\leq t\leq1),
+\qquad
+c_\ell\geq0 \quad (\ell\geq1).
+\]
+For every nonnegative mass-one rule,
+\[
+\sum_{i,j}w_iw_jG_\ell(u_i^\top u_j)\geq0
+\qquad (\ell\geq1),
+\]
+and
+\[
+\sum_i w_i^2\geq\frac1N.
+\]
+Apply \(h\) to the off-diagonal pairs and retain the exact value
+\(K_{32}(1)\) on the diagonal. The kernel energy
+\[
+E_K(Q)=\sum_{i,j}w_iw_jK_{32}(u_i^\top u_j)
+\]
+then satisfies
+\[
+E_K(Q)
+\geq c_0+\frac{K_{32}(1)-h(1)}{N}.
+\]
+Subtracting the constant kernel mean gives a lower bound on
+\(\mathcal{R}(Q)\).
+
+The auxiliary program maximizes
+\[
+\Phi(h)=c_0+\frac{K_{32}(1)-h(1)}{N}
+\]
+over feasible polynomial minorants. The all-degree dual certificate shows
+that no omitted polynomial degree can improve this objective.
+
+\subsection{The optimal minorant}\label{the-optimal-minorant}
+
+Let \(t_1,t_2,t_3\) be the roots of
+\[
+22102t^3+21930t^2-87t-85=0.
+\]
+Let \(h_\star\) be the degree-five Hermite interpolant defined by
+\[
+h_\star(t_j)=K_{32}(t_j),
+\qquad
+h_\star'(t_j)=K_{32}'(t_j),
+\qquad j=1,2,3.
+\]
+
+\textbf{Theorem 3 (All-degree auxiliary optimum).}
+\emph{The polynomial \(h_\star\) is a feasible minorant. Its five
+nonconstant normalized Gegenbauer coefficients are strictly positive. It
+is the unique optimizer among feasible polynomial minorants.}
+
+The certificate has four parts.
+
+\subsubsection{Exact dual quadrature}\label{exact-dual-quadrature}
+
+The objective \(\Phi\) defines a linear functional with rational moments
+through degree five. Its monic degree-three orthogonal polynomial is the
+cubic above. Exact root intervals and Lagrange formulas give a positive
+three-node quadrature rule that is exact through degree five.
+
+\subsubsection{All higher degrees}\label{all-higher-degrees}
+
+An exact integer recurrence checks degrees 6 through 14,658. A normalized
+Gegenbauer tail bound covers every larger degree. Every omitted degree has
+strictly negative reduced cost. Higher-degree terms cannot improve the
+auxiliary objective.
+
+\subsubsection{Global minorant}\label{global-minorant}
+
+A directed derivative certificate proves
+\[
+K_{32}^{(6)}(t)>0
+\qquad (-1<t<1).
+\]
+The Hermite remainder formula gives
+\[
+K_{32}(t)-h_\star(t)
+=\frac{K_{32}^{(6)}(\xi_t)}{6!}
+\prod_{j=1}^{3}(t-t_j)^2
+\geq0.
+\]
+Separate directed evaluations verify both endpoints.
+
+\subsubsection{Optimality and uniqueness}\label{optimality-and-uniqueness}
+
+A Krawczyk enclosure places all five nonconstant Gegenbauer coefficients
+strictly above zero. Contact at the three quadrature nodes makes the
+primal and dual objectives equal. Strict reduced costs force every
+optimizer to have degree at most five. Dual equality forces contact at all
+three interior nodes, and differentiability then forces derivative
+contact. The six Hermite conditions determine \(h_\star\) uniquely.
+
+The resulting directed lower bound is
+\[
+\mathcal{R}(Q)
+\geq 2.4330928587565938\times10^{-7}
+\qquad (Q\in\mathcal{C}_{+}).
+\]
+Comparison with the certified Kerdock-risk interval proves Theorem~1.
+Appendix~\ref{app:nonnegative} records the exact roots, endpoint margins,
+and certified constants.
+
+\section{The signed bound}\label{the-signed-bound}
+
+Negative weights can cancel harmonic moments, so the nonnegative Delsarte
+argument no longer applies directly. The signed proof instead controls the
+inertia of harmonic moment matrices.
+
+\subsection{A positive-index inequality}\label{a-positive-index-inequality}
+
+For one comparison profile, let \(E\) be its node-evaluation matrix and
+let
+\[
+W=\operatorname{diag}(w_i),
+\qquad
+M=E^\top W E.
+\]
+For the profiles used below, the addition formula fixes the trace
+\(T>0\) of \(M\) and gives a target matrix \(A\) with squared Frobenius
+norm \(S_2\). It also gives
+\[
+\lVert A-M\rVert_F^2=\lVert M\rVert_F^2-S_2.
+\]
+
+\textbf{Lemma 4 (Positive-index bound).}
+\emph{If a symmetric matrix \(M\) has trace \(T>0\) and at most \(p\)
+positive eigenvalues, then}
+\[
+\lVert M\rVert_F^2\geq\frac{T^2}{p}.
+\]
+
+\emph{Proof.} Let \(\lambda_1^+,\ldots,\lambda_p^+\) be the positive
+eigenvalues. Their sum is at least \(T\). Cauchy--Schwarz gives
+\[
+\lVert M\rVert_F^2
+\geq\sum_i(\lambda_i^+)^2
+\geq\frac{(\sum_i\lambda_i^+)^2}{p}
+\geq\frac{T^2}{p}.
+\qquad\square
+\]
+
+Congruence cannot increase positive inertia. After duplicate nodes are
+consolidated and zero weights removed, a rule with \(q\) negative support
+entries has at most \(N-q\) positive weights. Hence
+\[
+\lVert A-M\rVert_F^2
+\geq\frac{T^2}{N-q}-S_2.
+\]
+
+\subsection{The harmonic witness}\label{the-harmonic-witness}
+
+The certificate uses 146 comparison profiles. Each profile parameter is
+nonnegative. The witness uses kernel coefficients through degree 320, and
+its coefficient allocation is fixed and rational. Higher degrees contribute
+nonnegative squared harmonic discrepancies and may be discarded. After the
+directed coefficient lower endpoints are supplied, every remaining step
+uses exact rational arithmetic.
+
+A mass-one rule requires a case split. If all consolidated weights are
+nonnegative, Theorem~1 gives the stronger bound. Otherwise \(q\geq1\), so
+every profile matrix has positive index at most \(N-1\). Applying the
+frozen allocation gives
+\[
+\mathcal{R}(Q)
+\geq 2.2804861843861462\times10^{-7}.
+\]
+Combining the two cases proves Theorem~2. Replacing \(N-1\) by \(N-q\)
+gives the negative-support hierarchy.
+
+Appendix~\ref{app:signed} derives the comparison-kernel identity and the
+exact coefficient-allocation inequality. The ancillary certificate lists
+all 146 profiles and verifies every rational slack. The bound is one-sided;
+it makes no claim that a signed optimizer exists or attains the floor.
+
+\section{Interpretation}\label{interpretation}
+
+Theorem~1 leaves about two parts in ten thousand between Kerdock and the
+nonnegative infimum. For this kernel and budget, changing only fixed nodes
+and nonnegative weights offers almost no further reduction in ensemble
+risk.
+
+Theorem~2 is less tight, but it covers all real mass-one weights. Static
+signed cancellation cannot reduce Kerdock risk by more than 6.2940\%.
+Crossing this boundary requires something outside the theorem. Examples
+include finite-width or network-specific structure, adaptive queries,
+nonlinear reconstruction, and cheaper approximate evaluations.
+
+The broader contribution is methodological. The proof links a neural
+Gaussian-process kernel to spherical discrepancy. It then combines an
+all-degree Delsarte certificate with an inertia bound for signed atomic
+measures. This gives a template for studying other fixed kernels and node
+budgets.
+
+\section{Scope and reproducibility}\label{scope-and-reproducibility}
+
+The theorem concerns the normalized depth-32 infinite-width kernel, not a
+realized finite-width network. Nodes and weights must be fixed independently
+of the network and observed values. Aggregation must be linear. Signed
+weights must sum to one. The budget counts full function evaluations. It
+does not equalize preprocessing cost or wall time. It also does not account
+for instability from large signed weights. Both headline bounds are
+one-sided. They do not construct an optimizer or prove that either lower
+bound is attained.
+
+The ancillary directory is a minimal proof archive. It contains the
+all-degree recurrence, the degree-five primal--dual records, the Kerdock
+risk check, the frozen signed witness, and the inertia strengthening. Exact
+replay verifies all integer and rational steps downstream of the stored
+directed interval endpoints. Independent high-precision calculations also
+reproduce the formal series, Hermite interpolant, and Kerdock risk.
+
+The complete depth-32 Gegenbauer coefficient and curvature interval stack
+has not been independently rebuilt in a separate directed-arithmetic
+implementation. The artifacts therefore support a replayable
+computer-assisted proof with an explicit trust base. They do not constitute
+independent verification of every interval input. Appendix~\ref{app:verification}
+maps the proof objects and commands.
+
+\section{Conclusion}\label{conclusion}
+
+We proved class-wide lower bounds for static, network-independent linear
+cubature of a deep ReLU Gaussian-process kernel. At 66,048 nodes, the
+complete Kerdock rule is at most 0.0233242\% above the nonnegative
+infimum. In the larger signed mass-one class, no rule can reduce Kerdock
+risk by more than 6.2940\%.
+
+The first result nearly determines the best nonnegative risk over arbitrary
+nodes and weights. The second rules out a large hidden gain from signed
+weights. Together they separate improvements available from fixed geometry
+from improvements that require a different source of information or a
+different estimator class.
+
+\section{Acknowledgments and use of generative AI}
+\label{acknowledgments-and-use-of-generative-ai}
+
+Generative AI language models assisted with brainstorming, code,
+adversarial review, drafting, and editing. The author reviewed all claims
+and assumes full responsibility for the mathematics, citations, and
+verification artifacts.
+
+\appendix
+
+\section{Complete Kerdock spectrum and risk}\label{app:kerdock}
+
+Let $d=256$, $B=d/2+1=129$, and $N=2Bd=66{,}048$. Fix one node of the
+antipodal complete-MUB design. Among the $N$ ordered partners, the inner
+products and multiplicities are
+
+\begin{center}
+\begin{tabular}{@{}cc@{}}
+\toprule
+inner product & multiplicity per fixed node \\
+\midrule
+$1$ & $1$ \\
+$-1$ & $1$ \\
+$0$ & $2(d-1)=510$ \\
+$+1/\sqrt d$ & $(B-1)d=32{,}768$ \\
+$-1/\sqrt d$ & $(B-1)d=32{,}768$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The counts sum to $N$. Therefore the equal-weight kernel energy is
+\[
+E_K(Q_{\mathrm K})=
+\frac{K(1)+K(-1)+2(d-1)K(0)
+ +(B-1)d\{K(d^{-1/2})+K(-d^{-1/2})\}}{N}.
+\]
+If $a_0=\iint K(u^\top v)\,d\sigma(u)d\sigma(v)$ is the constant
+Gegenbauer coefficient, then
+\[
+\mathcal R(Q_{\mathrm K})=E_K(Q_{\mathrm K})-a_0.
+\]
+The directed computation gives
+\[
+\mathcal R(Q_{\mathrm K})\in
+[2.4336603575430029389,\,2.4336603575430052277]\times10^{-7}.
+\]
+An independent, non-directed one-dimensional integration gives a value
+inside this certified interval.
+
+\section{Details of the nonnegative certificate}\label{app:nonnegative}
+
+For $N=66{,}048$, define the auxiliary functional on normalized
+Gegenbauer polynomials by
+\[
+L(G_0)=1-\frac1N,
+\qquad
+L(G_\ell)=-\frac1N\quad(\ell\ge1).
+\]
+Its moments through degree five determine the monic orthogonal cubic
+\[
+p(t)=t^3+\frac{255}{257}t^2-\frac{87}{22102}t-
+\frac{85}{22102}.
+\]
+Equivalently, $22102p(t)=22102t^3+21930t^2-87t-85$. Its three roots lie
+in the disjoint rational intervals
+\[
+\begin{split}
+ t_1&\in[-0.992278935,-0.992278934],\\
+ t_2&\in[-0.062224856,-0.062224855],\\
+ t_3&\in[\phantom{-}0.062285891,\phantom{-}0.062285892].
+\end{split}
+\]
+The associated three-node Gaussian quadrature has positive weights. It is
+exact through degree five. The degree-five Hermite interpolant $h_\star$ at
+these roots is primal--dual optimal once feasibility and all omitted
+reduced-cost signs are established.
+
+The all-degree certificate has three components.
+
+\begin{enumerate}
+\item Exact integer recurrence proves every reduced cost is strictly negative
+for degrees $6$ through $14{,}658$. A normalized-Gegenbauer tail estimate
+covers every degree $\ell\ge14{,}659$.
+\item A directed derivative argument proves $K_{32}^{(6)}(t)>0$ on
+$(-1,1)$. The Hermite remainder is therefore nonnegative, with equality only
+at the three contact roots in the interior.
+\item Directed endpoint evaluation gives
+\[
+K_{32}(1)-h_\star(1)>0.01702189426837098,
+\qquad
+K_{32}(-1)-h_\star(-1)>2.2051871290807434\times10^{-7}.
+\]
+A Krawczyk enclosure places every nonconstant Gegenbauer coefficient of
+$h_\star$ strictly above zero.
+\end{enumerate}
+
+The certified nonnegative floor and the Kerdock upper endpoint are
+\[
+P_N\ge2.4330928587565937917\times10^{-7},
+\qquad
+\mathcal R(Q_{\mathrm K})\le2.4336603575430052277\times10^{-7},
+\]
+which yield Theorem~1. The certificate optimizes the polynomial auxiliary program. It does not
+assert that a spherical rule attains the resulting lower bound.
+
+\section{Signed comparison profiles and the frozen witness}\label{app:signed}
+
+Choose real orthonormal spherical harmonics $Y_{\ell m}$ so that the
+addition formula is
+\[
+\sum_{m=1}^{d_\ell}Y_{\ell m}(x)Y_{\ell m}(y)
+=d_\ell G_\ell(x^\top y),
+\]
+where $d_\ell=\dim H_\ell$. Let
+$Y_\ell(x)=(Y_{\ell1}(x),\ldots,Y_{\ell d_\ell}(x))^\top$. For a
+profile $(s,r)$ with $r\ge0$, set
+\[
+\Phi_{s,r}(x)=Y_s(x)\oplus\sqrt r\,Y_{s+1}(x),
+\quad
+A_{s,r}=I_{d_s}\oplus rI_{d_{s+1}},
+\]
+and
+\[
+L_{s,r}(t)=d_sG_s(t)+r d_{s+1}G_{s+1}(t).
+\]
+For a mass-one signed rule $Q=\sum_iw_i\delta_{u_i}$, define
+\[
+M_{s,r}=\sum_iw_i\Phi_{s,r}(u_i)\Phi_{s,r}(u_i)^\top.
+\]
+The sphere average of $\Phi_{s,r}(x)\Phi_{s,r}(x)^\top$ is
+$A_{s,r}$. The addition formula and $\sum_iw_i=1$ fix the two
+diagonal-block traces. Consequently, with
+\[
+T_{s,r}=d_s+r d_{s+1},
+\qquad
+S_{s,r}=d_s+r^2d_{s+1},
+\]
+one has
+\[
+\|A_{s,r}-M_{s,r}\|_F^2
+=\mathcal R_{L_{s,r}^2}(Q)
+=\|M_{s,r}\|_F^2-S_{s,r}.
+\]
+Here $\mathcal R_H(Q)$ denotes the discrepancy obtained by replacing
+$K_{32}$ with the kernel $H$. If $M_{s,r}$ has at most $p$ positive
+eigenvalues, Lemma~4 gives the
+profile floor
+\[
+B_{s,r}(p)=\frac{T_{s,r}^2}{p}-S_{s,r}.
+\]
+
+Write the exact Gegenbauer linearization as
+\[
+L_{s,r}(t)^2=\sum_{\ell\ge0}b_{s,r,\ell}G_\ell(t),
+\qquad b_{s,r,\ell}\ge0.
+\]
+The coefficients are nonnegative because $L_{s,r}^2$ is a positive-definite
+zonal kernel.
+The ancillary certificate stores 146 profiles $(s_j,r_j)$ and positive
+rational allocations $y_j$. Write $B_j(p)=B_{s_j,r_j}(p)$. If
+$a_\ell^{\rm lo}$ is the directed lower endpoint for the kernel coefficient,
+the exact verifier checks
+\[
+\sum_j\frac{y_j}{B_j(N)}b_{j\ell}
+\le a_\ell^{\rm lo}
+\qquad(1\le\ell\le320).
+\]
+All arithmetic after the one-sided coefficient inputs is rational. Each
+profile polynomial has finite Gegenbauer support. Unused kernel coefficients
+are nonnegative. Hence, for any rule whose profile matrices have positive
+index at most $p$,
+\[
+\mathcal R(Q)
+\ge
+\sum_j y_j\frac{B_j(p)}{B_j(N)}.
+\]
+
+After duplicate locations are consolidated and zero weights are removed, a
+genuinely signed rule with $q$ negative support entries has at most $N-q$
+positive weights. Congruence with $W=\operatorname{diag}(w_i)$ gives
+$p\le N-q$. The universal theorem is a case split. The case $q=0$ is
+covered by the stronger nonnegative theorem. The case $q\ge1$ uses
+$p=N-1$. The frozen allocation then gives
+\[
+\mathcal R(Q)\ge2.2804861843861462175\times10^{-7}
+\]
+and the ratio in Theorem~2.
+
+Using $p=N-q$ gives the support-count hierarchy stated in
+Section~\ref{main-results}. The ancillary archive contains the full
+exact-rational table. These are support-count statements, not bounds on
+total negative mass. The certificate is a lower bound only. It does not
+prove that a signed optimizer exists or attains the floor.
+
+\section{Certified constants and ancillary map}\label{app:verification}
+
+The headline calculations use the following one-sided quantities.
+
+\begin{center}
+\begin{tabular}{@{}p{0.57\linewidth}p{0.34\linewidth}@{}}
+\toprule
+quantity & certified value \\
+\midrule
+nonnegative auxiliary risk lower bound & $2.4330928587565937917\times10^{-7}$ \\
+Kerdock risk upper endpoint & $2.4336603575430052277\times10^{-7}$ \\
+Kerdock/nonnegative-infimum cap & $1.0002332417295004$ \\
+signed frozen-witness risk lower bound & $2.2804861843861462175\times10^{-7}$ \\
+signed floor/Kerdock-upper fraction & $0.9370601683665084$ \\
+Kerdock/signed-infimum cap & $1.0671673322143325$ \\
+maximum signed reduction relative to Kerdock & $6.29398316334916\%$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The ancillary archive separates three evidence levels:
+
+\begin{enumerate}
+\item \textbf{Exact replay:} integer all-degree recurrence, rational
+Gegenbauer conversion, profile linearizations, coefficient-capacity slacks,
+inertia replacement, and ratio calculations.
+\item \textbf{Directed interval inputs and records:} the degree-five
+minorant, endpoint separation, depth-32 coefficient lower endpoints, Kerdock
+risk interval, and associated canonical records.
+\item \textbf{Non-directed cross-checks:} independent formal-series,
+Hermite-interpolation, and one-dimensional risk calculations. These are useful
+for detecting transcription or implementation errors but are not proof
+substitutes.
+\end{enumerate}
+
+The file \texttt{anc/README.md} maps each command to its inputs and
+outputs. From the ancillary root, the full replay is
+\begin{verbatim}
+python scripts/check_package.py
+python scripts/run_verification.py
+python scripts/check_package.py
+\end{verbatim}
+The checksum file verifies the shipped proof objects before and after the
+replay.
+
+\renewcommand\refname{References}
+  \footnotesize
+  \setlength{\bibsep}{0pt}
+  \bibliography{references}
+
+\end{document}

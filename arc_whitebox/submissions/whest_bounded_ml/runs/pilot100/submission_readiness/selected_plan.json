@@ -1,0 +1,314 @@
+{
+  "selected": [
+    {
+      "source": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/runs/pilot100/submission_readiness/tuning8_none.json",
+      "calibration": null,
+      "key": "a0.35_b0_g0.5",
+      "config": {
+        "alpha": 0.35,
+        "beta": 0.0,
+        "gamma": 0.5,
+        "corr_cap": 0.999,
+        "x_clip": 20.0,
+        "residual_clip": 0.5,
+        "next_variance_guard": true
+      },
+      "config_text": "0.35,0,0.5,0.999,20,0.5",
+      "summary": {
+        "mlps": 8,
+        "final_mean_mse": 5.226413935539635e-05,
+        "median_final_mean_mse": 5.062929051542665e-05,
+        "runtime_seconds": 32.74060074868612,
+        "baseline_mean_mse": 8.277462188376484e-05,
+        "gain_vs_upstream": 1.5837747048869797,
+        "fraction_mlps_improved": 0.875,
+        "median_mlp_gain": 1.5608023102189474,
+        "worst_mlp_gain": 0.5741490680057658,
+        "fraction_guard_activated": 0.0,
+        "minimum_safety_scale": 1.0
+      }
+    }
+  ],
+  "all_ranked": [
+    {
+      "source": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/runs/pilot100/submission_readiness/tuning8_none.json",
+      "calibration": null,
+      "key": "a0.35_b0_g0.5",
+      "config": {
+        "alpha": 0.35,
+        "beta": 0.0,
+        "gamma": 0.5,
+        "corr_cap": 0.999,
+        "x_clip": 20.0,
+        "residual_clip": 0.5,
+        "next_variance_guard": true
+      },
+      "config_text": "0.35,0,0.5,0.999,20,0.5",
+      "summary": {
+        "mlps": 8,
+        "final_mean_mse": 5.226413935539635e-05,
+        "median_final_mean_mse": 5.062929051542665e-05,
+        "runtime_seconds": 32.74060074868612,
+        "baseline_mean_mse": 8.277462188376484e-05,
+        "gain_vs_upstream": 1.5837747048869797,
+        "fraction_mlps_improved": 0.875,
+        "median_mlp_gain": 1.5608023102189474,
+        "worst_mlp_gain": 0.5741490680057658,
+        "fraction_guard_activated": 0.0,
+        "minimum_safety_scale": 1.0
+      }
+    },
+    {
+      "source": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/runs/pilot100/submission_readiness/tuning8_layerwise.json",
+      "calibration": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/runs/pilot100/submission_readiness/calibration_layerwise.json",
+      "key": "a0.35_b0_g0.5",
+      "config": {
+        "alpha": 0.35,
+        "beta": 0.0,
+        "gamma": 0.5,
+        "corr_cap": 0.999,
+        "x_clip": 20.0,
+        "residual_clip": 0.5,
+        "next_variance_guard": true
+      },
+      "config_text": "0.35,0,0.5,0.999,20,0.5",
+      "summary": {
+        "mlps": 8,
+        "final_mean_mse": 5.510486285667354e-05,
+        "median_final_mean_mse": 5.376054774575556e-05,
+        "runtime_seconds": 32.86325016757473,
+        "baseline_mean_mse": 8.277462188376484e-05,
+        "gain_vs_upstream": 1.502129169599055,
+        "fraction_mlps_improved": 0.875,
+        "median_mlp_gain": 1.5116256337859841,
+        "worst_mlp_gain": 0.5243871716771495,
+        "fraction_guard_activated": 0.0,
+        "minimum_safety_scale": 1.0
+      }
+    },
+    {
+      "source": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/runs/pilot100/submission_readiness/tuning8_global.json",
+      "calibration": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/runs/pilot100/submission_readiness/calibration_global.json",
+      "key": "a0.35_b0_g0.5",
+      "config": {
+        "alpha": 0.35,
+        "beta": 0.0,
+        "gamma": 0.5,
+        "corr_cap": 0.999,
+        "x_clip": 20.0,
+        "residual_clip": 0.5,
+        "next_variance_guard": true
+      },
+      "config_text": "0.35,0,0.5,0.999,20,0.5",
+      "summary": {
+        "mlps": 8,
+        "final_mean_mse": 5.585390682264716e-05,
+        "median_final_mean_mse": 5.445780340409142e-05,
+        "runtime_seconds": 33.73193646152504,
+        "baseline_mean_mse": 8.277462188376484e-05,
+        "gain_vs_upstream": 1.4819844589671944,
+        "fraction_mlps_improved": 0.875,
+        "median_mlp_gain": 1.4965522651439835,
+        "worst_mlp_gain": 0.5155149355235982,
+        "fraction_guard_activated": 0.0,
+        "minimum_safety_scale": 1.0
+      }
+    },
+    {
+      "source": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/runs/pilot100/submission_readiness/tuning8_none.json",
+      "calibration": null,
+      "key": "a0.35_b0.5_g0.5",
+      "config": {
+        "alpha": 0.35,
+        "beta": 0.5,
+        "gamma": 0.5,
+        "corr_cap": 0.999,
+        "x_clip": 20.0,
+        "residual_clip": 0.5,
+        "next_variance_guard": true
+      },
+      "config_text": "0.35,0.5,0.5,0.999,20,0.5",
+      "summary": {
+        "mlps": 8,
+        "final_mean_mse": 5.6499436969470985e-05,
+        "median_final_mean_mse": 5.861577581818403e-05,
+        "runtime_seconds": 32.68047566432506,
+        "baseline_mean_mse": 8.277462188376484e-05,
+        "gain_vs_upstream": 1.4650521549177815,
+        "fraction_mlps_improved": 0.875,
+        "median_mlp_gain": 1.480990817809372,
+        "worst_mlp_gain": 0.7251719297436322,
+        "fraction_guard_activated": 0.0,
+        "minimum_safety_scale": 1.0
+      }
+    },
+    {
+      "source": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/runs/pilot100/submission_readiness/tuning8_layerwise.json",
+      "calibration": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/runs/pilot100/submission_readiness/calibration_layerwise.json",
+      "key": "a0.35_b0.5_g0.5",
+      "config": {
+        "alpha": 0.35,
+        "beta": 0.5,
+        "gamma": 0.5,
+        "corr_cap": 0.999,
+        "x_clip": 20.0,
+        "residual_clip": 0.5,
+        "next_variance_guard": true
+      },
+      "config_text": "0.35,0.5,0.5,0.999,20,0.5",
+      "summary": {
+        "mlps": 8,
+        "final_mean_mse": 5.950064445469315e-05,
+        "median_final_mean_mse": 6.219529766684508e-05,
+        "runtime_seconds": 32.97125804144889,
+        "baseline_mean_mse": 8.277462188376484e-05,
+        "gain_vs_upstream": 1.3911550478548798,
+        "fraction_mlps_improved": 0.875,
+        "median_mlp_gain": 1.4047887707731301,
+        "worst_mlp_gain": 0.6769078116491478,
+        "fraction_guard_activated": 0.0,
+        "minimum_safety_scale": 1.0
+      }
+    },
+    {
+      "source": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/runs/pilot100/submission_readiness/tuning8_global.json",
+      "calibration": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/runs/pilot100/submission_readiness/calibration_global.json",
+      "key": "a0.35_b0.5_g0.5",
+      "config": {
+        "alpha": 0.35,
+        "beta": 0.5,
+        "gamma": 0.5,
+        "corr_cap": 0.999,
+        "x_clip": 20.0,
+        "residual_clip": 0.5,
+        "next_variance_guard": true
+      },
+      "config_text": "0.35,0.5,0.5,0.999,20,0.5",
+      "summary": {
+        "mlps": 8,
+        "final_mean_mse": 6.018399377924579e-05,
+        "median_final_mean_mse": 6.306301674330342e-05,
+        "runtime_seconds": 34.5319976657629,
+        "baseline_mean_mse": 8.277462188376484e-05,
+        "gain_vs_upstream": 1.3753594051498348,
+        "fraction_mlps_improved": 0.875,
+        "median_mlp_gain": 1.3954398321225694,
+        "worst_mlp_gain": 0.6708040940930783,
+        "fraction_guard_activated": 0.0,
+        "minimum_safety_scale": 1.0
+      }
+    },
+    {
+      "source": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/runs/pilot100/submission_readiness/tuning8_none.json",
+      "calibration": null,
+      "key": "a0.5_b0_g0.5",
+      "config": {
+        "alpha": 0.5,
+        "beta": 0.0,
+        "gamma": 0.5,
+        "corr_cap": 0.999,
+        "x_clip": 20.0,
+        "residual_clip": 0.5,
+        "next_variance_guard": true
+      },
+      "config_text": "0.5,0,0.5,0.999,20,0.5",
+      "summary": {
+        "mlps": 8,
+        "final_mean_mse": 7.556051720721159e-05,
+        "median_final_mean_mse": 7.693887627361742e-05,
+        "runtime_seconds": 32.76204020669684,
+        "baseline_mean_mse": 8.277462188376484e-05,
+        "gain_vs_upstream": 1.0954745274806659,
+        "fraction_mlps_improved": 0.625,
+        "median_mlp_gain": 1.1750354058384311,
+        "worst_mlp_gain": 0.33345421343030807,
+        "fraction_guard_activated": 0.0,
+        "minimum_safety_scale": 1.0
+      }
+    },
+    {
+      "source": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/runs/pilot100/submission_readiness/tuning8_none.json",
+      "calibration": null,
+      "key": "a0.5_b0.5_g0.5",
+      "config": {
+        "alpha": 0.5,
+        "beta": 0.5,
+        "gamma": 0.5,
+        "corr_cap": 0.999,
+        "x_clip": 20.0,
+        "residual_clip": 0.5,
+        "next_variance_guard": true
+      },
+      "config_text": "0.5,0.5,0.5,0.999,20,0.5",
+      "summary": {
+        "mlps": 8,
+        "final_mean_mse": 8.11935049820793e-05,
+        "median_final_mean_mse": 8.716963446002044e-05,
+        "runtime_seconds": 32.93020541709848,
+        "baseline_mean_mse": 8.277462188376484e-05,
+        "gain_vs_upstream": 1.0194734406654142,
+        "fraction_mlps_improved": 0.75,
+        "median_mlp_gain": 1.0381482175112446,
+        "worst_mlp_gain": 0.45610483838794014,
+        "fraction_guard_activated": 0.0,
+        "minimum_safety_scale": 1.0
+      }
+    },
+    {
+      "source": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/runs/pilot100/submission_readiness/tuning8_layerwise.json",
+      "calibration": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/runs/pilot100/submission_readiness/calibration_layerwise.json",
+      "key": "a0.5_b0_g0.5",
+      "config": {
+        "alpha": 0.5,
+        "beta": 0.0,
+        "gamma": 0.5,
+        "corr_cap": 0.999,
+        "x_clip": 20.0,
+        "residual_clip": 0.5,
+        "next_variance_guard": true
+      },
+      "config_text": "0.5,0,0.5,0.999,20,0.5",
+      "summary": {
+        "mlps": 8,
+        "final_mean_mse": 8.197635103170417e-05,
+        "median_final_mean_mse": 8.518283261825213e-05,
+        "runtime_seconds": 33.009989998769015,
+        "baseline_mean_mse": 8.277462188376484e-05,
+        "gain_vs_upstream": 1.009737818797911,
+        "fraction_mlps_improved": 0.625,
+        "median_mlp_gain": 1.0715320251433846,
+        "worst_mlp_gain": 0.29841998727373,
+        "fraction_guard_activated": 0.0,
+        "minimum_safety_scale": 1.0
+      }
+    },
+    {
+      "source": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/runs/pilot100/submission_readiness/tuning8_global.json",
+      "calibration": "/Users/skyenygaard/Programming/AI-Safety/arc_whitebox/submissions/whest_bounded_ml/runs/pilot100/submission_readiness/calibration_global.json",
+      "key": "a0.5_b0_g0.5",
+      "config": {
+        "alpha": 0.5,
+        "beta": 0.0,
+        "gamma": 0.5,
+        "corr_cap": 0.999,
+        "x_clip": 20.0,
+        "residual_clip": 0.5,
+        "next_variance_guard": true
+      },
+      "config_text": "0.5,0,0.5,0.999,20,0.5",
+      "summary": {
+        "mlps": 8,
+        "final_mean_mse": 8.383911776603013e-05,
+        "median_final_mean_mse": 8.689288201449613e-05,
+        "runtime_seconds": 35.33982791821472,
+        "baseline_mean_mse": 8.277462188376484e-05,
+        "gain_vs_upstream": 0.9873031120719092,
+        "fraction_mlps_improved": 0.625,
+        "median_mlp_gain": 1.0411884790120438,
+        "worst_mlp_gain": 0.29150466233246125,
+        "fraction_guard_activated": 0.0,
+        "minimum_safety_scale": 1.0
+      }
+    }
+  ]
+}

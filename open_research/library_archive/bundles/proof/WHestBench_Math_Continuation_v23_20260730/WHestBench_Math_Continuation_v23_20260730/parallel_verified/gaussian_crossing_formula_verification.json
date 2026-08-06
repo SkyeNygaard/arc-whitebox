@@ -1,0 +1,128 @@
+{
+  "status": "PASS",
+  "theorem": {
+    "setting": "Condition on deterministic vectors a,b before drawing a current Gaussian weight row w~N(0,I/d). Put z=w^T a and z_prime=w^T(a+b).",
+    "rho": "a^T(a+b)/(||a|| ||a+b||)",
+    "E_R": "||a+b||/sqrt(d) * (1-rho)/sqrt(2*pi)",
+    "E_R2": "||a+b||^2/d * (acos(rho)-rho*sqrt(1-rho^2))/pi",
+    "remainder": "R=|z_prime| 1_{z z_prime<0}",
+    "small_angle": "E_R2/(||a+b||^2/d) = 2 theta^3/(3 pi)+O(theta^5), rho=cos(theta)."
+  },
+  "checks": [
+    {
+      "rho": -0.9,
+      "theory_E_R": 0.7579903327627221,
+      "quadrature_E_R": 0.7579903327627224,
+      "mc_E_R": 0.7578642173469532,
+      "theory_E_R2": 0.9813069632657506,
+      "quadrature_E_R2": 0.9813069632657507,
+      "mc_E_R2": 0.9806296180372077,
+      "quadrature_abs_error_R": 3.3306690738754696e-16,
+      "quadrature_abs_error_R2": 1.1102230246251565e-16,
+      "mc_abs_error_R": 0.0001261154157689015,
+      "mc_abs_error_R2": 0.0006773452285429027
+    },
+    {
+      "rho": -0.5,
+      "theory_E_R": 0.5984134206021491,
+      "quadrature_E_R": 0.5984134206021492,
+      "mc_E_R": 0.5977193042678987,
+      "theory_E_R2": 0.8044988905221148,
+      "quadrature_E_R2": 0.8044988905221149,
+      "mc_E_R2": 0.8029937432174434,
+      "quadrature_abs_error_R": 1.1102230246251565e-16,
+      "quadrature_abs_error_R2": 1.1102230246251565e-16,
+      "mc_abs_error_R": 0.0006941163342504275,
+      "mc_abs_error_R2": 0.0015051473046713282
+    },
+    {
+      "rho": 0.0,
+      "theory_E_R": 0.3989422804014327,
+      "quadrature_E_R": 0.39894228040143265,
+      "mc_E_R": 0.39912507276927095,
+      "theory_E_R2": 0.5,
+      "quadrature_E_R2": 0.5000000000000001,
+      "mc_E_R2": 0.49994059656125384,
+      "quadrature_abs_error_R": 5.551115123125783e-17,
+      "quadrature_abs_error_R2": 1.1102230246251565e-16,
+      "mc_abs_error_R": 0.00018279236783824704,
+      "mc_abs_error_R2": 5.940343874616394e-05
+    },
+    {
+      "rho": 0.3,
+      "theory_E_R": 0.2792595962810029,
+      "quadrature_E_R": 0.2792595962810029,
+      "mc_E_R": 0.2795490089949133,
+      "theory_E_R2": 0.3119188323905365,
+      "quadrature_E_R2": 0.3119188323905365,
+      "mc_E_R2": 0.3126191405315303,
+      "quadrature_abs_error_R": 0.0,
+      "quadrature_abs_error_R2": 0.0,
+      "mc_abs_error_R": 0.00028941271391041967,
+      "mc_abs_error_R2": 0.000700308140993755
+    },
+    {
+      "rho": 0.8,
+      "theory_E_R": 0.07978845608028652,
+      "quadrature_E_R": 0.07978845608028651,
+      "mc_E_R": 0.07982847365051221,
+      "theory_E_R2": 0.05204401933091391,
+      "quadrature_E_R2": 0.05204401933091389,
+      "mc_E_R2": 0.05197555575390071,
+      "quadrature_abs_error_R": 1.3877787807814457e-17,
+      "quadrature_abs_error_R2": 2.0816681711721685e-17,
+      "mc_abs_error_R": 4.0017570225689414e-05,
+      "mc_abs_error_R2": 6.846357701319888e-05
+    },
+    {
+      "rho": 0.99,
+      "theory_E_R": 0.003989422804014331,
+      "quadrature_E_R": 0.003989422804014344,
+      "mc_E_R": 0.004013810586744281,
+      "theory_E_R2": 0.0005993097557009975,
+      "quadrature_E_R2": 0.0005993097557010136,
+      "mc_E_R2": 0.0006057017262521847,
+      "quadrature_abs_error_R": 1.3010426069826053e-17,
+      "quadrature_abs_error_R2": 1.6154612370034016e-17,
+      "mc_abs_error_R": 2.4387782729950146e-05,
+      "mc_abs_error_R2": 6.391970551187284e-06
+    }
+  ],
+  "small_angle_checks": [
+    {
+      "theta": 0.1,
+      "psi": 0.00021178258158616707,
+      "leading": 0.00021220659078919385,
+      "ratio": 0.9980019037040749
+    },
+    {
+      "theta": 0.05,
+      "psi": 2.651256409412302e-05,
+      "leading": 2.652582384864923e-05,
+      "ratio": 0.9995001190311046
+    },
+    {
+      "theta": 0.02,
+      "psi": 1.697516919269032e-06,
+      "leading": 1.6976527263135505e-06,
+      "ratio": 0.9999200030474941
+    },
+    {
+      "theta": 0.01,
+      "psi": 2.1220234669773224e-07,
+      "leading": 2.1220659078919382e-07,
+      "ratio": 0.9999800001901648
+    },
+    {
+      "theta": 0.005,
+      "psi": 2.6525691219913655e-08,
+      "leading": 2.6525823848649227e-08,
+      "ratio": 0.9999950000144641
+    }
+  ],
+  "scope_limitations": [
+    "Exact under conditioning only when the perturbation vectors are fixed independently of the current Gaussian row.",
+    "A source using the current or future weight row requires leave-one-row decoupling, a conditional Gaussian argument, or a separate dependence bound.",
+    "The formula controls gate crossing exactly but does not by itself control downstream operator amplification."
+  ]
+}

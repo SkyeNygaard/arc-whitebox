@@ -1,0 +1,20 @@
+{
+  "released_exact_adjacent_grid_fraction": "0.93704595691147240808860144457156512082222848568297774137725701901043916915609989882956490889503085951",
+  "corrected_continuous_adjacent_numerical_fraction": "0.9370496015333069",
+  "corrected_continuous_improvement_fraction_of_kerdock": "0.00000364462183449191139855542843487917777151431702225862274298099",
+  "corrected_continuous_improvement_percentage_points": "0.000364462183449191139855542843487917777151431702225862274298099",
+  "general_multiblock_blocktrace_numerical_fraction": "0.9370553397756372",
+  "multiblock_improvement_fraction_of_kerdock": "0.00000938286416479191139855542843487917777151431702225862274298099",
+  "multiblock_improvement_percentage_points": "0.000938286416479191139855542843487917777151431702225862274298099",
+  "overflow_audit": {
+    "prior_issue": "The original stationary-point routine formed products of coefficients as large as about 1e232 and overflowed, omitting interior minima.",
+    "repair": "Independently rescale numerator and denominator quadratics before forming derivative coefficients. Positive rescaling does not change stationary points.",
+    "effect": "The corrected continuous LP added many high-degree and boundary columns, but changed the normalized objective by less than four millionths."
+  },
+  "evidence_status": {
+    "released_grid": "exact-rational certificate after interval kernel jet",
+    "continuous_adjacent": "numerical discovery only; no released continuous dual certificate",
+    "multiblock": "numerical discovery only"
+  },
+  "conclusion": "Grid discretization and adjacent-profile restriction account for less than 0.001 percentage point each in current numerical searches. The remaining roughly 6.3% theorem gap is not plausibly explained by these optimization details."
+}

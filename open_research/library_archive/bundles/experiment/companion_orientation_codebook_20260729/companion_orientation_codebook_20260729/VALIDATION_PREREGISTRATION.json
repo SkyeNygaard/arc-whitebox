@@ -1,0 +1,15 @@
+{
+  "protocol": "priority6-coherent-orientation-codebook-v2-immutable-validation",
+  "created_before_validation_generation": true,
+  "cohort": {"base_networks": 8, "rotations_per_base": 3, "grouping": "base network", "reference": "16 complete Kerdock rotations split 8+8"},
+  "frozen_codebook": {"orientation_indices": [0,1,2,3,4,5,6,7], "orientation_seeds": [1005,1007,1011,1013,1019,1021,1031,1033], "bases_per_orientation": 17, "amplitude": 0.20, "main_bases": "0-110 plus 128"},
+  "arms": {
+    "fixed_r3": "orientation 2",
+    "primary_c2_norm": "choose argmax ||c2|| from each orientation's first two nested companion bases; apply that orientation's full 17-basis correction",
+    "comparator_p2_norm": "choose argmax ||p2|| from each orientation's two-basis paired probe; apply that orientation's full 17-basis correction",
+    "safe_full_baseline": "use primary_c2_norm correction only when p1_p2_cos >= 0.90, nested_rel <= 0.70, and cos(c2,c17) >= 0.30; otherwise propagate the missing 17 primary bases and return the full 129-basis baseline",
+    "oracle_best8": "research-only best fixed-amplitude orientation"
+  },
+  "gates": {"raw_ratio_max": 0.95, "worst_max": 1.15, "win_rate_min": 0.75, "adjusted_ratio_max": 1.0},
+  "no_posthoc_changes": true
+}

@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "title": "Frozen K32 direct-output lower-order signed-anchor learner",
+  "created_utc": "2026-07-29T20:02:00Z",
+  "base_network_ids": {
+    "train": [
+      3000,
+      3001,
+      3002,
+      3003,
+      3004,
+      3005,
+      3006,
+      3007,
+      3008,
+      3009,
+      3010,
+      3011,
+      3012,
+      3013,
+      3014,
+      3015,
+      3016,
+      3017,
+      3018,
+      3019,
+      3020,
+      3021,
+      3022,
+      3023,
+      3024,
+      3025,
+      3026,
+      3027,
+      3028,
+      3029,
+      3030,
+      3031,
+      3032,
+      3033,
+      3034,
+      3035,
+      3036,
+      3037,
+      3038,
+      3039,
+      3040,
+      3041,
+      3042,
+      3043,
+      3044,
+      3045,
+      3046,
+      3047,
+      3048,
+      3049,
+      3050,
+      3051,
+      3052,
+      3053,
+      3054,
+      3055,
+      3056,
+      3057,
+      3058,
+      3059,
+      3060,
+      3061,
+      3062,
+      3063
+    ],
+    "validation": [
+      3064,
+      3065,
+      3066,
+      3067,
+      3068,
+      3069,
+      3070,
+      3071,
+      3072,
+      3073,
+      3074,
+      3075,
+      3076,
+      3077,
+      3078,
+      3079
+    ],
+    "test": [
+      3300,
+      3301,
+      3302,
+      3303,
+      3304,
+      3305,
+      3306,
+      3307,
+      3308,
+      3309,
+      3310,
+      3311,
+      3312,
+      3313,
+      3314,
+      3315
+    ]
+  },
+  "rotations": {
+    "train": [
+      3,
+      11
+    ],
+    "validation": [
+      3,
+      11,
+      97
+    ],
+    "test": [
+      3,
+      11,
+      97
+    ]
+  },
+  "reference_n_per_half": {
+    "train": 16384,
+    "validation": 32768,
+    "test": 65536
+  },
+  "frozen_target": {
+    "probe_count": 32,
+    "selector": "top rows by descending norm of observable same-cloud Q",
+    "anchor": "lower-order exact defect only (means and pair moments), direct final-output control",
+    "feature_layer_zero_based": 29,
+    "ridge": 0.1,
+    "basis_block_folds": 6
+  },
+  "model": {
+    "family": "probe-set equivariant DeepSets ensemble",
+    "ensemble_seeds": [
+      17,
+      29,
+      43
+    ],
+    "token_hidden": 96,
+    "global_hidden": 96,
+    "context_hidden": 96,
+    "max_epochs": 240,
+    "patience": 30,
+    "batch_size": 16,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "headroom_scale": "sigmoid probability times ensemble correction-consistency shrinkage"
+  },
+  "gate": {
+    "candidate_over_baseline_max": 0.595,
+    "preferred": 0.537,
+    "bootstrap_upper_below": 1.0,
+    "worst_promotion_max": 1.15,
+    "screen_worst_max": 1.25,
+    "added_flops_max": 14000000000.0
+  },
+  "no_test_tuning": true,
+  "final_test_freeze": {
+    "model_hashes": [
+      "2f7bb8e6fd0c8aedb9b29cee60cca64525321b9f91f89885f2d4ac6d8542bc0a",
+      "7fbe7c0304bb3bf0446b81e6823155bc806fb8b6b7b26e78111638d74e699e33",
+      "39c9e72e92654369f07dc88a96f40761cc8a9cfaa891aa72ed60e6c19ef89bce"
+    ],
+    "normalization_sha256": "581e0b47eb254d377388b12bffbc489a9a4af3b459813605eff8b0c8697fd932",
+    "training_validation_sha256": "875c2456a976ed028d4d8dc73398e5b22f508c34ccea03e1b91c3b7ba7763e9e",
+    "prior_test_3080_3095_status": "exposed by oracle-label audit before model freeze; excluded from terminal evidence",
+    "candidate": "three-member mean delta scaled by ensemble consistency and zeroed unless every member correction cosine with mean exceeds 0.5"
+  },
+  "rescue_final_freeze": {
+    "rescue_config_sha256": "4401c61ddbfa2bb7087f7d8280aa5bea5f69adc1e2d934e12106764ba7bf77fb",
+    "model_hashes": [
+      "b86148f66fb15278bc6887b1379323800f7f684d0034fdf97dcb9a2f9716f5dc",
+      "d020d44f649262eff8bb45acfa9e42c5a63148885e9ae16fb09e1a8e0981ff9c",
+      "a1efe6ad639efed41415d6f66e3a18d1be4621fa790e847d998602f90a305bdd",
+      "368a4b1707878995eb6cbfaf97bac5ea63319b7231aae9cbe3bf0d82921a3df9",
+      "7826d961e43ddcdcb86be14c9fa0a1a3cc1ccad32783a1f1bcc8562cd4ec44ea"
+    ],
+    "normalization_template_sha256": "9e8422be34be00d614b47f44006a040eb5f9207db8ca8d71fdef4320d1b389b1",
+    "training_validation_sha256": "0e8b7f8a1aa3ca9057634d544408f754632cc35409f366aa197370c9d6a053e8",
+    "candidate_rule": "mean predicted scalar times |mean|/(|mean|+ensemble_std), applied only when all five predicted signs agree; otherwise abstain"
+  },
+  "freeze_sha256": "6ca1fb78fce4aa371e45cadff1769be1647e3a7d6108b0c468a00fbd3f71fe52"
+}

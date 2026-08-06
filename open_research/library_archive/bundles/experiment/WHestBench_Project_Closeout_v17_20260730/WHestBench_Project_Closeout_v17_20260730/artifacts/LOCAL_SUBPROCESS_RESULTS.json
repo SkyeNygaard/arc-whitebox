@@ -1,0 +1,110 @@
+{
+  "environment": "isolated local subprocesses; deterministic synthetic contract; official whestbench/flopscope/dataset unavailable",
+  "seed": 51000,
+  "rows": [
+    {
+      "package": "production_baseline",
+      "seed": 51000,
+      "seconds": 64.24849977500025,
+      "final_digest": "080cbbbb0f13a4f2034a9b16965f9712c3fc4f923dcd334247d997fab5c43647",
+      "final_norm": 9.69493257066824,
+      "final_sum": 94.0165451617746,
+      "shape": [
+        32,
+        256
+      ],
+      "wall_seconds": 64.99,
+      "max_rss_kib": 2166172
+    },
+    {
+      "package": "A42",
+      "seed": 51000,
+      "seconds": 25.67096069299987,
+      "final_digest": "c3b7a9addd8d087212227e2eae009a586aa44f5888059532532e4179d20777fb",
+      "final_norm": 9.69493378808899,
+      "final_sum": 94.01655685096065,
+      "shape": [
+        32,
+        256
+      ],
+      "wall_seconds": 26.28,
+      "max_rss_kib": 545596
+    },
+    {
+      "package": "A43",
+      "seed": 51000,
+      "seconds": 27.1534767080002,
+      "final_digest": "c3b7a9addd8d087212227e2eae009a586aa44f5888059532532e4179d20777fb",
+      "final_norm": 9.69493378808899,
+      "final_sum": 94.01655685096065,
+      "shape": [
+        32,
+        256
+      ],
+      "wall_seconds": 27.79,
+      "max_rss_kib": 545376
+    },
+    {
+      "package": "A43_delta64",
+      "seed": 51000,
+      "seconds": 25.345873848000338,
+      "final_digest": "c3b7a9addd8d087212227e2eae009a586aa44f5888059532532e4179d20777fb",
+      "final_norm": 9.69493378808899,
+      "final_sum": 94.01655685096065,
+      "shape": [
+        32,
+        256
+      ],
+      "wall_seconds": 25.97,
+      "max_rss_kib": 545844
+    },
+    {
+      "package": "A43_basis096",
+      "seed": 51000,
+      "seconds": 18.831920359999913,
+      "final_digest": "c55525be6df7f52a894e6eed999df5f7172d5defbecdedcb745a07cb7b223031",
+      "final_norm": 9.696931242158039,
+      "final_sum": 94.03897440110006,
+      "shape": [
+        32,
+        256
+      ],
+      "wall_seconds": 19.47,
+      "max_rss_kib": 453504
+    },
+    {
+      "package": "A43_basis064",
+      "seed": 51000,
+      "seconds": 12.813155496000036,
+      "final_digest": "6208b5bc1c004f4fae01a243d9625695f7899127fcbf28a0e2611889892ff379",
+      "final_norm": 9.69352259972351,
+      "final_sum": 94.00370553953803,
+      "shape": [
+        32,
+        256
+      ],
+      "wall_seconds": 13.38,
+      "max_rss_kib": 395808
+    },
+    {
+      "package": "A43_basis032",
+      "seed": 51000,
+      "seconds": 5.9652319740002895,
+      "final_digest": "08b31b0e40e4c4478fb3339a88f549092d02fbe3f526d55c72efc8346863de9d",
+      "final_norm": 9.705278312321905,
+      "final_sum": 94.12319489171205,
+      "shape": [
+        32,
+        256
+      ],
+      "wall_seconds": 6.55,
+      "max_rss_kib": 339044
+    }
+  ],
+  "a42_a43_bit_identical": true,
+  "a42_vs_production_rms": 1.548054724740362e-07,
+  "a42_vs_production_max_abs": 5.631176067666388e-07,
+  "a42_vs_production_relative_rms": 2.554827010430518e-07,
+  "official_grade_completed": false,
+  "shipping_decision": "Retain production as the externally verified package. A42 was the fastest full-width arm in this single synthetic local run and A42/A43 were bit-identical, but official promotion remains blocked on the missing grader, FlopScope, cohort and raw-MSE/effective-cost comparison."
+}

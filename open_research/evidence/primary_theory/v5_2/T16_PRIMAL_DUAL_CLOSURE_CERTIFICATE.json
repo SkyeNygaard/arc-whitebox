@@ -1,0 +1,199 @@
+{
+  "title": "T16 primal-dual closure certificate",
+  "status": "PROVED UNDER EXPLICIT INTERVAL-ARITHMETIC TRUST BASE",
+  "dimension": 256,
+  "depth": 32,
+  "node_budget": 66048,
+  "orthogonal_cubic": "22102*t^3 + 21930*t^2 - 87*t - 85",
+  "root_intervals": [
+    {
+      "exact": [
+        "-104499168606249420279862687239803270809774737045243193340947273930465098861/105312291668557186697918027683670432318895095400549111254310977536000000000",
+        "-66879467907999628979112119833474093318255831708955643738206255315497663271/67399866667876599486667537717549076684092861056351431202759025623040000000"
+      ],
+      "decimal": {
+        "lower": "-0.9922789348762169380534364755999741761852540873465308448678125007016320114323811397828",
+        "upper": "-0.9922789348762169380534364755999741761852540873465308448678125007016320114317876656954"
+      },
+      "sign_change": true
+    },
+    {
+      "exact": [
+        "-1310608422337686760620027694406907583834176144423004815233485038541402291/21062458333711437339583605536734086463779019080109822250862195507200000000",
+        "-104848673787014940849602215552552606706734091553840385218678803083312183279/1684996666696914987166688442938726917102321526408785780068975640576000000000"
+      ],
+      "decimal": {
+        "lower": "-0.0622248553123543726988856384595431874484467581522509604958167245113952917287660728643",
+        "upper": "-0.06222485531235437269888563845954318744844675815225096049581672451139529172817259983108"
+      },
+      "sign_change": true
+    },
+    {
+      "exact": [
+        "26237879829228729826495706593095044389428395938848848347847134676657312859/421249166674228746791672110734681729275580381602196445017243910144000000000",
+        "104951519316914919305982826372380177557713583755395393391388538706629251437/1684996666696914987166688442938726917102321526408785780068975640576000000000"
+      ],
+      "decimal": {
+        "lower": "0.06228589135588648584959837865095705234965415289177791431304556762547866502806635259484",
+        "upper": "0.06228589135588648584959837865095705234965415289177791431304556762547866502865982562805"
+      },
+      "sign_change": true
+    }
+  ],
+  "hermite_primal": {
+    "definition": "degree<=5 Hermite interpolant matching K32 and K32' at all three dual nodes",
+    "gegenbauer_coefficient_intervals_c0_to_c5": [
+      {
+        "lower": "0.9747299751309444413666593085802870785923869068234348747228323827800535066124142510656",
+        "upper": "0.9747299751309444413666593085802870785923869068234348747228323827800535066124336317342"
+      },
+      {
+        "lower": "0.002796473061541184166165860235260182130169385363343326868046738754497541653959875743602",
+        "upper": "0.002796473061541184166165860235260182130169385363343326868046738754497541654100495549543"
+      },
+      {
+        "lower": "0.00243629527371522242447068060976310829567257873525442749320203262172687045156449927791",
+        "upper": "0.002436295273715222424470680609763108295672578735254427493202032621726870453829685505556"
+      },
+      {
+        "lower": "0.001803734855197100608912334240001576722030711898741029650192665061694266139150328014038",
+        "upper": "0.001803734855197100608912334240001576722030711898741029650192665061694266149066475486634"
+      },
+      {
+        "lower": "0.001031728486767426148158213747776785267142038328379984234160947579169374032537656007344",
+        "upper": "0.001031728486767426148158213747776785267142038328379984234160947579169374098147223104555"
+      },
+      {
+        "lower": "0.0001798989234636445854944869890986466385304715868303939932215788517516604354397283856907",
+        "upper": "0.0001798989234636445854944869890986466385304715868303939932215788517516604924264123575439"
+      }
+    ],
+    "all_nonconstant_coefficients_strictly_positive": true
+  },
+  "sixth_derivative_certificate": {
+    "bell_decomposition": "(F o kappa)^(6)=sum_{k=1}^6 F^(k)(kappa(t))*B_{6,k}; F=kappa^31",
+    "b62_bound": {
+      "claim": "B_6,2(kappa)(t) >= -kappa^(6)(t)/4 for -1<t<0",
+      "trigonometric_inequality": "phi*cot(phi) <= (1+2*cos(phi))/3 on [0,pi/2]",
+      "R_polynomial": "24*c**3 - 28*c**2 + 36*c + 3",
+      "R_bernstein_coefficients_on_0_1": [
+        "3",
+        "15",
+        "53/3",
+        "35"
+      ],
+      "squared_polynomial": "9216*c**12 - 21504*c**11 + 12544*c**10 + 34560*c**9 - 69696*c**8 + 28800*c**7 + 88464*c**6 - 78720*c**5 + 64064*c**4 + 40320*c**3 - 5952*c**2 - 3456*c + 585",
+      "bernstein_subintervals": [
+        {
+          "interval": [
+            "0",
+            "1/4"
+          ],
+          "minimum_bernstein_coefficient": "1267463/45056",
+          "all_positive": true
+        },
+        {
+          "interval": [
+            "1/4",
+            "1/2"
+          ],
+          "minimum_bernstein_coefficient": "2864025/16384",
+          "all_positive": true
+        },
+        {
+          "interval": [
+            "1/2",
+            "3/4"
+          ],
+          "minimum_bernstein_coefficient": "10719/2",
+          "all_positive": true
+        },
+        {
+          "interval": [
+            "3/4",
+            "1"
+          ],
+          "minimum_bernstein_coefficient": "467619201/16384",
+          "all_positive": true
+        }
+      ],
+      "exact": true
+    },
+    "outer_ratio_bound": {
+      "claim": "For F=kappa composed 31 times, F''(u)/F'(u) < 9/4 on 0<=u<=1/pi",
+      "boxes": [
+        {
+          "input_interval": [
+            "0",
+            "0.1"
+          ],
+          "ratio_interval": {
+            "lower": "1.6854800037622189945932927261567274891951005124860531651794482641619708497422892498",
+            "upper": "1.895445098232522159462594292900311028768945350346961185114263892890122434836471218461"
+          }
+        },
+        {
+          "input_interval": [
+            "0.1",
+            "0.2"
+          ],
+          "ratio_interval": {
+            "lower": "1.789885472324485232420982686169060459441068312586768861771238026444552480489258222796",
+            "upper": "2.035550764287334817109838195444577671424257190769409313934052001793402641273764579816"
+          }
+        },
+        {
+          "input_interval": [
+            "0.2",
+            "0.3"
+          ],
+          "ratio_interval": {
+            "lower": "1.929735361961909183363122928927230665448309004015126145560660714240310731944290389832",
+            "upper": "2.226032569855077694541983999275615705932171269702189314407833815053812517253956751291"
+          }
+        },
+        {
+          "input_interval": [
+            "0.3",
+            "1/pi"
+          ],
+          "ratio_interval": {
+            "lower": "2.160532005565629184208706624394240892722414385715394981552414539040940509108749027621",
+            "upper": "2.221904597600112895900351766155312662101197695617621119752194351799301654722366885244"
+          }
+        }
+      ],
+      "maximum_certified_upper": "2.226032569855077694541983999275615705932171269702189314407833815053812517253956751291",
+      "comparison_bound": "9/4",
+      "interval_precision_decimal_digits": 80,
+      "passed": true
+    },
+    "other_bell_terms": {
+      "B63_nonnegative": "analytic proof using r=sin(phi)/phi<=1",
+      "B64_nonnegative": "analytic proof using sin(phi)>=phi*cos(phi)",
+      "B65_B66_positive": true
+    },
+    "conclusion": "For t>=0 every derivative of kappa through order 6 is nonnegative. For t<0, B63,B64,B65,B66 are nonnegative, B62>=-B61/4, and F''/F'<9/4. Hence K32^(6)>=F'B61*(1-9/16)>0."
+  },
+  "hermite_remainder": "K32(t)-h_*(t)=K32^(6)(xi)/6!*product_j(t-t_j)^2 >=0 for t in (-1,1); endpoint values follow by continuity.",
+  "primal_dual_equality": "Moment matching gives q_l=sum_j lambda_j G_l(t_j) for l=0..5. Contact gives sum_l q_l c_l=sum_j lambda_j K32(t_j), exactly the dual objective. The prior T16 certificate gives strict dual feasibility for every l>=6.",
+  "theorem": "Let h_* be the unique degree-at-most-5 polynomial satisfying h_*(t_j)=K_32(t_j) and h_*'(t_j)=K_32'(t_j) at the three roots of 22102t^3+21930t^2-87t-85. Then h_*<=K_32 on [-1,1], its nonconstant normalized-Gegenbauer coefficients are positive, and it is an optimizer of the unrestricted all-degree Delsarte auxiliary LP.",
+  "scope": {
+    "proved": "all-degree auxiliary-LP optimality of h_* for d=256, depth=32, N=66048",
+    "not_implied": [
+      "exact optimality of the Kerdock cubature rule",
+      "finite-width optimality",
+      "signed-weight arbitrary-node optimality",
+      "network-adaptive or nonlinear estimator impossibility"
+    ]
+  },
+  "trust_base": {
+    "python": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
+    "platform": "Linux-6.12.13-x86_64-with-glibc2.41",
+    "mpmath": "1.3.0",
+    "sympy": "1.14.0",
+    "interval_decimal_digits": 80,
+    "exact_parts": "Fraction root bisection and rational Bernstein coefficients"
+  },
+  "certificate_sha256": "ff56800664b594f0d9894a2c88cd234daf3f4a15231921c5ab93cc52ebf1c3b2"
+}

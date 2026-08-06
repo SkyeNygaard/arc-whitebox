@@ -1,0 +1,63 @@
+{
+  "theorem_attacked": "T29 free-total-mass uniqueness and scale audit",
+  "counterexample": {
+    "field": "Y(x)=Z, a square-integrable constant random field",
+    "gram": "G=11^T",
+    "N": 4,
+    "alpha": "1",
+    "uniform_scaled_weights": [
+      "0.25",
+      "0.25",
+      "0.25",
+      "0.25"
+    ],
+    "nonuniform_weights": [
+      "1.25",
+      "-0.75",
+      "0.25",
+      "0.25"
+    ],
+    "nonuniform_zero_sum_perturbation": [
+      "1",
+      "-1",
+      "0",
+      "0"
+    ],
+    "uniform_total_mass": "1.00",
+    "nonuniform_total_mass": "1.00",
+    "uniform_quadratic_energy": "1.0000",
+    "nonuniform_quadratic_energy": "1.0000",
+    "uniform_risk": "0.0000",
+    "nonuniform_risk": "0.0000",
+    "conclusion": "For the constant field alpha_*=1 and both weights integrate Y exactly with zero risk; the nonuniform vector is therefore a genuine minimizer."
+  },
+  "correct_minimizer_set": "alpha_* u + (ker G intersect 1^perp); uniqueness requires positive definiteness on 1^perp",
+  "rigorous_scale_intervals": {
+    "A0": [
+      "0.974729989541714712312258085264191196422089014048652080604140725421300908486529660854678526902154912616533635138269820861",
+      "0.974729989541714712312486955297461289338001476427951954852887889789982249288958791439364611154133167265972721306531007161"
+    ],
+    "E_X": [
+      "0.9747302329077504666127808462108414633985481621607157811601376765058907",
+      "0.9747302329077504666127808462108414633985481621607157811601376765059437"
+    ],
+    "alpha_star": [
+      "0.9999997503247282806575775152106693242078055934570892737119419781127573348423982458153867922809665773",
+      "0.9999997503247282806578123186727383553894064150225101579831688257095440158822485169543743663102739064"
+    ],
+    "E_X_minus_A0": [
+      "2.433660357543002938909133801740605466857327638263072497867159084507110412085606353888458668327340272E-7",
+      "2.433660357543005227609466502669764591481120637005559969510846427915134703391453214730978450873834665E-7"
+    ],
+    "relative_reduction_delta_over_E_X": [
+      "2.496752717193421876813272616446105935849774898420168311742904559841041756351295822810232440685380070E-7",
+      "2.496752717193424224847893306757921944065429107262880580218872426651711776021006565731527233064550838E-7"
+    ],
+    "absolute_MSE_reduction_delta_squared_over_E_X": [
+      "6.076248110421407185942392541249877746033304752093629948887543028848681828660074530222784416932215021E-14",
+      "6.076248110421418614579941566322332259860810989150270811050237958642777769620904616287633286385410007E-14"
+    ]
+  },
+  "precision_finding": "Printing ~28 digits of alpha from 16-digit displayed inputs was unsupported; the rigorous interval above is the citable replacement.",
+  "pass": true
+}

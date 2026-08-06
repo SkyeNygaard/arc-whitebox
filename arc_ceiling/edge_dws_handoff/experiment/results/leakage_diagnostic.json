@@ -1,0 +1,12 @@
+{
+  "status": "pass_unit_tests",
+  "checks": [
+    "feature_inputs exposes only weights, node_observables, and layer_observables",
+    "shuffling target_coeffs, baseline_error, and replay_jacobian leaves model inputs unchanged",
+    "a base network listed in multiple splits is rejected",
+    "globally exposed/disallowed base-network IDs are rejected",
+    "label bundle and split registry hashes must match",
+    "all rotations inherit the single split assigned to their base_network_id"
+  ],
+  "real_data_qualification": "The canonical split registry is absent, so real overlap counts and split sizes could not be verified."
+}

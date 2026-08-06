@@ -1,0 +1,8 @@
+{
+  "frozen_before_calibration_or_validation_generation": true,
+  "initial_truth_n_per_half": 16384,
+  "refined_truth_n_per_half": 65536,
+  "refine_network_ids": [5009,5010,5011,5012,5013,5014,5015,5016,5017],
+  "rationale": "All calibration and validation base networks receive uniform higher-quality independent references; no outcome-dependent selection.",
+  "reference_seed_formula": ["71000000+2*network_id", "71000001+2*network_id"]
+}

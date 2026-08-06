@@ -1,0 +1,40 @@
+{
+  "seed": 2026072907,
+  "device": "cpu",
+  "model": {
+    "edge_channels": 2,
+    "node_channels": 2,
+    "token_channels": 16,
+    "passes": 1,
+    "transformer_heads": 4
+  },
+  "training": {
+    "epochs": 3,
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "gradient_accumulation": 4,
+    "grad_clip": 1.0,
+    "aux_coefficient_weight": 0.05,
+    "confidence_weight": 0.01
+  },
+  "ridge_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "cost": {
+    "baseline_effective_compute_B": 175.62,
+    "anchor_extra_compute_B": 9.397600256,
+    "replay_extra_compute_B": 0.0,
+    "challenge_budget_B": 272.0
+  },
+  "gate": {
+    "minimum_raw_gain": 1.15,
+    "adjusted_ci_lower_strictly_above": 1.0,
+    "maximum_worst_candidate_over_baseline": 1.1,
+    "require_inference_cost_repaid": true
+  },
+  "status": "reduced_capacity_cpu_diagnostic_not_frozen_full_architecture"
+}

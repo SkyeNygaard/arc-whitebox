@@ -1,0 +1,23 @@
+{
+  "frozen_at": "2026-07-30T10:15:00-04:00",
+  "selection_data": {
+    "fit": [3000, 3001, 3002, 3003],
+    "exploratory_validation": [3004, 3005, 3006, 3007, 3008, 3009, 3010, 3011, 3012, 3013, 3014, 3015, 3016, 3017, 3018, 3019]
+  },
+  "terminal_synthetic_holdout": [3020, 3021, 3022, 3023, 3024, 3025, 3026, 3027, 3028, 3029, 3030, 3031, 3032, 3033, 3034, 3035],
+  "candidates": [
+    {
+      "name": "poisson_mid_r_0.1",
+      "stored_prediction_key": "poisson_mid_r_0.1",
+      "global_alpha": 1.9723470226381523,
+      "reason": "best pooled exploratory validation among frozen Poisson arms; 0.92858 raw, 0.90722 cross, 9/16 wins, 1.21705 worst"
+    },
+    {
+      "name": "nonlinear_k4_m64_b0_0.001",
+      "stored_prediction_key": "nonlinear_k4_m64_b0_0.001",
+      "global_alpha": -2.0,
+      "reason": "best pooled exploratory validation among nonlinear surrogate arms; 0.97115 raw, 0.96252 cross, 10/16 wins, 1.21552 worst"
+    }
+  ],
+  "decision_rule": "No refit, no selection, no abstention, no combination. Continue only if terminal pooled raw and cross ratios are below 0.95, at least 10/16 wins, and worst ratio below 1.25."
+}

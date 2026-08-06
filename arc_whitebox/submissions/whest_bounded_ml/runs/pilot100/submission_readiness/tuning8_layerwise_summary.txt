@@ -1,0 +1,19 @@
+split: valid
+upstream MSE: 8.277462188376484e-05
+a0.35_b0_g0.5: gain=1.502x win=87.5% median=1.512 worst=0.524 guard=0.0% MSE=5.51049e-05
+a0.35_b0.5_g0.5: gain=1.391x win=87.5% median=1.405 worst=0.677 guard=0.0% MSE=5.95006e-05
+a0.5_b0_g0.5: gain=1.010x win=62.5% median=1.072 worst=0.298 guard=0.0% MSE=8.19764e-05
+best: a0.35_b0_g0.5 {
+  "mlps": 8,
+  "final_mean_mse": 5.510486285667354e-05,
+  "median_final_mean_mse": 5.376054774575556e-05,
+  "runtime_seconds": 32.86325016757473,
+  "baseline_mean_mse": 8.277462188376484e-05,
+  "gain_vs_upstream": 1.502129169599055,
+  "fraction_mlps_improved": 0.875,
+  "median_mlp_gain": 1.5116256337859841,
+  "worst_mlp_gain": 0.5243871716771495,
+  "fraction_guard_activated": 0.0,
+  "minimum_safety_scale": 1.0
+}
+VERDICT: SUBMISSION PORT IS JUSTIFIED

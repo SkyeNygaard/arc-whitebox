@@ -1,0 +1,2588 @@
+{
+  "method": "Strassen/Winograd on rectangular or 258-square-block Kerdock activations",
+  "selection_only": true,
+  "indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "width": 256,
+  "depth": 32,
+  "points": 66048,
+  "square_blocks": 258,
+  "micro_rows": 66048,
+  "budget": 272000000000,
+  "lambda_flops_per_second": 100000000000.0,
+  "microbenchmark": [
+    {
+      "layout": "rectangular",
+      "schedule": "hybrid_p3",
+      "variant": "winograd",
+      "recursion_depth": 5,
+      "leaf_size": 8,
+      "leaf_products": 16807,
+      "tracked_flops": 5639804672,
+      "tracked_flop_ratio_to_blas": 0.6527449585381301,
+      "wall_time_s_median": 1.0324617081787437,
+      "residual_wall_time_s_median": 0.002010879572480917,
+      "max_abs_difference": 0.0001038089394569397,
+      "rms_difference": 8.84675874161295e-06,
+      "operation_breakdown": {
+        "asarray": {
+          "flop_cost": 0,
+          "calls": 2,
+          "flopscope_backend_time_s": 2.9997900128364563e-06,
+          "flopscope_overhead_time_s": 8.475012145936489e-05
+        },
+        "add": {
+          "flop_cost": 608087424,
+          "calls": 77,
+          "flopscope_backend_time_s": 0.253430500626564,
+          "flopscope_overhead_time_s": 0.004230496706441045
+        },
+        "subtract": {
+          "flop_cost": 348825344,
+          "calls": 88,
+          "flopscope_backend_time_s": 0.30168083496391773,
+          "flopscope_overhead_time_s": 0.004091207170858979
+        },
+        "stack": {
+          "flop_cost": 172655616,
+          "calls": 6,
+          "flopscope_backend_time_s": 0.06568141607567668,
+          "flopscope_overhead_time_s": 0.00023658457212150097
+        },
+        "matmul": {
+          "flop_cost": 4162757760,
+          "calls": 49,
+          "flopscope_backend_time_s": 0.1528542055748403,
+          "flopscope_overhead_time_s": 0.005281749647110701
+        },
+        "block": {
+          "flop_cost": 347478528,
+          "calls": 11,
+          "flopscope_backend_time_s": 0.24210983258672059,
+          "flopscope_overhead_time_s": 0.0007290844805538654
+        }
+      }
+    }
+  ],
+  "selection": [
+    {
+      "index": 0,
+      "name": "daniel-harrison",
+      "layout": "rectangular",
+      "schedule": "hybrid_p3",
+      "variant": "winograd",
+      "recursion_depth": 5,
+      "baseline_raw_final_mse": 1.7326181615552655e-07,
+      "fast_raw_final_mse": 1.7292034610838877e-07,
+      "raw_mse_delta": -3.4147004713778104e-10,
+      "drift": {
+        "elapsed_s": 24.289008125197142,
+        "final_mean_max_abs_difference": 5.868842093970095e-06,
+        "final_mean_rms_difference": 9.59356708393483e-07,
+        "total_gate_mismatches": 2950,
+        "maximum_layer_gate_mismatch_fraction": 9.46281492248062e-06,
+        "per_layer": [
+          {
+            "layer": 1,
+            "preactivation_max_abs_difference": 0.00011551380157470703,
+            "preactivation_rms_difference": 9.94171130639464e-06,
+            "gate_mismatches": 31,
+            "gate_mismatch_fraction": 1.8334203912306202e-06
+          },
+          {
+            "layer": 2,
+            "preactivation_max_abs_difference": 0.00016045570373535156,
+            "preactivation_rms_difference": 1.3704803352603573e-05,
+            "gate_mismatches": 44,
+            "gate_mismatch_fraction": 2.6022741036821705e-06
+          },
+          {
+            "layer": 3,
+            "preactivation_max_abs_difference": 0.00016516447067260742,
+            "preactivation_rms_difference": 1.6473101039661826e-05,
+            "gate_mismatches": 50,
+            "gate_mismatch_fraction": 2.957129663275194e-06
+          },
+          {
+            "layer": 4,
+            "preactivation_max_abs_difference": 0.00017464160919189453,
+            "preactivation_rms_difference": 1.7644684429708722e-05,
+            "gate_mismatches": 87,
+            "gate_mismatch_fraction": 5.145405614098837e-06
+          },
+          {
+            "layer": 5,
+            "preactivation_max_abs_difference": 0.0001866370439529419,
+            "preactivation_rms_difference": 1.8572181780123436e-05,
+            "gate_mismatches": 70,
+            "gate_mismatch_fraction": 4.139981528585271e-06
+          },
+          {
+            "layer": 6,
+            "preactivation_max_abs_difference": 0.00018334388732910156,
+            "preactivation_rms_difference": 1.9181175197222674e-05,
+            "gate_mismatches": 72,
+            "gate_mismatch_fraction": 4.258266715116279e-06
+          },
+          {
+            "layer": 7,
+            "preactivation_max_abs_difference": 0.00021886825561523438,
+            "preactivation_rms_difference": 2.0287484188841535e-05,
+            "gate_mismatches": 105,
+            "gate_mismatch_fraction": 6.209972292877907e-06
+          },
+          {
+            "layer": 8,
+            "preactivation_max_abs_difference": 0.00022459030151367188,
+            "preactivation_rms_difference": 2.1272268203567834e-05,
+            "gate_mismatches": 74,
+            "gate_mismatch_fraction": 4.376551901647287e-06
+          },
+          {
+            "layer": 9,
+            "preactivation_max_abs_difference": 0.0002200603485107422,
+            "preactivation_rms_difference": 2.120547646446674e-05,
+            "gate_mismatches": 70,
+            "gate_mismatch_fraction": 4.139981528585271e-06
+          },
+          {
+            "layer": 10,
+            "preactivation_max_abs_difference": 0.0002357959747314453,
+            "preactivation_rms_difference": 2.157567576627533e-05,
+            "gate_mismatches": 84,
+            "gate_mismatch_fraction": 4.967977834302326e-06
+          },
+          {
+            "layer": 11,
+            "preactivation_max_abs_difference": 0.0002486109733581543,
+            "preactivation_rms_difference": 2.1169025676880293e-05,
+            "gate_mismatches": 86,
+            "gate_mismatch_fraction": 5.086263020833333e-06
+          },
+          {
+            "layer": 12,
+            "preactivation_max_abs_difference": 0.0002326369285583496,
+            "preactivation_rms_difference": 2.177946189721488e-05,
+            "gate_mismatches": 109,
+            "gate_mismatch_fraction": 6.446542665939922e-06
+          },
+          {
+            "layer": 13,
+            "preactivation_max_abs_difference": 0.00027751922607421875,
+            "preactivation_rms_difference": 2.3146645703231228e-05,
+            "gate_mismatches": 127,
+            "gate_mismatch_fraction": 7.511109344718992e-06
+          },
+          {
+            "layer": 14,
+            "preactivation_max_abs_difference": 0.00027871131896972656,
+            "preactivation_rms_difference": 2.418145558650622e-05,
+            "gate_mismatches": 86,
+            "gate_mismatch_fraction": 5.086263020833333e-06
+          },
+          {
+            "layer": 15,
+            "preactivation_max_abs_difference": 0.0003235042095184326,
+            "preactivation_rms_difference": 2.3651022668441252e-05,
+            "gate_mismatches": 95,
+            "gate_mismatch_fraction": 5.618546360222868e-06
+          },
+          {
+            "layer": 16,
+            "preactivation_max_abs_difference": 0.0002652406692504883,
+            "preactivation_rms_difference": 2.3128163065722647e-05,
+            "gate_mismatches": 107,
+            "gate_mismatch_fraction": 6.328257479408915e-06
+          },
+          {
+            "layer": 17,
+            "preactivation_max_abs_difference": 0.00030040740966796875,
+            "preactivation_rms_difference": 2.4222923116471128e-05,
+            "gate_mismatches": 127,
+            "gate_mismatch_fraction": 7.511109344718992e-06
+          },
+          {
+            "layer": 18,
+            "preactivation_max_abs_difference": 0.0003006458282470703,
+            "preactivation_rms_difference": 2.4254019859967215e-05,
+            "gate_mismatches": 84,
+            "gate_mismatch_fraction": 4.967977834302326e-06
+          },
+          {
+            "layer": 19,
+            "preactivation_max_abs_difference": 0.0002982616424560547,
+            "preactivation_rms_difference": 2.5024856160496123e-05,
+            "gate_mismatches": 79,
+            "gate_mismatch_fraction": 4.672264867974806e-06
+          },
+          {
+            "layer": 20,
+            "preactivation_max_abs_difference": 0.0003237724304199219,
+            "preactivation_rms_difference": 2.5032706722186296e-05,
+            "gate_mismatches": 81,
+            "gate_mismatch_fraction": 4.790550054505814e-06
+          },
+          {
+            "layer": 21,
+            "preactivation_max_abs_difference": 0.0003628730773925781,
+            "preactivation_rms_difference": 2.714509633869448e-05,
+            "gate_mismatches": 96,
+            "gate_mismatch_fraction": 5.677688953488372e-06
+          },
+          {
+            "layer": 22,
+            "preactivation_max_abs_difference": 0.0003917217254638672,
+            "preactivation_rms_difference": 2.5811358989973562e-05,
+            "gate_mismatches": 102,
+            "gate_mismatch_fraction": 6.032544513081395e-06
+          },
+          {
+            "layer": 23,
+            "preactivation_max_abs_difference": 0.00038433074951171875,
+            "preactivation_rms_difference": 2.6834002948362567e-05,
+            "gate_mismatches": 97,
+            "gate_mismatch_fraction": 5.736831546753876e-06
+          },
+          {
+            "layer": 24,
+            "preactivation_max_abs_difference": 0.00033026933670043945,
+            "preactivation_rms_difference": 2.6490449036958382e-05,
+            "gate_mismatches": 124,
+            "gate_mismatch_fraction": 7.333681564922481e-06
+          },
+          {
+            "layer": 25,
+            "preactivation_max_abs_difference": 0.0003133714199066162,
+            "preactivation_rms_difference": 2.535133558646578e-05,
+            "gate_mismatches": 160,
+            "gate_mismatch_fraction": 9.46281492248062e-06
+          },
+          {
+            "layer": 26,
+            "preactivation_max_abs_difference": 0.0003628730773925781,
+            "preactivation_rms_difference": 2.6192187321375407e-05,
+            "gate_mismatches": 126,
+            "gate_mismatch_fraction": 7.451966751453488e-06
+          },
+          {
+            "layer": 27,
+            "preactivation_max_abs_difference": 0.00032806396484375,
+            "preactivation_rms_difference": 2.7134832583746187e-05,
+            "gate_mismatches": 115,
+            "gate_mismatch_fraction": 6.801398225532946e-06
+          },
+          {
+            "layer": 28,
+            "preactivation_max_abs_difference": 0.00035887956619262695,
+            "preactivation_rms_difference": 2.7087524688742886e-05,
+            "gate_mismatches": 117,
+            "gate_mismatch_fraction": 6.919683412063953e-06
+          },
+          {
+            "layer": 29,
+            "preactivation_max_abs_difference": 0.0003682374954223633,
+            "preactivation_rms_difference": 2.596484397875432e-05,
+            "gate_mismatches": 122,
+            "gate_mismatch_fraction": 7.215396378391473e-06
+          },
+          {
+            "layer": 30,
+            "preactivation_max_abs_difference": 0.0004067420959472656,
+            "preactivation_rms_difference": 2.7288434575220685e-05,
+            "gate_mismatches": 116,
+            "gate_mismatch_fraction": 6.86054081879845e-06
+          },
+          {
+            "layer": 31,
+            "preactivation_max_abs_difference": 0.00041297078132629395,
+            "preactivation_rms_difference": 2.6574995487162006e-05,
+            "gate_mismatches": 107,
+            "gate_mismatch_fraction": 6.328257479408915e-06
+          }
+        ]
+      },
+      "flopscope_profile": {
+        "tracked_flops": 175822834176,
+        "wall_time_s": 23.27278466708958,
+        "backend_time_s": 22.917795579414815,
+        "overhead_time_s": 0.295758624561131,
+        "residual_wall_time_s": 0.05923046311363578,
+        "effective_compute": 181745880487.3636,
+        "score_multiplier": 0.6681833841447191,
+        "combined_budget_exhausted": false,
+        "instrumented_raw_final_mse": 1.7292034610838877e-07,
+        "instrumented_adjusted_score": 1.1554250205017931e-07,
+        "instrumented_vs_numpy_max_abs_difference": 0.0,
+        "operation_breakdown": {
+          "asarray": {
+            "flop_cost": 0,
+            "calls": 34,
+            "flopscope_backend_time_s": 6.667105481028557e-06,
+            "flopscope_overhead_time_s": 0.00029499828815460205
+          },
+          "astype": {
+            "flop_cost": 35913728,
+            "calls": 33,
+            "flopscope_backend_time_s": 0.003192248987033963,
+            "flopscope_overhead_time_s": 0.00045937602408230305
+          },
+          "matmul": {
+            "flop_cost": 129078979456,
+            "calls": 1520,
+            "flopscope_backend_time_s": 4.046964150620624,
+            "flopscope_overhead_time_s": 0.08793822885490954
+          },
+          "multiply": {
+            "flop_cost": 16974080,
+            "calls": 6,
+            "flopscope_backend_time_s": 0.0025571659207344055,
+            "flopscope_overhead_time_s": 0.00019775028340518475
+          },
+          "reshape": {
+            "flop_cost": 151126016,
+            "calls": 18,
+            "flopscope_backend_time_s": 4.5248307287693024e-05,
+            "flopscope_overhead_time_s": 0.0003258346114307642
+          },
+          "add": {
+            "flop_cost": 18884264576,
+            "calls": 2395,
+            "flopscope_backend_time_s": 5.3628021706826985,
+            "flopscope_overhead_time_s": 0.09058721736073494
+          },
+          "subtract": {
+            "flop_cost": 10847140096,
+            "calls": 2736,
+            "flopscope_backend_time_s": 7.34665513294749,
+            "flopscope_overhead_time_s": 0.09104246296919882
+          },
+          "stack": {
+            "flop_cost": 5436357632,
+            "calls": 197,
+            "flopscope_backend_time_s": 0.7623042487539351,
+            "flopscope_overhead_time_s": 0.006783207645639777
+          },
+          "negative": {
+            "flop_cost": 8388608,
+            "calls": 1,
+            "flopscope_backend_time_s": 0.000937500037252903,
+            "flopscope_overhead_time_s": 5.445792339742184e-05
+          },
+          "concatenate": {
+            "flop_cost": 16908288,
+            "calls": 1,
+            "flopscope_backend_time_s": 0.0012821669224649668,
+            "flopscope_overhead_time_s": 2.095801755785942e-05
+          },
+          "maximum": {
+            "flop_cost": 541065216,
+            "calls": 32,
+            "flopscope_backend_time_s": 0.21549787535332143,
+            "flopscope_overhead_time_s": 0.0012596657034009695
+          },
+          "block": {
+            "flop_cost": 10771834368,
+            "calls": 341,
+            "flopscope_backend_time_s": 5.1719644635450095,
+            "flopscope_overhead_time_s": 0.014979213243350387
+          },
+          "mean": {
+            "flop_cost": 33816576,
+            "calls": 1,
+            "flopscope_backend_time_s": 0.003547457978129387,
+            "flopscope_overhead_time_s": 0.0014322500210255384
+          },
+          "sum": {
+            "flop_cost": 65280,
+            "calls": 1,
+            "flopscope_backend_time_s": 1.8707942217588425e-05,
+            "flopscope_overhead_time_s": 0.0001505422405898571
+          },
+          "sqrt": {
+            "flop_cost": 256,
+            "calls": 1,
+            "flopscope_backend_time_s": 2.375105395913124e-06,
+            "flopscope_overhead_time_s": 2.1209008991718292e-05
+          },
+          "zeros": {
+            "flop_cost": 0,
+            "calls": 32,
+            "flopscope_backend_time_s": 1.7999205738306046e-05,
+            "flopscope_overhead_time_s": 0.00013641919940710068
+          }
+        }
+      }
+    },
+    {
+      "index": 1,
+      "name": "dustin-robinson",
+      "layout": "rectangular",
+      "schedule": "hybrid_p3",
+      "variant": "winograd",
+      "recursion_depth": 5,
+      "baseline_raw_final_mse": 1.711441751331144e-07,
+      "fast_raw_final_mse": 1.7065237481309487e-07,
+      "raw_mse_delta": -4.918003200195207e-10,
+      "drift": {
+        "elapsed_s": 24.2337551668752,
+        "final_mean_max_abs_difference": 7.55092518955891e-06,
+        "final_mean_rms_difference": 1.5264161248716362e-06,
+        "total_gate_mismatches": 3159,
+        "maximum_layer_gate_mismatch_fraction": 9.344529735949612e-06,
+        "per_layer": [
+          {
+            "layer": 1,
+            "preactivation_max_abs_difference": 0.0001201629638671875,
+            "preactivation_rms_difference": 1.0394105700705129e-05,
+            "gate_mismatches": 28,
+            "gate_mismatch_fraction": 1.6559926114341085e-06
+          },
+          {
+            "layer": 2,
+            "preactivation_max_abs_difference": 0.00016772747039794922,
+            "preactivation_rms_difference": 1.3906339482949412e-05,
+            "gate_mismatches": 47,
+            "gate_mismatch_fraction": 2.779701883478682e-06
+          },
+          {
+            "layer": 3,
+            "preactivation_max_abs_difference": 0.00020766258239746094,
+            "preactivation_rms_difference": 1.6748484188010306e-05,
+            "gate_mismatches": 58,
+            "gate_mismatch_fraction": 3.430270409399225e-06
+          },
+          {
+            "layer": 4,
+            "preactivation_max_abs_difference": 0.00022482872009277344,
+            "preactivation_rms_difference": 1.8345019179535223e-05,
+            "gate_mismatches": 63,
+            "gate_mismatch_fraction": 3.725983375726744e-06
+          },
+          {
+            "layer": 5,
+            "preactivation_max_abs_difference": 0.00021219253540039062,
+            "preactivation_rms_difference": 1.9643973653996967e-05,
+            "gate_mismatches": 65,
+            "gate_mismatch_fraction": 3.844268562257752e-06
+          },
+          {
+            "layer": 6,
+            "preactivation_max_abs_difference": 0.0002244114875793457,
+            "preactivation_rms_difference": 2.0939203583513434e-05,
+            "gate_mismatches": 62,
+            "gate_mismatch_fraction": 3.6668407824612405e-06
+          },
+          {
+            "layer": 7,
+            "preactivation_max_abs_difference": 0.00025200843811035156,
+            "preactivation_rms_difference": 2.2242244671409375e-05,
+            "gate_mismatches": 70,
+            "gate_mismatch_fraction": 4.139981528585271e-06
+          },
+          {
+            "layer": 8,
+            "preactivation_max_abs_difference": 0.00024890899658203125,
+            "preactivation_rms_difference": 2.347281929769173e-05,
+            "gate_mismatches": 72,
+            "gate_mismatch_fraction": 4.258266715116279e-06
+          },
+          {
+            "layer": 9,
+            "preactivation_max_abs_difference": 0.0002638101577758789,
+            "preactivation_rms_difference": 2.462673979783661e-05,
+            "gate_mismatches": 77,
+            "gate_mismatch_fraction": 4.553979681443798e-06
+          },
+          {
+            "layer": 10,
+            "preactivation_max_abs_difference": 0.0002961158752441406,
+            "preactivation_rms_difference": 2.617435891939702e-05,
+            "gate_mismatches": 102,
+            "gate_mismatch_fraction": 6.032544513081395e-06
+          },
+          {
+            "layer": 11,
+            "preactivation_max_abs_difference": 0.00031954050064086914,
+            "preactivation_rms_difference": 2.6971432026076663e-05,
+            "gate_mismatches": 94,
+            "gate_mismatch_fraction": 5.559403766957364e-06
+          },
+          {
+            "layer": 12,
+            "preactivation_max_abs_difference": 0.00031280517578125,
+            "preactivation_rms_difference": 2.7993438568152282e-05,
+            "gate_mismatches": 86,
+            "gate_mismatch_fraction": 5.086263020833333e-06
+          },
+          {
+            "layer": 13,
+            "preactivation_max_abs_difference": 0.0003533363342285156,
+            "preactivation_rms_difference": 2.9248416995536064e-05,
+            "gate_mismatches": 89,
+            "gate_mismatch_fraction": 5.263690800629845e-06
+          },
+          {
+            "layer": 14,
+            "preactivation_max_abs_difference": 0.00036716461181640625,
+            "preactivation_rms_difference": 2.936462911301292e-05,
+            "gate_mismatches": 129,
+            "gate_mismatch_fraction": 7.62939453125e-06
+          },
+          {
+            "layer": 15,
+            "preactivation_max_abs_difference": 0.0004277229309082031,
+            "preactivation_rms_difference": 3.110361858367567e-05,
+            "gate_mismatches": 130,
+            "gate_mismatch_fraction": 7.688537124515504e-06
+          },
+          {
+            "layer": 16,
+            "preactivation_max_abs_difference": 0.00039374828338623047,
+            "preactivation_rms_difference": 3.243810523266881e-05,
+            "gate_mismatches": 114,
+            "gate_mismatch_fraction": 6.742255632267442e-06
+          },
+          {
+            "layer": 17,
+            "preactivation_max_abs_difference": 0.0003821849822998047,
+            "preactivation_rms_difference": 3.270099920921152e-05,
+            "gate_mismatches": 108,
+            "gate_mismatch_fraction": 6.387400072674419e-06
+          },
+          {
+            "layer": 18,
+            "preactivation_max_abs_difference": 0.00044536590576171875,
+            "preactivation_rms_difference": 3.4162921417576945e-05,
+            "gate_mismatches": 138,
+            "gate_mismatch_fraction": 8.161677870639534e-06
+          },
+          {
+            "layer": 19,
+            "preactivation_max_abs_difference": 0.0004253387451171875,
+            "preactivation_rms_difference": 3.470621802410061e-05,
+            "gate_mismatches": 113,
+            "gate_mismatch_fraction": 6.683113039001938e-06
+          },
+          {
+            "layer": 20,
+            "preactivation_max_abs_difference": 0.00048422813415527344,
+            "preactivation_rms_difference": 3.36309437781673e-05,
+            "gate_mismatches": 138,
+            "gate_mismatch_fraction": 8.161677870639534e-06
+          },
+          {
+            "layer": 21,
+            "preactivation_max_abs_difference": 0.0004373788833618164,
+            "preactivation_rms_difference": 3.362569387983739e-05,
+            "gate_mismatches": 124,
+            "gate_mismatch_fraction": 7.333681564922481e-06
+          },
+          {
+            "layer": 22,
+            "preactivation_max_abs_difference": 0.0004458427429199219,
+            "preactivation_rms_difference": 3.355608428915788e-05,
+            "gate_mismatches": 120,
+            "gate_mismatch_fraction": 7.097111191860465e-06
+          },
+          {
+            "layer": 23,
+            "preactivation_max_abs_difference": 0.0004975795745849609,
+            "preactivation_rms_difference": 3.491259395058526e-05,
+            "gate_mismatches": 132,
+            "gate_mismatch_fraction": 7.806822311046512e-06
+          },
+          {
+            "layer": 24,
+            "preactivation_max_abs_difference": 0.0004124939441680908,
+            "preactivation_rms_difference": 3.4567613757237114e-05,
+            "gate_mismatches": 147,
+            "gate_mismatch_fraction": 8.69396121002907e-06
+          },
+          {
+            "layer": 25,
+            "preactivation_max_abs_difference": 0.0005407333374023438,
+            "preactivation_rms_difference": 3.576138960273677e-05,
+            "gate_mismatches": 121,
+            "gate_mismatch_fraction": 7.156253785125969e-06
+          },
+          {
+            "layer": 26,
+            "preactivation_max_abs_difference": 0.0005199909210205078,
+            "preactivation_rms_difference": 3.498214449667515e-05,
+            "gate_mismatches": 158,
+            "gate_mismatch_fraction": 9.344529735949612e-06
+          },
+          {
+            "layer": 27,
+            "preactivation_max_abs_difference": 0.000517725944519043,
+            "preactivation_rms_difference": 3.471046653546602e-05,
+            "gate_mismatches": 115,
+            "gate_mismatch_fraction": 6.801398225532946e-06
+          },
+          {
+            "layer": 28,
+            "preactivation_max_abs_difference": 0.0005042552947998047,
+            "preactivation_rms_difference": 3.414992769249357e-05,
+            "gate_mismatches": 127,
+            "gate_mismatch_fraction": 7.511109344718992e-06
+          },
+          {
+            "layer": 29,
+            "preactivation_max_abs_difference": 0.0004832744598388672,
+            "preactivation_rms_difference": 3.472657813112691e-05,
+            "gate_mismatches": 105,
+            "gate_mismatch_fraction": 6.209972292877907e-06
+          },
+          {
+            "layer": 30,
+            "preactivation_max_abs_difference": 0.0007281303405761719,
+            "preactivation_rms_difference": 3.5439219011302174e-05,
+            "gate_mismatches": 112,
+            "gate_mismatch_fraction": 6.623970445736434e-06
+          },
+          {
+            "layer": 31,
+            "preactivation_max_abs_difference": 0.0005593299865722656,
+            "preactivation_rms_difference": 3.827644199209237e-05,
+            "gate_mismatches": 115,
+            "gate_mismatch_fraction": 6.801398225532946e-06
+          }
+        ]
+      },
+      "flopscope_profile": null
+    },
+    {
+      "index": 2,
+      "name": "cole-martin",
+      "layout": "rectangular",
+      "schedule": "hybrid_p3",
+      "variant": "winograd",
+      "recursion_depth": 5,
+      "baseline_raw_final_mse": 3.060697789338323e-07,
+      "fast_raw_final_mse": 3.0632182774442233e-07,
+      "raw_mse_delta": 2.520488105900263e-10,
+      "drift": {
+        "elapsed_s": 24.111040791962296,
+        "final_mean_max_abs_difference": 4.622788356556384e-06,
+        "final_mean_rms_difference": 1.2381469976289795e-06,
+        "total_gate_mismatches": 2624,
+        "maximum_layer_gate_mismatch_fraction": 7.333681564922481e-06,
+        "per_layer": [
+          {
+            "layer": 1,
+            "preactivation_max_abs_difference": 0.00012505054473876953,
+            "preactivation_rms_difference": 1.0332530337847165e-05,
+            "gate_mismatches": 25,
+            "gate_mismatch_fraction": 1.478564831637597e-06
+          },
+          {
+            "layer": 2,
+            "preactivation_max_abs_difference": 0.0001480579376220703,
+            "preactivation_rms_difference": 1.4009556210709107e-05,
+            "gate_mismatches": 46,
+            "gate_mismatch_fraction": 2.7205592902131785e-06
+          },
+          {
+            "layer": 3,
+            "preactivation_max_abs_difference": 0.00016939640045166016,
+            "preactivation_rms_difference": 1.60473051820532e-05,
+            "gate_mismatches": 57,
+            "gate_mismatch_fraction": 3.371127816133721e-06
+          },
+          {
+            "layer": 4,
+            "preactivation_max_abs_difference": 0.0002067089080810547,
+            "preactivation_rms_difference": 1.806166829833769e-05,
+            "gate_mismatches": 63,
+            "gate_mismatch_fraction": 3.725983375726744e-06
+          },
+          {
+            "layer": 5,
+            "preactivation_max_abs_difference": 0.00019437074661254883,
+            "preactivation_rms_difference": 1.8981339565142223e-05,
+            "gate_mismatches": 74,
+            "gate_mismatch_fraction": 4.376551901647287e-06
+          },
+          {
+            "layer": 6,
+            "preactivation_max_abs_difference": 0.00023183226585388184,
+            "preactivation_rms_difference": 2.045686981690012e-05,
+            "gate_mismatches": 62,
+            "gate_mismatch_fraction": 3.6668407824612405e-06
+          },
+          {
+            "layer": 7,
+            "preactivation_max_abs_difference": 0.00020813941955566406,
+            "preactivation_rms_difference": 2.088094226460332e-05,
+            "gate_mismatches": 83,
+            "gate_mismatch_fraction": 4.908835241036822e-06
+          },
+          {
+            "layer": 8,
+            "preactivation_max_abs_difference": 0.0002371072769165039,
+            "preactivation_rms_difference": 2.1552019918301064e-05,
+            "gate_mismatches": 60,
+            "gate_mismatch_fraction": 3.5485555959302325e-06
+          },
+          {
+            "layer": 9,
+            "preactivation_max_abs_difference": 0.0002503395080566406,
+            "preactivation_rms_difference": 2.1576865822756828e-05,
+            "gate_mismatches": 80,
+            "gate_mismatch_fraction": 4.73140746124031e-06
+          },
+          {
+            "layer": 10,
+            "preactivation_max_abs_difference": 0.00021505355834960938,
+            "preactivation_rms_difference": 2.20699843590892e-05,
+            "gate_mismatches": 75,
+            "gate_mismatch_fraction": 4.435694494912791e-06
+          },
+          {
+            "layer": 11,
+            "preactivation_max_abs_difference": 0.00027048587799072266,
+            "preactivation_rms_difference": 2.3644225534130816e-05,
+            "gate_mismatches": 83,
+            "gate_mismatch_fraction": 4.908835241036822e-06
+          },
+          {
+            "layer": 12,
+            "preactivation_max_abs_difference": 0.0002766251564025879,
+            "preactivation_rms_difference": 2.5095843162146486e-05,
+            "gate_mismatches": 66,
+            "gate_mismatch_fraction": 3.903411155523256e-06
+          },
+          {
+            "layer": 13,
+            "preactivation_max_abs_difference": 0.0002913475036621094,
+            "preactivation_rms_difference": 2.686620799416174e-05,
+            "gate_mismatches": 84,
+            "gate_mismatch_fraction": 4.967977834302326e-06
+          },
+          {
+            "layer": 14,
+            "preactivation_max_abs_difference": 0.00031948089599609375,
+            "preactivation_rms_difference": 2.8158626716650012e-05,
+            "gate_mismatches": 88,
+            "gate_mismatch_fraction": 5.204548207364341e-06
+          },
+          {
+            "layer": 15,
+            "preactivation_max_abs_difference": 0.0003628730773925781,
+            "preactivation_rms_difference": 2.8918387068007667e-05,
+            "gate_mismatches": 97,
+            "gate_mismatch_fraction": 5.736831546753876e-06
+          },
+          {
+            "layer": 16,
+            "preactivation_max_abs_difference": 0.00038909912109375,
+            "preactivation_rms_difference": 2.8763243242449266e-05,
+            "gate_mismatches": 74,
+            "gate_mismatch_fraction": 4.376551901647287e-06
+          },
+          {
+            "layer": 17,
+            "preactivation_max_abs_difference": 0.00031113624572753906,
+            "preactivation_rms_difference": 2.9118522217553625e-05,
+            "gate_mismatches": 110,
+            "gate_mismatch_fraction": 6.505685259205426e-06
+          },
+          {
+            "layer": 18,
+            "preactivation_max_abs_difference": 0.00036525726318359375,
+            "preactivation_rms_difference": 2.966428343239822e-05,
+            "gate_mismatches": 109,
+            "gate_mismatch_fraction": 6.446542665939922e-06
+          },
+          {
+            "layer": 19,
+            "preactivation_max_abs_difference": 0.0004737377166748047,
+            "preactivation_rms_difference": 3.0034918990608022e-05,
+            "gate_mismatches": 84,
+            "gate_mismatch_fraction": 4.967977834302326e-06
+          },
+          {
+            "layer": 20,
+            "preactivation_max_abs_difference": 0.0003349781036376953,
+            "preactivation_rms_difference": 2.8148768688451706e-05,
+            "gate_mismatches": 89,
+            "gate_mismatch_fraction": 5.263690800629845e-06
+          },
+          {
+            "layer": 21,
+            "preactivation_max_abs_difference": 0.0004100799560546875,
+            "preactivation_rms_difference": 2.8262686775033132e-05,
+            "gate_mismatches": 106,
+            "gate_mismatch_fraction": 6.269114886143411e-06
+          },
+          {
+            "layer": 22,
+            "preactivation_max_abs_difference": 0.00035953521728515625,
+            "preactivation_rms_difference": 2.9146788948715066e-05,
+            "gate_mismatches": 92,
+            "gate_mismatch_fraction": 5.441118580426357e-06
+          },
+          {
+            "layer": 23,
+            "preactivation_max_abs_difference": 0.00040471553802490234,
+            "preactivation_rms_difference": 3.011460081597533e-05,
+            "gate_mismatches": 108,
+            "gate_mismatch_fraction": 6.387400072674419e-06
+          },
+          {
+            "layer": 24,
+            "preactivation_max_abs_difference": 0.00039196014404296875,
+            "preactivation_rms_difference": 3.082930096985082e-05,
+            "gate_mismatches": 124,
+            "gate_mismatch_fraction": 7.333681564922481e-06
+          },
+          {
+            "layer": 25,
+            "preactivation_max_abs_difference": 0.0003857612609863281,
+            "preactivation_rms_difference": 3.261509795357116e-05,
+            "gate_mismatches": 94,
+            "gate_mismatch_fraction": 5.559403766957364e-06
+          },
+          {
+            "layer": 26,
+            "preactivation_max_abs_difference": 0.00044155120849609375,
+            "preactivation_rms_difference": 3.553535883939495e-05,
+            "gate_mismatches": 114,
+            "gate_mismatch_fraction": 6.742255632267442e-06
+          },
+          {
+            "layer": 27,
+            "preactivation_max_abs_difference": 0.0005121231079101562,
+            "preactivation_rms_difference": 3.588307528817908e-05,
+            "gate_mismatches": 78,
+            "gate_mismatch_fraction": 4.613122274709302e-06
+          },
+          {
+            "layer": 28,
+            "preactivation_max_abs_difference": 0.0005154609680175781,
+            "preactivation_rms_difference": 3.6155649834584406e-05,
+            "gate_mismatches": 108,
+            "gate_mismatch_fraction": 6.387400072674419e-06
+          },
+          {
+            "layer": 29,
+            "preactivation_max_abs_difference": 0.0005221366882324219,
+            "preactivation_rms_difference": 3.7605441534844226e-05,
+            "gate_mismatches": 78,
+            "gate_mismatch_fraction": 4.613122274709302e-06
+          },
+          {
+            "layer": 30,
+            "preactivation_max_abs_difference": 0.0005216598510742188,
+            "preactivation_rms_difference": 3.792049419834099e-05,
+            "gate_mismatches": 90,
+            "gate_mismatch_fraction": 5.322833393895349e-06
+          },
+          {
+            "layer": 31,
+            "preactivation_max_abs_difference": 0.0005664825439453125,
+            "preactivation_rms_difference": 3.925009284814356e-05,
+            "gate_mismatches": 123,
+            "gate_mismatch_fraction": 7.274538971656977e-06
+          }
+        ]
+      },
+      "flopscope_profile": null
+    },
+    {
+      "index": 3,
+      "name": "donna-clarke",
+      "layout": "rectangular",
+      "schedule": "hybrid_p3",
+      "variant": "winograd",
+      "recursion_depth": 5,
+      "baseline_raw_final_mse": 1.1497552556601957e-07,
+      "fast_raw_final_mse": 1.1508135536205215e-07,
+      "raw_mse_delta": 1.0582979603258016e-10,
+      "drift": {
+        "elapsed_s": 23.930720082949847,
+        "final_mean_max_abs_difference": 2.2789278399937274e-06,
+        "final_mean_rms_difference": 5.581184608965935e-07,
+        "total_gate_mismatches": 4081,
+        "maximum_layer_gate_mismatch_fraction": 1.236080199249031e-05,
+        "per_layer": [
+          {
+            "layer": 1,
+            "preactivation_max_abs_difference": 0.0001277327537536621,
+            "preactivation_rms_difference": 1.0859504638300018e-05,
+            "gate_mismatches": 34,
+            "gate_mismatch_fraction": 2.010848171027132e-06
+          },
+          {
+            "layer": 2,
+            "preactivation_max_abs_difference": 0.0001537799835205078,
+            "preactivation_rms_difference": 1.4576671489851094e-05,
+            "gate_mismatches": 49,
+            "gate_mismatch_fraction": 2.89798707000969e-06
+          },
+          {
+            "layer": 3,
+            "preactivation_max_abs_difference": 0.00016580894589424133,
+            "preactivation_rms_difference": 1.6784495086157404e-05,
+            "gate_mismatches": 54,
+            "gate_mismatch_fraction": 3.1937000363372095e-06
+          },
+          {
+            "layer": 4,
+            "preactivation_max_abs_difference": 0.00018310546875,
+            "preactivation_rms_difference": 1.8051526565333034e-05,
+            "gate_mismatches": 68,
+            "gate_mismatch_fraction": 4.021696342054264e-06
+          },
+          {
+            "layer": 5,
+            "preactivation_max_abs_difference": 0.0002009868621826172,
+            "preactivation_rms_difference": 1.9331946395226288e-05,
+            "gate_mismatches": 68,
+            "gate_mismatch_fraction": 4.021696342054264e-06
+          },
+          {
+            "layer": 6,
+            "preactivation_max_abs_difference": 0.0002028942108154297,
+            "preactivation_rms_difference": 2.024229008367879e-05,
+            "gate_mismatches": 73,
+            "gate_mismatch_fraction": 4.317409308381783e-06
+          },
+          {
+            "layer": 7,
+            "preactivation_max_abs_difference": 0.0002237558364868164,
+            "preactivation_rms_difference": 2.129253659317373e-05,
+            "gate_mismatches": 73,
+            "gate_mismatch_fraction": 4.317409308381783e-06
+          },
+          {
+            "layer": 8,
+            "preactivation_max_abs_difference": 0.00022268295288085938,
+            "preactivation_rms_difference": 2.0661220752615553e-05,
+            "gate_mismatches": 81,
+            "gate_mismatch_fraction": 4.790550054505814e-06
+          },
+          {
+            "layer": 9,
+            "preactivation_max_abs_difference": 0.00021576881408691406,
+            "preactivation_rms_difference": 2.1246904266689464e-05,
+            "gate_mismatches": 98,
+            "gate_mismatch_fraction": 5.79597414001938e-06
+          },
+          {
+            "layer": 10,
+            "preactivation_max_abs_difference": 0.0002551078796386719,
+            "preactivation_rms_difference": 2.1814731380242114e-05,
+            "gate_mismatches": 115,
+            "gate_mismatch_fraction": 6.801398225532946e-06
+          },
+          {
+            "layer": 11,
+            "preactivation_max_abs_difference": 0.0002758502960205078,
+            "preactivation_rms_difference": 2.231846199590787e-05,
+            "gate_mismatches": 110,
+            "gate_mismatch_fraction": 6.505685259205426e-06
+          },
+          {
+            "layer": 12,
+            "preactivation_max_abs_difference": 0.00024271011352539062,
+            "preactivation_rms_difference": 2.2933294072755678e-05,
+            "gate_mismatches": 133,
+            "gate_mismatch_fraction": 7.865964904312016e-06
+          },
+          {
+            "layer": 13,
+            "preactivation_max_abs_difference": 0.0002575516700744629,
+            "preactivation_rms_difference": 2.3098342232826603e-05,
+            "gate_mismatches": 92,
+            "gate_mismatch_fraction": 5.441118580426357e-06
+          },
+          {
+            "layer": 14,
+            "preactivation_max_abs_difference": 0.00026172399520874023,
+            "preactivation_rms_difference": 2.307614493149943e-05,
+            "gate_mismatches": 115,
+            "gate_mismatch_fraction": 6.801398225532946e-06
+          },
+          {
+            "layer": 15,
+            "preactivation_max_abs_difference": 0.0002633333206176758,
+            "preactivation_rms_difference": 2.279800543299554e-05,
+            "gate_mismatches": 146,
+            "gate_mismatch_fraction": 8.634818616763566e-06
+          },
+          {
+            "layer": 16,
+            "preactivation_max_abs_difference": 0.00026616454124450684,
+            "preactivation_rms_difference": 2.2619413814889976e-05,
+            "gate_mismatches": 148,
+            "gate_mismatch_fraction": 8.753103803294574e-06
+          },
+          {
+            "layer": 17,
+            "preactivation_max_abs_difference": 0.00025391578674316406,
+            "preactivation_rms_difference": 2.2705379642650142e-05,
+            "gate_mismatches": 127,
+            "gate_mismatch_fraction": 7.511109344718992e-06
+          },
+          {
+            "layer": 18,
+            "preactivation_max_abs_difference": 0.0002837181091308594,
+            "preactivation_rms_difference": 2.3073083555421406e-05,
+            "gate_mismatches": 122,
+            "gate_mismatch_fraction": 7.215396378391473e-06
+          },
+          {
+            "layer": 19,
+            "preactivation_max_abs_difference": 0.0002824068069458008,
+            "preactivation_rms_difference": 2.264121712333943e-05,
+            "gate_mismatches": 155,
+            "gate_mismatch_fraction": 9.1671019561531e-06
+          },
+          {
+            "layer": 20,
+            "preactivation_max_abs_difference": 0.000354766845703125,
+            "preactivation_rms_difference": 2.277636833423873e-05,
+            "gate_mismatches": 205,
+            "gate_mismatch_fraction": 1.2124231619428294e-05
+          },
+          {
+            "layer": 21,
+            "preactivation_max_abs_difference": 0.0003104209899902344,
+            "preactivation_rms_difference": 2.317012765225804e-05,
+            "gate_mismatches": 192,
+            "gate_mismatch_fraction": 1.1355377906976744e-05
+          },
+          {
+            "layer": 22,
+            "preactivation_max_abs_difference": 0.00028949975967407227,
+            "preactivation_rms_difference": 2.401755884228996e-05,
+            "gate_mismatches": 164,
+            "gate_mismatch_fraction": 9.699385295542636e-06
+          },
+          {
+            "layer": 23,
+            "preactivation_max_abs_difference": 0.00029522180557250977,
+            "preactivation_rms_difference": 2.4048676742151325e-05,
+            "gate_mismatches": 156,
+            "gate_mismatch_fraction": 9.226244549418604e-06
+          },
+          {
+            "layer": 24,
+            "preactivation_max_abs_difference": 0.00030922889709472656,
+            "preactivation_rms_difference": 2.3368129982950632e-05,
+            "gate_mismatches": 207,
+            "gate_mismatch_fraction": 1.2242516805959302e-05
+          },
+          {
+            "layer": 25,
+            "preactivation_max_abs_difference": 0.00034928321838378906,
+            "preactivation_rms_difference": 2.4508365686578458e-05,
+            "gate_mismatches": 202,
+            "gate_mismatch_fraction": 1.1946803839631782e-05
+          },
+          {
+            "layer": 26,
+            "preactivation_max_abs_difference": 0.00036334991455078125,
+            "preactivation_rms_difference": 2.3588718576168524e-05,
+            "gate_mismatches": 209,
+            "gate_mismatch_fraction": 1.236080199249031e-05
+          },
+          {
+            "layer": 27,
+            "preactivation_max_abs_difference": 0.00033152103424072266,
+            "preactivation_rms_difference": 2.3338275912026966e-05,
+            "gate_mismatches": 158,
+            "gate_mismatch_fraction": 9.344529735949612e-06
+          },
+          {
+            "layer": 28,
+            "preactivation_max_abs_difference": 0.00034499168395996094,
+            "preactivation_rms_difference": 2.298301399014233e-05,
+            "gate_mismatches": 165,
+            "gate_mismatch_fraction": 9.75852788880814e-06
+          },
+          {
+            "layer": 29,
+            "preactivation_max_abs_difference": 0.00034677982330322266,
+            "preactivation_rms_difference": 2.1832861904953262e-05,
+            "gate_mismatches": 188,
+            "gate_mismatch_fraction": 1.1118807533914728e-05
+          },
+          {
+            "layer": 30,
+            "preactivation_max_abs_difference": 0.0003733634948730469,
+            "preactivation_rms_difference": 2.259526369192909e-05,
+            "gate_mismatches": 172,
+            "gate_mismatch_fraction": 1.0172526041666666e-05
+          },
+          {
+            "layer": 31,
+            "preactivation_max_abs_difference": 0.0003616809844970703,
+            "preactivation_rms_difference": 2.321044779047117e-05,
+            "gate_mismatches": 202,
+            "gate_mismatch_fraction": 1.1946803839631782e-05
+          }
+        ]
+      },
+      "flopscope_profile": null
+    },
+    {
+      "index": 4,
+      "name": "rebecca-walker",
+      "layout": "rectangular",
+      "schedule": "hybrid_p3",
+      "variant": "winograd",
+      "recursion_depth": 5,
+      "baseline_raw_final_mse": 9.935300043850085e-08,
+      "fast_raw_final_mse": 9.933809629171565e-08,
+      "raw_mse_delta": -1.4904146785197808e-11,
+      "drift": {
+        "elapsed_s": 23.973439374938607,
+        "final_mean_max_abs_difference": 2.7826943889142086e-06,
+        "final_mean_rms_difference": 7.680972858923467e-07,
+        "total_gate_mismatches": 3274,
+        "maximum_layer_gate_mismatch_fraction": 1.1059664940649224e-05,
+        "per_layer": [
+          {
+            "layer": 1,
+            "preactivation_max_abs_difference": 0.00012665987014770508,
+            "preactivation_rms_difference": 1.0437584041950717e-05,
+            "gate_mismatches": 34,
+            "gate_mismatch_fraction": 2.010848171027132e-06
+          },
+          {
+            "layer": 2,
+            "preactivation_max_abs_difference": 0.00014019012451171875,
+            "preactivation_rms_difference": 1.3804050702722045e-05,
+            "gate_mismatches": 46,
+            "gate_mismatch_fraction": 2.7205592902131785e-06
+          },
+          {
+            "layer": 3,
+            "preactivation_max_abs_difference": 0.00016427040100097656,
+            "preactivation_rms_difference": 1.5597322903449096e-05,
+            "gate_mismatches": 49,
+            "gate_mismatch_fraction": 2.89798707000969e-06
+          },
+          {
+            "layer": 4,
+            "preactivation_max_abs_difference": 0.00016891956329345703,
+            "preactivation_rms_difference": 1.701705481109083e-05,
+            "gate_mismatches": 93,
+            "gate_mismatch_fraction": 5.50026117369186e-06
+          },
+          {
+            "layer": 5,
+            "preactivation_max_abs_difference": 0.00019949674606323242,
+            "preactivation_rms_difference": 1.8994275178956395e-05,
+            "gate_mismatches": 58,
+            "gate_mismatch_fraction": 3.430270409399225e-06
+          },
+          {
+            "layer": 6,
+            "preactivation_max_abs_difference": 0.00018918514251708984,
+            "preactivation_rms_difference": 1.9315499970414327e-05,
+            "gate_mismatches": 81,
+            "gate_mismatch_fraction": 4.790550054505814e-06
+          },
+          {
+            "layer": 7,
+            "preactivation_max_abs_difference": 0.0002142190933227539,
+            "preactivation_rms_difference": 1.9782840335087067e-05,
+            "gate_mismatches": 73,
+            "gate_mismatch_fraction": 4.317409308381783e-06
+          },
+          {
+            "layer": 8,
+            "preactivation_max_abs_difference": 0.0001872628927230835,
+            "preactivation_rms_difference": 1.8992825779812173e-05,
+            "gate_mismatches": 91,
+            "gate_mismatch_fraction": 5.381975987160853e-06
+          },
+          {
+            "layer": 9,
+            "preactivation_max_abs_difference": 0.0001919269561767578,
+            "preactivation_rms_difference": 1.9509320075468024e-05,
+            "gate_mismatches": 86,
+            "gate_mismatch_fraction": 5.086263020833333e-06
+          },
+          {
+            "layer": 10,
+            "preactivation_max_abs_difference": 0.00019848346710205078,
+            "preactivation_rms_difference": 1.9994064862156182e-05,
+            "gate_mismatches": 94,
+            "gate_mismatch_fraction": 5.559403766957364e-06
+          },
+          {
+            "layer": 11,
+            "preactivation_max_abs_difference": 0.0002396106719970703,
+            "preactivation_rms_difference": 2.019172648171715e-05,
+            "gate_mismatches": 87,
+            "gate_mismatch_fraction": 5.145405614098837e-06
+          },
+          {
+            "layer": 12,
+            "preactivation_max_abs_difference": 0.00024318695068359375,
+            "preactivation_rms_difference": 2.01636225990095e-05,
+            "gate_mismatches": 93,
+            "gate_mismatch_fraction": 5.50026117369186e-06
+          },
+          {
+            "layer": 13,
+            "preactivation_max_abs_difference": 0.00029787421226501465,
+            "preactivation_rms_difference": 2.077217235190922e-05,
+            "gate_mismatches": 108,
+            "gate_mismatch_fraction": 6.387400072674419e-06
+          },
+          {
+            "layer": 14,
+            "preactivation_max_abs_difference": 0.0002592802047729492,
+            "preactivation_rms_difference": 2.0401588496789775e-05,
+            "gate_mismatches": 102,
+            "gate_mismatch_fraction": 6.032544513081395e-06
+          },
+          {
+            "layer": 15,
+            "preactivation_max_abs_difference": 0.00023889541625976562,
+            "preactivation_rms_difference": 2.0046925786729163e-05,
+            "gate_mismatches": 106,
+            "gate_mismatch_fraction": 6.269114886143411e-06
+          },
+          {
+            "layer": 16,
+            "preactivation_max_abs_difference": 0.00022867321968078613,
+            "preactivation_rms_difference": 2.0404623949767765e-05,
+            "gate_mismatches": 119,
+            "gate_mismatch_fraction": 7.037968598594961e-06
+          },
+          {
+            "layer": 17,
+            "preactivation_max_abs_difference": 0.0002713203430175781,
+            "preactivation_rms_difference": 2.103802431584005e-05,
+            "gate_mismatches": 92,
+            "gate_mismatch_fraction": 5.441118580426357e-06
+          },
+          {
+            "layer": 18,
+            "preactivation_max_abs_difference": 0.0002448558807373047,
+            "preactivation_rms_difference": 2.024064478535957e-05,
+            "gate_mismatches": 79,
+            "gate_mismatch_fraction": 4.672264867974806e-06
+          },
+          {
+            "layer": 19,
+            "preactivation_max_abs_difference": 0.0002987384796142578,
+            "preactivation_rms_difference": 2.0732613092077988e-05,
+            "gate_mismatches": 86,
+            "gate_mismatch_fraction": 5.086263020833333e-06
+          },
+          {
+            "layer": 20,
+            "preactivation_max_abs_difference": 0.00023508071899414062,
+            "preactivation_rms_difference": 1.9490350779410857e-05,
+            "gate_mismatches": 107,
+            "gate_mismatch_fraction": 6.328257479408915e-06
+          },
+          {
+            "layer": 21,
+            "preactivation_max_abs_difference": 0.0002633333206176758,
+            "preactivation_rms_difference": 2.0092949511967404e-05,
+            "gate_mismatches": 98,
+            "gate_mismatch_fraction": 5.79597414001938e-06
+          },
+          {
+            "layer": 22,
+            "preactivation_max_abs_difference": 0.000255584716796875,
+            "preactivation_rms_difference": 1.9396595872698733e-05,
+            "gate_mismatches": 116,
+            "gate_mismatch_fraction": 6.86054081879845e-06
+          },
+          {
+            "layer": 23,
+            "preactivation_max_abs_difference": 0.00030791759490966797,
+            "preactivation_rms_difference": 2.065462761169983e-05,
+            "gate_mismatches": 140,
+            "gate_mismatch_fraction": 8.279963057170542e-06
+          },
+          {
+            "layer": 24,
+            "preactivation_max_abs_difference": 0.00028145313262939453,
+            "preactivation_rms_difference": 2.1468589256454617e-05,
+            "gate_mismatches": 119,
+            "gate_mismatch_fraction": 7.037968598594961e-06
+          },
+          {
+            "layer": 25,
+            "preactivation_max_abs_difference": 0.0002770423889160156,
+            "preactivation_rms_difference": 2.2375599130816392e-05,
+            "gate_mismatches": 118,
+            "gate_mismatch_fraction": 6.978826005329457e-06
+          },
+          {
+            "layer": 26,
+            "preactivation_max_abs_difference": 0.0003764629364013672,
+            "preactivation_rms_difference": 2.2222962720932835e-05,
+            "gate_mismatches": 162,
+            "gate_mismatch_fraction": 9.581100109011628e-06
+          },
+          {
+            "layer": 27,
+            "preactivation_max_abs_difference": 0.00034356117248535156,
+            "preactivation_rms_difference": 2.266960353116103e-05,
+            "gate_mismatches": 182,
+            "gate_mismatch_fraction": 1.0763951974321706e-05
+          },
+          {
+            "layer": 28,
+            "preactivation_max_abs_difference": 0.0004413723945617676,
+            "preactivation_rms_difference": 2.371407429570336e-05,
+            "gate_mismatches": 158,
+            "gate_mismatch_fraction": 9.344529735949612e-06
+          },
+          {
+            "layer": 29,
+            "preactivation_max_abs_difference": 0.0004131793975830078,
+            "preactivation_rms_difference": 2.3787914596176335e-05,
+            "gate_mismatches": 145,
+            "gate_mismatch_fraction": 8.575676023498062e-06
+          },
+          {
+            "layer": 30,
+            "preactivation_max_abs_difference": 0.00031092017889022827,
+            "preactivation_rms_difference": 2.368701736043416e-05,
+            "gate_mismatches": 165,
+            "gate_mismatch_fraction": 9.75852788880814e-06
+          },
+          {
+            "layer": 31,
+            "preactivation_max_abs_difference": 0.0004229545593261719,
+            "preactivation_rms_difference": 2.363359918939685e-05,
+            "gate_mismatches": 187,
+            "gate_mismatch_fraction": 1.1059664940649224e-05
+          }
+        ]
+      },
+      "flopscope_profile": null
+    },
+    {
+      "index": 5,
+      "name": "monique-stevens",
+      "layout": "rectangular",
+      "schedule": "hybrid_p3",
+      "variant": "winograd",
+      "recursion_depth": 5,
+      "baseline_raw_final_mse": 2.1896926360773265e-07,
+      "fast_raw_final_mse": 2.1903506774076486e-07,
+      "raw_mse_delta": 6.58041330322145e-11,
+      "drift": {
+        "elapsed_s": 23.997590583981946,
+        "final_mean_max_abs_difference": 3.1091734882249256e-06,
+        "final_mean_rms_difference": 7.972659029004019e-07,
+        "total_gate_mismatches": 3584,
+        "maximum_layer_gate_mismatch_fraction": 1.1177950127180232e-05,
+        "per_layer": [
+          {
+            "layer": 1,
+            "preactivation_max_abs_difference": 0.0001437067985534668,
+            "preactivation_rms_difference": 1.0966492972277667e-05,
+            "gate_mismatches": 24,
+            "gate_mismatch_fraction": 1.419422238372093e-06
+          },
+          {
+            "layer": 2,
+            "preactivation_max_abs_difference": 0.00014722347259521484,
+            "preactivation_rms_difference": 1.4137620413112064e-05,
+            "gate_mismatches": 47,
+            "gate_mismatch_fraction": 2.779701883478682e-06
+          },
+          {
+            "layer": 3,
+            "preactivation_max_abs_difference": 0.00017082691192626953,
+            "preactivation_rms_difference": 1.5583145078584847e-05,
+            "gate_mismatches": 56,
+            "gate_mismatch_fraction": 3.311985222868217e-06
+          },
+          {
+            "layer": 4,
+            "preactivation_max_abs_difference": 0.00019311904907226562,
+            "preactivation_rms_difference": 1.7482436572470672e-05,
+            "gate_mismatches": 74,
+            "gate_mismatch_fraction": 4.376551901647287e-06
+          },
+          {
+            "layer": 5,
+            "preactivation_max_abs_difference": 0.00020131468772888184,
+            "preactivation_rms_difference": 1.91890457105312e-05,
+            "gate_mismatches": 91,
+            "gate_mismatch_fraction": 5.381975987160853e-06
+          },
+          {
+            "layer": 6,
+            "preactivation_max_abs_difference": 0.0002187490463256836,
+            "preactivation_rms_difference": 2.126958258152043e-05,
+            "gate_mismatches": 61,
+            "gate_mismatch_fraction": 3.6076981891957365e-06
+          },
+          {
+            "layer": 7,
+            "preactivation_max_abs_difference": 0.00023221969604492188,
+            "preactivation_rms_difference": 2.2487824525761652e-05,
+            "gate_mismatches": 92,
+            "gate_mismatch_fraction": 5.441118580426357e-06
+          },
+          {
+            "layer": 8,
+            "preactivation_max_abs_difference": 0.00024902820587158203,
+            "preactivation_rms_difference": 2.2600705086359236e-05,
+            "gate_mismatches": 98,
+            "gate_mismatch_fraction": 5.79597414001938e-06
+          },
+          {
+            "layer": 9,
+            "preactivation_max_abs_difference": 0.0002949237823486328,
+            "preactivation_rms_difference": 2.3388151703163097e-05,
+            "gate_mismatches": 87,
+            "gate_mismatch_fraction": 5.145405614098837e-06
+          },
+          {
+            "layer": 10,
+            "preactivation_max_abs_difference": 0.00032001733779907227,
+            "preactivation_rms_difference": 2.4630558497511984e-05,
+            "gate_mismatches": 86,
+            "gate_mismatch_fraction": 5.086263020833333e-06
+          },
+          {
+            "layer": 11,
+            "preactivation_max_abs_difference": 0.000339508056640625,
+            "preactivation_rms_difference": 2.4655667155570423e-05,
+            "gate_mismatches": 102,
+            "gate_mismatch_fraction": 6.032544513081395e-06
+          },
+          {
+            "layer": 12,
+            "preactivation_max_abs_difference": 0.0003020763397216797,
+            "preactivation_rms_difference": 2.5999593412594396e-05,
+            "gate_mismatches": 95,
+            "gate_mismatch_fraction": 5.618546360222868e-06
+          },
+          {
+            "layer": 13,
+            "preactivation_max_abs_difference": 0.00032711029052734375,
+            "preactivation_rms_difference": 2.7773832315084536e-05,
+            "gate_mismatches": 116,
+            "gate_mismatch_fraction": 6.86054081879845e-06
+          },
+          {
+            "layer": 14,
+            "preactivation_max_abs_difference": 0.00032806396484375,
+            "preactivation_rms_difference": 2.837947834484629e-05,
+            "gate_mismatches": 78,
+            "gate_mismatch_fraction": 4.613122274709302e-06
+          },
+          {
+            "layer": 15,
+            "preactivation_max_abs_difference": 0.0003871917724609375,
+            "preactivation_rms_difference": 2.8685504471767647e-05,
+            "gate_mismatches": 103,
+            "gate_mismatch_fraction": 6.091687106346899e-06
+          },
+          {
+            "layer": 16,
+            "preactivation_max_abs_difference": 0.0003275871276855469,
+            "preactivation_rms_difference": 2.8663368123395255e-05,
+            "gate_mismatches": 99,
+            "gate_mismatch_fraction": 5.855116733284884e-06
+          },
+          {
+            "layer": 17,
+            "preactivation_max_abs_difference": 0.00036132335662841797,
+            "preactivation_rms_difference": 2.939505337241003e-05,
+            "gate_mismatches": 108,
+            "gate_mismatch_fraction": 6.387400072674419e-06
+          },
+          {
+            "layer": 18,
+            "preactivation_max_abs_difference": 0.000354766845703125,
+            "preactivation_rms_difference": 2.900445033643312e-05,
+            "gate_mismatches": 126,
+            "gate_mismatch_fraction": 7.451966751453488e-06
+          },
+          {
+            "layer": 19,
+            "preactivation_max_abs_difference": 0.0003254413604736328,
+            "preactivation_rms_difference": 2.8194644697068556e-05,
+            "gate_mismatches": 111,
+            "gate_mismatch_fraction": 6.56482785247093e-06
+          },
+          {
+            "layer": 20,
+            "preactivation_max_abs_difference": 0.00034934282302856445,
+            "preactivation_rms_difference": 2.8113461677716897e-05,
+            "gate_mismatches": 141,
+            "gate_mismatch_fraction": 8.339105650436046e-06
+          },
+          {
+            "layer": 21,
+            "preactivation_max_abs_difference": 0.00036263465881347656,
+            "preactivation_rms_difference": 2.9151336773242878e-05,
+            "gate_mismatches": 115,
+            "gate_mismatch_fraction": 6.801398225532946e-06
+          },
+          {
+            "layer": 22,
+            "preactivation_max_abs_difference": 0.00032508373260498047,
+            "preactivation_rms_difference": 2.852108641222337e-05,
+            "gate_mismatches": 137,
+            "gate_mismatch_fraction": 8.102535277374032e-06
+          },
+          {
+            "layer": 23,
+            "preactivation_max_abs_difference": 0.0003666877746582031,
+            "preactivation_rms_difference": 2.819973084292562e-05,
+            "gate_mismatches": 167,
+            "gate_mismatch_fraction": 9.876813075339148e-06
+          },
+          {
+            "layer": 24,
+            "preactivation_max_abs_difference": 0.00037384033203125,
+            "preactivation_rms_difference": 2.8660984318326974e-05,
+            "gate_mismatches": 176,
+            "gate_mismatch_fraction": 1.0409096414728682e-05
+          },
+          {
+            "layer": 25,
+            "preactivation_max_abs_difference": 0.00036776065826416016,
+            "preactivation_rms_difference": 2.8497551501176322e-05,
+            "gate_mismatches": 157,
+            "gate_mismatch_fraction": 9.285387142684108e-06
+          },
+          {
+            "layer": 26,
+            "preactivation_max_abs_difference": 0.0003789067268371582,
+            "preactivation_rms_difference": 2.931238792291385e-05,
+            "gate_mismatches": 189,
+            "gate_mismatch_fraction": 1.1177950127180232e-05
+          },
+          {
+            "layer": 27,
+            "preactivation_max_abs_difference": 0.00040337443351745605,
+            "preactivation_rms_difference": 2.9733591525403165e-05,
+            "gate_mismatches": 175,
+            "gate_mismatch_fraction": 1.0349953821463178e-05
+          },
+          {
+            "layer": 28,
+            "preactivation_max_abs_difference": 0.00042194128036499023,
+            "preactivation_rms_difference": 2.936563023091015e-05,
+            "gate_mismatches": 160,
+            "gate_mismatch_fraction": 9.46281492248062e-06
+          },
+          {
+            "layer": 29,
+            "preactivation_max_abs_difference": 0.00042426586151123047,
+            "preactivation_rms_difference": 2.8888391250743624e-05,
+            "gate_mismatches": 163,
+            "gate_mismatch_fraction": 9.640242702277132e-06
+          },
+          {
+            "layer": 30,
+            "preactivation_max_abs_difference": 0.0005345344543457031,
+            "preactivation_rms_difference": 2.8572606807983317e-05,
+            "gate_mismatches": 164,
+            "gate_mismatch_fraction": 9.699385295542636e-06
+          },
+          {
+            "layer": 31,
+            "preactivation_max_abs_difference": 0.0004715919494628906,
+            "preactivation_rms_difference": 2.9527362877314657e-05,
+            "gate_mismatches": 186,
+            "gate_mismatch_fraction": 1.100052234738372e-05
+          }
+        ]
+      },
+      "flopscope_profile": null
+    },
+    {
+      "index": 6,
+      "name": "keith-brock",
+      "layout": "rectangular",
+      "schedule": "hybrid_p3",
+      "variant": "winograd",
+      "recursion_depth": 5,
+      "baseline_raw_final_mse": 1.2827690342188913e-07,
+      "fast_raw_final_mse": 1.2839724410832278e-07,
+      "raw_mse_delta": 1.2034068643364056e-10,
+      "drift": {
+        "elapsed_s": 24.344945249846205,
+        "final_mean_max_abs_difference": 3.905997109754367e-06,
+        "final_mean_rms_difference": 1.0850423203965833e-06,
+        "total_gate_mismatches": 3122,
+        "maximum_layer_gate_mismatch_fraction": 8.753103803294574e-06,
+        "per_layer": [
+          {
+            "layer": 1,
+            "preactivation_max_abs_difference": 0.00015810132026672363,
+            "preactivation_rms_difference": 1.0846869025428456e-05,
+            "gate_mismatches": 25,
+            "gate_mismatch_fraction": 1.478564831637597e-06
+          },
+          {
+            "layer": 2,
+            "preactivation_max_abs_difference": 0.0001533031463623047,
+            "preactivation_rms_difference": 1.4034892295501269e-05,
+            "gate_mismatches": 39,
+            "gate_mismatch_fraction": 2.306561137354651e-06
+          },
+          {
+            "layer": 3,
+            "preactivation_max_abs_difference": 0.00021791458129882812,
+            "preactivation_rms_difference": 1.6379218186013937e-05,
+            "gate_mismatches": 63,
+            "gate_mismatch_fraction": 3.725983375726744e-06
+          },
+          {
+            "layer": 4,
+            "preactivation_max_abs_difference": 0.00019931793212890625,
+            "preactivation_rms_difference": 1.8360067914074308e-05,
+            "gate_mismatches": 60,
+            "gate_mismatch_fraction": 3.5485555959302325e-06
+          },
+          {
+            "layer": 5,
+            "preactivation_max_abs_difference": 0.0002422332763671875,
+            "preactivation_rms_difference": 1.9910281980501707e-05,
+            "gate_mismatches": 72,
+            "gate_mismatch_fraction": 4.258266715116279e-06
+          },
+          {
+            "layer": 6,
+            "preactivation_max_abs_difference": 0.0002300739288330078,
+            "preactivation_rms_difference": 2.0669882311368228e-05,
+            "gate_mismatches": 81,
+            "gate_mismatch_fraction": 4.790550054505814e-06
+          },
+          {
+            "layer": 7,
+            "preactivation_max_abs_difference": 0.00023066997528076172,
+            "preactivation_rms_difference": 2.1761983695570486e-05,
+            "gate_mismatches": 89,
+            "gate_mismatch_fraction": 5.263690800629845e-06
+          },
+          {
+            "layer": 8,
+            "preactivation_max_abs_difference": 0.00023555755615234375,
+            "preactivation_rms_difference": 2.2610886290277827e-05,
+            "gate_mismatches": 71,
+            "gate_mismatch_fraction": 4.199124121850775e-06
+          },
+          {
+            "layer": 9,
+            "preactivation_max_abs_difference": 0.00024378299713134766,
+            "preactivation_rms_difference": 2.2711000946279005e-05,
+            "gate_mismatches": 82,
+            "gate_mismatch_fraction": 4.849692647771318e-06
+          },
+          {
+            "layer": 10,
+            "preactivation_max_abs_difference": 0.00026679039001464844,
+            "preactivation_rms_difference": 2.2768915591194387e-05,
+            "gate_mismatches": 98,
+            "gate_mismatch_fraction": 5.79597414001938e-06
+          },
+          {
+            "layer": 11,
+            "preactivation_max_abs_difference": 0.00023686885833740234,
+            "preactivation_rms_difference": 2.2283403395139463e-05,
+            "gate_mismatches": 97,
+            "gate_mismatch_fraction": 5.736831546753876e-06
+          },
+          {
+            "layer": 12,
+            "preactivation_max_abs_difference": 0.00027382373809814453,
+            "preactivation_rms_difference": 2.3364547766836147e-05,
+            "gate_mismatches": 105,
+            "gate_mismatch_fraction": 6.209972292877907e-06
+          },
+          {
+            "layer": 13,
+            "preactivation_max_abs_difference": 0.00027805566787719727,
+            "preactivation_rms_difference": 2.332765454320845e-05,
+            "gate_mismatches": 92,
+            "gate_mismatch_fraction": 5.441118580426357e-06
+          },
+          {
+            "layer": 14,
+            "preactivation_max_abs_difference": 0.00030040740966796875,
+            "preactivation_rms_difference": 2.4088473919628104e-05,
+            "gate_mismatches": 113,
+            "gate_mismatch_fraction": 6.683113039001938e-06
+          },
+          {
+            "layer": 15,
+            "preactivation_max_abs_difference": 0.0002797842025756836,
+            "preactivation_rms_difference": 2.4430351163871397e-05,
+            "gate_mismatches": 117,
+            "gate_mismatch_fraction": 6.919683412063953e-06
+          },
+          {
+            "layer": 16,
+            "preactivation_max_abs_difference": 0.00030052661895751953,
+            "preactivation_rms_difference": 2.538582565922192e-05,
+            "gate_mismatches": 130,
+            "gate_mismatch_fraction": 7.688537124515504e-06
+          },
+          {
+            "layer": 17,
+            "preactivation_max_abs_difference": 0.0002982616424560547,
+            "preactivation_rms_difference": 2.4432055820098566e-05,
+            "gate_mismatches": 118,
+            "gate_mismatch_fraction": 6.978826005329457e-06
+          },
+          {
+            "layer": 18,
+            "preactivation_max_abs_difference": 0.00027871131896972656,
+            "preactivation_rms_difference": 2.5475804383577283e-05,
+            "gate_mismatches": 144,
+            "gate_mismatch_fraction": 8.516533430232558e-06
+          },
+          {
+            "layer": 19,
+            "preactivation_max_abs_difference": 0.0003250241279602051,
+            "preactivation_rms_difference": 2.6078130544362077e-05,
+            "gate_mismatches": 108,
+            "gate_mismatch_fraction": 6.387400072674419e-06
+          },
+          {
+            "layer": 20,
+            "preactivation_max_abs_difference": 0.00033542513847351074,
+            "preactivation_rms_difference": 2.5904407526683723e-05,
+            "gate_mismatches": 134,
+            "gate_mismatch_fraction": 7.92510749757752e-06
+          },
+          {
+            "layer": 21,
+            "preactivation_max_abs_difference": 0.0003364086151123047,
+            "preactivation_rms_difference": 2.7052462543122562e-05,
+            "gate_mismatches": 121,
+            "gate_mismatch_fraction": 7.156253785125969e-06
+          },
+          {
+            "layer": 22,
+            "preactivation_max_abs_difference": 0.00033433735370635986,
+            "preactivation_rms_difference": 2.843701062445847e-05,
+            "gate_mismatches": 100,
+            "gate_mismatch_fraction": 5.914259326550388e-06
+          },
+          {
+            "layer": 23,
+            "preactivation_max_abs_difference": 0.00035834312438964844,
+            "preactivation_rms_difference": 2.9593407518959803e-05,
+            "gate_mismatches": 148,
+            "gate_mismatch_fraction": 8.753103803294574e-06
+          },
+          {
+            "layer": 24,
+            "preactivation_max_abs_difference": 0.00038051605224609375,
+            "preactivation_rms_difference": 2.9991717424107953e-05,
+            "gate_mismatches": 109,
+            "gate_mismatch_fraction": 6.446542665939922e-06
+          },
+          {
+            "layer": 25,
+            "preactivation_max_abs_difference": 0.0004668235778808594,
+            "preactivation_rms_difference": 3.0495656290866984e-05,
+            "gate_mismatches": 122,
+            "gate_mismatch_fraction": 7.215396378391473e-06
+          },
+          {
+            "layer": 26,
+            "preactivation_max_abs_difference": 0.0003707408905029297,
+            "preactivation_rms_difference": 3.023198722953565e-05,
+            "gate_mismatches": 120,
+            "gate_mismatch_fraction": 7.097111191860465e-06
+          },
+          {
+            "layer": 27,
+            "preactivation_max_abs_difference": 0.00040224194526672363,
+            "preactivation_rms_difference": 3.028087225661893e-05,
+            "gate_mismatches": 106,
+            "gate_mismatch_fraction": 6.269114886143411e-06
+          },
+          {
+            "layer": 28,
+            "preactivation_max_abs_difference": 0.0004067420959472656,
+            "preactivation_rms_difference": 2.8880185795281024e-05,
+            "gate_mismatches": 133,
+            "gate_mismatch_fraction": 7.865964904312016e-06
+          },
+          {
+            "layer": 29,
+            "preactivation_max_abs_difference": 0.00040330179035663605,
+            "preactivation_rms_difference": 2.9841646207388748e-05,
+            "gate_mismatches": 102,
+            "gate_mismatch_fraction": 6.032544513081395e-06
+          },
+          {
+            "layer": 30,
+            "preactivation_max_abs_difference": 0.00040644407272338867,
+            "preactivation_rms_difference": 2.993765931654738e-05,
+            "gate_mismatches": 98,
+            "gate_mismatch_fraction": 5.79597414001938e-06
+          },
+          {
+            "layer": 31,
+            "preactivation_max_abs_difference": 0.0003846883773803711,
+            "preactivation_rms_difference": 2.9907188791093483e-05,
+            "gate_mismatches": 125,
+            "gate_mismatch_fraction": 7.392824158187984e-06
+          }
+        ]
+      },
+      "flopscope_profile": null
+    },
+    {
+      "index": 7,
+      "name": "robert-huff",
+      "layout": "rectangular",
+      "schedule": "hybrid_p3",
+      "variant": "winograd",
+      "recursion_depth": 5,
+      "baseline_raw_final_mse": 1.2548326090103178e-07,
+      "fast_raw_final_mse": 1.2539644493508675e-07,
+      "raw_mse_delta": -8.681596594502741e-11,
+      "drift": {
+        "elapsed_s": 33.93382754200138,
+        "final_mean_max_abs_difference": 2.2368642317305287e-06,
+        "final_mean_rms_difference": 5.75434067164885e-07,
+        "total_gate_mismatches": 3696,
+        "maximum_layer_gate_mismatch_fraction": 1.0704809381056202e-05,
+        "per_layer": [
+          {
+            "layer": 1,
+            "preactivation_max_abs_difference": 0.00011745095252990723,
+            "preactivation_rms_difference": 1.0185231617244437e-05,
+            "gate_mismatches": 47,
+            "gate_mismatch_fraction": 2.779701883478682e-06
+          },
+          {
+            "layer": 2,
+            "preactivation_max_abs_difference": 0.00016120076179504395,
+            "preactivation_rms_difference": 1.3553118723567661e-05,
+            "gate_mismatches": 37,
+            "gate_mismatch_fraction": 2.1882759508236435e-06
+          },
+          {
+            "layer": 3,
+            "preactivation_max_abs_difference": 0.0001512765884399414,
+            "preactivation_rms_difference": 1.567226618325065e-05,
+            "gate_mismatches": 63,
+            "gate_mismatch_fraction": 3.725983375726744e-06
+          },
+          {
+            "layer": 4,
+            "preactivation_max_abs_difference": 0.00017434358596801758,
+            "preactivation_rms_difference": 1.6763284587407946e-05,
+            "gate_mismatches": 70,
+            "gate_mismatch_fraction": 4.139981528585271e-06
+          },
+          {
+            "layer": 5,
+            "preactivation_max_abs_difference": 0.00018143653869628906,
+            "preactivation_rms_difference": 1.835872920769314e-05,
+            "gate_mismatches": 74,
+            "gate_mismatch_fraction": 4.376551901647287e-06
+          },
+          {
+            "layer": 6,
+            "preactivation_max_abs_difference": 0.00021314620971679688,
+            "preactivation_rms_difference": 2.0047499456657584e-05,
+            "gate_mismatches": 79,
+            "gate_mismatch_fraction": 4.672264867974806e-06
+          },
+          {
+            "layer": 7,
+            "preactivation_max_abs_difference": 0.00023996829986572266,
+            "preactivation_rms_difference": 2.1103415164164173e-05,
+            "gate_mismatches": 78,
+            "gate_mismatch_fraction": 4.613122274709302e-06
+          },
+          {
+            "layer": 8,
+            "preactivation_max_abs_difference": 0.0002589225769042969,
+            "preactivation_rms_difference": 2.177861704786091e-05,
+            "gate_mismatches": 99,
+            "gate_mismatch_fraction": 5.855116733284884e-06
+          },
+          {
+            "layer": 9,
+            "preactivation_max_abs_difference": 0.0002384185791015625,
+            "preactivation_rms_difference": 2.1845044953098178e-05,
+            "gate_mismatches": 109,
+            "gate_mismatch_fraction": 6.446542665939922e-06
+          },
+          {
+            "layer": 10,
+            "preactivation_max_abs_difference": 0.000278472900390625,
+            "preactivation_rms_difference": 2.2019614534165062e-05,
+            "gate_mismatches": 90,
+            "gate_mismatch_fraction": 5.322833393895349e-06
+          },
+          {
+            "layer": 11,
+            "preactivation_max_abs_difference": 0.00023937225341796875,
+            "preactivation_rms_difference": 2.2433714272616328e-05,
+            "gate_mismatches": 109,
+            "gate_mismatch_fraction": 6.446542665939922e-06
+          },
+          {
+            "layer": 12,
+            "preactivation_max_abs_difference": 0.0002938210964202881,
+            "preactivation_rms_difference": 2.394230728085536e-05,
+            "gate_mismatches": 109,
+            "gate_mismatch_fraction": 6.446542665939922e-06
+          },
+          {
+            "layer": 13,
+            "preactivation_max_abs_difference": 0.0002802610397338867,
+            "preactivation_rms_difference": 2.3798502774575985e-05,
+            "gate_mismatches": 114,
+            "gate_mismatch_fraction": 6.742255632267442e-06
+          },
+          {
+            "layer": 14,
+            "preactivation_max_abs_difference": 0.00028574466705322266,
+            "preactivation_rms_difference": 2.513871671134308e-05,
+            "gate_mismatches": 117,
+            "gate_mismatch_fraction": 6.919683412063953e-06
+          },
+          {
+            "layer": 15,
+            "preactivation_max_abs_difference": 0.00031697750091552734,
+            "preactivation_rms_difference": 2.623336754215447e-05,
+            "gate_mismatches": 129,
+            "gate_mismatch_fraction": 7.62939453125e-06
+          },
+          {
+            "layer": 16,
+            "preactivation_max_abs_difference": 0.00036197900772094727,
+            "preactivation_rms_difference": 2.82588503873418e-05,
+            "gate_mismatches": 107,
+            "gate_mismatch_fraction": 6.328257479408915e-06
+          },
+          {
+            "layer": 17,
+            "preactivation_max_abs_difference": 0.0003604888916015625,
+            "preactivation_rms_difference": 2.8744370616501184e-05,
+            "gate_mismatches": 130,
+            "gate_mismatch_fraction": 7.688537124515504e-06
+          },
+          {
+            "layer": 18,
+            "preactivation_max_abs_difference": 0.0003453493118286133,
+            "preactivation_rms_difference": 2.8668502945687932e-05,
+            "gate_mismatches": 143,
+            "gate_mismatch_fraction": 8.457390836967054e-06
+          },
+          {
+            "layer": 19,
+            "preactivation_max_abs_difference": 0.0004010200500488281,
+            "preactivation_rms_difference": 3.014915857936401e-05,
+            "gate_mismatches": 123,
+            "gate_mismatch_fraction": 7.274538971656977e-06
+          },
+          {
+            "layer": 20,
+            "preactivation_max_abs_difference": 0.00040206313133239746,
+            "preactivation_rms_difference": 3.0197054271771636e-05,
+            "gate_mismatches": 134,
+            "gate_mismatch_fraction": 7.92510749757752e-06
+          },
+          {
+            "layer": 21,
+            "preactivation_max_abs_difference": 0.0003961324691772461,
+            "preactivation_rms_difference": 3.126365453790286e-05,
+            "gate_mismatches": 138,
+            "gate_mismatch_fraction": 8.161677870639534e-06
+          },
+          {
+            "layer": 22,
+            "preactivation_max_abs_difference": 0.000362396240234375,
+            "preactivation_rms_difference": 3.064391173140677e-05,
+            "gate_mismatches": 131,
+            "gate_mismatch_fraction": 7.747679717781008e-06
+          },
+          {
+            "layer": 23,
+            "preactivation_max_abs_difference": 0.00037980079650878906,
+            "preactivation_rms_difference": 2.8709161735976383e-05,
+            "gate_mismatches": 139,
+            "gate_mismatch_fraction": 8.220820463905038e-06
+          },
+          {
+            "layer": 24,
+            "preactivation_max_abs_difference": 0.0003612041473388672,
+            "preactivation_rms_difference": 2.916355618977783e-05,
+            "gate_mismatches": 157,
+            "gate_mismatch_fraction": 9.285387142684108e-06
+          },
+          {
+            "layer": 25,
+            "preactivation_max_abs_difference": 0.0003879070281982422,
+            "preactivation_rms_difference": 2.9314050198243685e-05,
+            "gate_mismatches": 163,
+            "gate_mismatch_fraction": 9.640242702277132e-06
+          },
+          {
+            "layer": 26,
+            "preactivation_max_abs_difference": 0.00043189525604248047,
+            "preactivation_rms_difference": 2.916101987979378e-05,
+            "gate_mismatches": 174,
+            "gate_mismatch_fraction": 1.0290811228197674e-05
+          },
+          {
+            "layer": 27,
+            "preactivation_max_abs_difference": 0.0005382373929023743,
+            "preactivation_rms_difference": 2.9942576598754842e-05,
+            "gate_mismatches": 164,
+            "gate_mismatch_fraction": 9.699385295542636e-06
+          },
+          {
+            "layer": 28,
+            "preactivation_max_abs_difference": 0.0004564821720123291,
+            "preactivation_rms_difference": 2.8984990291046484e-05,
+            "gate_mismatches": 156,
+            "gate_mismatch_fraction": 9.226244549418604e-06
+          },
+          {
+            "layer": 29,
+            "preactivation_max_abs_difference": 0.00043892860412597656,
+            "preactivation_rms_difference": 2.8762597993538564e-05,
+            "gate_mismatches": 161,
+            "gate_mismatch_fraction": 9.521957515746124e-06
+          },
+          {
+            "layer": 30,
+            "preactivation_max_abs_difference": 0.00037954747676849365,
+            "preactivation_rms_difference": 2.7401722826342134e-05,
+            "gate_mismatches": 171,
+            "gate_mismatch_fraction": 1.0113383448401162e-05
+          },
+          {
+            "layer": 31,
+            "preactivation_max_abs_difference": 0.0005418658256530762,
+            "preactivation_rms_difference": 2.7853373616537043e-05,
+            "gate_mismatches": 181,
+            "gate_mismatch_fraction": 1.0704809381056202e-05
+          }
+        ]
+      },
+      "flopscope_profile": null
+    },
+    {
+      "index": 8,
+      "name": "kimberly-caldwell",
+      "layout": "rectangular",
+      "schedule": "hybrid_p3",
+      "variant": "winograd",
+      "recursion_depth": 5,
+      "baseline_raw_final_mse": 2.710818813672883e-07,
+      "fast_raw_final_mse": 2.7141748369097576e-07,
+      "raw_mse_delta": 3.356023236874429e-10,
+      "drift": {
+        "elapsed_s": 25.306785667082295,
+        "final_mean_max_abs_difference": 4.340102501942944e-06,
+        "final_mean_rms_difference": 1.1900572575375583e-06,
+        "total_gate_mismatches": 3155,
+        "maximum_layer_gate_mismatch_fraction": 8.39824824370155e-06,
+        "per_layer": [
+          {
+            "layer": 1,
+            "preactivation_max_abs_difference": 0.00013637542724609375,
+            "preactivation_rms_difference": 1.0698194083540182e-05,
+            "gate_mismatches": 37,
+            "gate_mismatch_fraction": 2.1882759508236435e-06
+          },
+          {
+            "layer": 2,
+            "preactivation_max_abs_difference": 0.000152587890625,
+            "preactivation_rms_difference": 1.4655948880007138e-05,
+            "gate_mismatches": 34,
+            "gate_mismatch_fraction": 2.010848171027132e-06
+          },
+          {
+            "layer": 3,
+            "preactivation_max_abs_difference": 0.00017642974853515625,
+            "preactivation_rms_difference": 1.7462984013575124e-05,
+            "gate_mismatches": 57,
+            "gate_mismatch_fraction": 3.371127816133721e-06
+          },
+          {
+            "layer": 4,
+            "preactivation_max_abs_difference": 0.00020051002502441406,
+            "preactivation_rms_difference": 1.9384739985150052e-05,
+            "gate_mismatches": 83,
+            "gate_mismatch_fraction": 4.908835241036822e-06
+          },
+          {
+            "layer": 5,
+            "preactivation_max_abs_difference": 0.00020575523376464844,
+            "preactivation_rms_difference": 2.0607201125376927e-05,
+            "gate_mismatches": 85,
+            "gate_mismatch_fraction": 5.027120427567829e-06
+          },
+          {
+            "layer": 6,
+            "preactivation_max_abs_difference": 0.00020503997802734375,
+            "preactivation_rms_difference": 2.14076876583974e-05,
+            "gate_mismatches": 80,
+            "gate_mismatch_fraction": 4.73140746124031e-06
+          },
+          {
+            "layer": 7,
+            "preactivation_max_abs_difference": 0.00023746490478515625,
+            "preactivation_rms_difference": 2.259368625252217e-05,
+            "gate_mismatches": 85,
+            "gate_mismatch_fraction": 5.027120427567829e-06
+          },
+          {
+            "layer": 8,
+            "preactivation_max_abs_difference": 0.000278472900390625,
+            "preactivation_rms_difference": 2.257235637874676e-05,
+            "gate_mismatches": 84,
+            "gate_mismatch_fraction": 4.967977834302326e-06
+          },
+          {
+            "layer": 9,
+            "preactivation_max_abs_difference": 0.0002307891845703125,
+            "preactivation_rms_difference": 2.3497312360648407e-05,
+            "gate_mismatches": 98,
+            "gate_mismatch_fraction": 5.79597414001938e-06
+          },
+          {
+            "layer": 10,
+            "preactivation_max_abs_difference": 0.0002523660659790039,
+            "preactivation_rms_difference": 2.3616741968534388e-05,
+            "gate_mismatches": 116,
+            "gate_mismatch_fraction": 6.86054081879845e-06
+          },
+          {
+            "layer": 11,
+            "preactivation_max_abs_difference": 0.0002904534339904785,
+            "preactivation_rms_difference": 2.4241401820342625e-05,
+            "gate_mismatches": 82,
+            "gate_mismatch_fraction": 4.849692647771318e-06
+          },
+          {
+            "layer": 12,
+            "preactivation_max_abs_difference": 0.00030672550201416016,
+            "preactivation_rms_difference": 2.4750662728119546e-05,
+            "gate_mismatches": 87,
+            "gate_mismatch_fraction": 5.145405614098837e-06
+          },
+          {
+            "layer": 13,
+            "preactivation_max_abs_difference": 0.0003426074981689453,
+            "preactivation_rms_difference": 2.5155414256814855e-05,
+            "gate_mismatches": 106,
+            "gate_mismatch_fraction": 6.269114886143411e-06
+          },
+          {
+            "layer": 14,
+            "preactivation_max_abs_difference": 0.00030612945556640625,
+            "preactivation_rms_difference": 2.569004620590276e-05,
+            "gate_mismatches": 130,
+            "gate_mismatch_fraction": 7.688537124515504e-06
+          },
+          {
+            "layer": 15,
+            "preactivation_max_abs_difference": 0.0003489255905151367,
+            "preactivation_rms_difference": 2.5729996823621256e-05,
+            "gate_mismatches": 127,
+            "gate_mismatch_fraction": 7.511109344718992e-06
+          },
+          {
+            "layer": 16,
+            "preactivation_max_abs_difference": 0.0003790855407714844,
+            "preactivation_rms_difference": 2.5757630416952616e-05,
+            "gate_mismatches": 123,
+            "gate_mismatch_fraction": 7.274538971656977e-06
+          },
+          {
+            "layer": 17,
+            "preactivation_max_abs_difference": 0.0003504753112792969,
+            "preactivation_rms_difference": 2.6736658781492766e-05,
+            "gate_mismatches": 117,
+            "gate_mismatch_fraction": 6.919683412063953e-06
+          },
+          {
+            "layer": 18,
+            "preactivation_max_abs_difference": 0.00040918588638305664,
+            "preactivation_rms_difference": 2.7841556633518216e-05,
+            "gate_mismatches": 112,
+            "gate_mismatch_fraction": 6.623970445736434e-06
+          },
+          {
+            "layer": 19,
+            "preactivation_max_abs_difference": 0.00040459632873535156,
+            "preactivation_rms_difference": 2.7158084088261493e-05,
+            "gate_mismatches": 107,
+            "gate_mismatch_fraction": 6.328257479408915e-06
+          },
+          {
+            "layer": 20,
+            "preactivation_max_abs_difference": 0.0003943443298339844,
+            "preactivation_rms_difference": 2.770247409112458e-05,
+            "gate_mismatches": 114,
+            "gate_mismatch_fraction": 6.742255632267442e-06
+          },
+          {
+            "layer": 21,
+            "preactivation_max_abs_difference": 0.0003762245178222656,
+            "preactivation_rms_difference": 2.7473244542854953e-05,
+            "gate_mismatches": 100,
+            "gate_mismatch_fraction": 5.914259326550388e-06
+          },
+          {
+            "layer": 22,
+            "preactivation_max_abs_difference": 0.00041413307189941406,
+            "preactivation_rms_difference": 2.899663285848036e-05,
+            "gate_mismatches": 121,
+            "gate_mismatch_fraction": 7.156253785125969e-06
+          },
+          {
+            "layer": 23,
+            "preactivation_max_abs_difference": 0.0003924369812011719,
+            "preactivation_rms_difference": 2.9581805803608504e-05,
+            "gate_mismatches": 113,
+            "gate_mismatch_fraction": 6.683113039001938e-06
+          },
+          {
+            "layer": 24,
+            "preactivation_max_abs_difference": 0.00038814544677734375,
+            "preactivation_rms_difference": 2.9549803441684854e-05,
+            "gate_mismatches": 109,
+            "gate_mismatch_fraction": 6.446542665939922e-06
+          },
+          {
+            "layer": 25,
+            "preactivation_max_abs_difference": 0.0004458427429199219,
+            "preactivation_rms_difference": 3.095773355418864e-05,
+            "gate_mismatches": 104,
+            "gate_mismatch_fraction": 6.150829699612403e-06
+          },
+          {
+            "layer": 26,
+            "preactivation_max_abs_difference": 0.0004165172576904297,
+            "preactivation_rms_difference": 3.2103871776306614e-05,
+            "gate_mismatches": 139,
+            "gate_mismatch_fraction": 8.220820463905038e-06
+          },
+          {
+            "layer": 27,
+            "preactivation_max_abs_difference": 0.0005376338958740234,
+            "preactivation_rms_difference": 3.0768452469949455e-05,
+            "gate_mismatches": 142,
+            "gate_mismatch_fraction": 8.39824824370155e-06
+          },
+          {
+            "layer": 28,
+            "preactivation_max_abs_difference": 0.0004246234893798828,
+            "preactivation_rms_difference": 3.2084712639843864e-05,
+            "gate_mismatches": 127,
+            "gate_mismatch_fraction": 7.511109344718992e-06
+          },
+          {
+            "layer": 29,
+            "preactivation_max_abs_difference": 0.0005304813385009766,
+            "preactivation_rms_difference": 3.281493045168124e-05,
+            "gate_mismatches": 112,
+            "gate_mismatch_fraction": 6.623970445736434e-06
+          },
+          {
+            "layer": 30,
+            "preactivation_max_abs_difference": 0.0005135536193847656,
+            "preactivation_rms_difference": 3.2679133648216324e-05,
+            "gate_mismatches": 122,
+            "gate_mismatch_fraction": 7.215396378391473e-06
+          },
+          {
+            "layer": 31,
+            "preactivation_max_abs_difference": 0.0005171298980712891,
+            "preactivation_rms_difference": 3.226670836503883e-05,
+            "gate_mismatches": 102,
+            "gate_mismatch_fraction": 6.032544513081395e-06
+          }
+        ]
+      },
+      "flopscope_profile": null
+    },
+    {
+      "index": 9,
+      "name": "annette-hansen",
+      "layout": "rectangular",
+      "schedule": "hybrid_p3",
+      "variant": "winograd",
+      "recursion_depth": 5,
+      "baseline_raw_final_mse": 1.0687374150079978e-07,
+      "fast_raw_final_mse": 1.0680176861324705e-07,
+      "raw_mse_delta": -7.197288755273359e-11,
+      "drift": {
+        "elapsed_s": 24.840054833795875,
+        "final_mean_max_abs_difference": 2.1793850688567318e-06,
+        "final_mean_rms_difference": 6.550167060117264e-07,
+        "total_gate_mismatches": 3707,
+        "maximum_layer_gate_mismatch_fraction": 1.1828518653100776e-05,
+        "per_layer": [
+          {
+            "layer": 1,
+            "preactivation_max_abs_difference": 0.000125885009765625,
+            "preactivation_rms_difference": 1.0440066232349786e-05,
+            "gate_mismatches": 29,
+            "gate_mismatch_fraction": 1.7151352046996125e-06
+          },
+          {
+            "layer": 2,
+            "preactivation_max_abs_difference": 0.00016224384307861328,
+            "preactivation_rms_difference": 1.4003003921206573e-05,
+            "gate_mismatches": 42,
+            "gate_mismatch_fraction": 2.483988917151163e-06
+          },
+          {
+            "layer": 3,
+            "preactivation_max_abs_difference": 0.00018306076526641846,
+            "preactivation_rms_difference": 1.6038191767252686e-05,
+            "gate_mismatches": 60,
+            "gate_mismatch_fraction": 3.5485555959302325e-06
+          },
+          {
+            "layer": 4,
+            "preactivation_max_abs_difference": 0.00018852949142456055,
+            "preactivation_rms_difference": 1.772697444022272e-05,
+            "gate_mismatches": 67,
+            "gate_mismatch_fraction": 3.96255374878876e-06
+          },
+          {
+            "layer": 5,
+            "preactivation_max_abs_difference": 0.00022649765014648438,
+            "preactivation_rms_difference": 1.9572388649528662e-05,
+            "gate_mismatches": 75,
+            "gate_mismatch_fraction": 4.435694494912791e-06
+          },
+          {
+            "layer": 6,
+            "preactivation_max_abs_difference": 0.00021791458129882812,
+            "preactivation_rms_difference": 2.095253243134336e-05,
+            "gate_mismatches": 76,
+            "gate_mismatch_fraction": 4.494837088178295e-06
+          },
+          {
+            "layer": 7,
+            "preactivation_max_abs_difference": 0.00021779537200927734,
+            "preactivation_rms_difference": 2.2323470475225882e-05,
+            "gate_mismatches": 112,
+            "gate_mismatch_fraction": 6.623970445736434e-06
+          },
+          {
+            "layer": 8,
+            "preactivation_max_abs_difference": 0.00024390220642089844,
+            "preactivation_rms_difference": 2.2168698415570794e-05,
+            "gate_mismatches": 99,
+            "gate_mismatch_fraction": 5.855116733284884e-06
+          },
+          {
+            "layer": 9,
+            "preactivation_max_abs_difference": 0.00026154518127441406,
+            "preactivation_rms_difference": 2.186932089248759e-05,
+            "gate_mismatches": 89,
+            "gate_mismatch_fraction": 5.263690800629845e-06
+          },
+          {
+            "layer": 10,
+            "preactivation_max_abs_difference": 0.00025844573974609375,
+            "preactivation_rms_difference": 2.237529010891246e-05,
+            "gate_mismatches": 90,
+            "gate_mismatch_fraction": 5.322833393895349e-06
+          },
+          {
+            "layer": 11,
+            "preactivation_max_abs_difference": 0.000286102294921875,
+            "preactivation_rms_difference": 2.324119655343886e-05,
+            "gate_mismatches": 112,
+            "gate_mismatch_fraction": 6.623970445736434e-06
+          },
+          {
+            "layer": 12,
+            "preactivation_max_abs_difference": 0.0002651214599609375,
+            "preactivation_rms_difference": 2.209001770088032e-05,
+            "gate_mismatches": 115,
+            "gate_mismatch_fraction": 6.801398225532946e-06
+          },
+          {
+            "layer": 13,
+            "preactivation_max_abs_difference": 0.00023651123046875,
+            "preactivation_rms_difference": 2.2255012248664972e-05,
+            "gate_mismatches": 125,
+            "gate_mismatch_fraction": 7.392824158187984e-06
+          },
+          {
+            "layer": 14,
+            "preactivation_max_abs_difference": 0.0003223419189453125,
+            "preactivation_rms_difference": 2.267303763331748e-05,
+            "gate_mismatches": 121,
+            "gate_mismatch_fraction": 7.156253785125969e-06
+          },
+          {
+            "layer": 15,
+            "preactivation_max_abs_difference": 0.00024819374084472656,
+            "preactivation_rms_difference": 2.3361467512468844e-05,
+            "gate_mismatches": 142,
+            "gate_mismatch_fraction": 8.39824824370155e-06
+          },
+          {
+            "layer": 16,
+            "preactivation_max_abs_difference": 0.00027042627334594727,
+            "preactivation_rms_difference": 2.2989667973161145e-05,
+            "gate_mismatches": 129,
+            "gate_mismatch_fraction": 7.62939453125e-06
+          },
+          {
+            "layer": 17,
+            "preactivation_max_abs_difference": 0.00027313828468322754,
+            "preactivation_rms_difference": 2.2307106941972827e-05,
+            "gate_mismatches": 134,
+            "gate_mismatch_fraction": 7.92510749757752e-06
+          },
+          {
+            "layer": 18,
+            "preactivation_max_abs_difference": 0.0002696514129638672,
+            "preactivation_rms_difference": 2.2406579458143332e-05,
+            "gate_mismatches": 118,
+            "gate_mismatch_fraction": 6.978826005329457e-06
+          },
+          {
+            "layer": 19,
+            "preactivation_max_abs_difference": 0.00028324127197265625,
+            "preactivation_rms_difference": 2.3050419478370067e-05,
+            "gate_mismatches": 110,
+            "gate_mismatch_fraction": 6.505685259205426e-06
+          },
+          {
+            "layer": 20,
+            "preactivation_max_abs_difference": 0.00029009580612182617,
+            "preactivation_rms_difference": 2.353809453467232e-05,
+            "gate_mismatches": 169,
+            "gate_mismatch_fraction": 9.995098261870156e-06
+          },
+          {
+            "layer": 21,
+            "preactivation_max_abs_difference": 0.0002999305725097656,
+            "preactivation_rms_difference": 2.4149672259798046e-05,
+            "gate_mismatches": 120,
+            "gate_mismatch_fraction": 7.097111191860465e-06
+          },
+          {
+            "layer": 22,
+            "preactivation_max_abs_difference": 0.0003037452697753906,
+            "preactivation_rms_difference": 2.3757321189944226e-05,
+            "gate_mismatches": 142,
+            "gate_mismatch_fraction": 8.39824824370155e-06
+          },
+          {
+            "layer": 23,
+            "preactivation_max_abs_difference": 0.0003139972686767578,
+            "preactivation_rms_difference": 2.508073830023835e-05,
+            "gate_mismatches": 152,
+            "gate_mismatch_fraction": 8.98967417635659e-06
+          },
+          {
+            "layer": 24,
+            "preactivation_max_abs_difference": 0.0003153383731842041,
+            "preactivation_rms_difference": 2.4322653225451403e-05,
+            "gate_mismatches": 164,
+            "gate_mismatch_fraction": 9.699385295542636e-06
+          },
+          {
+            "layer": 25,
+            "preactivation_max_abs_difference": 0.00029277801513671875,
+            "preactivation_rms_difference": 2.4173270443719943e-05,
+            "gate_mismatches": 162,
+            "gate_mismatch_fraction": 9.581100109011628e-06
+          },
+          {
+            "layer": 26,
+            "preactivation_max_abs_difference": 0.00029671192169189453,
+            "preactivation_rms_difference": 2.4424345142569515e-05,
+            "gate_mismatches": 158,
+            "gate_mismatch_fraction": 9.344529735949612e-06
+          },
+          {
+            "layer": 27,
+            "preactivation_max_abs_difference": 0.00031566619873046875,
+            "preactivation_rms_difference": 2.5016387030285254e-05,
+            "gate_mismatches": 160,
+            "gate_mismatch_fraction": 9.46281492248062e-06
+          },
+          {
+            "layer": 28,
+            "preactivation_max_abs_difference": 0.0003330707550048828,
+            "preactivation_rms_difference": 2.437171584932416e-05,
+            "gate_mismatches": 163,
+            "gate_mismatch_fraction": 9.640242702277132e-06
+          },
+          {
+            "layer": 29,
+            "preactivation_max_abs_difference": 0.00035762786865234375,
+            "preactivation_rms_difference": 2.4201888258046815e-05,
+            "gate_mismatches": 126,
+            "gate_mismatch_fraction": 7.451966751453488e-06
+          },
+          {
+            "layer": 30,
+            "preactivation_max_abs_difference": 0.0003260374069213867,
+            "preactivation_rms_difference": 2.4647903290197096e-05,
+            "gate_mismatches": 200,
+            "gate_mismatch_fraction": 1.1828518653100776e-05
+          },
+          {
+            "layer": 31,
+            "preactivation_max_abs_difference": 0.0003199577331542969,
+            "preactivation_rms_difference": 2.4127399433195823e-05,
+            "gate_mismatches": 146,
+            "gate_mismatch_fraction": 8.634818616763566e-06
+          }
+        ]
+      },
+      "flopscope_profile": null
+    }
+  ],
+  "summaries": [
+    {
+      "layout": "rectangular",
+      "schedule": "hybrid_p3",
+      "variant": "winograd",
+      "recursion_depth": 5,
+      "networks": 10,
+      "mean_baseline_raw_final_mse": 1.7154893470257354e-07,
+      "mean_fast_raw_final_mse": 1.7153620094080708e-07,
+      "mean_raw_mse_delta": -1.2733761766435611e-11,
+      "max_final_mean_abs_drift": 7.55092518955891e-06,
+      "total_gate_mismatches": 33352,
+      "profiles": 1,
+      "mean_tracked_flops": 175822834176.0,
+      "mean_residual_wall_time_s": 0.05923046311363578,
+      "projected_score_multiplier": 0.6681833841447191,
+      "projected_adjusted_score": 1.1461763924795703e-07
+    }
+  ]
+}

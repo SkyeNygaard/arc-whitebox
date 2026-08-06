@@ -1,0 +1,200 @@
+{
+  "protocol": {
+    "dual_results": "arc_ceiling/results/dual_contracted_k3_rank2_selection8.json",
+    "artifact_dir": "arc_ceiling/results/factorized_k3_layer29",
+    "oracle_dir": "arc_whitebox/submissions/whest_bounded_ml/data/higher_fresh",
+    "layer": 29,
+    "rank": 2
+  },
+  "summary": {
+    "factor_artifact_vs_oracle": {
+      "relative_error": 0.3017121039047215,
+      "cosine": 0.9974058235950006,
+      "pearson": 0.9953109339346691,
+      "optimal_scale": 1.4159519308130928,
+      "scaled_relative_error": 0.07198349157118213,
+      "per_network_scale_mean": 1.4762014595340975,
+      "per_network_scale_std": 0.16126128848879281,
+      "per_network_scale_min": 1.3329104238358838,
+      "per_network_scale_max": 1.8301446016051315
+    },
+    "direct_cp_vs_oracle": {
+      "relative_error": 0.2787459218054074,
+      "cosine": 0.9976272780338193,
+      "pearson": 0.9956948636570491,
+      "optimal_scale": 1.3712766243660504,
+      "scaled_relative_error": 0.06884630798258118,
+      "per_network_scale_mean": 1.4262046387978091,
+      "per_network_scale_std": 0.15821845547978,
+      "per_network_scale_min": 1.291865432046046,
+      "per_network_scale_max": 1.7779347065985298
+    },
+    "direct_cp_vs_factor": {
+      "relative_error": 0.04002605605500616,
+      "cosine": 0.9997455096020703,
+      "pearson": 0.9995251632594783,
+      "optimal_scale": 0.9679871877891894,
+      "scaled_relative_error": 0.022559167327207048,
+      "per_network_scale_mean": 0.9660223941934069,
+      "per_network_scale_std": 0.005446822352044128,
+      "per_network_scale_min": 0.9571371586136957,
+      "per_network_scale_max": 0.9731889681703833
+    },
+    "exact_dual_vs_oracle": {
+      "relative_error": 0.2787459218054074,
+      "cosine": 0.9976272780338193,
+      "pearson": 0.995694863657049,
+      "optimal_scale": 1.3712766243660506,
+      "scaled_relative_error": 0.06884630798258132,
+      "per_network_scale_mean": 1.4262046387978091,
+      "per_network_scale_std": 0.1582184554797802,
+      "per_network_scale_min": 1.2918654320460459,
+      "per_network_scale_max": 1.77793470659853
+    },
+    "exact_dual_vs_factor": {
+      "relative_error": 0.04002605605500617,
+      "cosine": 0.9997455096020701,
+      "pearson": 0.9995251632594783,
+      "optimal_scale": 0.9679871877891894,
+      "scaled_relative_error": 0.02255916732720704,
+      "per_network_scale_mean": 0.966022394193407,
+      "per_network_scale_std": 0.005446822352044007,
+      "per_network_scale_min": 0.9571371586136961,
+      "per_network_scale_max": 0.9731889681703834
+    },
+    "frozen_lower_dual_vs_oracle": {
+      "relative_error": 0.1667621011079622,
+      "cosine": 0.9909685408413795,
+      "pearson": 0.9833385018422727,
+      "optimal_scale": 1.1111617722384528,
+      "scaled_relative_error": 0.1340945601533021,
+      "per_network_scale_mean": 1.19050625145415,
+      "per_network_scale_std": 0.15546576074094293,
+      "per_network_scale_min": 0.9878184496715392,
+      "per_network_scale_max": 1.385741918522388
+    },
+    "frozen_lower_dual_vs_factor": {
+      "relative_error": 0.3149738269998959,
+      "cosine": 0.9887790986420232,
+      "pearson": 0.9790385729833794,
+      "optimal_scale": 0.7809803218175265,
+      "scaled_relative_error": 0.14938505309658168,
+      "per_network_scale_mean": 0.8102788625571693,
+      "per_network_scale_std": 0.1008854361367877,
+      "per_network_scale_min": 0.6796277887898863,
+      "per_network_scale_max": 0.9834734333200702
+    },
+    "cheap_lower_dual_vs_oracle": {
+      "relative_error": 0.4559116067613269,
+      "cosine": 0.983727341274612,
+      "pearson": 0.9699556407086086,
+      "optimal_scale": 1.7420020458233503,
+      "scaled_relative_error": 0.17966779908704575,
+      "per_network_scale_mean": 1.9539047704358308,
+      "per_network_scale_std": 0.4136766474775315,
+      "per_network_scale_min": 1.5570781430236185,
+      "per_network_scale_max": 2.615855094277136
+    },
+    "cheap_lower_dual_vs_factor": {
+      "relative_error": 0.26381320200769337,
+      "cosine": 0.9811223484348522,
+      "pearson": 0.9647484867882236,
+      "optimal_scale": 1.223828257336778,
+      "scaled_relative_error": 0.19338804875607146,
+      "per_network_scale_mean": 1.3251575459584068,
+      "per_network_scale_std": 0.23326425126611885,
+      "per_network_scale_min": 1.0711935974291351,
+      "per_network_scale_max": 1.6900619552825022
+    }
+  },
+  "records": [
+    {
+      "index": 160,
+      "oracle_target": [
+        1.3659472112996598,
+        0.17673527179818285
+      ],
+      "factor_target": [
+        0.7381981202184855,
+        0.13969935845031586
+      ]
+    },
+    {
+      "index": 161,
+      "oracle_target": [
+        2.869594284937399,
+        0.2952513953330457
+      ],
+      "factor_target": [
+        1.8264138591007835,
+        0.2789267214132249
+      ]
+    },
+    {
+      "index": 162,
+      "oracle_target": [
+        1.3486179876950957,
+        0.2127596712190803
+      ],
+      "factor_target": [
+        0.8908102611516542,
+        0.19407326731655072
+      ]
+    },
+    {
+      "index": 163,
+      "oracle_target": [
+        4.506805797331443,
+        0.5223161851187746
+      ],
+      "factor_target": [
+        3.3716089985242887,
+        0.46172710339716894
+      ]
+    },
+    {
+      "index": 164,
+      "oracle_target": [
+        0.7010865567876289,
+        0.13277469761326122
+      ],
+      "factor_target": [
+        0.5044140509430217,
+        0.12638690404897232
+      ]
+    },
+    {
+      "index": 165,
+      "oracle_target": [
+        1.2281632856849714,
+        0.23225503373052783
+      ],
+      "factor_target": [
+        0.8857975588751549,
+        0.2055055791916621
+      ]
+    },
+    {
+      "index": 166,
+      "oracle_target": [
+        4.606448886127113,
+        0.6837511351291025
+      ],
+      "factor_target": [
+        3.1572549332840962,
+        0.5396797070884826
+      ]
+    },
+    {
+      "index": 167,
+      "oracle_target": [
+        3.954662852803311,
+        0.09230929482702367
+      ],
+      "factor_target": [
+        2.822690036697551,
+        0.21757274321310685
+      ]
+    }
+  ]
+}

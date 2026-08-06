@@ -1,0 +1,416 @@
+{
+  "ids": [
+    60,
+    61,
+    62,
+    63,
+    64
+  ],
+  "total_forward_directions": 8192,
+  "seeds": 16,
+  "summaries": {
+    "iid_antithetic": {
+      "mean_variance_ratio_vs_sobol": 1.5034598750148178,
+      "median_variance_ratio_vs_sobol": 1.3396380724947323,
+      "mean_seconds": 0.037823155685327944
+    },
+    "sobol_antithetic": {
+      "mean_variance_ratio_vs_sobol": 1.0,
+      "median_variance_ratio_vs_sobol": 1.0,
+      "mean_seconds": 0.04769606455520261
+    },
+    "plane_4": {
+      "mean_variance_ratio_vs_sobol": 1.6620415151587822,
+      "median_variance_ratio_vs_sobol": 1.481330763898474,
+      "mean_seconds": 0.049220875022001565
+    },
+    "plane_8": {
+      "mean_variance_ratio_vs_sobol": 2.2770391870657485,
+      "median_variance_ratio_vs_sobol": 1.9852899997319298,
+      "mean_seconds": 0.0419562833441887
+    },
+    "plane_16": {
+      "mean_variance_ratio_vs_sobol": 4.165135006058948,
+      "median_variance_ratio_vs_sobol": 3.3672672914660633,
+      "mean_seconds": 0.03845035041158553
+    }
+  },
+  "networks": [
+    {
+      "mlp_id": 60,
+      "records": [
+        {
+          "method": "iid_antithetic",
+          "angles_per_plane": null,
+          "planes": null,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 1.0895860577083178e-05,
+          "sd_single_target_mse": 7.784537349269991e-06,
+          "ensemble_target_mse": 5.190098715909975e-07,
+          "across_seed_prediction_variance": 1.0376850705492182e-05,
+          "mean_seconds": 0.03785905450058635,
+          "median_seconds": 0.03750808350741863,
+          "variance_ratio_vs_sobol_antithetic": 2.339633093435479
+        },
+        {
+          "method": "sobol_antithetic",
+          "angles_per_plane": null,
+          "planes": null,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 4.832240330962805e-06,
+          "sd_single_target_mse": 2.18727715174924e-06,
+          "ensemble_target_mse": 3.9699331098883775e-07,
+          "across_seed_prediction_variance": 4.435247019973967e-06,
+          "mean_seconds": 0.0470032785233343,
+          "median_seconds": 0.046829291502945125,
+          "variance_ratio_vs_sobol_antithetic": 1.0
+        },
+        {
+          "method": "plane",
+          "angles_per_plane": 4,
+          "planes": 2048,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 8.788854194594677e-06,
+          "sd_single_target_mse": 5.1021880778087774e-06,
+          "ensemble_target_mse": 3.403931059277625e-07,
+          "across_seed_prediction_variance": 8.448461088666915e-06,
+          "mean_seconds": 0.04687841660052072,
+          "median_seconds": 0.046851145452819765,
+          "variance_ratio_vs_sobol_antithetic": 1.9048456716434488
+        },
+        {
+          "method": "plane",
+          "angles_per_plane": 8,
+          "planes": 1024,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 1.4670005658185587e-05,
+          "sd_single_target_mse": 1.0405525696851836e-05,
+          "ensemble_target_mse": 3.3643875467127244e-07,
+          "across_seed_prediction_variance": 1.4333566903514312e-05,
+          "mean_seconds": 0.039951710888999514,
+          "median_seconds": 0.03984210384078324,
+          "variance_ratio_vs_sobol_antithetic": 3.231740383109134
+        },
+        {
+          "method": "plane",
+          "angles_per_plane": 16,
+          "planes": 512,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 2.3753595694814725e-05,
+          "sd_single_target_mse": 1.6701811189363445e-05,
+          "ensemble_target_mse": 1.1808785083598316e-06,
+          "across_seed_prediction_variance": 2.257271718645489e-05,
+          "mean_seconds": 0.038258109241724014,
+          "median_seconds": 0.03807825001422316,
+          "variance_ratio_vs_sobol_antithetic": 5.089393462145291
+        }
+      ]
+    },
+    {
+      "mlp_id": 61,
+      "records": [
+        {
+          "method": "iid_antithetic",
+          "angles_per_plane": null,
+          "planes": null,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 2.1796448792121183e-06,
+          "sd_single_target_mse": 1.0738776852667845e-06,
+          "ensemble_target_mse": 1.6832215214406166e-07,
+          "across_seed_prediction_variance": 2.0113227270680566e-06,
+          "mean_seconds": 0.038266554547590204,
+          "median_seconds": 0.037749687442556024,
+          "variance_ratio_vs_sobol_antithetic": 1.1417906205340773
+        },
+        {
+          "method": "sobol_antithetic",
+          "angles_per_plane": null,
+          "planes": null,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 1.9371783500396e-06,
+          "sd_single_target_mse": 9.13661249020314e-07,
+          "ensemble_target_mse": 1.756270718137801e-07,
+          "across_seed_prediction_variance": 1.7615512782258205e-06,
+          "mean_seconds": 0.04698674989049323,
+          "median_seconds": 0.046971249976195395,
+          "variance_ratio_vs_sobol_antithetic": 1.0
+        },
+        {
+          "method": "plane",
+          "angles_per_plane": 4,
+          "planes": 2048,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 2.7284580428957656e-06,
+          "sd_single_target_mse": 1.5930072323097777e-06,
+          "ensemble_target_mse": 1.426381171964948e-07,
+          "across_seed_prediction_variance": 2.5858199256992706e-06,
+          "mean_seconds": 0.04726886213757098,
+          "median_seconds": 0.0471627505030483,
+          "variance_ratio_vs_sobol_antithetic": 1.4679220285336387
+        },
+        {
+          "method": "plane",
+          "angles_per_plane": 8,
+          "planes": 1024,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 3.636646883574855e-06,
+          "sd_single_target_mse": 1.8812784750373256e-06,
+          "ensemble_target_mse": 1.3945674689813514e-07,
+          "across_seed_prediction_variance": 3.49719013667672e-06,
+          "mean_seconds": 0.04042046364338603,
+          "median_seconds": 0.0403009585570544,
+          "variance_ratio_vs_sobol_antithetic": 1.9852899997319298
+        },
+        {
+          "method": "plane",
+          "angles_per_plane": 16,
+          "planes": 512,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 5.732098530979846e-06,
+          "sd_single_target_mse": 3.4994369819521244e-06,
+          "ensemble_target_mse": 1.4658324013919531e-07,
+          "across_seed_prediction_variance": 5.58551529084065e-06,
+          "mean_seconds": 0.03807871069875546,
+          "median_seconds": 0.03794377052690834,
+          "variance_ratio_vs_sobol_antithetic": 3.170793470438287
+        }
+      ]
+    },
+    {
+      "mlp_id": 62,
+      "records": [
+        {
+          "method": "iid_antithetic",
+          "angles_per_plane": null,
+          "planes": null,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 2.5815962753178696e-06,
+          "sd_single_target_mse": 1.1899745672316438e-06,
+          "ensemble_target_mse": 6.390745661595019e-08,
+          "across_seed_prediction_variance": 2.517688818701919e-06,
+          "mean_seconds": 0.038234322899370454,
+          "median_seconds": 0.03790777048561722,
+          "variance_ratio_vs_sobol_antithetic": 1.2485266842520844
+        },
+        {
+          "method": "sobol_antithetic",
+          "angles_per_plane": null,
+          "planes": null,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 2.137087034147937e-06,
+          "sd_single_target_mse": 1.4507771187507432e-06,
+          "ensemble_target_mse": 1.205591934073024e-07,
+          "across_seed_prediction_variance": 2.016527840740634e-06,
+          "mean_seconds": 0.051299390630447306,
+          "median_seconds": 0.048603020957671106,
+          "variance_ratio_vs_sobol_antithetic": 1.0
+        },
+        {
+          "method": "plane",
+          "angles_per_plane": 4,
+          "planes": 2048,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 3.0808495888193537e-06,
+          "sd_single_target_mse": 2.1145126568943275e-06,
+          "ensemble_target_mse": 9.370486207248909e-08,
+          "across_seed_prediction_variance": 2.987144726746864e-06,
+          "mean_seconds": 0.05809346625756007,
+          "median_seconds": 0.05696956242900342,
+          "variance_ratio_vs_sobol_antithetic": 1.481330763898474
+        },
+        {
+          "method": "plane",
+          "angles_per_plane": 8,
+          "planes": 1024,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 4.092429424350196e-06,
+          "sd_single_target_mse": 2.4302600744836063e-06,
+          "ensemble_target_mse": 1.3763781702616324e-07,
+          "across_seed_prediction_variance": 3.954791607324033e-06,
+          "mean_seconds": 0.04874193237628788,
+          "median_seconds": 0.049398374976590276,
+          "variance_ratio_vs_sobol_antithetic": 1.961188696443442
+        },
+        {
+          "method": "plane",
+          "angles_per_plane": 16,
+          "planes": 512,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 6.503076370648647e-06,
+          "sd_single_target_mse": 6.029052240834994e-06,
+          "ensemble_target_mse": 2.758459286897833e-07,
+          "across_seed_prediction_variance": 6.227230441958863e-06,
+          "mean_seconds": 0.03802795040246565,
+          "median_seconds": 0.03786702046636492,
+          "variance_ratio_vs_sobol_antithetic": 3.088095446116784
+        }
+      ]
+    },
+    {
+      "mlp_id": 63,
+      "records": [
+        {
+          "method": "iid_antithetic",
+          "angles_per_plane": null,
+          "planes": null,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 7.950197382693096e-06,
+          "sd_single_target_mse": 9.717039444916382e-06,
+          "ensemble_target_mse": 7.98367021687421e-07,
+          "across_seed_prediction_variance": 7.151830361005678e-06,
+          "mean_seconds": 0.03759541152976453,
+          "median_seconds": 0.03697300050407648,
+          "variance_ratio_vs_sobol_antithetic": 1.4477109043577163
+        },
+        {
+          "method": "sobol_antithetic",
+          "angles_per_plane": null,
+          "planes": null,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 5.571882765578097e-06,
+          "sd_single_target_mse": 2.633531417097994e-06,
+          "ensemble_target_mse": 6.317871018111517e-07,
+          "across_seed_prediction_variance": 4.9400956637669455e-06,
+          "mean_seconds": 0.04631157292169519,
+          "median_seconds": 0.04641295853070915,
+          "variance_ratio_vs_sobol_antithetic": 1.0
+        },
+        {
+          "method": "plane",
+          "angles_per_plane": 4,
+          "planes": 2048,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 1.0960655527737056e-05,
+          "sd_single_target_mse": 7.151764534366554e-06,
+          "ensemble_target_mse": 4.763926590278806e-07,
+          "across_seed_prediction_variance": 1.0484262868709178e-05,
+          "mean_seconds": 0.046774174479651265,
+          "median_seconds": 0.04677102144341916,
+          "variance_ratio_vs_sobol_antithetic": 2.1222793205414705
+        },
+        {
+          "method": "plane",
+          "angles_per_plane": 8,
+          "planes": 1024,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 1.1967731894754437e-05,
+          "sd_single_target_mse": 1.0325260508225496e-05,
+          "ensemble_target_mse": 1.384795721632192e-07,
+          "across_seed_prediction_variance": 1.1829252322591218e-05,
+          "mean_seconds": 0.040053648423054256,
+          "median_seconds": 0.04008837498258799,
+          "variance_ratio_vs_sobol_antithetic": 2.3945391198297403
+        },
+        {
+          "method": "plane",
+          "angles_per_plane": 16,
+          "planes": 512,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 3.282963975235455e-05,
+          "sd_single_target_mse": 5.341040613763419e-05,
+          "ensemble_target_mse": 2.645035955712188e-06,
+          "across_seed_prediction_variance": 3.018460379664235e-05,
+          "mean_seconds": 0.03972399998747278,
+          "median_seconds": 0.03795833350159228,
+          "variance_ratio_vs_sobol_antithetic": 6.110125360128318
+        }
+      ]
+    },
+    {
+      "mlp_id": 64,
+      "records": [
+        {
+          "method": "iid_antithetic",
+          "angles_per_plane": null,
+          "planes": null,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 4.251520539079309e-06,
+          "sd_single_target_mse": 2.3399491232126644e-06,
+          "ensemble_target_mse": 1.8994318471817928e-07,
+          "across_seed_prediction_variance": 4.061577354361131e-06,
+          "mean_seconds": 0.03716043494932819,
+          "median_seconds": 0.03709643753245473,
+          "variance_ratio_vs_sobol_antithetic": 1.3396380724947323
+        },
+        {
+          "method": "sobol_antithetic",
+          "angles_per_plane": null,
+          "planes": null,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 3.2451584125049013e-06,
+          "sd_single_target_mse": 1.66095403743089e-06,
+          "ensemble_target_mse": 2.1331164899997607e-07,
+          "across_seed_prediction_variance": 3.0318467635049255e-06,
+          "mean_seconds": 0.04687933081004303,
+          "median_seconds": 0.0469851044472307,
+          "variance_ratio_vs_sobol_antithetic": 1.0
+        },
+        {
+          "method": "plane",
+          "angles_per_plane": 4,
+          "planes": 2048,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 4.266300923867914e-06,
+          "sd_single_target_mse": 1.953643764825377e-06,
+          "ensemble_target_mse": 2.223333884218473e-07,
+          "across_seed_prediction_variance": 4.043967535446067e-06,
+          "mean_seconds": 0.04708945563470479,
+          "median_seconds": 0.047009645379148424,
+          "variance_ratio_vs_sobol_antithetic": 1.3338297911768777
+        },
+        {
+          "method": "plane",
+          "angles_per_plane": 8,
+          "planes": 1024,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 5.646740410347436e-06,
+          "sd_single_target_mse": 3.255252158878845e-06,
+          "ensemble_target_mse": 1.5170692575132216e-07,
+          "across_seed_prediction_variance": 5.4950334845961145e-06,
+          "mean_seconds": 0.04061366138921585,
+          "median_seconds": 0.040419937460683286,
+          "variance_ratio_vs_sobol_antithetic": 1.8124377362144963
+        },
+        {
+          "method": "plane",
+          "angles_per_plane": 16,
+          "planes": 512,
+          "total_forward_directions": 8192,
+          "seeds": 16,
+          "mean_single_target_mse": 1.061837089247363e-05,
+          "sd_single_target_mse": 7.115968091914205e-06,
+          "ensemble_target_mse": 4.0933245298625173e-07,
+          "across_seed_prediction_variance": 1.020903843948738e-05,
+          "mean_seconds": 0.03816298172750976,
+          "median_seconds": 0.03803977044299245,
+          "variance_ratio_vs_sobol_antithetic": 3.3672672914660633
+        }
+      ]
+    }
+  ],
+  "conclusion_gate": "Proceed to breakpoint-exact propagation only if a multi-angle plane beats scrambled Sobol-antithetic variance at equal forwards."
+}

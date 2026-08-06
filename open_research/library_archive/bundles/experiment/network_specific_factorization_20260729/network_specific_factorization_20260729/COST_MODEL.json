@@ -1,0 +1,15 @@
+{
+  "measured_total_seconds": 537.2786264419556,
+  "samples": 120,
+  "base_network_groups": 40,
+  "rotations_per_group": 3,
+  "truth_nodes_per_half": 4096,
+  "incremental_deployable_model": {
+    "ridge_feature_count": 191,
+    "coefficient_count": 384,
+    "estimated_dense_inference_flops": 764,
+    "basis_projection_flops": 1024,
+    "asset_bytes": 445586
+  },
+  "qualification": "Feature extraction here reuses Kerdock activations, fold statistics, fitted beta, and suffix gates. Full subprocess wall/FLOP integration was not available in the shared launch pack."
+}

@@ -1,0 +1,118 @@
+{
+  "budget": 272000000000,
+  "current_position": {
+    "adjusted_score": 1.55e-07,
+    "budget": 272000000000,
+    "compute_multiplier": 0.6415441176470589,
+    "effective_compute": 174500000000.0,
+    "raw_mse": 2.416e-07,
+    "score_multiplier": 0.6415562913907285
+  },
+  "delta_pair": {
+    "expected_no_residual_score_delta": 1.9074707696941174e-09,
+    "tracked_delta": 2147483648
+  },
+  "marginal_rates_at_current_raw": {
+    "raw_gain_required_per_1B_factor": 1.005730659025788,
+    "score_per_1B_effective": 8.88235294117647e-10,
+    "score_per_1ms_residual": 8.88235294117647e-11
+  },
+  "repricing": [
+    {
+      "added_effective_compute_B": 0.0847,
+      "fixed_raw_score_penalty": 7.52335294117647e-11,
+      "item": "translation_reuse_final_replay",
+      "note": "validated replacement cost",
+      "required_raw_gain_factor": 1.0004853868194843,
+      "required_raw_reduction_fraction": 0.00048515133342164063
+    },
+    {
+      "added_effective_compute_B": -0.524123904,
+      "fixed_raw_score_penalty": -4.655453500235294e-10,
+      "item": "A43_tracked_saving",
+      "note": "negative cost: score benefit if residual/raw unchanged",
+      "required_raw_gain_factor": 0.9969964246189111,
+      "required_raw_reduction_fraction": -0.003012624024441246
+    },
+    {
+      "added_effective_compute_B": 1.0,
+      "fixed_raw_score_penalty": 8.88235294117647e-10,
+      "item": "one_billion",
+      "note": "reference",
+      "required_raw_gain_factor": 1.005730659025788,
+      "required_raw_reduction_fraction": 0.005698005698005715
+    },
+    {
+      "added_effective_compute_B": 5.549,
+      "fixed_raw_score_penalty": 4.928817647058824e-09,
+      "item": "full_second_final_replay",
+      "note": "historical full replay",
+      "required_raw_gain_factor": 1.0317994269340973,
+      "required_raw_reduction_fraction": 0.030819388055473684
+    },
+    {
+      "added_effective_compute_B": 8.17,
+      "fixed_raw_score_penalty": 7.256882352941176e-09,
+      "item": "ordinary_pilot_1024_plus_2048",
+      "note": "pilot total",
+      "required_raw_gain_factor": 1.0468194842406877,
+      "required_raw_reduction_fraction": 0.044725461214211504
+    },
+    {
+      "added_effective_compute_B": 10.2,
+      "fixed_raw_score_penalty": 9.059999999999998e-09,
+      "item": "cross_scale_pilot_low",
+      "note": "cross-scale low",
+      "required_raw_gain_factor": 1.0584527220630373,
+      "required_raw_reduction_fraction": 0.05522468868435304
+    },
+    {
+      "added_effective_compute_B": 10.34,
+      "fixed_raw_score_penalty": 9.18435294117647e-09,
+      "item": "adjoint_compression_measured",
+      "note": "measured FlopScope",
+      "required_raw_gain_factor": 1.0592550143266475,
+      "required_raw_reduction_fraction": 0.05594027266825352
+    },
+    {
+      "added_effective_compute_B": 12.2,
+      "fixed_raw_score_penalty": 1.0836470588235294e-08,
+      "item": "cross_scale_pilot_high",
+      "note": "cross-scale high",
+      "required_raw_gain_factor": 1.0699140401146132,
+      "required_raw_reduction_fraction": 0.06534547402249602
+    },
+    {
+      "added_effective_compute_B": 14.0,
+      "fixed_raw_score_penalty": 1.243529411764706e-08,
+      "item": "historical_gate_ceiling",
+      "note": "old <14B gate",
+      "required_raw_gain_factor": 1.0802292263610316,
+      "required_raw_reduction_fraction": 0.07427055702917773
+    },
+    {
+      "added_effective_compute_B": 19.811940882,
+      "fixed_raw_score_penalty": 1.7597665136364707e-08,
+      "item": "companion16_propagation_only",
+      "note": "A43 16 bases depth30 projection",
+      "required_raw_gain_factor": 1.113535477833811,
+      "required_raw_reduction_fraction": 0.10195946163715808
+    },
+    {
+      "added_effective_compute_B": 22.049940882,
+      "fixed_raw_score_penalty": 1.95855357246e-08,
+      "item": "companion16_plus_inherited_control",
+      "note": "+2.238B control accounting",
+      "required_raw_gain_factor": 1.1263606927335243,
+      "required_raw_reduction_fraction": 0.11218492757134846
+    },
+    {
+      "added_effective_compute_B": 39.486940882,
+      "fixed_raw_score_penalty": 3.507369454812941e-08,
+      "item": "companion16_plus_literal_control",
+      "note": "+19.675B literal control accounting",
+      "required_raw_gain_factor": 1.2262861941661891,
+      "required_raw_reduction_fraction": 0.18452967605987924
+    }
+  ]
+}

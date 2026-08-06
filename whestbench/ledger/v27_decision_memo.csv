@@ -1,0 +1,47 @@
+WHestBench V27 Decision Memo — integrated experiment synthesis and winning-path update,,,,,
+,,,,,
+"Verdict: the broad sampling/cubature and linear checkpoint-gauge programs are now closed as winning routes. The only measured winning-scale constructive branch is analytic distribution propagation. The dense bivariate third/fourth-order ReLU covariance correction is already known to reach the required one-step accuracy under oracle mixed moments; the unresolved problem is legal analytic transport of a compressed, realizable joint moment state through all 32 layers. The latest Tucker-spectrum result makes the cost plausible, but it is still an oracle diagnostic, not a deployable estimator.",,,,,
+,,,,,
+,,,,,
+,,,,,
+Decision KPI,Value,Meaning,Canonical implication,,
+Current adjusted score reference,1.481e-07,Reference used by the score-law audit.,80% reduction target is 2.962e-8.,,
+80% adjusted-score target,2.962e-08,Candidate/current ≤ 0.20.,Primary promotion gate.,,
+Raw-MSE target below 10% compute floor,2.962e-07,"At C/B≤0.1, score=0.1×MSE.",Analytic estimator can tolerate ≈2.28× the 1.30e-7 oracle MSE.,,
+Reported analytic oracle MSE,1.3e-07,Oracle Σ and κ3/κ4 score-law audit.,Winning-scale ceiling; reconcile against older ≈2.21e-7 cohort before final claims.,,
+Dense bivariate oracle closure,0.288% next-variance RMS,Existing M40 third+fourth-order pair correction.,Formula sufficiency is established locally; not the new unknown.,,
+New Gaussian covariance closure diagnostic,≈1.34% mean RMS,Per-neuron scatter grows with depth.,Primary analytic bias source; calibration is ineffective.,,
+Marginal Edgeworth closure,≈1.9e-4 relative/layer,Stable 7–11× improvement over Gaussian marginals.,Marginal map is not the dominant blocker.,,
+Depth-adaptive Tucker cost estimate,≈3B FLOPs,"Oracle mode-unfolding compression; dense early, R64 mid, R32 deep.","Cost plausibly remains below 10% floor, but analytic factor recurrence is unproved.",,
+Direct-output source capacity,r*=0.0748607; rank 34–38,Legal target-free source remains real.,Representation theorem retained.,,
+Direct-output linear estimator class,Closed,Primal/dual and all-layer empirical SOCP miss gates by factors ≫1.,No more checkpoint partition tuning or linear independent-block estimation.,,
+Protected / official cohort opened,No,All new audits use exposed/synthetic/archived evidence.,Keep sealed until a fully deployable free-rollout candidate passes.,,
+,,,,,
+Rank,Path,How prior experiments support it,What prior experiments rule out,Next decisive gate,Disposition
+1,Analytic moment transport with compressed bivariate cumulants,M03–M04 establish a winning oracle marginal ceiling; M40 reaches 0.288% one-step variance error with oracle pair moments; M66 reaches 0.856% with transported-cumulant features; the latest audit isolates covariance closure and finds deep Tucker compressibility.,"Sampled moments (M42), generic denoisers (M47/M60), free learned rollout (M30/M44/M70), universal calibration, delayed closure and low-dimensional quadrature all fail.",Dense-oracle consistency → oracle Tucker/downstream compression → analytic factor/core recurrence → PSD/realizable 32-layer free rollout → adjusted score ≤2.962e-8.,PRIMARY CONSTRUCTIVE PROGRAM
+2,Analytic/nonlinear late absolute innovation,Direct-output source r*=0.07486 and late innovations 28–31 contain real target energy.,Every declared linear independent-block checkpoint gauge is dual-certified noncompetitive; tested phase features and companion pilots fail.,Produce an exact/shared-arithmetic nonlinear identity for a transported late absolute innovation with complete cost and final-score validation.,NARROW DORMANT HEDGE
+3,Conic A90 master dictionary,"A30⊂A90 at the same 1,920 rays; provisional 12-case source ratio ≈0.02292.","A30 and all tested sampled controls fail; no full-48 capacity, tails or physical covariance result was found after v26.",One full-48 reconstruction plus score-aware physical covariance/economics audit. Stop immediately if unsafe.,ONE OPTIONAL BOUNDED AUDIT
+4,Finite-width tensor-degree / degree-62 theorem,T88 gives the strongest actual-width arbitrary-node static floor via a 29-state degree-28 Markov certificate.,The certified floor is still 2.913× below the same-cost competition threshold; it cannot produce a candidate directly.,"Degree-62 excursion-return moment dual, sharp finite-width Kerdock denominator, independent implementation audit.",PUBLICATION / CLASS-CLOSURE LANE
+5,Shipping baseline and operational risk,129-basis production remains the best validated executable; multifidelity is adjusted-score negative.,No statistical descendant is submission-ready. The claimed 112-basis timeout insurance is based on limited timing extrapolation.,Repeated packaged runtime distribution on official-like hardware; choose a reduced basis only if timeout risk outweighs measured score loss.,SHIPPING-ONLY
+6,Static/cubature/MLMC descendants,"Static theorems, exact score law and many controls explain why these branches plateau.","Same-cost static gain cap ≈1.067×; 90,624-row MF regresses; low-rank MLMC, terminal smoothing, rotated mixtures, stronger ordinary designs and generic reweighting fail.",Reopen only with a theorem that leaves the MC-rate/error-cost regime or a genuinely new estimator class.,CLOSED WINNING ROUTE
+,,,,,
+,,,,,
+Stop / freeze,Reason,What remains valuable,Replacement,,
+Checkpoint partition/gauge tuning,"Selected, dense, late-only and all-layer linear programs fail with dual certificates.",Source-capacity theorem and terminal-innovation decomposition.,Only nonlinear/biased exact identity work.,,
+Generic signed phase prediction,Magnitude is observable but sign remains chance-level; grouped predictors regress.,Diagnostic features and source archives.,Exact invariant/identity or stop theorem.,,
+More ordinary cubature rows,"Above the 10% floor, MC-rate score is governed by V·f/B; extra rows buy no score unless V·f changes.",Kerdock baseline and score-law governance.,Bias-limited analytic propagation.,,
+"Multifidelity 90,624-row estimator",Raw MSE improves but adjusted score worsens about 9%.,Mechanism and accounting lesson.,Do not ship; retain 129-basis baseline.,,
+Sampled moment propagation,Moment accuracy requires nearly direct-estimation cost and introduces rollout noise.,Oracle sensitivity curves and sample-count requirements.,Analytic compressed moment recurrence.,,
+Universal covariance calibration,Closure error is neuron-specific scatter; LORO gain ≈1.01×.,Bias diagnostics.,Mixed-cumulant pair map.,,
+Delayed Gaussian closure,Error increases monotonically with lag.,Demonstrates expansive distributional dynamics.,Correct every layer rather than periodic restart.,,
+Low-dimensional activation quadrature,Participation ratio is misleading; early layers require near-full rank.,Late-layer compression clue only.,"Tensor/moment compression, not state projection.",,
+Global tensor-energy compression as sole gate,Frobenius capture may miss weight/downstream-amplified modes.,Tucker spectrum as cost diagnostic.,Score required mixed contractions and downstream quadratic forms.,,
+,,,,,
+,,,,,
+Latest source,Result absorbed,Relationship to prior work,Canonical effect,Evidence caveat,Priority
+WHestBench_Priority_Continuation_v27.md,All-layer dual closes complete linear checkpoint chain on tested confirmation cases.,Completes T82/Agent4 rather than opening a new estimator.,Close direct-output linear gauge class; retain nonlinear late innovation only.,Empirical covariance population transfer; no protected data.,1
+AGENT4_SOLE_PATH_FINAL_REPORT.md,Exact source reconstruction; source-specific SOCP and ONB escape fail decisively.,Turns v26's bounded lead audit into a stop certificate.,Demote direct-output PCA from lead to structural theorem/dormant hedge.,Class scoped to linear unbiased independent-block estimators.,1
+WHestBench_Prompt2_FiniteWidth_Reconciliation_and_Closure_20260730.md,29-state degree-28 finite-width signed/static floor 1.9250e-8.,Strengthens T76 proof lane.,Add T88; publication success but competition-insufficient.,Generated-row proof trust base and independent implementation pending.,2
+Current score-law audit update,MC-rate governance; multifidelity adjusted regression; low-rank MLMC failure.,Explains many historical raw-MSE false positives.,"Make V, V·f and complete adjusted score mandatory.",Underlying named report/scripts were not located in Library; current conversation attachment is the evidence pointer.,1
+Current covariance-closure update,Marginal closure good; covariance closure ≈1.34%; calibration/delay/state-rank fixes fail; deep Tucker spectrum favorable.,Reinterprets M27–M70 and M165–M167 as one transport/realizability problem.,Promote analytic compressed mixed-cumulant transport as sole constructive lead.,Factors are oracle/empirical diagnostics; no legal recurrence or free rollout yet.,1
+M40/M66/M70 corpus,Dense pair Edgeworth already reaches 0.288%; target-width learned one-step reaches 0.856%; full joint rollout conflicts.,Prevents overstating novelty and gives the true pass/fail ladder.,Next experiment is not 'does pair Edgeworth work?' but 'can the required state be propagated legally and compatibly?'.,Mostly synthetic/oracle; downstream/free-rollout gate remains decisive.,1

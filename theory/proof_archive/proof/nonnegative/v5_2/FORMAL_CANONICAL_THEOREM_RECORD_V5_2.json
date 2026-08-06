@@ -1,0 +1,76 @@
+{
+  "title": "WHestBench canonical theorem record v5.2",
+  "status": "INTERNAL CANONICAL RECORD \u2014 PUBLIC RELEASE REQUIRES EXTERNAL DIGEST AND HUMAN SIGN-OFF",
+  "date": "2026-07-30",
+  "primary_static_theorem": {
+    "theorem": "For the dimension-256, depth-32 infinite-width normalized ReLU kernel, every static network-independent nonnegative mass-one linear rule using at most 66,048 arbitrary spherical nodes has MSE at least the certified all-degree auxiliary optimum lower bound. Complete Kerdock has MSE at most the stated factor above the infimum.",
+    "auxiliary_optimum_mse_interval": [
+      "2.4330928587565937917467205177357824616906898195111938487488890771313270267856063E-7",
+      "2.4330928587565960804470532186649415863144828182536813203925758906716078901914533E-7"
+    ],
+    "kerdock_mse_interval": {
+      "lower": "2.4336603575430029389091338017406054668573276382630724978671590845071104120856063E-7",
+      "upper": "2.4336603575430052276094665026697645914811206370055599695108464279151347033914533E-7"
+    },
+    "actual_ratio_kerdock_over_infimum": {
+      "lower": "1",
+      "upper": "1.0002332417295003899182173021711980220253467911500271503839122721650330790888292"
+    },
+    "actual_relative_excess_percent": {
+      "lower": "0",
+      "upper": "0.0233241729500389918217302171198022025346791150027150383912272165033079088829200"
+    },
+    "one_sided": true,
+    "strict_suboptimality_not_proved": true
+  },
+  "auxiliary_lp_theorem": {
+    "status": "COMPUTER-ASSISTED CERTIFIED; TWO INTERVAL STACKS FOR PRIMAL NUMERICS",
+    "optimizer": "unique degree-5 Hermite minorant at roots of 22102 t^3+21930 t^2-87 t-85",
+    "decimal_certificate_status": "COMPUTER-ASSISTED CERTIFIED, subject to the stated Decimal/libmpdec trust base",
+    "mpmath_iv_second_stack_status": "PASSED",
+    "mpmath_iv_record_sha256": "2b9979fe42375e5f91b4ce63198bf8bebdb8092a5f74385e5fbf297a24b30a3c",
+    "remaining_external_requirement": "named human review of the analytic Bell/Hermite bridge and release implementation"
+  },
+  "arbitrary_signed_node_floor": {
+    "status": "COMPUTER-ASSISTED CERTIFIED MULTI-RANK LOWER BOUND",
+    "scope": {
+      "dimension": 256,
+      "depth": 32,
+      "node_budget": 66048,
+      "weights": "arbitrary real, summing to one",
+      "nodes": "arbitrary points on S^255",
+      "kernel": "infinite-width normalized depth-32 ReLU kernel"
+    },
+    "mse_lower_bound": "0.0000000790161513053615965080819",
+    "fraction_of_complete_kerdock_mse_lower_bound": "0.32468027455209637484239705402560491832232104954217968099016",
+    "maximum_permitted_improvement_factor_vs_kerdock": "3.079953044204863180599909047290358663173099108903909373206",
+    "interpretation": "This partially closes arbitrary off-support signed rules by excluding gains above the stated factor. It is not signed near-optimality."
+  },
+  "fixed_kerdock_line_theorem": {
+    "status": "PROVED UNDER EXPLICIT MODEL AT INFINITE AND FINITE WIDTH",
+    "scope": "fixed symmetrized real-MUB/Kerdock line universe; arbitrary real mass-one line weights; static rules; Gaussian first layer and stated nondegeneracy at finite width",
+    "conclusion": "complete bases plus at most one partial basis, with positive equal within-basis weights and positive analytic basis masses"
+  },
+  "proof_reproduction": {
+    "t22_complete_local_regeneration_passed": true,
+    "t22_subintervals": 1421,
+    "t22_manifest": "manifest verified: 59 files",
+    "t22_decimal_mpfr_dual_engine": "documented in the independent continuation audit; direct-C GMP/MPFR reproduces theorem-critical path with GCC/Clang identical outputs",
+    "t16_decimal_and_mpmath_iv": "both proof-critical primal numerical stacks pass; exact reduced-cost recurrence also has independent C++ audit"
+  },
+  "explicit_exclusions": [
+    "arbitrary-node finite-width near-optimality",
+    "signed arbitrary-node near-optimality beyond the certified floor",
+    "network-adaptive support or weights",
+    "unrestricted nonlinear estimators",
+    "candidate-dependent transformed residuals without recertification"
+  ],
+  "source_files": [
+    "sources/T22_V5_1_THEOREM.json",
+    "sources/T16_DECIMAL_PRIMAL_DUAL_CERTIFICATE.json",
+    "sources/T16_MPMATH_IV_SECOND_STACK_AUDIT.json",
+    "sources/MULTIRANK_SIGNED_NODE_CERTIFICATE.json",
+    "T22_FULL_CLEAN_REGENERATION_REPORT.json"
+  ],
+  "record_sha256": "05f852f37a31246eea8135ac620c5ae77be84f12b8086369888bdb9aa15adf72"
+}

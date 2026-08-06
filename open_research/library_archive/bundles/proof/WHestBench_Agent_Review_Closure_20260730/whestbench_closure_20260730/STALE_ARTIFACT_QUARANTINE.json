@@ -1,0 +1,18 @@
+{
+  "date": "2026-07-30",
+  "artifacts": [
+    {
+      "name": "arc_cubature_proof_v4.zip",
+      "sha256": "5192f7321f093ecb7463f335d01ba09e5703a0d7d7cff8ab0bdd5318ed69659b",
+      "status": "QUARANTINED",
+      "reason": "Contains a theorem JSON with an invalid positive lower endpoint for Kerdock suboptimality; the valid theorem is one-sided."
+    },
+    {
+      "name": "arc_cubature_proof_v4/results/FORMAL_NEAR_OPTIMALITY_THEOREM_D256_L32.json",
+      "sha256": "2e330d1306fd93995ea7ffb50673442dadfcd9e18f7ebd5870455f73927116a5",
+      "status": "QUARANTINED",
+      "reason": "Do not cite the additive/ratio lower endpoints as certified strict suboptimality."
+    }
+  ],
+  "replacement": "arc_cubature_proof_v5_1 plus T16 full primal-dual certificate"
+}

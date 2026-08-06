@@ -1,0 +1,417 @@
+{
+  "protocol": {
+    "indices": [
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175
+    ],
+    "checkpoints": [
+      20
+    ],
+    "target_layer": 29,
+    "rotation_seed": 3,
+    "rank": 4,
+    "control_ranks": [
+      2
+    ],
+    "folds": 6,
+    "ridge": 0.1,
+    "transport_ridge": 1e-12,
+    "transport_source": "oracle_gates",
+    "cheap_basis_ids": {},
+    "defect_scales": [],
+    "sample_only_scales": [
+      1.5
+    ],
+    "skip_factorized_base": true,
+    "factor_root": "/Users/skyenygaard/Programming/AI-Safety/arc_ceiling/results/factorized_k3_checkpoint_factors_smoke2",
+    "compact_state_dir": null,
+    "oracle_target_marginals": true,
+    "uses_target_layer_state_for_correction": false,
+    "uses_final_targets_for_construction": false
+  },
+  "summary": {
+    "oracle_r2": {
+      "mse_ratio": 0.9244269269553247,
+      "wins": 4,
+      "worst": 1.2835848139576285,
+      "mean_anchor_error_relative_to_same_cloud": 0.0
+    },
+    "sample_r2": {
+      "mse_ratio": 1.0190793829422122,
+      "wins": 2,
+      "worst": 1.042246189599581,
+      "mean_anchor_error_relative_to_same_cloud": 1.0
+    },
+    "checkpoint20_full_sampleonly_scale1.5_r2": {
+      "mse_ratio": 1.7145171953383638,
+      "wins": 3,
+      "worst": 5.033312026631299,
+      "mean_anchor_error_relative_to_same_cloud": 0.9314194490982255
+    }
+  },
+  "method_to_anchor": {
+    "oracle_r2": "oracle",
+    "sample_r2": "sample",
+    "checkpoint20_full_sampleonly_scale1.5_r2": "checkpoint20_full_sampleonly_scale1.5"
+  },
+  "records": [
+    {
+      "index": 168,
+      "name": "katie-rosario",
+      "baseline_mse": 2.7290469891222585e-07,
+      "method_mses": {
+        "oracle_r2": 3.5029632718141203e-07,
+        "sample_r2": 2.754532614650264e-07,
+        "checkpoint20_full_sampleonly_scale1.5_r2": 1.3736145031591002e-06
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.001984104818407717,
+            1.2873656899989316e-05,
+            1.6500802343285582e-05,
+            -5.642611934067801e-06
+          ]
+        },
+        "checkpoint20_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.4614038446517493,
+          "error": [
+            0.00035377255862001356,
+            -0.0007489519154157132,
+            -0.0002758200843176097,
+            -0.0002757375746953038
+          ]
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint20_full_sampleonly_scale1.5": {
+          "relative_error": 0.2977256933618399,
+          "norm_ratio": 1.0575522321533064
+        }
+      },
+      "transport_diagnostics": {
+        "20": {
+          "transport_norm": 9.92514045091373,
+          "transport_condition": 6.871782262338933e+22,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 1.6147391670383513
+    },
+    {
+      "index": 169,
+      "name": "victor-lamb",
+      "baseline_mse": 4.3808960540774755e-07,
+      "method_mses": {
+        "oracle_r2": 4.740245987988373e-07,
+        "sample_r2": 4.4683195907524516e-07,
+        "checkpoint20_full_sampleonly_scale1.5_r2": 5.293798209805788e-07
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.00040409062128521356,
+            -0.00016182773183176513,
+            1.8309786181135157e-05,
+            -0.0001601279117526208
+          ]
+        },
+        "checkpoint20_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 2.3009058773199897,
+          "error": [
+            0.001032761531077675,
+            -9.856039803191052e-05,
+            -0.000224102302489676,
+            -0.00011880811700319509
+          ]
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint20_full_sampleonly_scale1.5": {
+          "relative_error": 0.31273785745072147,
+          "norm_ratio": 1.1657195546964063
+        }
+      },
+      "transport_diagnostics": {
+        "20": {
+          "transport_norm": 10.418092452205478,
+          "transport_condition": 2.091795663017478e+23,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 1.293318125186488
+    },
+    {
+      "index": 170,
+      "name": "scott-watts",
+      "baseline_mse": 4.9921147032317104e-08,
+      "method_mses": {
+        "oracle_r2": 5.666809424364382e-08,
+        "sample_r2": 4.980519913735244e-08,
+        "checkpoint20_full_sampleonly_scale1.5_r2": 7.856329720940272e-08
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0001798538404496064,
+            6.0211056669600554e-05,
+            7.119819704847277e-06,
+            -1.4046024142699539e-05
+          ]
+        },
+        "checkpoint20_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.703945851380677,
+          "error": [
+            5.9407763658037016e-05,
+            -7.671946769130869e-05,
+            -7.65877463370368e-05,
+            -5.165252889384074e-05
+          ]
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint20_full_sampleonly_scale1.5": {
+          "relative_error": 0.32416289279398186,
+          "norm_ratio": 1.0672291448132696
+        }
+      },
+      "transport_diagnostics": {
+        "20": {
+          "transport_norm": 8.56427474190855,
+          "transport_condition": 1.7293312026729297e+22,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 0.8564165828283876
+    },
+    {
+      "index": 171,
+      "name": "aaron-proctor",
+      "baseline_mse": 1.9726656774878428e-07,
+      "method_mses": {
+        "oracle_r2": 2.0844726873077437e-07,
+        "sample_r2": 1.9904248343708324e-07,
+        "checkpoint20_full_sampleonly_scale1.5_r2": 1.5919787662947184e-07
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0036419703535885972,
+            0.0001342262527352367,
+            -5.106780994162952e-06,
+            0.00017956158257475402
+          ]
+        },
+        "checkpoint20_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.609452611753554,
+          "error": [
+            0.0022001225740888586,
+            -0.00022831300834547097,
+            -0.00022485331677979566,
+            -4.597331487424944e-05
+          ]
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint20_full_sampleonly_scale1.5": {
+          "relative_error": 0.20063235508879965,
+          "norm_ratio": 1.1464247361917186
+        }
+      },
+      "transport_diagnostics": {
+        "20": {
+          "transport_norm": 10.943409486851383,
+          "transport_condition": 9.975751572992723e+24,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 0.8171204999089241
+    },
+    {
+      "index": 172,
+      "name": "cody-blackwell",
+      "baseline_mse": 4.6676360572242697e-07,
+      "method_mses": {
+        "oracle_r2": 2.8937087338644337e-07,
+        "sample_r2": 4.864825895079606e-07,
+        "checkpoint20_full_sampleonly_scale1.5_r2": 4.826523935836427e-07
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.004428309858694135,
+            -3.507412772399757e-05,
+            8.614557613942711e-05,
+            1.4591997949210678e-05
+          ]
+        },
+        "checkpoint20_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.7207731754736976,
+          "error": [
+            0.0031828395091988426,
+            -0.0001858962088869716,
+            2.037674747472351e-05,
+            -0.00016369720446880384
+          ]
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint20_full_sampleonly_scale1.5": {
+          "relative_error": 0.2679733221173063,
+          "norm_ratio": 1.2219029029626185
+        }
+      },
+      "transport_diagnostics": {
+        "20": {
+          "transport_norm": 12.764011453267655,
+          "transport_condition": 5.063191447983093e+24,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 0.7898931670933962
+    },
+    {
+      "index": 173,
+      "name": "raymond-morris",
+      "baseline_mse": 2.1720115881579176e-07,
+      "method_mses": {
+        "oracle_r2": 2.1181605647782218e-07,
+        "sample_r2": 2.2144222809034447e-07,
+        "checkpoint20_full_sampleonly_scale1.5_r2": 2.1403056372509413e-07
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0028602494207801143,
+            -0.00011571667342202135,
+            4.871847637820392e-05,
+            -3.2297932476233956e-05
+          ]
+        },
+        "checkpoint20_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.9196443560661662,
+          "error": [
+            0.0026264985974231436,
+            -0.0001344057419633074,
+            -8.270116484698775e-05,
+            -9.941685601640333e-05
+          ]
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint20_full_sampleonly_scale1.5": {
+          "relative_error": 0.2914561207520844,
+          "norm_ratio": 1.2149364893126209
+        }
+      },
+      "transport_diagnostics": {
+        "20": {
+          "transport_norm": 10.115707356855339,
+          "transport_condition": 5.69102270569361e+23,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 0.8972440001089126
+    },
+    {
+      "index": 174,
+      "name": "gregory-simmons",
+      "baseline_mse": 1.4200694893517613e-07,
+      "method_mses": {
+        "oracle_r2": 1.2279268756153034e-07,
+        "sample_r2": 1.3820993313036535e-07,
+        "checkpoint20_full_sampleonly_scale1.5_r2": 3.331332638554818e-07
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            -0.00030750162914483514,
+            6.21366415353309e-06,
+            2.0248267466934505e-06,
+            2.9292898884171296e-06
+          ]
+        },
+        "checkpoint20_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 1.497132813242081,
+          "error": [
+            0.0003432130397607036,
+            -0.00018473256298736935,
+            -0.00022517773205387587,
+            -9.71076472233278e-05
+          ]
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint20_full_sampleonly_scale1.5": {
+          "relative_error": 0.32597982372981277,
+          "norm_ratio": 1.117898436642136
+        }
+      },
+      "transport_diagnostics": {
+        "20": {
+          "transport_norm": 10.215758698131149,
+          "transport_condition": 2.4023717398876504e+24,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 0.9161776669789106
+    },
+    {
+      "index": 175,
+      "name": "dennis-jones",
+      "baseline_mse": 1.3388364296090055e-07,
+      "method_mses": {
+        "oracle_r2": 5.966949047115515e-08,
+        "sample_r2": 1.3736469127730782e-07,
+        "checkpoint20_full_sampleonly_scale1.5_r2": 1.1793634251428723e-07
+      },
+      "anchor_diagnostics": {
+        "sample": {
+          "relative_to_same_cloud": 1.0,
+          "error": [
+            0.0004966669560849124,
+            2.0799303484409642e-06,
+            1.4468750134952971e-05,
+            -2.609520516586635e-06
+          ]
+        },
+        "checkpoint20_full_sampleonly_scale1.5": {
+          "relative_to_same_cloud": 0.23809706289788854,
+          "error": [
+            -2.8712594003943437e-05,
+            -9.042550445970132e-05,
+            -3.572540390140745e-05,
+            -6.0985583095343656e-05
+          ]
+        }
+      },
+      "c21_diagnostics": {
+        "checkpoint20_full_sampleonly_scale1.5": {
+          "relative_error": 0.3078732907013157,
+          "norm_ratio": 1.0030064865697061
+        }
+      },
+      "transport_diagnostics": {
+        "20": {
+          "transport_norm": 9.032018412506646,
+          "transport_condition": 1.40609274299913e+24,
+          "factor_rank": 0
+        }
+      },
+      "seconds": 1.2027002500835806
+    }
+  ]
+}

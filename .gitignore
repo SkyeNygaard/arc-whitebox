@@ -1,0 +1,74 @@
+# ---------------------------------------------------------------------------
+# Environments and caches
+# ---------------------------------------------------------------------------
+.DS_Store
+.env
+.env.*
+!.env.example
+.venv/
+.uv-cache/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+node_modules/
+notebooks/.ipynb_checkpoints/
+
+/tmp/
+
+# ---------------------------------------------------------------------------
+# WHestBench competition workspace
+#
+# The public release deliberately carries the FULL experiment surface: every
+# script, note, figure, audit, ledger row, and result record small enough to
+# read in a browser. Only three categories stay local.
+#
+#   1. bulk numerical arrays, which GitHub is the wrong home for
+#   2. benchmark weights, ground truth, and third-party checkouts
+#   3. a few large archives whose source files are published beside them
+#
+# If you are looking for an experiment and cannot find it, it is a bug in this
+# file rather than a deliberate omission. Please open an issue.
+# ---------------------------------------------------------------------------
+
+# 1. Bulk arrays and model artifacts, at any depth.
+*.npz
+*.npy
+*.pt
+*.pth
+*.safetensors
+*.joblib
+
+# ...except the frozen 66,048-node Kerdock design asset, which is small and is
+# the one numerical input a reader needs to rerun a submission package.
+!arc_whitebox/submissions/*/kerdock_mub5_seed3.npz
+
+# 2. Benchmark weights, ground truth, vendor checkouts.
+/arc_whitebox/data/
+/arc_whitebox/vendor/
+/arc_whitebox/tmp/
+
+# 3. Large archives that duplicate published source in the same directory.
+#    Each of these embeds a multi-megabyte design asset; the estimator source,
+#    manifest, and README beside them are published.
+/arc_whitebox/submissions/single_scramble_rqmc/submission.tar.gz
+/arc_whitebox/submissions/two_scramble_rqmc/submission.tar.gz
+/arc_whitebox/submissions/two_nearfull_rqmc/submission.tar.gz
+/arc_whitebox/submissions/kerdock_mf_smoke_safe/raw_blas_multifidelity_90624_smoke_safe_source.tar.gz
+
+# Local-only root scratch. Anchored, so files with these names inside
+# arc_whitebox/, arc_ceiling/, and open_research/ still publish.
+/README.txt
+/arc_code.zip
+/estimator.py
+/kerdock_mf_90624_precomputed.npz
+/whestbench_final_129basis_20260730.tar.gz
+/whestbench_final_129basis_depth4_20260730.tar.gz
+/whestbench_final_estimator_20260730/
+/whestbench_final_estimator_depth4_20260730/

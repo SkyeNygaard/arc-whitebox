@@ -1,0 +1,704 @@
+{
+  "protocol": {
+    "indices": [
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183
+    ],
+    "layer": 29,
+    "rotation_seed": 3,
+    "partition_seed": 20260729,
+    "rank": 4,
+    "folds": [
+      3
+    ],
+    "ridge": 0.1,
+    "edgeworth_label": "third",
+    "skip_edgeworth": true,
+    "target_leakage": false
+  },
+  "summary": {
+    "cross_raw_folds3": {
+      "ratio": 1.0188714567444053,
+      "ci95": [
+        0.9997283060352374,
+        1.0392731636813568
+      ],
+      "wins": 6,
+      "worst": 1.1159070492025431
+    },
+    "asymmetric_raw_pilot64": {
+      "ratio": 2.28668833409558,
+      "ci95": [
+        1.7423369518212681,
+        3.0549230955857483
+      ],
+      "wins": 1,
+      "worst": 5.388638054977922
+    },
+    "full_plus_contrast_pilot64_scale0.2": {
+      "ratio": 1.0660868599173239,
+      "ci95": [
+        0.9512355977057827,
+        1.2061223897529596
+      ],
+      "wins": 5,
+      "worst": 1.731576762622065
+    }
+  },
+  "records": [
+    {
+      "index": 168,
+      "name": "katie-rosario",
+      "baseline_mse": 2.7290469891222585e-07,
+      "method_mses": {
+        "cross_raw_folds3": 2.810613189094667e-07,
+        "asymmetric_raw_pilot64": 2.9234319397458946e-07,
+        "full_plus_contrast_pilot64_scale0.2": 3.10284178315743e-07
+      },
+      "diagnostics": {
+        "cross_raw_folds3": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 2.963592721871822,
+              "anchor_norm": 1.8550167969552789,
+              "held_feature_gap_norm": 0.005277584719155351
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.88462730665231,
+              "anchor_norm": 1.8587366323298566,
+              "held_feature_gap_norm": 0.002754225272803465
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.9224200154494615,
+              "anchor_norm": 1.8517948342303965,
+              "held_feature_gap_norm": 0.002672223601588794
+            }
+          ]
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 2.7992748071788505,
+          "gap_norm": 0.0005737216713198143
+        }
+      },
+      "seconds": 0.7933914589229971
+    },
+    {
+      "index": 169,
+      "name": "victor-lamb",
+      "baseline_mse": 4.3808960540774755e-07,
+      "method_mses": {
+        "cross_raw_folds3": 4.520613503842348e-07,
+        "asymmetric_raw_pilot64": 9.175848550738889e-07,
+        "full_plus_contrast_pilot64_scale0.2": 4.90058180381992e-07
+      },
+      "diagnostics": {
+        "cross_raw_folds3": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 4.088541518193665,
+              "anchor_norm": 2.218018988185445,
+              "held_feature_gap_norm": 0.006305367378556867
+            },
+            {
+              "kept": 4.0,
+              "condition": 4.109268287636198,
+              "anchor_norm": 2.235845164257884,
+              "held_feature_gap_norm": 0.004063897815480409
+            },
+            {
+              "kept": 4.0,
+              "condition": 4.049392914681051,
+              "anchor_norm": 2.2398600134381605,
+              "held_feature_gap_norm": 0.002459026921660371
+            }
+          ]
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 4.096625548502208,
+          "gap_norm": 0.004430507989885298
+        }
+      },
+      "seconds": 0.6069003329612315
+    },
+    {
+      "index": 170,
+      "name": "scott-watts",
+      "baseline_mse": 4.9921147032317104e-08,
+      "method_mses": {
+        "cross_raw_folds3": 4.923805676716071e-08,
+        "asymmetric_raw_pilot64": 1.6824195502928235e-07,
+        "full_plus_contrast_pilot64_scale0.2": 4.270244692919645e-08
+      },
+      "diagnostics": {
+        "cross_raw_folds3": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 3.050710722246214,
+              "anchor_norm": 0.3065482279127084,
+              "held_feature_gap_norm": 0.00019937152917047065
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.9776854654696607,
+              "anchor_norm": 0.30871421980855357,
+              "held_feature_gap_norm": 0.0010248477686512717
+            },
+            {
+              "kept": 4.0,
+              "condition": 3.0312840748644,
+              "anchor_norm": 0.30820279091581193,
+              "held_feature_gap_norm": 0.0008616337684454421
+            }
+          ]
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 3.2375102764827095,
+          "gap_norm": 0.0012029282742204062
+        }
+      },
+      "seconds": 0.5955112501978874
+    },
+    {
+      "index": 171,
+      "name": "aaron-proctor",
+      "baseline_mse": 1.9726656774878428e-07,
+      "method_mses": {
+        "cross_raw_folds3": 2.0063460577437313e-07,
+        "asymmetric_raw_pilot64": 8.634317050972877e-07,
+        "full_plus_contrast_pilot64_scale0.2": 3.1083812101467623e-07
+      },
+      "diagnostics": {
+        "cross_raw_folds3": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 3.028541261451734,
+              "anchor_norm": 4.791105049896086,
+              "held_feature_gap_norm": 0.010754945966322038
+            },
+            {
+              "kept": 4.0,
+              "condition": 3.034910746400147,
+              "anchor_norm": 4.786551402982016,
+              "held_feature_gap_norm": 0.008537490956399678
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.9575460108788034,
+              "anchor_norm": 4.769589498432272,
+              "held_feature_gap_norm": 0.019227206596787373
+            }
+          ]
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 3.0288346236766506,
+          "gap_norm": 0.023041129613168503
+        }
+      },
+      "seconds": 0.5989870841149241
+    },
+    {
+      "index": 172,
+      "name": "cody-blackwell",
+      "baseline_mse": 4.6676360572242697e-07,
+      "method_mses": {
+        "cross_raw_folds3": 4.871184597624295e-07,
+        "asymmetric_raw_pilot64": 3.571567427240638e-07,
+        "full_plus_contrast_pilot64_scale0.2": 3.263230750362785e-07
+      },
+      "diagnostics": {
+        "cross_raw_folds3": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 2.6540712163031888,
+              "anchor_norm": 6.662635109898471,
+              "held_feature_gap_norm": 0.003651709039209102
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.584212450582062,
+              "anchor_norm": 6.672892844976518,
+              "held_feature_gap_norm": 0.018759880437738248
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.7035798113974607,
+              "anchor_norm": 6.658903605576449,
+              "held_feature_gap_norm": 0.015075062168991966
+            }
+          ]
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 2.694452734621946,
+          "gap_norm": 0.021170352873232958
+        }
+      },
+      "seconds": 0.623901000013575
+    },
+    {
+      "index": 173,
+      "name": "raymond-morris",
+      "baseline_mse": 2.1720115881579176e-07,
+      "method_mses": {
+        "cross_raw_folds3": 2.2022760689268348e-07,
+        "asymmetric_raw_pilot64": 1.02902841773047e-06,
+        "full_plus_contrast_pilot64_scale0.2": 2.2915483253005465e-07
+      },
+      "diagnostics": {
+        "cross_raw_folds3": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 2.213912046955219,
+              "anchor_norm": 3.619964024700395,
+              "held_feature_gap_norm": 0.012455543878786505
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.222973522504328,
+              "anchor_norm": 3.621361580054582,
+              "held_feature_gap_norm": 0.0007928105703682465
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.2184812972155656,
+              "anchor_norm": 3.622037985611677,
+              "held_feature_gap_norm": 0.013236614290877125
+            }
+          ]
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 2.2078766742807208,
+          "gap_norm": 0.01851188518561471
+        }
+      },
+      "seconds": 0.5937372089829296
+    },
+    {
+      "index": 174,
+      "name": "gregory-simmons",
+      "baseline_mse": 1.4200694893517613e-07,
+      "method_mses": {
+        "cross_raw_folds3": 1.4163882488407683e-07,
+        "asymmetric_raw_pilot64": 3.176602432605909e-07,
+        "full_plus_contrast_pilot64_scale0.2": 1.3116704043367527e-07
+      },
+      "diagnostics": {
+        "cross_raw_folds3": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 2.5658355643627924,
+              "anchor_norm": 0.7677099118442866,
+              "held_feature_gap_norm": 0.0018440090889318842
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.652106946006563,
+              "anchor_norm": 0.7635475799038751,
+              "held_feature_gap_norm": 0.0007379091582659987
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.5249626146142075,
+              "anchor_norm": 0.7666811102763548,
+              "held_feature_gap_norm": 0.0026388667490570283
+            }
+          ]
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 2.58026600980217,
+          "gap_norm": 0.0022902236170856496
+        }
+      },
+      "seconds": 0.5928101250901818
+    },
+    {
+      "index": 175,
+      "name": "dennis-jones",
+      "baseline_mse": 1.3388364296090055e-07,
+      "method_mses": {
+        "cross_raw_folds3": 1.3915981143068522e-07,
+        "asymmetric_raw_pilot64": 2.8628145248255877e-07,
+        "full_plus_contrast_pilot64_scale0.2": 1.2129723534915488e-07
+      },
+      "diagnostics": {
+        "cross_raw_folds3": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 2.437263263661791,
+              "anchor_norm": 0.30266167603744837,
+              "held_feature_gap_norm": 0.0012885754141489067
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.4487980406399066,
+              "anchor_norm": 0.30259606454916493,
+              "held_feature_gap_norm": 0.000644073202041
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.384643863855667,
+              "anchor_norm": 0.30203994215844265,
+              "held_feature_gap_norm": 0.0006479275750073309
+            }
+          ]
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 2.411622382948752,
+          "gap_norm": 0.0001553085478074046
+        }
+      },
+      "seconds": 0.5980717500206083
+    },
+    {
+      "index": 176,
+      "name": "lori-smith",
+      "baseline_mse": 1.5335923869402336e-07,
+      "method_mses": {
+        "cross_raw_folds3": 1.5491783663418275e-07,
+        "asymmetric_raw_pilot64": 4.0007153222570565e-07,
+        "full_plus_contrast_pilot64_scale0.2": 2.0890993378800293e-07
+      },
+      "diagnostics": {
+        "cross_raw_folds3": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 2.259547241393015,
+              "anchor_norm": 1.6638085805561234,
+              "held_feature_gap_norm": 0.004066194979221977
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.2524352253211517,
+              "anchor_norm": 1.6692495216590368,
+              "held_feature_gap_norm": 0.013660832936333946
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.211466860167219,
+              "anchor_norm": 1.664115542210754,
+              "held_feature_gap_norm": 0.00961637415056756
+            }
+          ]
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 2.273673095060498,
+          "gap_norm": 0.0036145332599780756
+        }
+      },
+      "seconds": 0.5989530829247087
+    },
+    {
+      "index": 177,
+      "name": "kelly-green",
+      "baseline_mse": 2.8049779927821264e-07,
+      "method_mses": {
+        "cross_raw_folds3": 2.7065356105717367e-07,
+        "asymmetric_raw_pilot64": 5.438742389776534e-07,
+        "full_plus_contrast_pilot64_scale0.2": 2.8827306917942184e-07
+      },
+      "diagnostics": {
+        "cross_raw_folds3": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 2.3747264025358192,
+              "anchor_norm": 0.8347075958816474,
+              "held_feature_gap_norm": 0.0004625738936035116
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.2931068557248846,
+              "anchor_norm": 0.8298524849272029,
+              "held_feature_gap_norm": 0.0030486727791793735
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.34585140596717,
+              "anchor_norm": 0.831259865392467,
+              "held_feature_gap_norm": 0.0034967005148959186
+            }
+          ]
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 2.3553720167537957,
+          "gap_norm": 0.003935536337774784
+        }
+      },
+      "seconds": 0.5956897921860218
+    },
+    {
+      "index": 178,
+      "name": "jodi-holmes",
+      "baseline_mse": 5.509168983442905e-07,
+      "method_mses": {
+        "cross_raw_folds3": 5.487375968558098e-07,
+        "asymmetric_raw_pilot64": 8.472315852797806e-07,
+        "full_plus_contrast_pilot64_scale0.2": 5.128456056933205e-07
+      },
+      "diagnostics": {
+        "cross_raw_folds3": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 2.7563618276618698,
+              "anchor_norm": 0.5379109348169016,
+              "held_feature_gap_norm": 8.810461153334257e-05
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.7376448672549563,
+              "anchor_norm": 0.5377080451390611,
+              "held_feature_gap_norm": 0.0004543801299847467
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.6851924755420717,
+              "anchor_norm": 0.5389835235104603,
+              "held_feature_gap_norm": 0.00035629253034013923
+            }
+          ]
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 2.7598993948463493,
+          "gap_norm": 0.00021473369991421878
+        }
+      },
+      "seconds": 0.5972884169314057
+    },
+    {
+      "index": 179,
+      "name": "amber-wilcox",
+      "baseline_mse": 6.145510828782715e-08,
+      "method_mses": {
+        "cross_raw_folds3": 6.168171825511824e-08,
+        "asymmetric_raw_pilot64": 2.730903223395947e-07,
+        "full_plus_contrast_pilot64_scale0.2": 1.0641423745562419e-07
+      },
+      "diagnostics": {
+        "cross_raw_folds3": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 3.6453582402235316,
+              "anchor_norm": 1.1859234053236012,
+              "held_feature_gap_norm": 0.0026388699776037153
+            },
+            {
+              "kept": 4.0,
+              "condition": 3.718730410250445,
+              "anchor_norm": 1.1821795647219326,
+              "held_feature_gap_norm": 0.0035011827991578075
+            },
+            {
+              "kept": 4.0,
+              "condition": 3.6726322635139037,
+              "anchor_norm": 1.1773844534204885,
+              "held_feature_gap_norm": 0.006107500742990055
+            }
+          ]
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 3.6490546076043593,
+          "gap_norm": 0.0022023831236967347
+        }
+      },
+      "seconds": 0.5929106660187244
+    },
+    {
+      "index": 180,
+      "name": "joseph-warner",
+      "baseline_mse": 9.798870617864993e-08,
+      "method_mses": {
+        "cross_raw_folds3": 1.0235276983938112e-07,
+        "asymmetric_raw_pilot64": 2.2893367768740834e-07,
+        "full_plus_contrast_pilot64_scale0.2": 1.0363752141854744e-07
+      },
+      "diagnostics": {
+        "cross_raw_folds3": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 2.6574431524774953,
+              "anchor_norm": 1.2533375807822167,
+              "held_feature_gap_norm": 0.001992528156281371
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.673080435821346,
+              "anchor_norm": 1.2497263636112526,
+              "held_feature_gap_norm": 0.0025867048891612446
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.6348791552687225,
+              "anchor_norm": 1.2546293857403674,
+              "held_feature_gap_norm": 0.004633701484627072
+            }
+          ]
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 2.652744134201659,
+          "gap_norm": 0.0013863208189530368
+        }
+      },
+      "seconds": 0.6261290840338916
+    },
+    {
+      "index": 181,
+      "name": "julie-wheeler",
+      "baseline_mse": 1.6112715254678185e-07,
+      "method_mses": {
+        "cross_raw_folds3": 1.5382158672504778e-07,
+        "asymmetric_raw_pilot64": 4.835829772619656e-07,
+        "full_plus_contrast_pilot64_scale0.2": 1.995232007585948e-07
+      },
+      "diagnostics": {
+        "cross_raw_folds3": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 2.3755830109221097,
+              "anchor_norm": 1.3731385289773383,
+              "held_feature_gap_norm": 0.0006175582558648096
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.2534156092157436,
+              "anchor_norm": 1.367354848704431,
+              "held_feature_gap_norm": 0.00020871126144137198
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.3614988592440955,
+              "anchor_norm": 1.373846624257302,
+              "held_feature_gap_norm": 0.0007586418156668398
+            }
+          ]
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 2.197866690389695,
+          "gap_norm": 0.0018075548189241757
+        }
+      },
+      "seconds": 0.5967532079666853
+    },
+    {
+      "index": 182,
+      "name": "jamie-bentley",
+      "baseline_mse": 1.1230812476906158e-07,
+      "method_mses": {
+        "cross_raw_folds3": 1.1159701189414462e-07,
+        "asymmetric_raw_pilot64": 6.051878350137738e-07,
+        "full_plus_contrast_pilot64_scale0.2": 1.5612183085703955e-07
+      },
+      "diagnostics": {
+        "cross_raw_folds3": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 2.0706797207595518,
+              "anchor_norm": 7.753450902746765,
+              "held_feature_gap_norm": 0.014721896498858902
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.0357308787588195,
+              "anchor_norm": 7.768602637288876,
+              "held_feature_gap_norm": 0.027017046081009
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.066833978817202,
+              "anchor_norm": 7.756319030378757,
+              "held_feature_gap_norm": 0.012274370979514275
+            }
+          ]
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 2.196448142950761,
+          "gap_norm": 0.01935376030291756
+        }
+      },
+      "seconds": 0.6098512089811265
+    },
+    {
+      "index": 183,
+      "name": "john-davis",
+      "baseline_mse": 2.4462801876950926e-07,
+      "method_mses": {
+        "cross_raw_folds3": 2.729821305773474e-07,
+        "asymmetric_raw_pilot64": 5.733716346994778e-07,
+        "full_plus_contrast_pilot64_scale0.2": 2.793799153032134e-07
+      },
+      "diagnostics": {
+        "cross_raw_folds3": {
+          "folds": [
+            {
+              "kept": 4.0,
+              "condition": 2.425135625790136,
+              "anchor_norm": 1.014999884799008,
+              "held_feature_gap_norm": 0.007189969814012431
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.502783856264609,
+              "anchor_norm": 1.0135218575205376,
+              "held_feature_gap_norm": 0.001256864909303951
+            },
+            {
+              "kept": 4.0,
+              "condition": 2.4470476811884594,
+              "anchor_norm": 1.0112080472329328,
+              "held_feature_gap_norm": 0.006011095797790648
+            }
+          ]
+        },
+        "asymmetric_raw_pilot64": {
+          "kept": 4.0,
+          "condition": 2.4996841348273247,
+          "gap_norm": 0.005293110555653454
+        }
+      },
+      "seconds": 0.6713149577844888
+    }
+  ]
+}

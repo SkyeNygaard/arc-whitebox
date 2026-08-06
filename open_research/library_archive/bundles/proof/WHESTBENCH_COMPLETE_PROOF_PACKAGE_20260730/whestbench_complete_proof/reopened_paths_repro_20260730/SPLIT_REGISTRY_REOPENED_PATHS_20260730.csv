@@ -1,0 +1,12 @@
+cohort,units,status,role,selection_allowed,truth_source,protected_opened
+fullwidth_fit,seeds 3000-3003,generated synthetic,fit coefficients and initial hyperparameters,yes,rotations 20-23 split reference,no
+fullwidth_exploratory,seeds 3004-3019,generated synthetic,exploratory descendant selection,no refit of parent; descendant selection allowed,rotations 20-23 split reference,no
+fullwidth_terminal,seeds 3020-3035,generated synthetic,preregistered terminal validation,no,rotations 20-23 split reference,no
+fullwidth_extension,seeds 3036-3067,generated synthetic,preregistered projected-ReLU extension,no,rotations 20-23 split reference,no
+archive_train,development cases 0-15,already exposed archived,global scalar fit,yes,record truth halves,no
+archive_calibration,development cases 16-23,already exposed archived,reporting only,no,record truth halves,no
+archive_validation,cases 100-107,already exposed archived,external validation,no,high-reference halves when available,no
+archive_expansion,cases 300-307,already exposed archived,external expansion,no,high-reference halves when available,no
+archive_rotation,cases 200-203,already exposed archived,rotation transfer,no,record truth halves,no
+archive_rotation_expansion,cases 400-407,already exposed archived,rotation expansion,no,record truth halves,no
+official_protected,none,unopened,not used,no,none,no
