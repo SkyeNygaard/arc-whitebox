@@ -78,8 +78,9 @@ depth-32 limiting ReLU kernel at a 66,048-node budget:
 So moving nodes or reweighting them was close to exhausted before the
 competition work started, which is why the remaining budget went into
 arithmetic. The paper, the replayable certificate archive, and an explicit
-trust boundary are in [`theory/`](theory/). The proof archive is byte-identical
-to the arXiv ancillary submission; five checks replay in about 40 seconds.
+trust boundary are in [`theory/`](theory/). The proof archive is the frozen
+arXiv ancillary bundle (not yet submitted); five checks replay in about 40
+seconds.
 
 **These are lower bounds on a limiting kernel in a static linear class.** They
 say nothing about finite-width, adaptive, nonlinear, or network-dependent

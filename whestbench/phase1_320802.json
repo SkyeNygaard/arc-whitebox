@@ -137,7 +137,7 @@
       "A43_tracked_saving": 524123904,
       "A43_break_even_extra_residual_seconds": 0.00524123904,
       "A43_memory_reduction_vs_production": 0.8274,
-      "outcome": "A43 was NOT promoted: it saved the projected tracked FLOPs but paid ~2.2 s extra charged residual wall time per network, a net loss under the effective-compute model and a breach of the 30 s predict guard"
+      "outcome": "A43 was NOT promoted: it saved the projected tracked FLOPs but paid ~2.2 s extra charged residual wall time per network, a net loss under the effective-compute model and a breach of the self-imposed 30 s predict-time limit (the grader hard cap is 60 s; the lower local limit was held because the development machine runs faster than the grader)"
     },
     "final_reduction_form": {
       "astype_then_sum": {"tracked": 170908912640, "residual_ms_mean": 54.5, "residual_ms_sd": 3.3, "peak_rss_gib": 3.883},

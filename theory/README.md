@@ -35,9 +35,10 @@ remaining budget on [arithmetic instead](../arc_whitebox/submissions/production_
 
 - [`paper/`](paper/) — LaTeX source of *Limits of Static Cubature for Deep ReLU
   Gaussian Expectations* (`main.tex`, `main.bbl`, `references.bib`).
-- [`proof_archive/`](proof_archive/) — the arXiv ancillary verification
-  archive, shipped **byte-identical** to the submitted version. Its file
-  hashes are proof inputs, so nothing inside the hashed set is edited here.
+- [`proof_archive/`](proof_archive/) — the verification archive prepared as the
+  arXiv ancillary bundle. **Not yet submitted to arXiv**; this is the frozen
+  candidate, and it is what will be uploaded unchanged. Its file hashes are
+  proof inputs, so nothing inside the hashed set is edited here.
 
 ## Replaying the proof
 
@@ -49,19 +50,20 @@ python scripts/run_verification_portable.py
 python scripts/check_package.py
 ```
 
-Five checks, about 15 seconds total on a laptop:
+Five checks, about 40 seconds total on a laptop (measured 40.4 s wall on an
+Apple-silicon laptop, Python 3.12, mpmath 1.3.0):
 
 | check | what it does | time |
 |---|---|---:|
-| all-degree exact reduced costs | exact integer/rational proof that every omitted Gegenbauer degree has strictly negative reduced cost | ~3.3 s |
-| nonnegative recovered-record consistency | replays the directed degree-five primal–dual records, endpoint separation, and record hash | ~0.02 s |
-| Kerdock risk high-precision sanity check | independent non-directed calculation from the exact complete-MUB pair spectrum | ~1.3 s |
-| original frozen signed rational witness | exact rational replay of the 146-profile signed certificate | ~9.4 s |
-| positive-index and sign-count strengthening | exact rational inertia strengthening and the negative-support hierarchy | ~0.2 s |
+| all-degree exact reduced costs | exact integer/rational proof that every omitted Gegenbauer degree has strictly negative reduced cost | ~5.5 s |
+| nonnegative recovered-record consistency | replays the directed degree-five primal–dual records, endpoint separation, and record hash | ~0.03 s |
+| Kerdock risk high-precision sanity check | independent non-directed calculation from the exact complete-MUB pair spectrum | ~3.1 s |
+| original frozen signed rational witness | exact rational replay of the 146-profile signed certificate | ~31 s |
+| positive-index and sign-count strengthening | exact rational inertia strengthening and the negative-support hierarchy | ~0.7 s |
 
 ### One portability note
 
-`scripts/run_verification.py` is the runner as submitted to arXiv, and it
+`scripts/run_verification.py` is the runner as frozen for arXiv, and it
 invokes the checks with the literal command `python`. On systems that only
 provide `python3` — current macOS, most Debian-family installs — it dies with
 `FileNotFoundError: 'python'` before running any mathematics. Because its

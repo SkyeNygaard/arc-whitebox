@@ -110,7 +110,7 @@ the grader seed or on the `budget` argument.
 | tracked FLOPs per network | `170,906,815,488` |
 | FLOP budget | `272,000,000,000` |
 | mean effective compute (graded) | `~1.745e11` |
-| official row-0 wall time | 24.28 s against the 30 s predict guard |
+| official row-0 wall time | 24.28 s against a self-imposed 30 s limit (grader hard cap is 60 s) |
 | charged residual time, row 0 | 0.0547 s |
 
 Effective compute is `tracked FLOPs + 1e11 * residual wall seconds`, so the

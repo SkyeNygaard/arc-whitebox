@@ -298,7 +298,9 @@ story.append(
         "activation under the input distribution. The graded quantity is the adjusted final-layer "
         "score: final-layer MSE scaled by a multiplier derived from consumed compute, where effective "
         "compute is <font face='Courier' size='8'>tracked FLOPs + 1e11 x residual wall seconds</font> "
-        "against a 272e9 budget and a 30-second per-network predict guard."
+        "against a 272e9 budget. The grader's hard wall-clock cap is 60 s per network; the "
+        "30-second per-network figure used below is a self-imposed development limit, chosen "
+        "because the development machine runs faster than the grader."
     )
 )
 
@@ -451,7 +453,7 @@ story.append(
             ["Tracked FLOPs per network", "170,906,815,488"],
             ["FLOP budget", "272,000,000,000"],
             ["Mean effective compute (graded)", "~1.745e11 (64.19% utilization)"],
-            ["Official row-0 wall time", "24.28 s against a 30 s predict guard"],
+            ["Official row-0 wall time", "24.28 s against a self-imposed 30 s limit (grader cap 60 s)"],
             ["Official row-0 charged residual", "0.0547 s"],
             ["Peak RSS, production arm", "2,172 MiB"],
         ],
@@ -468,7 +470,7 @@ story.append(
         "and cut peak memory by 82.74%, with output bit-identical to the shipped arm. It was still "
         "<b>rejected</b>: it paid for those operations with roughly 2.2 s of extra charged residual "
         "wall time per network, about +222e9 of effective compute against a 5.241 ms break-even "
-        "margin, and it pushed wall time into the 30-second guard. The tracked-FLOP projection was "
+        "margin, and it pushed wall time past the self-imposed 30-second limit. The tracked-FLOP projection was "
         "arithmetically correct and the decision it implied was wrong."
     )
 )
@@ -615,7 +617,7 @@ story.append(
 )
 story.append(
     Paragraph(
-        "github.com/SkyeNygaard/whestbench<br/>"
+        "github.com/SkyeNygaard/arc-whitebox<br/>"
         "&nbsp;&nbsp;&nbsp;&nbsp;arc_whitebox/submissions/production_baseline_320802/&nbsp;&nbsp;(estimator, kernel, asset, archive)<br/>"
         "&nbsp;&nbsp;&nbsp;&nbsp;whestbench/phase1_320802.json&nbsp;&nbsp;(machine-readable binding record)",
         CODE,
