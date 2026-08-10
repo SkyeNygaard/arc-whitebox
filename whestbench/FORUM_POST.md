@@ -30,13 +30,13 @@ This submission is also one of my two entries nominated for the Phase 1 private
 re-evaluation (the other is #321366, adjusted 1.64e-7 — the same estimator at a
 worse compute operating point).
 
-I am nowhere near the top of the public board, so this is not a leaderboard
-post. It is a mechanism post, plus a pile of things that did not work, which I
-think are the more useful half.
+I finished #47 of 200 ranked entries, so this is not a leaderboard post. It is a
+mechanism post, plus a pile of things that did not work, which I think are the
+more useful half.
 
-<!-- CHECK BEFORE POSTING: rank was #47 of 200 ranked entries at 2026-08-10
-     14:34 UTC, still moving on the final day. Either refresh the number from
-     the closed leaderboard or leave the sentence unquantified as written. -->
+<!-- CHECK BEFORE POSTING: #47 was the standing at 2026-08-10 14:34 UTC and the
+     board was still moving on the final day. Refresh from the closed
+     leaderboard before you post. -->
 
 
 ## The mechanism in three sentences
@@ -90,19 +90,18 @@ pushed wall time past the 30 s local predict-time limit I was holding myself
 to. The FLOP projection was arithmetically correct and the decision it implied
 was wrong.
 
-On that 30 s figure: the grader's hard cap is **60 s per MLP**. 30 s is a
-self-imposed development limit, not the official one — my machine runs faster
-than the grader, so a local time is optimistic and I wanted the margin. My one
-calibration point puts the grader about 11% slower than my machine, and the
-graded #320802 rows land between 26 s and 62 s of wall time, so the margin was
-doing real work. If you are timing locally, do not read your own clock as the
-grader's.
+The 30 s is mine, not theirs. The grader's hard cap is **60 s per MLP**. I held
+myself to half of it because my machine is faster than the grader, so a local
+time reads optimistic. My one calibration point puts the grader about 11%
+slower, and the graded #320802 rows land between 26 s and 62 s of wall time, so
+the margin was doing real work. If you are timing locally, do not read your own
+clock as the grader's.
 
 ## Why I stopped looking for a better design
 
-This is the part that decided the whole approach, so it is worth stating even
-though it is a theory result rather than a leaderboard one. For the dimension-256,
-depth-32 limiting ReLU kernel at a 66,048-node budget:
+Before any of the competition work I spent a while on the prior question: how
+much room does a static rule have at all? For the dimension-256, depth-32
+limiting ReLU kernel at a 66,048-node budget:
 
 - among **all** nonnegative mass-one rules on arbitrary spherical nodes,
   complete Kerdock is at most **0.0233242%** above the infimum;
@@ -110,9 +109,9 @@ depth-32 limiting ReLU kernel at a 66,048-node budget:
   Kerdock risk by more than **6.2940%**.
 
 So moving nodes around or reweighting them was close to exhausted before I
-started. That is *why* the remaining budget went into arithmetic rather than
-into a cleverer design — the ceiling argument and the Winograd work are the same
-decision. Paper, replayable certificate archive, and an explicit trust boundary
+started. That is why the remaining budget went into arithmetic rather than into
+a cleverer design. The ceiling result is the reason the Winograd work happened
+at all. Paper, replayable certificate archive, and an explicit trust boundary
 are in `theory/`; five checks replay in about 40 s.
 
 **These are lower bounds on a limiting kernel in a static linear class.** They
@@ -121,7 +120,7 @@ estimators — which is very likely where the leaders here are working. They are
 also computer-assisted and replayable, **not** independently verified: the
 depth-32 coefficient and curvature interval stack has not been rebuilt in a
 second implementation, and human review of the analytic reduction is
-outstanding. I would genuinely like someone to attack this.
+outstanding. I would like someone to attack this.
 
 ## Negative results
 
