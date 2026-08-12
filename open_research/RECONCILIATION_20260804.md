@@ -128,11 +128,70 @@ Three files were excluded from `review/`: `Northeastern_Outreach_Revised.md`,
 carrying their institutional email addresses. Those people did not agree to
 appear in a public repository, and the project's own publication policy already
 said outreach drafts and reviewer contact lists do not belong here. They remain
-in the local copy.
+outside this repository, in `../whestbench-private/outreach/`.
 
 The remaining review materials — the external review packet, reviewer
 questions, and the two-page overview — name no third parties and are published.
 
-Bulk numerical arrays (`.npz`, `.npy`, `.pt`, `.joblib`) and one 8.5 MB source
-zip were also excluded on size grounds. Everything else came across: 3,916
-files including all 35 experiment bundles and all proof bundles.
+Bulk numerical arrays (`.npz`, `.npy`, `.pt`, `.joblib`) were also excluded on
+size grounds. They are not in Git, but they are in the working tree beside the
+bundles they belong to. Everything else came across: all 35 experiment bundles
+and all proof bundles.
+
+## 7. Correction, 2026-08-11: the source zips were not size exclusions
+
+The paragraph above originally read "and one 8.5 MB source zip". That was wrong
+twice over, and the error is worth stating rather than editing away.
+
+The 8.5 MB archive it meant, `arc_code.zip`, was never missing — it is at the
+repository root, excluded from Git by name in [`../.gitignore`](../.gitignore)
+and present in the working tree the whole time.
+
+What *was* missing was four different archives, in
+`library_archive/bundles/experiment/WHestBench_Experiment_Launch_Pack_20260729_v2/.../sources/`:
+
+| archive | scripts | result records | notes |
+|---|---|---|---|
+| `FULL_MULTILEVEL_CONTINUATION_BUNDLE.zip` | 15 | 53 | 2 |
+| `activation_region_continuation_bundle.zip` | 10 | 13 | 5 |
+| `agent1_layer31_deployability_round.zip` | 4 | 8 | 2 |
+| `equivariant_weight_model_repro_20260729.zip` | 7 | 12 | 2 |
+
+Together they hold 36 Python scripts, 86 result records, and their notes — 133
+files, about 1 MB. At least 114 of those 133 appear nowhere else in this
+repository, even by filename alone. They are not
+bulk arrays, and the size rule never applied to them. They were dropped by
+accident. They are now restored, and `.gitignore` already says that an
+experiment you cannot find is a bug in that file rather than a deliberate
+omission — this was one.
+
+Three further archives remain excluded, and that is deliberate:
+`whestbench_t22_t23_dual_engine_release_v5_2_20260730.zip`,
+`Agent5_Competition_Opportunity_Experiments_20260730.zip`, and
+`arc_cubature_proof_v5_1.zip`. Their contents were checked file by file against
+this repository on 2026-08-11: everything inside them is already published
+unzipped in the same bundle, except compiled-Python caches and one classifier
+(`anchor_rf_classifier.joblib`, kept in the working tree under the bulk-array
+rule).
+
+### Also recovered on 2026-08-11
+
+From the pre-monorepo working folder, all verified byte-identical to their
+originals:
+
+- [`../theory/paper/arxiv_20260803/`](../theory/paper/arxiv_20260803/) — the
+  2026-08-03 arXiv submission source and the compiled full paper. Note that
+  `../theory/paper/main.tex` is a *later* revision; the two share a filename and
+  differ in content.
+- [`evidence/02_Evidence_Manifest.csv`](evidence/02_Evidence_Manifest.csv) — 30
+  rows mapping each public claim to its evidence, approved wording, and the
+  specific overclaim to avoid.
+- [`ledger/history/`](ledger/history/) — the intermediate canonical ledgers
+  (v5, v10, v14, v15, v26, v28), the two experiment-ledger CSVs, and the
+  research catalogs. The reconciled v31 in [`ledger/`](ledger/) remains the
+  authoritative one; these are the working snapshots behind it.
+- [`library_archive/reports/WHestBench_Subagent_Handoffs_v21.md`](library_archive/reports/WHestBench_Subagent_Handoffs_v21.md)
+- [`audit/SHA256SUMS_WHestBench_20260802_AUDITED_V2.txt`](audit/SHA256SUMS_WHestBench_20260802_AUDITED_V2.txt)
+  — checksums for two archives that live outside this machine.
+- `Makefile` — `make check` and `make manifest`, both of which call scripts that
+  were already here.
