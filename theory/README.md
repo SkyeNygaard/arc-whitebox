@@ -33,12 +33,19 @@ remaining budget on [arithmetic instead](../arc_whitebox/submissions/production_
 
 ## Layout
 
+- [`ARXIV_SUBMISSION.md`](ARXIV_SUBMISSION.md) — **what gets uploaded to arXiv,
+  and how to rebuild it.** Read this before submitting; three things in here
+  resemble the submission and are not it.
 - [`paper/`](paper/) — LaTeX source of *Limits of Static Cubature for Deep ReLU
-  Gaussian Expectations* (`main.tex`, `main.bbl`, `references.bib`).
+  Gaussian Expectations* (`main.tex`, `main.bbl`, `references.bib`). This is the
+  current paper.
+- [`paper/arxiv_20260803/`](paper/arxiv_20260803/) — the superseded 2026-08-03
+  draft and its compiled PDF/Word versions, kept for provenance. Not for upload.
 - [`proof_archive/`](proof_archive/) — the verification archive prepared as the
   arXiv ancillary bundle. **Not yet submitted to arXiv**; this is the frozen
-  candidate, and it is what will be uploaded unchanged. Its file hashes are
-  proof inputs, so nothing inside the hashed set is edited here.
+  candidate, and it is what will be uploaded unchanged, as `anc/` inside the
+  bundle. Its file hashes are proof inputs, so nothing inside the hashed set is
+  edited here.
 
 ## Replaying the proof
 

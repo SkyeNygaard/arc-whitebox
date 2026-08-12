@@ -3,16 +3,18 @@
 Status: **not yet submitted.** Everything below is prepared and verified; the
 upload itself needs your arXiv account.
 
-## The bundle
+## What you upload
 
-Build it with:
+**One file: `dist/arxiv_submission_static_cubature.tar.gz`.** Build it from the
+repository root, then upload it as the submission's source package. Nothing else
+in this repository goes to arXiv.
 
 ```bash
 python scripts/build_arxiv_bundle.py
 ```
 
-That writes `dist/arxiv_submission_static_cubature.tar.gz` (~105 KB, 32 files)
-containing:
+It is built on demand and not stored in Git (`dist/` is ignored), so if it is
+not there, run the command. About 105 KB, 32 files:
 
 ```
 main.tex          paper source, self-contained (no \input, no graphics)
@@ -23,6 +25,24 @@ anc/              29 files, the frozen proof archive, uploaded verbatim
 
 `anc/` is arXiv's reserved name for ancillary files. They are published beside
 the paper and are not compiled, so nothing in the hashed set is touched.
+
+The build refuses to produce a bundle whose ancillary archive fails its own hash
+check, so a successful run is itself the check that the certificates still
+replay.
+
+### What not to upload
+
+Three things in this repository look like the submission and are not:
+
+| looks like it | what it actually is |
+|---|---|
+| [`paper/arxiv_20260803/`](paper/arxiv_20260803/) | the **superseded** 2026-08-03 draft, kept for provenance. Its `main.tex` is a different, shorter paper than [`paper/main.tex`](paper/main.tex). |
+| `paper/arxiv_20260803/WHestBench_Full_Paper_Clear_Submission_Ready.{pdf,docx,md}` | compiled output of that older draft. arXiv wants LaTeX source, not a PDF. |
+| [`proof_archive/`](proof_archive/) on its own | the ancillary files *before* packaging. Upload them inside the bundle as `anc/`, never as a separate submission. |
+
+The source of truth is [`paper/main.tex`](paper/main.tex). If you are ever
+unsure which file is current, rebuild the bundle rather than assembling one by
+hand — the script only ever reads `paper/` and `proof_archive/`.
 
 ## Verified before packaging
 

@@ -80,7 +80,8 @@ competition work started, which is why the remaining budget went into
 arithmetic. The paper, the replayable certificate archive, and an explicit
 trust boundary are in [`theory/`](theory/). The proof archive is the frozen
 arXiv ancillary bundle (not yet submitted); five checks replay in about 40
-seconds.
+seconds. What actually gets uploaded, and how to rebuild it, is
+[`theory/ARXIV_SUBMISSION.md`](theory/ARXIV_SUBMISSION.md).
 
 **These are lower bounds on a limiting kernel in a static linear class.** They
 say nothing about finite-width, adaptive, nonlinear, or network-dependent
